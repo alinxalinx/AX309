@@ -1,0 +1,24 @@
+##USB CY7C68013A
+NET axi_epc_0_PRH_Addr_pin<0>                      LOC = P7 | IOSTANDARD = "LVCMOS33"; ## 
+NET axi_epc_0_PRH_Addr_pin<1>                      LOC = N7 | IOSTANDARD = "LVCMOS33"; ## 
+
+NET axi_epc_0_PRH_BE_pin<0>                        LOC = R7 | IOSTANDARD = "LVCMOS33"; ## 
+NET axi_epc_0_PRH_CS_n_pin                         LOC = T6 | IOSTANDARD = "LVCMOS33"; ## 
+NET axi_epc_0_PRH_Data_pin<0>                         LOC = V9 | IOSTANDARD = "LVCMOS33"; ## 
+NET axi_epc_0_PRH_Data_pin<1>                         LOC = V8 | IOSTANDARD = "LVCMOS33"; ## 
+NET axi_epc_0_PRH_Data_pin<2>                         LOC = U8 | IOSTANDARD = "LVCMOS33"; ## 
+NET axi_epc_0_PRH_Data_pin<3>                         LOC = T8 | IOSTANDARD = "LVCMOS33"; ## 
+NET axi_epc_0_PRH_Data_pin<4>                         LOC = R8 | IOSTANDARD = "LVCMOS33"; ## 
+NET axi_epc_0_PRH_Data_pin<5>                         LOC = P8 | IOSTANDARD = "LVCMOS33"; ## 
+NET axi_epc_0_PRH_Data_pin<6>                         LOC = N8 | IOSTANDARD = "LVCMOS33"; ## 
+NET axi_epc_0_PRH_Data_pin<7>                         LOC = N9 | IOSTANDARD = "LVCMOS33"; ## 
+NET axi_epc_0_PRH_Data_pin<8>                         LOC = P6 | IOSTANDARD = "LVCMOS33"; ## 
+NET axi_epc_0_PRH_Data_pin<9>                         LOC = N6 | IOSTANDARD = "LVCMOS33"; ## 
+NET axi_epc_0_PRH_Data_pin<10>                        LOC = V5 | IOSTANDARD = "LVCMOS33"; ## 
+NET axi_epc_0_PRH_Data_pin<11>                        LOC = U5 | IOSTANDARD = "LVCMOS33"; ## 
+NET axi_epc_0_PRH_Data_pin<12>                        LOC = V4 | IOSTANDARD = "LVCMOS33"; ## 
+NET axi_epc_0_PRH_Data_pin<13>                        LOC = T5 | IOSTANDARD = "LVCMOS33"; ## 
+NET axi_epc_0_PRH_Data_pin<14>                        LOC = R5 | IOSTANDARD = "LVCMOS33"; ## 
+NET axi_epc_0_PRH_Data_pin<15>                        LOC = T4 | IOSTANDARD = "LVCMOS33"; ## 
+NET axi_epc_0_PRH_Rd_n_pin                            LOC = T7 | IOSTANDARD = "LVCMOS33"; ## flagc;empty signal
+NET axi_epc_0_PRH_Wr_n_pin                            LOC = R3 | IOSTANDARD = "LVCMOS33"; ##

@@ -1,0 +1,11 @@
+2015/04/07, 12:56:54
+WinHex 16.8 x86 Error Report, LL: 0
+Started 2015/04/07, 10:49:42 on Windows 7, SP 1 (64 bit)
+
+Sectors that were read last:
+-4: 0-0 (7.4 GB, MXT-USBStorage Device)
+-4: 0-3 (7.4 GB, MXT-USBStorage Device)
+-4: 6-6 (7.4 GB, MXT-USBStorage Device)
+
+
+An exception of type 200 (division by zero) occurred at memory offset 0054862D when I [please complete]...
