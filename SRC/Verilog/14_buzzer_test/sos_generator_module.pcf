@@ -1,0 +1,30 @@
+//! **************************************************************************
+// Written by: Map P.20131013 on Tue Jul 14 13:18:59 2015
+//! **************************************************************************
+
+SCHEMATIC START;
+COMP "Pin_Out" LOCATE = SITE "J11" LEVEL 1;
+COMP "RSTn" LOCATE = SITE "L3" LEVEL 1;
+COMP "CLK" LOCATE = SITE "T8" LEVEL 1;
+TIMEGRP sys_clk_pin = BEL "U1/isEn" BEL "U1/Count1_0" BEL "U1/Count1_1" BEL
+        "U1/Count1_2" BEL "U1/Count1_3" BEL "U1/Count1_4" BEL "U1/Count1_5"
+        BEL "U1/Count1_6" BEL "U1/Count1_7" BEL "U1/Count1_8" BEL
+        "U1/Count1_9" BEL "U1/Count1_10" BEL "U1/Count1_11" BEL "U1/Count1_12"
+        BEL "U1/Count1_13" BEL "U1/Count1_14" BEL "U1/Count1_15" BEL
+        "U1/Count1_16" BEL "U1/Count1_17" BEL "U1/Count1_18" BEL
+        "U1/Count1_19" BEL "U1/Count1_20" BEL "U1/Count1_21" BEL
+        "U1/Count1_22" BEL "U1/Count1_23" BEL "U1/Count1_24" BEL
+        "U1/Count1_25" BEL "U1/Count1_26" BEL "U1/Count1_27" BEL
+        "U2/Count_MS_9" BEL "U2/Count_MS_8" BEL "U2/Count_MS_7" BEL
+        "U2/Count_MS_6" BEL "U2/Count_MS_5" BEL "U2/Count_MS_4" BEL
+        "U2/Count_MS_3" BEL "U2/Count_MS_2" BEL "U2/Count_MS_1" BEL
+        "U2/Count_MS_0" BEL "U2/Count1_15" BEL "U2/Count1_14" BEL
+        "U2/Count1_13" BEL "U2/Count1_12" BEL "U2/Count1_11" BEL
+        "U2/Count1_10" BEL "U2/Count1_9" BEL "U2/Count1_8" BEL "U2/Count1_7"
+        BEL "U2/Count1_6" BEL "U2/Count1_5" BEL "U2/Count1_4" BEL
+        "U2/Count1_3" BEL "U2/Count1_2" BEL "U2/Count1_1" BEL "U2/Count1_0"
+        BEL "U2/isCount" BEL "U2/rPin_Out" BEL "U2/i_2" BEL "U2/i_1" BEL
+        "U2/i_0" BEL "U2/i_4" BEL "U2/i_3" BEL "CLK_BUFGP/BUFG";
+TS_sys_clk_pin = PERIOD TIMEGRP "sys_clk_pin" 50 MHz HIGH 50%;
+SCHEMATIC END;
+

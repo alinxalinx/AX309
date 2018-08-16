@@ -1,0 +1,12 @@
+
+NET "CLK" LOC = T8 | TNM_NET = sys_clk_pin;
+TIMESPEC TS_sys_clk_pin = PERIOD sys_clk_pin 50000 kHz;
+
+##
+NET RSTn                  LOC = L3 | IOSTANDARD = "LVCMOS33"; ## RESET pushbutton
+##
+
+########buzzer Pin define##################### 
+NET Pin_Out               LOC = J11 | IOSTANDARD = "LVCMOS33";   ##  Buzzer output
+
+

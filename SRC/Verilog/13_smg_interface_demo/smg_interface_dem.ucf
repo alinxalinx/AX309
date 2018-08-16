@@ -1,0 +1,26 @@
+NET "CLK" LOC = T8 | TNM_NET = sys_clk_pin;
+TIMESPEC TS_sys_clk_pin = PERIOD sys_clk_pin 50000 kHz;
+
+##
+NET RSTn                  LOC = L3 | IOSTANDARD = "LVCMOS33"; ## RESET pushbutton
+##
+
+
+
+
+########smg interface Pin define##################### 
+NET SMG_Data<0>            LOC = C7 | IOSTANDARD = "LVCMOS33";  ##  
+NET SMG_Data<1>            LOC = E6 | IOSTANDARD = "LVCMOS33";  ##  
+NET SMG_Data<2>            LOC = C5 | IOSTANDARD = "LVCMOS33";  ##  
+NET SMG_Data<3>            LOC = F7 | IOSTANDARD = "LVCMOS33";  ##  
+NET SMG_Data<4>            LOC = D6 | IOSTANDARD = "LVCMOS33";  ## 
+NET SMG_Data<5>            LOC = E7 | IOSTANDARD = "LVCMOS33";  ## 
+NET SMG_Data<6>            LOC = D5 | IOSTANDARD = "LVCMOS33";  ## 
+NET SMG_Data<7>            LOC = C6 | IOSTANDARD = "LVCMOS33";  ## 
+
+NET Scan_Sig<5>            LOC = D9 | IOSTANDARD = "LVCMOS33";  ##  
+NET Scan_Sig<4>            LOC = E10 | IOSTANDARD = "LVCMOS33";  ##  
+NET Scan_Sig<3>            LOC = F10 | IOSTANDARD = "LVCMOS33";  ## 
+NET Scan_Sig<2>            LOC = F9 | IOSTANDARD = "LVCMOS33";  ## 
+NET Scan_Sig<1>            LOC = E8 | IOSTANDARD = "LVCMOS33";  ## 
+NET Scan_Sig<0>            LOC = D8 | IOSTANDARD = "LVCMOS33";  ## 

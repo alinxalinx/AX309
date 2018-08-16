@@ -1,0 +1,11 @@
+# PROMGEN: Xilinx Prom Generator P.20131013
+# Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+
+SOFTWARE_VERSION P.20131013
+DATE            03/19/2015 - 12:52
+SOURCE          E:\Project\AX516\verilog\led_test\led_tset.mcs
+DEVICE          16384K
+DATA_WIDTH      1
+FILL_DATA       0xFF
+SIGNATURE       0xF7F82B31
+START_ADDRESS   0x00000000 END_ADDRESS 0x00071543 DIRECTION_UP   "E:/Project/AX516/verilog/led_test/led_test.bit" 6slx16csg324

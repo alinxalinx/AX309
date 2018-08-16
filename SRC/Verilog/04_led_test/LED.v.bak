@@ -1,0 +1,66 @@
+//-----------------------------------------------------------------------------
+//-- $Id: LED.v, v 0.1 2012/06/28 10:28:54 Aku
+//------------------------------------------------------------------------------
+//-- Title         : Siga-S16 Verilog Examble
+//-- File          : LED.v
+//-- Project       : Siga-S16
+//-- Author        : Aku  <sigadsp@126.com>
+//-- Created       : 4.7.2012
+//------------------------------------------------------------------------------
+//-- Description   : Siga-S16 led example 
+//------------------------------------------------------------------------------
+//-- History       : 
+//------------------------------------------------------------------------------
+//-- Copyright (C) SigaDSP
+//-- All rights reserved. Reproduction in whole or part is prohibited 
+//-- without a written permission of the copyright owner.
+//------------------------------------------------------------------------------
+
+
+`timescale 1ns / 1ps
+
+
+module led (
+               // inputs:
+                  FPGA_GCLK1,
+                  CPU_RESET,
+                  LED,
+             )
+             
+//===========================================================================
+// PORT declarations
+//===========================================================================
+input FPGA_GCLK1;
+input CPU_RESET;
+output [3:0] LED;
+
+reg [31:0] timer;
+reg [3:0] LED;
+
+
+`define MAX_TIM_VAL 100000000
+
+  always @(posedge clk or negedge CPU_RESET)
+    begin
+      if (CPU_RESET == 1)
+          timer <= 0;
+      else if (timer == `MAX_TIM_VAL)
+          timer <= 0;
+      else
+          timer <= timer + 1;          
+    end
+
+
+  always @(posedge clk or negedge CPU_RESET)
+    begin
+      if (CPU_RESET == 1)
+          LED <= 4'b1111;
+      else if (timer == 12500000)
+          LED <= 4'b1101;
+      else if (timer == 25000000)
+          LED <= 4'b1011;
+      else if (timer == 37500000)
+          LED <= 4'b0111;                              
+      else if (timer == 50000000)
+          LED <= 4'b1110;          
+    end

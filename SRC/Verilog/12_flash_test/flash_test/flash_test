@@ -1,0 +1,17 @@
+
+
+NET "CLK" LOC = V10 | TNM_NET = sys_clk_pin;
+TIMESPEC TS_sys_clk_pin = PERIOD sys_clk_pin 50000 kHz;
+
+##
+NET RSTn                                LOC = N4 | IOSTANDARD = "LVCMOS15"; ## SW2 pushbutton
+##
+
+
+
+
+########SPI Flash Pin define##################### 
+NET flash_cs               LOC = V3 | IOSTANDARD = "LVCMOS33";   ##  FLASH SPI CS
+NET flash_clk              LOC = R15 | IOSTANDARD = "LVCMOS33";  ##  FLASH SPI CLK
+NET flash_datain           LOC = T13 | IOSTANDARD = "LVCMOS33";  ##  FLASH SPI DIN 
+NET flash_dataout          LOC = R13 | IOSTANDARD = "LVCMOS33";  ##  FLASH SPI DOUT

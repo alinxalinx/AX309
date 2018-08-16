@@ -1,0 +1,554 @@
+Release 14.7 - xst P.20131013 (nt64)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+--> Parameter TMPDIR set to xst/projnav.tmp
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.07 secs
+ 
+--> Parameter xsthdpdir set to xst
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.07 secs
+ 
+--> Reading design: smg_interface_demo.prj
+
+TABLE OF CONTENTS
+  1) Synthesis Options Summary
+  2) HDL Parsing
+  3) HDL Elaboration
+  4) HDL Synthesis
+       4.1) HDL Synthesis Report
+  5) Advanced HDL Synthesis
+       5.1) Advanced HDL Synthesis Report
+  6) Low Level Synthesis
+  7) Partition Report
+  8) Design Summary
+       8.1) Primitive and Black Box Usage
+       8.2) Device utilization summary
+       8.3) Partition Resource Summary
+       8.4) Timing Report
+            8.4.1) Clock Information
+            8.4.2) Asynchronous Control Signals Information
+            8.4.3) Timing Summary
+            8.4.4) Timing Details
+            8.4.5) Cross Clock Domains Report
+
+
+=========================================================================
+*                      Synthesis Options Summary                        *
+=========================================================================
+---- Source Parameters
+Input File Name                    : "smg_interface_demo.prj"
+Ignore Synthesis Constraint File   : NO
+
+---- Target Parameters
+Output File Name                   : "smg_interface_demo"
+Output Format                      : NGC
+Target Device                      : xc6slx9-2-ftg256
+
+---- Source Options
+Top Module Name                    : smg_interface_demo
+Automatic FSM Extraction           : YES
+FSM Encoding Algorithm             : Auto
+Safe Implementation                : No
+FSM Style                          : LUT
+RAM Extraction                     : Yes
+RAM Style                          : Auto
+ROM Extraction                     : Yes
+Shift Register Extraction          : YES
+ROM Style                          : Auto
+Resource Sharing                   : YES
+Asynchronous To Synchronous        : NO
+Shift Register Minimum Size        : 2
+Use DSP Block                      : Auto
+Automatic Register Balancing       : No
+
+---- Target Options
+LUT Combining                      : Auto
+Reduce Control Sets                : Auto
+Add IO Buffers                     : YES
+Global Maximum Fanout              : 100000
+Add Generic Clock Buffer(BUFG)     : 16
+Register Duplication               : YES
+Optimize Instantiated Primitives   : NO
+Use Clock Enable                   : Auto
+Use Synchronous Set                : Auto
+Use Synchronous Reset              : Auto
+Pack IO Registers into IOBs        : Auto
+Equivalent register Removal        : YES
+
+---- General Options
+Optimization Goal                  : Speed
+Optimization Effort                : 1
+Power Reduction                    : NO
+Keep Hierarchy                     : No
+Netlist Hierarchy                  : As_Optimized
+RTL Output                         : Yes
+Global Optimization                : AllClockNets
+Read Cores                         : YES
+Write Timing Constraints           : NO
+Cross Clock Analysis               : NO
+Hierarchy Separator                : /
+Bus Delimiter                      : <>
+Case Specifier                     : Maintain
+Slice Utilization Ratio            : 100
+BRAM Utilization Ratio             : 100
+DSP48 Utilization Ratio            : 100
+Auto BRAM Packing                  : NO
+Slice Utilization Ratio Delta      : 5
+
+=========================================================================
+
+
+=========================================================================
+*                          HDL Parsing                                  *
+=========================================================================
+Analyzing Verilog file "E:\Project\AX309\Verilog\11_smg_interface_demo\rtl\smg_scan_module.v" into library work
+Parsing module <smg_scan_module>.
+Analyzing Verilog file "E:\Project\AX309\Verilog\11_smg_interface_demo\rtl\smg_encode_module.v" into library work
+Parsing module <smg_encode_module>.
+Analyzing Verilog file "E:\Project\AX309\Verilog\11_smg_interface_demo\rtl\smg_control_module.v" into library work
+Parsing module <smg_control_module>.
+Analyzing Verilog file "E:\Project\AX309\Verilog\11_smg_interface_demo\rtl\smg_interface.v" into library work
+Parsing module <smg_interface>.
+Analyzing Verilog file "E:\Project\AX309\Verilog\11_smg_interface_demo\rtl\demo_control_module.v" into library work
+Parsing module <demo_control_module>.
+Analyzing Verilog file "E:\Project\AX309\Verilog\11_smg_interface_demo\rtl\smg_interface_demo.v" into library work
+Parsing module <smg_interface_demo>.
+
+=========================================================================
+*                            HDL Elaboration                            *
+=========================================================================
+
+Elaborating module <smg_interface_demo>.
+
+Elaborating module <demo_control_module>.
+
+Elaborating module <smg_interface>.
+
+Elaborating module <smg_control_module>.
+
+Elaborating module <smg_encode_module>.
+
+Elaborating module <smg_scan_module>.
+
+=========================================================================
+*                           HDL Synthesis                               *
+=========================================================================
+
+Synthesizing Unit <smg_interface_demo>.
+    Related source file is "E:\Project\AX309\Verilog\11_smg_interface_demo\rtl\smg_interface_demo.v".
+    Summary:
+	no macro.
+Unit <smg_interface_demo> synthesized.
+
+Synthesizing Unit <demo_control_module>.
+    Related source file is "E:\Project\AX309\Verilog\11_smg_interface_demo\rtl\demo_control_module.v".
+        T100MS = 23'b10011000100101100111111
+    Found 1-bit register for signal <rNum<23>>.
+    Found 1-bit register for signal <rNum<22>>.
+    Found 1-bit register for signal <rNum<21>>.
+    Found 1-bit register for signal <rNum<20>>.
+    Found 1-bit register for signal <rNum<19>>.
+    Found 1-bit register for signal <rNum<18>>.
+    Found 1-bit register for signal <rNum<17>>.
+    Found 1-bit register for signal <rNum<16>>.
+    Found 1-bit register for signal <rNum<15>>.
+    Found 1-bit register for signal <rNum<14>>.
+    Found 1-bit register for signal <rNum<13>>.
+    Found 1-bit register for signal <rNum<12>>.
+    Found 1-bit register for signal <rNum<11>>.
+    Found 1-bit register for signal <rNum<10>>.
+    Found 1-bit register for signal <rNum<9>>.
+    Found 1-bit register for signal <rNum<8>>.
+    Found 1-bit register for signal <rNum<7>>.
+    Found 1-bit register for signal <rNum<6>>.
+    Found 1-bit register for signal <rNum<5>>.
+    Found 1-bit register for signal <rNum<4>>.
+    Found 1-bit register for signal <rNum<3>>.
+    Found 1-bit register for signal <rNum<2>>.
+    Found 1-bit register for signal <rNum<1>>.
+    Found 1-bit register for signal <rNum<0>>.
+    Found 4-bit register for signal <i>.
+    Found 24-bit register for signal <rNumber>.
+    Found 23-bit register for signal <C1>.
+    Found 23-bit adder for signal <C1[22]_GND_2_o_add_1_OUT> created at line 22.
+    Found 4-bit adder for signal <rNum[3]_GND_2_o_add_5_OUT> created at line 41.
+    Found 4-bit adder for signal <i[3]_GND_2_o_add_6_OUT> created at line 41.
+    Found 4-bit adder for signal <rNum[7]_GND_2_o_add_9_OUT> created at line 44.
+    Found 4-bit adder for signal <rNum[11]_GND_2_o_add_14_OUT> created at line 48.
+    Found 4-bit adder for signal <rNum[15]_GND_2_o_add_19_OUT> created at line 52.
+    Found 4-bit adder for signal <rNum[19]_GND_2_o_add_24_OUT> created at line 56.
+    Found 4-bit adder for signal <rNum[23]_GND_2_o_add_29_OUT> created at line 60.
+    Found 24-bit 8-to-1 multiplexer for signal <_n0209> created at line 38.
+    Found 4-bit comparator greater for signal <PWR_2_o_rNum[3]_LessThan_9_o> created at line 44
+    Found 4-bit comparator greater for signal <PWR_2_o_rNum[7]_LessThan_14_o> created at line 48
+    Found 4-bit comparator greater for signal <PWR_2_o_rNum[11]_LessThan_19_o> created at line 52
+    Found 4-bit comparator greater for signal <PWR_2_o_rNum[15]_LessThan_24_o> created at line 56
+    Found 4-bit comparator greater for signal <PWR_2_o_rNum[19]_LessThan_29_o> created at line 60
+    Found 4-bit comparator greater for signal <PWR_2_o_rNum[23]_LessThan_33_o> created at line 64
+    Summary:
+	inferred   8 Adder/Subtractor(s).
+	inferred  75 D-type flip-flop(s).
+	inferred   6 Comparator(s).
+	inferred  56 Multiplexer(s).
+Unit <demo_control_module> synthesized.
+
+Synthesizing Unit <smg_interface>.
+    Related source file is "E:\Project\AX309\Verilog\11_smg_interface_demo\rtl\smg_interface.v".
+    Summary:
+	no macro.
+Unit <smg_interface> synthesized.
+
+Synthesizing Unit <smg_control_module>.
+    Related source file is "E:\Project\AX309\Verilog\11_smg_interface_demo\rtl\smg_control_module.v".
+        T1MS = 16'b1100001101001111
+    Found 4-bit register for signal <i>.
+    Found 4-bit register for signal <rNumber>.
+    Found 16-bit register for signal <C1>.
+    Found 16-bit adder for signal <C1[15]_GND_4_o_add_1_OUT> created at line 23.
+    Found 4-bit adder for signal <i[3]_GND_4_o_add_5_OUT> created at line 40.
+    Summary:
+	inferred   2 Adder/Subtractor(s).
+	inferred  24 D-type flip-flop(s).
+	inferred   8 Multiplexer(s).
+Unit <smg_control_module> synthesized.
+
+Synthesizing Unit <smg_encode_module>.
+    Related source file is "E:\Project\AX309\Verilog\11_smg_interface_demo\rtl\smg_encode_module.v".
+        _0 = 8'b11000000
+        _1 = 8'b11111001
+        _2 = 8'b10100100
+        _3 = 8'b10110000
+        _4 = 8'b10011001
+        _5 = 8'b10010010
+        _6 = 8'b10000010
+        _7 = 8'b11111000
+        _8 = 8'b10000000
+        _9 = 8'b10010000
+    Found 8-bit register for signal <rSMG>.
+    Summary:
+	inferred   8 D-type flip-flop(s).
+	inferred   4 Multiplexer(s).
+Unit <smg_encode_module> synthesized.
+
+Synthesizing Unit <smg_scan_module>.
+    Related source file is "E:\Project\AX309\Verilog\11_smg_interface_demo\rtl\smg_scan_module.v".
+        T1MS = 16'b1100001101001111
+    Found 4-bit register for signal <i>.
+    Found 16-bit register for signal <C1>.
+    Found 6-bit register for signal <rScan>.
+    Found 16-bit adder for signal <C1[15]_GND_7_o_add_1_OUT> created at line 22.
+    Found 4-bit adder for signal <i[3]_GND_7_o_add_5_OUT> created at line 39.
+    Summary:
+	inferred   2 Adder/Subtractor(s).
+	inferred  26 D-type flip-flop(s).
+	inferred   5 Multiplexer(s).
+Unit <smg_scan_module> synthesized.
+
+=========================================================================
+HDL Synthesis Report
+
+Macro Statistics
+# Adders/Subtractors                                   : 12
+ 16-bit adder                                          : 2
+ 23-bit adder                                          : 1
+ 4-bit adder                                           : 9
+# Registers                                            : 34
+ 1-bit register                                        : 24
+ 16-bit register                                       : 2
+ 23-bit register                                       : 1
+ 24-bit register                                       : 1
+ 4-bit register                                        : 4
+ 6-bit register                                        : 1
+ 8-bit register                                        : 1
+# Comparators                                          : 6
+ 4-bit comparator greater                              : 6
+# Multiplexers                                         : 73
+ 1-bit 2-to-1 multiplexer                              : 44
+ 16-bit 2-to-1 multiplexer                             : 2
+ 23-bit 2-to-1 multiplexer                             : 1
+ 24-bit 2-to-1 multiplexer                             : 2
+ 24-bit 8-to-1 multiplexer                             : 1
+ 4-bit 2-to-1 multiplexer                              : 17
+ 6-bit 2-to-1 multiplexer                              : 2
+ 8-bit 2-to-1 multiplexer                              : 4
+
+=========================================================================
+
+=========================================================================
+*                       Advanced HDL Synthesis                          *
+=========================================================================
+
+
+Synthesizing (advanced) Unit <demo_control_module>.
+The following registers are absorbed into counter <C1>: 1 register on signal <C1>.
+Unit <demo_control_module> synthesized (advanced).
+
+Synthesizing (advanced) Unit <smg_control_module>.
+The following registers are absorbed into counter <C1>: 1 register on signal <C1>.
+Unit <smg_control_module> synthesized (advanced).
+
+Synthesizing (advanced) Unit <smg_scan_module>.
+The following registers are absorbed into counter <C1>: 1 register on signal <C1>.
+Unit <smg_scan_module> synthesized (advanced).
+
+=========================================================================
+Advanced HDL Synthesis Report
+
+Macro Statistics
+# Adders/Subtractors                                   : 9
+ 4-bit adder                                           : 9
+# Counters                                             : 3
+ 16-bit up counter                                     : 2
+ 23-bit up counter                                     : 1
+# Registers                                            : 78
+ Flip-Flops                                            : 78
+# Comparators                                          : 6
+ 4-bit comparator greater                              : 6
+# Multiplexers                                         : 70
+ 1-bit 2-to-1 multiplexer                              : 44
+ 24-bit 2-to-1 multiplexer                             : 2
+ 24-bit 8-to-1 multiplexer                             : 1
+ 4-bit 2-to-1 multiplexer                              : 17
+ 6-bit 2-to-1 multiplexer                              : 2
+ 8-bit 2-to-1 multiplexer                              : 4
+
+=========================================================================
+
+=========================================================================
+*                         Low Level Synthesis                           *
+=========================================================================
+WARNING:Xst:1710 - FF/Latch <rSMG_7> (without init value) has a constant value of 1 in block <smg_encode_module>. This FF/Latch will be trimmed during the optimization process.
+
+Optimizing unit <smg_interface_demo> ...
+WARNING:Xst:1710 - FF/Latch <U1/i_3> (without init value) has a constant value of 0 in block <smg_interface_demo>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <U1/i_3> (without init value) has a constant value of 0 in block <smg_interface_demo>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <U2/U3/i_3> (without init value) has a constant value of 0 in block <smg_interface_demo>. This FF/Latch will be trimmed during the optimization process.
+
+Optimizing unit <smg_control_module> ...
+WARNING:Xst:1710 - FF/Latch <i_3> (without init value) has a constant value of 0 in block <smg_control_module>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <i_3> (without init value) has a constant value of 0 in block <smg_control_module>. This FF/Latch will be trimmed during the optimization process.
+
+Optimizing unit <smg_encode_module> ...
+INFO:Xst:2261 - The FF/Latch <U1/C1_0> in Unit <smg_interface_demo> is equivalent to the following FF/Latch, which will be removed : <U2/U3/C1_0> 
+INFO:Xst:2261 - The FF/Latch <U1/C1_1> in Unit <smg_interface_demo> is equivalent to the following FF/Latch, which will be removed : <U2/U3/C1_1> 
+INFO:Xst:2261 - The FF/Latch <U1/C1_2> in Unit <smg_interface_demo> is equivalent to the following FF/Latch, which will be removed : <U2/U3/C1_2> 
+INFO:Xst:2261 - The FF/Latch <U1/C1_3> in Unit <smg_interface_demo> is equivalent to the following FF/Latch, which will be removed : <U2/U3/C1_3> 
+
+Mapping all equations...
+Building and optimizing final netlist ...
+Found area constraint ratio of 100 (+ 5) on block smg_interface_demo, actual ratio is 4.
+
+Final Macro Processing ...
+
+=========================================================================
+Final Register Report
+
+Macro Statistics
+# Registers                                            : 125
+ Flip-Flops                                            : 125
+
+=========================================================================
+
+=========================================================================
+*                           Partition Report                            *
+=========================================================================
+
+Partition Implementation Status
+-------------------------------
+
+  No Partitions were found in this design.
+
+-------------------------------
+
+=========================================================================
+*                            Design Summary                             *
+=========================================================================
+
+Top Level Output File Name         : smg_interface_demo.ngc
+
+Primitive and Black Box Usage:
+------------------------------
+# BELS                             : 351
+#      GND                         : 1
+#      INV                         : 6
+#      LUT1                        : 52
+#      LUT2                        : 58
+#      LUT3                        : 33
+#      LUT4                        : 19
+#      LUT5                        : 22
+#      LUT6                        : 53
+#      MUXCY                       : 52
+#      MUXF7                       : 3
+#      VCC                         : 1
+#      XORCY                       : 51
+# FlipFlops/Latches                : 125
+#      FDC                         : 78
+#      FDCE                        : 39
+#      FDPE                        : 8
+# Clock Buffers                    : 1
+#      BUFGP                       : 1
+# IO Buffers                       : 15
+#      IBUF                        : 1
+#      OBUF                        : 14
+
+Device utilization summary:
+---------------------------
+
+Selected Device : 6slx9ftg256-2 
+
+
+Slice Logic Utilization: 
+ Number of Slice Registers:             125  out of  11440     1%  
+ Number of Slice LUTs:                  243  out of   5720     4%  
+    Number used as Logic:               243  out of   5720     4%  
+
+Slice Logic Distribution: 
+ Number of LUT Flip Flop pairs used:    266
+   Number with an unused Flip Flop:     141  out of    266    53%  
+   Number with an unused LUT:            23  out of    266     8%  
+   Number of fully used LUT-FF pairs:   102  out of    266    38%  
+   Number of unique control sets:         7
+
+IO Utilization: 
+ Number of IOs:                          16
+ Number of bonded IOBs:                  16  out of    186     8%  
+
+Specific Feature Utilization:
+ Number of BUFG/BUFGCTRLs:                1  out of     16     6%  
+
+---------------------------
+Partition Resource Summary:
+---------------------------
+
+  No Partitions were found in this design.
+
+---------------------------
+
+
+=========================================================================
+Timing Report
+
+NOTE: THESE TIMING NUMBERS ARE ONLY A SYNTHESIS ESTIMATE.
+      FOR ACCURATE TIMING INFORMATION PLEASE REFER TO THE TRACE REPORT
+      GENERATED AFTER PLACE-and-ROUTE.
+
+Clock Information:
+------------------
+-----------------------------------+------------------------+-------+
+Clock Signal                       | Clock buffer(FF name)  | Load  |
+-----------------------------------+------------------------+-------+
+CLK                                | BUFGP                  | 125   |
+-----------------------------------+------------------------+-------+
+
+Asynchronous Control Signals Information:
+----------------------------------------
+No asynchronous control signals found in this design
+
+Timing Summary:
+---------------
+Speed Grade: -2
+
+   Minimum period: 5.040ns (Maximum Frequency: 198.413MHz)
+   Minimum input arrival time before clock: 5.008ns
+   Maximum output required time after clock: 4.162ns
+   Maximum combinational path delay: No path found
+
+Timing Details:
+---------------
+All values displayed in nanoseconds (ns)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'CLK'
+  Clock period: 5.040ns (frequency: 198.413MHz)
+  Total number of paths / destination ports: 2698 / 172
+-------------------------------------------------------------------------
+Delay:               5.040ns (Levels of Logic = 4)
+  Source:            U1/C1_14 (FF)
+  Destination:       U1/rNum_2 (FF)
+  Source Clock:      CLK rising
+  Destination Clock: CLK rising
+
+  Data Path: U1/C1_14 to U1/rNum_2
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDC:C->Q              2   0.525   1.156  U1/C1_14 (U1/C1_14)
+     LUT5:I0->O            3   0.254   0.994  U1/C1[22]_PWR_2_o_equal_5_o<22>2 (U1/C1[22]_PWR_2_o_equal_5_o<22>1)
+     LUT6:I3->O            1   0.235   0.681  U1/C1[22]_PWR_2_o_equal_5_o<22>5_1 (U1/C1[22]_PWR_2_o_equal_5_o<22>5)
+     MUXF7:S->O            1   0.185   0.682  U1/Mmux_i[3]_rNum[23]_select_46_OUT121 (U1/Mmux_i[3]_rNum[23]_select_46_OUT121)
+     LUT6:I5->O            1   0.254   0.000  U1/Mmux_i[3]_rNum[23]_select_46_OUT171 (U1/i[3]_rNum[23]_select_46_OUT<2>)
+     FDC:D                     0.074          U1/rNum_2
+    ----------------------------------------
+    Total                      5.040ns (1.527ns logic, 3.513ns route)
+                                       (30.3% logic, 69.7% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'CLK'
+  Total number of paths / destination ports: 125 / 125
+-------------------------------------------------------------------------
+Offset:              5.008ns (Levels of Logic = 2)
+  Source:            RSTn (PAD)
+  Destination:       U1/rNumber_23 (FF)
+  Destination Clock: CLK rising
+
+  Data Path: RSTn to U1/rNumber_23
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O             1   1.328   0.681  RSTn_IBUF (RSTn_IBUF)
+     INV:I->O            125   0.255   2.285  RSTn_inv1_INV_0 (RSTn_inv)
+     FDC:CLR                   0.459          U1/C1_0
+    ----------------------------------------
+    Total                      5.008ns (2.042ns logic, 2.966ns route)
+                                       (40.8% logic, 59.2% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'CLK'
+  Total number of paths / destination ports: 13 / 13
+-------------------------------------------------------------------------
+Offset:              4.162ns (Levels of Logic = 1)
+  Source:            U2/U3/rScan_5 (FF)
+  Destination:       Scan_Sig<5> (PAD)
+  Source Clock:      CLK rising
+
+  Data Path: U2/U3/rScan_5 to Scan_Sig<5>
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDPE:C->Q             2   0.525   0.725  U2/U3/rScan_5 (U2/U3/rScan_5)
+     OBUF:I->O                 2.912          Scan_Sig_5_OBUF (Scan_Sig<5>)
+    ----------------------------------------
+    Total                      4.162ns (3.437ns logic, 0.725ns route)
+                                       (82.6% logic, 17.4% route)
+
+=========================================================================
+
+Cross Clock Domains Report:
+--------------------------
+
+Clock to Setup on destination clock CLK
+---------------+---------+---------+---------+---------+
+               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------+---------+---------+---------+---------+
+CLK            |    5.040|         |         |         |
+---------------+---------+---------+---------+---------+
+
+=========================================================================
+
+
+Total REAL time to Xst completion: 5.00 secs
+Total CPU time to Xst completion: 5.08 secs
+ 
+--> 
+
+Total memory usage is 260896 kilobytes
+
+Number of errors   :    0 (   0 filtered)
+Number of warnings :    6 (   0 filtered)
+Number of infos    :    4 (   0 filtered)
+

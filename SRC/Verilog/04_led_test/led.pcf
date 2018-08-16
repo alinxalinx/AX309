@@ -1,0 +1,13 @@
+//! **************************************************************************
+// Written by: Map O.40d on Mon Jan 12 16:51:33 2015
+//! **************************************************************************
+
+SCHEMATIC START;
+COMP "clk" LOCATE = SITE "V10" LEVEL 1;
+COMP "LED<0>" LOCATE = SITE "V5" LEVEL 1;
+COMP "LED<1>" LOCATE = SITE "R3" LEVEL 1;
+COMP "LED<2>" LOCATE = SITE "T3" LEVEL 1;
+COMP "LED<3>" LOCATE = SITE "T4" LEVEL 1;
+COMP "rst" LOCATE = SITE "N4" LEVEL 1;
+SCHEMATIC END;
+

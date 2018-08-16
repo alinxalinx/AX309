@@ -1,0 +1,29 @@
+xst -intstyle ise -ifn "E:/Project/AX309/Verilog/smg_interface_demo/smg_interface_demo.xst" -ofn "E:/Project/AX309/Verilog/smg_interface_demo/smg_interface_demo.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc smg_interface_dem.ucf -p xc6slx9-ftg256-2 smg_interface_demo.ngc smg_interface_demo.ngd  
+map -intstyle ise -p xc6slx9-ftg256-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o smg_interface_demo_map.ncd smg_interface_demo.ngd smg_interface_demo.pcf 
+par -w -intstyle ise -ol high -mt off smg_interface_demo_map.ncd smg_interface_demo.ncd smg_interface_demo.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml smg_interface_demo.twx smg_interface_demo.ncd -o smg_interface_demo.twr smg_interface_demo.pcf -ucf smg_interface_dem.ucf 
+bitgen -intstyle ise -f smg_interface_demo.ut smg_interface_demo.ncd 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc smg_interface_dem.ucf -p xc6slx9-ftg256-2 smg_interface_demo.ngc smg_interface_demo.ngd  
+map -intstyle ise -p xc6slx9-ftg256-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o smg_interface_demo_map.ncd smg_interface_demo.ngd smg_interface_demo.pcf 
+par -w -intstyle ise -ol high -mt off smg_interface_demo_map.ncd smg_interface_demo.ncd smg_interface_demo.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml smg_interface_demo.twx smg_interface_demo.ncd -o smg_interface_demo.twr smg_interface_demo.pcf -ucf smg_interface_dem.ucf 
+bitgen -intstyle ise -f smg_interface_demo.ut smg_interface_demo.ncd 
+xst -intstyle ise -ifn "E:/Project/AX309/Verilog/11_smg_interface_demo/smg_interface_demo.xst" -ofn "E:/Project/AX309/Verilog/11_smg_interface_demo/smg_interface_demo.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc smg_interface_dem.ucf -p xc6slx9-ftg256-2 smg_interface_demo.ngc smg_interface_demo.ngd  
+map -intstyle ise -p xc6slx9-ftg256-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o smg_interface_demo_map.ncd smg_interface_demo.ngd smg_interface_demo.pcf 
+par -w -intstyle ise -ol high -mt off smg_interface_demo_map.ncd smg_interface_demo.ncd smg_interface_demo.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml smg_interface_demo.twx smg_interface_demo.ncd -o smg_interface_demo.twr smg_interface_demo.pcf -ucf smg_interface_dem.ucf 
+bitgen -intstyle ise -f smg_interface_demo.ut smg_interface_demo.ncd 
+xst -intstyle ise -ifn "E:/Project/AX309/Verilog/11_smg_interface_demo/smg_interface_demo.xst" -ofn "E:/Project/AX309/Verilog/11_smg_interface_demo/smg_interface_demo.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc smg_interface_dem.ucf -p xc6slx9-ftg256-2 smg_interface_demo.ngc smg_interface_demo.ngd  
+map -intstyle ise -p xc6slx9-ftg256-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o smg_interface_demo_map.ncd smg_interface_demo.ngd smg_interface_demo.pcf 
+par -w -intstyle ise -ol high -mt off smg_interface_demo_map.ncd smg_interface_demo.ncd smg_interface_demo.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml smg_interface_demo.twx smg_interface_demo.ncd -o smg_interface_demo.twr smg_interface_demo.pcf -ucf smg_interface_dem.ucf 
+bitgen -intstyle ise -f smg_interface_demo.ut smg_interface_demo.ncd 
+xst -intstyle ise -ifn "E:/Project/AX309/Verilog/11_smg_interface_demo/smg_interface_demo.xst" -ofn "E:/Project/AX309/Verilog/11_smg_interface_demo/smg_interface_demo.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc smg_interface_dem.ucf -p xc6slx9-ftg256-2 smg_interface_demo.ngc smg_interface_demo.ngd  
+map -intstyle ise -p xc6slx9-ftg256-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o smg_interface_demo_map.ncd smg_interface_demo.ngd smg_interface_demo.pcf 
+par -w -intstyle ise -ol high -mt off smg_interface_demo_map.ncd smg_interface_demo.ncd smg_interface_demo.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml smg_interface_demo.twx smg_interface_demo.ncd -o smg_interface_demo.twr smg_interface_demo.pcf -ucf smg_interface_dem.ucf 
+bitgen -intstyle ise -f smg_interface_demo.ut smg_interface_demo.ncd 

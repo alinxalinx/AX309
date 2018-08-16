@@ -1,0 +1,10 @@
+
+
+E:/Project/AX301/verilog/sdram_ov7670_rgb_vga_640480/sdram_ov7670_rgb_vga_640480/core/sdram_pll.v
+
+Mar 01 04PM:19:19>: Error in CNX file format.
+
+Error messages are listed in file
+E:/Project/AX301/verilog/sdram_ov7670_rgb_vga_640480/sdram_ov7670_rgb_vga_640480/core/sdram_pll.cnxerr.
+
+Can't create the custom megafunction variation file(s)

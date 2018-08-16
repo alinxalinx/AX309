@@ -1,0 +1,57 @@
+
+NET "clk_50m" LOC = T8 | TNM_NET = sys_clk_pin;
+TIMESPEC TS_sys_clk_pin = PERIOD sys_clk_pin 50000 kHz;
+
+##
+NET reset_n                  LOC = L3 | IOSTANDARD = "LVCMOS33"; ## reset pushbutton
+##
+
+##################################################################################
+#SDRAM pin define
+##################################################################################
+NET S_CLK                  LOC =  H4 | IOSTANDARD = "LVCMOS33";        ## SDRAM CLOCK
+NET S_CKE                  LOC =  H2 | IOSTANDARD = "LVCMOS33";        ## SDRAM CKE
+NET S_NCS                  LOC =  G1 | IOSTANDARD = "LVCMOS33";        ## SDRAM CS
+NET S_NWE                  LOC =  E1 | IOSTANDARD = "LVCMOS33";        ## SDRAM NWE
+NET S_NCAS                 LOC =  F2 | IOSTANDARD = "LVCMOS33";        ## SDRAM CAS
+NET S_NRAS                 LOC =  F1 | IOSTANDARD = "LVCMOS33";        ## SDRAM RAS
+
+NET S_DQM<0>               LOC =  E2 | IOSTANDARD = "LVCMOS33";        ## SDRAM DQM0
+NET S_DQM<1>               LOC =  H1 | IOSTANDARD = "LVCMOS33";        ## SDRAM DQM1
+
+NET S_BA<0>                LOC =  G6 | IOSTANDARD = "LVCMOS33";        ## SDRAM BA0
+NET S_BA<1>                LOC =  J6 | IOSTANDARD = "LVCMOS33";        ## SDRAM BA1
+
+NET S_A<0>                 LOC =  J3 | IOSTANDARD = "LVCMOS33";        ## SDRAM ADDR0
+NET S_A<1>                 LOC =  J4 | IOSTANDARD = "LVCMOS33";        ## SDRAM ADDR1
+NET S_A<2>                 LOC =  K3 | IOSTANDARD = "LVCMOS33";        ## SDRAM ADDR2
+NET S_A<3>                 LOC =  K5 | IOSTANDARD = "LVCMOS33";        ## SDRAM ADDR3
+NET S_A<4>                 LOC =  P1 | IOSTANDARD = "LVCMOS33";        ## SDRAM ADDR4
+NET S_A<5>                 LOC =  N1 | IOSTANDARD = "LVCMOS33";        ## SDRAM ADDR5
+NET S_A<6>                 LOC =  M2 | IOSTANDARD = "LVCMOS33";        ## SDRAM ADDR6
+NET S_A<7>                 LOC =  M1 | IOSTANDARD = "LVCMOS33";        ## SDRAM ADDR7
+NET S_A<8>                 LOC =  L1 | IOSTANDARD = "LVCMOS33";        ## SDRAM ADDR8
+NET S_A<9>                 LOC =  K2 | IOSTANDARD = "LVCMOS33";        ## SDRAM ADDR9
+NET S_A<10>                LOC =  K6 | IOSTANDARD = "LVCMOS33";        ## SDRAM ADDR10
+NET S_A<11>                LOC =  K1 | IOSTANDARD = "LVCMOS33";        ## SDRAM ADDR11
+NET S_A<12>                LOC =  J1 | IOSTANDARD = "LVCMOS33";        ## SDRAM ADDR12
+
+NET S_DB<0>                 LOC = A3 | IOSTANDARD = "LVCMOS33";        ## SDRAM DATA0
+NET S_DB<1>                 LOC = B3 | IOSTANDARD = "LVCMOS33";        ## SDRAM DATA1
+NET S_DB<2>                 LOC = A2 | IOSTANDARD = "LVCMOS33";        ## SDRAM DATA2
+NET S_DB<3>                 LOC = B2 | IOSTANDARD = "LVCMOS33";        ## SDRAM DATA3
+NET S_DB<4>                 LOC = B1 | IOSTANDARD = "LVCMOS33";        ## SDRAM DATA4
+NET S_DB<5>                 LOC = C2 | IOSTANDARD = "LVCMOS33";        ## SDRAM DATA5
+NET S_DB<6>                 LOC = C1 | IOSTANDARD = "LVCMOS33";        ## SDRAM DATA6
+NET S_DB<7>                 LOC = D1 | IOSTANDARD = "LVCMOS33";        ## SDRAM DATA7
+NET S_DB<8>                 LOC = H5 | IOSTANDARD = "LVCMOS33";        ## SDRAM DATA8
+NET S_DB<9>                 LOC = G5 | IOSTANDARD = "LVCMOS33";        ## SDRAM DATA9
+NET S_DB<10>                LOC = H3 | IOSTANDARD = "LVCMOS33";        ## SDRAM DATA10
+NET S_DB<11>                LOC = F6 | IOSTANDARD = "LVCMOS33";        ## SDRAM DATA11
+NET S_DB<12>                LOC = G3 | IOSTANDARD = "LVCMOS33";        ## SDRAM DATA12
+NET S_DB<13>                LOC = F5 | IOSTANDARD = "LVCMOS33";        ## SDRAM DATA13
+NET S_DB<14>                LOC = F3 | IOSTANDARD = "LVCMOS33";        ## SDRAM DATA14
+NET S_DB<15>                LOC = F4 | IOSTANDARD = "LVCMOS33";        ## SDRAM DATA15
+
+
+PIN "u_system_ctrl/u_sdram_pll/clkout3_buf.O" CLOCK_DEDICATED_ROUTE =  FALSE;

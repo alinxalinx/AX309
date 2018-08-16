@@ -1,0 +1,8 @@
+INTSTYLE=ise
+INFILE=E:\Project\AX516\verilog\LED\led.ncd
+OUTFILE=E:\Project\AX516\verilog\LED\led.bit
+FAMILY=Spartan6
+PART=xc6slx16-3csg324
+WORKINGDIR=E:\Project\AX516\verilog\LED
+LICENSE=WebPack
+USER_INFO=No user information available.

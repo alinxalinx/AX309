@@ -1,0 +1,12 @@
+xst -intstyle ise -ifn "F:/PROJECT/LED/led.xst" -ofn "F:/PROJECT/LED/led.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc led.ucf -p xc6slx16-csg324-3 led.ngc led.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o led_map.ncd led.ngd led.pcf 
+par -w -intstyle ise -ol high -mt off led_map.ncd led.ncd led.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml led.twx led.ncd -o led.twr led.pcf -ucf led.ucf 
+bitgen -intstyle ise -f led.ut led.ncd 
+xst -intstyle ise -ifn "E:/Project/AX516/verilog/LED/led.xst" -ofn "E:/Project/AX516/verilog/LED/led.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc led.ucf -p xc6slx16-csg324-3 led.ngc led.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o led_map.ncd led.ngd led.pcf 
+par -w -intstyle ise -ol high -mt off led_map.ncd led.ncd led.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml led.twx led.ncd -o led.twr led.pcf -ucf led.ucf 
+bitgen -intstyle ise -f led.ut led.ncd 

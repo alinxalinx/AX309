@@ -1,0 +1,108 @@
+xst -intstyle ise -ifn "E:/Project/AX516/verilog/eeprom_test/eeprom_test.xst" -ofn "E:/Project/AX516/verilog/eeprom_test/eeprom_test.syr" 
+xst -intstyle ise -ifn "E:/Project/AX516/verilog/eeprom_test/eeprom_test.xst" -ofn "E:/Project/AX516/verilog/eeprom_test/eeprom_test.syr" 
+xst -intstyle ise -ifn "E:/Project/AX516/verilog/eeprom_test/eeprom_test.xst" -ofn "E:/Project/AX516/verilog/eeprom_test/eeprom_test.syr" 
+xst -intstyle ise -ifn "E:/Project/AX516/verilog/eeprom_test/eeprom_test.xst" -ofn "E:/Project/AX516/verilog/eeprom_test/eeprom_test.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -i -p xa7a100t-csg324-2I eeprom_test.ngc eeprom_test.ngd  
+map -intstyle ise -p xa7a100t-csg324-2I -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off -power off -o eeprom_test_map.ncd eeprom_test.ngd eeprom_test.pcf 
+par -w -intstyle ise -ol high -mt off eeprom_test_map.ncd eeprom_test.ncd eeprom_test.pcf 
+trce -intstyle ise -v 3 -s 2I -n 3 -fastpaths -xml eeprom_test.twx eeprom_test.ncd -o eeprom_test.twr eeprom_test.pcf 
+bitgen -intstyle ise -f eeprom_test.ut eeprom_test.ncd 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc rtl/eeprom_test.ucf -p xa7a100t-csg324-2I eeprom_test.ngc eeprom_test.ngd  
+map -intstyle ise -p xa7a100t-csg324-2I -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off -power off -o eeprom_test_map.ncd eeprom_test.ngd eeprom_test.pcf 
+xst -intstyle ise -ifn "E:/Project/AX516/verilog/eeprom_test/eeprom_test.xst" -ofn "E:/Project/AX516/verilog/eeprom_test/eeprom_test.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc rtl/eeprom_test.ucf -p xc6slx16-csg324-2 eeprom_test.ngc eeprom_test.ngd  
+map -intstyle ise -p xc6slx16-csg324-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o eeprom_test_map.ncd eeprom_test.ngd eeprom_test.pcf 
+par -w -intstyle ise -ol high -mt off eeprom_test_map.ncd eeprom_test.ncd eeprom_test.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml eeprom_test.twx eeprom_test.ncd -o eeprom_test.twr eeprom_test.pcf 
+bitgen -intstyle ise -f eeprom_test.ut eeprom_test.ncd 
+xst -intstyle ise -ifn "E:/Project/AX516/verilog/eeprom_test/eeprom_test.xst" -ofn "E:/Project/AX516/verilog/eeprom_test/eeprom_test.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc rtl/eeprom_test.ucf -p xc6slx16-csg324-2 eeprom_test.ngc eeprom_test.ngd  
+map -intstyle ise -p xc6slx16-csg324-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o eeprom_test_map.ncd eeprom_test.ngd eeprom_test.pcf 
+par -w -intstyle ise -ol high -mt off eeprom_test_map.ncd eeprom_test.ncd eeprom_test.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml eeprom_test.twx eeprom_test.ncd -o eeprom_test.twr eeprom_test.pcf 
+bitgen -intstyle ise -f eeprom_test.ut eeprom_test.ncd 
+xst -intstyle ise -ifn "E:/Project/AX516/verilog/eeprom_test/eeprom_test.xst" -ofn "E:/Project/AX516/verilog/eeprom_test/eeprom_test.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc rtl/eeprom_test.ucf -p xc6slx16-csg324-2 eeprom_test.ngc eeprom_test.ngd  
+map -intstyle ise -p xc6slx16-csg324-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o eeprom_test_map.ncd eeprom_test.ngd eeprom_test.pcf 
+par -w -intstyle ise -ol high -mt off eeprom_test_map.ncd eeprom_test.ncd eeprom_test.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml eeprom_test.twx eeprom_test.ncd -o eeprom_test.twr eeprom_test.pcf 
+bitgen -intstyle ise -f eeprom_test.ut eeprom_test.ncd 
+xst -intstyle ise -ifn "E:/Project/AX516/verilog/eeprom_test/eeprom_test.xst" -ofn "E:/Project/AX516/verilog/eeprom_test/eeprom_test.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc rtl/eeprom_test.ucf -p xc6slx16-csg324-2 eeprom_test.ngc eeprom_test.ngd  
+map -intstyle ise -p xc6slx16-csg324-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o eeprom_test_map.ncd eeprom_test.ngd eeprom_test.pcf 
+par -w -intstyle ise -ol high -mt off eeprom_test_map.ncd eeprom_test.ncd eeprom_test.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml eeprom_test.twx eeprom_test.ncd -o eeprom_test.twr eeprom_test.pcf 
+bitgen -intstyle ise -f eeprom_test.ut eeprom_test.ncd 
+xst -intstyle ise -ifn "E:/Project/AX516/verilog/eeprom_test/eeprom_test.xst" -ofn "E:/Project/AX516/verilog/eeprom_test/eeprom_test.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc rtl/eeprom_test.ucf -p xc6slx16-csg324-2 eeprom_test.ngc eeprom_test.ngd  
+map -intstyle ise -p xc6slx16-csg324-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o eeprom_test_map.ncd eeprom_test.ngd eeprom_test.pcf 
+par -w -intstyle ise -ol high -mt off eeprom_test_map.ncd eeprom_test.ncd eeprom_test.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml eeprom_test.twx eeprom_test.ncd -o eeprom_test.twr eeprom_test.pcf 
+bitgen -intstyle ise -f eeprom_test.ut eeprom_test.ncd 
+xst -intstyle ise -ifn "E:/Project/AX516/verilog/eeprom_test/eeprom_test.xst" -ofn "E:/Project/AX516/verilog/eeprom_test/eeprom_test.syr" 
+xst -intstyle ise -ifn "E:/Project/AX516/verilog/eeprom_test/eeprom_test.xst" -ofn "E:/Project/AX516/verilog/eeprom_test/eeprom_test.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc rtl/eeprom_test.ucf -p xc6slx16-csg324-2 eeprom_test.ngc eeprom_test.ngd  
+map -intstyle ise -p xc6slx16-csg324-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o eeprom_test_map.ncd eeprom_test.ngd eeprom_test.pcf 
+par -w -intstyle ise -ol high -mt off eeprom_test_map.ncd eeprom_test.ncd eeprom_test.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml eeprom_test.twx eeprom_test.ncd -o eeprom_test.twr eeprom_test.pcf 
+bitgen -intstyle ise -f eeprom_test.ut eeprom_test.ncd 
+xst -intstyle ise -ifn "E:/Project/AX516/verilog/eeprom_test/eeprom_test.xst" -ofn "E:/Project/AX516/verilog/eeprom_test/eeprom_test.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc rtl/eeprom_test.ucf -p xc6slx16-csg324-2 eeprom_test.ngc eeprom_test.ngd  
+map -intstyle ise -p xc6slx16-csg324-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o eeprom_test_map.ncd eeprom_test.ngd eeprom_test.pcf 
+par -w -intstyle ise -ol high -mt off eeprom_test_map.ncd eeprom_test.ncd eeprom_test.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml eeprom_test.twx eeprom_test.ncd -o eeprom_test.twr eeprom_test.pcf 
+bitgen -intstyle ise -f eeprom_test.ut eeprom_test.ncd 
+xst -intstyle ise -ifn "E:/Project/AX516/verilog/eeprom_test/eeprom_test.xst" -ofn "E:/Project/AX516/verilog/eeprom_test/eeprom_test.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc rtl/eeprom_test.ucf -p xc6slx16-csg324-2 eeprom_test.ngc eeprom_test.ngd  
+map -intstyle ise -p xc6slx16-csg324-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o eeprom_test_map.ncd eeprom_test.ngd eeprom_test.pcf 
+par -w -intstyle ise -ol high -mt off eeprom_test_map.ncd eeprom_test.ncd eeprom_test.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml eeprom_test.twx eeprom_test.ncd -o eeprom_test.twr eeprom_test.pcf 
+bitgen -intstyle ise -f eeprom_test.ut eeprom_test.ncd 
+xst -intstyle ise -ifn "E:/Project/AX545/verilog/eeprom_test/eeprom_test.xst" -ofn "E:/Project/AX545/verilog/eeprom_test/eeprom_test.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc rtl/eeprom_test.ucf -p xc6slx45-csg324-2 eeprom_test.ngc eeprom_test.ngd  
+map -intstyle ise -p xc6slx45-csg324-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o eeprom_test_map.ncd eeprom_test.ngd eeprom_test.pcf 
+par -w -intstyle ise -ol high -mt off eeprom_test_map.ncd eeprom_test.ncd eeprom_test.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml eeprom_test.twx eeprom_test.ncd -o eeprom_test.twr eeprom_test.pcf 
+bitgen -intstyle ise -f eeprom_test.ut eeprom_test.ncd 
+xst -intstyle ise -ifn "E:/Project/AX545/verilog/eeprom_test/eeprom_test.xst" -ofn "E:/Project/AX545/verilog/eeprom_test/eeprom_test.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc rtl/eeprom_test.ucf -p xc6slx45-csg324-2 eeprom_test.ngc eeprom_test.ngd  
+map -intstyle ise -p xc6slx45-csg324-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o eeprom_test_map.ncd eeprom_test.ngd eeprom_test.pcf 
+par -w -intstyle ise -ol high -mt off eeprom_test_map.ncd eeprom_test.ncd eeprom_test.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml eeprom_test.twx eeprom_test.ncd -o eeprom_test.twr eeprom_test.pcf 
+bitgen -intstyle ise -f eeprom_test.ut eeprom_test.ncd 
+xst -intstyle ise -ifn "E:/Project/AX309/Verilog/eeprom_test/eeprom_test.xst" -ofn "E:/Project/AX309/Verilog/eeprom_test/eeprom_test.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc rtl/eeprom_test.ucf -p xc6slx9-ftg256-2 eeprom_test.ngc eeprom_test.ngd  
+map -intstyle ise -p xc6slx9-ftg256-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o eeprom_test_map.ncd eeprom_test.ngd eeprom_test.pcf 
+par -w -intstyle ise -ol high -mt off eeprom_test_map.ncd eeprom_test.ncd eeprom_test.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml eeprom_test.twx eeprom_test.ncd -o eeprom_test.twr eeprom_test.pcf 
+bitgen -intstyle ise -f eeprom_test.ut eeprom_test.ncd 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc rtl/eeprom_test.ucf -p xc6slx9-ftg256-2 eeprom_test.ngc eeprom_test.ngd  
+map -intstyle ise -p xc6slx9-ftg256-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o eeprom_test_map.ncd eeprom_test.ngd eeprom_test.pcf 
+par -w -intstyle ise -ol high -mt off eeprom_test_map.ncd eeprom_test.ncd eeprom_test.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml eeprom_test.twx eeprom_test.ncd -o eeprom_test.twr eeprom_test.pcf 
+bitgen -intstyle ise -f eeprom_test.ut eeprom_test.ncd 
+xst -intstyle ise -ifn "E:/Project/AX309/CD/09_VERILOG/08_eeprom_test/eeprom_test.xst" -ofn "E:/Project/AX309/CD/09_VERILOG/08_eeprom_test/eeprom_test.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc rtl/eeprom_test.ucf -p xc6slx9-ftg256-2 eeprom_test.ngc eeprom_test.ngd  
+map -intstyle ise -p xc6slx9-ftg256-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o eeprom_test_map.ncd eeprom_test.ngd eeprom_test.pcf 
+par -w -intstyle ise -ol high -mt off eeprom_test_map.ncd eeprom_test.ncd eeprom_test.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml eeprom_test.twx eeprom_test.ncd -o eeprom_test.twr eeprom_test.pcf 
+bitgen -intstyle ise -f eeprom_test.ut eeprom_test.ncd 
+xst -intstyle ise -ifn "E:/BaiduYunDownload/AX309.160229/AX309/09_VERILOG/08_eeprom_test/eeprom_test.xst" -ofn "E:/BaiduYunDownload/AX309.160229/AX309/09_VERILOG/08_eeprom_test/eeprom_test.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc rtl/eeprom_test.ucf -p xc6slx9-ftg256-2 eeprom_test.ngc eeprom_test.ngd  
+map -intstyle ise -p xc6slx9-ftg256-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o eeprom_test_map.ncd eeprom_test.ngd eeprom_test.pcf 
+par -w -intstyle ise -ol high -mt off eeprom_test_map.ncd eeprom_test.ncd eeprom_test.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml eeprom_test.twx eeprom_test.ncd -o eeprom_test.twr eeprom_test.pcf 
+bitgen -intstyle ise -f eeprom_test.ut eeprom_test.ncd 
+xst -intstyle ise -ifn "E:/BaiduYunDownload/AX309.160229/AX309/09_VERILOG/08_eeprom_test/eeprom_test.xst" -ofn "E:/BaiduYunDownload/AX309.160229/AX309/09_VERILOG/08_eeprom_test/eeprom_test.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc rtl/eeprom_test.ucf -p xc6slx9-ftg256-2 eeprom_test.ngc eeprom_test.ngd  
+map -intstyle ise -p xc6slx9-ftg256-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o eeprom_test_map.ncd eeprom_test.ngd eeprom_test.pcf 
+par -w -intstyle ise -ol high -mt off eeprom_test_map.ncd eeprom_test.ncd eeprom_test.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml eeprom_test.twx eeprom_test.ncd -o eeprom_test.twr eeprom_test.pcf 
+bitgen -intstyle ise -f eeprom_test.ut eeprom_test.ncd 
+xst -intstyle ise -ifn "E:/BaiduYunDownload/AX309.160229/AX309/09_VERILOG/08_eeprom_test/eeprom_test.xst" -ofn "E:/BaiduYunDownload/AX309.160229/AX309/09_VERILOG/08_eeprom_test/eeprom_test.syr" 
+xst -intstyle ise -ifn "E:/BaiduYunDownload/AX309.160229/AX309/09_VERILOG/08_eeprom_test/eeprom_test.xst" -ofn "E:/BaiduYunDownload/AX309.160229/AX309/09_VERILOG/08_eeprom_test/eeprom_test.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc rtl/eeprom_test.ucf -p xc6slx9-ftg256-2 eeprom_test.ngc eeprom_test.ngd  
+map -intstyle ise -p xc6slx9-ftg256-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o eeprom_test_map.ncd eeprom_test.ngd eeprom_test.pcf 
+par -w -intstyle ise -ol high -mt off eeprom_test_map.ncd eeprom_test.ncd eeprom_test.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml eeprom_test.twx eeprom_test.ncd -o eeprom_test.twr eeprom_test.pcf 
+bitgen -intstyle ise -f eeprom_test.ut eeprom_test.ncd 

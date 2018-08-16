@@ -1,0 +1,49 @@
+# Reading C:/modeltech64_10.1c/tcl/vsim/pref.tcl 
+# //  ModelSim SE-64 10.1c Jul 28 2012 
+# //
+# //  Copyright 1991-2012 Mentor Graphics Corporation
+# //  All Rights Reserved.
+# //
+# //  THIS WORK CONTAINS TRADE SECRET AND PROPRIETARY INFORMATION
+# //  WHICH IS THE PROPERTY OF MENTOR GRAPHICS CORPORATION OR ITS
+# //  LICENSORS AND IS SUBJECT TO LICENSE TERMS.
+# //
+# do {vtf_led_test.fdo} 
+# ** Warning: (vlib-34) Library already exists at "work".
+# 
+# Model Technology ModelSim SE-64 vlog 10.1c Compiler 2012.07 Jul 27 2012
+# -- Compiling module led_test
+# 
+# Top level modules:
+# 	led_test
+# Model Technology ModelSim SE-64 vlog 10.1c Compiler 2012.07 Jul 27 2012
+# -- Compiling module vtf_led_test
+# 
+# Top level modules:
+# 	vtf_led_test
+# Model Technology ModelSim SE-64 vlog 10.1c Compiler 2012.07 Jul 27 2012
+# -- Compiling module glbl
+# 
+# Top level modules:
+# 	glbl
+# vsim -L xilinxcorelib_ver -L unisims_ver -L unimacro_ver -L secureip -lib work -voptargs=\"+acc\" -t 1ps work.vtf_led_test glbl 
+# Loading work.vtf_led_test(fast)
+# Loading work.led_test(fast)
+# Loading work.glbl(fast)
+# .main_pane.wave.interior.cs.body.pw.wf
+# .main_pane.structure.interior.cs.body.struct
+# .main_pane.objects.interior.cs.body.tree
+restart
+# Loading work.vtf_led_test(fast)
+# Loading work.led_test(fast)
+# Loading work.glbl(fast)
+run -all
+# Break in Module vtf_led_test at testbench/vtf_led_test.v line 49
+add wave -position insertpoint  \
+sim:/vtf_led_test/uut/timer
+restart
+# Loading work.vtf_led_test(fast)
+# Loading work.led_test(fast)
+# Loading work.glbl(fast)
+run -all
+# Break in Module vtf_led_test at testbench/vtf_led_test.v line 49

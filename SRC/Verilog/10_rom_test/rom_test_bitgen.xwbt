@@ -1,0 +1,8 @@
+INTSTYLE=ise
+INFILE=E:\Project\AX309\CD\09_VERILOG\10_rom_test\rom_test.ncd
+OUTFILE=E:\Project\AX309\CD\09_VERILOG\10_rom_test\rom_test.bit
+FAMILY=Spartan6
+PART=xc6slx9-3ftg256
+WORKINGDIR=E:\Project\AX309\CD\09_VERILOG\10_rom_test
+LICENSE=WebPack
+USER_INFO=__0_0_0

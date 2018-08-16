@@ -1,0 +1,8 @@
+Release 13.1 Drc O.40d (nt64)
+Copyright (c) 1995-2011 Xilinx, Inc.  All rights reserved.
+
+Mon Jan 12 16:51:49 2015
+
+drc -z led.ncd led.pcf
+
+DRC detected 0 errors and 0 warnings.

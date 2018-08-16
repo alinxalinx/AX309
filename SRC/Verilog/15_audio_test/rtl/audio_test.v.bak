@@ -1,0 +1,177 @@
+`timescale 1ns / 1ps
+//////////////////////////////////////////////////////////////////////////////////
+// Module Name:    audio_test
+// function: Key1 push down-record the voice to ddr, Key1 push off : play the voice from ddr
+//////////////////////////////////////////////////////////////////////////////////
+module audio_test(
+   input clk_50m,
+	input reset_n,
+   output [3:0] led,                //led灯指示
+   input [3:0] key,                 //KEY按键	
+	
+	input BCLK,
+	input DACLRC,                    //WM8731 左右声道输出
+	output DACDAT,                   //WM8731 语音输出
+					
+	input ADCLRC,                    //WM8731 左右声道输入
+	input ADCDAT,					      //WM8731 语音输入
+	
+	output I2C_SCLK,
+	inout I2C_SDAT,
+
+   //DDR的接口信号
+   inout  [15:0]            mcb3_dram_dq,
+   output [12:0]            mcb3_dram_a,
+   output [2:0]             mcb3_dram_ba,
+   output                   mcb3_dram_ras_n,
+   output                   mcb3_dram_cas_n,
+   output                   mcb3_dram_we_n,
+   output                   mcb3_dram_odt,
+   output                   mcb3_dram_cke,
+   output                   mcb3_dram_dm,
+   inout                    mcb3_dram_udqs,
+   inout                    mcb3_dram_udqs_n,
+   inout                    mcb3_rzq,
+   inout                    mcb3_zio,
+   output                   mcb3_dram_udm,
+   inout                    mcb3_dram_dqs,
+   inout                    mcb3_dram_dqs_n,
+   output                   mcb3_dram_ck,
+   output                   mcb3_dram_ck_n
+		
+    );
+
+
+wire [63:0] wav_out_data;
+wire [63:0] wav_in_data;
+wire wav_rden;
+wire wav_wren;
+
+wire ddr_waddr_set;
+wire ddr_raddr_set;
+
+wire record_en;
+wire play_en;
+
+wire c3_clk0;
+
+wire ddr_read_finish;
+
+assign led[0]=key[0]?1'b1:1'b0;                 
+assign led[1]=key[1]?1'b1:1'b0;             
+assign led[2]=key[2]?1'b1:1'b0;             
+assign led[3]=key[3]?1'b1:1'b0;            
+
+
+//驱动wm8731的部分
+mywav	mywav_inst(
+	.clk50M(c3_clk0),
+	
+	.wav_out_data(wav_out_data),
+	.wav_rden(wav_rden),
+	.wav_in_data(wav_in_data),
+	.wav_wren(wav_wren),
+ 	.record_en(record_en),
+	.play_en(play_en), 
+
+	.ddr_read_finish(ddr_read_finish),	
+
+	.BCLK(BCLK),	
+	.DACLRC(DACLRC),
+	.DACDAT(DACDAT),	
+	.ADCLRC(ADCLRC),
+	.ADCDAT(ADCDAT),	
+	
+	.I2C_SCLK(I2C_SCLK),
+	.I2C_SDAT(I2C_SDAT)
+);
+
+//按键KEY1检测程序
+key_dect	key_dect_inst(
+	.clk50M(c3_clk0),
+	.key(key),
+	.reset_n(reset_n),
+	
+ 	.record_en(record_en),
+	.play_en(play_en),  	
+	.ddr_raddr_set(ddr_raddr_set),
+	.ddr_waddr_set(ddr_waddr_set)
+	
+);
+//DDR读写控制部分
+ddr_rw ddr_rw_inst(
+   .c3_clk0                 (c3_clk0),                  //
+
+//wm8731模块接口信号 	
+	.wav_out_data(wav_out_data),
+	.wav_rden(wav_rden),
+	.wav_in_data(wav_in_data),
+	.wav_wren(wav_wren),
+	
+	.ddr_raddr_set(ddr_raddr_set),
+	.ddr_waddr_set(ddr_waddr_set),
+	
+	.ddr_read_finish(ddr_read_finish),
+	
+	.c3_p0_wr_underrun       (c3_p0_wr_underrun),
+	.c3_p0_wr_full           (c3_p0_wr_full),
+	.c3_p0_cmd_full          (c3_p0_cmd_full),
+	.c3_p1_rd_overflow       (c3_p1_rd_overflow),	
+	.c3_p1_rd_empty          (c3_p1_rd_empty),	
+	.c3_p1_cmd_full          (c3_p1_cmd_full),	
+	.mcb3_dram_dq            (mcb3_dram_dq),	
+	.mcb3_dram_a             (mcb3_dram_a),	
+	.mcb3_dram_ba            (mcb3_dram_ba),	
+	.mcb3_dram_ras_n         (mcb3_dram_ras_n),	
+	.mcb3_dram_cas_n         (mcb3_dram_cas_n),	
+	.mcb3_dram_we_n          (mcb3_dram_we_n),
+	.mcb3_dram_odt           (mcb3_dram_odt),	
+	.mcb3_dram_cke           (mcb3_dram_cke),	
+	.mcb3_dram_dm            (mcb3_dram_dm),	
+	.mcb3_dram_udqs          (mcb3_dram_udqs),	
+	.mcb3_dram_udqs_n        (mcb3_dram_udqs_n),	
+	.mcb3_rzq                (mcb3_rzq),	
+	.mcb3_zio                (mcb3_zio),	
+	.mcb3_dram_udm           (mcb3_dram_udm),
+	.c3_sys_clk              (clk_50m),	
+	.c3_sys_rst_n            (reset_n),
+	.c3_rst0                 (c3_rst0),
+	.mcb3_dram_dqs           (mcb3_dram_dqs),
+	.mcb3_dram_dqs_n         (mcb3_dram_dqs_n),
+	.mcb3_dram_ck            (mcb3_dram_ck),
+	.mcb3_dram_ck_n          (mcb3_dram_ck_n)
+
+);
+
+
+wire [35:0]   CONTROL0;
+wire [255:0]  TRIG0;
+chipscope_icon icon_debug (
+    .CONTROL0(CONTROL0) // INOUT BUS [35:0]
+);
+
+chipscope_ila ila_filter_debug (
+    .CONTROL(CONTROL0), // INOUT BUS [35:0]
+   // .CLK(dma_clk),      // IN
+    .CLK(c3_clk0),      // IN
+    .TRIG0(TRIG0)      // IN BUS [255:0]
+    //.TRIG_OUT(TRIG_OUT0)
+);                                                     
+
+assign  TRIG0[0]=BCLK;                                               
+assign  TRIG0[1]=DACLRC;           
+assign  TRIG0[2]=DACDAT;           
+assign  TRIG0[3]=ADCLRC;
+assign  TRIG0[4]=ADCDAT;
+assign  TRIG0[5]=record_en;
+assign  TRIG0[6]=play_en;
+
+assign  TRIG0[7]=wav_wren;
+assign  TRIG0[8]=wav_rden;
+
+assign  TRIG0[72:9]=wav_in_data;
+assign  TRIG0[136:73]=wav_out_data;
+
+assign  TRIG0[137]=ddr_read_finish;
+
+endmodule

@@ -1,0 +1,4 @@
+verilog work "rtl/iic_com.v"
+verilog work "chipscope_ila.v"
+verilog work "chipscope_icon.v"
+verilog work "rtl/eeprom_test.v"

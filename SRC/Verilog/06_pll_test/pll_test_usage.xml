@@ -1,0 +1,364 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- IMPORTANT: This is an internal file that has been generated
+     by the Xilinx ISE software.  Any direct editing or
+     changes made to this file may result in unpredictable
+     behavior or data corruption.  It is strongly advised that
+     users do not edit the contents of this file. -->
+<DeviceUsageSummary rev="12">
+<DesignStatistics TimeStamp="Mon Nov 14 18:01:00 2016"><group name="NetStatistics">
+<item name="NumNets_Active" rev="12">
+<attrib name="value" value="10"/></item>
+<item name="NumNets_Gnd" rev="12">
+<attrib name="value" value="1"/></item>
+<item name="NumNets_Vcc" rev="12">
+<attrib name="value" value="1"/></item>
+<item name="NumNodesOfType_Active_BUFGOUT" rev="12">
+<attrib name="value" value="1"/></item>
+<item name="NumNodesOfType_Active_BUFHINP2OUT" rev="12">
+<attrib name="value" value="2"/></item>
+<item name="NumNodesOfType_Active_BUFIOINP" rev="12">
+<attrib name="value" value="2"/></item>
+<item name="NumNodesOfType_Active_CLKPIN" rev="12">
+<attrib name="value" value="2"/></item>
+<item name="NumNodesOfType_Active_CLKPINFEED" rev="12">
+<attrib name="value" value="6"/></item>
+<item name="NumNodesOfType_Active_CNTRLPIN" rev="12">
+<attrib name="value" value="1"/></item>
+<item name="NumNodesOfType_Active_GENERIC" rev="12">
+<attrib name="value" value="10"/></item>
+<item name="NumNodesOfType_Active_GLOBAL" rev="12">
+<attrib name="value" value="10"/></item>
+<item name="NumNodesOfType_Active_INPUT" rev="12">
+<attrib name="value" value="3"/></item>
+<item name="NumNodesOfType_Active_IOBIN2OUT" rev="12">
+<attrib name="value" value="3"/></item>
+<item name="NumNodesOfType_Active_IOBOUTPUT" rev="12">
+<attrib name="value" value="4"/></item>
+<item name="NumNodesOfType_Active_OUTBOUND" rev="12">
+<attrib name="value" value="2"/></item>
+<item name="NumNodesOfType_Active_OUTPUT" rev="12">
+<attrib name="value" value="5"/></item>
+<item name="NumNodesOfType_Active_PADINPUT" rev="12">
+<attrib name="value" value="1"/></item>
+<item name="NumNodesOfType_Active_PADOUTPUT" rev="12">
+<attrib name="value" value="2"/></item>
+<item name="NumNodesOfType_Active_PINFEED" rev="12">
+<attrib name="value" value="7"/></item>
+<item name="NumNodesOfType_Active_PINFEED1" rev="12">
+<attrib name="value" value="1"/></item>
+<item name="NumNodesOfType_Active_PINFEED2" rev="12">
+<attrib name="value" value="3"/></item>
+<item name="NumNodesOfType_Active_QUAD" rev="12">
+<attrib name="value" value="4"/></item>
+<item name="NumNodesOfType_Active_SINGLE" rev="12">
+<attrib name="value" value="1"/></item>
+<item name="NumNodesOfType_Gnd_CLKPIN" rev="12">
+<attrib name="value" value="1"/></item>
+<item name="NumNodesOfType_Gnd_CNTRLPIN" rev="12">
+<attrib name="value" value="3"/></item>
+<item name="NumNodesOfType_Gnd_HGNDOUT" rev="12">
+<attrib name="value" value="2"/></item>
+<item name="NumNodesOfType_Gnd_IOBINPUT" rev="12">
+<attrib name="value" value="1"/></item>
+<item name="NumNodesOfType_Gnd_OUTBOUND" rev="12">
+<attrib name="value" value="2"/></item>
+<item name="NumNodesOfType_Gnd_OUTPUT" rev="12">
+<attrib name="value" value="2"/></item>
+<item name="NumNodesOfType_Gnd_PINFEED" rev="12">
+<attrib name="value" value="5"/></item>
+<item name="NumNodesOfType_Gnd_SINGLE" rev="12">
+<attrib name="value" value="2"/></item>
+<item name="NumNodesOfType_Vcc_CNTRLPIN" rev="12">
+<attrib name="value" value="1"/></item>
+<item name="NumNodesOfType_Vcc_HVCCOUT" rev="12">
+<attrib name="value" value="1"/></item>
+<item name="NumNodesOfType_Vcc_IOBIN2OUT" rev="12">
+<attrib name="value" value="1"/></item>
+<item name="NumNodesOfType_Vcc_PINFEED" rev="12">
+<attrib name="value" value="2"/></item>
+</group>
+<group name="SiteStatistics">
+<item name="BUFG-BUFGMUX" rev="12">
+<attrib name="value" value="1"/></item>
+<item name="IOB-IOBM" rev="12">
+<attrib name="value" value="1"/></item>
+<item name="IOB-IOBS" rev="12">
+<attrib name="value" value="2"/></item>
+</group>
+<group name="MiscellaneousStatistics">
+<item name="AGG_BONDED_IO" rev="11">
+<attrib name="value" value="3"/></item>
+<item name="AGG_IO" rev="11">
+<attrib name="value" value="3"/></item>
+<item name="AGG_LOCED_IO" rev="11">
+<attrib name="value" value="3"/></item>
+<item name="NUM_BONDED_IOB" rev="11">
+<attrib name="value" value="3"/></item>
+<item name="NUM_BUFG" rev="11">
+<attrib name="value" value="1"/></item>
+<item name="NUM_BUFIO2" rev="11">
+<attrib name="value" value="1"/></item>
+<item name="NUM_BUFIO2FB" rev="11">
+<attrib name="value" value="1"/></item>
+<item name="NUM_DCM" rev="11">
+<attrib name="value" value="1"/></item>
+<item name="NUM_IOB_FF" rev="11">
+<attrib name="value" value="1"/></item>
+<item name="NUM_LOCED_IOB" rev="11">
+<attrib name="value" value="3"/></item>
+<item name="NUM_OLOGIC2" rev="11">
+<attrib name="value" value="1"/></item>
+</group>
+</DesignStatistics>
+<DeviceUsage TimeStamp="Mon Nov 14 18:01:00 2016"><group name="SiteSummary">
+<item name="BUFG" rev="12">
+<attrib name="total" value="1000000"/><attrib name="used" value="1"/></item>
+<item name="BUFG_BUFG" rev="12">
+<attrib name="total" value="1000000"/><attrib name="used" value="1"/></item>
+<item name="BUFIO2" rev="12">
+<attrib name="total" value="1000000"/><attrib name="used" value="1"/></item>
+<item name="BUFIO2FB" rev="12">
+<attrib name="total" value="1000000"/><attrib name="used" value="1"/></item>
+<item name="BUFIO2FB_BUFIO2FB" rev="12">
+<attrib name="total" value="1000000"/><attrib name="used" value="1"/></item>
+<item name="BUFIO2_BUFIO2" rev="12">
+<attrib name="total" value="1000000"/><attrib name="used" value="1"/></item>
+<item name="DCM" rev="12">
+<attrib name="total" value="1000000"/><attrib name="used" value="1"/></item>
+<item name="DCM_DCM" rev="12">
+<attrib name="total" value="1000000"/><attrib name="used" value="1"/></item>
+<item name="IOB" rev="12">
+<attrib name="total" value="1000000"/><attrib name="used" value="3"/></item>
+<item name="IOB_IMUX" rev="12">
+<attrib name="total" value="1000000"/><attrib name="used" value="2"/></item>
+<item name="IOB_INBUF" rev="12">
+<attrib name="total" value="1000000"/><attrib name="used" value="2"/></item>
+<item name="IOB_OUTBUF" rev="12">
+<attrib name="total" value="1000000"/><attrib name="used" value="1"/></item>
+<item name="OLOGIC2" rev="12">
+<attrib name="total" value="1000000"/><attrib name="used" value="1"/></item>
+<item name="OLOGIC2_OUTFF" rev="12">
+<attrib name="total" value="1000000"/><attrib name="used" value="1"/></item>
+<item name="PAD" rev="12">
+<attrib name="total" value="1000000"/><attrib name="used" value="3"/></item>
+</group>
+</DeviceUsage>
+<ReportConfigData TimeStamp="Mon Nov 14 18:01:00 2016"><group name="IOB_OUTBUF">
+<item name="DRIVEATTRBOX" rev="12">
+<attrib name="12" value="1"/></item>
+<item name="SLEW" rev="12">
+<attrib name="SLOW" value="1"/></item>
+<item name="SUSPEND" rev="12">
+<attrib name="3STATE" value="1"/></item>
+</group>
+<group name="BUFIO2FB_BUFIO2FB">
+<item name="DIVIDE_BYPASS" rev="12">
+<attrib name="TRUE" value="1"/></item>
+<item name="INVERT_INPUTS" rev="12">
+<attrib name="FALSE" value="1"/></item>
+</group>
+<group name="OLOGIC2">
+<item name="CLK0" rev="12">
+<attrib name="CLK0_INV" value="0"/><attrib name="CLK0" value="1"/></item>
+<item name="CLK1" rev="12">
+<attrib name="CLK1" value="0"/><attrib name="CLK1_INV" value="1"/></item>
+</group>
+<group name="BUFIO2_BUFIO2">
+<item name="DIVIDE" rev="12">
+<attrib name="1" value="1"/></item>
+<item name="DIVIDE_BYPASS" rev="12">
+<attrib name="TRUE" value="1"/></item>
+<item name="I_INVERT" rev="12">
+<attrib name="FALSE" value="1"/></item>
+</group>
+<group name="OLOGIC2_OUTFF">
+<item name="CK0" rev="12">
+<attrib name="CK0_INV" value="0"/><attrib name="CK0" value="1"/></item>
+<item name="CK1" rev="12">
+<attrib name="CK1_INV" value="1"/><attrib name="CK1" value="0"/></item>
+<item name="DDR_ALIGNMENT" rev="12">
+<attrib name="NONE" value="1"/></item>
+<item name="OUTFFTYPE" rev="12">
+<attrib name="DDR" value="1"/></item>
+<item name="SRINIT_OQ" rev="12">
+<attrib name="0" value="1"/></item>
+<item name="SRTYPE_OQ" rev="12">
+<attrib name="SYNC" value="1"/></item>
+</group>
+<group name="DCM_DCM">
+<item name="CLKDV_DIVIDE" rev="12">
+<attrib name="2.0" value="1"/></item>
+<item name="CLKIN_DIVIDE_BY_2" rev="12">
+<attrib name="FALSE" value="1"/></item>
+<item name="CLKOUT_PHASE_SHIFT" rev="12">
+<attrib name="NONE" value="1"/></item>
+<item name="CLK_FEEDBACK" rev="12">
+<attrib name="1X" value="1"/></item>
+<item name="DESKEW_ADJUST" rev="12">
+<attrib name="5" value="1"/></item>
+<item name="DFS_FREQUENCY_MODE" rev="12">
+<attrib name="LOW" value="1"/></item>
+<item name="DLL_FREQUENCY_MODE" rev="12">
+<attrib name="LOW" value="1"/></item>
+<item name="DSS_MODE" rev="12">
+<attrib name="NONE" value="1"/></item>
+<item name="DUTY_CYCLE_CORRECTION" rev="12">
+<attrib name="TRUE" value="1"/></item>
+<item name="PSCLK" rev="12">
+<attrib name="PSCLK_INV" value="0"/><attrib name="PSCLK" value="1"/></item>
+<item name="PSEN" rev="12">
+<attrib name="PSEN_INV" value="0"/><attrib name="PSEN" value="1"/></item>
+<item name="PSINCDEC" rev="12">
+<attrib name="PSINCDEC" value="1"/><attrib name="PSINCDEC_INV" value="0"/></item>
+<item name="RST" rev="12">
+<attrib name="RST" value="0"/><attrib name="RST_INV" value="1"/></item>
+<item name="STARTUP_WAIT" rev="12">
+<attrib name="FALSE" value="1"/></item>
+<item name="VERY_HIGH_FREQUENCY" rev="12">
+<attrib name="FALSE" value="1"/></item>
+</group>
+<group name="DCM">
+<item name="PSCLK" rev="12">
+<attrib name="PSCLK_INV" value="0"/><attrib name="PSCLK" value="1"/></item>
+<item name="PSEN" rev="12">
+<attrib name="PSEN_INV" value="0"/><attrib name="PSEN" value="1"/></item>
+<item name="PSINCDEC" rev="12">
+<attrib name="PSINCDEC" value="1"/><attrib name="PSINCDEC_INV" value="0"/></item>
+<item name="RST" rev="12">
+<attrib name="RST" value="0"/><attrib name="RST_INV" value="1"/></item>
+</group>
+</ReportConfigData>
+<ReportPinData TimeStamp="Mon Nov 14 18:01:00 2016"><group name="BUFIO2">
+<item name="DIVCLK" rev="12">
+<attrib name="value" value="1"/></item>
+<item name="I" rev="12">
+<attrib name="value" value="1"/></item>
+</group>
+<group name="IOB_OUTBUF">
+<item name="IN" rev="12">
+<attrib name="value" value="1"/></item>
+<item name="OUT" rev="12">
+<attrib name="value" value="1"/></item>
+</group>
+<group name="BUFG_BUFG">
+<item name="I0" rev="12">
+<attrib name="value" value="1"/></item>
+<item name="O" rev="12">
+<attrib name="value" value="1"/></item>
+</group>
+<group name="PAD">
+<item name="PAD" rev="12">
+<attrib name="value" value="3"/></item>
+</group>
+<group name="BUFIO2FB">
+<item name="I" rev="12">
+<attrib name="value" value="1"/></item>
+<item name="O" rev="12">
+<attrib name="value" value="1"/></item>
+</group>
+<group name="BUFIO2FB_BUFIO2FB">
+<item name="I" rev="12">
+<attrib name="value" value="1"/></item>
+<item name="O" rev="12">
+<attrib name="value" value="1"/></item>
+</group>
+<group name="IOB_INBUF">
+<item name="OUT" rev="12">
+<attrib name="value" value="2"/></item>
+<item name="PAD" rev="12">
+<attrib name="value" value="2"/></item>
+</group>
+<group name="OLOGIC2">
+<item name="CLK0" rev="12">
+<attrib name="value" value="1"/></item>
+<item name="CLK1" rev="12">
+<attrib name="value" value="1"/></item>
+<item name="D1" rev="12">
+<attrib name="value" value="1"/></item>
+<item name="D2" rev="12">
+<attrib name="value" value="1"/></item>
+<item name="OCE" rev="12">
+<attrib name="value" value="1"/></item>
+<item name="OQ" rev="12">
+<attrib name="value" value="1"/></item>
+<item name="SR" rev="12">
+<attrib name="value" value="1"/></item>
+</group>
+<group name="BUFIO2_BUFIO2">
+<item name="DIVCLK" rev="12">
+<attrib name="value" value="1"/></item>
+<item name="I" rev="12">
+<attrib name="value" value="1"/></item>
+</group>
+<group name="OLOGIC2_OUTFF">
+<item name="CE" rev="12">
+<attrib name="value" value="1"/></item>
+<item name="CK0" rev="12">
+<attrib name="value" value="1"/></item>
+<item name="CK1" rev="12">
+<attrib name="value" value="1"/></item>
+<item name="D1" rev="12">
+<attrib name="value" value="1"/></item>
+<item name="D2" rev="12">
+<attrib name="value" value="1"/></item>
+<item name="Q" rev="12">
+<attrib name="value" value="1"/></item>
+<item name="SR" rev="12">
+<attrib name="value" value="1"/></item>
+</group>
+<group name="IOB_IMUX">
+<item name="I" rev="12">
+<attrib name="value" value="2"/></item>
+<item name="OUT" rev="12">
+<attrib name="value" value="2"/></item>
+</group>
+<group name="IOB">
+<item name="I" rev="12">
+<attrib name="value" value="2"/></item>
+<item name="O" rev="12">
+<attrib name="value" value="1"/></item>
+<item name="PAD" rev="12">
+<attrib name="value" value="3"/></item>
+</group>
+<group name="DCM_DCM">
+<item name="CLK0" rev="12">
+<attrib name="value" value="1"/></item>
+<item name="CLKFB" rev="12">
+<attrib name="value" value="1"/></item>
+<item name="CLKIN" rev="12">
+<attrib name="value" value="1"/></item>
+<item name="PSCLK" rev="12">
+<attrib name="value" value="1"/></item>
+<item name="PSEN" rev="12">
+<attrib name="value" value="1"/></item>
+<item name="PSINCDEC" rev="12">
+<attrib name="value" value="1"/></item>
+<item name="RST" rev="12">
+<attrib name="value" value="1"/></item>
+</group>
+<group name="BUFG">
+<item name="I0" rev="12">
+<attrib name="value" value="1"/></item>
+<item name="O" rev="12">
+<attrib name="value" value="1"/></item>
+</group>
+<group name="DCM">
+<item name="CLK0" rev="12">
+<attrib name="value" value="1"/></item>
+<item name="CLKFB" rev="12">
+<attrib name="value" value="1"/></item>
+<item name="CLKIN" rev="12">
+<attrib name="value" value="1"/></item>
+<item name="PSCLK" rev="12">
+<attrib name="value" value="1"/></item>
+<item name="PSEN" rev="12">
+<attrib name="value" value="1"/></item>
+<item name="PSINCDEC" rev="12">
+<attrib name="value" value="1"/></item>
+<item name="RST" rev="12">
+<attrib name="value" value="1"/></item>
+</group>
+</ReportPinData>
+<CmdHistory>
+</CmdHistory>
+</DeviceUsageSummary>

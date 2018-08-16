@@ -1,0 +1,441 @@
+Release 14.7 - xst P.20131013 (nt64)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+--> Parameter TMPDIR set to xst/projnav.tmp
+
+
+Total REAL time to Xst completion: 1.00 secs
+Total CPU time to Xst completion: 0.07 secs
+ 
+--> Parameter xsthdpdir set to xst
+
+
+Total REAL time to Xst completion: 1.00 secs
+Total CPU time to Xst completion: 0.07 secs
+ 
+--> Reading design: sos_generator_module.prj
+
+TABLE OF CONTENTS
+  1) Synthesis Options Summary
+  2) HDL Parsing
+  3) HDL Elaboration
+  4) HDL Synthesis
+       4.1) HDL Synthesis Report
+  5) Advanced HDL Synthesis
+       5.1) Advanced HDL Synthesis Report
+  6) Low Level Synthesis
+  7) Partition Report
+  8) Design Summary
+       8.1) Primitive and Black Box Usage
+       8.2) Device utilization summary
+       8.3) Partition Resource Summary
+       8.4) Timing Report
+            8.4.1) Clock Information
+            8.4.2) Asynchronous Control Signals Information
+            8.4.3) Timing Summary
+            8.4.4) Timing Details
+            8.4.5) Cross Clock Domains Report
+
+
+=========================================================================
+*                      Synthesis Options Summary                        *
+=========================================================================
+---- Source Parameters
+Input File Name                    : "sos_generator_module.prj"
+Ignore Synthesis Constraint File   : NO
+
+---- Target Parameters
+Output File Name                   : "sos_generator_module"
+Output Format                      : NGC
+Target Device                      : xc6slx9-2-ftg256
+
+---- Source Options
+Top Module Name                    : sos_generator_module
+Automatic FSM Extraction           : YES
+FSM Encoding Algorithm             : Auto
+Safe Implementation                : No
+FSM Style                          : LUT
+RAM Extraction                     : Yes
+RAM Style                          : Auto
+ROM Extraction                     : Yes
+Shift Register Extraction          : YES
+ROM Style                          : Auto
+Resource Sharing                   : YES
+Asynchronous To Synchronous        : NO
+Shift Register Minimum Size        : 2
+Use DSP Block                      : Auto
+Automatic Register Balancing       : No
+
+---- Target Options
+LUT Combining                      : Auto
+Reduce Control Sets                : Auto
+Add IO Buffers                     : YES
+Global Maximum Fanout              : 100000
+Add Generic Clock Buffer(BUFG)     : 16
+Register Duplication               : YES
+Optimize Instantiated Primitives   : NO
+Use Clock Enable                   : Auto
+Use Synchronous Set                : Auto
+Use Synchronous Reset              : Auto
+Pack IO Registers into IOBs        : Auto
+Equivalent register Removal        : YES
+
+---- General Options
+Optimization Goal                  : Speed
+Optimization Effort                : 1
+Power Reduction                    : NO
+Keep Hierarchy                     : No
+Netlist Hierarchy                  : As_Optimized
+RTL Output                         : Yes
+Global Optimization                : AllClockNets
+Read Cores                         : YES
+Write Timing Constraints           : NO
+Cross Clock Analysis               : NO
+Hierarchy Separator                : /
+Bus Delimiter                      : <>
+Case Specifier                     : Maintain
+Slice Utilization Ratio            : 100
+BRAM Utilization Ratio             : 100
+DSP48 Utilization Ratio            : 100
+Auto BRAM Packing                  : NO
+Slice Utilization Ratio Delta      : 5
+
+=========================================================================
+
+
+=========================================================================
+*                          HDL Parsing                                  *
+=========================================================================
+Analyzing Verilog file "E:\Project\AX309\Verilog\10_buzzer_test\rtl\sos_module.v" into library work
+Parsing module <sos_module>.
+Analyzing Verilog file "E:\Project\AX309\Verilog\10_buzzer_test\rtl\control_module.v" into library work
+Parsing module <control_module>.
+Analyzing Verilog file "E:\Project\AX309\Verilog\10_buzzer_test\rtl\sos_generator_module.v" into library work
+Parsing module <sos_generator_module>.
+
+=========================================================================
+*                            HDL Elaboration                            *
+=========================================================================
+
+Elaborating module <sos_generator_module>.
+
+Elaborating module <control_module>.
+
+Elaborating module <sos_module>.
+
+=========================================================================
+*                           HDL Synthesis                               *
+=========================================================================
+
+Synthesizing Unit <sos_generator_module>.
+    Related source file is "E:\Project\AX309\Verilog\10_buzzer_test\rtl\sos_generator_module.v".
+    Summary:
+	no macro.
+Unit <sos_generator_module> synthesized.
+
+Synthesizing Unit <control_module>.
+    Related source file is "E:\Project\AX309\Verilog\10_buzzer_test\rtl\control_module.v".
+        T3S = 28'b1000111100001101000101111111
+    Found 1-bit register for signal <isEn>.
+    Found 28-bit register for signal <Count1>.
+    Found 28-bit adder for signal <Count1[27]_GND_2_o_add_1_OUT> created at line 33.
+    Summary:
+	inferred   1 Adder/Subtractor(s).
+	inferred  29 D-type flip-flop(s).
+	inferred   1 Multiplexer(s).
+Unit <control_module> synthesized.
+
+Synthesizing Unit <sos_module>.
+    Related source file is "E:\Project\AX309\Verilog\10_buzzer_test\rtl\sos_module.v".
+        T1MS = 16'b1100001101001111
+    Found 1-bit register for signal <isCount>.
+    Found 1-bit register for signal <rPin_Out>.
+    Found 10-bit register for signal <Count_MS>.
+    Found 5-bit register for signal <i>.
+    Found 16-bit register for signal <Count1>.
+    Found 16-bit adder for signal <Count1[15]_GND_3_o_add_1_OUT> created at line 25.
+    Found 10-bit adder for signal <Count_MS[9]_GND_3_o_add_7_OUT> created at line 37.
+    Found 5-bit adder for signal <i[4]_GND_3_o_add_19_OUT> created at line 72.
+    Summary:
+	inferred   3 Adder/Subtractor(s).
+	inferred  33 D-type flip-flop(s).
+	inferred  33 Multiplexer(s).
+Unit <sos_module> synthesized.
+
+=========================================================================
+HDL Synthesis Report
+
+Macro Statistics
+# Adders/Subtractors                                   : 4
+ 10-bit adder                                          : 1
+ 16-bit adder                                          : 1
+ 28-bit adder                                          : 1
+ 5-bit adder                                           : 1
+# Registers                                            : 7
+ 1-bit register                                        : 3
+ 10-bit register                                       : 1
+ 16-bit register                                       : 1
+ 28-bit register                                       : 1
+ 5-bit register                                        : 1
+# Multiplexers                                         : 34
+ 1-bit 2-to-1 multiplexer                              : 23
+ 10-bit 2-to-1 multiplexer                             : 1
+ 16-bit 2-to-1 multiplexer                             : 2
+ 28-bit 2-to-1 multiplexer                             : 1
+ 5-bit 2-to-1 multiplexer                              : 7
+
+=========================================================================
+
+=========================================================================
+*                       Advanced HDL Synthesis                          *
+=========================================================================
+
+
+Synthesizing (advanced) Unit <control_module>.
+The following registers are absorbed into counter <Count1>: 1 register on signal <Count1>.
+Unit <control_module> synthesized (advanced).
+
+Synthesizing (advanced) Unit <sos_module>.
+The following registers are absorbed into counter <Count_MS>: 1 register on signal <Count_MS>.
+Unit <sos_module> synthesized (advanced).
+
+=========================================================================
+Advanced HDL Synthesis Report
+
+Macro Statistics
+# Adders/Subtractors                                   : 2
+ 16-bit adder                                          : 1
+ 5-bit adder                                           : 1
+# Counters                                             : 2
+ 10-bit up counter                                     : 1
+ 28-bit up counter                                     : 1
+# Registers                                            : 24
+ Flip-Flops                                            : 24
+# Multiplexers                                         : 32
+ 1-bit 2-to-1 multiplexer                              : 23
+ 16-bit 2-to-1 multiplexer                             : 2
+ 5-bit 2-to-1 multiplexer                              : 7
+
+=========================================================================
+
+=========================================================================
+*                         Low Level Synthesis                           *
+=========================================================================
+
+Optimizing unit <sos_generator_module> ...
+
+Optimizing unit <sos_module> ...
+
+Mapping all equations...
+Building and optimizing final netlist ...
+Found area constraint ratio of 100 (+ 5) on block sos_generator_module, actual ratio is 3.
+
+Final Macro Processing ...
+
+=========================================================================
+Final Register Report
+
+Macro Statistics
+# Registers                                            : 62
+ Flip-Flops                                            : 62
+
+=========================================================================
+
+=========================================================================
+*                           Partition Report                            *
+=========================================================================
+
+Partition Implementation Status
+-------------------------------
+
+  No Partitions were found in this design.
+
+-------------------------------
+
+=========================================================================
+*                            Design Summary                             *
+=========================================================================
+
+Top Level Output File Name         : sos_generator_module.ngc
+
+Primitive and Black Box Usage:
+------------------------------
+# BELS                             : 274
+#      GND                         : 1
+#      INV                         : 5
+#      LUT1                        : 51
+#      LUT2                        : 2
+#      LUT3                        : 5
+#      LUT4                        : 20
+#      LUT5                        : 30
+#      LUT6                        : 53
+#      MUXCY                       : 51
+#      MUXF7                       : 1
+#      VCC                         : 1
+#      XORCY                       : 54
+# FlipFlops/Latches                : 62
+#      FDC                         : 50
+#      FDCE                        : 12
+# Clock Buffers                    : 1
+#      BUFGP                       : 1
+# IO Buffers                       : 2
+#      IBUF                        : 1
+#      OBUF                        : 1
+
+Device utilization summary:
+---------------------------
+
+Selected Device : 6slx9ftg256-2 
+
+
+Slice Logic Utilization: 
+ Number of Slice Registers:              62  out of  11440     0%  
+ Number of Slice LUTs:                  166  out of   5720     2%  
+    Number used as Logic:               166  out of   5720     2%  
+
+Slice Logic Distribution: 
+ Number of LUT Flip Flop pairs used:    166
+   Number with an unused Flip Flop:     104  out of    166    62%  
+   Number with an unused LUT:             0  out of    166     0%  
+   Number of fully used LUT-FF pairs:    62  out of    166    37%  
+   Number of unique control sets:         4
+
+IO Utilization: 
+ Number of IOs:                           3
+ Number of bonded IOBs:                   3  out of    186     1%  
+
+Specific Feature Utilization:
+ Number of BUFG/BUFGCTRLs:                1  out of     16     6%  
+
+---------------------------
+Partition Resource Summary:
+---------------------------
+
+  No Partitions were found in this design.
+
+---------------------------
+
+
+=========================================================================
+Timing Report
+
+NOTE: THESE TIMING NUMBERS ARE ONLY A SYNTHESIS ESTIMATE.
+      FOR ACCURATE TIMING INFORMATION PLEASE REFER TO THE TRACE REPORT
+      GENERATED AFTER PLACE-and-ROUTE.
+
+Clock Information:
+------------------
+-----------------------------------+------------------------+-------+
+Clock Signal                       | Clock buffer(FF name)  | Load  |
+-----------------------------------+------------------------+-------+
+CLK                                | BUFGP                  | 62    |
+-----------------------------------+------------------------+-------+
+
+Asynchronous Control Signals Information:
+----------------------------------------
+No asynchronous control signals found in this design
+
+Timing Summary:
+---------------
+Speed Grade: -2
+
+   Minimum period: 5.171ns (Maximum Frequency: 193.386MHz)
+   Minimum input arrival time before clock: 4.636ns
+   Maximum output required time after clock: 5.054ns
+   Maximum combinational path delay: No path found
+
+Timing Details:
+---------------
+All values displayed in nanoseconds (ns)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'CLK'
+  Clock period: 5.171ns (frequency: 193.386MHz)
+  Total number of paths / destination ports: 2510 / 74
+-------------------------------------------------------------------------
+Delay:               5.171ns (Levels of Logic = 4)
+  Source:            U2/Count_MS_1 (FF)
+  Destination:       U2/i_2 (FF)
+  Source Clock:      CLK rising
+  Destination Clock: CLK rising
+
+  Data Path: U2/Count_MS_1 to U2/i_2
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDCE:C->Q             3   0.525   1.196  U2/Count_MS_1 (U2/Count_MS_1)
+     LUT5:I0->O            2   0.254   0.726  U2/Count_MS[9]_GND_3_o_equal_19_o<9>_SW0 (N5)
+     LUT6:I5->O            2   0.254   0.726  U2/Count_MS[9]_GND_3_o_equal_19_o<9> (U2/Count_MS[9]_GND_3_o_equal_19_o)
+     LUT6:I5->O            4   0.254   0.912  U2/_n0318_inv6 (U2/_n0318_inv6)
+     LUT6:I4->O            1   0.250   0.000  U2/i_2_rstpot (U2/i_2_rstpot)
+     FDC:D                     0.074          U2/i_2
+    ----------------------------------------
+    Total                      5.171ns (1.611ns logic, 3.560ns route)
+                                       (31.2% logic, 68.8% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'CLK'
+  Total number of paths / destination ports: 62 / 62
+-------------------------------------------------------------------------
+Offset:              4.636ns (Levels of Logic = 2)
+  Source:            RSTn (PAD)
+  Destination:       U1/isEn (FF)
+  Destination Clock: CLK rising
+
+  Data Path: RSTn to U1/isEn
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O             1   1.328   0.681  RSTn_IBUF (RSTn_IBUF)
+     INV:I->O             62   0.255   1.913  RSTn_inv1_INV_0 (RSTn_inv)
+     FDC:CLR                   0.459          U1/Count1_0
+    ----------------------------------------
+    Total                      4.636ns (2.042ns logic, 2.594ns route)
+                                       (44.0% logic, 56.0% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'CLK'
+  Total number of paths / destination ports: 1 / 1
+-------------------------------------------------------------------------
+Offset:              5.054ns (Levels of Logic = 2)
+  Source:            U2/rPin_Out (FF)
+  Destination:       Pin_Out (PAD)
+  Source Clock:      CLK rising
+
+  Data Path: U2/rPin_Out to Pin_Out
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDCE:C->Q             1   0.525   0.681  U2/rPin_Out (U2/rPin_Out)
+     INV:I->O              1   0.255   0.681  Pin_Out1_INV_0 (Pin_Out_OBUF)
+     OBUF:I->O                 2.912          Pin_Out_OBUF (Pin_Out)
+    ----------------------------------------
+    Total                      5.054ns (3.692ns logic, 1.362ns route)
+                                       (73.1% logic, 26.9% route)
+
+=========================================================================
+
+Cross Clock Domains Report:
+--------------------------
+
+Clock to Setup on destination clock CLK
+---------------+---------+---------+---------+---------+
+               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------+---------+---------+---------+---------+
+CLK            |    5.171|         |         |         |
+---------------+---------+---------+---------+---------+
+
+=========================================================================
+
+
+Total REAL time to Xst completion: 5.00 secs
+Total CPU time to Xst completion: 4.49 secs
+ 
+--> 
+
+Total memory usage is 258848 kilobytes
+
+Number of errors   :    0 (   0 filtered)
+Number of warnings :    0 (   0 filtered)
+Number of infos    :    0 (   0 filtered)
+

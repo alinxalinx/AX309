@@ -1,0 +1,4 @@
+verilog work "rtl/flash_spi.v"
+verilog work "chipscope_ila.v"
+verilog work "chipscope_icon.v"
+verilog work "flash_test.v"

@@ -1,0 +1,16 @@
+
+NET "CLK_50M" LOC = T8 | TNM_NET = sys_clk_pin;
+TIMESPEC TS_sys_clk_pin = PERIOD sys_clk_pin 50000 kHz;
+
+##
+NET RSTn                                LOC = L3 | IOSTANDARD = "LVCMOS33"; ## SW2 pushbutton
+##
+
+########USB Serial RS232 Pin define#####################
+NET rx                         	 		  LOC = C11 | IOSTANDARD = "LVCMOS33";		     ## Uart RXD:U4_TXD
+NET tx                          	  	     LOC = D12 | IOSTANDARD = "LVCMOS33"; 		  ## Uart TXD:U4_RXD
+
+########DS1302 Pin define#####################
+NET DS1302_RST                            LOC = C13 | IOSTANDARD = "LVCMOS33";		        ## 
+NET DS1302_SCLK                           LOC = E13 | IOSTANDARD = "LVCMOS33"; 		     ## 
+NET DS1302_SIO                            LOC = D14 | IOSTANDARD = "LVCMOS33"; 		     ## 

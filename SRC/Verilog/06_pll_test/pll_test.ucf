@@ -1,0 +1,13 @@
+
+##
+NET clk LOC = T8 | TNM_NET = sys_clk_pin | IOSTANDARD = "LVCMOS33";
+TIMESPEC TS_sys_clk_pin = PERIOD sys_clk_pin 50000 kHz;
+##
+
+
+##
+NET rst_n                           LOC = L3 | IOSTANDARD = "LVCMOS33"; ## 
+##
+
+########SMA Clock out define#####################
+NET clk_out                        	LOC = K16 | IOSTANDARD = "LVCMOS33";       ## J2-PIN3

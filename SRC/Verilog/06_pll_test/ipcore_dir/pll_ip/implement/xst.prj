@@ -1,0 +1,2 @@
+verilog work ../../pll_ip.v
+verilog work ../example_design/pll_ip_exdes.v

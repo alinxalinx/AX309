@@ -1,0 +1,6 @@
+verilog work "rtl/smg_scan_module.v"
+verilog work "rtl/smg_encode_module.v"
+verilog work "rtl/smg_control_module.v"
+verilog work "rtl/smg_interface.v"
+verilog work "rtl/demo_control_module.v"
+verilog work "rtl/smg_interface_demo.v"

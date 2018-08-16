@@ -1,0 +1,17 @@
+xst -intstyle ise -ifn "E:/Project/AX309/Verilog/buzzer_test/sos_generator_module.xst" -ofn "E:/Project/AX309/Verilog/buzzer_test/sos_generator_module.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc sos_generator_module.ucf -p xc6slx9-ftg256-2 sos_generator_module.ngc sos_generator_module.ngd  
+map -intstyle ise -p xc6slx9-ftg256-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o sos_generator_module_map.ncd sos_generator_module.ngd sos_generator_module.pcf 
+par -w -intstyle ise -ol high -mt off sos_generator_module_map.ncd sos_generator_module.ncd sos_generator_module.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml sos_generator_module.twx sos_generator_module.ncd -o sos_generator_module.twr sos_generator_module.pcf -ucf sos_generator_module.ucf 
+bitgen -intstyle ise -f sos_generator_module.ut sos_generator_module.ncd 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc sos_generator_module.ucf -p xc6slx9-ftg256-2 sos_generator_module.ngc sos_generator_module.ngd  
+map -intstyle ise -p xc6slx9-ftg256-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o sos_generator_module_map.ncd sos_generator_module.ngd sos_generator_module.pcf 
+par -w -intstyle ise -ol high -mt off sos_generator_module_map.ncd sos_generator_module.ncd sos_generator_module.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml sos_generator_module.twx sos_generator_module.ncd -o sos_generator_module.twr sos_generator_module.pcf -ucf sos_generator_module.ucf 
+bitgen -intstyle ise -f sos_generator_module.ut sos_generator_module.ncd 
+xst -intstyle ise -ifn "E:/Project/AX309/Verilog/10_buzzer_test/sos_generator_module.xst" -ofn "E:/Project/AX309/Verilog/10_buzzer_test/sos_generator_module.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc sos_generator_module.ucf -p xc6slx9-ftg256-2 sos_generator_module.ngc sos_generator_module.ngd  
+map -intstyle ise -p xc6slx9-ftg256-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o sos_generator_module_map.ncd sos_generator_module.ngd sos_generator_module.pcf 
+par -w -intstyle ise -ol high -mt off sos_generator_module_map.ncd sos_generator_module.ncd sos_generator_module.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml sos_generator_module.twx sos_generator_module.ncd -o sos_generator_module.twr sos_generator_module.pcf -ucf sos_generator_module.ucf 
+bitgen -intstyle ise -f sos_generator_module.ut sos_generator_module.ncd 

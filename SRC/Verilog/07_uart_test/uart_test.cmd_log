@@ -1,0 +1,71 @@
+xst -intstyle ise -ifn "E:/Project/AX516/verilog/uart_test/uart_test.xst" -ofn "E:/Project/AX516/verilog/uart_test/uart_test.syr" 
+xst -intstyle ise -ifn "E:/Project/AX516/verilog/uart_test/uart_test.xst" -ofn "E:/Project/AX516/verilog/uart_test/uart_test.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc uartrxtx.ucf -p xc6slx16-csg324-3 uart_test.ngc uart_test.ngd  
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc uartrxtx.ucf -p xc6slx16-csg324-3 uart_test.ngc uart_test.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o uart_test_map.ncd uart_test.ngd uart_test.pcf 
+par -w -intstyle ise -ol high -mt off uart_test_map.ncd uart_test.ncd uart_test.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml uart_test.twx uart_test.ncd -o uart_test.twr uart_test.pcf -ucf uartrxtx.ucf 
+bitgen -intstyle ise -f uart_test.ut uart_test.ncd 
+xst -intstyle ise -ifn "E:/Project/AX516/verilog/uart_test/uart_test.xst" -ofn "E:/Project/AX516/verilog/uart_test/uart_test.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc uartrxtx.ucf -p xc6slx16-csg324-3 uart_test.ngc uart_test.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o uart_test_map.ncd uart_test.ngd uart_test.pcf 
+par -w -intstyle ise -ol high -mt off uart_test_map.ncd uart_test.ncd uart_test.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml uart_test.twx uart_test.ncd -o uart_test.twr uart_test.pcf -ucf uartrxtx.ucf 
+bitgen -intstyle ise -f uart_test.ut uart_test.ncd 
+xst -intstyle ise -ifn "E:/Project/AX516/verilog/uart_test/uart_test.xst" -ofn "E:/Project/AX516/verilog/uart_test/uart_test.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc uartrxtx.ucf -p xc6slx16-csg324-3 uart_test.ngc uart_test.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o uart_test_map.ncd uart_test.ngd uart_test.pcf 
+par -w -intstyle ise -ol high -mt off uart_test_map.ncd uart_test.ncd uart_test.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml uart_test.twx uart_test.ncd -o uart_test.twr uart_test.pcf -ucf uartrxtx.ucf 
+bitgen -intstyle ise -f uart_test.ut uart_test.ncd 
+xst -intstyle ise -ifn "E:/Project/AX516/verilog/uart_test/uart_test.xst" -ofn "E:/Project/AX516/verilog/uart_test/uart_test.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc uartrxtx.ucf -p xc6slx16-csg324-3 uart_test.ngc uart_test.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o uart_test_map.ncd uart_test.ngd uart_test.pcf 
+par -w -intstyle ise -ol high -mt off uart_test_map.ncd uart_test.ncd uart_test.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml uart_test.twx uart_test.ncd -o uart_test.twr uart_test.pcf -ucf uartrxtx.ucf 
+bitgen -intstyle ise -f uart_test.ut uart_test.ncd 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc uartrxtx.ucf -p xc6slx16-csg324-3 uart_test.ngc uart_test.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o uart_test_map.ncd uart_test.ngd uart_test.pcf 
+par -w -intstyle ise -ol high -mt off uart_test_map.ncd uart_test.ncd uart_test.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml uart_test.twx uart_test.ncd -o uart_test.twr uart_test.pcf -ucf uartrxtx.ucf 
+bitgen -intstyle ise -f uart_test.ut uart_test.ncd 
+xst -intstyle ise -ifn "E:/Project/AX545/verilog/uart_test/uart_test.xst" -ofn "E:/Project/AX545/verilog/uart_test/uart_test.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc uartrxtx.ucf -p xc6slx45-csg324-3 uart_test.ngc uart_test.ngd  
+map -intstyle ise -p xc6slx45-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o uart_test_map.ncd uart_test.ngd uart_test.pcf 
+par -w -intstyle ise -ol high -mt off uart_test_map.ncd uart_test.ncd uart_test.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml uart_test.twx uart_test.ncd -o uart_test.twr uart_test.pcf -ucf uartrxtx.ucf 
+bitgen -intstyle ise -f uart_test.ut uart_test.ncd 
+xst -intstyle ise -ifn "E:/Project/AX309/Verilog/uart_test/uart_test.xst" -ofn "E:/Project/AX309/Verilog/uart_test/uart_test.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc uartrxtx.ucf -p xc6slx9-ftg256-2 uart_test.ngc uart_test.ngd  
+map -intstyle ise -p xc6slx9-ftg256-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o uart_test_map.ncd uart_test.ngd uart_test.pcf 
+par -w -intstyle ise -ol high -mt off uart_test_map.ncd uart_test.ncd uart_test.pcf 
+bitgen -intstyle ise -f uart_test.ut uart_test.ncd 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc uartrxtx.ucf -p xc6slx9-ftg256-2 uart_test.ngc uart_test.ngd  
+map -intstyle ise -p xc6slx9-ftg256-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o uart_test_map.ncd uart_test.ngd uart_test.pcf 
+par -w -intstyle ise -ol high -mt off uart_test_map.ncd uart_test.ncd uart_test.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml uart_test.twx uart_test.ncd -o uart_test.twr uart_test.pcf -ucf uartrxtx.ucf 
+bitgen -intstyle ise -f uart_test.ut uart_test.ncd 
+xst -intstyle ise -ifn "E:/Project/AX309/Verilog/uart_test/uart_test.xst" -ofn "E:/Project/AX309/Verilog/uart_test/uart_test.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc uartrxtx.ucf -p xc6slx9-ftg256-2 uart_test.ngc uart_test.ngd  
+map -intstyle ise -p xc6slx9-ftg256-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o uart_test_map.ncd uart_test.ngd uart_test.pcf 
+par -w -intstyle ise -ol high -mt off uart_test_map.ncd uart_test.ncd uart_test.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml uart_test.twx uart_test.ncd -o uart_test.twr uart_test.pcf -ucf uartrxtx.ucf 
+bitgen -intstyle ise -f uart_test.ut uart_test.ncd 
+xst -intstyle ise -ifn "E:/Project/AX309/CD/09_VERILOG/07_uart_test/uart_test.xst" -ofn "E:/Project/AX309/CD/09_VERILOG/07_uart_test/uart_test.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc uartrxtx.ucf -p xc6slx9-ftg256-2 uart_test.ngc uart_test.ngd  
+map -intstyle ise -p xc6slx9-ftg256-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o uart_test_map.ncd uart_test.ngd uart_test.pcf 
+par -w -intstyle ise -ol high -mt off uart_test_map.ncd uart_test.ncd uart_test.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml uart_test.twx uart_test.ncd -o uart_test.twr uart_test.pcf -ucf uartrxtx.ucf 
+bitgen -intstyle ise -f uart_test.ut uart_test.ncd 
+xst -intstyle ise -ifn "E:/Project/AX309/CD/09_VERILOG/07_uart_test/uart_test.xst" -ofn "E:/Project/AX309/CD/09_VERILOG/07_uart_test/uart_test.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc uartrxtx.ucf -p xc6slx9-ftg256-2 uart_test.ngc uart_test.ngd  
+map -intstyle ise -p xc6slx9-ftg256-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o uart_test_map.ncd uart_test.ngd uart_test.pcf 
+par -w -intstyle ise -ol high -mt off uart_test_map.ncd uart_test.ncd uart_test.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml uart_test.twx uart_test.ncd -o uart_test.twr uart_test.pcf -ucf uartrxtx.ucf 
+bitgen -intstyle ise -f uart_test.ut uart_test.ncd 
+xst -intstyle ise -ifn "E:/BaiduYunDownload/AX309.160128/AX309/09_VERILOG/07_uart_test/uart_test.xst" -ofn "E:/BaiduYunDownload/AX309.160128/AX309/09_VERILOG/07_uart_test/uart_test.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc uartrxtx.ucf -p xc6slx9-ftg256-2 uart_test.ngc uart_test.ngd  
+map -intstyle ise -p xc6slx9-ftg256-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o uart_test_map.ncd uart_test.ngd uart_test.pcf 
+par -w -intstyle ise -ol high -mt off uart_test_map.ncd uart_test.ncd uart_test.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml uart_test.twx uart_test.ncd -o uart_test.twr uart_test.pcf -ucf uartrxtx.ucf 
+bitgen -intstyle ise -f uart_test.ut uart_test.ncd 

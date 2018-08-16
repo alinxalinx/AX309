@@ -1,0 +1,18 @@
+
+
+##
+NET "clk50" LOC = T8 | TNM_NET = sys_clk_pin | IOSTANDARD = "LVCMOS33";
+TIMESPEC TS_sys_clk_pin = PERIOD sys_clk_pin 50000 kHz;
+##
+
+
+##
+NET reset                                LOC = L3 | IOSTANDARD = "LVCMOS33"; ## Reset Button
+##
+
+
+########USB Uart SerialPin define#####################
+NET rx                         	 		  LOC = C11 | IOSTANDARD = "LVCMOS33";		     ## Uart RXD:U4_TXD
+NET tx                          	  	     LOC = D12 | IOSTANDARD = "LVCMOS33"; 		  ## Uart TXD:U4_RXD
+
+

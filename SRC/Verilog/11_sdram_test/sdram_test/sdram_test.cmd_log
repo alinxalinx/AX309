@@ -1,0 +1,35 @@
+xst -intstyle ise -ifn "E:/Project/AX309/Verilog/08_sdram_test/sdram_test/sdram_test.xst" -ofn "E:/Project/AX309/Verilog/08_sdram_test/sdram_test/sdram_test.syr" 
+xst -intstyle ise -ifn "E:/Project/AX309/Verilog/08_sdram_test/sdram_test/sdram_test.xst" -ofn "E:/Project/AX309/Verilog/08_sdram_test/sdram_test/sdram_test.syr" 
+xst -intstyle ise -ifn "E:/Project/AX309/Verilog/08_sdram_test/sdram_test/sdram_test.xst" -ofn "E:/Project/AX309/Verilog/08_sdram_test/sdram_test/sdram_test.syr" 
+xst -intstyle ise -ifn "E:/Project/AX309/Verilog/08_sdram_test/sdram_test/sdram_test.xst" -ofn "E:/Project/AX309/Verilog/08_sdram_test/sdram_test/sdram_test.syr" 
+xst -intstyle ise -ifn "E:/Project/AX309/Verilog/08_sdram_test/sdram_test/sdram_test.xst" -ofn "E:/Project/AX309/Verilog/08_sdram_test/sdram_test/sdram_test.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc sdram_test.ucf -p xc6slx9-ftg256-2 sdram_test.ngc sdram_test.ngd  
+map -intstyle ise -p xc6slx9-ftg256-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o sdram_test_map.ncd sdram_test.ngd sdram_test.pcf 
+par -w -intstyle ise -ol high -mt off sdram_test_map.ncd sdram_test.ncd sdram_test.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml sdram_test.twx sdram_test.ncd -o sdram_test.twr sdram_test.pcf -ucf sdram_test.ucf 
+bitgen -intstyle ise -f sdram_test.ut sdram_test.ncd 
+xst -intstyle ise -ifn "E:/Project/AX309/Verilog/08_sdram_test/sdram_test/sdram_test.xst" -ofn "E:/Project/AX309/Verilog/08_sdram_test/sdram_test/sdram_test.syr" 
+xst -intstyle ise -ifn "E:/Project/AX309/Verilog/08_sdram_test/sdram_test/sdram_test.xst" -ofn "E:/Project/AX309/Verilog/08_sdram_test/sdram_test/sdram_test.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc sdram_test.ucf -p xc6slx9-ftg256-2 sdram_test.ngc sdram_test.ngd  
+map -intstyle ise -p xc6slx9-ftg256-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o sdram_test_map.ncd sdram_test.ngd sdram_test.pcf 
+par -w -intstyle ise -ol high -mt off sdram_test_map.ncd sdram_test.ncd sdram_test.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml sdram_test.twx sdram_test.ncd -o sdram_test.twr sdram_test.pcf -ucf sdram_test.ucf 
+bitgen -intstyle ise -f sdram_test.ut sdram_test.ncd 
+xst -intstyle ise -ifn "E:/Project/AX309/Verilog/08_sdram_test/sdram_test/sdram_test.xst" -ofn "E:/Project/AX309/Verilog/08_sdram_test/sdram_test/sdram_test.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc sdram_test.ucf -p xc6slx9-ftg256-2 sdram_test.ngc sdram_test.ngd  
+map -intstyle ise -p xc6slx9-ftg256-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o sdram_test_map.ncd sdram_test.ngd sdram_test.pcf 
+par -w -intstyle ise -ol high -mt off sdram_test_map.ncd sdram_test.ncd sdram_test.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml sdram_test.twx sdram_test.ncd -o sdram_test.twr sdram_test.pcf -ucf sdram_test.ucf 
+bitgen -intstyle ise -f sdram_test.ut sdram_test.ncd 
+xst -intstyle ise -ifn "E:/Project/AX309/Verilog/08_sdram_test/sdram_test/sdram_test.xst" -ofn "E:/Project/AX309/Verilog/08_sdram_test/sdram_test/sdram_test.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc sdram_test.ucf -p xc6slx9-ftg256-2 sdram_test.ngc sdram_test.ngd  
+map -intstyle ise -p xc6slx9-ftg256-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o sdram_test_map.ncd sdram_test.ngd sdram_test.pcf 
+par -w -intstyle ise -ol high -mt off sdram_test_map.ncd sdram_test.ncd sdram_test.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml sdram_test.twx sdram_test.ncd -o sdram_test.twr sdram_test.pcf -ucf sdram_test.ucf 
+bitgen -intstyle ise -f sdram_test.ut sdram_test.ncd 
+xst -intstyle ise -ifn "E:/BaiduYunDownload/AX309.1600808/AX309/09_VERILOG/11_sdram_test/sdram_test/sdram_test.xst" -ofn "E:/BaiduYunDownload/AX309.1600808/AX309/09_VERILOG/11_sdram_test/sdram_test/sdram_test.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc sdram_test.ucf -p xc6slx9-ftg256-2 sdram_test.ngc sdram_test.ngd  
+map -intstyle ise -p xc6slx9-ftg256-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o sdram_test_map.ncd sdram_test.ngd sdram_test.pcf 
+par -w -intstyle ise -ol high -mt off sdram_test_map.ncd sdram_test.ncd sdram_test.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml sdram_test.twx sdram_test.ncd -o sdram_test.twr sdram_test.pcf -ucf sdram_test.ucf 
+bitgen -intstyle ise -f sdram_test.ut sdram_test.ncd 

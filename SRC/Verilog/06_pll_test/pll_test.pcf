@@ -1,0 +1,30 @@
+//! **************************************************************************
+// Written by: Map P.20131013 on Mon Nov 14 18:00:41 2016
+//! **************************************************************************
+
+SCHEMATIC START;
+COMP "clk" LOCATE = SITE "T8" LEVEL 1;
+COMP "clk_out" LOCATE = SITE "K16" LEVEL 1;
+COMP "rst_n" LOCATE = SITE "L3" LEVEL 1;
+PIN ODDR2_inst_pins<1> = BEL "ODDR2_inst" PINNAME CK0;
+PIN ODDR2_inst_pins<2> = BEL "ODDR2_inst" PINNAME CK1;
+PIN SP6_INS_BUFIO2FB_DCM_ML_BUFIO2FB_1_pins<1> = BEL
+        "SP6_INS_BUFIO2FB_DCM_ML_BUFIO2FB_1" PINNAME O;
+PIN pll_ip_inst/dcm_sp_inst_pins<1> = BEL "pll_ip_inst/dcm_sp_inst" PINNAME
+        CLKFB;
+TIMEGRP pll_ip_inst_clk0 = PIN "ODDR2_inst_pins<1>" PIN "ODDR2_inst_pins<2>"
+        PIN "ODDR2_inst_pins<1>" PIN "ODDR2_inst_pins<2>" BEL
+        "pll_ip_inst/clkout2_buf" PIN
+        "SP6_INS_BUFIO2FB_DCM_ML_BUFIO2FB_1_pins<1>" PIN
+        "pll_ip_inst/dcm_sp_inst_pins<1>";
+PIN SP6_BUFIO_INSERT_ML_BUFIO2_0_pins<0> = BEL "SP6_BUFIO_INSERT_ML_BUFIO2_0"
+        PINNAME DIVCLK;
+PIN pll_ip_inst/dcm_sp_inst_pins<2> = BEL "pll_ip_inst/dcm_sp_inst" PINNAME
+        CLKIN;
+TIMEGRP sys_clk_pin = PIN "SP6_BUFIO_INSERT_ML_BUFIO2_0_pins<0>" PIN
+        "pll_ip_inst/dcm_sp_inst_pins<2>";
+TS_sys_clk_pin = PERIOD TIMEGRP "sys_clk_pin" 50 MHz HIGH 50%;
+TS_pll_ip_inst_clk0 = PERIOD TIMEGRP "pll_ip_inst_clk0" TS_sys_clk_pin HIGH
+        50%;
+SCHEMATIC END;
+

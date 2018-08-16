@@ -1,0 +1,74 @@
+xst -intstyle ise -ifn "E:/Project/AX516/verilog/led_test/led_test.xst" -ofn "E:/Project/AX516/verilog/led_test/led_test.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc led_test.ucf -p xc6slx16-csg324-3 led_test.ngc led_test.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o led_test_map.ncd led_test.ngd led_test.pcf 
+par -w -intstyle ise -ol high -mt off led_test_map.ncd led_test.ncd led_test.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml led_test.twx led_test.ncd -o led_test.twr led_test.pcf -ucf led_test.ucf 
+bitgen -intstyle ise -f led_test.ut led_test.ncd 
+xst -intstyle ise -ifn "E:/Project/AX516/verilog/led_test/led_test.xst" -ofn "E:/Project/AX516/verilog/led_test/led_test.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc led_test.ucf -p xc6slx16-csg324-3 led_test.ngc led_test.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o led_test_map.ncd led_test.ngd led_test.pcf 
+par -w -intstyle ise -ol high -mt off led_test_map.ncd led_test.ncd led_test.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml led_test.twx led_test.ncd -o led_test.twr led_test.pcf -ucf led_test.ucf 
+bitgen -intstyle ise -f led_test.ut led_test.ncd 
+xst -intstyle ise -ifn "E:/Project/AX516/verilog/led_test/led_test.xst" -ofn "E:/Project/AX516/verilog/led_test/led_test.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc led_test.ucf -p xc6slx16-csg324-3 led_test.ngc led_test.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o led_test_map.ncd led_test.ngd led_test.pcf 
+par -w -intstyle ise -ol high -mt off led_test_map.ncd led_test.ncd led_test.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml led_test.twx led_test.ncd -o led_test.twr led_test.pcf -ucf led_test.ucf 
+bitgen -intstyle ise -f led_test.ut led_test.ncd 
+xst -intstyle ise -ifn "E:/Project/AX545/verilog/led_test/led_test.xst" -ofn "E:/Project/AX545/verilog/led_test/led_test.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc led_test.ucf -p xc6slx45-csg324-3 led_test.ngc led_test.ngd  
+map -intstyle ise -p xc6slx45-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o led_test_map.ncd led_test.ngd led_test.pcf 
+par -w -intstyle ise -ol high -mt off led_test_map.ncd led_test.ncd led_test.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml led_test.twx led_test.ncd -o led_test.twr led_test.pcf -ucf led_test.ucf 
+bitgen -intstyle ise -f led_test.ut led_test.ncd 
+bitgen -intstyle ise -f led_test.ut led_test.ncd 
+xst -intstyle ise -ifn "E:/Project/AX545/verilog/led_test/led_test.xst" -ofn "E:/Project/AX545/verilog/led_test/led_test.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc led_test.ucf -p xc6slx45-csg324-2 led_test.ngc led_test.ngd  
+map -intstyle ise -p xc6slx45-csg324-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o led_test_map.ncd led_test.ngd led_test.pcf 
+par -w -intstyle ise -ol high -mt off led_test_map.ncd led_test.ncd led_test.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml led_test.twx led_test.ncd -o led_test.twr led_test.pcf -ucf led_test.ucf 
+bitgen -intstyle ise -f led_test.ut led_test.ncd 
+bitgen -intstyle ise -f led_test.ut led_test.ncd 
+bitgen -intstyle ise -f led_test.ut led_test.ncd 
+xst -intstyle ise -ifn "E:/Project/AX309/Verilog/led_test/led_test.xst" -ofn "E:/Project/AX309/Verilog/led_test/led_test.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc led_test.ucf -p xc6slx9-ftg256-2 led_test.ngc led_test.ngd  
+map -intstyle ise -p xc6slx9-ftg256-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o led_test_map.ncd led_test.ngd led_test.pcf 
+par -w -intstyle ise -ol high -mt off led_test_map.ncd led_test.ncd led_test.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml led_test.twx led_test.ncd -o led_test.twr led_test.pcf -ucf led_test.ucf 
+bitgen -intstyle ise -f led_test.ut led_test.ncd 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc led_test.ucf -p xc6slx9-ftg256-2 led_test.ngc led_test.ngd  
+map -intstyle ise -p xc6slx9-ftg256-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o led_test_map.ncd led_test.ngd led_test.pcf 
+par -w -intstyle ise -ol high -mt off led_test_map.ncd led_test.ncd led_test.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml led_test.twx led_test.ncd -o led_test.twr led_test.pcf -ucf led_test.ucf 
+bitgen -intstyle ise -f led_test.ut led_test.ncd 
+xst -intstyle ise -ifn "E:/Project/AX309/Verilog/led_test/led_test.xst" -ofn "E:/Project/AX309/Verilog/led_test/led_test.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc led_test.ucf -p xc6slx9-ftg256-2 led_test.ngc led_test.ngd  
+map -intstyle ise -p xc6slx9-ftg256-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o led_test_map.ncd led_test.ngd led_test.pcf 
+par -w -intstyle ise -ol high -mt off led_test_map.ncd led_test.ncd led_test.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml led_test.twx led_test.ncd -o led_test.twr led_test.pcf -ucf led_test.ucf 
+bitgen -intstyle ise -f led_test.ut led_test.ncd 
+xst -intstyle ise -ifn "E:/Project/AX309/Verilog/02_led_test/led_test.xst" -ofn "E:/Project/AX309/Verilog/02_led_test/led_test.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc led_test.ucf -p xc6slx9-ftg256-2 led_test.ngc led_test.ngd  
+map -intstyle ise -p xc6slx9-ftg256-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o led_test_map.ncd led_test.ngd led_test.pcf 
+par -w -intstyle ise -ol high -mt off led_test_map.ncd led_test.ncd led_test.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml led_test.twx led_test.ncd -o led_test.twr led_test.pcf -ucf led_test.ucf 
+bitgen -intstyle ise -f led_test.ut led_test.ncd 
+xst -intstyle ise -ifn "E:/Project/AX309/Verilog/02_led_test/led_test.xst" -ofn "E:/Project/AX309/Verilog/02_led_test/led_test.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc led_test.ucf -p xc6slx9-ftg256-2 led_test.ngc led_test.ngd  
+map -intstyle ise -p xc6slx9-ftg256-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o led_test_map.ncd led_test.ngd led_test.pcf 
+par -w -intstyle ise -ol high -mt off led_test_map.ncd led_test.ncd led_test.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml led_test.twx led_test.ncd -o led_test.twr led_test.pcf -ucf led_test.ucf 
+bitgen -intstyle ise -f led_test.ut led_test.ncd 
+xst -intstyle ise -ifn "E:/Project/AX309/CD/09_VERILOG/04_led_test/led_test.xst" -ofn "E:/Project/AX309/CD/09_VERILOG/04_led_test/led_test.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc led_test.ucf -p xc6slx9-ftg256-2 led_test.ngc led_test.ngd  
+map -intstyle ise -p xc6slx9-ftg256-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o led_test_map.ncd led_test.ngd led_test.pcf 
+par -w -intstyle ise -ol high -mt off led_test_map.ncd led_test.ncd led_test.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml led_test.twx led_test.ncd -o led_test.twr led_test.pcf -ucf led_test.ucf 
+bitgen -intstyle ise -f led_test.ut led_test.ncd 
+xst -intstyle ise -ifn "E:/Project/AX309/CD/09_VERILOG/04_led_test/led_test.xst" -ofn "E:/Project/AX309/CD/09_VERILOG/04_led_test/led_test.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc led_test.ucf -p xc6slx9-ftg256-2 led_test.ngc led_test.ngd  
+map -intstyle ise -p xc6slx9-ftg256-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o led_test_map.ncd led_test.ngd led_test.pcf 
+par -w -intstyle ise -ol high -mt off led_test_map.ncd led_test.ncd led_test.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml led_test.twx led_test.ncd -o led_test.twr led_test.pcf -ucf led_test.ucf 
+bitgen -intstyle ise -f led_test.ut led_test.ncd 

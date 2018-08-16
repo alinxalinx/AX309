@@ -1,0 +1,59 @@
+//! **************************************************************************
+// Written by: Map P.20131013 on Tue Jul 14 10:44:36 2015
+//! **************************************************************************
+
+SCHEMATIC START;
+COMP "SMG_Data<0>" LOCATE = SITE "C7" LEVEL 1;
+COMP "SMG_Data<1>" LOCATE = SITE "E6" LEVEL 1;
+COMP "SMG_Data<2>" LOCATE = SITE "C5" LEVEL 1;
+COMP "SMG_Data<3>" LOCATE = SITE "F7" LEVEL 1;
+COMP "SMG_Data<4>" LOCATE = SITE "D6" LEVEL 1;
+COMP "SMG_Data<5>" LOCATE = SITE "E7" LEVEL 1;
+COMP "SMG_Data<6>" LOCATE = SITE "D5" LEVEL 1;
+COMP "SMG_Data<7>" LOCATE = SITE "C6" LEVEL 1;
+COMP "RSTn" LOCATE = SITE "L3" LEVEL 1;
+COMP "Scan_Sig<0>" LOCATE = SITE "D8" LEVEL 1;
+COMP "Scan_Sig<1>" LOCATE = SITE "E8" LEVEL 1;
+COMP "Scan_Sig<2>" LOCATE = SITE "F9" LEVEL 1;
+COMP "CLK" LOCATE = SITE "T8" LEVEL 1;
+COMP "Scan_Sig<3>" LOCATE = SITE "F10" LEVEL 1;
+COMP "Scan_Sig<4>" LOCATE = SITE "E10" LEVEL 1;
+COMP "Scan_Sig<5>" LOCATE = SITE "D9" LEVEL 1;
+TIMEGRP sys_clk_pin = BEL "U1/rNumber_23" BEL "U1/rNumber_22" BEL
+        "U1/rNumber_21" BEL "U1/rNumber_20" BEL "U1/rNumber_19" BEL
+        "U1/rNumber_18" BEL "U1/rNumber_17" BEL "U1/rNumber_16" BEL
+        "U1/rNumber_15" BEL "U1/rNumber_14" BEL "U1/rNumber_13" BEL
+        "U1/rNumber_12" BEL "U1/rNumber_11" BEL "U1/rNumber_10" BEL
+        "U1/rNumber_9" BEL "U1/rNumber_8" BEL "U1/rNumber_7" BEL
+        "U1/rNumber_6" BEL "U1/rNumber_5" BEL "U1/rNumber_4" BEL
+        "U1/rNumber_3" BEL "U1/rNumber_2" BEL "U1/rNumber_1" BEL
+        "U1/rNumber_0" BEL "U1/rNum_23" BEL "U1/rNum_1" BEL "U1/rNum_2" BEL
+        "U1/rNum_0" BEL "U1/rNum_4" BEL "U1/rNum_5" BEL "U1/rNum_3" BEL
+        "U1/rNum_7" BEL "U1/rNum_8" BEL "U1/rNum_6" BEL "U1/rNum_10" BEL
+        "U1/rNum_11" BEL "U1/rNum_9" BEL "U1/rNum_13" BEL "U1/rNum_14" BEL
+        "U1/rNum_12" BEL "U1/rNum_16" BEL "U1/rNum_17" BEL "U1/rNum_15" BEL
+        "U1/rNum_19" BEL "U1/rNum_20" BEL "U1/rNum_18" BEL "U1/rNum_22" BEL
+        "U1/rNum_21" BEL "U2/U3/rScan_5" BEL "U2/U3/rScan_4" BEL
+        "U2/U3/rScan_3" BEL "U2/U3/rScan_2" BEL "U2/U3/rScan_1" BEL
+        "U2/U3/rScan_0" BEL "U2/U3/i_2" BEL "U2/U3/i_1" BEL "U2/U3/i_0" BEL
+        "U1/C1_0" BEL "U1/C1_1" BEL "U1/C1_2" BEL "U1/C1_3" BEL "U1/C1_4" BEL
+        "U1/C1_5" BEL "U1/C1_6" BEL "U1/C1_7" BEL "U1/C1_8" BEL "U1/C1_9" BEL
+        "U1/C1_10" BEL "U1/C1_11" BEL "U1/C1_12" BEL "U1/C1_13" BEL "U1/C1_14"
+        BEL "U1/C1_15" BEL "U1/C1_16" BEL "U1/C1_17" BEL "U1/C1_18" BEL
+        "U1/C1_19" BEL "U1/C1_20" BEL "U1/C1_21" BEL "U1/C1_22" BEL
+        "U2/U3/C1_4" BEL "U2/U3/C1_5" BEL "U2/U3/C1_6" BEL "U2/U3/C1_7" BEL
+        "U2/U3/C1_8" BEL "U2/U3/C1_9" BEL "U2/U3/C1_10" BEL "U2/U3/C1_11" BEL
+        "U2/U3/C1_12" BEL "U2/U3/C1_13" BEL "U2/U3/C1_14" BEL "U2/U3/C1_15"
+        BEL "U2/U1/C1_15" BEL "U2/U1/C1_14" BEL "U2/U1/C1_13" BEL
+        "U2/U1/C1_12" BEL "U2/U1/C1_11" BEL "U2/U1/C1_10" BEL "U2/U1/C1_9" BEL
+        "U2/U1/C1_8" BEL "U2/U1/C1_7" BEL "U2/U1/C1_6" BEL "U2/U1/C1_5" BEL
+        "U2/U1/C1_4" BEL "U2/U1/C1_3" BEL "U2/U1/C1_2" BEL "U2/U1/C1_1" BEL
+        "U2/U1/C1_0" BEL "U2/U1/rNumber_3" BEL "U2/U1/rNumber_2" BEL
+        "U2/U1/rNumber_1" BEL "U2/U1/rNumber_0" BEL "U2/U1/i_2" BEL
+        "U2/U1/i_1" BEL "U2/U1/i_0" BEL "U2/U2/rSMG_6" BEL "U2/U2/rSMG_5" BEL
+        "U2/U2/rSMG_4" BEL "U2/U2/rSMG_3" BEL "U2/U2/rSMG_2" BEL
+        "U2/U2/rSMG_1" BEL "U2/U2/rSMG_0" BEL "U1/i_2" BEL "U1/i_1" BEL
+        "U1/i_0" BEL "CLK_BUFGP/BUFG";
+TS_sys_clk_pin = PERIOD TIMEGRP "sys_clk_pin" 50 MHz HIGH 50%;
+SCHEMATIC END;
+

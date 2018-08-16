@@ -1,0 +1,154 @@
+xst -intstyle ise -ifn "E:/Project/AX516/verilog/rtc_test/rtc_test.xst" -ofn "E:/Project/AX516/verilog/rtc_test/rtc_test.syr" 
+xst -intstyle ise -ifn "E:/Project/AX516/verilog/rtc_test/rtc_test.xst" -ofn "E:/Project/AX516/verilog/rtc_test/rtc_test.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -i -p xc6slx16-csg324-2 rtc_test.ngc rtc_test.ngd  
+map -intstyle ise -p xc6slx16-csg324-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o rtc_test_map.ncd rtc_test.ngd rtc_test.pcf 
+par -w -intstyle ise -ol high -mt off rtc_test_map.ncd rtc_test.ncd rtc_test.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml rtc_test.twx rtc_test.ncd -o rtc_test.twr rtc_test.pcf 
+bitgen -intstyle ise -f rtc_test.ut rtc_test.ncd 
+xst -intstyle ise -ifn "E:/Project/AX516/verilog/rtc_test/rtc_test.xst" -ofn "E:/Project/AX516/verilog/rtc_test/rtc_test.syr" 
+xst -intstyle ise -ifn "E:/Project/AX516/verilog/rtc_test/rtc_test.xst" -ofn "E:/Project/AX516/verilog/rtc_test/rtc_test.syr" 
+xst -intstyle ise -ifn "E:/Project/AX516/verilog/rtc_test/rtc_test.xst" -ofn "E:/Project/AX516/verilog/rtc_test/rtc_test.syr" 
+xst -intstyle ise -ifn "E:/Project/AX516/verilog/rtc_test/rtc_test.xst" -ofn "E:/Project/AX516/verilog/rtc_test/rtc_test.syr" 
+xst -intstyle ise -ifn "E:/Project/AX516/verilog/rtc_test/rtc_test.xst" -ofn "E:/Project/AX516/verilog/rtc_test/rtc_test.syr" 
+xst -intstyle ise -ifn "E:/Project/AX516/verilog/rtc_test/rtc_test.xst" -ofn "E:/Project/AX516/verilog/rtc_test/rtc_test.syr" 
+xst -intstyle ise -ifn "E:/Project/AX516/verilog/rtc_test/rtc_test.xst" -ofn "E:/Project/AX516/verilog/rtc_test/rtc_test.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -i -p xc6slx16-csg324-2 rtc_test.ngc rtc_test.ngd  
+map -intstyle ise -p xc6slx16-csg324-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o rtc_test_map.ncd rtc_test.ngd rtc_test.pcf 
+par -w -intstyle ise -ol high -mt off rtc_test_map.ncd rtc_test.ncd rtc_test.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml rtc_test.twx rtc_test.ncd -o rtc_test.twr rtc_test.pcf 
+bitgen -intstyle ise -f rtc_test.ut rtc_test.ncd 
+xst -intstyle ise -ifn "E:/Project/AX516/verilog/rtc_test/rtc_test.xst" -ofn "E:/Project/AX516/verilog/rtc_test/rtc_test.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc rtl/rtc_test.ucf -p xc6slx16-csg324-2 rtc_test.ngc rtc_test.ngd  
+map -intstyle ise -p xc6slx16-csg324-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o rtc_test_map.ncd rtc_test.ngd rtc_test.pcf 
+par -w -intstyle ise -ol high -mt off rtc_test_map.ncd rtc_test.ncd rtc_test.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml rtc_test.twx rtc_test.ncd -o rtc_test.twr rtc_test.pcf 
+bitgen -intstyle ise -f rtc_test.ut rtc_test.ncd 
+xst -intstyle ise -ifn "E:/Project/AX516/verilog/rtc_test/rtc_test.xst" -ofn "E:/Project/AX516/verilog/rtc_test/rtc_test.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc rtl/rtc_test.ucf -p xc6slx16-csg324-2 rtc_test.ngc rtc_test.ngd  
+map -intstyle ise -p xc6slx16-csg324-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o rtc_test_map.ncd rtc_test.ngd rtc_test.pcf 
+par -w -intstyle ise -ol high -mt off rtc_test_map.ncd rtc_test.ncd rtc_test.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml rtc_test.twx rtc_test.ncd -o rtc_test.twr rtc_test.pcf 
+bitgen -intstyle ise -f rtc_test.ut rtc_test.ncd 
+xst -intstyle ise -ifn "E:/Project/AX516/verilog/rtc_test/rtc_test.xst" -ofn "E:/Project/AX516/verilog/rtc_test/rtc_test.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc rtl/rtc_test.ucf -p xc6slx16-csg324-2 rtc_test.ngc rtc_test.ngd  
+map -intstyle ise -p xc6slx16-csg324-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o rtc_test_map.ncd rtc_test.ngd rtc_test.pcf 
+par -w -intstyle ise -ol high -mt off rtc_test_map.ncd rtc_test.ncd rtc_test.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml rtc_test.twx rtc_test.ncd -o rtc_test.twr rtc_test.pcf 
+bitgen -intstyle ise -f rtc_test.ut rtc_test.ncd 
+xst -intstyle ise -ifn "E:/Project/AX516/verilog/rtc_test/rtc_test.xst" -ofn "E:/Project/AX516/verilog/rtc_test/rtc_test.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc rtl/rtc_test.ucf -p xc6slx16-csg324-2 rtc_test.ngc rtc_test.ngd  
+map -intstyle ise -p xc6slx16-csg324-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o rtc_test_map.ncd rtc_test.ngd rtc_test.pcf 
+par -w -intstyle ise -ol high -mt off rtc_test_map.ncd rtc_test.ncd rtc_test.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml rtc_test.twx rtc_test.ncd -o rtc_test.twr rtc_test.pcf 
+bitgen -intstyle ise -f rtc_test.ut rtc_test.ncd 
+xst -intstyle ise -ifn "E:/Project/AX516/verilog/rtc_test/rtc_test.xst" -ofn "E:/Project/AX516/verilog/rtc_test/rtc_test.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc rtl/rtc_test.ucf -p xc6slx16-csg324-2 rtc_test.ngc rtc_test.ngd  
+map -intstyle ise -p xc6slx16-csg324-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o rtc_test_map.ncd rtc_test.ngd rtc_test.pcf 
+par -w -intstyle ise -ol high -mt off rtc_test_map.ncd rtc_test.ncd rtc_test.pcf 
+bitgen -intstyle ise -f rtc_test.ut rtc_test.ncd 
+xst -intstyle ise -ifn "E:/Project/AX516/verilog/rtc_test/rtc_test.xst" -ofn "E:/Project/AX516/verilog/rtc_test/rtc_test.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc rtl/rtc_test.ucf -p xc6slx16-csg324-2 rtc_test.ngc rtc_test.ngd  
+map -intstyle ise -p xc6slx16-csg324-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o rtc_test_map.ncd rtc_test.ngd rtc_test.pcf 
+par -w -intstyle ise -ol high -mt off rtc_test_map.ncd rtc_test.ncd rtc_test.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml rtc_test.twx rtc_test.ncd -o rtc_test.twr rtc_test.pcf 
+bitgen -intstyle ise -f rtc_test.ut rtc_test.ncd 
+xst -intstyle ise -ifn "E:/Project/AX516/verilog/rtc_test/rtc_test.xst" -ofn "E:/Project/AX516/verilog/rtc_test/rtc_test.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc rtl/rtc_test.ucf -p xc6slx16-csg324-2 rtc_test.ngc rtc_test.ngd  
+map -intstyle ise -p xc6slx16-csg324-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o rtc_test_map.ncd rtc_test.ngd rtc_test.pcf 
+par -w -intstyle ise -ol high -mt off rtc_test_map.ncd rtc_test.ncd rtc_test.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml rtc_test.twx rtc_test.ncd -o rtc_test.twr rtc_test.pcf 
+bitgen -intstyle ise -f rtc_test.ut rtc_test.ncd 
+xst -intstyle ise -ifn "E:/Project/AX516/verilog/rtc_test/rtc_test.xst" -ofn "E:/Project/AX516/verilog/rtc_test/rtc_test.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc rtl/rtc_test.ucf -p xc6slx16-csg324-2 rtc_test.ngc rtc_test.ngd  
+map -intstyle ise -p xc6slx16-csg324-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o rtc_test_map.ncd rtc_test.ngd rtc_test.pcf 
+par -w -intstyle ise -ol high -mt off rtc_test_map.ncd rtc_test.ncd rtc_test.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml rtc_test.twx rtc_test.ncd -o rtc_test.twr rtc_test.pcf 
+bitgen -intstyle ise -f rtc_test.ut rtc_test.ncd 
+xst -intstyle ise -ifn "E:/Project/AX516/verilog/rtc_test/rtc_test.xst" -ofn "E:/Project/AX516/verilog/rtc_test/rtc_test.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc rtl/rtc_test.ucf -p xc6slx16-csg324-2 rtc_test.ngc rtc_test.ngd  
+map -intstyle ise -p xc6slx16-csg324-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o rtc_test_map.ncd rtc_test.ngd rtc_test.pcf 
+par -w -intstyle ise -ol high -mt off rtc_test_map.ncd rtc_test.ncd rtc_test.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml rtc_test.twx rtc_test.ncd -o rtc_test.twr rtc_test.pcf 
+bitgen -intstyle ise -f rtc_test.ut rtc_test.ncd 
+xst -intstyle ise -ifn "E:/Project/AX516/verilog/rtc_test/rtc_test.xst" -ofn "E:/Project/AX516/verilog/rtc_test/rtc_test.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc rtl/rtc_test.ucf -p xc6slx16-csg324-2 rtc_test.ngc rtc_test.ngd  
+map -intstyle ise -p xc6slx16-csg324-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o rtc_test_map.ncd rtc_test.ngd rtc_test.pcf 
+par -w -intstyle ise -ol high -mt off rtc_test_map.ncd rtc_test.ncd rtc_test.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml rtc_test.twx rtc_test.ncd -o rtc_test.twr rtc_test.pcf 
+bitgen -intstyle ise -f rtc_test.ut rtc_test.ncd 
+xst -intstyle ise -ifn "E:/Project/AX516/verilog/rtc_test/rtc_test.xst" -ofn "E:/Project/AX516/verilog/rtc_test/rtc_test.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc rtl/rtc_test.ucf -p xc6slx16-csg324-2 rtc_test.ngc rtc_test.ngd  
+map -intstyle ise -p xc6slx16-csg324-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o rtc_test_map.ncd rtc_test.ngd rtc_test.pcf 
+par -w -intstyle ise -ol high -mt off rtc_test_map.ncd rtc_test.ncd rtc_test.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml rtc_test.twx rtc_test.ncd -o rtc_test.twr rtc_test.pcf 
+bitgen -intstyle ise -f rtc_test.ut rtc_test.ncd 
+xst -intstyle ise -ifn "E:/Project/AX516/verilog/rtc_test/rtc_test.xst" -ofn "E:/Project/AX516/verilog/rtc_test/rtc_test.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc rtl/rtc_test.ucf -p xc6slx16-csg324-2 rtc_test.ngc rtc_test.ngd  
+map -intstyle ise -p xc6slx16-csg324-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o rtc_test_map.ncd rtc_test.ngd rtc_test.pcf 
+par -w -intstyle ise -ol high -mt off rtc_test_map.ncd rtc_test.ncd rtc_test.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml rtc_test.twx rtc_test.ncd -o rtc_test.twr rtc_test.pcf 
+bitgen -intstyle ise -f rtc_test.ut rtc_test.ncd 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc rtl/rtc_test.ucf -p xc6slx16-csg324-2 rtc_test.ngc rtc_test.ngd  
+map -intstyle ise -p xc6slx16-csg324-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o rtc_test_map.ncd rtc_test.ngd rtc_test.pcf 
+par -w -intstyle ise -ol high -mt off rtc_test_map.ncd rtc_test.ncd rtc_test.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml rtc_test.twx rtc_test.ncd -o rtc_test.twr rtc_test.pcf 
+bitgen -intstyle ise -f rtc_test.ut rtc_test.ncd 
+xst -intstyle ise -ifn "E:/Project/AX516/verilog/rtc_test/rtc_test.xst" -ofn "E:/Project/AX516/verilog/rtc_test/rtc_test.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc rtl/rtc_test.ucf -p xc6slx16-csg324-2 rtc_test.ngc rtc_test.ngd  
+map -intstyle ise -p xc6slx16-csg324-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o rtc_test_map.ncd rtc_test.ngd rtc_test.pcf 
+par -w -intstyle ise -ol high -mt off rtc_test_map.ncd rtc_test.ncd rtc_test.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml rtc_test.twx rtc_test.ncd -o rtc_test.twr rtc_test.pcf 
+bitgen -intstyle ise -f rtc_test.ut rtc_test.ncd 
+xst -intstyle ise -ifn "E:/Project/AX516/verilog/rtc_test/rtc_test.xst" -ofn "E:/Project/AX516/verilog/rtc_test/rtc_test.syr" 
+xst -intstyle ise -ifn "E:/Project/AX516/verilog/rtc_test/rtc_test.xst" -ofn "E:/Project/AX516/verilog/rtc_test/rtc_test.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc rtl/rtc_test.ucf -p xc6slx16-csg324-2 rtc_test.ngc rtc_test.ngd  
+map -intstyle ise -p xc6slx16-csg324-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o rtc_test_map.ncd rtc_test.ngd rtc_test.pcf 
+par -w -intstyle ise -ol high -mt off rtc_test_map.ncd rtc_test.ncd rtc_test.pcf 
+bitgen -intstyle ise -f rtc_test.ut rtc_test.ncd 
+xst -intstyle ise -ifn "E:/Project/AX516/verilog/rtc_test/rtc_test.xst" -ofn "E:/Project/AX516/verilog/rtc_test/rtc_test.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc rtl/rtc_test.ucf -p xc6slx16-csg324-2 rtc_test.ngc rtc_test.ngd  
+map -intstyle ise -p xc6slx16-csg324-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o rtc_test_map.ncd rtc_test.ngd rtc_test.pcf 
+par -w -intstyle ise -ol high -mt off rtc_test_map.ncd rtc_test.ncd rtc_test.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml rtc_test.twx rtc_test.ncd -o rtc_test.twr rtc_test.pcf 
+bitgen -intstyle ise -f rtc_test.ut rtc_test.ncd 
+xst -intstyle ise -ifn "E:/Project/AX516/verilog/rtc_test/rtc_test.xst" -ofn "E:/Project/AX516/verilog/rtc_test/rtc_test.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc rtl/rtc_test.ucf -p xc6slx16-csg324-2 rtc_test.ngc rtc_test.ngd  
+map -intstyle ise -p xc6slx16-csg324-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o rtc_test_map.ncd rtc_test.ngd rtc_test.pcf 
+par -w -intstyle ise -ol high -mt off rtc_test_map.ncd rtc_test.ncd rtc_test.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml rtc_test.twx rtc_test.ncd -o rtc_test.twr rtc_test.pcf 
+bitgen -intstyle ise -f rtc_test.ut rtc_test.ncd 
+xst -intstyle ise -ifn "E:/Project/AX516/verilog/rtc_test/rtc_test.xst" -ofn "E:/Project/AX516/verilog/rtc_test/rtc_test.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc rtl/rtc_test.ucf -p xc6slx16-csg324-2 rtc_test.ngc rtc_test.ngd  
+map -intstyle ise -p xc6slx16-csg324-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o rtc_test_map.ncd rtc_test.ngd rtc_test.pcf 
+par -w -intstyle ise -ol high -mt off rtc_test_map.ncd rtc_test.ncd rtc_test.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml rtc_test.twx rtc_test.ncd -o rtc_test.twr rtc_test.pcf 
+bitgen -intstyle ise -f rtc_test.ut rtc_test.ncd 
+xst -intstyle ise -ifn "E:/Project/AX545/verilog/rtc_test/rtc_test.xst" -ofn "E:/Project/AX545/verilog/rtc_test/rtc_test.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc rtl/rtc_test.ucf -p xc6slx45-csg324-2 rtc_test.ngc rtc_test.ngd  
+map -intstyle ise -p xc6slx45-csg324-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o rtc_test_map.ncd rtc_test.ngd rtc_test.pcf 
+par -w -intstyle ise -ol high -mt off rtc_test_map.ncd rtc_test.ncd rtc_test.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml rtc_test.twx rtc_test.ncd -o rtc_test.twr rtc_test.pcf 
+bitgen -intstyle ise -f rtc_test.ut rtc_test.ncd 
+xst -intstyle ise -ifn "E:/Project/AX545/verilog/rtc_test/rtc_test.xst" -ofn "E:/Project/AX545/verilog/rtc_test/rtc_test.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc rtl/rtc_test.ucf -p xc6slx45-csg324-2 rtc_test.ngc rtc_test.ngd  
+map -intstyle ise -p xc6slx45-csg324-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o rtc_test_map.ncd rtc_test.ngd rtc_test.pcf 
+par -w -intstyle ise -ol high -mt off rtc_test_map.ncd rtc_test.ncd rtc_test.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml rtc_test.twx rtc_test.ncd -o rtc_test.twr rtc_test.pcf 
+bitgen -intstyle ise -f rtc_test.ut rtc_test.ncd 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc rtl/rtc_test.ucf -p xc6slx45-csg324-2 rtc_test.ngc rtc_test.ngd  
+map -intstyle ise -p xc6slx45-csg324-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o rtc_test_map.ncd rtc_test.ngd rtc_test.pcf 
+par -w -intstyle ise -ol high -mt off rtc_test_map.ncd rtc_test.ncd rtc_test.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml rtc_test.twx rtc_test.ncd -o rtc_test.twr rtc_test.pcf 
+bitgen -intstyle ise -f rtc_test.ut rtc_test.ncd 
+xst -intstyle ise -ifn "E:/Project/AX309/Verilog/rtc_test/rtc_test.xst" -ofn "E:/Project/AX309/Verilog/rtc_test/rtc_test.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc rtl/rtc_test.ucf -p xc6slx9-ftg256-2 rtc_test.ngc rtc_test.ngd  
+map -intstyle ise -p xc6slx9-ftg256-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o rtc_test_map.ncd rtc_test.ngd rtc_test.pcf 
+par -w -intstyle ise -ol high -mt off rtc_test_map.ncd rtc_test.ncd rtc_test.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml rtc_test.twx rtc_test.ncd -o rtc_test.twr rtc_test.pcf 
+bitgen -intstyle ise -f rtc_test.ut rtc_test.ncd 
+xst -intstyle ise -ifn "E:/Project/AX309/CD/09_VERILOG/09_rtc_test/rtc_test.xst" -ofn "E:/Project/AX309/CD/09_VERILOG/09_rtc_test/rtc_test.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc rtl/rtc_test.ucf -p xc6slx9-ftg256-2 rtc_test.ngc rtc_test.ngd  
+map -intstyle ise -p xc6slx9-ftg256-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o rtc_test_map.ncd rtc_test.ngd rtc_test.pcf 
+par -w -intstyle ise -ol high -mt off rtc_test_map.ncd rtc_test.ncd rtc_test.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml rtc_test.twx rtc_test.ncd -o rtc_test.twr rtc_test.pcf 
+bitgen -intstyle ise -f rtc_test.ut rtc_test.ncd 

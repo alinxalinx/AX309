@@ -1,0 +1,26 @@
+//! **************************************************************************
+// Written by: Map P.20131013 on Fri Sep 25 14:39:36 2015
+//! **************************************************************************
+
+SCHEMATIC START;
+COMP "clk" LOCATE = SITE "T8" LEVEL 1;
+COMP "led_out<0>" LOCATE = SITE "P4" LEVEL 1;
+COMP "led_out<1>" LOCATE = SITE "N5" LEVEL 1;
+COMP "key_in<0>" LOCATE = SITE "C3" LEVEL 1;
+COMP "led_out<2>" LOCATE = SITE "P5" LEVEL 1;
+COMP "key_in<1>" LOCATE = SITE "D3" LEVEL 1;
+COMP "led_out<3>" LOCATE = SITE "M6" LEVEL 1;
+COMP "key_in<2>" LOCATE = SITE "E4" LEVEL 1;
+COMP "key_in<3>" LOCATE = SITE "E3" LEVEL 1;
+COMP "rst_n" LOCATE = SITE "L3" LEVEL 1;
+TIMEGRP sys_clk_pin = BEL "key_scan_0" BEL "key_scan_1" BEL "key_scan_2" BEL
+        "key_scan_3" BEL "key_scan_r_0" BEL "key_scan_r_1" BEL "key_scan_r_2"
+        BEL "key_scan_r_3" BEL "count_0" BEL "count_1" BEL "count_2" BEL
+        "count_3" BEL "count_4" BEL "count_5" BEL "count_6" BEL "count_7" BEL
+        "count_8" BEL "count_9" BEL "count_10" BEL "count_11" BEL "count_12"
+        BEL "count_13" BEL "count_14" BEL "count_15" BEL "count_16" BEL
+        "count_17" BEL "count_18" BEL "count_19" BEL "temp_led_2" BEL
+        "temp_led_1" BEL "temp_led_0" BEL "temp_led_3" BEL "clk_BUFGP/BUFG";
+TS_sys_clk_pin = PERIOD TIMEGRP "sys_clk_pin" 50 MHz HIGH 50%;
+SCHEMATIC END;
+

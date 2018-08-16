@@ -1,0 +1,364 @@
+xst -intstyle ise -ifn "E:/Project/AX309/Verilog/audio_test/audio_test.xst" -ofn "E:/Project/AX309/Verilog/audio_test/audio_test.syr" 
+xst -intstyle ise -ifn "E:/Project/AX309/Verilog/audio_test/audio_test.xst" -ofn "E:/Project/AX309/Verilog/audio_test/audio_test.syr" 
+xst -intstyle ise -ifn "E:/Project/AX309/Verilog/audio_test/audio_test.xst" -ofn "E:/Project/AX309/Verilog/audio_test/audio_test.syr" 
+xst -intstyle ise -ifn "E:/Project/AX309/Verilog/audio_test/audio_test.xst" -ofn "E:/Project/AX309/Verilog/audio_test/audio_test.syr" 
+xst -intstyle ise -ifn "E:/Project/AX309/Verilog/audio_test/audio_test.xst" -ofn "E:/Project/AX309/Verilog/audio_test/audio_test.syr" 
+xst -intstyle ise -ifn "E:/Project/AX309/Verilog/audio_test/audio_test.xst" -ofn "E:/Project/AX309/Verilog/audio_test/audio_test.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc audio_test.ucf -p xc6slx9-ftg256-2 audio_test.ngc audio_test.ngd  
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc audio_test.ucf -p xc6slx9-ftg256-2 audio_test.ngc audio_test.ngd  
+map -intstyle ise -p xc6slx9-ftg256-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o audio_test_map.ncd audio_test.ngd audio_test.pcf 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc audio_test.ucf -p xc6slx9-ftg256-2 audio_test.ngc audio_test.ngd  
+map -intstyle ise -p xc6slx9-ftg256-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o audio_test_map.ncd audio_test.ngd audio_test.pcf 
+par -w -intstyle ise -ol high -mt off audio_test_map.ncd audio_test.ncd audio_test.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml audio_test.twx audio_test.ncd -o audio_test.twr audio_test.pcf -ucf audio_test.ucf 
+bitgen -intstyle ise -f audio_test.ut audio_test.ncd 
+bitgen -intstyle ise -f audio_test.ut audio_test.ncd 
+xst -intstyle ise -ifn "E:/Project/AX309/Verilog/12_audio_test/audio_test.xst" -ofn "E:/Project/AX309/Verilog/12_audio_test/audio_test.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc audio_test.ucf -p xc6slx9-ftg256-2 audio_test.ngc audio_test.ngd  
+map -intstyle ise -p xc6slx9-ftg256-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o audio_test_map.ncd audio_test.ngd audio_test.pcf 
+par -w -intstyle ise -ol high -mt off audio_test_map.ncd audio_test.ncd audio_test.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml audio_test.twx audio_test.ncd -o audio_test.twr audio_test.pcf -ucf audio_test.ucf 
+bitgen -intstyle ise -f audio_test.ut audio_test.ncd 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc audio_test.ucf -p xc6slx9-ftg256-2 audio_test.ngc audio_test.ngd  
+map -intstyle ise -p xc6slx9-ftg256-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o audio_test_map.ncd audio_test.ngd audio_test.pcf 
+par -w -intstyle ise -ol high -mt off audio_test_map.ncd audio_test.ncd audio_test.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml audio_test.twx audio_test.ncd -o audio_test.twr audio_test.pcf -ucf audio_test.ucf 
+bitgen -intstyle ise -f audio_test.ut audio_test.ncd 
+xst -intstyle ise -ifn "E:/Project/AX309/Verilog/12_audio_test/audio_test.xst" -ofn "E:/Project/AX309/Verilog/12_audio_test/audio_test.syr" 
+xst -intstyle ise -ifn "E:/Project/AX309/Verilog/12_audio_test/audio_test.xst" -ofn "E:/Project/AX309/Verilog/12_audio_test/audio_test.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc audio_test.ucf -p xc6slx9-ftg256-2 audio_test.ngc audio_test.ngd  
+map -intstyle ise -p xc6slx9-ftg256-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o audio_test_map.ncd audio_test.ngd audio_test.pcf 
+par -w -intstyle ise -ol high -mt off audio_test_map.ncd audio_test.ncd audio_test.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml audio_test.twx audio_test.ncd -o audio_test.twr audio_test.pcf -ucf audio_test.ucf 
+bitgen -intstyle ise -f audio_test.ut audio_test.ncd 
+xst -intstyle ise -ifn "E:/Project/AX309/Verilog/12_audio_test/audio_test.xst" -ofn "E:/Project/AX309/Verilog/12_audio_test/audio_test.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc audio_test.ucf -p xc6slx9-ftg256-2 audio_test.ngc audio_test.ngd  
+map -intstyle ise -p xc6slx9-ftg256-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o audio_test_map.ncd audio_test.ngd audio_test.pcf 
+par -w -intstyle ise -ol high -mt off audio_test_map.ncd audio_test.ncd audio_test.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml audio_test.twx audio_test.ncd -o audio_test.twr audio_test.pcf -ucf audio_test.ucf 
+bitgen -intstyle ise -f audio_test.ut audio_test.ncd 
+xst -intstyle ise -ifn "E:/Project/AX309/Verilog/12_audio_test/audio_test.xst" -ofn "E:/Project/AX309/Verilog/12_audio_test/audio_test.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc audio_test.ucf -p xc6slx9-ftg256-2 audio_test.ngc audio_test.ngd  
+map -intstyle ise -p xc6slx9-ftg256-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o audio_test_map.ncd audio_test.ngd audio_test.pcf 
+par -w -intstyle ise -ol high -mt off audio_test_map.ncd audio_test.ncd audio_test.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml audio_test.twx audio_test.ncd -o audio_test.twr audio_test.pcf -ucf audio_test.ucf 
+bitgen -intstyle ise -f audio_test.ut audio_test.ncd 
+xst -intstyle ise -ifn "E:/Project/AX309/Verilog/12_audio_test/audio_test.xst" -ofn "E:/Project/AX309/Verilog/12_audio_test/audio_test.syr" 
+xst -intstyle ise -ifn "E:/Project/AX309/Verilog/12_audio_test/audio_test.xst" -ofn "E:/Project/AX309/Verilog/12_audio_test/audio_test.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc audio_test.ucf -p xc6slx9-ftg256-2 audio_test.ngc audio_test.ngd  
+map -intstyle ise -p xc6slx9-ftg256-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o audio_test_map.ncd audio_test.ngd audio_test.pcf 
+par -w -intstyle ise -ol high -mt off audio_test_map.ncd audio_test.ncd audio_test.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml audio_test.twx audio_test.ncd -o audio_test.twr audio_test.pcf -ucf audio_test.ucf 
+bitgen -intstyle ise -f audio_test.ut audio_test.ncd 
+xst -intstyle ise -ifn "E:/Project/AX309/Verilog/12_audio_test/audio_test.xst" -ofn "E:/Project/AX309/Verilog/12_audio_test/audio_test.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc audio_test.ucf -p xc6slx9-ftg256-2 audio_test.ngc audio_test.ngd  
+map -intstyle ise -p xc6slx9-ftg256-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o audio_test_map.ncd audio_test.ngd audio_test.pcf 
+par -w -intstyle ise -ol high -mt off audio_test_map.ncd audio_test.ncd audio_test.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml audio_test.twx audio_test.ncd -o audio_test.twr audio_test.pcf -ucf audio_test.ucf 
+bitgen -intstyle ise -f audio_test.ut audio_test.ncd 
+xst -intstyle ise -ifn "E:/Project/AX309/Verilog/12_audio_test/audio_test.xst" -ofn "E:/Project/AX309/Verilog/12_audio_test/audio_test.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc audio_test.ucf -p xc6slx9-ftg256-2 audio_test.ngc audio_test.ngd  
+map -intstyle ise -p xc6slx9-ftg256-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o audio_test_map.ncd audio_test.ngd audio_test.pcf 
+par -w -intstyle ise -ol high -mt off audio_test_map.ncd audio_test.ncd audio_test.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml audio_test.twx audio_test.ncd -o audio_test.twr audio_test.pcf -ucf audio_test.ucf 
+bitgen -intstyle ise -f audio_test.ut audio_test.ncd 
+xst -intstyle ise -ifn "E:/Project/AX309/Verilog/12_audio_test/audio_test.xst" -ofn "E:/Project/AX309/Verilog/12_audio_test/audio_test.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc audio_test.ucf -p xc6slx9-ftg256-2 audio_test.ngc audio_test.ngd  
+map -intstyle ise -p xc6slx9-ftg256-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o audio_test_map.ncd audio_test.ngd audio_test.pcf 
+par -w -intstyle ise -ol high -mt off audio_test_map.ncd audio_test.ncd audio_test.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml audio_test.twx audio_test.ncd -o audio_test.twr audio_test.pcf -ucf audio_test.ucf 
+bitgen -intstyle ise -f audio_test.ut audio_test.ncd 
+xst -intstyle ise -ifn "E:/Project/AX309/Verilog/12_audio_test/audio_test.xst" -ofn "E:/Project/AX309/Verilog/12_audio_test/audio_test.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc audio_test.ucf -p xc6slx9-ftg256-2 audio_test.ngc audio_test.ngd  
+map -intstyle ise -p xc6slx9-ftg256-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o audio_test_map.ncd audio_test.ngd audio_test.pcf 
+par -w -intstyle ise -ol high -mt off audio_test_map.ncd audio_test.ncd audio_test.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml audio_test.twx audio_test.ncd -o audio_test.twr audio_test.pcf -ucf audio_test.ucf 
+bitgen -intstyle ise -f audio_test.ut audio_test.ncd 
+xst -intstyle ise -ifn "E:/Project/AX309/Verilog/12_audio_test/audio_test.xst" -ofn "E:/Project/AX309/Verilog/12_audio_test/audio_test.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc audio_test.ucf -p xc6slx9-ftg256-2 audio_test.ngc audio_test.ngd  
+map -intstyle ise -p xc6slx9-ftg256-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o audio_test_map.ncd audio_test.ngd audio_test.pcf 
+par -w -intstyle ise -ol high -mt off audio_test_map.ncd audio_test.ncd audio_test.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml audio_test.twx audio_test.ncd -o audio_test.twr audio_test.pcf -ucf audio_test.ucf 
+bitgen -intstyle ise -f audio_test.ut audio_test.ncd 
+xst -intstyle ise -ifn "E:/Project/AX309/Verilog/12_audio_test/audio_test.xst" -ofn "E:/Project/AX309/Verilog/12_audio_test/audio_test.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc audio_test.ucf -p xc6slx9-ftg256-2 audio_test.ngc audio_test.ngd  
+map -intstyle ise -p xc6slx9-ftg256-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o audio_test_map.ncd audio_test.ngd audio_test.pcf 
+par -w -intstyle ise -ol high -mt off audio_test_map.ncd audio_test.ncd audio_test.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml audio_test.twx audio_test.ncd -o audio_test.twr audio_test.pcf -ucf audio_test.ucf 
+bitgen -intstyle ise -f audio_test.ut audio_test.ncd 
+xst -intstyle ise -ifn "E:/Project/AX309/Verilog/12_audio_test/audio_test.xst" -ofn "E:/Project/AX309/Verilog/12_audio_test/audio_test.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc audio_test.ucf -p xc6slx9-ftg256-2 audio_test.ngc audio_test.ngd  
+map -intstyle ise -p xc6slx9-ftg256-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o audio_test_map.ncd audio_test.ngd audio_test.pcf 
+par -w -intstyle ise -ol high -mt off audio_test_map.ncd audio_test.ncd audio_test.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml audio_test.twx audio_test.ncd -o audio_test.twr audio_test.pcf -ucf audio_test.ucf 
+bitgen -intstyle ise -f audio_test.ut audio_test.ncd 
+xst -intstyle ise -ifn "E:/Project/AX309/Verilog/12_audio_test/audio_test.xst" -ofn "E:/Project/AX309/Verilog/12_audio_test/audio_test.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc audio_test.ucf -p xc6slx9-ftg256-2 audio_test.ngc audio_test.ngd  
+map -intstyle ise -p xc6slx9-ftg256-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o audio_test_map.ncd audio_test.ngd audio_test.pcf 
+par -w -intstyle ise -ol high -mt off audio_test_map.ncd audio_test.ncd audio_test.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml audio_test.twx audio_test.ncd -o audio_test.twr audio_test.pcf -ucf audio_test.ucf 
+bitgen -intstyle ise -f audio_test.ut audio_test.ncd 
+xst -intstyle ise -ifn "E:/Project/AX309/Verilog/12_audio_test/audio_test.xst" -ofn "E:/Project/AX309/Verilog/12_audio_test/audio_test.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc audio_test.ucf -p xc6slx9-ftg256-2 audio_test.ngc audio_test.ngd  
+map -intstyle ise -p xc6slx9-ftg256-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o audio_test_map.ncd audio_test.ngd audio_test.pcf 
+par -w -intstyle ise -ol high -mt off audio_test_map.ncd audio_test.ncd audio_test.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml audio_test.twx audio_test.ncd -o audio_test.twr audio_test.pcf -ucf audio_test.ucf 
+bitgen -intstyle ise -f audio_test.ut audio_test.ncd 
+xst -intstyle ise -ifn "E:/Project/AX309/Verilog/12_audio_test/audio_test.xst" -ofn "E:/Project/AX309/Verilog/12_audio_test/audio_test.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc audio_test.ucf -p xc6slx9-ftg256-2 audio_test.ngc audio_test.ngd  
+map -intstyle ise -p xc6slx9-ftg256-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o audio_test_map.ncd audio_test.ngd audio_test.pcf 
+par -w -intstyle ise -ol high -mt off audio_test_map.ncd audio_test.ncd audio_test.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml audio_test.twx audio_test.ncd -o audio_test.twr audio_test.pcf -ucf audio_test.ucf 
+bitgen -intstyle ise -f audio_test.ut audio_test.ncd 
+xst -intstyle ise -ifn "E:/Project/AX309/Verilog/12_audio_test/audio_test.xst" -ofn "E:/Project/AX309/Verilog/12_audio_test/audio_test.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc audio_test.ucf -p xc6slx9-ftg256-2 audio_test.ngc audio_test.ngd  
+map -intstyle ise -p xc6slx9-ftg256-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o audio_test_map.ncd audio_test.ngd audio_test.pcf 
+par -w -intstyle ise -ol high -mt off audio_test_map.ncd audio_test.ncd audio_test.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml audio_test.twx audio_test.ncd -o audio_test.twr audio_test.pcf -ucf audio_test.ucf 
+bitgen -intstyle ise -f audio_test.ut audio_test.ncd 
+xst -intstyle ise -ifn "E:/Project/AX309/Verilog/12_audio_test/audio_test.xst" -ofn "E:/Project/AX309/Verilog/12_audio_test/audio_test.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc audio_test.ucf -p xc6slx9-ftg256-2 audio_test.ngc audio_test.ngd  
+map -intstyle ise -p xc6slx9-ftg256-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o audio_test_map.ncd audio_test.ngd audio_test.pcf 
+par -w -intstyle ise -ol high -mt off audio_test_map.ncd audio_test.ncd audio_test.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml audio_test.twx audio_test.ncd -o audio_test.twr audio_test.pcf -ucf audio_test.ucf 
+bitgen -intstyle ise -f audio_test.ut audio_test.ncd 
+xst -intstyle ise -ifn "E:/Project/AX309/Verilog/12_audio_test/audio_test.xst" -ofn "E:/Project/AX309/Verilog/12_audio_test/audio_test.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc audio_test.ucf -p xc6slx9-ftg256-2 audio_test.ngc audio_test.ngd  
+map -intstyle ise -p xc6slx9-ftg256-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o audio_test_map.ncd audio_test.ngd audio_test.pcf 
+par -w -intstyle ise -ol high -mt off audio_test_map.ncd audio_test.ncd audio_test.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml audio_test.twx audio_test.ncd -o audio_test.twr audio_test.pcf -ucf audio_test.ucf 
+bitgen -intstyle ise -f audio_test.ut audio_test.ncd 
+xst -intstyle ise -ifn "E:/Project/AX309/Verilog/12_audio_test/audio_test.xst" -ofn "E:/Project/AX309/Verilog/12_audio_test/audio_test.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc audio_test.ucf -p xc6slx9-ftg256-2 audio_test.ngc audio_test.ngd  
+map -intstyle ise -p xc6slx9-ftg256-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o audio_test_map.ncd audio_test.ngd audio_test.pcf 
+par -w -intstyle ise -ol high -mt off audio_test_map.ncd audio_test.ncd audio_test.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml audio_test.twx audio_test.ncd -o audio_test.twr audio_test.pcf -ucf audio_test.ucf 
+bitgen -intstyle ise -f audio_test.ut audio_test.ncd 
+xst -intstyle ise -ifn "E:/Project/AX309/Verilog/12_audio_test/audio_test.xst" -ofn "E:/Project/AX309/Verilog/12_audio_test/audio_test.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc audio_test.ucf -p xc6slx9-ftg256-2 audio_test.ngc audio_test.ngd  
+map -intstyle ise -p xc6slx9-ftg256-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o audio_test_map.ncd audio_test.ngd audio_test.pcf 
+par -w -intstyle ise -ol high -mt off audio_test_map.ncd audio_test.ncd audio_test.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml audio_test.twx audio_test.ncd -o audio_test.twr audio_test.pcf -ucf audio_test.ucf 
+bitgen -intstyle ise -f audio_test.ut audio_test.ncd 
+xst -intstyle ise -ifn "E:/Project/AX309/Verilog/12_audio_test/audio_test.xst" -ofn "E:/Project/AX309/Verilog/12_audio_test/audio_test.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc audio_test.ucf -p xc6slx9-ftg256-2 audio_test.ngc audio_test.ngd  
+map -intstyle ise -p xc6slx9-ftg256-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o audio_test_map.ncd audio_test.ngd audio_test.pcf 
+par -w -intstyle ise -ol high -mt off audio_test_map.ncd audio_test.ncd audio_test.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml audio_test.twx audio_test.ncd -o audio_test.twr audio_test.pcf -ucf audio_test.ucf 
+bitgen -intstyle ise -f audio_test.ut audio_test.ncd 
+xst -intstyle ise -ifn "E:/Project/AX309/Verilog/12_audio_test/audio_test.xst" -ofn "E:/Project/AX309/Verilog/12_audio_test/audio_test.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc audio_test.ucf -p xc6slx9-ftg256-2 audio_test.ngc audio_test.ngd  
+map -intstyle ise -p xc6slx9-ftg256-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o audio_test_map.ncd audio_test.ngd audio_test.pcf 
+par -w -intstyle ise -ol high -mt off audio_test_map.ncd audio_test.ncd audio_test.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml audio_test.twx audio_test.ncd -o audio_test.twr audio_test.pcf -ucf audio_test.ucf 
+bitgen -intstyle ise -f audio_test.ut audio_test.ncd 
+xst -intstyle ise -ifn "E:/Project/AX309/Verilog/12_audio_test/audio_test.xst" -ofn "E:/Project/AX309/Verilog/12_audio_test/audio_test.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc audio_test.ucf -p xc6slx9-ftg256-2 audio_test.ngc audio_test.ngd  
+map -intstyle ise -p xc6slx9-ftg256-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o audio_test_map.ncd audio_test.ngd audio_test.pcf 
+par -w -intstyle ise -ol high -mt off audio_test_map.ncd audio_test.ncd audio_test.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml audio_test.twx audio_test.ncd -o audio_test.twr audio_test.pcf -ucf audio_test.ucf 
+bitgen -intstyle ise -f audio_test.ut audio_test.ncd 
+xst -intstyle ise -ifn "E:/Project/AX309/Verilog/12_audio_test/audio_test.xst" -ofn "E:/Project/AX309/Verilog/12_audio_test/audio_test.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc audio_test.ucf -p xc6slx9-ftg256-2 audio_test.ngc audio_test.ngd  
+map -intstyle ise -p xc6slx9-ftg256-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o audio_test_map.ncd audio_test.ngd audio_test.pcf 
+par -w -intstyle ise -ol high -mt off audio_test_map.ncd audio_test.ncd audio_test.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml audio_test.twx audio_test.ncd -o audio_test.twr audio_test.pcf -ucf audio_test.ucf 
+bitgen -intstyle ise -f audio_test.ut audio_test.ncd 
+xst -intstyle ise -ifn "E:/Project/AX309/Verilog/12_audio_test/audio_test.xst" -ofn "E:/Project/AX309/Verilog/12_audio_test/audio_test.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc audio_test.ucf -p xc6slx9-ftg256-2 audio_test.ngc audio_test.ngd  
+map -intstyle ise -p xc6slx9-ftg256-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o audio_test_map.ncd audio_test.ngd audio_test.pcf 
+par -w -intstyle ise -ol high -mt off audio_test_map.ncd audio_test.ncd audio_test.pcf 
+bitgen -intstyle ise -f audio_test.ut audio_test.ncd 
+xst -intstyle ise -ifn "E:/Project/AX309/Verilog/12_audio_test/audio_test.xst" -ofn "E:/Project/AX309/Verilog/12_audio_test/audio_test.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc audio_test.ucf -p xc6slx9-ftg256-2 audio_test.ngc audio_test.ngd  
+map -intstyle ise -p xc6slx9-ftg256-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o audio_test_map.ncd audio_test.ngd audio_test.pcf 
+par -w -intstyle ise -ol high -mt off audio_test_map.ncd audio_test.ncd audio_test.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml audio_test.twx audio_test.ncd -o audio_test.twr audio_test.pcf -ucf audio_test.ucf 
+bitgen -intstyle ise -f audio_test.ut audio_test.ncd 
+xst -intstyle ise -ifn "E:/Project/AX309/Verilog/12_audio_test/audio_test.xst" -ofn "E:/Project/AX309/Verilog/12_audio_test/audio_test.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc audio_test.ucf -p xc6slx9-ftg256-2 audio_test.ngc audio_test.ngd  
+map -intstyle ise -p xc6slx9-ftg256-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o audio_test_map.ncd audio_test.ngd audio_test.pcf 
+par -w -intstyle ise -ol high -mt off audio_test_map.ncd audio_test.ncd audio_test.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml audio_test.twx audio_test.ncd -o audio_test.twr audio_test.pcf -ucf audio_test.ucf 
+bitgen -intstyle ise -f audio_test.ut audio_test.ncd 
+xst -intstyle ise -ifn "E:/Project/AX309/Verilog/12_audio_test/audio_test.xst" -ofn "E:/Project/AX309/Verilog/12_audio_test/audio_test.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc audio_test.ucf -p xc6slx9-ftg256-2 audio_test.ngc audio_test.ngd  
+map -intstyle ise -p xc6slx9-ftg256-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o audio_test_map.ncd audio_test.ngd audio_test.pcf 
+par -w -intstyle ise -ol high -mt off audio_test_map.ncd audio_test.ncd audio_test.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml audio_test.twx audio_test.ncd -o audio_test.twr audio_test.pcf -ucf audio_test.ucf 
+bitgen -intstyle ise -f audio_test.ut audio_test.ncd 
+xst -intstyle ise -ifn "E:/Project/AX309/Verilog/12_audio_test/audio_test.xst" -ofn "E:/Project/AX309/Verilog/12_audio_test/audio_test.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc audio_test.ucf -p xc6slx9-ftg256-2 audio_test.ngc audio_test.ngd  
+map -intstyle ise -p xc6slx9-ftg256-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o audio_test_map.ncd audio_test.ngd audio_test.pcf 
+par -w -intstyle ise -ol high -mt off audio_test_map.ncd audio_test.ncd audio_test.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml audio_test.twx audio_test.ncd -o audio_test.twr audio_test.pcf -ucf audio_test.ucf 
+bitgen -intstyle ise -f audio_test.ut audio_test.ncd 
+xst -intstyle ise -ifn "E:/Project/AX309/Verilog/12_audio_test/audio_test.xst" -ofn "E:/Project/AX309/Verilog/12_audio_test/audio_test.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc audio_test.ucf -p xc6slx9-ftg256-2 audio_test.ngc audio_test.ngd  
+map -intstyle ise -p xc6slx9-ftg256-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o audio_test_map.ncd audio_test.ngd audio_test.pcf 
+par -w -intstyle ise -ol high -mt off audio_test_map.ncd audio_test.ncd audio_test.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml audio_test.twx audio_test.ncd -o audio_test.twr audio_test.pcf -ucf audio_test.ucf 
+bitgen -intstyle ise -f audio_test.ut audio_test.ncd 
+xst -intstyle ise -ifn "E:/Project/AX309/Verilog/12_audio_test/audio_test.xst" -ofn "E:/Project/AX309/Verilog/12_audio_test/audio_test.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc audio_test.ucf -p xc6slx9-ftg256-2 audio_test.ngc audio_test.ngd  
+map -intstyle ise -p xc6slx9-ftg256-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o audio_test_map.ncd audio_test.ngd audio_test.pcf 
+par -w -intstyle ise -ol high -mt off audio_test_map.ncd audio_test.ncd audio_test.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml audio_test.twx audio_test.ncd -o audio_test.twr audio_test.pcf -ucf audio_test.ucf 
+bitgen -intstyle ise -f audio_test.ut audio_test.ncd 
+xst -intstyle ise -ifn "E:/Project/AX309/Verilog/12_audio_test/audio_test.xst" -ofn "E:/Project/AX309/Verilog/12_audio_test/audio_test.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc audio_test.ucf -p xc6slx9-ftg256-2 audio_test.ngc audio_test.ngd  
+map -intstyle ise -p xc6slx9-ftg256-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o audio_test_map.ncd audio_test.ngd audio_test.pcf 
+xst -intstyle ise -ifn "E:/Project/AX309/Verilog/12_audio_test/audio_test.xst" -ofn "E:/Project/AX309/Verilog/12_audio_test/audio_test.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc audio_test.ucf -p xc6slx9-ftg256-2 audio_test.ngc audio_test.ngd  
+map -intstyle ise -p xc6slx9-ftg256-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o audio_test_map.ncd audio_test.ngd audio_test.pcf 
+par -w -intstyle ise -ol high -mt off audio_test_map.ncd audio_test.ncd audio_test.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml audio_test.twx audio_test.ncd -o audio_test.twr audio_test.pcf -ucf audio_test.ucf 
+bitgen -intstyle ise -f audio_test.ut audio_test.ncd 
+xst -intstyle ise -ifn "E:/Project/AX309/Verilog/12_audio_test/audio_test.xst" -ofn "E:/Project/AX309/Verilog/12_audio_test/audio_test.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc audio_test.ucf -p xc6slx9-ftg256-2 audio_test.ngc audio_test.ngd  
+map -intstyle ise -p xc6slx9-ftg256-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o audio_test_map.ncd audio_test.ngd audio_test.pcf 
+par -w -intstyle ise -ol high -mt off audio_test_map.ncd audio_test.ncd audio_test.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml audio_test.twx audio_test.ncd -o audio_test.twr audio_test.pcf -ucf audio_test.ucf 
+bitgen -intstyle ise -f audio_test.ut audio_test.ncd 
+xst -intstyle ise -ifn "E:/Project/AX309/Verilog/12_audio_test/audio_test.xst" -ofn "E:/Project/AX309/Verilog/12_audio_test/audio_test.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc audio_test.ucf -p xc6slx9-ftg256-2 audio_test.ngc audio_test.ngd  
+map -intstyle ise -p xc6slx9-ftg256-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o audio_test_map.ncd audio_test.ngd audio_test.pcf 
+par -w -intstyle ise -ol high -mt off audio_test_map.ncd audio_test.ncd audio_test.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml audio_test.twx audio_test.ncd -o audio_test.twr audio_test.pcf -ucf audio_test.ucf 
+bitgen -intstyle ise -f audio_test.ut audio_test.ncd 
+xst -intstyle ise -ifn "E:/Project/AX309/Verilog/12_audio_test/audio_test.xst" -ofn "E:/Project/AX309/Verilog/12_audio_test/audio_test.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc audio_test.ucf -p xc6slx9-ftg256-2 audio_test.ngc audio_test.ngd  
+map -intstyle ise -p xc6slx9-ftg256-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o audio_test_map.ncd audio_test.ngd audio_test.pcf 
+par -w -intstyle ise -ol high -mt off audio_test_map.ncd audio_test.ncd audio_test.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml audio_test.twx audio_test.ncd -o audio_test.twr audio_test.pcf -ucf audio_test.ucf 
+bitgen -intstyle ise -f audio_test.ut audio_test.ncd 
+xst -intstyle ise -ifn "E:/Project/AX309/Verilog/12_audio_test/audio_test.xst" -ofn "E:/Project/AX309/Verilog/12_audio_test/audio_test.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc audio_test.ucf -p xc6slx9-ftg256-2 audio_test.ngc audio_test.ngd  
+map -intstyle ise -p xc6slx9-ftg256-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o audio_test_map.ncd audio_test.ngd audio_test.pcf 
+par -w -intstyle ise -ol high -mt off audio_test_map.ncd audio_test.ncd audio_test.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml audio_test.twx audio_test.ncd -o audio_test.twr audio_test.pcf -ucf audio_test.ucf 
+bitgen -intstyle ise -f audio_test.ut audio_test.ncd 
+xst -intstyle ise -ifn "E:/Project/AX309/Verilog/12_audio_test/audio_test.xst" -ofn "E:/Project/AX309/Verilog/12_audio_test/audio_test.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc audio_test.ucf -p xc6slx9-ftg256-2 audio_test.ngc audio_test.ngd  
+map -intstyle ise -p xc6slx9-ftg256-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o audio_test_map.ncd audio_test.ngd audio_test.pcf 
+par -w -intstyle ise -ol high -mt off audio_test_map.ncd audio_test.ncd audio_test.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml audio_test.twx audio_test.ncd -o audio_test.twr audio_test.pcf -ucf audio_test.ucf 
+bitgen -intstyle ise -f audio_test.ut audio_test.ncd 
+xst -intstyle ise -ifn "E:/Project/AX309/Verilog/12_audio_test/audio_test.xst" -ofn "E:/Project/AX309/Verilog/12_audio_test/audio_test.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc audio_test.ucf -p xc6slx9-ftg256-2 audio_test.ngc audio_test.ngd  
+map -intstyle ise -p xc6slx9-ftg256-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o audio_test_map.ncd audio_test.ngd audio_test.pcf 
+par -w -intstyle ise -ol high -mt off audio_test_map.ncd audio_test.ncd audio_test.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml audio_test.twx audio_test.ncd -o audio_test.twr audio_test.pcf -ucf audio_test.ucf 
+bitgen -intstyle ise -f audio_test.ut audio_test.ncd 
+xst -intstyle ise -ifn "E:/Project/AX309/Verilog/12_audio_test/audio_test.xst" -ofn "E:/Project/AX309/Verilog/12_audio_test/audio_test.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc audio_test.ucf -p xc6slx9-ftg256-2 audio_test.ngc audio_test.ngd  
+map -intstyle ise -p xc6slx9-ftg256-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o audio_test_map.ncd audio_test.ngd audio_test.pcf 
+par -w -intstyle ise -ol high -mt off audio_test_map.ncd audio_test.ncd audio_test.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml audio_test.twx audio_test.ncd -o audio_test.twr audio_test.pcf -ucf audio_test.ucf 
+bitgen -intstyle ise -f audio_test.ut audio_test.ncd 
+xst -intstyle ise -ifn "E:/Project/AX309/Verilog/12_audio_test/audio_test.xst" -ofn "E:/Project/AX309/Verilog/12_audio_test/audio_test.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc audio_test.ucf -p xc6slx9-ftg256-2 audio_test.ngc audio_test.ngd  
+map -intstyle ise -p xc6slx9-ftg256-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o audio_test_map.ncd audio_test.ngd audio_test.pcf 
+par -w -intstyle ise -ol high -mt off audio_test_map.ncd audio_test.ncd audio_test.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml audio_test.twx audio_test.ncd -o audio_test.twr audio_test.pcf -ucf audio_test.ucf 
+bitgen -intstyle ise -f audio_test.ut audio_test.ncd 
+xst -intstyle ise -ifn "E:/Project/AX309/Verilog/12_audio_test/audio_test.xst" -ofn "E:/Project/AX309/Verilog/12_audio_test/audio_test.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc audio_test.ucf -p xc6slx9-ftg256-2 audio_test.ngc audio_test.ngd  
+map -intstyle ise -p xc6slx9-ftg256-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o audio_test_map.ncd audio_test.ngd audio_test.pcf 
+par -w -intstyle ise -ol high -mt off audio_test_map.ncd audio_test.ncd audio_test.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml audio_test.twx audio_test.ncd -o audio_test.twr audio_test.pcf -ucf audio_test.ucf 
+bitgen -intstyle ise -f audio_test.ut audio_test.ncd 
+xst -intstyle ise -ifn "E:/Project/AX309/Verilog/12_audio_test/audio_test.xst" -ofn "E:/Project/AX309/Verilog/12_audio_test/audio_test.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc audio_test.ucf -p xc6slx9-ftg256-2 audio_test.ngc audio_test.ngd  
+map -intstyle ise -p xc6slx9-ftg256-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o audio_test_map.ncd audio_test.ngd audio_test.pcf 
+par -w -intstyle ise -ol high -mt off audio_test_map.ncd audio_test.ncd audio_test.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml audio_test.twx audio_test.ncd -o audio_test.twr audio_test.pcf -ucf audio_test.ucf 
+bitgen -intstyle ise -f audio_test.ut audio_test.ncd 
+xst -intstyle ise -ifn "E:/Project/AX309/Verilog/12_audio_test/audio_test.xst" -ofn "E:/Project/AX309/Verilog/12_audio_test/audio_test.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc audio_test.ucf -p xc6slx9-ftg256-2 audio_test.ngc audio_test.ngd  
+map -intstyle ise -p xc6slx9-ftg256-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o audio_test_map.ncd audio_test.ngd audio_test.pcf 
+par -w -intstyle ise -ol high -mt off audio_test_map.ncd audio_test.ncd audio_test.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml audio_test.twx audio_test.ncd -o audio_test.twr audio_test.pcf -ucf audio_test.ucf 
+bitgen -intstyle ise -f audio_test.ut audio_test.ncd 
+xst -intstyle ise -ifn "E:/Project/AX309/Verilog/12_audio_test/audio_test.xst" -ofn "E:/Project/AX309/Verilog/12_audio_test/audio_test.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc audio_test.ucf -p xc6slx9-ftg256-2 audio_test.ngc audio_test.ngd  
+map -intstyle ise -p xc6slx9-ftg256-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o audio_test_map.ncd audio_test.ngd audio_test.pcf 
+par -w -intstyle ise -ol high -mt off audio_test_map.ncd audio_test.ncd audio_test.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml audio_test.twx audio_test.ncd -o audio_test.twr audio_test.pcf -ucf audio_test.ucf 
+bitgen -intstyle ise -f audio_test.ut audio_test.ncd 
+xst -intstyle ise -ifn "E:/Project/AX309/Verilog/12_audio_test/audio_test.xst" -ofn "E:/Project/AX309/Verilog/12_audio_test/audio_test.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc audio_test.ucf -p xc6slx9-ftg256-2 audio_test.ngc audio_test.ngd  
+map -intstyle ise -p xc6slx9-ftg256-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o audio_test_map.ncd audio_test.ngd audio_test.pcf 
+par -w -intstyle ise -ol high -mt off audio_test_map.ncd audio_test.ncd audio_test.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml audio_test.twx audio_test.ncd -o audio_test.twr audio_test.pcf -ucf audio_test.ucf 
+bitgen -intstyle ise -f audio_test.ut audio_test.ncd 
+xst -intstyle ise -ifn "E:/Project/AX309/Verilog/12_audio_test/audio_test.xst" -ofn "E:/Project/AX309/Verilog/12_audio_test/audio_test.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc audio_test.ucf -p xc6slx9-ftg256-2 audio_test.ngc audio_test.ngd  
+map -intstyle ise -p xc6slx9-ftg256-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o audio_test_map.ncd audio_test.ngd audio_test.pcf 
+par -w -intstyle ise -ol high -mt off audio_test_map.ncd audio_test.ncd audio_test.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml audio_test.twx audio_test.ncd -o audio_test.twr audio_test.pcf -ucf audio_test.ucf 
+bitgen -intstyle ise -f audio_test.ut audio_test.ncd 
+xst -intstyle ise -ifn "E:/Project/AX309/Verilog/12_audio_test/audio_test.xst" -ofn "E:/Project/AX309/Verilog/12_audio_test/audio_test.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc audio_test.ucf -p xc6slx9-ftg256-2 audio_test.ngc audio_test.ngd  
+map -intstyle ise -p xc6slx9-ftg256-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o audio_test_map.ncd audio_test.ngd audio_test.pcf 
+par -w -intstyle ise -ol high -mt off audio_test_map.ncd audio_test.ncd audio_test.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml audio_test.twx audio_test.ncd -o audio_test.twr audio_test.pcf -ucf audio_test.ucf 
+bitgen -intstyle ise -f audio_test.ut audio_test.ncd 
+xst -intstyle ise -ifn "E:/Project/AX309/Verilog/12_audio_test/audio_test.xst" -ofn "E:/Project/AX309/Verilog/12_audio_test/audio_test.syr" 
+xst -intstyle ise -ifn "E:/Project/AX309/Verilog/12_audio_test/audio_test.xst" -ofn "E:/Project/AX309/Verilog/12_audio_test/audio_test.syr" 
+xst -intstyle ise -ifn "E:/Project/AX309/Verilog/12_audio_test/audio_test.xst" -ofn "E:/Project/AX309/Verilog/12_audio_test/audio_test.syr" 
+xst -intstyle ise -ifn "E:/Project/AX309/Verilog/12_audio_test/audio_test.xst" -ofn "E:/Project/AX309/Verilog/12_audio_test/audio_test.syr" 
+xst -intstyle ise -ifn "E:/Project/AX309/Verilog/12_audio_test/audio_test.xst" -ofn "E:/Project/AX309/Verilog/12_audio_test/audio_test.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc audio_test.ucf -p xc6slx9-ftg256-2 audio_test.ngc audio_test.ngd  
+map -intstyle ise -p xc6slx9-ftg256-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o audio_test_map.ncd audio_test.ngd audio_test.pcf 
+par -w -intstyle ise -ol high -mt off audio_test_map.ncd audio_test.ncd audio_test.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml audio_test.twx audio_test.ncd -o audio_test.twr audio_test.pcf -ucf audio_test.ucf 
+bitgen -intstyle ise -f audio_test.ut audio_test.ncd 
+xst -intstyle ise -ifn "E:/Project/AX309/Verilog/12_audio_test/audio_test.xst" -ofn "E:/Project/AX309/Verilog/12_audio_test/audio_test.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc audio_test.ucf -p xc6slx9-ftg256-2 audio_test.ngc audio_test.ngd  
+map -intstyle ise -p xc6slx9-ftg256-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o audio_test_map.ncd audio_test.ngd audio_test.pcf 
+par -w -intstyle ise -ol high -mt off audio_test_map.ncd audio_test.ncd audio_test.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml audio_test.twx audio_test.ncd -o audio_test.twr audio_test.pcf -ucf audio_test.ucf 
+bitgen -intstyle ise -f audio_test.ut audio_test.ncd 
+xst -intstyle ise -ifn "E:/Project/AX309/Verilog/12_audio_test/audio_test.xst" -ofn "E:/Project/AX309/Verilog/12_audio_test/audio_test.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc audio_test.ucf -p xc6slx9-ftg256-2 audio_test.ngc audio_test.ngd  
+map -intstyle ise -p xc6slx9-ftg256-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o audio_test_map.ncd audio_test.ngd audio_test.pcf 
+par -w -intstyle ise -ol high -mt off audio_test_map.ncd audio_test.ncd audio_test.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml audio_test.twx audio_test.ncd -o audio_test.twr audio_test.pcf -ucf audio_test.ucf 
+bitgen -intstyle ise -f audio_test.ut audio_test.ncd 
+xst -intstyle ise -ifn "E:/Project/AX309/Verilog/12_audio_test/audio_test.xst" -ofn "E:/Project/AX309/Verilog/12_audio_test/audio_test.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc audio_test.ucf -p xc6slx9-ftg256-2 audio_test.ngc audio_test.ngd  
+map -intstyle ise -p xc6slx9-ftg256-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o audio_test_map.ncd audio_test.ngd audio_test.pcf 
+par -w -intstyle ise -ol high -mt off audio_test_map.ncd audio_test.ncd audio_test.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml audio_test.twx audio_test.ncd -o audio_test.twr audio_test.pcf -ucf audio_test.ucf 
+bitgen -intstyle ise -f audio_test.ut audio_test.ncd 
+xst -intstyle ise -ifn "E:/Project/AX309/Verilog/12_audio_test/audio_test.xst" -ofn "E:/Project/AX309/Verilog/12_audio_test/audio_test.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc audio_test.ucf -p xc6slx9-ftg256-2 audio_test.ngc audio_test.ngd  
+map -intstyle ise -p xc6slx9-ftg256-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o audio_test_map.ncd audio_test.ngd audio_test.pcf 
+par -w -intstyle ise -ol high -mt off audio_test_map.ncd audio_test.ncd audio_test.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml audio_test.twx audio_test.ncd -o audio_test.twr audio_test.pcf -ucf audio_test.ucf 
+bitgen -intstyle ise -f audio_test.ut audio_test.ncd 
+xst -intstyle ise -ifn "E:/Project/AX309/Verilog/12_audio_test/audio_test.xst" -ofn "E:/Project/AX309/Verilog/12_audio_test/audio_test.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc audio_test.ucf -p xc6slx9-ftg256-2 audio_test.ngc audio_test.ngd  
+map -intstyle ise -p xc6slx9-ftg256-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o audio_test_map.ncd audio_test.ngd audio_test.pcf 
+par -w -intstyle ise -ol high -mt off audio_test_map.ncd audio_test.ncd audio_test.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml audio_test.twx audio_test.ncd -o audio_test.twr audio_test.pcf -ucf audio_test.ucf 
+bitgen -intstyle ise -f audio_test.ut audio_test.ncd 
+xst -intstyle ise -ifn "E:/Project/AX309/Verilog/12_audio_test/audio_test.xst" -ofn "E:/Project/AX309/Verilog/12_audio_test/audio_test.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc audio_test.ucf -p xc6slx9-ftg256-2 audio_test.ngc audio_test.ngd  
+map -intstyle ise -p xc6slx9-ftg256-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o audio_test_map.ncd audio_test.ngd audio_test.pcf 
+par -w -intstyle ise -ol high -mt off audio_test_map.ncd audio_test.ncd audio_test.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml audio_test.twx audio_test.ncd -o audio_test.twr audio_test.pcf -ucf audio_test.ucf 
+bitgen -intstyle ise -f audio_test.ut audio_test.ncd 
+xst -intstyle ise -ifn "E:/Project/AX309/Verilog/12_audio_test/audio_test.xst" -ofn "E:/Project/AX309/Verilog/12_audio_test/audio_test.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc audio_test.ucf -p xc6slx9-ftg256-2 audio_test.ngc audio_test.ngd  
+map -intstyle ise -p xc6slx9-ftg256-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o audio_test_map.ncd audio_test.ngd audio_test.pcf 
+par -w -intstyle ise -ol high -mt off audio_test_map.ncd audio_test.ncd audio_test.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml audio_test.twx audio_test.ncd -o audio_test.twr audio_test.pcf -ucf audio_test.ucf 
+bitgen -intstyle ise -f audio_test.ut audio_test.ncd 
+xst -intstyle ise -ifn "E:/Project/AX309/Verilog/12_audio_test/audio_test.xst" -ofn "E:/Project/AX309/Verilog/12_audio_test/audio_test.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc audio_test.ucf -p xc6slx9-ftg256-2 audio_test.ngc audio_test.ngd  
+map -intstyle ise -p xc6slx9-ftg256-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o audio_test_map.ncd audio_test.ngd audio_test.pcf 
+par -w -intstyle ise -ol high -mt off audio_test_map.ncd audio_test.ncd audio_test.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml audio_test.twx audio_test.ncd -o audio_test.twr audio_test.pcf -ucf audio_test.ucf 
+bitgen -intstyle ise -f audio_test.ut audio_test.ncd 

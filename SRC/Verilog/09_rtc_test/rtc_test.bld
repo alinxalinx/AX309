@@ -1,0 +1,40 @@
+Release 14.7 ngdbuild P.20131013 (nt64)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+
+Command Line: C:\Xilinx\14.7\ISE_DS\ISE\bin\nt64\unwrapped\ngdbuild.exe
+-intstyle ise -dd _ngo -nt timestamp -uc rtl/rtc_test.ucf -p xc6slx9-ftg256-2
+rtc_test.ngc rtc_test.ngd
+
+Reading NGO file "E:/Project/AX309/CD/09_VERILOG/09_rtc_test/rtc_test.ngc" ...
+Loading design module
+"E:\Project\AX309\CD\09_VERILOG\09_rtc_test/chipscope_ila.ngc"...
+Loading design module
+"E:\Project\AX309\CD\09_VERILOG\09_rtc_test/chipscope_icon.ngc"...
+Gathering constraint information from source properties...
+Done.
+
+Annotating constraints to design from ucf file "rtl/rtc_test.ucf" ...
+Resolving constraint associations...
+Checking Constraint Associations...
+Done...
+
+Checking expanded design ...
+
+Partition Implementation Status
+-------------------------------
+
+  No Partitions were found in this design.
+
+-------------------------------
+
+NGDBUILD Design Results Summary:
+  Number of errors:     0
+  Number of warnings:   0
+
+Total memory usage is 334476 kilobytes
+
+Writing NGD file "rtc_test.ngd" ...
+Total REAL time to NGDBUILD completion:  4 sec
+Total CPU time to NGDBUILD completion:   4 sec
+
+Writing NGDBUILD log file "rtc_test.bld"...

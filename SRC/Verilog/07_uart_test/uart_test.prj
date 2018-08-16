@@ -1,0 +1,5 @@
+verilog work "rtl/uarttx.v"
+verilog work "rtl/uartrx.v"
+verilog work "rtl/uartctrl.v"
+verilog work "rtl/clkdiv.v"
+verilog work "rtl/uart_test.v"

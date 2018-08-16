@@ -1,0 +1,17 @@
+//! **************************************************************************
+// Written by: Map P.20131013 on Thu Feb 25 11:31:14 2016
+//! **************************************************************************
+
+SCHEMATIC START;
+COMP "clk50" LOCATE = SITE "T8" LEVEL 1;
+COMP "rx" LOCATE = SITE "C11" LEVEL 1;
+COMP "tx" LOCATE = SITE "D12" LEVEL 1;
+COMP "reset" LOCATE = SITE "L3" LEVEL 1;
+TIMEGRP sys_clk_pin = BEL "u0/cnt_0" BEL "u0/cnt_1" BEL "u0/cnt_2" BEL
+        "u0/cnt_3" BEL "u0/cnt_4" BEL "u0/cnt_5" BEL "u0/cnt_6" BEL "u0/cnt_7"
+        BEL "u0/cnt_8" BEL "u0/cnt_9" BEL "u0/cnt_10" BEL "u0/cnt_11" BEL
+        "u0/cnt_12" BEL "u0/cnt_13" BEL "u0/cnt_14" BEL "u0/cnt_15" BEL
+        "u0/clkout" BEL "clk50_BUFGP/BUFG";
+TS_sys_clk_pin = PERIOD TIMEGRP "sys_clk_pin" 50 MHz HIGH 50%;
+SCHEMATIC END;
+

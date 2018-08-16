@@ -1,0 +1,61 @@
+module sinwave_gen(clock_50M,wav_out_data,dacclk,bclk,dacdat,play_en,ddr_read_finish,wav_rden);
+
+input clock_50M;       
+input  [63:0]wav_out_data;
+input dacclk;        
+output dacdat;
+input bclk;
+input play_en;
+input ddr_read_finish;
+output reg wav_rden;
+
+reg dacdat;
+
+reg [7:0]data_num;
+reg [63:0]wave_data_reg;
+   
+   
+reg dacclk_a,dacclk_b;
+reg bclk_a,bclk_b;
+	
+//检测dacclk信号的跳变
+always@(posedge clock_50M )  
+begin
+		dacclk_a<=dacclk;
+		dacclk_b<=dacclk_a;
+end
+
+//检测bclk时钟跳变  
+always@(posedge clock_50M ) 
+begin
+		bclk_a<=bclk;
+		bclk_b<=bclk_a;
+end
+	
+//播放声音数据		  
+always@(posedge clock_50M )  
+begin
+		if(dacclk_a&&!dacclk_b) begin           //dacclk 上降沿,
+			dacdat<=wav_out_data[63];
+			wave_data_reg<={wav_out_data[62:0],1'b0};			
+			data_num<=0;
+		end
+      else if(!bclk_a&&bclk_b) begin   //bclk 下降沿,播放数据 
+			dacdat<=wave_data_reg[63];
+			wave_data_reg<={wave_data_reg[62:0],1'b0};
+			data_num<=data_num+1'b1;
+		end
+end 
+
+//产生ddr读信号		  
+always@(posedge clock_50M )    
+begin
+	if((data_num==32) && (play_en==1'b1) && (ddr_read_finish==1'b0))            //按键松开并ddr尚未读到录音的最后地址	
+			wav_rden<=1'b1;
+	else               
+			wav_rden<=1'b0;
+end
+
+     
+endmodule
+

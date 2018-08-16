@@ -1,0 +1,3 @@
+verilog work "rtl/sos_module.v"
+verilog work "rtl/control_module.v"
+verilog work "rtl/sos_generator_module.v"

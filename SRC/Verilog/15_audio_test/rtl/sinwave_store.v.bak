@@ -1,0 +1,59 @@
+module sinwave_store(clock_50M,wav_in_data,adcclk,bclk,adcdat,record_en, wav_wren);
+
+	 input clock_50M;       
+    input adcclk;        
+    input adcdat;
+    input bclk;
+	 output reg [63:0] wav_in_data;
+	 input record_en;
+    output reg wav_wren;
+	 
+
+	 
+reg [7:0]data_num;
+reg [63:0]wave_data_reg;
+   
+
+reg adcclk_a,adcclk_b;
+reg bclk_a,bclk_b;
+	
+//检测dacclk信号的跳变
+always@(posedge clock_50M )  
+begin
+		adcclk_a<=adcclk;
+		adcclk_b<=adcclk_a;
+end
+
+//检测bclk时钟跳变  
+always@(posedge clock_50M ) 
+begin
+		bclk_a<=bclk;
+		bclk_b<=bclk_a;
+end
+
+//采集ADC的数据	
+always@(posedge clock_50M )    
+begin
+		if(adcclk_a&!adcclk_b) begin
+			wave_data_reg<=0;            //adcclk上升跳变时
+			data_num<=0;
+      end
+      else if(bclk_a&&!bclk_b) begin   //bclk 上降沿,采集数据 
+			wave_data_reg<={wave_data_reg[62:0], adcdat};
+			data_num<=data_num+1'b1;
+		end
+end  
+	  
+//产生ddr写信号	
+always@(posedge clock_50M )    
+begin
+		if((data_num==64) && (record_en==1'b1)) begin
+			wav_in_data<=wave_data_reg;            
+			wav_wren<=1'b1;
+      end
+      else       
+			wav_wren<=1'b0;
+end  
+     
+endmodule
+

@@ -1,0 +1,49 @@
+xst -intstyle ise -ifn "E:/Project/AX516/verilog/key_test/key_test.xst" -ofn "E:/Project/AX516/verilog/key_test/key_test.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc key_test.ucf -p xc6slx16-csg324-2 key_test.ngc key_test.ngd  
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc key_test.ucf -p xc6slx16-csg324-2 key_test.ngc key_test.ngd  
+map -intstyle ise -p xc6slx16-csg324-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o key_test_map.ncd key_test.ngd key_test.pcf 
+par -w -intstyle ise -ol high -mt off key_test_map.ncd key_test.ncd key_test.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml key_test.twx key_test.ncd -o key_test.twr key_test.pcf -ucf key_test.ucf 
+bitgen -intstyle ise -f key_test.ut key_test.ncd 
+xst -intstyle ise -ifn "E:/Project/AX545/verilog/key_test/key_test.xst" -ofn "E:/Project/AX545/verilog/key_test/key_test.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc key_test.ucf -p xc6slx45-csg324-2 key_test.ngc key_test.ngd  
+map -intstyle ise -p xc6slx45-csg324-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o key_test_map.ncd key_test.ngd key_test.pcf 
+par -w -intstyle ise -ol high -mt off key_test_map.ncd key_test.ncd key_test.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml key_test.twx key_test.ncd -o key_test.twr key_test.pcf -ucf key_test.ucf 
+bitgen -intstyle ise -f key_test.ut key_test.ncd 
+xst -intstyle ise -ifn "E:/Project/AX545/verilog/key_test/key_test.xst" -ofn "E:/Project/AX545/verilog/key_test/key_test.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc key_test.ucf -p xc6slx45-csg324-2 key_test.ngc key_test.ngd  
+map -intstyle ise -p xc6slx45-csg324-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o key_test_map.ncd key_test.ngd key_test.pcf 
+par -w -intstyle ise -ol high -mt off key_test_map.ncd key_test.ncd key_test.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml key_test.twx key_test.ncd -o key_test.twr key_test.pcf -ucf key_test.ucf 
+bitgen -intstyle ise -f key_test.ut key_test.ncd 
+xst -intstyle ise -ifn "E:/Project/AX309/Verilog/key_test/key_test.xst" -ofn "E:/Project/AX309/Verilog/key_test/key_test.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc key_test.ucf -p xc6slx9-ftg256-2 key_test.ngc key_test.ngd  
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc key_test.ucf -p xc6slx9-ftg256-2 key_test.ngc key_test.ngd  
+map -intstyle ise -p xc6slx9-ftg256-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o key_test_map.ncd key_test.ngd key_test.pcf 
+par -w -intstyle ise -ol high -mt off key_test_map.ncd key_test.ncd key_test.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml key_test.twx key_test.ncd -o key_test.twr key_test.pcf -ucf key_test.ucf 
+bitgen -intstyle ise -f key_test.ut key_test.ncd 
+xst -intstyle ise -ifn "E:/Project/AX309/Verilog/key_test/key_test.xst" -ofn "E:/Project/AX309/Verilog/key_test/key_test.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc key_test.ucf -p xc6slx9-ftg256-2 key_test.ngc key_test.ngd  
+map -intstyle ise -p xc6slx9-ftg256-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o key_test_map.ncd key_test.ngd key_test.pcf 
+par -w -intstyle ise -ol high -mt off key_test_map.ncd key_test.ncd key_test.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml key_test.twx key_test.ncd -o key_test.twr key_test.pcf -ucf key_test.ucf 
+bitgen -intstyle ise -f key_test.ut key_test.ncd 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc key_test.ucf -p xc6slx9-ftg256-2 key_test.ngc key_test.ngd  
+map -intstyle ise -p xc6slx9-ftg256-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o key_test_map.ncd key_test.ngd key_test.pcf 
+par -w -intstyle ise -ol high -mt off key_test_map.ncd key_test.ncd key_test.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml key_test.twx key_test.ncd -o key_test.twr key_test.pcf -ucf key_test.ucf 
+bitgen -intstyle ise -f key_test.ut key_test.ncd 
+xst -intstyle ise -ifn "E:/Project/AX309/CD/09_VERILOG/05_key_test/key_test.xst" -ofn "E:/Project/AX309/CD/09_VERILOG/05_key_test/key_test.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc key_test.ucf -p xc6slx9-ftg256-2 key_test.ngc key_test.ngd  
+map -intstyle ise -p xc6slx9-ftg256-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o key_test_map.ncd key_test.ngd key_test.pcf 
+par -w -intstyle ise -ol high -mt off key_test_map.ncd key_test.ncd key_test.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml key_test.twx key_test.ncd -o key_test.twr key_test.pcf -ucf key_test.ucf 
+bitgen -intstyle ise -f key_test.ut key_test.ncd 
+xst -intstyle ise -ifn "E:/Project/AX309/CD/09_VERILOG/05_key_test/key_test.xst" -ofn "E:/Project/AX309/CD/09_VERILOG/05_key_test/key_test.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc key_test.ucf -p xc6slx9-ftg256-2 key_test.ngc key_test.ngd  
+map -intstyle ise -p xc6slx9-ftg256-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o key_test_map.ncd key_test.ngd key_test.pcf 
+par -w -intstyle ise -ol high -mt off key_test_map.ncd key_test.ncd key_test.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml key_test.twx key_test.ncd -o key_test.twr key_test.pcf -ucf key_test.ucf 
+bitgen -intstyle ise -f key_test.ut key_test.ncd 

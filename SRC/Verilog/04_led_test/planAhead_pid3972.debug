@@ -1,0 +1,89 @@
+#-------------------------------------------------------------------------------
+# PlanAhead v13.1
+# Build 117799 by hdbuild on Thu Feb 17 11:38:00 PST 2011
+# Current time: 12-9-1 11:18:15
+# Process ID: 3972
+# Platform: Windows
+#
+# This file is an indication that an internal PlanAhead error occurred.
+# This information is useful for debugging. Please open a case with Xilinx
+# Technical Support with this file and a testcase attached.
+#-------------------------------------------------------------------------------
+12-9-1 11:18:15
+java.lang.NullPointerException
+	at ui.am.run(SourceFile:426)
+	at java.awt.event.InvocationEvent.dispatch(InvocationEvent.java:209)
+	at java.awt.EventQueue.dispatchEvent(EventQueue.java:597)
+	at ui.frmwork.H.dispatchEvent(SourceFile:73)
+	at java.awt.EventDispatchThread.pumpOneEventForFilters(EventDispatchThread.java:269)
+	at java.awt.EventDispatchThread.pumpEventsForFilter(EventDispatchThread.java:184)
+	at java.awt.EventDispatchThread.pumpEventsForHierarchy(EventDispatchThread.java:174)
+	at java.awt.EventDispatchThread.pumpEvents(EventDispatchThread.java:169)
+	at java.awt.EventDispatchThread.pumpEvents(EventDispatchThread.java:161)
+	at java.awt.EventDispatchThread.run(EventDispatchThread.java:122)
+
+12-9-1 11:18:23
+java.lang.IllegalArgumentException: The icon should not be null.
+	at com.jidesoft.icons.i.<init>(SourceFile:29)
+	at com.jidesoft.plaf.vsnet.VsnetWindowsUtils.c(SourceFile:644)
+	at com.jidesoft.plaf.LookAndFeelFactory.a(SourceFile:643)
+	at com.jidesoft.plaf.LookAndFeelFactory.nz(SourceFile:452)
+	at com.jidesoft.plaf.LookAndFeelFactory.bbc(SourceFile:418)
+	at com.jidesoft.swing.bz.updateUI(SourceFile:98)
+	at javax.swing.AbstractButton.init(AbstractButton.java:2149)
+	at javax.swing.JButton.<init>(JButton.java:118)
+	at javax.swing.JButton.<init>(JButton.java:73)
+	at com.jidesoft.swing.bz.<init>(SourceFile:80)
+	at com.jidesoft.swing.bz.<init>(SourceFile:51)
+	at ui.utils.swing.s.<init>(SourceFile:124)
+	at ui.utils.swing.bg.<init>(SourceFile:124)
+	at ui.utils.swing.bg.m(SourceFile:109)
+	at ui.utils.swing.bN.vK(SourceFile:40)
+	at ui.utils.swing.bN.<init>(SourceFile:26)
+	at ui.dlg.common.aM.bxE(SourceFile:110)
+	at ui.dlg.common.ax.a(SourceFile:133)
+	at com.jidesoft.dialog.p.initComponents(SourceFile:112)
+	at com.jidesoft.dialog.at.initComponents(SourceFile:222)
+	at com.jidesoft.dialog.at.initialize(SourceFile:208)
+	at com.jidesoft.dialog.at.pack(SourceFile:178)
+	at ui.M.c(SourceFile:538)
+	at ui.M.d(SourceFile:59)
+	at ui.F.run(SourceFile:566)
+	at java.awt.event.InvocationEvent.dispatch(InvocationEvent.java:209)
+	at java.awt.EventQueue.dispatchEvent(EventQueue.java:597)
+	at ui.frmwork.H.dispatchEvent(SourceFile:73)
+	at java.awt.EventDispatchThread.pumpOneEventForFilters(EventDispatchThread.java:269)
+	at java.awt.EventDispatchThread.pumpEventsForFilter(EventDispatchThread.java:184)
+	at java.awt.EventDispatchThread.pumpEventsForHierarchy(EventDispatchThread.java:174)
+	at java.awt.EventDispatchThread.pumpEvents(EventDispatchThread.java:169)
+	at java.awt.EventDispatchThread.pumpEvents(EventDispatchThread.java:161)
+	at java.awt.EventDispatchThread.run(EventDispatchThread.java:122)
+
+12-9-1 11:18:28
+java.lang.IllegalArgumentException: The icon should not be null.
+	at com.jidesoft.icons.i.<init>(SourceFile:29)
+	at com.jidesoft.plaf.vsnet.VsnetWindowsUtils.c(SourceFile:644)
+	at com.jidesoft.plaf.LookAndFeelFactory.a(SourceFile:643)
+	at com.jidesoft.plaf.LookAndFeelFactory.nz(SourceFile:452)
+	at com.jidesoft.plaf.LookAndFeelFactory.bbc(SourceFile:418)
+	at com.jidesoft.swing.bV.updateUI(SourceFile:58)
+	at com.jidesoft.grid.id.updateUI(SourceFile:100)
+	at javax.swing.JLabel.<init>(JLabel.java:145)
+	at javax.swing.JLabel.<init>(JLabel.java:216)
+	at com.jidesoft.swing.bV.<init>(SourceFile:27)
+	at com.jidesoft.grid.id.<init>(SourceFile:48)
+	at com.jidesoft.grid.ii.<init>(SourceFile:39)
+	at com.jidesoft.grid.F.rH(SourceFile:335)
+	at com.jidesoft.grid.F.a(SourceFile:57)
+	at ui.utils.jide.M.a(SourceFile:370)
+	at ui.dlg.project.settings.c.j(SourceFile:686)
+	at ui.dlg.project.settings.c.g(SourceFile:532)
+	at ui.dlg.project.settings.c.c(SourceFile:507)
+	at ui.dlg.project.settings.c.eW(SourceFile:94)
+	at ui.project.k.WM(SourceFile:203)
+	at ui.project.k.<init>(SourceFile:130)
+	at ui.ap.a(SourceFile:1059)
+	at ui.frmwork.al.e(SourceFile:35)
+	at ui.frmwork.HTclEventBroker.a(SourceFile:215)
+	at ui.frmwork.HTclEventBroker.fireTclEvent(SourceFile:263)
+
