@@ -1,0 +1,8 @@
+INTSTYLE=ise
+INFILE=E:\Project\AX516\verilog\sd_audio\sd_audio\SD_TOP.ncd
+OUTFILE=E:\Project\AX516\verilog\sd_audio\sd_audio\SD_TOP.bit
+FAMILY=Spartan6
+PART=xc6slx16-3csg324
+WORKINGDIR=E:\Project\AX516\verilog\sd_audio\sd_audio
+LICENSE=WebPack
+USER_INFO=__0_0_0

@@ -1,0 +1,338 @@
+xst -intstyle ise -ifn "E:/Project/AX309/Verilog/sdram_ov5640_vga/sdram_ov5640_vga/sdram_ov5640_vga.xst" -ofn "E:/Project/AX309/Verilog/sdram_ov5640_vga/sdram_ov5640_vga/sdram_ov5640_vga.syr" 
+xst -intstyle ise -ifn "E:/Project/AX309/Verilog/sdram_ov5640_vga/sdram_ov5640_vga/sdram_ov5640_vga.xst" -ofn "E:/Project/AX309/Verilog/sdram_ov5640_vga/sdram_ov5640_vga/sdram_ov5640_vga.syr" 
+xst -intstyle ise -ifn "E:/Project/AX309/Verilog/sdram_ov5640_vga/sdram_ov5640_vga/sdram_ov5640_vga.xst" -ofn "E:/Project/AX309/Verilog/sdram_ov5640_vga/sdram_ov5640_vga/sdram_ov5640_vga.syr" 
+xst -intstyle ise -ifn "E:/Project/AX309/Verilog/sdram_ov5640_vga/sdram_ov5640_vga/sdram_ov5640_vga.xst" -ofn "E:/Project/AX309/Verilog/sdram_ov5640_vga/sdram_ov5640_vga/sdram_ov5640_vga.syr" 
+xst -intstyle ise -ifn "E:/Project/AX309/Verilog/sdram_ov5640_vga/sdram_ov5640_vga/sdram_ov5640_vga.xst" -ofn "E:/Project/AX309/Verilog/sdram_ov5640_vga/sdram_ov5640_vga/sdram_ov5640_vga.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc sdram_ov5640_vga.ucf -p xc6slx9-ftg256-2 sdram_ov5640_vga.ngc sdram_ov5640_vga.ngd  
+map -intstyle ise -p xc6slx9-ftg256-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o sdram_ov5640_vga_map.ncd sdram_ov5640_vga.ngd sdram_ov5640_vga.pcf 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc sdram_ov5640_vga.ucf -p xc6slx9-ftg256-2 sdram_ov5640_vga.ngc sdram_ov5640_vga.ngd  
+map -intstyle ise -p xc6slx9-ftg256-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o sdram_ov5640_vga_map.ncd sdram_ov5640_vga.ngd sdram_ov5640_vga.pcf 
+par -w -intstyle ise -ol high -mt off sdram_ov5640_vga_map.ncd sdram_ov5640_vga.ncd sdram_ov5640_vga.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml sdram_ov5640_vga.twx sdram_ov5640_vga.ncd -o sdram_ov5640_vga.twr sdram_ov5640_vga.pcf -ucf sdram_ov5640_vga.ucf 
+bitgen -intstyle ise -f sdram_ov5640_vga.ut sdram_ov5640_vga.ncd 
+xst -intstyle ise -ifn "E:/Project/AX309/Verilog/sdram_ov5640_vga/sdram_ov5640_vga/sdram_ov5640_vga.xst" -ofn "E:/Project/AX309/Verilog/sdram_ov5640_vga/sdram_ov5640_vga/sdram_ov5640_vga.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc sdram_ov5640_vga.ucf -p xc6slx9-ftg256-2 sdram_ov5640_vga.ngc sdram_ov5640_vga.ngd  
+map -intstyle ise -p xc6slx9-ftg256-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o sdram_ov5640_vga_map.ncd sdram_ov5640_vga.ngd sdram_ov5640_vga.pcf 
+par -w -intstyle ise -ol high -mt off sdram_ov5640_vga_map.ncd sdram_ov5640_vga.ncd sdram_ov5640_vga.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml sdram_ov5640_vga.twx sdram_ov5640_vga.ncd -o sdram_ov5640_vga.twr sdram_ov5640_vga.pcf -ucf sdram_ov5640_vga.ucf 
+bitgen -intstyle ise -f sdram_ov5640_vga.ut sdram_ov5640_vga.ncd 
+xst -intstyle ise -ifn "E:/Project/AX309/Verilog/sdram_ov5640_vga/sdram_ov5640_vga/sdram_ov5640_vga.xst" -ofn "E:/Project/AX309/Verilog/sdram_ov5640_vga/sdram_ov5640_vga/sdram_ov5640_vga.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc sdram_ov5640_vga.ucf -p xc6slx9-ftg256-2 sdram_ov5640_vga.ngc sdram_ov5640_vga.ngd  
+map -intstyle ise -p xc6slx9-ftg256-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o sdram_ov5640_vga_map.ncd sdram_ov5640_vga.ngd sdram_ov5640_vga.pcf 
+par -w -intstyle ise -ol high -mt off sdram_ov5640_vga_map.ncd sdram_ov5640_vga.ncd sdram_ov5640_vga.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml sdram_ov5640_vga.twx sdram_ov5640_vga.ncd -o sdram_ov5640_vga.twr sdram_ov5640_vga.pcf -ucf sdram_ov5640_vga.ucf 
+bitgen -intstyle ise -f sdram_ov5640_vga.ut sdram_ov5640_vga.ncd 
+xst -intstyle ise -ifn "E:/Project/AX309/Verilog/sdram_ov5640_vga/sdram_ov5640_vga/sdram_ov5640_vga.xst" -ofn "E:/Project/AX309/Verilog/sdram_ov5640_vga/sdram_ov5640_vga/sdram_ov5640_vga.syr" 
+xst -intstyle ise -ifn "E:/Project/AX309/Verilog/sdram_ov5640_vga/sdram_ov5640_vga/sdram_ov5640_vga.xst" -ofn "E:/Project/AX309/Verilog/sdram_ov5640_vga/sdram_ov5640_vga/sdram_ov5640_vga.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc sdram_ov5640_vga.ucf -p xc6slx9-ftg256-2 sdram_ov5640_vga.ngc sdram_ov5640_vga.ngd  
+map -intstyle ise -p xc6slx9-ftg256-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o sdram_ov5640_vga_map.ncd sdram_ov5640_vga.ngd sdram_ov5640_vga.pcf 
+par -w -intstyle ise -ol high -mt off sdram_ov5640_vga_map.ncd sdram_ov5640_vga.ncd sdram_ov5640_vga.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml sdram_ov5640_vga.twx sdram_ov5640_vga.ncd -o sdram_ov5640_vga.twr sdram_ov5640_vga.pcf -ucf sdram_ov5640_vga.ucf 
+bitgen -intstyle ise -f sdram_ov5640_vga.ut sdram_ov5640_vga.ncd 
+xst -intstyle ise -ifn "E:/Project/AX309/Verilog/sdram_ov5640_vga/sdram_ov5640_vga/sdram_ov5640_vga.xst" -ofn "E:/Project/AX309/Verilog/sdram_ov5640_vga/sdram_ov5640_vga/sdram_ov5640_vga.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc sdram_ov5640_vga.ucf -p xc6slx9-ftg256-2 sdram_ov5640_vga.ngc sdram_ov5640_vga.ngd  
+map -intstyle ise -p xc6slx9-ftg256-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o sdram_ov5640_vga_map.ncd sdram_ov5640_vga.ngd sdram_ov5640_vga.pcf 
+par -w -intstyle ise -ol high -mt off sdram_ov5640_vga_map.ncd sdram_ov5640_vga.ncd sdram_ov5640_vga.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml sdram_ov5640_vga.twx sdram_ov5640_vga.ncd -o sdram_ov5640_vga.twr sdram_ov5640_vga.pcf -ucf sdram_ov5640_vga.ucf 
+bitgen -intstyle ise -f sdram_ov5640_vga.ut sdram_ov5640_vga.ncd 
+xst -intstyle ise -ifn "E:/Project/AX309/Verilog/sdram_ov5640_vga/sdram_ov5640_vga/sdram_ov5640_vga.xst" -ofn "E:/Project/AX309/Verilog/sdram_ov5640_vga/sdram_ov5640_vga/sdram_ov5640_vga.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc sdram_ov5640_vga.ucf -p xc6slx9-ftg256-2 sdram_ov5640_vga.ngc sdram_ov5640_vga.ngd  
+map -intstyle ise -p xc6slx9-ftg256-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o sdram_ov5640_vga_map.ncd sdram_ov5640_vga.ngd sdram_ov5640_vga.pcf 
+par -w -intstyle ise -ol high -mt off sdram_ov5640_vga_map.ncd sdram_ov5640_vga.ncd sdram_ov5640_vga.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml sdram_ov5640_vga.twx sdram_ov5640_vga.ncd -o sdram_ov5640_vga.twr sdram_ov5640_vga.pcf -ucf sdram_ov5640_vga.ucf 
+bitgen -intstyle ise -f sdram_ov5640_vga.ut sdram_ov5640_vga.ncd 
+xst -intstyle ise -ifn "E:/Project/AX309/Verilog/sdram_ov5640_vga/sdram_ov5640_vga/sdram_ov5640_vga.xst" -ofn "E:/Project/AX309/Verilog/sdram_ov5640_vga/sdram_ov5640_vga/sdram_ov5640_vga.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc sdram_ov5640_vga.ucf -p xc6slx9-ftg256-2 sdram_ov5640_vga.ngc sdram_ov5640_vga.ngd  
+map -intstyle ise -p xc6slx9-ftg256-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o sdram_ov5640_vga_map.ncd sdram_ov5640_vga.ngd sdram_ov5640_vga.pcf 
+par -w -intstyle ise -ol high -mt off sdram_ov5640_vga_map.ncd sdram_ov5640_vga.ncd sdram_ov5640_vga.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml sdram_ov5640_vga.twx sdram_ov5640_vga.ncd -o sdram_ov5640_vga.twr sdram_ov5640_vga.pcf -ucf sdram_ov5640_vga.ucf 
+bitgen -intstyle ise -f sdram_ov5640_vga.ut sdram_ov5640_vga.ncd 
+xst -intstyle ise -ifn "E:/Project/AX309/Verilog/sdram_ov5640_vga/sdram_ov5640_vga/sdram_ov5640_vga.xst" -ofn "E:/Project/AX309/Verilog/sdram_ov5640_vga/sdram_ov5640_vga/sdram_ov5640_vga.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc sdram_ov5640_vga.ucf -p xc6slx9-ftg256-2 sdram_ov5640_vga.ngc sdram_ov5640_vga.ngd  
+map -intstyle ise -p xc6slx9-ftg256-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o sdram_ov5640_vga_map.ncd sdram_ov5640_vga.ngd sdram_ov5640_vga.pcf 
+par -w -intstyle ise -ol high -mt off sdram_ov5640_vga_map.ncd sdram_ov5640_vga.ncd sdram_ov5640_vga.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml sdram_ov5640_vga.twx sdram_ov5640_vga.ncd -o sdram_ov5640_vga.twr sdram_ov5640_vga.pcf -ucf sdram_ov5640_vga.ucf 
+bitgen -intstyle ise -f sdram_ov5640_vga.ut sdram_ov5640_vga.ncd 
+xst -intstyle ise -ifn "E:/Project/AX309/Verilog/sdram_ov5640_vga/sdram_ov5640_vga/sdram_ov5640_vga.xst" -ofn "E:/Project/AX309/Verilog/sdram_ov5640_vga/sdram_ov5640_vga/sdram_ov5640_vga.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc sdram_ov5640_vga.ucf -p xc6slx9-ftg256-2 sdram_ov5640_vga.ngc sdram_ov5640_vga.ngd  
+map -intstyle ise -p xc6slx9-ftg256-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o sdram_ov5640_vga_map.ncd sdram_ov5640_vga.ngd sdram_ov5640_vga.pcf 
+par -w -intstyle ise -ol high -mt off sdram_ov5640_vga_map.ncd sdram_ov5640_vga.ncd sdram_ov5640_vga.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml sdram_ov5640_vga.twx sdram_ov5640_vga.ncd -o sdram_ov5640_vga.twr sdram_ov5640_vga.pcf -ucf sdram_ov5640_vga.ucf 
+bitgen -intstyle ise -f sdram_ov5640_vga.ut sdram_ov5640_vga.ncd 
+xst -intstyle ise -ifn "E:/Project/AX309/Verilog/sdram_ov5640_vga/sdram_ov5640_vga/sdram_ov5640_vga.xst" -ofn "E:/Project/AX309/Verilog/sdram_ov5640_vga/sdram_ov5640_vga/sdram_ov5640_vga.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc sdram_ov5640_vga.ucf -p xc6slx9-ftg256-2 sdram_ov5640_vga.ngc sdram_ov5640_vga.ngd  
+map -intstyle ise -p xc6slx9-ftg256-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o sdram_ov5640_vga_map.ncd sdram_ov5640_vga.ngd sdram_ov5640_vga.pcf 
+par -w -intstyle ise -ol high -mt off sdram_ov5640_vga_map.ncd sdram_ov5640_vga.ncd sdram_ov5640_vga.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml sdram_ov5640_vga.twx sdram_ov5640_vga.ncd -o sdram_ov5640_vga.twr sdram_ov5640_vga.pcf -ucf sdram_ov5640_vga.ucf 
+bitgen -intstyle ise -f sdram_ov5640_vga.ut sdram_ov5640_vga.ncd 
+xst -intstyle ise -ifn "E:/Project/AX309/Verilog/sdram_ov5640_vga/sdram_ov5640_vga/sdram_ov5640_vga.xst" -ofn "E:/Project/AX309/Verilog/sdram_ov5640_vga/sdram_ov5640_vga/sdram_ov5640_vga.syr" 
+xst -intstyle ise -ifn "E:/Project/AX309/Verilog/sdram_ov5640_vga/sdram_ov5640_vga/sdram_ov5640_vga.xst" -ofn "E:/Project/AX309/Verilog/sdram_ov5640_vga/sdram_ov5640_vga/sdram_ov5640_vga.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc sdram_ov5640_vga.ucf -p xc6slx9-ftg256-2 sdram_ov5640_vga.ngc sdram_ov5640_vga.ngd  
+map -intstyle ise -p xc6slx9-ftg256-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o sdram_ov5640_vga_map.ncd sdram_ov5640_vga.ngd sdram_ov5640_vga.pcf 
+par -w -intstyle ise -ol high -mt off sdram_ov5640_vga_map.ncd sdram_ov5640_vga.ncd sdram_ov5640_vga.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml sdram_ov5640_vga.twx sdram_ov5640_vga.ncd -o sdram_ov5640_vga.twr sdram_ov5640_vga.pcf -ucf sdram_ov5640_vga.ucf 
+bitgen -intstyle ise -f sdram_ov5640_vga.ut sdram_ov5640_vga.ncd 
+xst -intstyle ise -ifn "E:/Project/AX309/Verilog/sdram_ov5640_vga/sdram_ov5640_vga/sdram_ov5640_vga.xst" -ofn "E:/Project/AX309/Verilog/sdram_ov5640_vga/sdram_ov5640_vga/sdram_ov5640_vga.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc sdram_ov5640_vga.ucf -p xc6slx9-ftg256-2 sdram_ov5640_vga.ngc sdram_ov5640_vga.ngd  
+map -intstyle ise -p xc6slx9-ftg256-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o sdram_ov5640_vga_map.ncd sdram_ov5640_vga.ngd sdram_ov5640_vga.pcf 
+par -w -intstyle ise -ol high -mt off sdram_ov5640_vga_map.ncd sdram_ov5640_vga.ncd sdram_ov5640_vga.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml sdram_ov5640_vga.twx sdram_ov5640_vga.ncd -o sdram_ov5640_vga.twr sdram_ov5640_vga.pcf -ucf sdram_ov5640_vga.ucf 
+bitgen -intstyle ise -f sdram_ov5640_vga.ut sdram_ov5640_vga.ncd 
+xst -intstyle ise -ifn "E:/Project/AX309/Verilog/sdram_ov5640_vga/sdram_ov5640_vga/sdram_ov5640_vga.xst" -ofn "E:/Project/AX309/Verilog/sdram_ov5640_vga/sdram_ov5640_vga/sdram_ov5640_vga.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc sdram_ov5640_vga.ucf -p xc6slx9-ftg256-2 sdram_ov5640_vga.ngc sdram_ov5640_vga.ngd  
+map -intstyle ise -p xc6slx9-ftg256-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o sdram_ov5640_vga_map.ncd sdram_ov5640_vga.ngd sdram_ov5640_vga.pcf 
+par -w -intstyle ise -ol high -mt off sdram_ov5640_vga_map.ncd sdram_ov5640_vga.ncd sdram_ov5640_vga.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml sdram_ov5640_vga.twx sdram_ov5640_vga.ncd -o sdram_ov5640_vga.twr sdram_ov5640_vga.pcf -ucf sdram_ov5640_vga.ucf 
+bitgen -intstyle ise -f sdram_ov5640_vga.ut sdram_ov5640_vga.ncd 
+xst -intstyle ise -ifn "E:/Project/AX309/Verilog/sdram_ov5640_vga/sdram_ov5640_vga/sdram_ov5640_vga.xst" -ofn "E:/Project/AX309/Verilog/sdram_ov5640_vga/sdram_ov5640_vga/sdram_ov5640_vga.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc sdram_ov5640_vga.ucf -p xc6slx9-ftg256-2 sdram_ov5640_vga.ngc sdram_ov5640_vga.ngd  
+map -intstyle ise -p xc6slx9-ftg256-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o sdram_ov5640_vga_map.ncd sdram_ov5640_vga.ngd sdram_ov5640_vga.pcf 
+par -w -intstyle ise -ol high -mt off sdram_ov5640_vga_map.ncd sdram_ov5640_vga.ncd sdram_ov5640_vga.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml sdram_ov5640_vga.twx sdram_ov5640_vga.ncd -o sdram_ov5640_vga.twr sdram_ov5640_vga.pcf -ucf sdram_ov5640_vga.ucf 
+bitgen -intstyle ise -f sdram_ov5640_vga.ut sdram_ov5640_vga.ncd 
+xst -intstyle ise -ifn "E:/Project/AX309/Verilog/sdram_ov5640_vga/sdram_ov5640_vga/sdram_ov5640_vga.xst" -ofn "E:/Project/AX309/Verilog/sdram_ov5640_vga/sdram_ov5640_vga/sdram_ov5640_vga.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc sdram_ov5640_vga.ucf -p xc6slx9-ftg256-2 sdram_ov5640_vga.ngc sdram_ov5640_vga.ngd  
+map -intstyle ise -p xc6slx9-ftg256-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o sdram_ov5640_vga_map.ncd sdram_ov5640_vga.ngd sdram_ov5640_vga.pcf 
+par -w -intstyle ise -ol high -mt off sdram_ov5640_vga_map.ncd sdram_ov5640_vga.ncd sdram_ov5640_vga.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml sdram_ov5640_vga.twx sdram_ov5640_vga.ncd -o sdram_ov5640_vga.twr sdram_ov5640_vga.pcf -ucf sdram_ov5640_vga.ucf 
+bitgen -intstyle ise -f sdram_ov5640_vga.ut sdram_ov5640_vga.ncd 
+xst -intstyle ise -ifn "E:/Project/AX309/Verilog/sdram_ov5640_vga/sdram_ov5640_vga/sdram_ov5640_vga.xst" -ofn "E:/Project/AX309/Verilog/sdram_ov5640_vga/sdram_ov5640_vga/sdram_ov5640_vga.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc sdram_ov5640_vga.ucf -p xc6slx9-ftg256-2 sdram_ov5640_vga.ngc sdram_ov5640_vga.ngd  
+xst -intstyle ise -ifn "E:/Project/AX309/Verilog/sdram_ov5640_vga/sdram_ov5640_vga/sdram_ov5640_vga.xst" -ofn "E:/Project/AX309/Verilog/sdram_ov5640_vga/sdram_ov5640_vga/sdram_ov5640_vga.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc sdram_ov5640_vga.ucf -p xc6slx9-ftg256-2 sdram_ov5640_vga.ngc sdram_ov5640_vga.ngd  
+xst -intstyle ise -ifn "E:/Project/AX309/Verilog/sdram_ov5640_vga/sdram_ov5640_vga/sdram_ov5640_vga.xst" -ofn "E:/Project/AX309/Verilog/sdram_ov5640_vga/sdram_ov5640_vga/sdram_ov5640_vga.syr" 
+xst -intstyle ise -ifn "E:/Project/AX309/Verilog/sdram_ov5640_vga/sdram_ov5640_vga/sdram_ov5640_vga.xst" -ofn "E:/Project/AX309/Verilog/sdram_ov5640_vga/sdram_ov5640_vga/sdram_ov5640_vga.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc sdram_ov5640_vga.ucf -p xc6slx9-ftg256-2 sdram_ov5640_vga.ngc sdram_ov5640_vga.ngd  
+xst -intstyle ise -ifn "E:/Project/AX309/Verilog/sdram_ov5640_vga/sdram_ov5640_vga/sdram_ov5640_vga.xst" -ofn "E:/Project/AX309/Verilog/sdram_ov5640_vga/sdram_ov5640_vga/sdram_ov5640_vga.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc sdram_ov5640_vga.ucf -p xc6slx9-ftg256-2 sdram_ov5640_vga.ngc sdram_ov5640_vga.ngd  
+xst -intstyle ise -ifn "E:/Project/AX309/Verilog/sdram_ov5640_vga/sdram_ov5640_vga/sdram_ov5640_vga.xst" -ofn "E:/Project/AX309/Verilog/sdram_ov5640_vga/sdram_ov5640_vga/sdram_ov5640_vga.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc sdram_ov5640_vga.ucf -p xc6slx9-ftg256-2 sdram_ov5640_vga.ngc sdram_ov5640_vga.ngd  
+map -intstyle ise -p xc6slx9-ftg256-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o sdram_ov5640_vga_map.ncd sdram_ov5640_vga.ngd sdram_ov5640_vga.pcf 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc sdram_ov5640_vga.ucf -p xc6slx9-ftg256-2 sdram_ov5640_vga.ngc sdram_ov5640_vga.ngd  
+map -intstyle ise -p xc6slx9-ftg256-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o sdram_ov5640_vga_map.ncd sdram_ov5640_vga.ngd sdram_ov5640_vga.pcf 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc sdram_ov5640_vga.ucf -p xc6slx9-ftg256-2 sdram_ov5640_vga.ngc sdram_ov5640_vga.ngd  
+map -intstyle ise -p xc6slx9-ftg256-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o sdram_ov5640_vga_map.ncd sdram_ov5640_vga.ngd sdram_ov5640_vga.pcf 
+par -w -intstyle ise -ol high -mt off sdram_ov5640_vga_map.ncd sdram_ov5640_vga.ncd sdram_ov5640_vga.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml sdram_ov5640_vga.twx sdram_ov5640_vga.ncd -o sdram_ov5640_vga.twr sdram_ov5640_vga.pcf -ucf sdram_ov5640_vga.ucf 
+bitgen -intstyle ise -f sdram_ov5640_vga.ut sdram_ov5640_vga.ncd 
+xst -intstyle ise -ifn "E:/Project/AX309/Verilog/sdram_ov5640_vga/sdram_ov5640_vga/sdram_ov5640_vga.xst" -ofn "E:/Project/AX309/Verilog/sdram_ov5640_vga/sdram_ov5640_vga/sdram_ov5640_vga.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc sdram_ov5640_vga.ucf -p xc6slx9-ftg256-2 sdram_ov5640_vga.ngc sdram_ov5640_vga.ngd  
+map -intstyle ise -p xc6slx9-ftg256-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o sdram_ov5640_vga_map.ncd sdram_ov5640_vga.ngd sdram_ov5640_vga.pcf 
+par -w -intstyle ise -ol high -mt off sdram_ov5640_vga_map.ncd sdram_ov5640_vga.ncd sdram_ov5640_vga.pcf 
+bitgen -intstyle ise -f sdram_ov5640_vga.ut sdram_ov5640_vga.ncd 
+xst -intstyle ise -ifn "E:/Project/AX309/Verilog/sdram_ov5640_vga/sdram_ov5640_vga/sdram_ov5640_vga.xst" -ofn "E:/Project/AX309/Verilog/sdram_ov5640_vga/sdram_ov5640_vga/sdram_ov5640_vga.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc sdram_ov5640_vga.ucf -p xc6slx9-ftg256-2 sdram_ov5640_vga.ngc sdram_ov5640_vga.ngd  
+map -intstyle ise -p xc6slx9-ftg256-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o sdram_ov5640_vga_map.ncd sdram_ov5640_vga.ngd sdram_ov5640_vga.pcf 
+par -w -intstyle ise -ol high -mt off sdram_ov5640_vga_map.ncd sdram_ov5640_vga.ncd sdram_ov5640_vga.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml sdram_ov5640_vga.twx sdram_ov5640_vga.ncd -o sdram_ov5640_vga.twr sdram_ov5640_vga.pcf -ucf sdram_ov5640_vga.ucf 
+bitgen -intstyle ise -f sdram_ov5640_vga.ut sdram_ov5640_vga.ncd 
+xst -intstyle ise -ifn "E:/Project/AX309/Verilog/sdram_ov5640_vga/sdram_ov5640_vga/sdram_ov5640_vga.xst" -ofn "E:/Project/AX309/Verilog/sdram_ov5640_vga/sdram_ov5640_vga/sdram_ov5640_vga.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc sdram_ov5640_vga.ucf -p xc6slx9-ftg256-2 sdram_ov5640_vga.ngc sdram_ov5640_vga.ngd  
+xst -intstyle ise -ifn "E:/Project/AX309/Verilog/sdram_ov5640_vga/sdram_ov5640_vga/sdram_ov5640_vga.xst" -ofn "E:/Project/AX309/Verilog/sdram_ov5640_vga/sdram_ov5640_vga/sdram_ov5640_vga.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc sdram_ov5640_vga.ucf -p xc6slx9-ftg256-2 sdram_ov5640_vga.ngc sdram_ov5640_vga.ngd  
+map -intstyle ise -p xc6slx9-ftg256-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o sdram_ov5640_vga_map.ncd sdram_ov5640_vga.ngd sdram_ov5640_vga.pcf 
+par -w -intstyle ise -ol high -mt off sdram_ov5640_vga_map.ncd sdram_ov5640_vga.ncd sdram_ov5640_vga.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml sdram_ov5640_vga.twx sdram_ov5640_vga.ncd -o sdram_ov5640_vga.twr sdram_ov5640_vga.pcf -ucf sdram_ov5640_vga.ucf 
+bitgen -intstyle ise -f sdram_ov5640_vga.ut sdram_ov5640_vga.ncd 
+xst -intstyle ise -ifn "E:/Project/AX309/Verilog/sdram_ov5640_vga/sdram_ov5640_vga/sdram_ov5640_vga.xst" -ofn "E:/Project/AX309/Verilog/sdram_ov5640_vga/sdram_ov5640_vga/sdram_ov5640_vga.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc sdram_ov5640_vga.ucf -p xc6slx9-ftg256-2 sdram_ov5640_vga.ngc sdram_ov5640_vga.ngd  
+map -intstyle ise -p xc6slx9-ftg256-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o sdram_ov5640_vga_map.ncd sdram_ov5640_vga.ngd sdram_ov5640_vga.pcf 
+par -w -intstyle ise -ol high -mt off sdram_ov5640_vga_map.ncd sdram_ov5640_vga.ncd sdram_ov5640_vga.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml sdram_ov5640_vga.twx sdram_ov5640_vga.ncd -o sdram_ov5640_vga.twr sdram_ov5640_vga.pcf -ucf sdram_ov5640_vga.ucf 
+bitgen -intstyle ise -f sdram_ov5640_vga.ut sdram_ov5640_vga.ncd 
+xst -intstyle ise -ifn "E:/Project/AX309/Verilog/sdram_ov5640_vga/sdram_ov5640_vga/sdram_ov5640_vga.xst" -ofn "E:/Project/AX309/Verilog/sdram_ov5640_vga/sdram_ov5640_vga/sdram_ov5640_vga.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc sdram_ov5640_vga.ucf -p xc6slx9-ftg256-2 sdram_ov5640_vga.ngc sdram_ov5640_vga.ngd  
+map -intstyle ise -p xc6slx9-ftg256-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o sdram_ov5640_vga_map.ncd sdram_ov5640_vga.ngd sdram_ov5640_vga.pcf 
+par -w -intstyle ise -ol high -mt off sdram_ov5640_vga_map.ncd sdram_ov5640_vga.ncd sdram_ov5640_vga.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml sdram_ov5640_vga.twx sdram_ov5640_vga.ncd -o sdram_ov5640_vga.twr sdram_ov5640_vga.pcf -ucf sdram_ov5640_vga.ucf 
+bitgen -intstyle ise -f sdram_ov5640_vga.ut sdram_ov5640_vga.ncd 
+xst -intstyle ise -ifn "E:/Project/AX309/Verilog/sdram_ov5640_vga/sdram_ov5640_vga/sdram_ov5640_vga.xst" -ofn "E:/Project/AX309/Verilog/sdram_ov5640_vga/sdram_ov5640_vga/sdram_ov5640_vga.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc sdram_ov5640_vga.ucf -p xc6slx9-ftg256-2 sdram_ov5640_vga.ngc sdram_ov5640_vga.ngd  
+map -intstyle ise -p xc6slx9-ftg256-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o sdram_ov5640_vga_map.ncd sdram_ov5640_vga.ngd sdram_ov5640_vga.pcf 
+par -w -intstyle ise -ol high -mt off sdram_ov5640_vga_map.ncd sdram_ov5640_vga.ncd sdram_ov5640_vga.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml sdram_ov5640_vga.twx sdram_ov5640_vga.ncd -o sdram_ov5640_vga.twr sdram_ov5640_vga.pcf -ucf sdram_ov5640_vga.ucf 
+bitgen -intstyle ise -f sdram_ov5640_vga.ut sdram_ov5640_vga.ncd 
+xst -intstyle ise -ifn "E:/Project/AX309/Verilog/sdram_ov5640_vga/sdram_ov5640_vga/sdram_ov5640_vga.xst" -ofn "E:/Project/AX309/Verilog/sdram_ov5640_vga/sdram_ov5640_vga/sdram_ov5640_vga.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc sdram_ov5640_vga.ucf -p xc6slx9-ftg256-2 sdram_ov5640_vga.ngc sdram_ov5640_vga.ngd  
+map -intstyle ise -p xc6slx9-ftg256-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o sdram_ov5640_vga_map.ncd sdram_ov5640_vga.ngd sdram_ov5640_vga.pcf 
+par -w -intstyle ise -ol high -mt off sdram_ov5640_vga_map.ncd sdram_ov5640_vga.ncd sdram_ov5640_vga.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml sdram_ov5640_vga.twx sdram_ov5640_vga.ncd -o sdram_ov5640_vga.twr sdram_ov5640_vga.pcf -ucf sdram_ov5640_vga.ucf 
+bitgen -intstyle ise -f sdram_ov5640_vga.ut sdram_ov5640_vga.ncd 
+xst -intstyle ise -ifn "E:/Project/AX309/Verilog/sdram_ov5640_vga/sdram_ov5640_vga/sdram_ov5640_vga.xst" -ofn "E:/Project/AX309/Verilog/sdram_ov5640_vga/sdram_ov5640_vga/sdram_ov5640_vga.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc sdram_ov5640_vga.ucf -p xc6slx9-ftg256-2 sdram_ov5640_vga.ngc sdram_ov5640_vga.ngd  
+map -intstyle ise -p xc6slx9-ftg256-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o sdram_ov5640_vga_map.ncd sdram_ov5640_vga.ngd sdram_ov5640_vga.pcf 
+par -w -intstyle ise -ol high -mt off sdram_ov5640_vga_map.ncd sdram_ov5640_vga.ncd sdram_ov5640_vga.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml sdram_ov5640_vga.twx sdram_ov5640_vga.ncd -o sdram_ov5640_vga.twr sdram_ov5640_vga.pcf -ucf sdram_ov5640_vga.ucf 
+bitgen -intstyle ise -f sdram_ov5640_vga.ut sdram_ov5640_vga.ncd 
+xst -intstyle ise -ifn "E:/Project/AX309/Verilog/sdram_ov5640_vga/sdram_ov5640_vga/sdram_ov5640_vga.xst" -ofn "E:/Project/AX309/Verilog/sdram_ov5640_vga/sdram_ov5640_vga/sdram_ov5640_vga.syr" 
+xst -intstyle ise -ifn "E:/Project/AX309/Verilog/sdram_ov5640_vga/sdram_ov5640_vga/sdram_ov5640_vga.xst" -ofn "E:/Project/AX309/Verilog/sdram_ov5640_vga/sdram_ov5640_vga/sdram_ov5640_vga.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc sdram_ov5640_vga.ucf -p xc6slx9-ftg256-2 sdram_ov5640_vga.ngc sdram_ov5640_vga.ngd  
+map -intstyle ise -p xc6slx9-ftg256-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o sdram_ov5640_vga_map.ncd sdram_ov5640_vga.ngd sdram_ov5640_vga.pcf 
+par -w -intstyle ise -ol high -mt off sdram_ov5640_vga_map.ncd sdram_ov5640_vga.ncd sdram_ov5640_vga.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml sdram_ov5640_vga.twx sdram_ov5640_vga.ncd -o sdram_ov5640_vga.twr sdram_ov5640_vga.pcf -ucf sdram_ov5640_vga.ucf 
+bitgen -intstyle ise -f sdram_ov5640_vga.ut sdram_ov5640_vga.ncd 
+xst -intstyle ise -ifn "E:/Project/AX309/Verilog/sdram_ov5640_vga/sdram_ov5640_vga/sdram_ov5640_vga.xst" -ofn "E:/Project/AX309/Verilog/sdram_ov5640_vga/sdram_ov5640_vga/sdram_ov5640_vga.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc sdram_ov5640_vga.ucf -p xc6slx9-ftg256-2 sdram_ov5640_vga.ngc sdram_ov5640_vga.ngd  
+map -intstyle ise -p xc6slx9-ftg256-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o sdram_ov5640_vga_map.ncd sdram_ov5640_vga.ngd sdram_ov5640_vga.pcf 
+par -w -intstyle ise -ol high -mt off sdram_ov5640_vga_map.ncd sdram_ov5640_vga.ncd sdram_ov5640_vga.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml sdram_ov5640_vga.twx sdram_ov5640_vga.ncd -o sdram_ov5640_vga.twr sdram_ov5640_vga.pcf -ucf sdram_ov5640_vga.ucf 
+bitgen -intstyle ise -f sdram_ov5640_vga.ut sdram_ov5640_vga.ncd 
+xst -intstyle ise -ifn "E:/Project/AX309/Verilog/sdram_ov5640_vga/sdram_ov5640_vga/sdram_ov5640_vga.xst" -ofn "E:/Project/AX309/Verilog/sdram_ov5640_vga/sdram_ov5640_vga/sdram_ov5640_vga.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc sdram_ov5640_vga.ucf -p xc6slx9-ftg256-2 sdram_ov5640_vga.ngc sdram_ov5640_vga.ngd  
+map -intstyle ise -p xc6slx9-ftg256-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o sdram_ov5640_vga_map.ncd sdram_ov5640_vga.ngd sdram_ov5640_vga.pcf 
+par -w -intstyle ise -ol high -mt off sdram_ov5640_vga_map.ncd sdram_ov5640_vga.ncd sdram_ov5640_vga.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml sdram_ov5640_vga.twx sdram_ov5640_vga.ncd -o sdram_ov5640_vga.twr sdram_ov5640_vga.pcf -ucf sdram_ov5640_vga.ucf 
+bitgen -intstyle ise -f sdram_ov5640_vga.ut sdram_ov5640_vga.ncd 
+xst -intstyle ise -ifn "E:/Project/AX309/Verilog/sdram_ov5640_vga/sdram_ov5640_vga/sdram_ov5640_vga.xst" -ofn "E:/Project/AX309/Verilog/sdram_ov5640_vga/sdram_ov5640_vga/sdram_ov5640_vga.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc sdram_ov5640_vga.ucf -p xc6slx9-ftg256-2 sdram_ov5640_vga.ngc sdram_ov5640_vga.ngd  
+map -intstyle ise -p xc6slx9-ftg256-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o sdram_ov5640_vga_map.ncd sdram_ov5640_vga.ngd sdram_ov5640_vga.pcf 
+par -w -intstyle ise -ol high -mt off sdram_ov5640_vga_map.ncd sdram_ov5640_vga.ncd sdram_ov5640_vga.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml sdram_ov5640_vga.twx sdram_ov5640_vga.ncd -o sdram_ov5640_vga.twr sdram_ov5640_vga.pcf -ucf sdram_ov5640_vga.ucf 
+bitgen -intstyle ise -f sdram_ov5640_vga.ut sdram_ov5640_vga.ncd 
+xst -intstyle ise -ifn "E:/Project/AX309/Verilog/sdram_ov5640_vga/sdram_ov5640_vga/sdram_ov5640_vga.xst" -ofn "E:/Project/AX309/Verilog/sdram_ov5640_vga/sdram_ov5640_vga/sdram_ov5640_vga.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc sdram_ov5640_vga.ucf -p xc6slx9-ftg256-2 sdram_ov5640_vga.ngc sdram_ov5640_vga.ngd  
+map -intstyle ise -p xc6slx9-ftg256-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o sdram_ov5640_vga_map.ncd sdram_ov5640_vga.ngd sdram_ov5640_vga.pcf 
+par -w -intstyle ise -ol high -mt off sdram_ov5640_vga_map.ncd sdram_ov5640_vga.ncd sdram_ov5640_vga.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml sdram_ov5640_vga.twx sdram_ov5640_vga.ncd -o sdram_ov5640_vga.twr sdram_ov5640_vga.pcf -ucf sdram_ov5640_vga.ucf 
+bitgen -intstyle ise -f sdram_ov5640_vga.ut sdram_ov5640_vga.ncd 
+xst -intstyle ise -ifn "E:/Project/AX309/Verilog/sdram_ov5640_vga/sdram_ov5640_vga/sdram_ov5640_vga.xst" -ofn "E:/Project/AX309/Verilog/sdram_ov5640_vga/sdram_ov5640_vga/sdram_ov5640_vga.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc sdram_ov5640_vga.ucf -p xc6slx9-ftg256-2 sdram_ov5640_vga.ngc sdram_ov5640_vga.ngd  
+map -intstyle ise -p xc6slx9-ftg256-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o sdram_ov5640_vga_map.ncd sdram_ov5640_vga.ngd sdram_ov5640_vga.pcf 
+par -w -intstyle ise -ol high -mt off sdram_ov5640_vga_map.ncd sdram_ov5640_vga.ncd sdram_ov5640_vga.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml sdram_ov5640_vga.twx sdram_ov5640_vga.ncd -o sdram_ov5640_vga.twr sdram_ov5640_vga.pcf -ucf sdram_ov5640_vga.ucf 
+bitgen -intstyle ise -f sdram_ov5640_vga.ut sdram_ov5640_vga.ncd 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc sdram_ov5640_vga.ucf -p xc6slx9-ftg256-2 sdram_ov5640_vga.ngc sdram_ov5640_vga.ngd  
+map -intstyle ise -p xc6slx9-ftg256-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o sdram_ov5640_vga_map.ncd sdram_ov5640_vga.ngd sdram_ov5640_vga.pcf 
+xst -intstyle ise -ifn "E:/Project/AX309/Verilog/sdram_ov5640_vga/sdram_ov5640_vga/sdram_ov5640_vga.xst" -ofn "E:/Project/AX309/Verilog/sdram_ov5640_vga/sdram_ov5640_vga/sdram_ov5640_vga.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc sdram_ov5640_vga.ucf -p xc6slx9-ftg256-2 sdram_ov5640_vga.ngc sdram_ov5640_vga.ngd  
+map -intstyle ise -p xc6slx9-ftg256-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o sdram_ov5640_vga_map.ncd sdram_ov5640_vga.ngd sdram_ov5640_vga.pcf 
+par -w -intstyle ise -ol high -mt off sdram_ov5640_vga_map.ncd sdram_ov5640_vga.ncd sdram_ov5640_vga.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml sdram_ov5640_vga.twx sdram_ov5640_vga.ncd -o sdram_ov5640_vga.twr sdram_ov5640_vga.pcf -ucf sdram_ov5640_vga.ucf 
+bitgen -intstyle ise -f sdram_ov5640_vga.ut sdram_ov5640_vga.ncd 
+xst -intstyle ise -ifn "E:/Project/AX309/Verilog/sdram_ov5640_vga/sdram_ov5640_vga/sdram_ov5640_vga.xst" -ofn "E:/Project/AX309/Verilog/sdram_ov5640_vga/sdram_ov5640_vga/sdram_ov5640_vga.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc sdram_ov5640_vga.ucf -p xc6slx9-ftg256-2 sdram_ov5640_vga.ngc sdram_ov5640_vga.ngd  
+map -intstyle ise -p xc6slx9-ftg256-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o sdram_ov5640_vga_map.ncd sdram_ov5640_vga.ngd sdram_ov5640_vga.pcf 
+par -w -intstyle ise -ol high -mt off sdram_ov5640_vga_map.ncd sdram_ov5640_vga.ncd sdram_ov5640_vga.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml sdram_ov5640_vga.twx sdram_ov5640_vga.ncd -o sdram_ov5640_vga.twr sdram_ov5640_vga.pcf -ucf sdram_ov5640_vga.ucf 
+bitgen -intstyle ise -f sdram_ov5640_vga.ut sdram_ov5640_vga.ncd 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc sdram_ov5640_vga.ucf -p xc6slx9-ftg256-2 sdram_ov5640_vga.ngc sdram_ov5640_vga.ngd  
+map -intstyle ise -p xc6slx9-ftg256-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o sdram_ov5640_vga_map.ncd sdram_ov5640_vga.ngd sdram_ov5640_vga.pcf 
+xst -intstyle ise -ifn "E:/Project/AX309/Verilog/sdram_ov5640_vga/sdram_ov5640_vga/sdram_ov5640_vga.xst" -ofn "E:/Project/AX309/Verilog/sdram_ov5640_vga/sdram_ov5640_vga/sdram_ov5640_vga.syr" 
+xst -intstyle ise -ifn "E:/Project/AX309/Verilog/sdram_ov5640_vga/sdram_ov5640_vga/sdram_ov5640_vga.xst" -ofn "E:/Project/AX309/Verilog/sdram_ov5640_vga/sdram_ov5640_vga/sdram_ov5640_vga.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc sdram_ov5640_vga.ucf -p xc6slx9-ftg256-2 sdram_ov5640_vga.ngc sdram_ov5640_vga.ngd  
+map -intstyle ise -p xc6slx9-ftg256-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o sdram_ov5640_vga_map.ncd sdram_ov5640_vga.ngd sdram_ov5640_vga.pcf 
+xst -intstyle ise -ifn "E:/Project/AX309/Verilog/sdram_ov5640_vga/sdram_ov5640_vga/sdram_ov5640_vga.xst" -ofn "E:/Project/AX309/Verilog/sdram_ov5640_vga/sdram_ov5640_vga/sdram_ov5640_vga.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc sdram_ov5640_vga.ucf -p xc6slx9-ftg256-2 sdram_ov5640_vga.ngc sdram_ov5640_vga.ngd  
+xst -intstyle ise -ifn "E:/Project/AX309/Verilog/sdram_ov5640_vga/sdram_ov5640_vga/sdram_ov5640_vga.xst" -ofn "E:/Project/AX309/Verilog/sdram_ov5640_vga/sdram_ov5640_vga/sdram_ov5640_vga.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc sdram_ov5640_vga.ucf -p xc6slx9-ftg256-2 sdram_ov5640_vga.ngc sdram_ov5640_vga.ngd  
+map -intstyle ise -p xc6slx9-ftg256-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o sdram_ov5640_vga_map.ncd sdram_ov5640_vga.ngd sdram_ov5640_vga.pcf 
+xst -intstyle ise -ifn "E:/Project/AX309/Verilog/sdram_ov5640_vga/sdram_ov5640_vga/sdram_ov5640_vga.xst" -ofn "E:/Project/AX309/Verilog/sdram_ov5640_vga/sdram_ov5640_vga/sdram_ov5640_vga.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc sdram_ov5640_vga.ucf -p xc6slx9-ftg256-2 sdram_ov5640_vga.ngc sdram_ov5640_vga.ngd  
+map -intstyle ise -p xc6slx9-ftg256-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o sdram_ov5640_vga_map.ncd sdram_ov5640_vga.ngd sdram_ov5640_vga.pcf 
+xst -intstyle ise -ifn "E:/Project/AX309/Verilog/sdram_ov5640_vga/sdram_ov5640_vga/sdram_ov5640_vga.xst" -ofn "E:/Project/AX309/Verilog/sdram_ov5640_vga/sdram_ov5640_vga/sdram_ov5640_vga.syr" 
+xst -intstyle ise -ifn "E:/Project/AX309/Verilog/sdram_ov5640_vga/sdram_ov5640_vga/sdram_ov5640_vga.xst" -ofn "E:/Project/AX309/Verilog/sdram_ov5640_vga/sdram_ov5640_vga/sdram_ov5640_vga.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc sdram_ov5640_vga.ucf -p xc6slx9-ftg256-2 sdram_ov5640_vga.ngc sdram_ov5640_vga.ngd  
+map -intstyle ise -p xc6slx9-ftg256-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o sdram_ov5640_vga_map.ncd sdram_ov5640_vga.ngd sdram_ov5640_vga.pcf 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc sdram_ov5640_vga.ucf -p xc6slx9-ftg256-2 sdram_ov5640_vga.ngc sdram_ov5640_vga.ngd  
+map -intstyle ise -p xc6slx9-ftg256-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o sdram_ov5640_vga_map.ncd sdram_ov5640_vga.ngd sdram_ov5640_vga.pcf 
+par -w -intstyle ise -ol high -mt off sdram_ov5640_vga_map.ncd sdram_ov5640_vga.ncd sdram_ov5640_vga.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml sdram_ov5640_vga.twx sdram_ov5640_vga.ncd -o sdram_ov5640_vga.twr sdram_ov5640_vga.pcf -ucf sdram_ov5640_vga.ucf 
+bitgen -intstyle ise -f sdram_ov5640_vga.ut sdram_ov5640_vga.ncd 
+xst -intstyle ise -ifn "E:/Project/AX309/Verilog/sdram_ov5640_vga/sdram_ov5640_vga/sdram_ov5640_vga.xst" -ofn "E:/Project/AX309/Verilog/sdram_ov5640_vga/sdram_ov5640_vga/sdram_ov5640_vga.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc sdram_ov5640_vga.ucf -p xc6slx9-ftg256-2 sdram_ov5640_vga.ngc sdram_ov5640_vga.ngd  
+map -intstyle ise -p xc6slx9-ftg256-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o sdram_ov5640_vga_map.ncd sdram_ov5640_vga.ngd sdram_ov5640_vga.pcf 
+par -w -intstyle ise -ol high -mt off sdram_ov5640_vga_map.ncd sdram_ov5640_vga.ncd sdram_ov5640_vga.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml sdram_ov5640_vga.twx sdram_ov5640_vga.ncd -o sdram_ov5640_vga.twr sdram_ov5640_vga.pcf -ucf sdram_ov5640_vga.ucf 
+bitgen -intstyle ise -f sdram_ov5640_vga.ut sdram_ov5640_vga.ncd 
+xst -intstyle ise -ifn "E:/Project/AX309/Verilog/sdram_ov5640_vga/sdram_ov5640_vga/sdram_ov5640_vga.xst" -ofn "E:/Project/AX309/Verilog/sdram_ov5640_vga/sdram_ov5640_vga/sdram_ov5640_vga.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc sdram_ov5640_vga.ucf -p xc6slx9-ftg256-2 sdram_ov5640_vga.ngc sdram_ov5640_vga.ngd  
+map -intstyle ise -p xc6slx9-ftg256-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o sdram_ov5640_vga_map.ncd sdram_ov5640_vga.ngd sdram_ov5640_vga.pcf 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc sdram_ov5640_vga.ucf -p xc6slx9-ftg256-2 sdram_ov5640_vga.ngc sdram_ov5640_vga.ngd  
+map -intstyle ise -p xc6slx9-ftg256-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o sdram_ov5640_vga_map.ncd sdram_ov5640_vga.ngd sdram_ov5640_vga.pcf 
+par -w -intstyle ise -ol high -mt off sdram_ov5640_vga_map.ncd sdram_ov5640_vga.ncd sdram_ov5640_vga.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml sdram_ov5640_vga.twx sdram_ov5640_vga.ncd -o sdram_ov5640_vga.twr sdram_ov5640_vga.pcf -ucf sdram_ov5640_vga.ucf 
+bitgen -intstyle ise -f sdram_ov5640_vga.ut sdram_ov5640_vga.ncd 
+xst -intstyle ise -ifn "E:/Project/AX309/Verilog/sdram_ov5640_vga/sdram_ov5640_vga/sdram_ov5640_vga.xst" -ofn "E:/Project/AX309/Verilog/sdram_ov5640_vga/sdram_ov5640_vga/sdram_ov5640_vga.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc sdram_ov5640_vga.ucf -p xc6slx9-ftg256-2 sdram_ov5640_vga.ngc sdram_ov5640_vga.ngd  
+map -intstyle ise -p xc6slx9-ftg256-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o sdram_ov5640_vga_map.ncd sdram_ov5640_vga.ngd sdram_ov5640_vga.pcf 
+par -w -intstyle ise -ol high -mt off sdram_ov5640_vga_map.ncd sdram_ov5640_vga.ncd sdram_ov5640_vga.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml sdram_ov5640_vga.twx sdram_ov5640_vga.ncd -o sdram_ov5640_vga.twr sdram_ov5640_vga.pcf -ucf sdram_ov5640_vga.ucf 
+bitgen -intstyle ise -f sdram_ov5640_vga.ut sdram_ov5640_vga.ncd 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc sdram_ov5640_vga.ucf -p xc6slx9-ftg256-2 sdram_ov5640_vga.ngc sdram_ov5640_vga.ngd  
+map -intstyle ise -p xc6slx9-ftg256-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o sdram_ov5640_vga_map.ncd sdram_ov5640_vga.ngd sdram_ov5640_vga.pcf 
+par -w -intstyle ise -ol high -mt off sdram_ov5640_vga_map.ncd sdram_ov5640_vga.ncd sdram_ov5640_vga.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml sdram_ov5640_vga.twx sdram_ov5640_vga.ncd -o sdram_ov5640_vga.twr sdram_ov5640_vga.pcf -ucf sdram_ov5640_vga.ucf 
+bitgen -intstyle ise -f sdram_ov5640_vga.ut sdram_ov5640_vga.ncd 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc sdram_ov5640_vga.ucf -p xc6slx9-ftg256-2 sdram_ov5640_vga.ngc sdram_ov5640_vga.ngd  
+map -intstyle ise -p xc6slx9-ftg256-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o sdram_ov5640_vga_map.ncd sdram_ov5640_vga.ngd sdram_ov5640_vga.pcf 
+par -w -intstyle ise -ol high -mt off sdram_ov5640_vga_map.ncd sdram_ov5640_vga.ncd sdram_ov5640_vga.pcf 
+bitgen -intstyle ise -f sdram_ov5640_vga.ut sdram_ov5640_vga.ncd 
+xst -intstyle ise -ifn "E:/Project/AX309/Verilog/21_sdram_ov5640_vga/sdram_ov5640_vga/sdram_ov5640_vga.xst" -ofn "E:/Project/AX309/Verilog/21_sdram_ov5640_vga/sdram_ov5640_vga/sdram_ov5640_vga.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc sdram_ov5640_vga.ucf -p xc6slx9-ftg256-2 sdram_ov5640_vga.ngc sdram_ov5640_vga.ngd  
+map -intstyle ise -p xc6slx9-ftg256-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o sdram_ov5640_vga_map.ncd sdram_ov5640_vga.ngd sdram_ov5640_vga.pcf 
+par -w -intstyle ise -ol high -mt off sdram_ov5640_vga_map.ncd sdram_ov5640_vga.ncd sdram_ov5640_vga.pcf 
+bitgen -intstyle ise -f sdram_ov5640_vga.ut sdram_ov5640_vga.ncd 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc sdram_ov5640_vga.ucf -p xc6slx9-ftg256-2 sdram_ov5640_vga.ngc sdram_ov5640_vga.ngd  
+map -intstyle ise -p xc6slx9-ftg256-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o sdram_ov5640_vga_map.ncd sdram_ov5640_vga.ngd sdram_ov5640_vga.pcf 
+par -w -intstyle ise -ol high -mt off sdram_ov5640_vga_map.ncd sdram_ov5640_vga.ncd sdram_ov5640_vga.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml sdram_ov5640_vga.twx sdram_ov5640_vga.ncd -o sdram_ov5640_vga.twr sdram_ov5640_vga.pcf -ucf sdram_ov5640_vga.ucf 
+bitgen -intstyle ise -f sdram_ov5640_vga.ut sdram_ov5640_vga.ncd 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc sdram_ov5640_vga.ucf -p xc6slx9-ftg256-2 sdram_ov5640_vga.ngc sdram_ov5640_vga.ngd  
+map -intstyle ise -p xc6slx9-ftg256-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o sdram_ov5640_vga_map.ncd sdram_ov5640_vga.ngd sdram_ov5640_vga.pcf 
+par -w -intstyle ise -ol high -mt off sdram_ov5640_vga_map.ncd sdram_ov5640_vga.ncd sdram_ov5640_vga.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml sdram_ov5640_vga.twx sdram_ov5640_vga.ncd -o sdram_ov5640_vga.twr sdram_ov5640_vga.pcf -ucf sdram_ov5640_vga.ucf 
+bitgen -intstyle ise -f sdram_ov5640_vga.ut sdram_ov5640_vga.ncd 
+xst -intstyle ise -ifn "E:/BaiduYunDownload/AX309.1601028/AX309/09_VERILOG/25_sdram_ov5640_vga/sdram_ov5640_vga/sdram_ov5640_vga.xst" -ofn "E:/BaiduYunDownload/AX309.1601028/AX309/09_VERILOG/25_sdram_ov5640_vga/sdram_ov5640_vga/sdram_ov5640_vga.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc sdram_ov5640_vga.ucf -p xc6slx9-ftg256-2 sdram_ov5640_vga.ngc sdram_ov5640_vga.ngd  
+map -intstyle ise -p xc6slx9-ftg256-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o sdram_ov5640_vga_map.ncd sdram_ov5640_vga.ngd sdram_ov5640_vga.pcf 
+par -w -intstyle ise -ol high -mt off sdram_ov5640_vga_map.ncd sdram_ov5640_vga.ncd sdram_ov5640_vga.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml sdram_ov5640_vga.twx sdram_ov5640_vga.ncd -o sdram_ov5640_vga.twr sdram_ov5640_vga.pcf -ucf sdram_ov5640_vga.ucf 
+bitgen -intstyle ise -f sdram_ov5640_vga.ut sdram_ov5640_vga.ncd 
+xst -intstyle ise -ifn "E:/BaiduYunDownload/AX309.1601028/AX309/09_VERILOG/25_sdram_ov5640_vga/sdram_ov5640_vga/sdram_ov5640_vga.xst" -ofn "E:/BaiduYunDownload/AX309.1601028/AX309/09_VERILOG/25_sdram_ov5640_vga/sdram_ov5640_vga/sdram_ov5640_vga.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc sdram_ov5640_vga.ucf -p xc6slx9-ftg256-2 sdram_ov5640_vga.ngc sdram_ov5640_vga.ngd  
+map -intstyle ise -p xc6slx9-ftg256-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o sdram_ov5640_vga_map.ncd sdram_ov5640_vga.ngd sdram_ov5640_vga.pcf 
+par -w -intstyle ise -ol high -mt off sdram_ov5640_vga_map.ncd sdram_ov5640_vga.ncd sdram_ov5640_vga.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml sdram_ov5640_vga.twx sdram_ov5640_vga.ncd -o sdram_ov5640_vga.twr sdram_ov5640_vga.pcf -ucf sdram_ov5640_vga.ucf 
+bitgen -intstyle ise -f sdram_ov5640_vga.ut sdram_ov5640_vga.ncd 
+xst -intstyle ise -ifn "E:/BaiduYunDownload/AX309.1601028/AX309/09_VERILOG/25_sdram_ov5640_vga/sdram_ov5640_vga/sdram_ov5640_vga.xst" -ofn "E:/BaiduYunDownload/AX309.1601028/AX309/09_VERILOG/25_sdram_ov5640_vga/sdram_ov5640_vga/sdram_ov5640_vga.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc sdram_ov5640_vga.ucf -p xc6slx9-ftg256-2 sdram_ov5640_vga.ngc sdram_ov5640_vga.ngd  
+map -intstyle ise -p xc6slx9-ftg256-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o sdram_ov5640_vga_map.ncd sdram_ov5640_vga.ngd sdram_ov5640_vga.pcf 
+par -w -intstyle ise -ol high -mt off sdram_ov5640_vga_map.ncd sdram_ov5640_vga.ncd sdram_ov5640_vga.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml sdram_ov5640_vga.twx sdram_ov5640_vga.ncd -o sdram_ov5640_vga.twr sdram_ov5640_vga.pcf -ucf sdram_ov5640_vga.ucf 
+bitgen -intstyle ise -f sdram_ov5640_vga.ut sdram_ov5640_vga.ncd 
+xst -intstyle ise -ifn "E:/BaiduYunDownload/AX309.161028/AX309/09_VERILOG/25_sdram_ov5640_vga/sdram_ov5640_vga/sdram_ov5640_vga.xst" -ofn "E:/BaiduYunDownload/AX309.161028/AX309/09_VERILOG/25_sdram_ov5640_vga/sdram_ov5640_vga/sdram_ov5640_vga.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc sdram_ov5640_vga.ucf -p xc6slx9-ftg256-2 sdram_ov5640_vga.ngc sdram_ov5640_vga.ngd  
+map -intstyle ise -p xc6slx9-ftg256-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o sdram_ov5640_vga_map.ncd sdram_ov5640_vga.ngd sdram_ov5640_vga.pcf 
+par -w -intstyle ise -ol high -mt off sdram_ov5640_vga_map.ncd sdram_ov5640_vga.ncd sdram_ov5640_vga.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml sdram_ov5640_vga.twx sdram_ov5640_vga.ncd -o sdram_ov5640_vga.twr sdram_ov5640_vga.pcf -ucf sdram_ov5640_vga.ucf 
+bitgen -intstyle ise -f sdram_ov5640_vga.ut sdram_ov5640_vga.ncd 
+xst -intstyle ise -ifn "E:/BaiduYunDownload/AX309.161028/AX309/09_VERILOG/25_sdram_ov5640_vga/sdram_ov5640_vga/sdram_ov5640_vga.xst" -ofn "E:/BaiduYunDownload/AX309.161028/AX309/09_VERILOG/25_sdram_ov5640_vga/sdram_ov5640_vga/sdram_ov5640_vga.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc sdram_ov5640_vga.ucf -p xc6slx9-ftg256-2 sdram_ov5640_vga.ngc sdram_ov5640_vga.ngd  
+map -intstyle ise -p xc6slx9-ftg256-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o sdram_ov5640_vga_map.ncd sdram_ov5640_vga.ngd sdram_ov5640_vga.pcf 
+par -w -intstyle ise -ol high -mt off sdram_ov5640_vga_map.ncd sdram_ov5640_vga.ncd sdram_ov5640_vga.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml sdram_ov5640_vga.twx sdram_ov5640_vga.ncd -o sdram_ov5640_vga.twr sdram_ov5640_vga.pcf -ucf sdram_ov5640_vga.ucf 
+bitgen -intstyle ise -f sdram_ov5640_vga.ut sdram_ov5640_vga.ncd 
+xst -intstyle ise -ifn "E:/BaiduYunDownload/AX309.161028/AX309/09_VERILOG/25_sdram_ov5640_vga/sdram_ov5640_vga/sdram_ov5640_vga.xst" -ofn "E:/BaiduYunDownload/AX309.161028/AX309/09_VERILOG/25_sdram_ov5640_vga/sdram_ov5640_vga/sdram_ov5640_vga.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc sdram_ov5640_vga.ucf -p xc6slx9-ftg256-2 sdram_ov5640_vga.ngc sdram_ov5640_vga.ngd  
+map -intstyle ise -p xc6slx9-ftg256-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o sdram_ov5640_vga_map.ncd sdram_ov5640_vga.ngd sdram_ov5640_vga.pcf 
+par -w -intstyle ise -ol high -mt off sdram_ov5640_vga_map.ncd sdram_ov5640_vga.ncd sdram_ov5640_vga.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml sdram_ov5640_vga.twx sdram_ov5640_vga.ncd -o sdram_ov5640_vga.twr sdram_ov5640_vga.pcf -ucf sdram_ov5640_vga.ucf 
+bitgen -intstyle ise -f sdram_ov5640_vga.ut sdram_ov5640_vga.ncd 
+xst -intstyle ise -ifn "E:/BaiduYunDownload/AX309.161028/AX309/09_VERILOG/25_sdram_ov5640_vga/sdram_ov5640_vga/sdram_ov5640_vga.xst" -ofn "E:/BaiduYunDownload/AX309.161028/AX309/09_VERILOG/25_sdram_ov5640_vga/sdram_ov5640_vga/sdram_ov5640_vga.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc sdram_ov5640_vga.ucf -p xc6slx9-ftg256-2 sdram_ov5640_vga.ngc sdram_ov5640_vga.ngd  
+map -intstyle ise -p xc6slx9-ftg256-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o sdram_ov5640_vga_map.ncd sdram_ov5640_vga.ngd sdram_ov5640_vga.pcf 
+par -w -intstyle ise -ol high -mt off sdram_ov5640_vga_map.ncd sdram_ov5640_vga.ncd sdram_ov5640_vga.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml sdram_ov5640_vga.twx sdram_ov5640_vga.ncd -o sdram_ov5640_vga.twr sdram_ov5640_vga.pcf -ucf sdram_ov5640_vga.ucf 
+bitgen -intstyle ise -f sdram_ov5640_vga.ut sdram_ov5640_vga.ncd 
+xst -intstyle ise -ifn "E:/BaiduYunDownload/AX309.161028/AX309/09_VERILOG/25_sdram_ov5640_vga/sdram_ov5640_vga/sdram_ov5640_vga.xst" -ofn "E:/BaiduYunDownload/AX309.161028/AX309/09_VERILOG/25_sdram_ov5640_vga/sdram_ov5640_vga/sdram_ov5640_vga.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc sdram_ov5640_vga.ucf -p xc6slx9-ftg256-2 sdram_ov5640_vga.ngc sdram_ov5640_vga.ngd  
+map -intstyle ise -p xc6slx9-ftg256-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o sdram_ov5640_vga_map.ncd sdram_ov5640_vga.ngd sdram_ov5640_vga.pcf 
+par -w -intstyle ise -ol high -mt off sdram_ov5640_vga_map.ncd sdram_ov5640_vga.ncd sdram_ov5640_vga.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml sdram_ov5640_vga.twx sdram_ov5640_vga.ncd -o sdram_ov5640_vga.twr sdram_ov5640_vga.pcf -ucf sdram_ov5640_vga.ucf 
+bitgen -intstyle ise -f sdram_ov5640_vga.ut sdram_ov5640_vga.ncd 
+xst -intstyle ise -ifn "E:/BaiduYunDownload/AX309.161028/AX309/09_VERILOG/25_sdram_ov5640_vga/sdram_ov5640_vga/sdram_ov5640_vga.xst" -ofn "E:/BaiduYunDownload/AX309.161028/AX309/09_VERILOG/25_sdram_ov5640_vga/sdram_ov5640_vga/sdram_ov5640_vga.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc sdram_ov5640_vga.ucf -p xc6slx9-ftg256-2 sdram_ov5640_vga.ngc sdram_ov5640_vga.ngd  
+map -intstyle ise -p xc6slx9-ftg256-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o sdram_ov5640_vga_map.ncd sdram_ov5640_vga.ngd sdram_ov5640_vga.pcf 
+par -w -intstyle ise -ol high -mt off sdram_ov5640_vga_map.ncd sdram_ov5640_vga.ncd sdram_ov5640_vga.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml sdram_ov5640_vga.twx sdram_ov5640_vga.ncd -o sdram_ov5640_vga.twr sdram_ov5640_vga.pcf -ucf sdram_ov5640_vga.ucf 
+bitgen -intstyle ise -f sdram_ov5640_vga.ut sdram_ov5640_vga.ncd 

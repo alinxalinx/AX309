@@ -1,0 +1,173 @@
+Release 14.7 Drc P.20131013 (nt64)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+
+Wed Dec 07 21:18:47 2016
+
+drc -z sdram_ov7670_lcd.ncd sdram_ov7670_lcd.pcf
+
+WARNING:PhysDesignRules:367 - The signal
+   <u_sdram_vga_top/u_sdram_2fifo_top/u_dcfifo_ctrl/u_rdfifo/U0/xst_fifo_generat
+   or/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gdm.dm/Mram_RAM10_RAMD_O> is
+   incomplete. The signal does not drive any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal
+   <u_sdram_vga_top/u_sdram_2fifo_top/u_dcfifo_ctrl/u_rdfifo/U0/xst_fifo_generat
+   or/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gdm.dm/Mram_RAM6_RAMD_O> is
+   incomplete. The signal does not drive any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal
+   <u_sdram_vga_top/u_sdram_2fifo_top/u_dcfifo_ctrl/u_rdfifo/U0/xst_fifo_generat
+   or/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gdm.dm/Mram_RAM7_RAMD_O> is
+   incomplete. The signal does not drive any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal
+   <u_sdram_vga_top/u_sdram_2fifo_top/u_dcfifo_ctrl/u_rdfifo/U0/xst_fifo_generat
+   or/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gdm.dm/Mram_RAM3_RAMD_O> is
+   incomplete. The signal does not drive any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal
+   <u_sdram_vga_top/u_sdram_2fifo_top/u_dcfifo_ctrl/u_rdfifo/U0/xst_fifo_generat
+   or/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gdm.dm/Mram_RAM8_RAMD_O> is
+   incomplete. The signal does not drive any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal
+   <u_sdram_vga_top/u_sdram_2fifo_top/u_dcfifo_ctrl/u_rdfifo/U0/xst_fifo_generat
+   or/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gdm.dm/Mram_RAM2_RAMD_O> is
+   incomplete. The signal does not drive any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal
+   <u_sdram_vga_top/u_sdram_2fifo_top/u_dcfifo_ctrl/u_rdfifo/U0/xst_fifo_generat
+   or/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gdm.dm/Mram_RAM11_RAMD_O> is
+   incomplete. The signal does not drive any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal
+   <u_sdram_vga_top/u_sdram_2fifo_top/u_dcfifo_ctrl/u_rdfifo/U0/xst_fifo_generat
+   or/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gdm.dm/Mram_RAM14_RAMD_O> is
+   incomplete. The signal does not drive any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal
+   <u_sdram_vga_top/u_sdram_2fifo_top/u_dcfifo_ctrl/u_rdfifo/U0/xst_fifo_generat
+   or/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gdm.dm/Mram_RAM12_RAMD_O> is
+   incomplete. The signal does not drive any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal
+   <u_sdram_vga_top/u_sdram_2fifo_top/u_dcfifo_ctrl/u_rdfifo/U0/xst_fifo_generat
+   or/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gdm.dm/Mram_RAM16_RAMD_O> is
+   incomplete. The signal does not drive any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal
+   <u_sdram_vga_top/u_sdram_2fifo_top/u_dcfifo_ctrl/u_rdfifo/U0/xst_fifo_generat
+   or/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gdm.dm/Mram_RAM5_RAMD_O> is
+   incomplete. The signal does not drive any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal
+   <u_sdram_vga_top/u_sdram_2fifo_top/u_dcfifo_ctrl/u_rdfifo/U0/xst_fifo_generat
+   or/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gdm.dm/Mram_RAM4_RAMD_O> is
+   incomplete. The signal does not drive any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal
+   <u_sdram_vga_top/u_sdram_2fifo_top/u_dcfifo_ctrl/u_rdfifo/U0/xst_fifo_generat
+   or/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gdm.dm/Mram_RAM1_RAMD_O> is
+   incomplete. The signal does not drive any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal
+   <u_sdram_vga_top/u_sdram_2fifo_top/u_dcfifo_ctrl/u_rdfifo/U0/xst_fifo_generat
+   or/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gdm.dm/Mram_RAM9_RAMD_O> is
+   incomplete. The signal does not drive any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal
+   <u_sdram_vga_top/u_sdram_2fifo_top/u_dcfifo_ctrl/u_rdfifo/U0/xst_fifo_generat
+   or/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gdm.dm/Mram_RAM13_RAMD_O> is
+   incomplete. The signal does not drive any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal
+   <u_sdram_vga_top/u_sdram_2fifo_top/u_dcfifo_ctrl/u_rdfifo/U0/xst_fifo_generat
+   or/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gdm.dm/Mram_RAM15_RAMD_O> is
+   incomplete. The signal does not drive any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal
+   <u_sdram_vga_top/u_sdram_2fifo_top/u_dcfifo_ctrl/u_rdfifo/U0/xst_fifo_generat
+   or/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gdm.dm/Mram_RAM34_RAMD_O> is
+   incomplete. The signal does not drive any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal
+   <u_sdram_vga_top/u_sdram_2fifo_top/u_dcfifo_ctrl/u_rdfifo/U0/xst_fifo_generat
+   or/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gdm.dm/Mram_RAM29_RAMD_O> is
+   incomplete. The signal does not drive any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal
+   <u_sdram_vga_top/u_sdram_2fifo_top/u_dcfifo_ctrl/u_rdfifo/U0/xst_fifo_generat
+   or/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gdm.dm/Mram_RAM27_RAMD_O> is
+   incomplete. The signal does not drive any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal
+   <u_sdram_vga_top/u_sdram_2fifo_top/u_dcfifo_ctrl/u_rdfifo/U0/xst_fifo_generat
+   or/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gdm.dm/Mram_RAM32_RAMD_O> is
+   incomplete. The signal does not drive any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal
+   <u_sdram_vga_top/u_sdram_2fifo_top/u_dcfifo_ctrl/u_rdfifo/U0/xst_fifo_generat
+   or/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gdm.dm/Mram_RAM30_RAMD_O> is
+   incomplete. The signal does not drive any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal
+   <u_sdram_vga_top/u_sdram_2fifo_top/u_dcfifo_ctrl/u_rdfifo/U0/xst_fifo_generat
+   or/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gdm.dm/Mram_RAM40_RAMD_O> is
+   incomplete. The signal does not drive any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal
+   <u_sdram_vga_top/u_sdram_2fifo_top/u_dcfifo_ctrl/u_rdfifo/U0/xst_fifo_generat
+   or/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gdm.dm/Mram_RAM39_RAMD_O> is
+   incomplete. The signal does not drive any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal
+   <u_sdram_vga_top/u_sdram_2fifo_top/u_dcfifo_ctrl/u_rdfifo/U0/xst_fifo_generat
+   or/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gdm.dm/Mram_RAM36_RAMD_O> is
+   incomplete. The signal does not drive any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal
+   <u_sdram_vga_top/u_sdram_2fifo_top/u_dcfifo_ctrl/u_rdfifo/U0/xst_fifo_generat
+   or/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gdm.dm/Mram_RAM38_RAMD_O> is
+   incomplete. The signal does not drive any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal
+   <u_sdram_vga_top/u_sdram_2fifo_top/u_dcfifo_ctrl/u_rdfifo/U0/xst_fifo_generat
+   or/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gdm.dm/Mram_RAM33_RAMD_O> is
+   incomplete. The signal does not drive any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal
+   <u_sdram_vga_top/u_sdram_2fifo_top/u_dcfifo_ctrl/u_rdfifo/U0/xst_fifo_generat
+   or/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gdm.dm/Mram_RAM22_RAMD_O> is
+   incomplete. The signal does not drive any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal
+   <u_sdram_vga_top/u_sdram_2fifo_top/u_dcfifo_ctrl/u_rdfifo/U0/xst_fifo_generat
+   or/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gdm.dm/Mram_RAM20_RAMD_O> is
+   incomplete. The signal does not drive any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal
+   <u_sdram_vga_top/u_sdram_2fifo_top/u_dcfifo_ctrl/u_rdfifo/U0/xst_fifo_generat
+   or/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gdm.dm/Mram_RAM17_RAMD_O> is
+   incomplete. The signal does not drive any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal
+   <u_sdram_vga_top/u_sdram_2fifo_top/u_dcfifo_ctrl/u_rdfifo/U0/xst_fifo_generat
+   or/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gdm.dm/Mram_RAM21_RAMD_O> is
+   incomplete. The signal does not drive any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal
+   <u_sdram_vga_top/u_sdram_2fifo_top/u_dcfifo_ctrl/u_rdfifo/U0/xst_fifo_generat
+   or/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gdm.dm/Mram_RAM28_RAMD_O> is
+   incomplete. The signal does not drive any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal
+   <u_sdram_vga_top/u_sdram_2fifo_top/u_dcfifo_ctrl/u_rdfifo/U0/xst_fifo_generat
+   or/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gdm.dm/Mram_RAM31_RAMD_O> is
+   incomplete. The signal does not drive any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal
+   <u_sdram_vga_top/u_sdram_2fifo_top/u_dcfifo_ctrl/u_rdfifo/U0/xst_fifo_generat
+   or/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gdm.dm/Mram_RAM26_RAMD_O> is
+   incomplete. The signal does not drive any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal
+   <u_sdram_vga_top/u_sdram_2fifo_top/u_dcfifo_ctrl/u_rdfifo/U0/xst_fifo_generat
+   or/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gdm.dm/Mram_RAM25_RAMD_O> is
+   incomplete. The signal does not drive any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal
+   <u_sdram_vga_top/u_sdram_2fifo_top/u_dcfifo_ctrl/u_rdfifo/U0/xst_fifo_generat
+   or/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gdm.dm/Mram_RAM35_RAMD_O> is
+   incomplete. The signal does not drive any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal
+   <u_sdram_vga_top/u_sdram_2fifo_top/u_dcfifo_ctrl/u_rdfifo/U0/xst_fifo_generat
+   or/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gdm.dm/Mram_RAM37_RAMD_O> is
+   incomplete. The signal does not drive any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal
+   <u_sdram_vga_top/u_sdram_2fifo_top/u_dcfifo_ctrl/u_rdfifo/U0/xst_fifo_generat
+   or/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gdm.dm/Mram_RAM23_RAMD_O> is
+   incomplete. The signal does not drive any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal
+   <u_sdram_vga_top/u_sdram_2fifo_top/u_dcfifo_ctrl/u_rdfifo/U0/xst_fifo_generat
+   or/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gdm.dm/Mram_RAM24_RAMD_O> is
+   incomplete. The signal does not drive any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal
+   <u_sdram_vga_top/u_sdram_2fifo_top/u_dcfifo_ctrl/u_rdfifo/U0/xst_fifo_generat
+   or/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gdm.dm/Mram_RAM19_RAMD_O> is
+   incomplete. The signal does not drive any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal
+   <u_sdram_vga_top/u_sdram_2fifo_top/u_dcfifo_ctrl/u_rdfifo/U0/xst_fifo_generat
+   or/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gdm.dm/Mram_RAM18_RAMD_O> is
+   incomplete. The signal does not drive any load pins in the design.
+WARNING:PhysDesignRules:2410 - This design is using one or more 9K Block RAMs
+   (RAMB8BWER).  9K Block RAM initialization data, both user defined and
+   default, may be incorrect and should not be used.  For more information,
+   please reference Xilinx Answer Record 39999.
+DRC detected 0 errors and 41 warnings.  Please see the previously displayed
+individual error or warning messages for more details.

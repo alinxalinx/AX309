@@ -1,0 +1,1241 @@
+Release 14.7 - xst P.20131013 (nt64)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+--> Parameter TMPDIR set to xst/projnav.tmp
+
+
+Total REAL time to Xst completion: 1.00 secs
+Total CPU time to Xst completion: 0.17 secs
+ 
+--> Parameter xsthdpdir set to xst
+
+
+Total REAL time to Xst completion: 1.00 secs
+Total CPU time to Xst completion: 0.17 secs
+ 
+--> Reading design: SD_TOP.prj
+
+TABLE OF CONTENTS
+  1) Synthesis Options Summary
+  2) HDL Parsing
+  3) HDL Elaboration
+  4) HDL Synthesis
+       4.1) HDL Synthesis Report
+  5) Advanced HDL Synthesis
+       5.1) Advanced HDL Synthesis Report
+  6) Low Level Synthesis
+  7) Partition Report
+  8) Design Summary
+       8.1) Primitive and Black Box Usage
+       8.2) Device utilization summary
+       8.3) Partition Resource Summary
+       8.4) Timing Report
+            8.4.1) Clock Information
+            8.4.2) Asynchronous Control Signals Information
+            8.4.3) Timing Summary
+            8.4.4) Timing Details
+            8.4.5) Cross Clock Domains Report
+
+
+=========================================================================
+*                      Synthesis Options Summary                        *
+=========================================================================
+---- Source Parameters
+Input File Name                    : "SD_TOP.prj"
+Ignore Synthesis Constraint File   : NO
+
+---- Target Parameters
+Output File Name                   : "SD_TOP"
+Output Format                      : NGC
+Target Device                      : xc6slx16-3-csg324
+
+---- Source Options
+Top Module Name                    : SD_TOP
+Automatic FSM Extraction           : YES
+FSM Encoding Algorithm             : Auto
+Safe Implementation                : No
+FSM Style                          : LUT
+RAM Extraction                     : Yes
+RAM Style                          : Auto
+ROM Extraction                     : Yes
+Shift Register Extraction          : YES
+ROM Style                          : Auto
+Resource Sharing                   : YES
+Asynchronous To Synchronous        : NO
+Shift Register Minimum Size        : 2
+Use DSP Block                      : Auto
+Automatic Register Balancing       : No
+
+---- Target Options
+LUT Combining                      : Auto
+Reduce Control Sets                : Auto
+Add IO Buffers                     : YES
+Global Maximum Fanout              : 100000
+Add Generic Clock Buffer(BUFG)     : 16
+Register Duplication               : YES
+Optimize Instantiated Primitives   : NO
+Use Clock Enable                   : Auto
+Use Synchronous Set                : Auto
+Use Synchronous Reset              : Auto
+Pack IO Registers into IOBs        : Auto
+Equivalent register Removal        : YES
+
+---- General Options
+Optimization Goal                  : Speed
+Optimization Effort                : 1
+Power Reduction                    : NO
+Keep Hierarchy                     : No
+Netlist Hierarchy                  : As_Optimized
+RTL Output                         : Yes
+Global Optimization                : AllClockNets
+Read Cores                         : YES
+Write Timing Constraints           : NO
+Cross Clock Analysis               : NO
+Hierarchy Separator                : /
+Bus Delimiter                      : <>
+Case Specifier                     : Maintain
+Slice Utilization Ratio            : 100
+BRAM Utilization Ratio             : 100
+DSP48 Utilization Ratio            : 100
+Auto BRAM Packing                  : NO
+Slice Utilization Ratio Delta      : 5
+
+=========================================================================
+
+
+=========================================================================
+*                          HDL Parsing                                  *
+=========================================================================
+Analyzing Verilog file "E:\Project\AX516\verilog\sd_audio\sd_audio\rtl\i2c_com.v" into library work
+Parsing module <i2c_com>.
+Analyzing Verilog file "E:\Project\AX516\verilog\sd_audio\sd_audio\rtl\sinwave_gen.v" into library work
+Parsing module <sinwave_gen>.
+Analyzing Verilog file "E:\Project\AX516\verilog\sd_audio\sd_audio\rtl\reset_delay.v" into library work
+Parsing module <reset_delay>.
+Analyzing Verilog file "E:\Project\AX516\verilog\sd_audio\sd_audio\rtl\reg_config.v" into library work
+Parsing module <reg_config>.
+Analyzing Verilog file "E:\Project\AX516\verilog\sd_audio\sd_audio\rtl\SD_read.v" into library work
+Parsing module <SD_read>.
+WARNING:HDLCompiler:751 - "E:\Project\AX516\verilog\sd_audio\sd_audio\rtl\SD_read.v" Line 40: Redeclaration of ansi port myvalid_o is not allowed
+WARNING:HDLCompiler:751 - "E:\Project\AX516\verilog\sd_audio\sd_audio\rtl\SD_read.v" Line 41: Redeclaration of ansi port mydata_o is not allowed
+WARNING:HDLCompiler:751 - "E:\Project\AX516\verilog\sd_audio\sd_audio\rtl\SD_read.v" Line 42: Redeclaration of ansi port SD_cs is not allowed
+WARNING:HDLCompiler:751 - "E:\Project\AX516\verilog\sd_audio\sd_audio\rtl\SD_read.v" Line 43: Redeclaration of ansi port SD_datain is not allowed
+WARNING:HDLCompiler:751 - "E:\Project\AX516\verilog\sd_audio\sd_audio\rtl\SD_read.v" Line 44: Redeclaration of ansi port rx is not allowed
+WARNING:HDLCompiler:751 - "E:\Project\AX516\verilog\sd_audio\sd_audio\rtl\SD_read.v" Line 52: Redeclaration of ansi port data_come is not allowed
+Analyzing Verilog file "E:\Project\AX516\verilog\sd_audio\sd_audio\rtl\SD_initial.v" into library work
+Parsing module <SD_initial>.
+WARNING:HDLCompiler:751 - "E:\Project\AX516\verilog\sd_audio\sd_audio\rtl\SD_initial.v" Line 34: Redeclaration of ansi port SD_clk is not allowed
+WARNING:HDLCompiler:751 - "E:\Project\AX516\verilog\sd_audio\sd_audio\rtl\SD_initial.v" Line 35: Redeclaration of ansi port SD_cs is not allowed
+WARNING:HDLCompiler:751 - "E:\Project\AX516\verilog\sd_audio\sd_audio\rtl\SD_initial.v" Line 36: Redeclaration of ansi port SD_datain is not allowed
+WARNING:HDLCompiler:751 - "E:\Project\AX516\verilog\sd_audio\sd_audio\rtl\SD_initial.v" Line 50: Redeclaration of ansi port rx is not allowed
+WARNING:HDLCompiler:751 - "E:\Project\AX516\verilog\sd_audio\sd_audio\rtl\SD_initial.v" Line 57: Redeclaration of ansi port state is not allowed
+WARNING:HDLCompiler:489 - "E:\Project\AX516\verilog\sd_audio\sd_audio\rtl\SD_initial.v" Line 24: Illegal initial value of input port SD_clk for module SD_initial ignored
+Analyzing Verilog file "E:\Project\AX516\verilog\sd_audio\sd_audio\rtl\ram_rw_control.v" into library work
+Parsing module <ram_rw_control>.
+WARNING:HDLCompiler:751 - "E:\Project\AX516\verilog\sd_audio\sd_audio\rtl\ram_rw_control.v" Line 48: Redeclaration of ansi port read_sec is not allowed
+WARNING:HDLCompiler:751 - "E:\Project\AX516\verilog\sd_audio\sd_audio\rtl\ram_rw_control.v" Line 51: Redeclaration of ansi port wav_data is not allowed
+Analyzing Verilog file "E:\Project\AX516\verilog\sd_audio\sd_audio\rtl\mywav.v" into library work
+Parsing module <mywav>.
+Analyzing Verilog file "E:\Project\AX516\verilog\sd_audio\sd_audio\chipscope_ila.v" into library work
+Parsing module <chipscope_ila>.
+Analyzing Verilog file "E:\Project\AX516\verilog\sd_audio\sd_audio\chipscope_icon.v" into library work
+Parsing module <chipscope_icon>.
+Analyzing Verilog file "E:\Project\AX516\verilog\sd_audio\sd_audio\rtl\SD_TOP.v" into library work
+Parsing module <SD_TOP>.
+WARNING:HDLCompiler:751 - "E:\Project\AX516\verilog\sd_audio\sd_audio\rtl\SD_TOP.v" Line 47: Redeclaration of ansi port SD_cs is not allowed
+WARNING:HDLCompiler:751 - "E:\Project\AX516\verilog\sd_audio\sd_audio\rtl\SD_TOP.v" Line 48: Redeclaration of ansi port SD_datain is not allowed
+
+=========================================================================
+*                            HDL Elaboration                            *
+=========================================================================
+WARNING:HDLCompiler:1016 - "E:\Project\AX516\verilog\sd_audio\sd_audio\rtl\SD_TOP.v" Line 65: Port PSDONE is not connected to this instance
+
+Elaborating module <SD_TOP>.
+
+Elaborating module <DCM_SP(CLKDV_DIVIDE=2,CLKFX_DIVIDE=4,CLKFX_MULTIPLY=2,CLKIN_DIVIDE_BY_2="FALSE",CLKIN_PERIOD=20.0,CLKOUT_PHASE_SHIFT="NONE",CLK_FEEDBACK="1X",DESKEW_ADJUST="SYSTEM_SYNCHRONOUS",DFS_FREQUENCY_MODE="LOW",DLL_FREQUENCY_MODE="LOW",DSS_MODE="NONE",DUTY_CYCLE_CORRECTION="TRUE",FACTORY_JF=16'b1100000010000000,PHASE_SHIFT=0,STARTUP_WAIT="FALSE")>.
+WARNING:HDLCompiler:1127 - "E:\Project\AX516\verilog\sd_audio\sd_audio\rtl\SD_TOP.v" Line 85: Assignment to CLK180 ignored, since the identifier is never used
+WARNING:HDLCompiler:1127 - "E:\Project\AX516\verilog\sd_audio\sd_audio\rtl\SD_TOP.v" Line 86: Assignment to CLK270 ignored, since the identifier is never used
+WARNING:HDLCompiler:1127 - "E:\Project\AX516\verilog\sd_audio\sd_audio\rtl\SD_TOP.v" Line 87: Assignment to CLK2X ignored, since the identifier is never used
+WARNING:HDLCompiler:1127 - "E:\Project\AX516\verilog\sd_audio\sd_audio\rtl\SD_TOP.v" Line 88: Assignment to CLK2X180 ignored, since the identifier is never used
+WARNING:HDLCompiler:1127 - "E:\Project\AX516\verilog\sd_audio\sd_audio\rtl\SD_TOP.v" Line 89: Assignment to CLK90 ignored, since the identifier is never used
+WARNING:HDLCompiler:1127 - "E:\Project\AX516\verilog\sd_audio\sd_audio\rtl\SD_TOP.v" Line 91: Assignment to CLKFX ignored, since the identifier is never used
+WARNING:HDLCompiler:1127 - "E:\Project\AX516\verilog\sd_audio\sd_audio\rtl\SD_TOP.v" Line 92: Assignment to CLKFX180 ignored, since the identifier is never used
+WARNING:HDLCompiler:1127 - "E:\Project\AX516\verilog\sd_audio\sd_audio\rtl\SD_TOP.v" Line 93: Assignment to LOCKED ignored, since the identifier is never used
+
+Elaborating module <BUFG>.
+
+Elaborating module <SD_initial>.
+
+Elaborating module <SD_read>.
+WARNING:HDLCompiler:1127 - "E:\Project\AX516\verilog\sd_audio\sd_audio\rtl\SD_read.v" Line 111: Assignment to myen ignored, since the identifier is never used
+WARNING:HDLCompiler:1127 - "E:\Project\AX516\verilog\sd_audio\sd_audio\rtl\SD_TOP.v" Line 149: Assignment to rx_o ignored, since the identifier is never used
+
+Elaborating module <mywav>.
+
+Elaborating module <reset_delay>.
+WARNING:HDLCompiler:413 - "E:\Project\AX516\verilog\sd_audio\sd_audio\rtl\reset_delay.v" Line 11: Result of 17-bit expression is truncated to fit in 16-bit target.
+WARNING:HDLCompiler:1016 - "E:\Project\AX516\verilog\sd_audio\sd_audio\rtl\reg_config.v" Line 16: Port cyc_count is not connected to this instance
+
+Elaborating module <reg_config>.
+
+Elaborating module <i2c_com>.
+WARNING:HDLCompiler:413 - "E:\Project\AX516\verilog\sd_audio\sd_audio\rtl\i2c_com.v" Line 32: Result of 32-bit expression is truncated to fit in 1-bit target.
+WARNING:HDLCompiler:413 - "E:\Project\AX516\verilog\sd_audio\sd_audio\rtl\i2c_com.v" Line 33: Result of 32-bit expression is truncated to fit in 1-bit target.
+WARNING:HDLCompiler:413 - "E:\Project\AX516\verilog\sd_audio\sd_audio\rtl\i2c_com.v" Line 44: Result of 7-bit expression is truncated to fit in 6-bit target.
+WARNING:HDLCompiler:413 - "E:\Project\AX516\verilog\sd_audio\sd_audio\rtl\reg_config.v" Line 33: Result of 17-bit expression is truncated to fit in 16-bit target.
+WARNING:HDLCompiler:413 - "E:\Project\AX516\verilog\sd_audio\sd_audio\rtl\reg_config.v" Line 66: Result of 5-bit expression is truncated to fit in 4-bit target.
+
+Elaborating module <sinwave_gen>.
+
+Elaborating module <ram_rw_control>.
+WARNING:HDLCompiler:413 - "E:\Project\AX516\verilog\sd_audio\sd_audio\rtl\ram_rw_control.v" Line 149: Result of 14-bit expression is truncated to fit in 13-bit target.
+
+Elaborating module <chipscope_icon>.
+
+Elaborating module <chipscope_ila>.
+WARNING:HDLCompiler:634 - "E:\Project\AX516\verilog\sd_audio\sd_audio\rtl\SD_TOP.v" Line 205: Net <TRIG0[255]> does not have a driver.
+
+=========================================================================
+*                           HDL Synthesis                               *
+=========================================================================
+
+Synthesizing Unit <SD_TOP>.
+    Related source file is "E:\Project\AX516\verilog\sd_audio\sd_audio\rtl\SD_TOP.v".
+WARNING:Xst:647 - Input <ADCLRC> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <ADCDAT> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+INFO:Xst:3210 - "E:\Project\AX516\verilog\sd_audio\sd_audio\rtl\SD_TOP.v" line 118: Output port <rx> of the instance <SD_initial_inst> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "E:\Project\AX516\verilog\sd_audio\sd_audio\rtl\SD_TOP.v" line 118: Output port <state> of the instance <SD_initial_inst> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "E:\Project\AX516\verilog\sd_audio\sd_audio\rtl\SD_TOP.v" line 133: Output port <rx> of the instance <SD_read_inst> is unconnected or connected to loadless signal.
+WARNING:Xst:653 - Signal <TRIG0<255:20>> is used but never assigned. This sourceless signal will be automatically connected to value GND.
+    Summary:
+	inferred   2 Multiplexer(s).
+Unit <SD_TOP> synthesized.
+
+Synthesizing Unit <SD_initial>.
+    Related source file is "E:\Project\AX516\verilog\sd_audio\sd_audio\rtl\SD_initial.v".
+        idle = 4'b0000
+        load_cmd40 = 4'b0001
+        send_40 = 4'b0010
+        send_00 = 4'b0011
+        send_95 = 4'b0100
+        wait_01 = 4'b0101
+        send_cmd48 = 4'b0110
+        send_00a = 4'b0111
+        waita = 4'b1000
+        init_done = 4'b1001
+        init_fail = 4'b1010
+        waitb = 4'b1011
+        send_cmd55 = 4'b1100
+        send_ACMD41 = 4'b1101
+    Found 1-bit register for signal <rx_valid>.
+    Found 6-bit register for signal <aa>.
+    Found 1-bit register for signal <en>.
+    Found 10-bit register for signal <counter>.
+    Found 1-bit register for signal <reset>.
+    Found 1-bit register for signal <SD_cs>.
+    Found 1-bit register for signal <SD_datain>.
+    Found 1-bit register for signal <init>.
+    Found 4-bit register for signal <state>.
+    Found 8-bit register for signal <CMD>.
+    Found 48-bit register for signal <ACMD41>.
+    Found 6-bit register for signal <i>.
+    Found 10-bit register for signal <cnt>.
+    Found 48-bit register for signal <CMD55>.
+    Found 48-bit register for signal <CMD8>.
+    Found 48-bit register for signal <rx>.
+    Found finite state machine <FSM_0> for signal <state>.
+    -----------------------------------------------------------------------
+    | States             | 13                                             |
+    | Transitions        | 44                                             |
+    | Inputs             | 13                                             |
+    | Outputs            | 6                                              |
+    | Clock              | SD_clk (falling_edge)                          |
+    | Power Up State     | 0000                                           |
+    | Encoding           | auto                                           |
+    | Implementation     | LUT                                            |
+    -----------------------------------------------------------------------
+    Found 6-bit adder for signal <aa[5]_GND_4_o_add_4_OUT> created at line 97.
+    Found 10-bit adder for signal <counter[9]_GND_4_o_add_11_OUT> created at line 117.
+    Found 6-bit adder for signal <i[5]_GND_4_o_add_21_OUT> created at line 174.
+    Found 10-bit adder for signal <cnt[9]_GND_4_o_add_70_OUT> created at line 314.
+    Found 6-bit comparator greater for signal <aa[5]_PWR_4_o_LessThan_4_o> created at line 96
+    Found 10-bit comparator greater for signal <counter[9]_PWR_4_o_LessThan_11_o> created at line 116
+    Found 10-bit comparator lessequal for signal <counter[9]_PWR_4_o_LessThan_16_o> created at line 129
+    Found 6-bit comparator greater for signal <i[5]_GND_4_o_LessThan_21_o> created at line 173
+    Found 10-bit comparator greater for signal <cnt[9]_PWR_4_o_LessThan_37_o> created at line 225
+    Found 10-bit comparator greater for signal <cnt[9]_GND_4_o_LessThan_70_o> created at line 313
+    Summary:
+	inferred   4 Adder/Subtractor(s).
+	inferred 238 D-type flip-flop(s).
+	inferred   6 Comparator(s).
+	inferred  52 Multiplexer(s).
+	inferred   1 Finite State Machine(s).
+Unit <SD_initial> synthesized.
+
+Synthesizing Unit <SD_read>.
+    Related source file is "E:\Project\AX516\verilog\sd_audio\sd_audio\rtl\SD_read.v".
+        idle = 4'b0000
+        write = 4'b0001
+        write_wait = 4'b0010
+        read = 4'b0011
+        read_wait = 4'b0100
+        read_data = 4'b0101
+        read_done = 4'b0110
+        writea = 4'b0111
+    Set property "KEEP = TRUE" for signal <mystate_o>.
+    Set property "KEEP = TRUE" for signal <mydata_o>.
+    Set property "fsm_encoding = user" for signal <mystate>.
+    Set property "safe_implementation = yes" for signal <mystate>.
+    Set property "safe_recovery_state = recovery_attr_val" for signal <mystate>.
+    Set property "KEEP = TRUE" for signal <myvalid_o>.
+    Found 1-bit register for signal <rx_valid>.
+    Found 6-bit register for signal <aa>.
+    Found 1-bit register for signal <en>.
+    Found 4-bit register for signal <mystate_o>.
+    Found 48-bit register for signal <CMD17>.
+    Found 1-bit register for signal <data_come>.
+    Found 1-bit register for signal <SD_cs>.
+    Found 1-bit register for signal <SD_datain>.
+    Found 22-bit register for signal <cnt>.
+    Found 1-bit register for signal <myvalid_o>.
+    Found 3-bit register for signal <cnta>.
+    Found 8-bit register for signal <mydata_o>.
+    Found 8-bit register for signal <rx>.
+    Found 6-bit adder for signal <aa[5]_GND_5_o_add_6_OUT> created at line 91.
+    Found 3-bit adder for signal <cnta[2]_GND_5_o_add_24_OUT> created at line 165.
+    Found 22-bit adder for signal <cnt[21]_GND_5_o_add_25_OUT> created at line 171.
+    Found 4-bit 8-to-1 multiplexer for signal <_n0178> created at line 121.
+    Found 6-bit comparator greater for signal <aa[5]_GND_5_o_LessThan_6_o> created at line 90
+    Found 22-bit comparator greater for signal <cnt[21]_GND_5_o_LessThan_23_o> created at line 161
+    Found 3-bit comparator greater for signal <cnta[2]_PWR_5_o_LessThan_24_o> created at line 162
+    Found 22-bit comparator greater for signal <cnt[21]_GND_5_o_LessThan_33_o> created at line 182
+INFO:Xst:2774 - HDL ADVISOR - KEEP property attached to signal mystate_o may hinder XST clustering optimizations.
+    Summary:
+	inferred   3 Adder/Subtractor(s).
+	inferred 105 D-type flip-flop(s).
+	inferred   4 Comparator(s).
+	inferred  23 Multiplexer(s).
+Unit <SD_read> synthesized.
+
+Synthesizing Unit <mywav>.
+    Related source file is "E:\Project\AX516\verilog\sd_audio\sd_audio\rtl\mywav.v".
+    Summary:
+	no macro.
+Unit <mywav> synthesized.
+
+Synthesizing Unit <reset_delay>.
+    Related source file is "E:\Project\AX516\verilog\sd_audio\sd_audio\rtl\reset_delay.v".
+    Found 1-bit register for signal <rst_n>.
+    Found 16-bit register for signal <cnt>.
+    Found 16-bit adder for signal <cnt[15]_GND_7_o_add_2_OUT> created at line 11.
+    Found 16-bit comparator greater for signal <cnt[15]_PWR_7_o_LessThan_2_o> created at line 9
+    Summary:
+	inferred   1 Adder/Subtractor(s).
+	inferred  17 D-type flip-flop(s).
+	inferred   1 Comparator(s).
+Unit <reset_delay> synthesized.
+
+Synthesizing Unit <reg_config>.
+    Related source file is "E:\Project\AX516\verilog\sd_audio\sd_audio\rtl\reg_config.v".
+INFO:Xst:3210 - "E:\Project\AX516\verilog\sd_audio\sd_audio\rtl\reg_config.v" line 16: Output port <cyc_count> of the instance <u1> is unconnected or connected to loadless signal.
+    Found 16-bit register for signal <clock_20k_cnt>.
+    Found 2-bit register for signal <config_step>.
+    Found 4-bit register for signal <reg_index>.
+    Found 1-bit register for signal <start>.
+    Found 1-bit register for signal <clock_20k>.
+    Found 24-bit register for signal <i2c_data>.
+    Found finite state machine <FSM_1> for signal <config_step>.
+    -----------------------------------------------------------------------
+    | States             | 3                                              |
+    | Transitions        | 8                                              |
+    | Inputs             | 3                                              |
+    | Outputs            | 3                                              |
+    | Clock              | clock_20k (rising_edge)                        |
+    | Reset              | reset_n (negative)                             |
+    | Reset type         | asynchronous                                   |
+    | Reset State        | 00                                             |
+    | Encoding           | auto                                           |
+    | Implementation     | LUT                                            |
+    -----------------------------------------------------------------------
+    Found 16-bit adder for signal <clock_20k_cnt[15]_GND_8_o_add_1_OUT> created at line 33.
+    Found 4-bit adder for signal <reg_index[3]_GND_8_o_add_7_OUT> created at line 66.
+    Found 16x24-bit Read Only RAM for signal <n0047>
+    Found 16-bit comparator greater for signal <clock_20k_cnt[15]_GND_8_o_LessThan_1_o> created at line 32
+    Found 4-bit comparator greater for signal <reg_index[3]_PWR_8_o_LessThan_5_o> created at line 49
+    Summary:
+	inferred   1 RAM(s).
+	inferred   2 Adder/Subtractor(s).
+	inferred  46 D-type flip-flop(s).
+	inferred   2 Comparator(s).
+	inferred   1 Multiplexer(s).
+	inferred   1 Finite State Machine(s).
+Unit <reg_config> synthesized.
+
+Synthesizing Unit <i2c_com>.
+    Related source file is "E:\Project\AX516\verilog\sd_audio\sd_audio\rtl\i2c_com.v".
+    Found 1-bit register for signal <ack1>.
+    Found 1-bit register for signal <ack2>.
+    Found 1-bit register for signal <ack3>.
+    Found 1-bit register for signal <sclk>.
+    Found 1-bit register for signal <reg_sdat>.
+    Found 6-bit register for signal <cyc_count>.
+    Found 1-bit register for signal <tr_end>.
+    Found 6-bit adder for signal <cyc_count[5]_GND_9_o_add_8_OUT> created at line 44.
+    Found 1-bit tristate buffer for signal <i2c_sdat> created at line 33
+    Found 6-bit comparator lessequal for signal <n0002> created at line 32
+    Found 6-bit comparator lessequal for signal <n0004> created at line 32
+    Found 6-bit comparator lessequal for signal <cyc_count[5]_PWR_9_o_LessThan_8_o> created at line 43
+    Summary:
+	inferred   1 Adder/Subtractor(s).
+	inferred  12 D-type flip-flop(s).
+	inferred   3 Comparator(s).
+	inferred  35 Multiplexer(s).
+	inferred   1 Tristate(s).
+Unit <i2c_com> synthesized.
+
+Synthesizing Unit <sinwave_gen>.
+    Related source file is "E:\Project\AX516\verilog\sd_audio\sd_audio\rtl\sinwave_gen.v".
+        CLOCK_REF = 50000000
+        CLOCK_SAMPLE = 44100
+    Found 1-bit register for signal <dacclk_b>.
+    Found 1-bit register for signal <myvalid>.
+    Found 1-bit register for signal <bclk_a>.
+    Found 1-bit register for signal <bclk_b>.
+    Found 5-bit register for signal <data_num>.
+    Found 1-bit register for signal <dacclk_a>.
+    Found 5-bit subtractor for signal <data_num[4]_GND_12_o_sub_7_OUT> created at line 60.
+    Found 1-bit 16-to-1 multiplexer for signal <dacdat> created at line 69.
+    Found 1-bit comparator equal for signal <n0002> created at line 34
+    Summary:
+	inferred   1 Adder/Subtractor(s).
+	inferred  10 D-type flip-flop(s).
+	inferred   1 Comparator(s).
+	inferred   1 Multiplexer(s).
+Unit <sinwave_gen> synthesized.
+
+Synthesizing Unit <ram_rw_control>.
+    Related source file is "E:\Project\AX516\verilog\sd_audio\sd_audio\rtl\ram_rw_control.v".
+        SADDR = 32'b00000000000000000011101100011000
+        OADDR = 32'b00000000111010001111111111111111
+    Set property "KEEP = TRUE" for signal <raddr_o>.
+    Found 1-bit register for signal <read_req>.
+    Found 1-bit register for signal <next_read_reg>.
+    Found 1-bit register for signal <next_read_reg_r1>.
+    Found 1-bit register for signal <next_read_reg_r2>.
+    Found 1-bit register for signal <next_read>.
+    Found 32-bit register for signal <read_sec>.
+    Found 13-bit register for signal <ram_addr>.
+    Found 1-bit register for signal <read_req_a>.
+    Found 1-bit register for signal <read_req_b>.
+    Found 1-bit register for signal <myen>.
+    Found 13-bit register for signal <raddr_o>.
+    Found 16-bit register for signal <wav_data>.
+    Found 10-bit register for signal <counter>.
+    Found 10-bit adder for signal <counter[9]_GND_13_o_add_3_OUT> created at line 67.
+    Found 32-bit adder for signal <read_sec[31]_GND_13_o_add_19_OUT> created at line 109.
+    Found 13-bit adder for signal <ram_addr[12]_GND_13_o_add_27_OUT> created at line 125.
+    Found 13-bit adder for signal <ram_raddr[12]_GND_13_o_add_33_OUT> created at line 149.
+    Found 13-bit adder for signal <ram_raddr[12]_GND_13_o_add_39_OUT> created at line 157.
+    Found 8192x8-bit dual-port RAM <Mram_myram> for signal <myram>.
+    Found 10-bit comparator greater for signal <counter[9]_PWR_12_o_LessThan_3_o> created at line 67
+    Found 32-bit comparator greater for signal <read_sec[31]_GND_13_o_LessThan_19_o> created at line 108
+INFO:Xst:2774 - HDL ADVISOR - KEEP property attached to signal raddr_o may hinder XST clustering optimizations.
+    Summary:
+	inferred   2 RAM(s).
+	inferred   5 Adder/Subtractor(s).
+	inferred  92 D-type flip-flop(s).
+	inferred   2 Comparator(s).
+	inferred   3 Multiplexer(s).
+Unit <ram_rw_control> synthesized.
+
+=========================================================================
+HDL Synthesis Report
+
+Macro Statistics
+# RAMs                                                 : 3
+ 16x24-bit single-port Read Only RAM                   : 1
+ 8192x8-bit dual-port RAM                              : 2
+# Adders/Subtractors                                   : 17
+ 10-bit adder                                          : 3
+ 13-bit adder                                          : 3
+ 16-bit adder                                          : 2
+ 22-bit adder                                          : 1
+ 3-bit adder                                           : 1
+ 32-bit adder                                          : 1
+ 4-bit adder                                           : 1
+ 5-bit subtractor                                      : 1
+ 6-bit adder                                           : 4
+# Registers                                            : 61
+ 1-bit register                                        : 34
+ 10-bit register                                       : 3
+ 13-bit register                                       : 2
+ 16-bit register                                       : 3
+ 22-bit register                                       : 1
+ 24-bit register                                       : 1
+ 3-bit register                                        : 1
+ 32-bit register                                       : 1
+ 4-bit register                                        : 2
+ 48-bit register                                       : 5
+ 5-bit register                                        : 1
+ 6-bit register                                        : 4
+ 8-bit register                                        : 3
+# Comparators                                          : 19
+ 1-bit comparator equal                                : 1
+ 10-bit comparator greater                             : 4
+ 10-bit comparator lessequal                           : 1
+ 16-bit comparator greater                             : 2
+ 22-bit comparator greater                             : 2
+ 3-bit comparator greater                              : 1
+ 32-bit comparator greater                             : 1
+ 4-bit comparator greater                              : 1
+ 6-bit comparator greater                              : 3
+ 6-bit comparator lessequal                            : 3
+# Multiplexers                                         : 117
+ 1-bit 16-to-1 multiplexer                             : 1
+ 1-bit 2-to-1 multiplexer                              : 60
+ 10-bit 2-to-1 multiplexer                             : 9
+ 13-bit 2-to-1 multiplexer                             : 1
+ 16-bit 2-to-1 multiplexer                             : 1
+ 22-bit 2-to-1 multiplexer                             : 4
+ 3-bit 2-to-1 multiplexer                              : 2
+ 32-bit 2-to-1 multiplexer                             : 3
+ 4-bit 2-to-1 multiplexer                              : 6
+ 4-bit 8-to-1 multiplexer                              : 1
+ 48-bit 2-to-1 multiplexer                             : 8
+ 6-bit 2-to-1 multiplexer                              : 11
+ 8-bit 2-to-1 multiplexer                              : 10
+# Tristates                                            : 1
+ 1-bit tristate buffer                                 : 1
+# FSMs                                                 : 2
+
+=========================================================================
+
+=========================================================================
+*                       Advanced HDL Synthesis                          *
+=========================================================================
+
+Reading core <chipscope_ila.ngc>.
+Reading core <chipscope_icon.ngc>.
+Loading core <chipscope_ila> for timing and area information for instance <ila_filter_debug>.
+Loading core <chipscope_icon> for timing and area information for instance <icon_debug>.
+
+Synthesizing (advanced) Unit <SD_initial>.
+The following registers are absorbed into counter <counter>: 1 register on signal <counter>.
+Unit <SD_initial> synthesized (advanced).
+
+Synthesizing (advanced) Unit <i2c_com>.
+The following registers are absorbed into counter <cyc_count>: 1 register on signal <cyc_count>.
+Unit <i2c_com> synthesized (advanced).
+
+Synthesizing (advanced) Unit <ram_rw_control>.
+The following registers are absorbed into counter <counter>: 1 register on signal <counter>.
+The following registers are absorbed into counter <ram_addr>: 1 register on signal <ram_addr>.
+INFO:Xst:3226 - The RAM <Mram_myram> will be implemented as a BLOCK RAM, absorbing the following register(s): <wav_data>
+    -----------------------------------------------------------------------
+    | ram_type           | Block                               |          |
+    -----------------------------------------------------------------------
+    | Port A                                                              |
+    |     aspect ratio   | 8192-word x 8-bit                   |          |
+    |     mode           | write-first                         |          |
+    |     clkA           | connected to signal <SD_clk>        | rise     |
+    |     weA            | connected to signal <myvalid_0>     | high     |
+    |     addrA          | connected to signal <ram_addr>      |          |
+    |     diA            | connected to signal <mydata>        |          |
+    -----------------------------------------------------------------------
+    | optimization       | speed                               |          |
+    -----------------------------------------------------------------------
+    | Port B                                                              |
+    |     aspect ratio   | 8192-word x 8-bit                   |          |
+    |     mode           | write-first                         |          |
+    |     clkB           | connected to signal <clk_50M>       | rise     |
+    |     enB            | connected to signal <wav_rden>      | high     |
+    |     addrB          | connected to signal <ram_raddr[12]_GND_13_o_add_39_OUT> |          |
+    |     doB            | connected to signal <wav_data>      |          |
+    -----------------------------------------------------------------------
+    | optimization       | speed                               |          |
+    -----------------------------------------------------------------------
+INFO:Xst:3226 - The RAM <Mram_myram1> will be implemented as a BLOCK RAM, absorbing the following register(s): <wav_data_sliced>
+    -----------------------------------------------------------------------
+    | ram_type           | Block                               |          |
+    -----------------------------------------------------------------------
+    | Port A                                                              |
+    |     aspect ratio   | 8192-word x 8-bit                   |          |
+    |     mode           | write-first                         |          |
+    |     clkA           | connected to signal <SD_clk>        | rise     |
+    |     weA            | connected to signal <myvalid_1>     | high     |
+    |     addrA          | connected to signal <ram_addr>      |          |
+    |     diA            | connected to signal <mydata>        |          |
+    -----------------------------------------------------------------------
+    | optimization       | speed                               |          |
+    -----------------------------------------------------------------------
+    | Port B                                                              |
+    |     aspect ratio   | 8192-word x 8-bit                   |          |
+    |     mode           | write-first                         |          |
+    |     clkB           | connected to signal <clk_50M>       | rise     |
+    |     enB            | connected to signal <wav_rden>      | high     |
+    |     addrB          | connected to signal <raddr_o>       |          |
+    |     doB            | connected to signal <wav_data>      |          |
+    -----------------------------------------------------------------------
+    | optimization       | speed                               |          |
+    -----------------------------------------------------------------------
+Unit <ram_rw_control> synthesized (advanced).
+
+Synthesizing (advanced) Unit <reg_config>.
+The following registers are absorbed into counter <clock_20k_cnt>: 1 register on signal <clock_20k_cnt>.
+The following registers are absorbed into counter <reg_index>: 1 register on signal <reg_index>.
+INFO:Xst:3231 - The small RAM <Mram_n0047> will be implemented on LUTs in order to maximize performance and save block RAM resources. If you want to force its implementation on block, use option/constraint ram_style.
+    -----------------------------------------------------------------------
+    | ram_type           | Distributed                         |          |
+    -----------------------------------------------------------------------
+    | Port A                                                              |
+    |     aspect ratio   | 16-word x 24-bit                    |          |
+    |     weA            | connected to signal <GND>           | high     |
+    |     addrA          | connected to signal <reg_index>     |          |
+    |     diA            | connected to signal <GND>           |          |
+    |     doA            | connected to internal node          |          |
+    -----------------------------------------------------------------------
+Unit <reg_config> synthesized (advanced).
+
+Synthesizing (advanced) Unit <reset_delay>.
+The following registers are absorbed into counter <cnt>: 1 register on signal <cnt>.
+Unit <reset_delay> synthesized (advanced).
+
+Synthesizing (advanced) Unit <sinwave_gen>.
+The following registers are absorbed into counter <data_num>: 1 register on signal <data_num>.
+Unit <sinwave_gen> synthesized (advanced).
+
+=========================================================================
+Advanced HDL Synthesis Report
+
+Macro Statistics
+# RAMs                                                 : 3
+ 16x24-bit single-port distributed Read Only RAM       : 1
+ 8192x8-bit dual-port block RAM                        : 2
+# Adders/Subtractors                                   : 9
+ 10-bit adder                                          : 1
+ 13-bit adder                                          : 2
+ 22-bit adder                                          : 1
+ 3-bit adder                                           : 1
+ 32-bit adder                                          : 1
+ 6-bit adder                                           : 3
+# Counters                                             : 8
+ 10-bit up counter                                     : 2
+ 13-bit up counter                                     : 1
+ 16-bit up counter                                     : 2
+ 4-bit up counter                                      : 1
+ 5-bit down counter                                    : 1
+ 6-bit up counter                                      : 1
+# Registers                                            : 424
+ Flip-Flops                                            : 424
+# Comparators                                          : 19
+ 1-bit comparator equal                                : 1
+ 10-bit comparator greater                             : 4
+ 10-bit comparator lessequal                           : 1
+ 16-bit comparator greater                             : 2
+ 22-bit comparator greater                             : 2
+ 3-bit comparator greater                              : 1
+ 32-bit comparator greater                             : 1
+ 4-bit comparator greater                              : 1
+ 6-bit comparator greater                              : 3
+ 6-bit comparator lessequal                            : 3
+# Multiplexers                                         : 115
+ 1-bit 16-to-1 multiplexer                             : 1
+ 1-bit 2-to-1 multiplexer                              : 60
+ 10-bit 2-to-1 multiplexer                             : 9
+ 13-bit 2-to-1 multiplexer                             : 1
+ 22-bit 2-to-1 multiplexer                             : 4
+ 3-bit 2-to-1 multiplexer                              : 2
+ 32-bit 2-to-1 multiplexer                             : 3
+ 4-bit 2-to-1 multiplexer                              : 6
+ 4-bit 8-to-1 multiplexer                              : 1
+ 48-bit 2-to-1 multiplexer                             : 8
+ 6-bit 2-to-1 multiplexer                              : 10
+ 8-bit 2-to-1 multiplexer                              : 10
+# FSMs                                                 : 2
+
+=========================================================================
+
+=========================================================================
+*                         Low Level Synthesis                           *
+=========================================================================
+Analyzing FSM <MFsm> for best encoding.
+Optimizing FSM <SD_initial_inst/FSM_0> on signal <state[1:4]> with user encoding.
+-------------------
+ State | Encoding
+-------------------
+ 0000  | 0000
+ 0001  | 0001
+ 0010  | 0010
+ 0011  | 0011
+ 0100  | 0100
+ 0101  | 0101
+ 1011  | 1011
+ 1000  | 1000
+ 1010  | 1010
+ 1100  | 1100
+ 0110  | 0110
+ 1101  | 1101
+ 1001  | 1001
+-------------------
+Analyzing FSM <MFsm> for best encoding.
+Optimizing FSM <mywav_inst/reg_config_inst/FSM_1> on signal <config_step[1:2]> with user encoding.
+-------------------
+ State | Encoding
+-------------------
+ 00    | 00
+ 01    | 01
+ 10    | 10
+-------------------
+WARNING:Xst:1710 - FF/Latch <i2c_data_8> (without init value) has a constant value of 0 in block <reg_config>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <i2c_data_13> (without init value) has a constant value of 0 in block <reg_config>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <i2c_data_14> (without init value) has a constant value of 0 in block <reg_config>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <i2c_data_15> (without init value) has a constant value of 0 in block <reg_config>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <i2c_data_16> (without init value) has a constant value of 0 in block <reg_config>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <i2c_data_17> (without init value) has a constant value of 0 in block <reg_config>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <i2c_data_18> (without init value) has a constant value of 1 in block <reg_config>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <i2c_data_19> (without init value) has a constant value of 0 in block <reg_config>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <i2c_data_20> (without init value) has a constant value of 1 in block <reg_config>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <i2c_data_21> (without init value) has a constant value of 1 in block <reg_config>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <i2c_data_22> (without init value) has a constant value of 0 in block <reg_config>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <i2c_data_23> (without init value) has a constant value of 0 in block <reg_config>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:2677 - Node <data_num_4> of sequential type is unconnected in block <sinwave_gen>.
+
+Optimizing unit <SD_TOP> ...
+
+Optimizing unit <SD_initial> ...
+
+Optimizing unit <SD_read> ...
+WARNING:Xst:1710 - FF/Latch <aa_5> (without init value) has a constant value of 0 in block <SD_read>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <aa_3> (without init value) has a constant value of 0 in block <SD_read>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <aa_4> (without init value) has a constant value of 0 in block <SD_read>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <aa_5> (without init value) has a constant value of 0 in block <SD_read>. This FF/Latch will be trimmed during the optimization process.
+
+Optimizing unit <sinwave_gen> ...
+
+Optimizing unit <ram_rw_control> ...
+WARNING:Xst:2677 - Node <SD_read_inst/rx_7> of sequential type is unconnected in block <SD_TOP>.
+WARNING:Xst:2677 - Node <SD_read_inst/rx_6> of sequential type is unconnected in block <SD_TOP>.
+WARNING:Xst:2677 - Node <SD_read_inst/rx_5> of sequential type is unconnected in block <SD_TOP>.
+WARNING:Xst:2677 - Node <SD_read_inst/rx_4> of sequential type is unconnected in block <SD_TOP>.
+WARNING:Xst:2677 - Node <SD_read_inst/rx_3> of sequential type is unconnected in block <SD_TOP>.
+WARNING:Xst:2677 - Node <SD_read_inst/rx_2> of sequential type is unconnected in block <SD_TOP>.
+WARNING:Xst:2677 - Node <SD_read_inst/rx_1> of sequential type is unconnected in block <SD_TOP>.
+WARNING:Xst:2677 - Node <SD_read_inst/rx_0> of sequential type is unconnected in block <SD_TOP>.
+WARNING:Xst:1710 - FF/Latch <ram_rw_control_inst/read_sec_24> (without init value) has a constant value of 0 in block <SD_TOP>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <ram_rw_control_inst/read_sec_25> (without init value) has a constant value of 0 in block <SD_TOP>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <ram_rw_control_inst/read_sec_26> (without init value) has a constant value of 0 in block <SD_TOP>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <ram_rw_control_inst/read_sec_27> (without init value) has a constant value of 0 in block <SD_TOP>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <ram_rw_control_inst/read_sec_28> (without init value) has a constant value of 0 in block <SD_TOP>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <ram_rw_control_inst/read_sec_29> (without init value) has a constant value of 0 in block <SD_TOP>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <ram_rw_control_inst/read_sec_30> (without init value) has a constant value of 0 in block <SD_TOP>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <ram_rw_control_inst/read_sec_31> (without init value) has a constant value of 0 in block <SD_TOP>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <SD_read_inst/cnt_10> (without init value) has a constant value of 0 in block <SD_TOP>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <SD_read_inst/cnt_11> (without init value) has a constant value of 0 in block <SD_TOP>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <SD_read_inst/cnt_12> (without init value) has a constant value of 0 in block <SD_TOP>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <SD_read_inst/cnt_13> (without init value) has a constant value of 0 in block <SD_TOP>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <SD_read_inst/cnt_14> (without init value) has a constant value of 0 in block <SD_TOP>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <SD_read_inst/cnt_15> (without init value) has a constant value of 0 in block <SD_TOP>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <SD_read_inst/cnt_16> (without init value) has a constant value of 0 in block <SD_TOP>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <SD_read_inst/cnt_17> (without init value) has a constant value of 0 in block <SD_TOP>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <SD_read_inst/cnt_18> (without init value) has a constant value of 0 in block <SD_TOP>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <SD_read_inst/cnt_19> (without init value) has a constant value of 0 in block <SD_TOP>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <SD_read_inst/cnt_20> (without init value) has a constant value of 0 in block <SD_TOP>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <SD_read_inst/cnt_21> (without init value) has a constant value of 0 in block <SD_TOP>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <SD_read_inst/mystate_3> (without init value) has a constant value of 0 in block <SD_TOP>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <SD_initial_inst/i_5> (without init value) has a constant value of 0 in block <SD_TOP>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <mywav_inst/reg_config_inst/clock_20k_cnt_11> (without init value) has a constant value of 0 in block <SD_TOP>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <mywav_inst/reg_config_inst/clock_20k_cnt_12> (without init value) has a constant value of 0 in block <SD_TOP>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <mywav_inst/reg_config_inst/clock_20k_cnt_13> (without init value) has a constant value of 0 in block <SD_TOP>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <mywav_inst/reg_config_inst/clock_20k_cnt_14> (without init value) has a constant value of 0 in block <SD_TOP>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <mywav_inst/reg_config_inst/clock_20k_cnt_15> (without init value) has a constant value of 0 in block <SD_TOP>. This FF/Latch will be trimmed during the optimization process.
+
+Mapping all equations...
+Building and optimizing final netlist ...
+Found area constraint ratio of 100 (+ 5) on block SD_TOP, actual ratio is 19.
+
+Final Macro Processing ...
+
+Processing Unit <SD_TOP> :
+	Found 21-bit shift register for signal <SD_initial_inst/rx_40>.
+	Found 17-bit shift register for signal <SD_initial_inst/rx_16>.
+	Found 3-bit shift register for signal <ram_rw_control_inst/next_read>.
+Unit <SD_TOP> processed.
+
+=========================================================================
+Final Register Report
+
+Macro Statistics
+# Registers                                            : 418
+ Flip-Flops                                            : 418
+# Shift Registers                                      : 3
+ 17-bit shift register                                 : 1
+ 21-bit shift register                                 : 1
+ 3-bit shift register                                  : 1
+
+=========================================================================
+
+=========================================================================
+*                           Partition Report                            *
+=========================================================================
+
+Partition Implementation Status
+-------------------------------
+
+  No Partitions were found in this design.
+
+-------------------------------
+
+=========================================================================
+*                            Design Summary                             *
+=========================================================================
+
+Top Level Output File Name         : SD_TOP.ngc
+
+Primitive and Black Box Usage:
+------------------------------
+# BELS                             : 1458
+#      GND                         : 3
+#      INV                         : 20
+#      LUT1                        : 156
+#      LUT2                        : 191
+#      LUT3                        : 114
+#      LUT4                        : 145
+#      LUT5                        : 63
+#      LUT6                        : 223
+#      MUXCY                       : 154
+#      MUXCY_L                     : 193
+#      MUXF5                       : 2
+#      MUXF6                       : 1
+#      MUXF7                       : 13
+#      MUXF8                       : 3
+#      VCC                         : 3
+#      XORCY                       : 174
+# FlipFlops/Latches                : 1644
+#      FD                          : 536
+#      FD_1                        : 6
+#      FDC                         : 25
+#      FDCE                        : 20
+#      FDE                         : 169
+#      FDE_1                       : 167
+#      FDP                         : 519
+#      FDPE                        : 6
+#      FDR                         : 63
+#      FDR_1                       : 1
+#      FDRE                        : 116
+#      FDS                         : 10
+#      FDS_1                       : 1
+#      FDSE                        : 4
+#      LDC                         : 1
+# RAMS                             : 23
+#      RAMB16BWER                  : 22
+#      RAMB8BWER                   : 1
+# Shift Registers                  : 421
+#      SRL16                       : 256
+#      SRL16E                      : 1
+#      SRLC16E                     : 41
+#      SRLC32E                     : 123
+# Clock Buffers                    : 5
+#      BUFG                        : 5
+# IO Buffers                       : 11
+#      IBUF                        : 4
+#      IBUFG                       : 1
+#      IOBUF                       : 1
+#      OBUF                        : 5
+# DCMs                             : 1
+#      DCM_SP                      : 1
+# Others                           : 1
+#      BSCAN_SPARTAN6              : 1
+
+Device utilization summary:
+---------------------------
+
+Selected Device : 6slx16csg324-3 
+
+
+Slice Logic Utilization: 
+ Number of Slice Registers:            1644  out of  18224     9%  
+ Number of Slice LUTs:                 1333  out of   9112    14%  
+    Number used as Logic:               912  out of   9112    10%  
+    Number used as Memory:              421  out of   2176    19%  
+       Number used as SRL:              421
+
+Slice Logic Distribution: 
+ Number of LUT Flip Flop pairs used:   2248
+   Number with an unused Flip Flop:     604  out of   2248    26%  
+   Number with an unused LUT:           915  out of   2248    40%  
+   Number of fully used LUT-FF pairs:   729  out of   2248    32%  
+   Number of unique control sets:        80
+
+IO Utilization: 
+ Number of IOs:                          13
+ Number of bonded IOBs:                  11  out of    232     4%  
+
+Specific Feature Utilization:
+ Number of Block RAM/FIFO:               23  out of     32    71%  
+    Number using Block RAM only:         23
+ Number of BUFG/BUFGCTRLs:                5  out of     16    31%  
+
+---------------------------
+Partition Resource Summary:
+---------------------------
+
+  No Partitions were found in this design.
+
+---------------------------
+
+
+=========================================================================
+Timing Report
+
+NOTE: THESE TIMING NUMBERS ARE ONLY A SYNTHESIS ESTIMATE.
+      FOR ACCURATE TIMING INFORMATION PLEASE REFER TO THE TRACE REPORT
+      GENERATED AFTER PLACE-and-ROUTE.
+
+Clock Information:
+------------------
+----------------------------------------------------------------------------------+-------------------------------------------------------------+-------+
+Clock Signal                                                                      | Clock buffer(FF name)                                       | Load  |
+----------------------------------------------------------------------------------+-------------------------------------------------------------+-------+
+clk                                                                               | DCM_SP:CLK0                                                 | 1465  |
+mywav_inst/reg_config_inst/clock_20k                                              | BUFG                                                        | 31    |
+clk                                                                               | DCM_SP:CLKDV                                                | 346   |
+icon_debug/U0/U_ICON/I_YES_BSCAN.U_BS/iDRCK_LOCAL                                 | BUFG                                                        | 267   |
+icon_debug/CONTROL0<13>(icon_debug/U0/U_ICON/U_CTRL_OUT/F_NCP[0].F_CMD[9].U_LCE:O)| NONE(*)(ila_filter_debug/U0/I_NO_D.U_ILA/U_STAT/U_DIRTY_LDC)| 1     |
+icon_debug/U0/iUPDATE_OUT                                                         | NONE(icon_debug/U0/U_ICON/U_iDATA_CMD)                      | 1     |
+----------------------------------------------------------------------------------+-------------------------------------------------------------+-------+
+(*) This 1 clock signal(s) are generated by combinatorial logic,
+and XST is not able to identify which are the primary clock signals.
+Please use the CLOCK_SIGNAL constraint to specify the clock signal(s) generated by combinatorial logic.
+INFO:Xst:2169 - HDL ADVISOR - Some clock signals were not automatically buffered by XST with BUFG/BUFR resources. Please use the buffer_type constraint in order to insert these buffers to the clock signals to help prevent skew problems.
+
+Asynchronous Control Signals Information:
+----------------------------------------
+No asynchronous control signals found in this design
+
+Timing Summary:
+---------------
+Speed Grade: -3
+
+   Minimum period: 7.976ns (Maximum Frequency: 125.375MHz)
+   Minimum input arrival time before clock: 5.627ns
+   Maximum output required time after clock: 6.397ns
+   Maximum combinational path delay: No path found
+
+Timing Details:
+---------------
+All values displayed in nanoseconds (ns)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'clk'
+  Clock period: 5.432ns (frequency: 184.111MHz)
+  Total number of paths / destination ports: 17524 / 2777
+-------------------------------------------------------------------------
+Delay:               5.432ns (Levels of Logic = 5)
+  Source:            SD_initial_inst/rx_valid (FF)
+  Destination:       SD_initial_inst/state_FSM_FFd3 (FF)
+  Source Clock:      clk rising 0.5X
+  Destination Clock: clk falling 0.5X
+
+  Data Path: SD_initial_inst/rx_valid to SD_initial_inst/state_FSM_FFd3
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FD:C->Q              10   0.447   0.961  SD_initial_inst/rx_valid (SD_initial_inst/rx_valid)
+     LUT3:I1->O            1   0.203   0.580  SD_initial_inst/state_FSM_FFd3-In12_SW0 (N26)
+     LUT6:I5->O            5   0.205   1.059  SD_initial_inst/state_FSM_FFd3-In12 (SD_initial_inst/state_FSM_FFd3-In12)
+     LUT6:I1->O            1   0.203   0.684  SD_initial_inst/state_FSM_FFd3-In8 (SD_initial_inst/state_FSM_FFd3-In8)
+     LUT5:I3->O            1   0.203   0.580  SD_initial_inst/state_FSM_FFd3-In9_SW0 (N50)
+     LUT6:I5->O            1   0.205   0.000  SD_initial_inst/state_FSM_FFd3-In9 (SD_initial_inst/state_FSM_FFd3-In)
+     FD_1:D                    0.102          SD_initial_inst/state_FSM_FFd3
+    ----------------------------------------
+    Total                      5.432ns (1.568ns logic, 3.863ns route)
+                                       (28.9% logic, 71.1% route)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'mywav_inst/reg_config_inst/clock_20k'
+  Clock period: 5.202ns (frequency: 192.221MHz)
+  Total number of paths / destination ports: 319 / 53
+-------------------------------------------------------------------------
+Delay:               5.202ns (Levels of Logic = 4)
+  Source:            mywav_inst/reg_config_inst/u1/cyc_count_2 (FF)
+  Destination:       mywav_inst/reg_config_inst/u1/reg_sdat (FF)
+  Source Clock:      mywav_inst/reg_config_inst/clock_20k rising
+  Destination Clock: mywav_inst/reg_config_inst/clock_20k rising
+
+  Data Path: mywav_inst/reg_config_inst/u1/cyc_count_2 to mywav_inst/reg_config_inst/u1/reg_sdat
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDPE:C->Q            17   0.447   1.392  mywav_inst/reg_config_inst/u1/cyc_count_2 (mywav_inst/reg_config_inst/u1/cyc_count_2)
+     LUT6:I0->O            1   0.203   0.924  mywav_inst/reg_config_inst/u1/Mmux_cyc_count[5]_reg_sdat_Mux_12_o52 (mywav_inst/reg_config_inst/u1/Mmux_cyc_count[5]_reg_sdat_Mux_12_o51)
+     LUT6:I1->O            1   0.203   0.580  mywav_inst/reg_config_inst/u1/Mmux_cyc_count[5]_reg_sdat_Mux_12_o54 (mywav_inst/reg_config_inst/u1/Mmux_cyc_count[5]_reg_sdat_Mux_12_o53)
+     LUT5:I4->O            1   0.205   0.944  mywav_inst/reg_config_inst/u1/reg_sdat_rstpot_SW0 (N44)
+     LUT6:I0->O            1   0.203   0.000  mywav_inst/reg_config_inst/u1/reg_sdat_rstpot (mywav_inst/reg_config_inst/u1/reg_sdat_rstpot)
+     FDP:D                     0.102          mywav_inst/reg_config_inst/u1/reg_sdat
+    ----------------------------------------
+    Total                      5.202ns (1.363ns logic, 3.839ns route)
+                                       (26.2% logic, 73.8% route)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'icon_debug/U0/U_ICON/I_YES_BSCAN.U_BS/iDRCK_LOCAL'
+  Clock period: 7.976ns (frequency: 125.375MHz)
+  Total number of paths / destination ports: 4244 / 556
+-------------------------------------------------------------------------
+Delay:               7.976ns (Levels of Logic = 8)
+  Source:            ila_filter_debug/U0/I_NO_D.U_ILA/U_CAPSTOR/I_CASE1.I_YES_TB.U_TRACE_BUFFER/U_RAM/I_S6.U_CS_BRAM_CASCADE_S6/I_DEPTH_LTEQ_16K.U_SBRAM_0/I_B18KGT0.G_RAMB18[9].u_ramb18/U_RAMB18 (RAM)
+  Destination:       icon_debug/U0/U_ICON/U_TDO_reg (FF)
+  Source Clock:      icon_debug/U0/U_ICON/I_YES_BSCAN.U_BS/iDRCK_LOCAL rising
+  Destination Clock: icon_debug/U0/U_ICON/I_YES_BSCAN.U_BS/iDRCK_LOCAL rising
+
+  Data Path: ila_filter_debug/U0/I_NO_D.U_ILA/U_CAPSTOR/I_CASE1.I_YES_TB.U_TRACE_BUFFER/U_RAM/I_S6.U_CS_BRAM_CASCADE_S6/I_DEPTH_LTEQ_16K.U_SBRAM_0/I_B18KGT0.G_RAMB18[9].u_ramb18/U_RAMB18 to icon_debug/U0/U_ICON/U_TDO_reg
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     RAMB16BWER:CLKA->DOA7    1   1.850   0.827  U0/I_NO_D.U_ILA/U_CAPSTOR/I_CASE1.I_YES_TB.U_TRACE_BUFFER/U_RAM/I_S6.U_CS_BRAM_CASCADE_S6/I_DEPTH_LTEQ_16K.U_SBRAM_0/I_B18KGT0.G_RAMB18[9].u_ramb18/U_RAMB18 (U0/I_NO_D.U_ILA/U_CAPSTOR/I_CASE1.I_YES_TB.U_TRACE_BUFFER/rd_data<169>)
+     LUT6:I2->O            1   0.203   0.827  U0/I_NO_D.U_ILA/U_CAPSTOR/I_CASE1.I_YES_TB.U_TRACE_BUFFER/U_RD_COL_MUX/I9.U_MUX512/Mmux_O_1914 (U0/I_NO_D.U_ILA/U_CAPSTOR/I_CASE1.I_YES_TB.U_TRACE_BUFFER/U_RD_COL_MUX/I9.U_MUX512/Mmux_O_1914)
+     LUT6:I2->O            1   0.203   0.827  U0/I_NO_D.U_ILA/U_CAPSTOR/I_CASE1.I_YES_TB.U_TRACE_BUFFER/U_RD_COL_MUX/I9.U_MUX512/Mmux_O_145 (U0/I_NO_D.U_ILA/U_CAPSTOR/I_CASE1.I_YES_TB.U_TRACE_BUFFER/U_RD_COL_MUX/I9.U_MUX512/Mmux_O_145)
+     LUT6:I2->O            1   0.203   0.827  U0/I_NO_D.U_ILA/U_CAPSTOR/I_CASE1.I_YES_TB.U_TRACE_BUFFER/U_RD_COL_MUX/I9.U_MUX512/Mmux_O_91 (U0/I_NO_D.U_ILA/U_CAPSTOR/I_CASE1.I_YES_TB.U_TRACE_BUFFER/U_RD_COL_MUX/I9.U_MUX512/Mmux_O_91)
+     LUT6:I2->O            1   0.203   0.000  U0/I_NO_D.U_ILA/U_CAPSTOR/I_CASE1.I_YES_TB.U_TRACE_BUFFER/U_RD_COL_MUX/I9.U_MUX512/Mmux_O_41 (U0/I_NO_D.U_ILA/U_CAPSTOR/I_CASE1.I_YES_TB.U_TRACE_BUFFER/U_RD_COL_MUX/I9.U_MUX512/Mmux_O_4)
+     MUXF7:I0->O           1   0.131   0.684  U0/I_NO_D.U_ILA/U_CAPSTOR/I_CASE1.I_YES_TB.U_TRACE_BUFFER/U_RD_COL_MUX/I9.U_MUX512/Mmux_O_2_f7 (U0/I_NO_D.U_ILA/iDATA_DOUT)
+     LUT3:I1->O            1   0.203   0.684  U0/I_NO_D.U_ILA/U_DOUT (CONTROL<3>)
+     end scope: 'ila_filter_debug:CONTROL<3>'
+     begin scope: 'icon_debug:CONTROL0<3>'
+     LUT6:I4->O            1   0.203   0.000  U0/U_ICON/U_TDO_MUX/U_CS_MUX/I4.U_MUX16/Mmux_O11 (U0/U_ICON/iTDO_next)
+     FDE:D                     0.102          U0/U_ICON/U_TDO_reg
+    ----------------------------------------
+    Total                      7.976ns (3.301ns logic, 4.675ns route)
+                                       (41.4% logic, 58.6% route)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'icon_debug/U0/iUPDATE_OUT'
+  Clock period: 1.984ns (frequency: 504.007MHz)
+  Total number of paths / destination ports: 1 / 1
+-------------------------------------------------------------------------
+Delay:               1.984ns (Levels of Logic = 1)
+  Source:            icon_debug/U0/U_ICON/U_iDATA_CMD (FF)
+  Destination:       icon_debug/U0/U_ICON/U_iDATA_CMD (FF)
+  Source Clock:      icon_debug/U0/iUPDATE_OUT rising
+  Destination Clock: icon_debug/U0/iUPDATE_OUT rising
+
+  Data Path: icon_debug/U0/U_ICON/U_iDATA_CMD to icon_debug/U0/U_ICON/U_iDATA_CMD
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDC:C->Q              3   0.447   0.650  U0/U_ICON/U_iDATA_CMD (U0/U_ICON/iDATA_CMD)
+     INV:I->O              1   0.206   0.579  U0/U_ICON/U_iDATA_CMD_n (U0/U_ICON/iDATA_CMD_n)
+     FDC:D                     0.102          U0/U_ICON/U_iDATA_CMD
+    ----------------------------------------
+    Total                      1.984ns (0.755ns logic, 1.229ns route)
+                                       (38.1% logic, 61.9% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'clk'
+  Total number of paths / destination ports: 733 / 728
+-------------------------------------------------------------------------
+Offset:              5.597ns (Levels of Logic = 3)
+  Source:            rst_n (PAD)
+  Destination:       SD_initial_inst/CMD55_47 (FF)
+  Destination Clock: clk falling 0.5X
+
+  Data Path: rst_n to SD_initial_inst/CMD55_47
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O            11   1.222   1.111  rst_n_IBUF (rst_n_IBUF)
+     LUT3:I0->O            3   0.205   1.015  SD_initial_inst/state_FSM_FFd2-In41 (SD_initial_inst/state_FSM_FFd2-In4)
+     LUT6:I0->O           48   0.203   1.519  SD_initial_inst/_n0440_inv1 (SD_initial_inst/_n0440_inv)
+     FDE_1:CE                  0.322          SD_initial_inst/CMD55_0
+    ----------------------------------------
+    Total                      5.597ns (1.952ns logic, 3.645ns route)
+                                       (34.9% logic, 65.1% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'icon_debug/U0/U_ICON/I_YES_BSCAN.U_BS/iDRCK_LOCAL'
+  Total number of paths / destination ports: 302 / 291
+-------------------------------------------------------------------------
+Offset:              5.627ns (Levels of Logic = 5)
+  Source:            icon_debug/U0/U_ICON/I_YES_BSCAN.U_BS/I_S6.ISYN.I_USE_SOFTBSCAN_EQ0.U_BS:SHIFT (PAD)
+  Destination:       ila_filter_debug/U0/I_NO_D.U_ILA/U_STAT/U_STAT_CNT/G[0].U_FDRE (FF)
+  Destination Clock: icon_debug/U0/U_ICON/I_YES_BSCAN.U_BS/iDRCK_LOCAL rising
+
+  Data Path: icon_debug/U0/U_ICON/I_YES_BSCAN.U_BS/I_S6.ISYN.I_USE_SOFTBSCAN_EQ0.U_BS:SHIFT to ila_filter_debug/U0/I_NO_D.U_ILA/U_STAT/U_STAT_CNT/G[0].U_FDRE
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+    BSCAN_SPARTAN6:SHIFT    3   0.000   0.651  U0/U_ICON/I_YES_BSCAN.U_BS/I_S6.ISYN.I_USE_SOFTBSCAN_EQ0.U_BS (U0/iSHIFT_OUT)
+     LUT2:I1->O           32   0.205   1.539  U0/U_ICON/U_CTRL_OUT/U_DATA_VALID (U0/U_ICON/U_CTRL_OUT/iDATA_VALID)
+     LUT4:I0->O            3   0.203   0.755  U0/U_ICON/U_CTRL_OUT/F_NCP[0].F_CMD[0].U_LCE (CONTROL0<4>)
+     end scope: 'icon_debug:CONTROL0<4>'
+     begin scope: 'ila_filter_debug:CONTROL<4>'
+     LUT2:I0->O            1   0.203   0.579  U0/I_NO_D.U_ILA/U_STAT/U_STATCMD (U0/I_NO_D.U_ILA/U_STAT/iSTATCMD_CE)
+     INV:I->O             10   0.206   0.856  U0/I_NO_D.U_ILA/U_STAT/U_STATCMD_n (U0/I_NO_D.U_ILA/U_STAT/iSTATCMD_CE_n)
+     FDRE:R                    0.430          U0/I_NO_D.U_ILA/U_STAT/U_STAT_CNT/G[9].U_FDRE
+    ----------------------------------------
+    Total                      5.627ns (1.247ns logic, 4.380ns route)
+                                       (22.2% logic, 77.8% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'icon_debug/U0/iUPDATE_OUT'
+  Total number of paths / destination ports: 1 / 1
+-------------------------------------------------------------------------
+Offset:              1.831ns (Levels of Logic = 1)
+  Source:            icon_debug/U0/U_ICON/I_YES_BSCAN.U_BS/I_S6.ISYN.I_USE_SOFTBSCAN_EQ0.U_BS:SEL (PAD)
+  Destination:       icon_debug/U0/U_ICON/U_iDATA_CMD (FF)
+  Destination Clock: icon_debug/U0/iUPDATE_OUT rising
+
+  Data Path: icon_debug/U0/U_ICON/I_YES_BSCAN.U_BS/I_S6.ISYN.I_USE_SOFTBSCAN_EQ0.U_BS:SEL to icon_debug/U0/U_ICON/U_iDATA_CMD
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+    BSCAN_SPARTAN6:SEL     2   0.000   0.616  U0/U_ICON/I_YES_BSCAN.U_BS/I_S6.ISYN.I_USE_SOFTBSCAN_EQ0.U_BS (U0/U_ICON/iSEL)
+     INV:I->O              1   0.206   0.579  U0/U_ICON/U_iSEL_n (U0/U_ICON/iSEL_n)
+     FDC:CLR                   0.430          U0/U_ICON/U_iDATA_CMD
+    ----------------------------------------
+    Total                      1.831ns (0.636ns logic, 1.195ns route)
+                                       (34.7% logic, 65.3% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'mywav_inst/reg_config_inst/clock_20k'
+  Total number of paths / destination ports: 3 / 3
+-------------------------------------------------------------------------
+Offset:              2.408ns (Levels of Logic = 2)
+  Source:            I2C_SDAT (PAD)
+  Destination:       mywav_inst/reg_config_inst/u1/ack2 (FF)
+  Destination Clock: mywav_inst/reg_config_inst/clock_20k rising
+
+  Data Path: I2C_SDAT to mywav_inst/reg_config_inst/u1/ack2
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IOBUF:IO->O           3   1.222   0.879  I2C_SDAT_IOBUF (N38)
+     LUT4:I1->O            1   0.205   0.000  mywav_inst/reg_config_inst/u1/ack2_rstpot (mywav_inst/reg_config_inst/u1/ack2_rstpot)
+     FDP:D                     0.102          mywav_inst/reg_config_inst/u1/ack2
+    ----------------------------------------
+    Total                      2.408ns (1.529ns logic, 0.879ns route)
+                                       (63.5% logic, 36.5% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'clk'
+  Total number of paths / destination ports: 34 / 4
+-------------------------------------------------------------------------
+Offset:              6.397ns (Levels of Logic = 4)
+  Source:            ram_rw_control_inst/Mram_myram4 (RAM)
+  Destination:       DACDAT (PAD)
+  Source Clock:      clk rising
+
+  Data Path: ram_rw_control_inst/Mram_myram4 to DACDAT
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     RAMB16BWER:CLKB->DOB0    2   1.850   0.864  ram_rw_control_inst/Mram_myram4 (wav_data<14>)
+     LUT6:I2->O            1   0.203   0.000  mywav_inst/sinwave_gen_inst/Mmux_dacdat_4 (mywav_inst/sinwave_gen_inst/Mmux_dacdat_4)
+     MUXF7:I1->O           1   0.140   0.000  mywav_inst/sinwave_gen_inst/Mmux_dacdat_3_f7 (mywav_inst/sinwave_gen_inst/Mmux_dacdat_3_f7)
+     MUXF8:I1->O           2   0.152   0.616  mywav_inst/sinwave_gen_inst/Mmux_dacdat_2_f8 (DACDAT_OBUF)
+     OBUF:I->O                 2.571          DACDAT_OBUF (DACDAT)
+    ----------------------------------------
+    Total                      6.397ns (4.916ns logic, 1.480ns route)
+                                       (76.9% logic, 23.1% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'mywav_inst/reg_config_inst/clock_20k'
+  Total number of paths / destination ports: 8 / 2
+-------------------------------------------------------------------------
+Offset:              6.184ns (Levels of Logic = 3)
+  Source:            mywav_inst/reg_config_inst/u1/cyc_count_2 (FF)
+  Destination:       I2C_SCLK (PAD)
+  Source Clock:      mywav_inst/reg_config_inst/clock_20k rising
+
+  Data Path: mywav_inst/reg_config_inst/u1/cyc_count_2 to I2C_SCLK
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDPE:C->Q            17   0.447   1.372  mywav_inst/reg_config_inst/u1/cyc_count_2 (mywav_inst/reg_config_inst/u1/cyc_count_2)
+     LUT6:I1->O            1   0.203   0.808  mywav_inst/reg_config_inst/u1/_n03451 (mywav_inst/reg_config_inst/u1/_n0345)
+     LUT3:I0->O            1   0.205   0.579  mywav_inst/reg_config_inst/u1/_n03452 (I2C_SCLK_OBUF)
+     OBUF:I->O                 2.571          I2C_SCLK_OBUF (I2C_SCLK)
+    ----------------------------------------
+    Total                      6.184ns (3.426ns logic, 2.759ns route)
+                                       (55.4% logic, 44.6% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'icon_debug/U0/U_ICON/I_YES_BSCAN.U_BS/iDRCK_LOCAL'
+  Total number of paths / destination ports: 1 / 1
+-------------------------------------------------------------------------
+Offset:              0.447ns (Levels of Logic = 0)
+  Source:            icon_debug/U0/U_ICON/U_TDO_reg (FF)
+  Destination:       icon_debug/U0/U_ICON/I_YES_BSCAN.U_BS/I_S6.ISYN.I_USE_SOFTBSCAN_EQ0.U_BS:TDO (PAD)
+  Source Clock:      icon_debug/U0/U_ICON/I_YES_BSCAN.U_BS/iDRCK_LOCAL rising
+
+  Data Path: icon_debug/U0/U_ICON/U_TDO_reg to icon_debug/U0/U_ICON/I_YES_BSCAN.U_BS/I_S6.ISYN.I_USE_SOFTBSCAN_EQ0.U_BS:TDO
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDE:C->Q              0   0.447   0.000  U0/U_ICON/U_TDO_reg (U0/U_ICON/iTDO)
+    BSCAN_SPARTAN6:TDO         0.000          U0/U_ICON/I_YES_BSCAN.U_BS/I_S6.ISYN.I_USE_SOFTBSCAN_EQ0.U_BS
+    ----------------------------------------
+    Total                      0.447ns (0.447ns logic, 0.000ns route)
+                                       (100.0% logic, 0.0% route)
+
+=========================================================================
+
+Cross Clock Domains Report:
+--------------------------
+
+Clock to Setup on destination clock clk
+-------------------------------------------------+---------+---------+---------+---------+
+                                                 | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock                                     |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+-------------------------------------------------+---------+---------+---------+---------+
+clk                                              |    5.637|    4.113|    6.099|         |
+icon_debug/U0/U_ICON/I_YES_BSCAN.U_BS/iDRCK_LOCAL|    6.096|         |         |         |
+-------------------------------------------------+---------+---------+---------+---------+
+
+Clock to Setup on destination clock icon_debug/CONTROL0<13>
+---------------+---------+---------+---------+---------+
+               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------+---------+---------+---------+---------+
+clk            |         |         |    1.948|         |
+---------------+---------+---------+---------+---------+
+
+Clock to Setup on destination clock icon_debug/U0/U_ICON/I_YES_BSCAN.U_BS/iDRCK_LOCAL
+-------------------------------------------------+---------+---------+---------+---------+
+                                                 | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock                                     |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+-------------------------------------------------+---------+---------+---------+---------+
+clk                                              |    3.517|         |         |         |
+icon_debug/CONTROL0<13>                          |         |    3.669|         |         |
+icon_debug/U0/U_ICON/I_YES_BSCAN.U_BS/iDRCK_LOCAL|    7.976|         |         |         |
+icon_debug/U0/iUPDATE_OUT                        |    2.583|         |         |         |
+-------------------------------------------------+---------+---------+---------+---------+
+
+Clock to Setup on destination clock icon_debug/U0/iUPDATE_OUT
+-------------------------+---------+---------+---------+---------+
+                         | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock             |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+-------------------------+---------+---------+---------+---------+
+icon_debug/U0/iUPDATE_OUT|    1.984|         |         |         |
+-------------------------+---------+---------+---------+---------+
+
+Clock to Setup on destination clock mywav_inst/reg_config_inst/clock_20k
+------------------------------------+---------+---------+---------+---------+
+                                    | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock                        |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+------------------------------------+---------+---------+---------+---------+
+clk                                 |    2.976|         |         |         |
+mywav_inst/reg_config_inst/clock_20k|    5.202|         |         |         |
+------------------------------------+---------+---------+---------+---------+
+
+=========================================================================
+
+
+Total REAL time to Xst completion: 19.00 secs
+Total CPU time to Xst completion: 18.15 secs
+ 
+--> 
+
+Total memory usage is 274616 kilobytes
+
+Number of errors   :    0 (   0 filtered)
+Number of warnings :   91 (   0 filtered)
+Number of infos    :   10 (   0 filtered)
+

@@ -1,0 +1,3 @@
+verilog work "ipcore_dir/pll.v"
+verilog work "ipcore_dir/rom.v"
+verilog work "vga_char.v"

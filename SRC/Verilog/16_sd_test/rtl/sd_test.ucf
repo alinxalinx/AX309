@@ -1,0 +1,17 @@
+NET clk						  	LOC = T8 | IOSTANDARD = "LVCMOS33";       ## system CLK 
+Net clk TNM_NET = sys_clk;
+TIMESPEC TS_sys_clk = PERIOD sys_clk 50 MHz;
+
+NET rst_n                  LOC = L3 | IOSTANDARD = "LVCMOS33"; ## 
+
+#SD卡相关引脚的定义
+
+NET SD_clk                	LOC = M3 | IOSTANDARD = "LVCMOS33";     ## CLK/SCK
+NET SD_cs                	LOC = N3 | IOSTANDARD = "LVCMOS33";     ## DAT3/CS
+NET SD_datain              LOC = L5 | IOSTANDARD = "LVCMOS33";     ## CMD/DI
+NET SD_dataout             LOC = L4 | IOSTANDARD = "LVCMOS33";     ## DATA0/DO 
+
+PIN "bufg_insta.O" CLOCK_DEDICATED_ROUTE = FALSE;
+
+
+

@@ -1,0 +1,1250 @@
+Release 14.7 - xst P.20131013 (nt64)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+--> Parameter TMPDIR set to xst/projnav.tmp
+
+
+Total REAL time to Xst completion: 1.00 secs
+Total CPU time to Xst completion: 0.09 secs
+ 
+--> Parameter xsthdpdir set to xst
+
+
+Total REAL time to Xst completion: 1.00 secs
+Total CPU time to Xst completion: 0.09 secs
+ 
+--> Reading design: sdram_ov7670_vga.prj
+
+TABLE OF CONTENTS
+  1) Synthesis Options Summary
+  2) HDL Parsing
+  3) HDL Elaboration
+  4) HDL Synthesis
+       4.1) HDL Synthesis Report
+  5) Advanced HDL Synthesis
+       5.1) Advanced HDL Synthesis Report
+  6) Low Level Synthesis
+  7) Partition Report
+  8) Design Summary
+       8.1) Primitive and Black Box Usage
+       8.2) Device utilization summary
+       8.3) Partition Resource Summary
+       8.4) Timing Report
+            8.4.1) Clock Information
+            8.4.2) Asynchronous Control Signals Information
+            8.4.3) Timing Summary
+            8.4.4) Timing Details
+            8.4.5) Cross Clock Domains Report
+
+
+=========================================================================
+*                      Synthesis Options Summary                        *
+=========================================================================
+---- Source Parameters
+Input File Name                    : "sdram_ov7670_vga.prj"
+Ignore Synthesis Constraint File   : NO
+
+---- Target Parameters
+Output File Name                   : "sdram_ov7670_vga"
+Output Format                      : NGC
+Target Device                      : xc6slx9-2-ftg256
+
+---- Source Options
+Top Module Name                    : sdram_ov7670_vga
+Automatic FSM Extraction           : YES
+FSM Encoding Algorithm             : Auto
+Safe Implementation                : No
+FSM Style                          : LUT
+RAM Extraction                     : Yes
+RAM Style                          : Auto
+ROM Extraction                     : Yes
+Shift Register Extraction          : YES
+ROM Style                          : Auto
+Resource Sharing                   : YES
+Asynchronous To Synchronous        : NO
+Shift Register Minimum Size        : 2
+Use DSP Block                      : Auto
+Automatic Register Balancing       : No
+
+---- Target Options
+LUT Combining                      : Auto
+Reduce Control Sets                : Auto
+Add IO Buffers                     : YES
+Global Maximum Fanout              : 100000
+Add Generic Clock Buffer(BUFG)     : 16
+Register Duplication               : YES
+Optimize Instantiated Primitives   : NO
+Use Clock Enable                   : Auto
+Use Synchronous Set                : Auto
+Use Synchronous Reset              : Auto
+Pack IO Registers into IOBs        : Auto
+Equivalent register Removal        : YES
+
+---- General Options
+Optimization Goal                  : Speed
+Optimization Effort                : 1
+Power Reduction                    : NO
+Keep Hierarchy                     : No
+Netlist Hierarchy                  : As_Optimized
+RTL Output                         : Yes
+Global Optimization                : AllClockNets
+Read Cores                         : YES
+Write Timing Constraints           : NO
+Cross Clock Analysis               : NO
+Hierarchy Separator                : /
+Bus Delimiter                      : <>
+Case Specifier                     : Maintain
+Slice Utilization Ratio            : 100
+BRAM Utilization Ratio             : 100
+DSP48 Utilization Ratio            : 100
+Auto BRAM Packing                  : NO
+Slice Utilization Ratio Delta      : 5
+
+---- Other Options
+Cores Search Directories           : {"ipcore_dir"  }
+
+=========================================================================
+
+
+=========================================================================
+*                          HDL Parsing                                  *
+=========================================================================
+Analyzing Verilog file "E:\Project\AX309\Verilog\sdram_ov7670_vga\sdram_ov7670_vga\ipcore_dir\sdram_pll.v" into library work
+Parsing module <sdram_pll>.
+Analyzing Verilog file "E:\Project\AX309\Verilog\sdram_ov7670_vga\sdram_ov7670_vga\rtl\sdram_vga_ip\sdram_ip\sdram_wr_data.v" into library work
+Parsing module <sdram_wr_data>.
+Parsing verilog file "E:\Project\AX309\Verilog\sdram_ov7670_vga\sdram_ov7670_vga\rtl\sdram_vga_ip\sdram_ip\/sdram_para.v" included at line 25.
+WARNING:HDLCompiler:1142 - "E:\Project\AX309\Verilog\sdram_ov7670_vga\sdram_ov7670_vga\rtl\sdram_vga_ip\sdram_ip\sdram_wr_data.v" Line 1: Compiler directive `timescale is not allowed here
+Analyzing Verilog file "E:\Project\AX309\Verilog\sdram_ov7670_vga\sdram_ov7670_vga\rtl\sdram_vga_ip\sdram_ip\sdram_ctrl.v" into library work
+Parsing module <sdram_ctrl>.
+Parsing verilog file "E:\Project\AX309\Verilog\sdram_ov7670_vga\sdram_ov7670_vga\rtl\sdram_vga_ip\sdram_ip\/sdram_para.v" included at line 49.
+WARNING:HDLCompiler:1142 - "E:\Project\AX309\Verilog\sdram_ov7670_vga\sdram_ov7670_vga\rtl\sdram_vga_ip\sdram_ip\sdram_ctrl.v" Line 1: Compiler directive `timescale is not allowed here
+Analyzing Verilog file "E:\Project\AX309\Verilog\sdram_ov7670_vga\sdram_ov7670_vga\rtl\sdram_vga_ip\sdram_ip\sdram_cmd.v" into library work
+Parsing module <sdram_cmd>.
+Parsing verilog file "E:\Project\AX309\Verilog\sdram_ov7670_vga\sdram_ov7670_vga\rtl\sdram_vga_ip\sdram_ip\/sdram_para.v" included at line 38.
+WARNING:HDLCompiler:1142 - "E:\Project\AX309\Verilog\sdram_ov7670_vga\sdram_ov7670_vga\rtl\sdram_vga_ip\sdram_ip\sdram_cmd.v" Line 1: Compiler directive `timescale is not allowed here
+Analyzing Verilog file "E:\Project\AX309\Verilog\sdram_ov7670_vga\sdram_ov7670_vga\ipcore_dir\wrfifo.v" into library work
+Parsing module <wrfifo>.
+Analyzing Verilog file "E:\Project\AX309\Verilog\sdram_ov7670_vga\sdram_ov7670_vga\ipcore_dir\rdfifo.v" into library work
+Parsing module <rdfifo>.
+Analyzing Verilog file "E:\Project\AX309\Verilog\sdram_ov7670_vga\sdram_ov7670_vga\rtl\sdram_vga_ip\sdram_ip\sdram_top.v" into library work
+Parsing module <sdram_top>.
+Analyzing Verilog file "E:\Project\AX309\Verilog\sdram_ov7670_vga\sdram_ov7670_vga\rtl\sdram_vga_ip\sdram_ip\dcfifo_ctrl.v" into library work
+Parsing module <dcfifo_ctrl>.
+Analyzing Verilog file "E:\Project\AX309\Verilog\sdram_ov7670_vga\sdram_ov7670_vga\rtl\sdram_vga_ip\lcd_ip\lcd_driver.v" into library work
+Parsing module <lcd_driver>.
+Parsing verilog file "E:\Project\AX309\Verilog\sdram_ov7670_vga\sdram_ov7670_vga\rtl\sdram_vga_ip\lcd_ip\/lcd_para.v" included at line 37.
+Analyzing Verilog file "E:\Project\AX309\Verilog\sdram_ov7670_vga\sdram_ov7670_vga\rtl\sdram_vga_ip\sdram_ip\sdram_2fifo_top.v" into library work
+Parsing module <sdram_2fifo_top>.
+WARNING:HDLCompiler:751 - "E:\Project\AX309\Verilog\sdram_ov7670_vga\sdram_ov7670_vga\rtl\sdram_vga_ip\sdram_ip\sdram_2fifo_top.v" Line 68: Redeclaration of ansi port sdram_wr_req is not allowed
+WARNING:HDLCompiler:751 - "E:\Project\AX309\Verilog\sdram_ov7670_vga\sdram_ov7670_vga\rtl\sdram_vga_ip\sdram_ip\sdram_2fifo_top.v" Line 70: Redeclaration of ansi port sdram_rd_req is not allowed
+Analyzing Verilog file "E:\Project\AX309\Verilog\sdram_ov7670_vga\sdram_ov7670_vga\rtl\sdram_vga_ip\sdram_ip\sdbank_switch.v" into library work
+Parsing module <sdbank_switch>.
+Analyzing Verilog file "E:\Project\AX309\Verilog\sdram_ov7670_vga\sdram_ov7670_vga\rtl\sdram_vga_ip\lcd_ip\lcd_top.v" into library work
+Parsing module <lcd_top>.
+Analyzing Verilog file "E:\Project\AX309\Verilog\sdram_ov7670_vga\sdram_ov7670_vga\rtl\cmos_i2c_ov7670\I2C_OV7670_RGB565_Config.v" into library work
+Parsing module <I2C_OV7670_RGB565_Config>.
+Analyzing Verilog file "E:\Project\AX309\Verilog\sdram_ov7670_vga\sdram_ov7670_vga\rtl\cmos_i2c_ov7670\I2C_Controller.v" into library work
+Parsing module <I2C_Controller>.
+Analyzing Verilog file "E:\Project\AX309\Verilog\sdram_ov7670_vga\sdram_ov7670_vga\rtl\system_ctrl.v" into library work
+Parsing module <system_ctrl>.
+Analyzing Verilog file "E:\Project\AX309\Verilog\sdram_ov7670_vga\sdram_ov7670_vga\rtl\sdram_vga_ip\sdram_vga_top.v" into library work
+Parsing module <sdram_vga_top>.
+Analyzing Verilog file "E:\Project\AX309\Verilog\sdram_ov7670_vga\sdram_ov7670_vga\rtl\cmos_i2c_ov7670\I2C_AV_Config.v" into library work
+Parsing module <I2C_AV_Config>.
+Analyzing Verilog file "E:\Project\AX309\Verilog\sdram_ov7670_vga\sdram_ov7670_vga\rtl\cmos_i2c_ov7670\CMOS_Capture.v" into library work
+Parsing module <CMOS_Capture>.
+Analyzing Verilog file "E:\Project\AX309\Verilog\sdram_ov7670_vga\sdram_ov7670_vga\rtl\sdram_ov7670_vga.v" into library work
+Parsing module <sdram_ov7670_vga>.
+
+=========================================================================
+*                            HDL Elaboration                            *
+=========================================================================
+
+Elaborating module <sdram_ov7670_vga>.
+
+Elaborating module <system_ctrl>.
+
+Elaborating module <sdram_pll>.
+
+Elaborating module <IBUFG>.
+
+Elaborating module <DCM_SP(CLKDV_DIVIDE=2.0,CLKFX_DIVIDE=1,CLKFX_MULTIPLY=4,CLKIN_DIVIDE_BY_2="FALSE",CLKIN_PERIOD=20.0,CLKOUT_PHASE_SHIFT="NONE",CLK_FEEDBACK="2X",DESKEW_ADJUST="SYSTEM_SYNCHRONOUS",PHASE_SHIFT=0,STARTUP_WAIT="FALSE")>.
+WARNING:HDLCompiler:1127 - "E:\Project\AX309\Verilog\sdram_ov7670_vga\sdram_ov7670_vga\ipcore_dir\sdram_pll.v" Line 121: Assignment to clk0 ignored, since the identifier is never used
+WARNING:HDLCompiler:1127 - "E:\Project\AX309\Verilog\sdram_ov7670_vga\sdram_ov7670_vga\ipcore_dir\sdram_pll.v" Line 137: Assignment to status_int ignored, since the identifier is never used
+
+Elaborating module <BUFG>.
+WARNING:HDLCompiler:1127 - "E:\Project\AX309\Verilog\sdram_ov7670_vga\sdram_ov7670_vga\rtl\system_ctrl.v" Line 47: Assignment to locked ignored, since the identifier is never used
+
+Elaborating module <ODDR2(DDR_ALIGNMENT="NONE",INIT=1'b0,SRTYPE="SYNC")>.
+
+Elaborating module <I2C_AV_Config>.
+
+Elaborating module <I2C_OV7670_RGB565_Config>.
+
+Elaborating module <I2C_Controller>.
+WARNING:HDLCompiler:413 - "E:\Project\AX309\Verilog\sdram_ov7670_vga\sdram_ov7670_vga\rtl\sdram_ov7670_vga.v" Line 81: Result of 8-bit expression is truncated to fit in 1-bit target.
+WARNING:HDLCompiler:1127 - "E:\Project\AX309\Verilog\sdram_ov7670_vga\sdram_ov7670_vga\rtl\sdram_ov7670_vga.v" Line 81: Assignment to led_data ignored, since the identifier is never used
+
+Elaborating module <CMOS_Capture>.
+
+Elaborating module <sdram_vga_top>.
+
+Elaborating module <sdram_2fifo_top>.
+
+Elaborating module <sdram_top>.
+
+Elaborating module <sdram_ctrl>.
+
+Elaborating module <sdram_cmd>.
+
+Elaborating module <sdram_wr_data>.
+
+Elaborating module <dcfifo_ctrl>.
+
+Elaborating module <wrfifo>.
+WARNING:HDLCompiler:1499 - "E:\Project\AX309\Verilog\sdram_ov7670_vga\sdram_ov7670_vga\ipcore_dir\wrfifo.v" Line 39: Empty module <wrfifo> remains a black box.
+
+Elaborating module <rdfifo>.
+WARNING:HDLCompiler:1499 - "E:\Project\AX309\Verilog\sdram_ov7670_vga\sdram_ov7670_vga\ipcore_dir\rdfifo.v" Line 39: Empty module <rdfifo> remains a black box.
+WARNING:HDLCompiler:1127 - "E:\Project\AX309\Verilog\sdram_ov7670_vga\sdram_ov7670_vga\rtl\sdram_vga_ip\sdram_vga_top.v" Line 71: Assignment to sdram_wr_req ignored, since the identifier is never used
+WARNING:HDLCompiler:1127 - "E:\Project\AX309\Verilog\sdram_ov7670_vga\sdram_ov7670_vga\rtl\sdram_vga_ip\sdram_vga_top.v" Line 72: Assignment to sdram_rd_req ignored, since the identifier is never used
+
+Elaborating module <sdbank_switch>.
+WARNING:HDLCompiler:1127 - "E:\Project\AX309\Verilog\sdram_ov7670_vga\sdram_ov7670_vga\rtl\sdram_vga_ip\sdram_vga_top.v" Line 133: Assignment to state_write ignored, since the identifier is never used
+
+Elaborating module <lcd_top>.
+
+Elaborating module <lcd_driver>.
+WARNING:HDLCompiler:1127 - "E:\Project\AX309\Verilog\sdram_ov7670_vga\sdram_ov7670_vga\rtl\sdram_vga_ip\sdram_vga_top.v" Line 186: Assignment to lcd_xpos ignored, since the identifier is never used
+WARNING:HDLCompiler:1127 - "E:\Project\AX309\Verilog\sdram_ov7670_vga\sdram_ov7670_vga\rtl\sdram_vga_ip\sdram_vga_top.v" Line 187: Assignment to lcd_ypos ignored, since the identifier is never used
+WARNING:HDLCompiler:189 - "E:\Project\AX309\Verilog\sdram_ov7670_vga\sdram_ov7670_vga\rtl\sdram_ov7670_vga.v" Line 151: Size mismatch in connection of port <sdram_addr>. Formal port size is 12-bit while actual signal size is 13-bit.
+
+=========================================================================
+*                           HDL Synthesis                               *
+=========================================================================
+
+Synthesizing Unit <sdram_ov7670_vga>.
+    Related source file is "E:\Project\AX309\Verilog\sdram_ov7670_vga\sdram_ov7670_vga\rtl\sdram_ov7670_vga.v".
+INFO:Xst:3210 - "E:\Project\AX309\Verilog\sdram_ov7670_vga\sdram_ov7670_vga\rtl\sdram_ov7670_vga.v" line 66: Output port <LUT_INDEX> of the instance <u_I2C_AV_Config> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "E:\Project\AX309\Verilog\sdram_ov7670_vga\sdram_ov7670_vga\rtl\sdram_ov7670_vga.v" line 66: Output port <I2C_RDATA> of the instance <u_I2C_AV_Config> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "E:\Project\AX309\Verilog\sdram_ov7670_vga\sdram_ov7670_vga\rtl\sdram_ov7670_vga.v" line 90: Output port <CMOS_FPS_DATA> of the instance <u_CMOS_Capture> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "E:\Project\AX309\Verilog\sdram_ov7670_vga\sdram_ov7670_vga\rtl\sdram_ov7670_vga.v" line 90: Output port <CMOS_RST_N> of the instance <u_CMOS_Capture> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "E:\Project\AX309\Verilog\sdram_ov7670_vga\sdram_ov7670_vga\rtl\sdram_ov7670_vga.v" line 90: Output port <CMOS_PWDN> of the instance <u_CMOS_Capture> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "E:\Project\AX309\Verilog\sdram_ov7670_vga\sdram_ov7670_vga\rtl\sdram_ov7670_vga.v" line 133: Output port <lcd_dclk> of the instance <u_sdram_vga_top> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "E:\Project\AX309\Verilog\sdram_ov7670_vga\sdram_ov7670_vga\rtl\sdram_ov7670_vga.v" line 133: Output port <lcd_sync> of the instance <u_sdram_vga_top> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "E:\Project\AX309\Verilog\sdram_ov7670_vga\sdram_ov7670_vga\rtl\sdram_ov7670_vga.v" line 133: Output port <lcd_blank> of the instance <u_sdram_vga_top> is unconnected or connected to loadless signal.
+    Summary:
+	no macro.
+Unit <sdram_ov7670_vga> synthesized.
+
+Synthesizing Unit <system_ctrl>.
+    Related source file is "E:\Project\AX309\Verilog\sdram_ov7670_vga\sdram_ov7670_vga\rtl\system_ctrl.v".
+INFO:Xst:3210 - "E:\Project\AX309\Verilog\sdram_ov7670_vga\sdram_ov7670_vga\rtl\system_ctrl.v" line 43: Output port <LOCKED> of the instance <u_sdram_pll> is unconnected or connected to loadless signal.
+    Found 10-bit register for signal <delay_cnt>.
+    Found 1-bit register for signal <delay_done>.
+    Found 10-bit adder for signal <delay_cnt[9]_GND_2_o_add_1_OUT> created at line 34.
+    Summary:
+	inferred   1 Adder/Subtractor(s).
+	inferred  11 D-type flip-flop(s).
+Unit <system_ctrl> synthesized.
+
+Synthesizing Unit <sdram_pll>.
+    Related source file is "E:\Project\AX309\Verilog\sdram_ov7670_vga\sdram_ov7670_vga\ipcore_dir\sdram_pll.v".
+    Summary:
+	no macro.
+Unit <sdram_pll> synthesized.
+
+Synthesizing Unit <I2C_AV_Config>.
+    Related source file is "E:\Project\AX309\Verilog\sdram_ov7670_vga\sdram_ov7670_vga\rtl\cmos_i2c_ov7670\I2C_AV_Config.v".
+        LUT_SIZE = 168
+        CLK_Freq = 25000000
+        I2C_Freq = 10000
+    Found 1-bit register for signal <mI2C_CTRL_CLK>.
+    Found 1-bit register for signal <i2c_en_r0>.
+    Found 1-bit register for signal <i2c_en_r1>.
+    Found 1-bit register for signal <Config_Done>.
+    Found 1-bit register for signal <mI2C_GO>.
+    Found 1-bit register for signal <mI2C_WR>.
+    Found 8-bit register for signal <LUT_INDEX>.
+    Found 2-bit register for signal <mSetup_ST>.
+    Found 16-bit register for signal <mI2C_CLK_DIV>.
+    Found finite state machine <FSM_0> for signal <mSetup_ST>.
+    -----------------------------------------------------------------------
+    | States             | 3                                              |
+    | Transitions        | 14                                             |
+    | Inputs             | 5                                              |
+    | Outputs            | 3                                              |
+    | Clock              | iCLK (rising_edge)                             |
+    | Reset              | iRST_N (negative)                              |
+    | Reset type         | asynchronous                                   |
+    | Reset State        | 00                                             |
+    | Encoding           | auto                                           |
+    | Implementation     | LUT                                            |
+    -----------------------------------------------------------------------
+    Found 16-bit adder for signal <mI2C_CLK_DIV[15]_GND_8_o_add_1_OUT> created at line 51.
+    Found 8-bit adder for signal <LUT_INDEX[7]_GND_8_o_add_9_OUT> created at line 127.
+    Found 16-bit comparator greater for signal <mI2C_CLK_DIV[15]_GND_8_o_LessThan_1_o> created at line 50
+    Found 8-bit comparator greater for signal <LUT_INDEX[7]_PWR_8_o_LessThan_5_o> created at line 99
+    Found 8-bit comparator lessequal for signal <LUT_INDEX[7]_GND_8_o_LessThan_7_o> created at line 109
+    Summary:
+	inferred   2 Adder/Subtractor(s).
+	inferred  30 D-type flip-flop(s).
+	inferred   3 Comparator(s).
+	inferred   5 Multiplexer(s).
+	inferred   1 Finite State Machine(s).
+Unit <I2C_AV_Config> synthesized.
+
+Synthesizing Unit <I2C_OV7670_RGB565_Config>.
+    Related source file is "E:\Project\AX309\Verilog\sdram_ov7670_vga\sdram_ov7670_vga\rtl\cmos_i2c_ov7670\I2C_OV7670_RGB565_Config.v".
+        Read_DATA = 0
+        SET_OV7670 = 2
+    Found 256x16-bit Read Only RAM for signal <LUT_DATA>
+    Summary:
+	inferred   1 RAM(s).
+Unit <I2C_OV7670_RGB565_Config> synthesized.
+
+Synthesizing Unit <I2C_Controller>.
+    Related source file is "E:\Project\AX309\Verilog\sdram_ov7670_vga\sdram_ov7670_vga\rtl\cmos_i2c_ov7670\I2C_Controller.v".
+    Found 1-bit register for signal <I2C_BIT>.
+    Found 1-bit register for signal <ACKW1>.
+    Found 1-bit register for signal <ACKW2>.
+    Found 1-bit register for signal <ACKW3>.
+    Found 1-bit register for signal <ACKR1>.
+    Found 1-bit register for signal <ACKR2>.
+    Found 1-bit register for signal <ACKR3>.
+    Found 1-bit register for signal <SCLK>.
+    Found 1-bit register for signal <END>.
+    Found 8-bit register for signal <I2C_RDATA>.
+    Found 6-bit register for signal <SD_COUNTER>.
+    Found 6-bit adder for signal <SD_COUNTER[5]_GND_10_o_add_40_OUT> created at line 86.
+    Found 1-bit tristate buffer for signal <I2C_SDAT> created at line 64
+    Found 6-bit comparator lessequal for signal <n0000> created at line 45
+    Found 6-bit comparator lessequal for signal <n0002> created at line 45
+    Found 6-bit comparator lessequal for signal <n0011> created at line 49
+    Found 6-bit comparator lessequal for signal <n0013> created at line 49
+    Found 6-bit comparator lessequal for signal <n0018> created at line 50
+    Found 6-bit comparator lessequal for signal <n0020> created at line 50
+    Found 6-bit comparator lessequal for signal <n0026> created at line 51
+    Found 6-bit comparator lessequal for signal <n0028> created at line 51
+    Found 6-bit comparator lessequal for signal <n0034> created at line 52
+    Found 6-bit comparator lessequal for signal <n0036> created at line 52
+    Found 6-bit comparator lessequal for signal <n0057> created at line 62
+    Found 6-bit comparator lessequal for signal <SD_COUNTER[5]_PWR_10_o_LessThan_40_o> created at line 85
+    Summary:
+	inferred   1 Adder/Subtractor(s).
+	inferred  23 D-type flip-flop(s).
+	inferred  12 Comparator(s).
+	inferred 107 Multiplexer(s).
+	inferred   1 Tristate(s).
+Unit <I2C_Controller> synthesized.
+
+Synthesizing Unit <CMOS_Capture>.
+    Related source file is "E:\Project\AX309\Verilog\sdram_ov7670_vga\sdram_ov7670_vga\rtl\cmos_i2c_ov7670\CMOS_Capture.v".
+    Found 1-bit register for signal <mCMOS_VSYNC>.
+    Found 1-bit register for signal <byte_state>.
+    Found 1-bit register for signal <Frame_valid>.
+    Found 1-bit register for signal <CMOS_oCLK>.
+    Found 1-bit register for signal <CMOS_VALID>.
+    Found 1-bit register for signal <fps_state>.
+    Found 8-bit register for signal <Pre_CMOS_iDATA>.
+    Found 8-bit register for signal <fps_data>.
+    Found 8-bit register for signal <CMOS_FPS_DATA>.
+    Found 16-bit register for signal <CMOS_oDATA>.
+    Found 4-bit register for signal <Frame_Cont>.
+    Found 26-bit register for signal <delay_cnt>.
+    Found 1-bit adder for signal <byte_state_PWR_11_o_add_1_OUT<0>> created at line 127.
+    Found 4-bit adder for signal <Frame_Cont[3]_GND_13_o_add_10_OUT> created at line 160.
+    Found 26-bit adder for signal <delay_cnt[25]_GND_13_o_add_18_OUT> created at line 210.
+    Found 8-bit adder for signal <fps_data[7]_GND_13_o_add_25_OUT> created at line 240.
+    Found 4-bit comparator lessequal for signal <Frame_Cont[3]_PWR_11_o_LessThan_10_o> created at line 158
+    Found 26-bit comparator greater for signal <delay_cnt[25]_PWR_11_o_LessThan_18_o> created at line 209
+    Summary:
+	inferred   4 Adder/Subtractor(s).
+	inferred  76 D-type flip-flop(s).
+	inferred   2 Comparator(s).
+	inferred  11 Multiplexer(s).
+Unit <CMOS_Capture> synthesized.
+
+Synthesizing Unit <sdram_vga_top>.
+    Related source file is "E:\Project\AX309\Verilog\sdram_ov7670_vga\sdram_ov7670_vga\rtl\sdram_vga_ip\sdram_vga_top.v".
+INFO:Xst:3210 - "E:\Project\AX309\Verilog\sdram_ov7670_vga\sdram_ov7670_vga\rtl\sdram_vga_ip\sdram_vga_top.v" line 62: Output port <sdram_wr_req> of the instance <u_sdram_2fifo_top> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "E:\Project\AX309\Verilog\sdram_ov7670_vga\sdram_ov7670_vga\rtl\sdram_vga_ip\sdram_vga_top.v" line 62: Output port <sdram_rd_req> of the instance <u_sdram_2fifo_top> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "E:\Project\AX309\Verilog\sdram_ov7670_vga\sdram_ov7670_vga\rtl\sdram_vga_ip\sdram_vga_top.v" line 128: Output port <state_write> of the instance <u_sdbank_switch> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "E:\Project\AX309\Verilog\sdram_ov7670_vga\sdram_ov7670_vga\rtl\sdram_vga_ip\sdram_vga_top.v" line 167: Output port <lcd_xpos> of the instance <u_lcd_top> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "E:\Project\AX309\Verilog\sdram_ov7670_vga\sdram_ov7670_vga\rtl\sdram_vga_ip\sdram_vga_top.v" line 167: Output port <lcd_ypos> of the instance <u_lcd_top> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "E:\Project\AX309\Verilog\sdram_ov7670_vga\sdram_ov7670_vga\rtl\sdram_vga_ip\sdram_vga_top.v" line 167: Output port <lcd_en> of the instance <u_lcd_top> is unconnected or connected to loadless signal.
+    Summary:
+	no macro.
+Unit <sdram_vga_top> synthesized.
+
+Synthesizing Unit <sdram_2fifo_top>.
+    Related source file is "E:\Project\AX309\Verilog\sdram_ov7670_vga\sdram_ov7670_vga\rtl\sdram_vga_ip\sdram_ip\sdram_2fifo_top.v".
+    Summary:
+	no macro.
+Unit <sdram_2fifo_top> synthesized.
+
+Synthesizing Unit <sdram_top>.
+    Related source file is "E:\Project\AX309\Verilog\sdram_ov7670_vga\sdram_ov7670_vga\rtl\sdram_vga_ip\sdram_ip\sdram_top.v".
+    Summary:
+	no macro.
+Unit <sdram_top> synthesized.
+
+Synthesizing Unit <sdram_ctrl>.
+    Related source file is "E:\Project\AX309\Verilog\sdram_ov7670_vga\sdram_ov7670_vga\rtl\sdram_vga_ip\sdram_ip\sdram_ctrl.v".
+        TRP_CLK = 9'b000000100
+        TRFC_CLK = 9'b000000110
+        TMRD_CLK = 9'b000000110
+        TRCD_CLK = 9'b000000010
+        TCL_CLK = 9'b000000011
+        TDAL_CLK = 9'b000000011
+    Found 4-bit register for signal <init_state_r>.
+    Found 4-bit register for signal <work_state_r>.
+    Found 11-bit register for signal <cnt_15us>.
+    Found 9-bit register for signal <cnt_clk_r>.
+    Found 15-bit register for signal <cnt_200us>.
+    Found 1-bit register for signal <sdram_ref_req>.
+    Found 1-bit register for signal <sys_r_wn>.
+    Found finite state machine <FSM_1> for signal <init_state_r>.
+    -----------------------------------------------------------------------
+    | States             | 10                                             |
+    | Transitions        | 15                                             |
+    | Inputs             | 3                                              |
+    | Outputs            | 6                                              |
+    | Clock              | clk (rising_edge)                              |
+    | Reset              | rst_n (negative)                               |
+    | Reset type         | asynchronous                                   |
+    | Reset State        | 0000                                           |
+    | Encoding           | auto                                           |
+    | Implementation     | LUT                                            |
+    -----------------------------------------------------------------------
+INFO:Xst:1799 - State 0110 is never reached in FSM <work_state_r>.
+    Found finite state machine <FSM_2> for signal <work_state_r>.
+    -----------------------------------------------------------------------
+    | States             | 12                                             |
+    | Transitions        | 22                                             |
+    | Inputs             | 12                                             |
+    | Outputs            | 9                                              |
+    | Clock              | clk (rising_edge)                              |
+    | Reset              | rst_n (negative)                               |
+    | Reset type         | asynchronous                                   |
+    | Reset State        | 0000                                           |
+    | Encoding           | auto                                           |
+    | Implementation     | LUT                                            |
+    -----------------------------------------------------------------------
+    Found 15-bit adder for signal <cnt_200us[14]_GND_18_o_add_1_OUT> created at line 71.
+    Found 11-bit adder for signal <cnt_15us[10]_GND_18_o_add_19_OUT> created at line 107.
+    Found 9-bit adder for signal <cnt_clk_r[8]_GND_18_o_add_57_OUT> created at line 213.
+    Found 15-bit comparator greater for signal <cnt_200us[14]_PWR_15_o_LessThan_1_o> created at line 71
+    Found 11-bit comparator greater for signal <cnt_15us[10]_PWR_15_o_LessThan_19_o> created at line 107
+    Found 9-bit comparator greater for signal <cnt_clk_r[8]_sdwr_byte[8]_LessThan_53_o> created at line 197
+    Found 9-bit comparator lessequal for signal <n0066> created at line 200
+    Found 9-bit comparator greater for signal <cnt_clk_r[8]_sdrd_byte[8]_LessThan_57_o> created at line 200
+    Summary:
+	inferred   3 Adder/Subtractor(s).
+	inferred  37 D-type flip-flop(s).
+	inferred   5 Comparator(s).
+	inferred  12 Multiplexer(s).
+	inferred   2 Finite State Machine(s).
+Unit <sdram_ctrl> synthesized.
+
+Synthesizing Unit <sdram_cmd>.
+    Related source file is "E:\Project\AX309\Verilog\sdram_ov7670_vga\sdram_ov7670_vga\rtl\sdram_vga_ip\sdram_ip\sdram_cmd.v".
+    Found 12-bit register for signal <sdram_addr_r>.
+    Found 2-bit register for signal <sdram_ba_r>.
+    Found 5-bit register for signal <sdram_cmd_r>.
+    Summary:
+	inferred  19 D-type flip-flop(s).
+	inferred  44 Multiplexer(s).
+Unit <sdram_cmd> synthesized.
+
+Synthesizing Unit <sdram_wr_data>.
+    Related source file is "E:\Project\AX309\Verilog\sdram_ov7670_vga\sdram_ov7670_vga\rtl\sdram_vga_ip\sdram_ip\sdram_wr_data.v".
+WARNING:Xst:647 - Input <cnt_clk> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+    Found 16-bit register for signal <sdr_dout>.
+    Found 16-bit register for signal <sdr_din>.
+    Found 1-bit register for signal <sdr_dlink>.
+    Found 1-bit tristate buffer for signal <sdram_data<15>> created at line 46
+    Found 1-bit tristate buffer for signal <sdram_data<14>> created at line 46
+    Found 1-bit tristate buffer for signal <sdram_data<13>> created at line 46
+    Found 1-bit tristate buffer for signal <sdram_data<12>> created at line 46
+    Found 1-bit tristate buffer for signal <sdram_data<11>> created at line 46
+    Found 1-bit tristate buffer for signal <sdram_data<10>> created at line 46
+    Found 1-bit tristate buffer for signal <sdram_data<9>> created at line 46
+    Found 1-bit tristate buffer for signal <sdram_data<8>> created at line 46
+    Found 1-bit tristate buffer for signal <sdram_data<7>> created at line 46
+    Found 1-bit tristate buffer for signal <sdram_data<6>> created at line 46
+    Found 1-bit tristate buffer for signal <sdram_data<5>> created at line 46
+    Found 1-bit tristate buffer for signal <sdram_data<4>> created at line 46
+    Found 1-bit tristate buffer for signal <sdram_data<3>> created at line 46
+    Found 1-bit tristate buffer for signal <sdram_data<2>> created at line 46
+    Found 1-bit tristate buffer for signal <sdram_data<1>> created at line 46
+    Found 1-bit tristate buffer for signal <sdram_data<0>> created at line 46
+    Summary:
+	inferred  33 D-type flip-flop(s).
+	inferred  16 Tristate(s).
+Unit <sdram_wr_data> synthesized.
+
+Synthesizing Unit <dcfifo_ctrl>.
+    Related source file is "E:\Project\AX309\Verilog\sdram_ov7670_vga\sdram_ov7670_vga\rtl\sdram_vga_ip\sdram_ip\dcfifo_ctrl.v".
+INFO:Xst:3210 - "E:\Project\AX309\Verilog\sdram_ov7670_vga\sdram_ov7670_vga\rtl\sdram_vga_ip\sdram_ip\dcfifo_ctrl.v" line 235: Output port <wr_data_count> of the instance <u_wrfifo> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "E:\Project\AX309\Verilog\sdram_ov7670_vga\sdram_ov7670_vga\rtl\sdram_vga_ip\sdram_ip\dcfifo_ctrl.v" line 235: Output port <full> of the instance <u_wrfifo> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "E:\Project\AX309\Verilog\sdram_ov7670_vga\sdram_ov7670_vga\rtl\sdram_vga_ip\sdram_ip\dcfifo_ctrl.v" line 235: Output port <empty> of the instance <u_wrfifo> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "E:\Project\AX309\Verilog\sdram_ov7670_vga\sdram_ov7670_vga\rtl\sdram_vga_ip\sdram_ip\dcfifo_ctrl.v" line 256: Output port <rd_data_count> of the instance <u_rdfifo> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "E:\Project\AX309\Verilog\sdram_ov7670_vga\sdram_ov7670_vga\rtl\sdram_vga_ip\sdram_ip\dcfifo_ctrl.v" line 256: Output port <full> of the instance <u_rdfifo> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "E:\Project\AX309\Verilog\sdram_ov7670_vga\sdram_ov7670_vga\rtl\sdram_vga_ip\sdram_ip\dcfifo_ctrl.v" line 256: Output port <empty> of the instance <u_rdfifo> is unconnected or connected to loadless signal.
+    Found 22-bit register for signal <sdram_wraddr>.
+    Found 22-bit register for signal <sdram_rdaddr>.
+    Found 1-bit register for signal <sdram_wr_ackr2>.
+    Found 1-bit register for signal <sdram_rd_ackr1>.
+    Found 1-bit register for signal <sdram_rd_ackr2>.
+    Found 1-bit register for signal <wr_load_r1>.
+    Found 1-bit register for signal <wr_load_r2>.
+    Found 1-bit register for signal <rd_load_r1>.
+    Found 1-bit register for signal <rd_load_r2>.
+    Found 1-bit register for signal <data_valid_r>.
+    Found 1-bit register for signal <frame_write_done>.
+    Found 1-bit register for signal <frame_read_done>.
+    Found 1-bit register for signal <sdram_wr_req>.
+    Found 1-bit register for signal <sdram_rd_req>.
+    Found 1-bit register for signal <sdram_wr_ackr1>.
+    Found 22-bit subtractor for signal <wr_max_addr[21]_GND_38_o_sub_1_OUT> created at line 136.
+    Found 22-bit subtractor for signal <rd_max_addr[21]_GND_38_o_sub_8_OUT> created at line 175.
+    Found 22-bit adder for signal <sdram_wraddr[21]_GND_38_o_add_2_OUT> created at line 138.
+    Found 22-bit adder for signal <sdram_rdaddr[21]_GND_38_o_add_9_OUT> created at line 177.
+    Found 22-bit comparator lessequal for signal <sdram_wraddr[21]_wr_max_addr[21]_LessThan_2_o> created at line 136
+    Found 22-bit comparator lessequal for signal <sdram_rdaddr[21]_rd_max_addr[21]_LessThan_9_o> created at line 175
+    Found 9-bit comparator lessequal for signal <n0044> created at line 208
+    Found 9-bit comparator greater for signal <rdf_use[8]_rd_length[8]_LessThan_18_o> created at line 213
+    Summary:
+	inferred   4 Adder/Subtractor(s).
+	inferred  57 D-type flip-flop(s).
+	inferred   4 Comparator(s).
+	inferred   9 Multiplexer(s).
+Unit <dcfifo_ctrl> synthesized.
+
+Synthesizing Unit <sdbank_switch>.
+    Related source file is "E:\Project\AX309\Verilog\sdram_ov7670_vga\sdram_ov7670_vga\rtl\sdram_vga_ip\sdram_ip\sdbank_switch.v".
+    Found 2-bit register for signal <rd_bank>.
+    Found 2-bit register for signal <wr_bank>.
+    Found 3-bit register for signal <state_write>.
+    Found 3-bit register for signal <state_read>.
+    Found 1-bit register for signal <bank_valid_r1>.
+    Found 1-bit register for signal <wr_load>.
+    Found 1-bit register for signal <rd_load>.
+    Found 1-bit register for signal <bank_valid_r0>.
+    Found finite state machine <FSM_3> for signal <state_write>.
+    -----------------------------------------------------------------------
+    | States             | 5                                              |
+    | Transitions        | 8                                              |
+    | Inputs             | 3                                              |
+    | Outputs            | 4                                              |
+    | Clock              | clk (falling_edge)                             |
+    | Reset              | rst_n (negative)                               |
+    | Reset type         | asynchronous                                   |
+    | Reset State        | 000                                            |
+    | Encoding           | auto                                           |
+    | Implementation     | LUT                                            |
+    -----------------------------------------------------------------------
+    Found finite state machine <FSM_4> for signal <state_read>.
+    -----------------------------------------------------------------------
+    | States             | 5                                              |
+    | Transitions        | 8                                              |
+    | Inputs             | 3                                              |
+    | Outputs            | 4                                              |
+    | Clock              | clk (falling_edge)                             |
+    | Reset              | rst_n (negative)                               |
+    | Reset type         | asynchronous                                   |
+    | Reset State        | 000                                            |
+    | Encoding           | auto                                           |
+    | Implementation     | LUT                                            |
+    -----------------------------------------------------------------------
+    Summary:
+	inferred   8 D-type flip-flop(s).
+	inferred   2 Finite State Machine(s).
+Unit <sdbank_switch> synthesized.
+
+Synthesizing Unit <lcd_top>.
+    Related source file is "E:\Project\AX309\Verilog\sdram_ov7670_vga\sdram_ov7670_vga\rtl\sdram_vga_ip\lcd_ip\lcd_top.v".
+    Summary:
+	no macro.
+Unit <lcd_top> synthesized.
+
+Synthesizing Unit <lcd_driver>.
+    Related source file is "E:\Project\AX309\Verilog\sdram_ov7670_vga\sdram_ov7670_vga\rtl\sdram_vga_ip\lcd_ip\lcd_driver.v".
+    Found 11-bit register for signal <vcnt>.
+    Found 11-bit register for signal <hcnt>.
+    Found 11-bit subtractor for signal <hcnt[10]_GND_44_o_sub_22_OUT> created at line 95.
+    Found 11-bit subtractor for signal <vcnt[10]_GND_44_o_sub_24_OUT> created at line 96.
+    Found 11-bit adder for signal <hcnt[10]_GND_44_o_add_1_OUT> created at line 52.
+    Found 11-bit adder for signal <vcnt[10]_GND_44_o_add_7_OUT> created at line 69.
+    Found 11-bit comparator greater for signal <hcnt[10]_GND_44_o_LessThan_1_o> created at line 51
+    Found 11-bit comparator greater for signal <lcd_hs> created at line 57
+    Found 11-bit comparator greater for signal <vcnt[10]_GND_44_o_LessThan_7_o> created at line 68
+    Found 11-bit comparator greater for signal <lcd_vs> created at line 74
+    Found 11-bit comparator lessequal for signal <n0019> created at line 81
+    Found 11-bit comparator greater for signal <hcnt[10]_GND_44_o_LessThan_14_o> created at line 81
+    Found 11-bit comparator lessequal for signal <n0023> created at line 82
+    Found 11-bit comparator greater for signal <vcnt[10]_GND_44_o_LessThan_16_o> created at line 82
+    Found 11-bit comparator lessequal for signal <n0030> created at line 91
+    Found 11-bit comparator greater for signal <hcnt[10]_GND_44_o_LessThan_19_o> created at line 91
+    Summary:
+	inferred   4 Adder/Subtractor(s).
+	inferred  22 D-type flip-flop(s).
+	inferred  10 Comparator(s).
+	inferred   5 Multiplexer(s).
+Unit <lcd_driver> synthesized.
+
+=========================================================================
+HDL Synthesis Report
+
+Macro Statistics
+# RAMs                                                 : 1
+ 256x16-bit single-port Read Only RAM                  : 1
+# Adders/Subtractors                                   : 19
+ 1-bit adder                                           : 1
+ 10-bit adder                                          : 1
+ 11-bit adder                                          : 3
+ 11-bit subtractor                                     : 2
+ 15-bit adder                                          : 1
+ 16-bit adder                                          : 1
+ 22-bit adder                                          : 2
+ 22-bit subtractor                                     : 2
+ 26-bit adder                                          : 1
+ 4-bit adder                                           : 1
+ 6-bit adder                                           : 1
+ 8-bit adder                                           : 2
+ 9-bit adder                                           : 1
+# Registers                                            : 67
+ 1-bit register                                        : 42
+ 10-bit register                                       : 1
+ 11-bit register                                       : 3
+ 12-bit register                                       : 1
+ 15-bit register                                       : 1
+ 16-bit register                                       : 4
+ 2-bit register                                        : 3
+ 22-bit register                                       : 2
+ 26-bit register                                       : 1
+ 4-bit register                                        : 1
+ 5-bit register                                        : 1
+ 6-bit register                                        : 1
+ 8-bit register                                        : 5
+ 9-bit register                                        : 1
+# Comparators                                          : 36
+ 11-bit comparator greater                             : 8
+ 11-bit comparator lessequal                           : 3
+ 15-bit comparator greater                             : 1
+ 16-bit comparator greater                             : 1
+ 22-bit comparator lessequal                           : 2
+ 26-bit comparator greater                             : 1
+ 4-bit comparator lessequal                            : 1
+ 6-bit comparator lessequal                            : 12
+ 8-bit comparator greater                              : 1
+ 8-bit comparator lessequal                            : 1
+ 9-bit comparator greater                              : 3
+ 9-bit comparator lessequal                            : 2
+# Multiplexers                                         : 193
+ 1-bit 2-to-1 multiplexer                              : 124
+ 11-bit 2-to-1 multiplexer                             : 5
+ 12-bit 2-to-1 multiplexer                             : 14
+ 16-bit 2-to-1 multiplexer                             : 2
+ 2-bit 2-to-1 multiplexer                              : 14
+ 22-bit 2-to-1 multiplexer                             : 4
+ 26-bit 2-to-1 multiplexer                             : 2
+ 5-bit 2-to-1 multiplexer                              : 15
+ 6-bit 2-to-1 multiplexer                              : 1
+ 8-bit 2-to-1 multiplexer                              : 11
+ 9-bit 2-to-1 multiplexer                              : 1
+# Tristates                                            : 17
+ 1-bit tristate buffer                                 : 17
+# FSMs                                                 : 5
+
+=========================================================================
+
+=========================================================================
+*                       Advanced HDL Synthesis                          *
+=========================================================================
+
+Reading core <ipcore_dir/wrfifo.ngc>.
+Reading core <ipcore_dir/rdfifo.ngc>.
+Loading core <wrfifo> for timing and area information for instance <u_wrfifo>.
+Loading core <rdfifo> for timing and area information for instance <u_rdfifo>.
+
+Synthesizing (advanced) Unit <CMOS_Capture>.
+The following registers are absorbed into counter <byte_state>: 1 register on signal <byte_state>.
+The following registers are absorbed into counter <Frame_Cont>: 1 register on signal <Frame_Cont>.
+Unit <CMOS_Capture> synthesized (advanced).
+
+Synthesizing (advanced) Unit <I2C_AV_Config>.
+The following registers are absorbed into counter <mI2C_CLK_DIV>: 1 register on signal <mI2C_CLK_DIV>.
+The following registers are absorbed into counter <LUT_INDEX>: 1 register on signal <LUT_INDEX>.
+Unit <I2C_AV_Config> synthesized (advanced).
+
+Synthesizing (advanced) Unit <I2C_Controller>.
+The following registers are absorbed into counter <SD_COUNTER>: 1 register on signal <SD_COUNTER>.
+Unit <I2C_Controller> synthesized (advanced).
+
+Synthesizing (advanced) Unit <I2C_OV7670_RGB565_Config>.
+INFO:Xst:3218 - HDL ADVISOR - The RAM <Mram_LUT_DATA> will be implemented on LUTs either because you have described an asynchronous read or because of currently unsupported block RAM features. If you have described an asynchronous read, making it synchronous would allow you to take advantage of available block RAM resources, for optimized device usage and improved timings. Please refer to your documentation for coding guidelines.
+    -----------------------------------------------------------------------
+    | ram_type           | Distributed                         |          |
+    -----------------------------------------------------------------------
+    | Port A                                                              |
+    |     aspect ratio   | 256-word x 16-bit                   |          |
+    |     weA            | connected to signal <GND>           | high     |
+    |     addrA          | connected to signal <LUT_INDEX>     |          |
+    |     diA            | connected to signal <GND>           |          |
+    |     doA            | connected to signal <LUT_DATA>      |          |
+    -----------------------------------------------------------------------
+Unit <I2C_OV7670_RGB565_Config> synthesized (advanced).
+
+Synthesizing (advanced) Unit <lcd_driver>.
+The following registers are absorbed into counter <hcnt>: 1 register on signal <hcnt>.
+The following registers are absorbed into counter <vcnt>: 1 register on signal <vcnt>.
+Unit <lcd_driver> synthesized (advanced).
+
+Synthesizing (advanced) Unit <sdram_ctrl>.
+The following registers are absorbed into counter <cnt_15us>: 1 register on signal <cnt_15us>.
+The following registers are absorbed into counter <cnt_clk_r>: 1 register on signal <cnt_clk_r>.
+The following registers are absorbed into counter <cnt_200us>: 1 register on signal <cnt_200us>.
+Unit <sdram_ctrl> synthesized (advanced).
+
+Synthesizing (advanced) Unit <system_ctrl>.
+The following registers are absorbed into counter <delay_cnt>: 1 register on signal <delay_cnt>.
+Unit <system_ctrl> synthesized (advanced).
+
+=========================================================================
+Advanced HDL Synthesis Report
+
+Macro Statistics
+# RAMs                                                 : 1
+ 256x16-bit single-port distributed Read Only RAM      : 1
+# Adders/Subtractors                                   : 8
+ 11-bit subtractor                                     : 2
+ 22-bit adder                                          : 2
+ 22-bit subtractor                                     : 2
+ 26-bit adder                                          : 1
+ 8-bit adder                                           : 1
+# Counters                                             : 11
+ 1-bit up counter                                      : 1
+ 10-bit up counter                                     : 1
+ 11-bit up counter                                     : 3
+ 15-bit up counter                                     : 1
+ 16-bit up counter                                     : 1
+ 4-bit up counter                                      : 1
+ 6-bit up counter                                      : 1
+ 8-bit up counter                                      : 1
+ 9-bit up counter                                      : 1
+# Registers                                            : 214
+ Flip-Flops                                            : 214
+# Comparators                                          : 36
+ 11-bit comparator greater                             : 8
+ 11-bit comparator lessequal                           : 3
+ 15-bit comparator greater                             : 1
+ 16-bit comparator greater                             : 1
+ 22-bit comparator lessequal                           : 2
+ 26-bit comparator greater                             : 1
+ 4-bit comparator lessequal                            : 1
+ 6-bit comparator lessequal                            : 12
+ 8-bit comparator greater                              : 1
+ 8-bit comparator lessequal                            : 1
+ 9-bit comparator greater                              : 3
+ 9-bit comparator lessequal                            : 2
+# Multiplexers                                         : 186
+ 1-bit 2-to-1 multiplexer                              : 123
+ 11-bit 2-to-1 multiplexer                             : 2
+ 12-bit 2-to-1 multiplexer                             : 14
+ 16-bit 2-to-1 multiplexer                             : 1
+ 2-bit 2-to-1 multiplexer                              : 14
+ 22-bit 2-to-1 multiplexer                             : 4
+ 26-bit 2-to-1 multiplexer                             : 2
+ 5-bit 2-to-1 multiplexer                              : 15
+ 8-bit 2-to-1 multiplexer                              : 11
+# FSMs                                                 : 5
+
+=========================================================================
+
+=========================================================================
+*                         Low Level Synthesis                           *
+=========================================================================
+Analyzing FSM <MFsm> for best encoding.
+Optimizing FSM <u_sdram_vga_top/u_sdram_2fifo_top/u_sdramtop/module_001/FSM_1> on signal <init_state_r[1:4]> with user encoding.
+-------------------
+ State | Encoding
+-------------------
+ 0000  | 0000
+ 0001  | 0001
+ 0010  | 0010
+ 0011  | 0011
+ 0100  | 0100
+ 0101  | 0101
+ 0110  | 0110
+ 0111  | 0111
+ 1000  | 1000
+ 1001  | 1001
+-------------------
+Analyzing FSM <MFsm> for best encoding.
+Optimizing FSM <u_sdram_vga_top/u_sdram_2fifo_top/u_sdramtop/module_001/FSM_2> on signal <work_state_r[1:4]> with user encoding.
+-------------------
+ State | Encoding
+-------------------
+ 0000  | 0000
+ 0001  | 0001
+ 1010  | 1010
+ 0010  | 0010
+ 0111  | 0111
+ 0011  | 0011
+ 0100  | 0100
+ 0101  | 0101
+ 0110  | unreached
+ 1000  | 1000
+ 1001  | 1001
+ 1011  | 1011
+-------------------
+Analyzing FSM <MFsm> for best encoding.
+Optimizing FSM <u_sdram_vga_top/u_sdbank_switch/FSM_3> on signal <state_write[1:3]> with user encoding.
+-------------------
+ State | Encoding
+-------------------
+ 000   | 000
+ 001   | 001
+ 010   | 010
+ 011   | 011
+ 100   | 100
+-------------------
+Analyzing FSM <MFsm> for best encoding.
+Optimizing FSM <u_sdram_vga_top/u_sdbank_switch/FSM_4> on signal <state_read[1:3]> with user encoding.
+-------------------
+ State | Encoding
+-------------------
+ 000   | 000
+ 001   | 001
+ 010   | 010
+ 011   | 011
+ 100   | 100
+-------------------
+Analyzing FSM <MFsm> for best encoding.
+Optimizing FSM <u_I2C_AV_Config/FSM_0> on signal <mSetup_ST[1:2]> with user encoding.
+-------------------
+ State | Encoding
+-------------------
+ 00    | 00
+ 01    | 01
+ 10    | 10
+-------------------
+WARNING:Xst:1710 - FF/Latch <CMOS_FPS_DATA_7> (without init value) has a constant value of 0 in block <CMOS_Capture>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <sdram_wraddr_0> (without init value) has a constant value of 0 in block <dcfifo_ctrl>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <sdram_wraddr_1> (without init value) has a constant value of 0 in block <dcfifo_ctrl>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <sdram_wraddr_2> (without init value) has a constant value of 0 in block <dcfifo_ctrl>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <sdram_wraddr_3> (without init value) has a constant value of 0 in block <dcfifo_ctrl>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <sdram_wraddr_4> (without init value) has a constant value of 0 in block <dcfifo_ctrl>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <sdram_wraddr_5> (without init value) has a constant value of 0 in block <dcfifo_ctrl>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <sdram_wraddr_6> (without init value) has a constant value of 0 in block <dcfifo_ctrl>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <sdram_wraddr_7> (without init value) has a constant value of 0 in block <dcfifo_ctrl>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <sdram_rdaddr_0> (without init value) has a constant value of 0 in block <dcfifo_ctrl>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <sdram_rdaddr_1> (without init value) has a constant value of 0 in block <dcfifo_ctrl>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <sdram_rdaddr_2> (without init value) has a constant value of 0 in block <dcfifo_ctrl>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <sdram_rdaddr_3> (without init value) has a constant value of 0 in block <dcfifo_ctrl>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <sdram_rdaddr_4> (without init value) has a constant value of 0 in block <dcfifo_ctrl>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <sdram_rdaddr_5> (without init value) has a constant value of 0 in block <dcfifo_ctrl>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <sdram_rdaddr_6> (without init value) has a constant value of 0 in block <dcfifo_ctrl>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <sdram_rdaddr_7> (without init value) has a constant value of 0 in block <dcfifo_ctrl>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:2677 - Node <u_I2C_AV_Config/u_I2C_Controller/I2C_RDATA_7> of sequential type is unconnected in block <sdram_ov7670_vga>.
+WARNING:Xst:2677 - Node <u_I2C_AV_Config/u_I2C_Controller/I2C_RDATA_6> of sequential type is unconnected in block <sdram_ov7670_vga>.
+WARNING:Xst:2677 - Node <u_I2C_AV_Config/u_I2C_Controller/I2C_RDATA_5> of sequential type is unconnected in block <sdram_ov7670_vga>.
+WARNING:Xst:2677 - Node <u_I2C_AV_Config/u_I2C_Controller/I2C_RDATA_4> of sequential type is unconnected in block <sdram_ov7670_vga>.
+WARNING:Xst:2677 - Node <u_I2C_AV_Config/u_I2C_Controller/I2C_RDATA_3> of sequential type is unconnected in block <sdram_ov7670_vga>.
+WARNING:Xst:2677 - Node <u_I2C_AV_Config/u_I2C_Controller/I2C_RDATA_2> of sequential type is unconnected in block <sdram_ov7670_vga>.
+WARNING:Xst:2677 - Node <u_I2C_AV_Config/u_I2C_Controller/I2C_RDATA_1> of sequential type is unconnected in block <sdram_ov7670_vga>.
+WARNING:Xst:2677 - Node <u_I2C_AV_Config/u_I2C_Controller/I2C_RDATA_0> of sequential type is unconnected in block <sdram_ov7670_vga>.
+
+Optimizing unit <sdram_ov7670_vga> ...
+
+Optimizing unit <CMOS_Capture> ...
+
+Optimizing unit <system_ctrl> ...
+
+Optimizing unit <dcfifo_ctrl> ...
+
+Optimizing unit <sdram_cmd> ...
+
+Optimizing unit <sdram_ctrl> ...
+
+Optimizing unit <lcd_driver> ...
+
+Optimizing unit <sdbank_switch> ...
+WARNING:Xst:2677 - Node <u_CMOS_Capture/CMOS_FPS_DATA_6> of sequential type is unconnected in block <sdram_ov7670_vga>.
+WARNING:Xst:2677 - Node <u_CMOS_Capture/CMOS_FPS_DATA_5> of sequential type is unconnected in block <sdram_ov7670_vga>.
+WARNING:Xst:2677 - Node <u_CMOS_Capture/CMOS_FPS_DATA_4> of sequential type is unconnected in block <sdram_ov7670_vga>.
+WARNING:Xst:2677 - Node <u_CMOS_Capture/CMOS_FPS_DATA_3> of sequential type is unconnected in block <sdram_ov7670_vga>.
+WARNING:Xst:2677 - Node <u_CMOS_Capture/CMOS_FPS_DATA_2> of sequential type is unconnected in block <sdram_ov7670_vga>.
+WARNING:Xst:2677 - Node <u_CMOS_Capture/CMOS_FPS_DATA_1> of sequential type is unconnected in block <sdram_ov7670_vga>.
+WARNING:Xst:2677 - Node <u_CMOS_Capture/CMOS_FPS_DATA_0> of sequential type is unconnected in block <sdram_ov7670_vga>.
+WARNING:Xst:2677 - Node <u_CMOS_Capture/fps_data_7> of sequential type is unconnected in block <sdram_ov7670_vga>.
+WARNING:Xst:2677 - Node <u_CMOS_Capture/fps_data_6> of sequential type is unconnected in block <sdram_ov7670_vga>.
+WARNING:Xst:2677 - Node <u_CMOS_Capture/fps_data_5> of sequential type is unconnected in block <sdram_ov7670_vga>.
+WARNING:Xst:2677 - Node <u_CMOS_Capture/fps_data_4> of sequential type is unconnected in block <sdram_ov7670_vga>.
+WARNING:Xst:2677 - Node <u_CMOS_Capture/fps_data_3> of sequential type is unconnected in block <sdram_ov7670_vga>.
+WARNING:Xst:2677 - Node <u_CMOS_Capture/fps_data_2> of sequential type is unconnected in block <sdram_ov7670_vga>.
+WARNING:Xst:2677 - Node <u_CMOS_Capture/fps_data_1> of sequential type is unconnected in block <sdram_ov7670_vga>.
+WARNING:Xst:2677 - Node <u_CMOS_Capture/fps_data_0> of sequential type is unconnected in block <sdram_ov7670_vga>.
+WARNING:Xst:2677 - Node <u_CMOS_Capture/delay_cnt_25> of sequential type is unconnected in block <sdram_ov7670_vga>.
+WARNING:Xst:2677 - Node <u_CMOS_Capture/delay_cnt_24> of sequential type is unconnected in block <sdram_ov7670_vga>.
+WARNING:Xst:2677 - Node <u_CMOS_Capture/delay_cnt_23> of sequential type is unconnected in block <sdram_ov7670_vga>.
+WARNING:Xst:2677 - Node <u_CMOS_Capture/delay_cnt_22> of sequential type is unconnected in block <sdram_ov7670_vga>.
+WARNING:Xst:2677 - Node <u_CMOS_Capture/delay_cnt_21> of sequential type is unconnected in block <sdram_ov7670_vga>.
+WARNING:Xst:2677 - Node <u_CMOS_Capture/delay_cnt_20> of sequential type is unconnected in block <sdram_ov7670_vga>.
+WARNING:Xst:2677 - Node <u_CMOS_Capture/delay_cnt_19> of sequential type is unconnected in block <sdram_ov7670_vga>.
+WARNING:Xst:2677 - Node <u_CMOS_Capture/delay_cnt_18> of sequential type is unconnected in block <sdram_ov7670_vga>.
+WARNING:Xst:2677 - Node <u_CMOS_Capture/delay_cnt_17> of sequential type is unconnected in block <sdram_ov7670_vga>.
+WARNING:Xst:2677 - Node <u_CMOS_Capture/delay_cnt_16> of sequential type is unconnected in block <sdram_ov7670_vga>.
+WARNING:Xst:2677 - Node <u_CMOS_Capture/delay_cnt_15> of sequential type is unconnected in block <sdram_ov7670_vga>.
+WARNING:Xst:2677 - Node <u_CMOS_Capture/delay_cnt_14> of sequential type is unconnected in block <sdram_ov7670_vga>.
+WARNING:Xst:2677 - Node <u_CMOS_Capture/delay_cnt_13> of sequential type is unconnected in block <sdram_ov7670_vga>.
+WARNING:Xst:2677 - Node <u_CMOS_Capture/delay_cnt_12> of sequential type is unconnected in block <sdram_ov7670_vga>.
+WARNING:Xst:2677 - Node <u_CMOS_Capture/delay_cnt_11> of sequential type is unconnected in block <sdram_ov7670_vga>.
+WARNING:Xst:2677 - Node <u_CMOS_Capture/delay_cnt_10> of sequential type is unconnected in block <sdram_ov7670_vga>.
+WARNING:Xst:2677 - Node <u_CMOS_Capture/delay_cnt_9> of sequential type is unconnected in block <sdram_ov7670_vga>.
+WARNING:Xst:2677 - Node <u_CMOS_Capture/delay_cnt_8> of sequential type is unconnected in block <sdram_ov7670_vga>.
+WARNING:Xst:2677 - Node <u_CMOS_Capture/delay_cnt_7> of sequential type is unconnected in block <sdram_ov7670_vga>.
+WARNING:Xst:2677 - Node <u_CMOS_Capture/delay_cnt_6> of sequential type is unconnected in block <sdram_ov7670_vga>.
+WARNING:Xst:2677 - Node <u_CMOS_Capture/delay_cnt_5> of sequential type is unconnected in block <sdram_ov7670_vga>.
+WARNING:Xst:2677 - Node <u_CMOS_Capture/delay_cnt_4> of sequential type is unconnected in block <sdram_ov7670_vga>.
+WARNING:Xst:2677 - Node <u_CMOS_Capture/delay_cnt_3> of sequential type is unconnected in block <sdram_ov7670_vga>.
+WARNING:Xst:2677 - Node <u_CMOS_Capture/delay_cnt_2> of sequential type is unconnected in block <sdram_ov7670_vga>.
+WARNING:Xst:2677 - Node <u_CMOS_Capture/delay_cnt_1> of sequential type is unconnected in block <sdram_ov7670_vga>.
+WARNING:Xst:2677 - Node <u_CMOS_Capture/delay_cnt_0> of sequential type is unconnected in block <sdram_ov7670_vga>.
+WARNING:Xst:2677 - Node <u_CMOS_Capture/fps_state> of sequential type is unconnected in block <sdram_ov7670_vga>.
+WARNING:Xst:1710 - FF/Latch <u_I2C_AV_Config/mI2C_CLK_DIV_15> (without init value) has a constant value of 0 in block <sdram_ov7670_vga>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <u_I2C_AV_Config/mI2C_CLK_DIV_14> (without init value) has a constant value of 0 in block <sdram_ov7670_vga>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <u_I2C_AV_Config/mI2C_CLK_DIV_13> (without init value) has a constant value of 0 in block <sdram_ov7670_vga>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <u_I2C_AV_Config/mI2C_CLK_DIV_12> (without init value) has a constant value of 0 in block <sdram_ov7670_vga>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <u_I2C_AV_Config/mI2C_CLK_DIV_11> (without init value) has a constant value of 0 in block <sdram_ov7670_vga>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <u_sdram_vga_top/u_lcd_top/u_lcd_driver/vcnt_10> (without init value) has a constant value of 0 in block <sdram_ov7670_vga>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <u_sdram_vga_top/u_lcd_top/u_lcd_driver/hcnt_10> (without init value) has a constant value of 0 in block <sdram_ov7670_vga>. This FF/Latch will be trimmed during the optimization process.
+
+Mapping all equations...
+Building and optimizing final netlist ...
+Found area constraint ratio of 100 (+ 5) on block sdram_ov7670_vga, actual ratio is 15.
+INFO:Xst:2260 - The FF/Latch <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/gras.rsts/ram_empty_i> in Unit <u_sdram_vga_top/u_sdram_2fifo_top/u_dcfifo_ctrl/u_wrfifo> is equivalent to the following FF/Latch : <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/gras.rsts/ram_empty_fb_i> 
+INFO:Xst:2260 - The FF/Latch <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.wr_rst_reg_1> in Unit <u_sdram_vga_top/u_sdram_2fifo_top/u_dcfifo_ctrl/u_wrfifo> is equivalent to the following FF/Latch : <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.wr_rst_reg_0> 
+INFO:Xst:2260 - The FF/Latch <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.rd_rst_reg_2> in Unit <u_sdram_vga_top/u_sdram_2fifo_top/u_dcfifo_ctrl/u_wrfifo> is equivalent to the following 2 FFs/Latches : <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.rd_rst_reg_1> <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.rd_rst_reg_0> 
+INFO:Xst:2260 - The FF/Latch <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/gwas.wsts/ram_full_i> in Unit <u_sdram_vga_top/u_sdram_2fifo_top/u_dcfifo_ctrl/u_wrfifo> is equivalent to the following FF/Latch : <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/gwas.wsts/ram_full_fb_i> 
+INFO:Xst:2260 - The FF/Latch <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/rpntr/gc0.count_d1_1> in Unit <u_sdram_vga_top/u_sdram_2fifo_top/u_dcfifo_ctrl/u_rdfifo> is equivalent to the following FF/Latch : <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/rpntr/gc0.count_d1_1_1> 
+INFO:Xst:2260 - The FF/Latch <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/rpntr/gc0.count_d1_2> in Unit <u_sdram_vga_top/u_sdram_2fifo_top/u_dcfifo_ctrl/u_rdfifo> is equivalent to the following FF/Latch : <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/rpntr/gc0.count_d1_2_1> 
+INFO:Xst:2260 - The FF/Latch <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/gras.rsts/ram_empty_i> in Unit <u_sdram_vga_top/u_sdram_2fifo_top/u_dcfifo_ctrl/u_rdfifo> is equivalent to the following FF/Latch : <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/gras.rsts/ram_empty_fb_i> 
+INFO:Xst:2260 - The FF/Latch <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/gwas.wsts/ram_full_i> in Unit <u_sdram_vga_top/u_sdram_2fifo_top/u_dcfifo_ctrl/u_rdfifo> is equivalent to the following FF/Latch : <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/gwas.wsts/ram_full_fb_i> 
+INFO:Xst:2260 - The FF/Latch <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/rpntr/gc0.count_d1_0> in Unit <u_sdram_vga_top/u_sdram_2fifo_top/u_dcfifo_ctrl/u_rdfifo> is equivalent to the following FF/Latch : <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/rpntr/gc0.count_d1_0_1> 
+INFO:Xst:2260 - The FF/Latch <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/rpntr/gc0.count_d1_3> in Unit <u_sdram_vga_top/u_sdram_2fifo_top/u_dcfifo_ctrl/u_rdfifo> is equivalent to the following FF/Latch : <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/rpntr/gc0.count_d1_3_1> 
+INFO:Xst:2260 - The FF/Latch <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/rpntr/gc0.count_d1_4> in Unit <u_sdram_vga_top/u_sdram_2fifo_top/u_dcfifo_ctrl/u_rdfifo> is equivalent to the following FF/Latch : <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/rpntr/gc0.count_d1_4_1> 
+INFO:Xst:2260 - The FF/Latch <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/rpntr/gc0.count_d1_5> in Unit <u_sdram_vga_top/u_sdram_2fifo_top/u_dcfifo_ctrl/u_rdfifo> is equivalent to the following FF/Latch : <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/rpntr/gc0.count_d1_5_1> 
+INFO:Xst:2260 - The FF/Latch <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.wr_rst_reg_1> in Unit <u_sdram_vga_top/u_sdram_2fifo_top/u_dcfifo_ctrl/u_rdfifo> is equivalent to the following FF/Latch : <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.wr_rst_reg_0> 
+INFO:Xst:2260 - The FF/Latch <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.rd_rst_reg_2> in Unit <u_sdram_vga_top/u_sdram_2fifo_top/u_dcfifo_ctrl/u_rdfifo> is equivalent to the following 2 FFs/Latches : <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.rd_rst_reg_1> <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.rd_rst_reg_0> 
+INFO:Xst:2260 - The FF/Latch <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/gras.rsts/ram_empty_i> in Unit <u_sdram_vga_top/u_sdram_2fifo_top/u_dcfifo_ctrl/u_wrfifo> is equivalent to the following FF/Latch : <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/gras.rsts/ram_empty_fb_i> 
+INFO:Xst:2260 - The FF/Latch <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.wr_rst_reg_1> in Unit <u_sdram_vga_top/u_sdram_2fifo_top/u_dcfifo_ctrl/u_wrfifo> is equivalent to the following FF/Latch : <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.wr_rst_reg_0> 
+INFO:Xst:2260 - The FF/Latch <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.rd_rst_reg_2> in Unit <u_sdram_vga_top/u_sdram_2fifo_top/u_dcfifo_ctrl/u_wrfifo> is equivalent to the following 2 FFs/Latches : <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.rd_rst_reg_1> <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.rd_rst_reg_0> 
+INFO:Xst:2260 - The FF/Latch <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/gwas.wsts/ram_full_i> in Unit <u_sdram_vga_top/u_sdram_2fifo_top/u_dcfifo_ctrl/u_wrfifo> is equivalent to the following FF/Latch : <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/gwas.wsts/ram_full_fb_i> 
+INFO:Xst:2260 - The FF/Latch <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/rpntr/gc0.count_d1_1> in Unit <u_sdram_vga_top/u_sdram_2fifo_top/u_dcfifo_ctrl/u_rdfifo> is equivalent to the following FF/Latch : <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/rpntr/gc0.count_d1_1_1> 
+INFO:Xst:2260 - The FF/Latch <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/rpntr/gc0.count_d1_2> in Unit <u_sdram_vga_top/u_sdram_2fifo_top/u_dcfifo_ctrl/u_rdfifo> is equivalent to the following FF/Latch : <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/rpntr/gc0.count_d1_2_1> 
+INFO:Xst:2260 - The FF/Latch <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/gras.rsts/ram_empty_i> in Unit <u_sdram_vga_top/u_sdram_2fifo_top/u_dcfifo_ctrl/u_rdfifo> is equivalent to the following FF/Latch : <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/gras.rsts/ram_empty_fb_i> 
+INFO:Xst:2260 - The FF/Latch <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/gwas.wsts/ram_full_i> in Unit <u_sdram_vga_top/u_sdram_2fifo_top/u_dcfifo_ctrl/u_rdfifo> is equivalent to the following FF/Latch : <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/gwas.wsts/ram_full_fb_i> 
+INFO:Xst:2260 - The FF/Latch <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/rpntr/gc0.count_d1_0> in Unit <u_sdram_vga_top/u_sdram_2fifo_top/u_dcfifo_ctrl/u_rdfifo> is equivalent to the following FF/Latch : <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/rpntr/gc0.count_d1_0_1> 
+INFO:Xst:2260 - The FF/Latch <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/rpntr/gc0.count_d1_3> in Unit <u_sdram_vga_top/u_sdram_2fifo_top/u_dcfifo_ctrl/u_rdfifo> is equivalent to the following FF/Latch : <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/rpntr/gc0.count_d1_3_1> 
+INFO:Xst:2260 - The FF/Latch <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/rpntr/gc0.count_d1_4> in Unit <u_sdram_vga_top/u_sdram_2fifo_top/u_dcfifo_ctrl/u_rdfifo> is equivalent to the following FF/Latch : <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/rpntr/gc0.count_d1_4_1> 
+INFO:Xst:2260 - The FF/Latch <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/rpntr/gc0.count_d1_5> in Unit <u_sdram_vga_top/u_sdram_2fifo_top/u_dcfifo_ctrl/u_rdfifo> is equivalent to the following FF/Latch : <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/rpntr/gc0.count_d1_5_1> 
+INFO:Xst:2260 - The FF/Latch <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.wr_rst_reg_1> in Unit <u_sdram_vga_top/u_sdram_2fifo_top/u_dcfifo_ctrl/u_rdfifo> is equivalent to the following FF/Latch : <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.wr_rst_reg_0> 
+INFO:Xst:2260 - The FF/Latch <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.rd_rst_reg_2> in Unit <u_sdram_vga_top/u_sdram_2fifo_top/u_dcfifo_ctrl/u_rdfifo> is equivalent to the following 2 FFs/Latches : <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.rd_rst_reg_1> <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.rd_rst_reg_0> 
+
+Final Macro Processing ...
+
+=========================================================================
+Final Register Report
+
+Macro Statistics
+# Registers                                            : 258
+ Flip-Flops                                            : 258
+
+=========================================================================
+
+=========================================================================
+*                           Partition Report                            *
+=========================================================================
+
+Partition Implementation Status
+-------------------------------
+
+  No Partitions were found in this design.
+
+-------------------------------
+
+=========================================================================
+*                            Design Summary                             *
+=========================================================================
+
+Top Level Output File Name         : sdram_ov7670_vga.ngc
+
+Primitive and Black Box Usage:
+------------------------------
+# BELS                             : 1183
+#      GND                         : 4
+#      INV                         : 23
+#      LUT1                        : 56
+#      LUT2                        : 126
+#      LUT3                        : 118
+#      LUT4                        : 79
+#      LUT5                        : 94
+#      LUT6                        : 286
+#      MUXCY                       : 174
+#      MUXF7                       : 57
+#      MUXF8                       : 15
+#      VCC                         : 3
+#      XORCY                       : 148
+# FlipFlops/Latches                : 582
+#      FD                          : 8
+#      FDC                         : 280
+#      FDC_1                       : 7
+#      FDCE                        : 219
+#      FDCE_1                      : 4
+#      FDP                         : 47
+#      FDPE                        : 12
+#      FDPE_1                      : 2
+#      FDSE                        : 1
+#      ODDR2                       : 2
+# RAMS                             : 49
+#      RAM64M                      : 40
+#      RAM64X1D                    : 8
+#      RAMB8BWER                   : 1
+# Clock Buffers                    : 6
+#      BUFG                        : 5
+#      BUFGP                       : 1
+# IO Buffers                       : 72
+#      IBUF                        : 11
+#      IBUFG                       : 1
+#      IOBUF                       : 17
+#      OBUF                        : 43
+# DCMs                             : 1
+#      DCM_SP                      : 1
+
+Device utilization summary:
+---------------------------
+
+Selected Device : 6slx9ftg256-2 
+
+
+Slice Logic Utilization: 
+ Number of Slice Registers:             582  out of  11440     5%  
+ Number of Slice LUTs:                  958  out of   5720    16%  
+    Number used as Logic:               782  out of   5720    13%  
+    Number used as Memory:              176  out of   1440    12%  
+       Number used as RAM:              176
+
+Slice Logic Distribution: 
+ Number of LUT Flip Flop pairs used:   1203
+   Number with an unused Flip Flop:     621  out of   1203    51%  
+   Number with an unused LUT:           245  out of   1203    20%  
+   Number of fully used LUT-FF pairs:   337  out of   1203    28%  
+   Number of unique control sets:        63
+
+IO Utilization: 
+ Number of IOs:                          73
+ Number of bonded IOBs:                  73  out of    186    39%  
+
+Specific Feature Utilization:
+ Number of Block RAM/FIFO:                1  out of     32     3%  
+    Number using Block RAM only:          1
+ Number of BUFG/BUFGCTRLs:                6  out of     16    37%  
+
+---------------------------
+Partition Resource Summary:
+---------------------------
+
+  No Partitions were found in this design.
+
+---------------------------
+
+
+=========================================================================
+Timing Report
+
+NOTE: THESE TIMING NUMBERS ARE ONLY A SYNTHESIS ESTIMATE.
+      FOR ACCURATE TIMING INFORMATION PLEASE REFER TO THE TRACE REPORT
+      GENERATED AFTER PLACE-and-ROUTE.
+
+Clock Information:
+------------------
+-----------------------------------+------------------------+-------+
+Clock Signal                       | Clock buffer(FF name)  | Load  |
+-----------------------------------+------------------------+-------+
+CLOCK                              | DCM_SP:CLK2X           | 353   |
+CLOCK                              | DCM_SP:CLKDV           | 167   |
+CMOS_PCLK                          | BUFGP                  | 114   |
+-----------------------------------+------------------------+-------+
+
+Asynchronous Control Signals Information:
+----------------------------------------
+No asynchronous control signals found in this design
+
+Timing Summary:
+---------------
+Speed Grade: -2
+
+   Minimum period: 16.336ns (Maximum Frequency: 61.214MHz)
+   Minimum input arrival time before clock: 4.324ns
+   Maximum output required time after clock: 9.644ns
+   Maximum combinational path delay: No path found
+
+Timing Details:
+---------------
+All values displayed in nanoseconds (ns)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'CLOCK'
+  Clock period: 16.336ns (frequency: 61.214MHz)
+  Total number of paths / destination ports: 18969 / 1587
+-------------------------------------------------------------------------
+Delay:               4.084ns (Levels of Logic = 3)
+  Source:            u_sdram_vga_top/u_sdbank_switch/rd_bank_0 (FF)
+  Destination:       u_sdram_vga_top/u_sdram_2fifo_top/u_dcfifo_ctrl/sdram_rdaddr_21 (FF)
+  Source Clock:      CLOCK falling 2.0X
+  Destination Clock: CLOCK rising 2.0X
+
+  Data Path: u_sdram_vga_top/u_sdbank_switch/rd_bank_0 to u_sdram_vga_top/u_sdram_2fifo_top/u_dcfifo_ctrl/sdram_rdaddr_21
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDPE_1:C->Q           3   0.525   0.874  u_sdram_vga_top/u_sdbank_switch/rd_bank_0 (u_sdram_vga_top/u_sdbank_switch/rd_bank_0)
+     LUT5:I3->O           14   0.250   1.127  u_sdram_vga_top/u_sdram_2fifo_top/u_dcfifo_ctrl/sdram_rdaddr[21]_INV_143_o21 (u_sdram_vga_top/u_sdram_2fifo_top/u_dcfifo_ctrl/sdram_rdaddr[21]_INV_143_o)
+     LUT6:I5->O            2   0.254   0.726  u_sdram_vga_top/u_sdram_2fifo_top/u_dcfifo_ctrl/_n0106_inv1 (u_sdram_vga_top/u_sdram_2fifo_top/u_dcfifo_ctrl/_n0106_inv)
+     LUT6:I5->O            1   0.254   0.000  u_sdram_vga_top/u_sdram_2fifo_top/u_dcfifo_ctrl/sdram_rdaddr_21_rstpot (u_sdram_vga_top/u_sdram_2fifo_top/u_dcfifo_ctrl/sdram_rdaddr_21_rstpot)
+     FDC:D                     0.074          u_sdram_vga_top/u_sdram_2fifo_top/u_dcfifo_ctrl/sdram_rdaddr_21
+    ----------------------------------------
+    Total                      4.084ns (1.357ns logic, 2.727ns route)
+                                       (33.2% logic, 66.8% route)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'CMOS_PCLK'
+  Clock period: 3.455ns (frequency: 289.436MHz)
+  Total number of paths / destination ports: 558 / 238
+-------------------------------------------------------------------------
+Delay:               3.455ns (Levels of Logic = 7)
+  Source:            u_sdram_vga_top/u_sdram_2fifo_top/u_dcfifo_ctrl/u_wrfifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/rd_pntr_bin_1 (FF)
+  Destination:       u_sdram_vga_top/u_sdram_2fifo_top/u_dcfifo_ctrl/u_wrfifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/gwas.wsts/ram_full_i (FF)
+  Source Clock:      CMOS_PCLK rising
+  Destination Clock: CMOS_PCLK rising
+
+  Data Path: u_sdram_vga_top/u_sdram_2fifo_top/u_dcfifo_ctrl/u_wrfifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/rd_pntr_bin_1 to u_sdram_vga_top/u_sdram_2fifo_top/u_dcfifo_ctrl/u_wrfifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/gwas.wsts/ram_full_i
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDC:C->Q              3   0.525   1.042  U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/rd_pntr_bin_1 (U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/rd_pntr_bin<1>)
+     LUT4:I0->O            1   0.254   0.000  U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/gwas.wsts/c1/v1<0>1 (U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/gwas.wsts/c1/v1<0>)
+     MUXCY:S->O            1   0.215   0.000  U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/gwas.wsts/c1/gmux.gm[0].gm1.m1 (U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/gwas.wsts/c1/gmux.carrynet<0>)
+     MUXCY:CI->O           1   0.023   0.000  U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/gwas.wsts/c1/gmux.gm[1].gms.ms (U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/gwas.wsts/c1/gmux.carrynet<1>)
+     MUXCY:CI->O           1   0.023   0.000  U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/gwas.wsts/c1/gmux.gm[2].gms.ms (U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/gwas.wsts/c1/gmux.carrynet<2>)
+     MUXCY:CI->O           1   0.023   0.000  U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/gwas.wsts/c1/gmux.gm[3].gms.ms (U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/gwas.wsts/c1/gmux.carrynet<3>)
+     MUXCY:CI->O           1   0.235   0.790  U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/gwas.wsts/c1/gmux.gm[4].gms.ms (U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/gwas.wsts/comp1)
+     LUT5:I3->O            2   0.250   0.000  U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/gwas.wsts/Mmux_comp1_GND_196_o_MUX_13_o11 (U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/gwas.wsts/comp1_GND_196_o_MUX_13_o)
+     FDP:D                     0.074          U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/gwas.wsts/ram_full_fb_i
+    ----------------------------------------
+    Total                      3.455ns (1.623ns logic, 1.832ns route)
+                                       (47.0% logic, 53.0% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'CLOCK'
+  Total number of paths / destination ports: 33 / 33
+-------------------------------------------------------------------------
+Offset:              3.761ns (Levels of Logic = 2)
+  Source:            rst_n (PAD)
+  Destination:       u_system_ctrl/delay_cnt_9 (FF)
+  Destination Clock: CLOCK rising 0.5X
+
+  Data Path: rst_n to u_system_ctrl/delay_cnt_9
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O             1   1.328   0.681  rst_n_IBUF (rst_n_IBUF)
+     INV:I->O             11   0.255   1.038  u_system_ctrl/rst_n_inv1_INV_0 (u_system_ctrl/rst_n_inv)
+     FDCE:CLR                  0.459          u_system_ctrl/delay_done
+    ----------------------------------------
+    Total                      3.761ns (2.042ns logic, 1.719ns route)
+                                       (54.3% logic, 45.7% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'CMOS_PCLK'
+  Total number of paths / destination ports: 89 / 48
+-------------------------------------------------------------------------
+Offset:              4.324ns (Levels of Logic = 2)
+  Source:            CMOS_VSYNC (PAD)
+  Destination:       u_CMOS_Capture/CMOS_oDATA_15 (FF)
+  Destination Clock: CMOS_PCLK rising
+
+  Data Path: CMOS_VSYNC to u_CMOS_Capture/CMOS_oDATA_15
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O            15   1.328   1.263  CMOS_VSYNC_IBUF (CMOS_VSYNC_IBUF)
+     LUT3:I1->O           16   0.250   1.181  u_CMOS_Capture/Mcount_byte_state_lut<0>1 (u_CMOS_Capture/Mcount_byte_state_lut<0>)
+     FDCE:CE                   0.302          u_CMOS_Capture/CMOS_oDATA_0
+    ----------------------------------------
+    Total                      4.324ns (1.880ns logic, 2.444ns route)
+                                       (43.5% logic, 56.5% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'CLOCK'
+  Total number of paths / destination ports: 395 / 55
+-------------------------------------------------------------------------
+Offset:              9.644ns (Levels of Logic = 5)
+  Source:            u_I2C_AV_Config/mI2C_WR (FF)
+  Destination:       CMOS_SCLK (PAD)
+  Source Clock:      CLOCK rising 0.5X
+
+  Data Path: u_I2C_AV_Config/mI2C_WR to CMOS_SCLK
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDCE:C->Q            37   0.525   2.034  u_I2C_AV_Config/mI2C_WR (u_I2C_AV_Config/mI2C_WR)
+     LUT6:I1->O            1   0.254   0.682  u_I2C_AV_Config/u_I2C_Controller/Mmux_I2C_SCLK32 (u_I2C_AV_Config/u_I2C_Controller/Mmux_I2C_SCLK31)
+     LUT2:I1->O            1   0.254   1.112  u_I2C_AV_Config/u_I2C_Controller/Mmux_I2C_SCLK33 (u_I2C_AV_Config/u_I2C_Controller/Mmux_I2C_SCLK32)
+     LUT6:I1->O            1   0.254   0.682  u_I2C_AV_Config/u_I2C_Controller/Mmux_I2C_SCLK35 (u_I2C_AV_Config/u_I2C_Controller/Mmux_I2C_SCLK34)
+     LUT6:I5->O            1   0.254   0.681  u_I2C_AV_Config/u_I2C_Controller/Mmux_I2C_SCLK313 (CMOS_SCLK_OBUF)
+     OBUF:I->O                 2.912          CMOS_SCLK_OBUF (CMOS_SCLK)
+    ----------------------------------------
+    Total                      9.644ns (4.453ns logic, 5.191ns route)
+                                       (46.2% logic, 53.8% route)
+
+=========================================================================
+
+Cross Clock Domains Report:
+--------------------------
+
+Clock to Setup on destination clock CLOCK
+---------------+---------+---------+---------+---------+
+               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------+---------+---------+---------+---------+
+CLOCK          |    8.588|    4.084|    3.176|         |
+CMOS_PCLK      |    1.280|         |         |         |
+---------------+---------+---------+---------+---------+
+
+Clock to Setup on destination clock CMOS_PCLK
+---------------+---------+---------+---------+---------+
+               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------+---------+---------+---------+---------+
+CLOCK          |    4.770|         |         |         |
+CMOS_PCLK      |    3.455|         |         |         |
+---------------+---------+---------+---------+---------+
+
+=========================================================================
+
+
+Total REAL time to Xst completion: 10.00 secs
+Total CPU time to Xst completion: 9.26 secs
+ 
+--> 
+
+Total memory usage is 267560 kilobytes
+
+Number of errors   :    0 (   0 filtered)
+Number of warnings :   93 (   0 filtered)
+Number of infos    :   51 (   0 filtered)
+

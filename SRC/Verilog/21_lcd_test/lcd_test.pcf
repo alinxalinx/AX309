@@ -1,0 +1,70 @@
+//! **************************************************************************
+// Written by: Map P.20131013 on Fri May 26 11:29:35 2017
+//! **************************************************************************
+
+SCHEMATIC START;
+COMP "reset_n" LOCATE = SITE "L3" LEVEL 1;
+COMP "lcd_b<0>" LOCATE = SITE "R9" LEVEL 1;
+COMP "lcd_b<1>" LOCATE = SITE "T12" LEVEL 1;
+COMP "lcd_b<2>" LOCATE = SITE "L8" LEVEL 1;
+COMP "lcd_b<3>" LOCATE = SITE "T9" LEVEL 1;
+COMP "lcd_b<4>" LOCATE = SITE "R7" LEVEL 1;
+COMP "lcd_b<5>" LOCATE = SITE "T7" LEVEL 1;
+COMP "lcd_b<6>" LOCATE = SITE "T5" LEVEL 1;
+COMP "lcd_b<7>" LOCATE = SITE "T6" LEVEL 1;
+COMP "lcd_hsync" LOCATE = SITE "R5" LEVEL 1;
+COMP "clk_50M" LOCATE = SITE "T8" LEVEL 1;
+COMP "lcd_r<0>" LOCATE = SITE "K16" LEVEL 1;
+COMP "lcd_r<1>" LOCATE = SITE "J16" LEVEL 1;
+COMP "lcd_r<2>" LOCATE = SITE "L16" LEVEL 1;
+COMP "key1" LOCATE = SITE "C3" LEVEL 1;
+COMP "lcd_r<3>" LOCATE = SITE "K15" LEVEL 1;
+COMP "lcd_dclk" LOCATE = SITE "T4" LEVEL 1;
+COMP "lcd_r<4>" LOCATE = SITE "M15" LEVEL 1;
+COMP "lcd_r<5>" LOCATE = SITE "M16" LEVEL 1;
+COMP "lcd_vsync" LOCATE = SITE "R1" LEVEL 1;
+COMP "lcd_r<6>" LOCATE = SITE "P16" LEVEL 1;
+COMP "lcd_g<0>" LOCATE = SITE "R16" LEVEL 1;
+COMP "lcd_r<7>" LOCATE = SITE "N16" LEVEL 1;
+COMP "lcd_g<1>" LOCATE = SITE "P15" LEVEL 1;
+COMP "lcd_g<2>" LOCATE = SITE "T15" LEVEL 1;
+COMP "lcd_g<3>" LOCATE = SITE "R15" LEVEL 1;
+COMP "lcd_g<4>" LOCATE = SITE "T14" LEVEL 1;
+COMP "lcd_g<5>" LOCATE = SITE "R14" LEVEL 1;
+COMP "lcd_g<6>" LOCATE = SITE "R12" LEVEL 1;
+COMP "lcd_de" LOCATE = SITE "R2" LEVEL 1;
+COMP "lcd_g<7>" LOCATE = SITE "T13" LEVEL 1;
+PIN pll_inst/clkout1_buf_pin<1> = BEL "pll_inst/clkout1_buf" PINNAME O;
+PIN "pll_inst/clkout1_buf_pin<1>" CLOCK_DEDICATED_ROUTE = FALSE;
+TIMEGRP pll_inst_clkfx = BEL "grid_data_1_0" BEL "grid_data_2_0" BEL
+        "lcd_g_reg_0" BEL "lcd_g_reg_1" BEL "lcd_g_reg_2" BEL "lcd_g_reg_3"
+        BEL "lcd_g_reg_4" BEL "lcd_g_reg_5" BEL "lcd_g_reg_6" BEL
+        "lcd_g_reg_7" BEL "lcd_r_reg_0" BEL "lcd_r_reg_1" BEL "lcd_r_reg_2"
+        BEL "lcd_r_reg_3" BEL "lcd_r_reg_4" BEL "lcd_r_reg_5" BEL
+        "lcd_r_reg_6" BEL "lcd_r_reg_7" BEL "lcd_b_reg_0" BEL "lcd_b_reg_1"
+        BEL "lcd_b_reg_2" BEL "lcd_b_reg_3" BEL "lcd_b_reg_4" BEL
+        "lcd_b_reg_5" BEL "lcd_b_reg_6" BEL "lcd_b_reg_7" BEL "y_cnt_1" BEL
+        "y_cnt_0" BEL "y_cnt_2" BEL "y_cnt_3" BEL "y_cnt_6" BEL "y_cnt_4" BEL
+        "y_cnt_5" BEL "y_cnt_9" BEL "y_cnt_7" BEL "y_cnt_8" BEL
+        "key1_counter_0" BEL "key1_counter_1" BEL "key1_counter_2" BEL
+        "key1_counter_3" BEL "key1_counter_4" BEL "key1_counter_5" BEL
+        "key1_counter_6" BEL "key1_counter_7" BEL "key1_counter_8" BEL
+        "key1_counter_9" BEL "key1_counter_10" BEL "key1_counter_11" BEL
+        "key1_counter_12" BEL "key1_counter_13" BEL "key1_counter_14" BEL
+        "key1_counter_15" BEL "x_cnt_1" BEL "x_cnt_4" BEL "x_cnt_2" BEL
+        "x_cnt_3" BEL "x_cnt_7" BEL "x_cnt_5" BEL "x_cnt_6" BEL "x_cnt_10" BEL
+        "x_cnt_8" BEL "x_cnt_9" BEL "lcd_dis_mode_0" BEL "lcd_dis_mode_1" BEL
+        "lcd_dis_mode_2" BEL "lcd_dis_mode_3" BEL "x_cnt_0" BEL
+        "pll_inst/clkout1_buf" BEL "vsync_r" BEL "vsync_de" BEL "hsync_de" BEL
+        "bar_data_0" BEL "bar_data_8" BEL "bar_data_16" BEL "hsync_r" BEL
+        "lcd_dclk";
+PIN SP6_BUFIO_INSERT_ML_BUFIO2_0_pins<0> = BEL "SP6_BUFIO_INSERT_ML_BUFIO2_0"
+        PINNAME DIVCLK;
+PIN pll_inst/dcm_sp_inst_pins<3> = BEL "pll_inst/dcm_sp_inst" PINNAME CLKIN;
+TIMEGRP sys_clk_pin = PIN "SP6_BUFIO_INSERT_ML_BUFIO2_0_pins<0>" PIN
+        "pll_inst/dcm_sp_inst_pins<3>";
+TS_sys_clk_pin = PERIOD TIMEGRP "sys_clk_pin" 50 MHz HIGH 50%;
+TS_pll_inst_clkfx = PERIOD TIMEGRP "pll_inst_clkfx" TS_sys_clk_pin * 0.18 HIGH
+        50%;
+SCHEMATIC END;
+

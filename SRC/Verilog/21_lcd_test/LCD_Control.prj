@@ -1,0 +1,2 @@
+verilog work "ipcore_dir/pll.v"
+verilog work "lcd_test.v"

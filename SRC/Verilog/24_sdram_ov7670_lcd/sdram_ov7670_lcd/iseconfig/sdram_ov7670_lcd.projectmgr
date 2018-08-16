@@ -1,0 +1,120 @@
+<?xml version='1.0' encoding='utf-8'?>
+<!--This is an ISE project configuration file.-->
+<!--It holds project specific layout data for the projectmgr plugin.-->
+<!--Copyright (c) 1995-2009 Xilinx, Inc.  All rights reserved.-->
+<Project version="2" owner="projectmgr" name="sdram_ov7670_lcd" >
+   <!--This is an ISE project configuration file.-->
+   <ItemView engineview="SynthesisOnly" guiview="Source" compilemode="AutoCompile" >
+      <ClosedNodes>
+         <ClosedNodesVersion>2</ClosedNodesVersion>
+         <ClosedNode>/Automatic `includes</ClosedNode>
+         <ClosedNode>/I2C_AV_Config E:|Project|AX309|Verilog|20_sdram_ov7670_lcd|sdram_ov7670_lcd|rtl|cmos_i2c_ov7670|I2C_AV_Config.v</ClosedNode>
+         <ClosedNode>/sdram_ov7670_lcd E:|BaiduYunDownload|AX309.161028|AX309|09_VERILOG|24_sdram_ov7670_lcd|sdram_ov7670_lcd|rtl|sdram_ov7670_lcd.v/u_sdram_vga_top - sdram_vga_top/u_sdram_2fifo_top - sdram_2fifo_top</ClosedNode>
+         <ClosedNode>/sdram_ov7670_lcd E:|Project|AX309|Verilog|20_sdram_ov7670_lcd|sdram_ov7670_lcd|rtl|sdram_ov7670_lcd.v/u_I2C_AV_Config - I2C_AV_Config</ClosedNode>
+         <ClosedNode>/sdram_ov7670_lcd E:|Project|AX309|Verilog|20_sdram_ov7670_lcd|sdram_ov7670_lcd|rtl|sdram_ov7670_lcd.v/u_sdram_vga_top - sdram_vga_top/u_sdram_2fifo_top - sdram_2fifo_top/u_sdramtop - sdram_top</ClosedNode>
+         <ClosedNode>/sdram_ov7670_lcd E:|Project|AX309|Verilog|20_sdram_ov7670_lcd|sdram_ov7670_lcd|rtl|sdram_ov7670_vga.v/u_I2C_AV_Config - I2C_AV_Config</ClosedNode>
+         <ClosedNode>/sdram_ov7670_lcd E:|Project|AX309|Verilog|20_sdram_ov7670_lcd|sdram_ov7670_lcd|rtl|sdram_ov7670_vga.v/u_sdram_vga_top - sdram_vga_top/u_lcd_top - lcd_top</ClosedNode>
+         <ClosedNode>/sdram_ov7670_lcd E:|Project|AX309|Verilog|20_sdram_ov7670_lcd|sdram_ov7670_lcd|rtl|sdram_ov7670_vga.v/u_sdram_vga_top - sdram_vga_top/u_sdram_2fifo_top - sdram_2fifo_top/u_dcfifo_ctrl - dcfifo_ctrl</ClosedNode>
+         <ClosedNode>/sdram_ov7670_lcd E:|Project|AX309|Verilog|20_sdram_ov7670_lcd|sdram_ov7670_lcd|rtl|sdram_ov7670_vga.v/u_sdram_vga_top - sdram_vga_top/u_sdram_2fifo_top - sdram_2fifo_top/u_sdramtop - sdram_top</ClosedNode>
+         <ClosedNode>/sdram_ov7670_lcd E:|Project|AX309|Verilog|20_sdram_ov7670_lcd|sdram_ov7670_lcd|rtl|sdram_ov7670_vga.v/u_system_ctrl - system_ctrl</ClosedNode>
+         <ClosedNode>/sdram_ov7670_vga E:|Project|AX309|Verilog|20_sdram_ov7670_lcd|sdram_ov7670_lcd|rtl|sdram_ov7670_vga.v/u_I2C_AV_Config - I2C_AV_Config</ClosedNode>
+         <ClosedNode>/sdram_ov7670_vga E:|Project|AX309|Verilog|20_sdram_ov7670_lcd|sdram_ov7670_lcd|rtl|sdram_ov7670_vga.v/u_sdram_vga_top - sdram_vga_top</ClosedNode>
+         <ClosedNode>/sdram_ov7670_vga E:|Project|AX309|Verilog|20_sdram_ov7670_lcd|sdram_ov7670_lcd|rtl|sdram_ov7670_vga.v/u_system_ctrl - system_ctrl</ClosedNode>
+         <ClosedNode>/sdram_vga_top E:|Project|AX309|Verilog|20_sdram_ov7670_lcd|sdram_ov7670_lcd|rtl|sdram_vga_ip|sdram_vga_top.v</ClosedNode>
+         <ClosedNode>/system_ctrl E:|Project|AX309|Verilog|20_sdram_ov7670_lcd|sdram_ov7670_lcd|rtl|system_ctrl.v</ClosedNode>
+      </ClosedNodes>
+      <SelectedItems>
+         <SelectedItem>sdram_ov7670_lcd (E:/BaiduYunDownload/AX309.161028/AX309/09_VERILOG/24_sdram_ov7670_lcd/sdram_ov7670_lcd/rtl/sdram_ov7670_lcd.v)</SelectedItem>
+      </SelectedItems>
+      <ScrollbarPosition orientation="vertical" >0</ScrollbarPosition>
+      <ScrollbarPosition orientation="horizontal" >0</ScrollbarPosition>
+      <ViewHeaderState orientation="horizontal" >000000ff00000000000000010000000100000000000000000000000000000000020200000001000000010000006400000258000000020000000000000000000000000200000064ffffffff000000810000000300000002000002580000000100000003000000000000000100000003</ViewHeaderState>
+      <UserChangedColumnWidths orientation="horizontal" >true</UserChangedColumnWidths>
+      <CurrentItem>sdram_ov7670_lcd (E:/BaiduYunDownload/AX309.161028/AX309/09_VERILOG/24_sdram_ov7670_lcd/sdram_ov7670_lcd/rtl/sdram_ov7670_lcd.v)</CurrentItem>
+   </ItemView>
+   <ItemView engineview="SynthesisOnly" sourcetype="DESUT_VERILOG" guiview="Process" >
+      <ClosedNodes>
+         <ClosedNodesVersion>1</ClosedNodesVersion>
+         <ClosedNode>Configure Target Device</ClosedNode>
+         <ClosedNode>Design Utilities</ClosedNode>
+         <ClosedNode>Implement Design</ClosedNode>
+         <ClosedNode>Synthesize - XST</ClosedNode>
+         <ClosedNode>User Constraints</ClosedNode>
+      </ClosedNodes>
+      <SelectedItems>
+         <SelectedItem>Generate Programming File</SelectedItem>
+      </SelectedItems>
+      <ScrollbarPosition orientation="vertical" >0</ScrollbarPosition>
+      <ScrollbarPosition orientation="horizontal" >0</ScrollbarPosition>
+      <ViewHeaderState orientation="horizontal" >000000ff000000000000000100000001000000000000000000000000000000000000000000000000fc000000010000000100000000000000000000000064ffffffff000000810000000000000001000000fc0000000100000000</ViewHeaderState>
+      <UserChangedColumnWidths orientation="horizontal" >false</UserChangedColumnWidths>
+      <CurrentItem>Generate Programming File</CurrentItem>
+   </ItemView>
+   <ItemView guiview="File" >
+      <ClosedNodes>
+         <ClosedNodesVersion>1</ClosedNodesVersion>
+      </ClosedNodes>
+      <SelectedItems/>
+      <ScrollbarPosition orientation="vertical" >0</ScrollbarPosition>
+      <ScrollbarPosition orientation="horizontal" >0</ScrollbarPosition>
+      <ViewHeaderState orientation="horizontal" >000000ff00000000000000010000000000000000010000000000000000000000000000000000000391000000040101000100000000000000000000000064ffffffff000000810000000000000004000000b80000000100000000000000fc0000000100000000000000780000000100000000000001650000000100000000</ViewHeaderState>
+      <UserChangedColumnWidths orientation="horizontal" >false</UserChangedColumnWidths>
+      <CurrentItem>CMOS_Capture.v</CurrentItem>
+   </ItemView>
+   <ItemView guiview="Library" >
+      <ClosedNodes>
+         <ClosedNodesVersion>1</ClosedNodesVersion>
+         <ClosedNode>work</ClosedNode>
+      </ClosedNodes>
+      <SelectedItems/>
+      <ScrollbarPosition orientation="vertical" >0</ScrollbarPosition>
+      <ScrollbarPosition orientation="horizontal" >0</ScrollbarPosition>
+      <ViewHeaderState orientation="horizontal" >000000ff00000000000000010000000000000000010000000000000000000000000000000000000064000000010001000100000000000000000000000064ffffffff000000810000000000000001000000640000000100000000</ViewHeaderState>
+      <UserChangedColumnWidths orientation="horizontal" >false</UserChangedColumnWidths>
+      <CurrentItem>work</CurrentItem>
+   </ItemView>
+   <ItemView engineview="SynthesisOnly" sourcetype="" guiview="Process" >
+      <ClosedNodes>
+         <ClosedNodesVersion>1</ClosedNodesVersion>
+         <ClosedNode>Design Utilities</ClosedNode>
+      </ClosedNodes>
+      <SelectedItems>
+         <SelectedItem/>
+      </SelectedItems>
+      <ScrollbarPosition orientation="vertical" >0</ScrollbarPosition>
+      <ScrollbarPosition orientation="horizontal" >0</ScrollbarPosition>
+      <ViewHeaderState orientation="horizontal" >000000ff0000000000000001000000010000000000000000000000000000000000000000000000010c000000010000000100000000000000000000000064ffffffff0000008100000000000000010000010c0000000100000000</ViewHeaderState>
+      <UserChangedColumnWidths orientation="horizontal" >false</UserChangedColumnWidths>
+      <CurrentItem/>
+   </ItemView>
+   <ItemView engineview="SynthesisOnly" sourcetype="DESUT_UCF" guiview="Process" >
+      <ClosedNodes>
+         <ClosedNodesVersion>1</ClosedNodesVersion>
+         <ClosedNode>User Constraints</ClosedNode>
+      </ClosedNodes>
+      <SelectedItems>
+         <SelectedItem/>
+      </SelectedItems>
+      <ScrollbarPosition orientation="vertical" >0</ScrollbarPosition>
+      <ScrollbarPosition orientation="horizontal" >0</ScrollbarPosition>
+      <ViewHeaderState orientation="horizontal" >000000ff0000000000000001000000010000000000000000000000000000000000000000000000010c000000010000000100000000000000000000000064ffffffff0000008100000000000000010000010c0000000100000000</ViewHeaderState>
+      <UserChangedColumnWidths orientation="horizontal" >false</UserChangedColumnWidths>
+      <CurrentItem/>
+   </ItemView>
+   <ItemView engineview="SynthesisOnly" sourcetype="DESUT_XCO" guiview="Process" >
+      <ClosedNodes>
+         <ClosedNodesVersion>1</ClosedNodesVersion>
+         <ClosedNode>CORE Generator</ClosedNode>
+      </ClosedNodes>
+      <SelectedItems>
+         <SelectedItem/>
+      </SelectedItems>
+      <ScrollbarPosition orientation="vertical" >0</ScrollbarPosition>
+      <ScrollbarPosition orientation="horizontal" >0</ScrollbarPosition>
+      <ViewHeaderState orientation="horizontal" >000000ff000000000000000100000001000000000000000000000000000000000000000000000001da000000010000000100000000000000000000000064ffffffff000000810000000000000001000001da0000000100000000</ViewHeaderState>
+      <UserChangedColumnWidths orientation="horizontal" >false</UserChangedColumnWidths>
+      <CurrentItem/>
+   </ItemView>
+   <SourceProcessView>000000ff0000000000000002000001c7000000e401000000040100000002</SourceProcessView>
+   <CurrentView>Implementation</CurrentView>
+</Project>

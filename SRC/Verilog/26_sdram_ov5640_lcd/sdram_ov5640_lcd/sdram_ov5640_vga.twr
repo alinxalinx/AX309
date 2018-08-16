@@ -1,0 +1,1096 @@
+--------------------------------------------------------------------------------
+Release 14.7 Trace  (nt64)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+
+C:\Xilinx\14.7\ISE_DS\ISE\bin\nt64\unwrapped\trce.exe -intstyle ise -v 3 -s 2
+-n 3 -fastpaths -xml sdram_ov5640_vga.twx sdram_ov5640_vga.ncd -o
+sdram_ov5640_vga.twr sdram_ov5640_vga.pcf -ucf sdram_ov5640_vga.ucf
+
+Design file:              sdram_ov5640_vga.ncd
+Physical constraint file: sdram_ov5640_vga.pcf
+Device,package,speed:     xc6slx9,ftg256,C,-2 (PRODUCTION 1.23 2013-10-13)
+Report level:             verbose report
+
+Environment Variable      Effect 
+--------------------      ------ 
+NONE                      No environment variables were set
+--------------------------------------------------------------------------------
+
+INFO:Timing:3412 - To improve timing, see the Timing Closure User Guide (UG612).
+INFO:Timing:2752 - To get complete path coverage, use the unconstrained paths 
+   option. All paths that are not constrained will be reported in the 
+   unconstrained paths section(s) of the report.
+INFO:Timing:3339 - The clock-to-out numbers in this timing report are based on 
+   a 50 Ohm transmission line loading model.  For the details of this model, 
+   and for more information on accounting for different loading conditions, 
+   please see the device datasheet.
+
+================================================================================
+Timing constraint: TS_sys_clk_pin = PERIOD TIMEGRP "sys_clk_pin" 50 MHz HIGH 
+50%;
+For more information, see Period Analysis in the Timing Closure User Guide (UG612).
+
+ 0 paths analyzed, 0 endpoints analyzed, 0 failing endpoints
+ 0 timing errors detected. (0 component switching limit errors)
+ Minimum period is   8.000ns.
+--------------------------------------------------------------------------------
+
+Component Switching Limit Checks: TS_sys_clk_pin = PERIOD TIMEGRP "sys_clk_pin" 50 MHz HIGH 50%;
+--------------------------------------------------------------------------------
+Slack: 7.010ns (period - min period limit)
+  Period: 10.000ns
+  Min period limit: 2.990ns (334.448MHz) (Tdcmper_CLKOUT)
+  Physical resource: u_system_ctrl/u_sdram_pll/dcm_sp_inst/CLK2X
+  Logical resource: u_system_ctrl/u_sdram_pll/dcm_sp_inst/CLK2X
+  Location pin: DCM_X0Y1.CLK2X
+  Clock network: u_system_ctrl/u_sdram_pll/clk2x
+--------------------------------------------------------------------------------
+Slack: 12.000ns (period - (min low pulse limit / (low pulse / period)))
+  Period: 20.000ns
+  Low pulse: 10.000ns
+  Low pulse limit: 4.000ns (Tdcmpw_CLKIN_50_100)
+  Physical resource: u_system_ctrl/u_sdram_pll/dcm_sp_inst/CLKIN
+  Logical resource: u_system_ctrl/u_sdram_pll/dcm_sp_inst/CLKIN
+  Location pin: DCM_X0Y1.CLKIN
+  Clock network: u_system_ctrl/u_sdram_pll/dcm_sp_inst_ML_NEW_DIVCLK
+--------------------------------------------------------------------------------
+Slack: 12.000ns (period - (min high pulse limit / (high pulse / period)))
+  Period: 20.000ns
+  High pulse: 10.000ns
+  High pulse limit: 4.000ns (Tdcmpw_CLKIN_50_100)
+  Physical resource: u_system_ctrl/u_sdram_pll/dcm_sp_inst/CLKIN
+  Logical resource: u_system_ctrl/u_sdram_pll/dcm_sp_inst/CLKIN
+  Location pin: DCM_X0Y1.CLKIN
+  Clock network: u_system_ctrl/u_sdram_pll/dcm_sp_inst_ML_NEW_DIVCLK
+--------------------------------------------------------------------------------
+
+================================================================================
+Timing constraint: TS_u_system_ctrl_u_sdram_pll_clk2x = PERIOD TIMEGRP         
+"u_system_ctrl_u_sdram_pll_clk2x" TS_sys_clk_pin * 2 HIGH 50%;
+For more information, see Period Analysis in the Timing Closure User Guide (UG612).
+
+ 13713 paths analyzed, 2670 endpoints analyzed, 15 failing endpoints
+ 15 timing errors detected. (15 setup errors, 0 hold errors, 0 component switching limit errors)
+ Minimum period is  79.454ns.
+--------------------------------------------------------------------------------
+
+Paths for end point u_sdram_vga_top/u_sdram_2fifo_top/u_dcfifo_ctrl/data_valid_r (SLICE_X9Y10.C6), 5 paths
+--------------------------------------------------------------------------------
+Slack (setup path):     -2.674ns (requirement - (data path - clock path skew + uncertainty))
+  Source:               u_sdram_vga_top/u_lcd_top/u_lcd_driver/vcnt_5 (FF)
+  Destination:          u_sdram_vga_top/u_sdram_2fifo_top/u_dcfifo_ctrl/data_valid_r (FF)
+  Requirement:          0.385ns
+  Data Path Delay:      1.852ns (Levels of Logic = 2)(Component delays alone exceeds constraint)
+  Clock Path Skew:      -0.698ns (1.771 - 2.469)
+  Source Clock:         clk_vga rising at 184.615ns
+  Destination Clock:    clk_ref falling at 185.000ns
+  Clock Uncertainty:    0.509ns
+
+  Clock Uncertainty:          0.509ns  ((TSJ^2 + TIJ^2)^1/2 + DJ) / 2 + PE
+    Total System Jitter (TSJ):  0.070ns
+    Total Input Jitter (TIJ):   0.000ns
+    Discrete Jitter (DJ):       0.507ns
+    Phase Error (PE):           0.220ns
+
+  Maximum Data Path at Slow Process Corner: u_sdram_vga_top/u_lcd_top/u_lcd_driver/vcnt_5 to u_sdram_vga_top/u_sdram_2fifo_top/u_dcfifo_ctrl/data_valid_r
+    Location             Delay type         Delay(ns)  Physical Resource
+                                                       Logical Resource(s)
+    -------------------------------------------------  -------------------
+    SLICE_X8Y10.BQ       Tcko                  0.525   u_sdram_vga_top/u_lcd_top/u_lcd_driver/vcnt<7>
+                                                       u_sdram_vga_top/u_lcd_top/u_lcd_driver/vcnt_5
+    SLICE_X9Y10.D2       net (fanout=5)        0.552   u_sdram_vga_top/u_lcd_top/u_lcd_driver/vcnt<5>
+    SLICE_X9Y10.D        Tilo                  0.259   u_sdram_vga_top/u_sdram_2fifo_top/u_dcfifo_ctrl/data_valid_r
+                                                       u_sdram_vga_top/u_lcd_top/u_lcd_driver/lcd_vs1_SW0
+    SLICE_X9Y10.C6       net (fanout=1)        0.143   N52
+    SLICE_X9Y10.CLK      Tas                   0.373   u_sdram_vga_top/u_sdram_2fifo_top/u_dcfifo_ctrl/data_valid_r
+                                                       u_sdram_vga_top/u_lcd_top/u_lcd_driver/lcd_vs1
+                                                       u_sdram_vga_top/u_sdram_2fifo_top/u_dcfifo_ctrl/data_valid_r
+    -------------------------------------------------  ---------------------------
+    Total                                      1.852ns (1.157ns logic, 0.695ns route)
+                                                       (62.5% logic, 37.5% route)
+
+--------------------------------------------------------------------------------
+Slack (setup path):     -2.622ns (requirement - (data path - clock path skew + uncertainty))
+  Source:               u_sdram_vga_top/u_lcd_top/u_lcd_driver/vcnt_9 (FF)
+  Destination:          u_sdram_vga_top/u_sdram_2fifo_top/u_dcfifo_ctrl/data_valid_r (FF)
+  Requirement:          0.385ns
+  Data Path Delay:      1.797ns (Levels of Logic = 2)(Component delays alone exceeds constraint)
+  Clock Path Skew:      -0.701ns (1.771 - 2.472)
+  Source Clock:         clk_vga rising at 184.615ns
+  Destination Clock:    clk_ref falling at 185.000ns
+  Clock Uncertainty:    0.509ns
+
+  Clock Uncertainty:          0.509ns  ((TSJ^2 + TIJ^2)^1/2 + DJ) / 2 + PE
+    Total System Jitter (TSJ):  0.070ns
+    Total Input Jitter (TIJ):   0.000ns
+    Discrete Jitter (DJ):       0.507ns
+    Phase Error (PE):           0.220ns
+
+  Maximum Data Path at Slow Process Corner: u_sdram_vga_top/u_lcd_top/u_lcd_driver/vcnt_9 to u_sdram_vga_top/u_sdram_2fifo_top/u_dcfifo_ctrl/data_valid_r
+    Location             Delay type         Delay(ns)  Physical Resource
+                                                       Logical Resource(s)
+    -------------------------------------------------  -------------------
+    SLICE_X8Y11.BQ       Tcko                  0.525   u_sdram_vga_top/u_lcd_top/u_lcd_driver/vcnt<10>
+                                                       u_sdram_vga_top/u_lcd_top/u_lcd_driver/vcnt_9
+    SLICE_X9Y10.D4       net (fanout=4)        0.497   u_sdram_vga_top/u_lcd_top/u_lcd_driver/vcnt<9>
+    SLICE_X9Y10.D        Tilo                  0.259   u_sdram_vga_top/u_sdram_2fifo_top/u_dcfifo_ctrl/data_valid_r
+                                                       u_sdram_vga_top/u_lcd_top/u_lcd_driver/lcd_vs1_SW0
+    SLICE_X9Y10.C6       net (fanout=1)        0.143   N52
+    SLICE_X9Y10.CLK      Tas                   0.373   u_sdram_vga_top/u_sdram_2fifo_top/u_dcfifo_ctrl/data_valid_r
+                                                       u_sdram_vga_top/u_lcd_top/u_lcd_driver/lcd_vs1
+                                                       u_sdram_vga_top/u_sdram_2fifo_top/u_dcfifo_ctrl/data_valid_r
+    -------------------------------------------------  ---------------------------
+    Total                                      1.797ns (1.157ns logic, 0.640ns route)
+                                                       (64.4% logic, 35.6% route)
+
+--------------------------------------------------------------------------------
+Slack (setup path):     -2.537ns (requirement - (data path - clock path skew + uncertainty))
+  Source:               u_sdram_vga_top/u_lcd_top/u_lcd_driver/vcnt_4 (FF)
+  Destination:          u_sdram_vga_top/u_sdram_2fifo_top/u_dcfifo_ctrl/data_valid_r (FF)
+  Requirement:          0.385ns
+  Data Path Delay:      1.715ns (Levels of Logic = 2)(Component delays alone exceeds constraint)
+  Clock Path Skew:      -0.698ns (1.771 - 2.469)
+  Source Clock:         clk_vga rising at 184.615ns
+  Destination Clock:    clk_ref falling at 185.000ns
+  Clock Uncertainty:    0.509ns
+
+  Clock Uncertainty:          0.509ns  ((TSJ^2 + TIJ^2)^1/2 + DJ) / 2 + PE
+    Total System Jitter (TSJ):  0.070ns
+    Total Input Jitter (TIJ):   0.000ns
+    Discrete Jitter (DJ):       0.507ns
+    Phase Error (PE):           0.220ns
+
+  Maximum Data Path at Slow Process Corner: u_sdram_vga_top/u_lcd_top/u_lcd_driver/vcnt_4 to u_sdram_vga_top/u_sdram_2fifo_top/u_dcfifo_ctrl/data_valid_r
+    Location             Delay type         Delay(ns)  Physical Resource
+                                                       Logical Resource(s)
+    -------------------------------------------------  -------------------
+    SLICE_X8Y10.AQ       Tcko                  0.525   u_sdram_vga_top/u_lcd_top/u_lcd_driver/vcnt<7>
+                                                       u_sdram_vga_top/u_lcd_top/u_lcd_driver/vcnt_4
+    SLICE_X9Y10.D3       net (fanout=5)        0.415   u_sdram_vga_top/u_lcd_top/u_lcd_driver/vcnt<4>
+    SLICE_X9Y10.D        Tilo                  0.259   u_sdram_vga_top/u_sdram_2fifo_top/u_dcfifo_ctrl/data_valid_r
+                                                       u_sdram_vga_top/u_lcd_top/u_lcd_driver/lcd_vs1_SW0
+    SLICE_X9Y10.C6       net (fanout=1)        0.143   N52
+    SLICE_X9Y10.CLK      Tas                   0.373   u_sdram_vga_top/u_sdram_2fifo_top/u_dcfifo_ctrl/data_valid_r
+                                                       u_sdram_vga_top/u_lcd_top/u_lcd_driver/lcd_vs1
+                                                       u_sdram_vga_top/u_sdram_2fifo_top/u_dcfifo_ctrl/data_valid_r
+    -------------------------------------------------  ---------------------------
+    Total                                      1.715ns (1.157ns logic, 0.558ns route)
+                                                       (67.5% logic, 32.5% route)
+
+--------------------------------------------------------------------------------
+
+Paths for end point u_sdram_vga_top/u_sdram_2fifo_top/u_dcfifo_ctrl/data_valid_r (SLICE_X9Y10.C1), 1 path
+--------------------------------------------------------------------------------
+Slack (setup path):     -2.628ns (requirement - (data path - clock path skew + uncertainty))
+  Source:               u_sdram_vga_top/u_lcd_top/u_lcd_driver/vcnt_1 (FF)
+  Destination:          u_sdram_vga_top/u_sdram_2fifo_top/u_dcfifo_ctrl/data_valid_r (FF)
+  Requirement:          0.385ns
+  Data Path Delay:      1.811ns (Levels of Logic = 1)(Component delays alone exceeds constraint)
+  Clock Path Skew:      -0.693ns (1.771 - 2.464)
+  Source Clock:         clk_vga rising at 184.615ns
+  Destination Clock:    clk_ref falling at 185.000ns
+  Clock Uncertainty:    0.509ns
+
+  Clock Uncertainty:          0.509ns  ((TSJ^2 + TIJ^2)^1/2 + DJ) / 2 + PE
+    Total System Jitter (TSJ):  0.070ns
+    Total Input Jitter (TIJ):   0.000ns
+    Discrete Jitter (DJ):       0.507ns
+    Phase Error (PE):           0.220ns
+
+  Maximum Data Path at Slow Process Corner: u_sdram_vga_top/u_lcd_top/u_lcd_driver/vcnt_1 to u_sdram_vga_top/u_sdram_2fifo_top/u_dcfifo_ctrl/data_valid_r
+    Location             Delay type         Delay(ns)  Physical Resource
+                                                       Logical Resource(s)
+    -------------------------------------------------  -------------------
+    SLICE_X8Y8.AQ        Tcko                  0.525   u_sdram_vga_top/u_lcd_top/u_lcd_driver/vcnt<2>
+                                                       u_sdram_vga_top/u_lcd_top/u_lcd_driver/vcnt_1
+    SLICE_X9Y10.C1       net (fanout=5)        0.913   u_sdram_vga_top/u_lcd_top/u_lcd_driver/vcnt<1>
+    SLICE_X9Y10.CLK      Tas                   0.373   u_sdram_vga_top/u_sdram_2fifo_top/u_dcfifo_ctrl/data_valid_r
+                                                       u_sdram_vga_top/u_lcd_top/u_lcd_driver/lcd_vs1
+                                                       u_sdram_vga_top/u_sdram_2fifo_top/u_dcfifo_ctrl/data_valid_r
+    -------------------------------------------------  ---------------------------
+    Total                                      1.811ns (0.898ns logic, 0.913ns route)
+                                                       (49.6% logic, 50.4% route)
+
+--------------------------------------------------------------------------------
+
+Paths for end point u_sdram_vga_top/u_sdram_2fifo_top/u_dcfifo_ctrl/data_valid_r (SLICE_X9Y10.C2), 1 path
+--------------------------------------------------------------------------------
+Slack (setup path):     -2.454ns (requirement - (data path - clock path skew + uncertainty))
+  Source:               u_sdram_vga_top/u_lcd_top/u_lcd_driver/vcnt_8 (FF)
+  Destination:          u_sdram_vga_top/u_sdram_2fifo_top/u_dcfifo_ctrl/data_valid_r (FF)
+  Requirement:          0.385ns
+  Data Path Delay:      1.629ns (Levels of Logic = 1)(Component delays alone exceeds constraint)
+  Clock Path Skew:      -0.701ns (1.771 - 2.472)
+  Source Clock:         clk_vga rising at 184.615ns
+  Destination Clock:    clk_ref falling at 185.000ns
+  Clock Uncertainty:    0.509ns
+
+  Clock Uncertainty:          0.509ns  ((TSJ^2 + TIJ^2)^1/2 + DJ) / 2 + PE
+    Total System Jitter (TSJ):  0.070ns
+    Total Input Jitter (TIJ):   0.000ns
+    Discrete Jitter (DJ):       0.507ns
+    Phase Error (PE):           0.220ns
+
+  Maximum Data Path at Slow Process Corner: u_sdram_vga_top/u_lcd_top/u_lcd_driver/vcnt_8 to u_sdram_vga_top/u_sdram_2fifo_top/u_dcfifo_ctrl/data_valid_r
+    Location             Delay type         Delay(ns)  Physical Resource
+                                                       Logical Resource(s)
+    -------------------------------------------------  -------------------
+    SLICE_X8Y11.AQ       Tcko                  0.525   u_sdram_vga_top/u_lcd_top/u_lcd_driver/vcnt<10>
+                                                       u_sdram_vga_top/u_lcd_top/u_lcd_driver/vcnt_8
+    SLICE_X9Y10.C2       net (fanout=5)        0.731   u_sdram_vga_top/u_lcd_top/u_lcd_driver/vcnt<8>
+    SLICE_X9Y10.CLK      Tas                   0.373   u_sdram_vga_top/u_sdram_2fifo_top/u_dcfifo_ctrl/data_valid_r
+                                                       u_sdram_vga_top/u_lcd_top/u_lcd_driver/lcd_vs1
+                                                       u_sdram_vga_top/u_sdram_2fifo_top/u_dcfifo_ctrl/data_valid_r
+    -------------------------------------------------  ---------------------------
+    Total                                      1.629ns (0.898ns logic, 0.731ns route)
+                                                       (55.1% logic, 44.9% route)
+
+--------------------------------------------------------------------------------
+
+Hold Paths: TS_u_system_ctrl_u_sdram_pll_clk2x = PERIOD TIMEGRP
+        "u_system_ctrl_u_sdram_pll_clk2x" TS_sys_clk_pin * 2 HIGH 50%;
+--------------------------------------------------------------------------------
+
+Paths for end point u_sdram_vga_top/u_sdram_2fifo_top/u_dcfifo_ctrl/u_rdfifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/gsync_stage[2].wr_stg_inst/Q_reg_3 (SLICE_X19Y33.DX), 1 path
+--------------------------------------------------------------------------------
+Slack (hold path):      0.399ns (requirement - (clock path skew + uncertainty - data path))
+  Source:               u_sdram_vga_top/u_sdram_2fifo_top/u_dcfifo_ctrl/u_rdfifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/gsync_stage[1].wr_stg_inst/Q_reg_3 (FF)
+  Destination:          u_sdram_vga_top/u_sdram_2fifo_top/u_dcfifo_ctrl/u_rdfifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/gsync_stage[2].wr_stg_inst/Q_reg_3 (FF)
+  Requirement:          0.000ns
+  Data Path Delay:      0.401ns (Levels of Logic = 0)
+  Clock Path Skew:      0.002ns (0.043 - 0.041)
+  Source Clock:         clk_ref rising at 10.000ns
+  Destination Clock:    clk_ref rising at 10.000ns
+  Clock Uncertainty:    0.000ns
+
+  Minimum Data Path at Fast Process Corner: u_sdram_vga_top/u_sdram_2fifo_top/u_dcfifo_ctrl/u_rdfifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/gsync_stage[1].wr_stg_inst/Q_reg_3 to u_sdram_vga_top/u_sdram_2fifo_top/u_dcfifo_ctrl/u_rdfifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/gsync_stage[2].wr_stg_inst/Q_reg_3
+    Location             Delay type         Delay(ns)  Physical Resource
+                                                       Logical Resource(s)
+    -------------------------------------------------  -------------------
+    SLICE_X18Y33.CQ      Tcko                  0.200   u_sdram_vga_top/u_sdram_2fifo_top/u_dcfifo_ctrl/u_rdfifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/gsync_stage[2].wr_stg_inst/D<7>
+                                                       u_sdram_vga_top/u_sdram_2fifo_top/u_dcfifo_ctrl/u_rdfifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/gsync_stage[1].wr_stg_inst/Q_reg_3
+    SLICE_X19Y33.DX      net (fanout=1)        0.142   u_sdram_vga_top/u_sdram_2fifo_top/u_dcfifo_ctrl/u_rdfifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/gsync_stage[2].wr_stg_inst/D<3>
+    SLICE_X19Y33.CLK     Tckdi       (-Th)    -0.059   u_sdram_vga_top/u_sdram_2fifo_top/u_dcfifo_ctrl/u_rdfifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/gsync_stage[2].wr_stg_inst/Q_reg<3>
+                                                       u_sdram_vga_top/u_sdram_2fifo_top/u_dcfifo_ctrl/u_rdfifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/gsync_stage[2].wr_stg_inst/Q_reg_3
+    -------------------------------------------------  ---------------------------
+    Total                                      0.401ns (0.259ns logic, 0.142ns route)
+                                                       (64.6% logic, 35.4% route)
+
+--------------------------------------------------------------------------------
+
+Paths for end point u_sdram_vga_top/u_sdram_2fifo_top/u_dcfifo_ctrl/u_wrfifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/gsync_stage[2].rd_stg_inst/Q_reg_2 (SLICE_X9Y56.C5), 1 path
+--------------------------------------------------------------------------------
+Slack (hold path):      0.405ns (requirement - (clock path skew + uncertainty - data path))
+  Source:               u_sdram_vga_top/u_sdram_2fifo_top/u_dcfifo_ctrl/u_wrfifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/gsync_stage[1].rd_stg_inst/Q_reg_2 (FF)
+  Destination:          u_sdram_vga_top/u_sdram_2fifo_top/u_dcfifo_ctrl/u_wrfifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/gsync_stage[2].rd_stg_inst/Q_reg_2 (FF)
+  Requirement:          0.000ns
+  Data Path Delay:      0.405ns (Levels of Logic = 1)
+  Clock Path Skew:      0.000ns
+  Source Clock:         clk_ref rising at 10.000ns
+  Destination Clock:    clk_ref rising at 10.000ns
+  Clock Uncertainty:    0.000ns
+
+  Minimum Data Path at Fast Process Corner: u_sdram_vga_top/u_sdram_2fifo_top/u_dcfifo_ctrl/u_wrfifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/gsync_stage[1].rd_stg_inst/Q_reg_2 to u_sdram_vga_top/u_sdram_2fifo_top/u_dcfifo_ctrl/u_wrfifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/gsync_stage[2].rd_stg_inst/Q_reg_2
+    Location             Delay type         Delay(ns)  Physical Resource
+                                                       Logical Resource(s)
+    -------------------------------------------------  -------------------
+    SLICE_X9Y56.CQ       Tcko                  0.198   u_sdram_vga_top/u_sdram_2fifo_top/u_dcfifo_ctrl/u_wrfifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/gsync_stage[2].rd_stg_inst/D<3>
+                                                       u_sdram_vga_top/u_sdram_2fifo_top/u_dcfifo_ctrl/u_wrfifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/gsync_stage[1].rd_stg_inst/Q_reg_2
+    SLICE_X9Y56.C5       net (fanout=1)        0.052   u_sdram_vga_top/u_sdram_2fifo_top/u_dcfifo_ctrl/u_wrfifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/gsync_stage[2].rd_stg_inst/D<2>
+    SLICE_X9Y56.CLK      Tah         (-Th)    -0.155   u_sdram_vga_top/u_sdram_2fifo_top/u_dcfifo_ctrl/u_wrfifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/gsync_stage[2].rd_stg_inst/D<3>
+                                                       u_sdram_vga_top/u_sdram_2fifo_top/u_dcfifo_ctrl/u_wrfifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/gsync_stage[2].rd_stg_inst/D<2>_rt
+                                                       u_sdram_vga_top/u_sdram_2fifo_top/u_dcfifo_ctrl/u_wrfifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/gsync_stage[2].rd_stg_inst/Q_reg_2
+    -------------------------------------------------  ---------------------------
+    Total                                      0.405ns (0.353ns logic, 0.052ns route)
+                                                       (87.2% logic, 12.8% route)
+
+--------------------------------------------------------------------------------
+
+Paths for end point u_sdram_vga_top/u_sdram_2fifo_top/u_dcfifo_ctrl/u_rdfifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/gsync_stage[2].wr_stg_inst/Q_reg_2 (SLICE_X19Y33.C5), 1 path
+--------------------------------------------------------------------------------
+Slack (hold path):      0.405ns (requirement - (clock path skew + uncertainty - data path))
+  Source:               u_sdram_vga_top/u_sdram_2fifo_top/u_dcfifo_ctrl/u_rdfifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/gsync_stage[1].wr_stg_inst/Q_reg_2 (FF)
+  Destination:          u_sdram_vga_top/u_sdram_2fifo_top/u_dcfifo_ctrl/u_rdfifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/gsync_stage[2].wr_stg_inst/Q_reg_2 (FF)
+  Requirement:          0.000ns
+  Data Path Delay:      0.405ns (Levels of Logic = 1)
+  Clock Path Skew:      0.000ns
+  Source Clock:         clk_ref rising at 10.000ns
+  Destination Clock:    clk_ref rising at 10.000ns
+  Clock Uncertainty:    0.000ns
+
+  Minimum Data Path at Fast Process Corner: u_sdram_vga_top/u_sdram_2fifo_top/u_dcfifo_ctrl/u_rdfifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/gsync_stage[1].wr_stg_inst/Q_reg_2 to u_sdram_vga_top/u_sdram_2fifo_top/u_dcfifo_ctrl/u_rdfifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/gsync_stage[2].wr_stg_inst/Q_reg_2
+    Location             Delay type         Delay(ns)  Physical Resource
+                                                       Logical Resource(s)
+    -------------------------------------------------  -------------------
+    SLICE_X19Y33.CQ      Tcko                  0.198   u_sdram_vga_top/u_sdram_2fifo_top/u_dcfifo_ctrl/u_rdfifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/gsync_stage[2].wr_stg_inst/Q_reg<3>
+                                                       u_sdram_vga_top/u_sdram_2fifo_top/u_dcfifo_ctrl/u_rdfifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/gsync_stage[1].wr_stg_inst/Q_reg_2
+    SLICE_X19Y33.C5      net (fanout=1)        0.052   u_sdram_vga_top/u_sdram_2fifo_top/u_dcfifo_ctrl/u_rdfifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/gsync_stage[2].wr_stg_inst/D<2>
+    SLICE_X19Y33.CLK     Tah         (-Th)    -0.155   u_sdram_vga_top/u_sdram_2fifo_top/u_dcfifo_ctrl/u_rdfifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/gsync_stage[2].wr_stg_inst/Q_reg<3>
+                                                       u_sdram_vga_top/u_sdram_2fifo_top/u_dcfifo_ctrl/u_rdfifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/gsync_stage[2].wr_stg_inst/D<2>_rt
+                                                       u_sdram_vga_top/u_sdram_2fifo_top/u_dcfifo_ctrl/u_rdfifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/gsync_stage[2].wr_stg_inst/Q_reg_2
+    -------------------------------------------------  ---------------------------
+    Total                                      0.405ns (0.353ns logic, 0.052ns route)
+                                                       (87.2% logic, 12.8% route)
+
+--------------------------------------------------------------------------------
+
+Component Switching Limit Checks: TS_u_system_ctrl_u_sdram_pll_clk2x = PERIOD TIMEGRP
+        "u_system_ctrl_u_sdram_pll_clk2x" TS_sys_clk_pin * 2 HIGH 50%;
+--------------------------------------------------------------------------------
+Slack: 6.430ns (period - min period limit)
+  Period: 10.000ns
+  Min period limit: 3.570ns (280.112MHz) (Trper_CLKB(Fmax))
+  Physical resource: u_sdram_vga_top/u_sdram_2fifo_top/u_dcfifo_ctrl/u_wrfifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gbm.gbmg.gbmga.ngecc.bmg/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/s6_noinit.ram/SDP.SIMPLE_PRIM9.ram/CLKBRDCLK
+  Logical resource: u_sdram_vga_top/u_sdram_2fifo_top/u_dcfifo_ctrl/u_wrfifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gbm.gbmg.gbmga.ngecc.bmg/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/s6_noinit.ram/SDP.SIMPLE_PRIM9.ram/CLKBRDCLK
+  Location pin: RAMB8_X0Y26.CLKBRDCLK
+  Clock network: clk_ref
+--------------------------------------------------------------------------------
+Slack: 7.334ns (period - min period limit)
+  Period: 10.000ns
+  Min period limit: 2.666ns (375.094MHz) (Tbcper_I)
+  Physical resource: u_system_ctrl/u_sdram_pll/clkout2_buf/I0
+  Logical resource: u_system_ctrl/u_sdram_pll/clkout2_buf/I0
+  Location pin: BUFGMUX_X3Y14.I0
+  Clock network: u_system_ctrl/u_sdram_pll/clk2x
+--------------------------------------------------------------------------------
+Slack: 7.334ns (period - min period limit)
+  Period: 10.000ns
+  Min period limit: 2.666ns (375.094MHz) (Tbcper_I)
+  Physical resource: u_system_ctrl/u_sdram_pll/clkout3_buf/I0
+  Logical resource: u_system_ctrl/u_sdram_pll/clkout3_buf/I0
+  Location pin: BUFGMUX_X2Y10.I0
+  Clock network: u_system_ctrl/u_sdram_pll/clk2x
+--------------------------------------------------------------------------------
+
+================================================================================
+Timing constraint: TS_u_system_ctrl_u_sdram_pll_clkfx = PERIOD TIMEGRP         
+"u_system_ctrl_u_sdram_pll_clkfx" TS_sys_clk_pin * 1.3 HIGH 50%;
+For more information, see Period Analysis in the Timing Closure User Guide (UG612).
+
+ 5250 paths analyzed, 594 endpoints analyzed, 160 failing endpoints
+ 160 timing errors detected. (160 setup errors, 0 hold errors, 0 component switching limit errors)
+ Minimum period is 139.337ns.
+--------------------------------------------------------------------------------
+
+Paths for end point u_sdram_vga_top/u_lcd_top/u_lcd_driver/vcnt_0 (SLICE_X8Y9.SR), 1 path
+--------------------------------------------------------------------------------
+Slack (setup path):     -3.440ns (requirement - (data path - clock path skew + uncertainty))
+  Source:               u_system_ctrl/delay_done (FF)
+  Destination:          u_sdram_vga_top/u_lcd_top/u_lcd_driver/vcnt_0 (FF)
+  Requirement:          0.769ns
+  Data Path Delay:      3.001ns (Levels of Logic = 1)(Component delays alone exceeds constraint)
+  Clock Path Skew:      -0.699ns (1.769 - 2.468)
+  Source Clock:         clk_ref rising at 30.000ns
+  Destination Clock:    clk_vga rising at 30.769ns
+  Clock Uncertainty:    0.509ns
+
+  Clock Uncertainty:          0.509ns  ((TSJ^2 + TIJ^2)^1/2 + DJ) / 2 + PE
+    Total System Jitter (TSJ):  0.070ns
+    Total Input Jitter (TIJ):   0.000ns
+    Discrete Jitter (DJ):       0.507ns
+    Phase Error (PE):           0.220ns
+
+  Maximum Data Path at Slow Process Corner: u_system_ctrl/delay_done to u_sdram_vga_top/u_lcd_top/u_lcd_driver/vcnt_0
+    Location             Delay type         Delay(ns)  Physical Resource
+                                                       Logical Resource(s)
+    -------------------------------------------------  -------------------
+    SLICE_X11Y10.DQ      Tcko                  0.430   u_system_ctrl/delay_done
+                                                       u_system_ctrl/delay_done
+    SLICE_X12Y6.D4       net (fanout=7)        1.024   u_system_ctrl/delay_done
+    SLICE_X12Y6.DMUX     Tilo                  0.326   u_sdram_vga_top/u_lcd_top/u_lcd_driver/hcnt<10>
+                                                       u_sdram_vga_top/u_sdram_2fifo_top/u_sdramtop/module_003/rst_n_inv1_1_INV_0
+    SLICE_X8Y9.SR        net (fanout=4)        1.042   u_sdram_vga_top/u_sdram_2fifo_top/u_sdramtop/module_003/rst_n_inv1
+    SLICE_X8Y9.CLK       Trck                  0.179   u_sdram_vga_top/u_lcd_top/u_lcd_driver/vcnt<0>
+                                                       u_sdram_vga_top/u_lcd_top/u_lcd_driver/vcnt_0
+    -------------------------------------------------  ---------------------------
+    Total                                      3.001ns (0.935ns logic, 2.066ns route)
+                                                       (31.2% logic, 68.8% route)
+
+--------------------------------------------------------------------------------
+
+Paths for end point u_sdram_vga_top/u_lcd_top/u_lcd_driver/hcnt_3 (SLICE_X12Y4.SR), 1 path
+--------------------------------------------------------------------------------
+Slack (setup path):     -3.097ns (requirement - (data path - clock path skew + uncertainty))
+  Source:               u_system_ctrl/delay_done (FF)
+  Destination:          u_sdram_vga_top/u_lcd_top/u_lcd_driver/hcnt_3 (FF)
+  Requirement:          0.769ns
+  Data Path Delay:      2.633ns (Levels of Logic = 1)(Component delays alone exceeds constraint)
+  Clock Path Skew:      -0.724ns (1.744 - 2.468)
+  Source Clock:         clk_ref rising at 30.000ns
+  Destination Clock:    clk_vga rising at 30.769ns
+  Clock Uncertainty:    0.509ns
+
+  Clock Uncertainty:          0.509ns  ((TSJ^2 + TIJ^2)^1/2 + DJ) / 2 + PE
+    Total System Jitter (TSJ):  0.070ns
+    Total Input Jitter (TIJ):   0.000ns
+    Discrete Jitter (DJ):       0.507ns
+    Phase Error (PE):           0.220ns
+
+  Maximum Data Path at Slow Process Corner: u_system_ctrl/delay_done to u_sdram_vga_top/u_lcd_top/u_lcd_driver/hcnt_3
+    Location             Delay type         Delay(ns)  Physical Resource
+                                                       Logical Resource(s)
+    -------------------------------------------------  -------------------
+    SLICE_X11Y10.DQ      Tcko                  0.430   u_system_ctrl/delay_done
+                                                       u_system_ctrl/delay_done
+    SLICE_X12Y6.D4       net (fanout=7)        1.024   u_system_ctrl/delay_done
+    SLICE_X12Y6.DMUX     Tilo                  0.326   u_sdram_vga_top/u_lcd_top/u_lcd_driver/hcnt<10>
+                                                       u_sdram_vga_top/u_sdram_2fifo_top/u_sdramtop/module_003/rst_n_inv1_1_INV_0
+    SLICE_X12Y4.SR       net (fanout=4)        0.632   u_sdram_vga_top/u_sdram_2fifo_top/u_sdramtop/module_003/rst_n_inv1
+    SLICE_X12Y4.CLK      Trck                  0.221   u_sdram_vga_top/u_lcd_top/u_lcd_driver/hcnt<3>
+                                                       u_sdram_vga_top/u_lcd_top/u_lcd_driver/hcnt_3
+    -------------------------------------------------  ---------------------------
+    Total                                      2.633ns (0.977ns logic, 1.656ns route)
+                                                       (37.1% logic, 62.9% route)
+
+--------------------------------------------------------------------------------
+
+Paths for end point u_sdram_vga_top/u_sdram_2fifo_top/u_dcfifo_ctrl/u_rdfifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/rstblk/rd_rst_asreg (SLICE_X11Y11.SR), 4 paths
+--------------------------------------------------------------------------------
+Slack (setup path):     -3.094ns (requirement - (data path - clock path skew + uncertainty))
+  Source:               u_sdram_vga_top/u_sdram_2fifo_top/u_dcfifo_ctrl/data_valid_r (FF)
+  Destination:          u_sdram_vga_top/u_sdram_2fifo_top/u_dcfifo_ctrl/u_rdfifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/rstblk/rd_rst_asreg (FF)
+  Requirement:          0.384ns
+  Data Path Delay:      2.273ns (Levels of Logic = 1)(Component delays alone exceeds constraint)
+  Clock Path Skew:      -0.696ns (1.773 - 2.469)
+  Source Clock:         clk_ref falling at 115.000ns
+  Destination Clock:    clk_vga falling at 115.384ns
+  Clock Uncertainty:    0.509ns
+
+  Clock Uncertainty:          0.509ns  ((TSJ^2 + TIJ^2)^1/2 + DJ) / 2 + PE
+    Total System Jitter (TSJ):  0.070ns
+    Total Input Jitter (TIJ):   0.000ns
+    Discrete Jitter (DJ):       0.507ns
+    Phase Error (PE):           0.220ns
+
+  Maximum Data Path at Slow Process Corner: u_sdram_vga_top/u_sdram_2fifo_top/u_dcfifo_ctrl/data_valid_r to u_sdram_vga_top/u_sdram_2fifo_top/u_dcfifo_ctrl/u_rdfifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/rstblk/rd_rst_asreg
+    Location             Delay type         Delay(ns)  Physical Resource
+                                                       Logical Resource(s)
+    -------------------------------------------------  -------------------
+    SLICE_X9Y10.CQ       Tcko                  0.430   u_sdram_vga_top/u_sdram_2fifo_top/u_dcfifo_ctrl/data_valid_r
+                                                       u_sdram_vga_top/u_sdram_2fifo_top/u_dcfifo_ctrl/data_valid_r
+    SLICE_X10Y10.A2      net (fanout=12)       0.722   u_sdram_vga_top/u_sdram_2fifo_top/u_dcfifo_ctrl/data_valid_r
+    SLICE_X10Y10.A       Tilo                  0.235   u_sdram_vga_top/u_sdram_2fifo_top/u_dcfifo_ctrl/rst_n_rd_load_flag_OR_147_o
+                                                       u_sdram_vga_top/u_sdram_2fifo_top/u_dcfifo_ctrl/rst_n_rd_load_flag_OR_147_o1
+    SLICE_X11Y11.SR      net (fanout=3)        0.565   u_sdram_vga_top/u_sdram_2fifo_top/u_dcfifo_ctrl/rst_n_rd_load_flag_OR_147_o
+    SLICE_X11Y11.CLK     Trck                  0.321   u_sdram_vga_top/u_sdram_2fifo_top/u_dcfifo_ctrl/u_rdfifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/rstblk/rd_rst_asreg
+                                                       u_sdram_vga_top/u_sdram_2fifo_top/u_dcfifo_ctrl/u_rdfifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/rstblk/rd_rst_asreg
+    -------------------------------------------------  ---------------------------
+    Total                                      2.273ns (0.986ns logic, 1.287ns route)
+                                                       (43.4% logic, 56.6% route)
+
+--------------------------------------------------------------------------------
+Slack (setup path):     -2.529ns (requirement - (data path - clock path skew + uncertainty))
+  Source:               u_sdram_vga_top/u_sdram_2fifo_top/u_dcfifo_ctrl/rd_load_r1 (FF)
+  Destination:          u_sdram_vga_top/u_sdram_2fifo_top/u_dcfifo_ctrl/u_rdfifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/rstblk/rd_rst_asreg (FF)
+  Requirement:          0.768ns
+  Data Path Delay:      2.095ns (Levels of Logic = 1)(Component delays alone exceeds constraint)
+  Clock Path Skew:      -0.693ns (1.773 - 2.466)
+  Source Clock:         clk_ref rising at 130.000ns
+  Destination Clock:    clk_vga falling at 130.768ns
+  Clock Uncertainty:    0.509ns
+
+  Clock Uncertainty:          0.509ns  ((TSJ^2 + TIJ^2)^1/2 + DJ) / 2 + PE
+    Total System Jitter (TSJ):  0.070ns
+    Total Input Jitter (TIJ):   0.000ns
+    Discrete Jitter (DJ):       0.507ns
+    Phase Error (PE):           0.220ns
+
+  Maximum Data Path at Slow Process Corner: u_sdram_vga_top/u_sdram_2fifo_top/u_dcfifo_ctrl/rd_load_r1 to u_sdram_vga_top/u_sdram_2fifo_top/u_dcfifo_ctrl/u_rdfifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/rstblk/rd_rst_asreg
+    Location             Delay type         Delay(ns)  Physical Resource
+                                                       Logical Resource(s)
+    -------------------------------------------------  -------------------
+    SLICE_X10Y9.AQ       Tcko                  0.476   u_sdram_vga_top/u_sdram_2fifo_top/u_dcfifo_ctrl/rd_load_r2
+                                                       u_sdram_vga_top/u_sdram_2fifo_top/u_dcfifo_ctrl/rd_load_r1
+    SLICE_X10Y10.A4      net (fanout=12)       0.498   u_sdram_vga_top/u_sdram_2fifo_top/u_dcfifo_ctrl/rd_load_r1
+    SLICE_X10Y10.A       Tilo                  0.235   u_sdram_vga_top/u_sdram_2fifo_top/u_dcfifo_ctrl/rst_n_rd_load_flag_OR_147_o
+                                                       u_sdram_vga_top/u_sdram_2fifo_top/u_dcfifo_ctrl/rst_n_rd_load_flag_OR_147_o1
+    SLICE_X11Y11.SR      net (fanout=3)        0.565   u_sdram_vga_top/u_sdram_2fifo_top/u_dcfifo_ctrl/rst_n_rd_load_flag_OR_147_o
+    SLICE_X11Y11.CLK     Trck                  0.321   u_sdram_vga_top/u_sdram_2fifo_top/u_dcfifo_ctrl/u_rdfifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/rstblk/rd_rst_asreg
+                                                       u_sdram_vga_top/u_sdram_2fifo_top/u_dcfifo_ctrl/u_rdfifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/rstblk/rd_rst_asreg
+    -------------------------------------------------  ---------------------------
+    Total                                      2.095ns (1.032ns logic, 1.063ns route)
+                                                       (49.3% logic, 50.7% route)
+
+--------------------------------------------------------------------------------
+Slack (setup path):     -2.429ns (requirement - (data path - clock path skew + uncertainty))
+  Source:               u_sdram_vga_top/u_sdram_2fifo_top/u_dcfifo_ctrl/rd_load_r2 (FF)
+  Destination:          u_sdram_vga_top/u_sdram_2fifo_top/u_dcfifo_ctrl/u_rdfifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/rstblk/rd_rst_asreg (FF)
+  Requirement:          0.768ns
+  Data Path Delay:      1.995ns (Levels of Logic = 1)(Component delays alone exceeds constraint)
+  Clock Path Skew:      -0.693ns (1.773 - 2.466)
+  Source Clock:         clk_ref rising at 130.000ns
+  Destination Clock:    clk_vga falling at 130.768ns
+  Clock Uncertainty:    0.509ns
+
+  Clock Uncertainty:          0.509ns  ((TSJ^2 + TIJ^2)^1/2 + DJ) / 2 + PE
+    Total System Jitter (TSJ):  0.070ns
+    Total Input Jitter (TIJ):   0.000ns
+    Discrete Jitter (DJ):       0.507ns
+    Phase Error (PE):           0.220ns
+
+  Maximum Data Path at Slow Process Corner: u_sdram_vga_top/u_sdram_2fifo_top/u_dcfifo_ctrl/rd_load_r2 to u_sdram_vga_top/u_sdram_2fifo_top/u_dcfifo_ctrl/u_rdfifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/rstblk/rd_rst_asreg
+    Location             Delay type         Delay(ns)  Physical Resource
+                                                       Logical Resource(s)
+    -------------------------------------------------  -------------------
+    SLICE_X10Y9.BQ       Tcko                  0.476   u_sdram_vga_top/u_sdram_2fifo_top/u_dcfifo_ctrl/rd_load_r2
+                                                       u_sdram_vga_top/u_sdram_2fifo_top/u_dcfifo_ctrl/rd_load_r2
+    SLICE_X10Y10.A5      net (fanout=11)       0.398   u_sdram_vga_top/u_sdram_2fifo_top/u_dcfifo_ctrl/rd_load_r2
+    SLICE_X10Y10.A       Tilo                  0.235   u_sdram_vga_top/u_sdram_2fifo_top/u_dcfifo_ctrl/rst_n_rd_load_flag_OR_147_o
+                                                       u_sdram_vga_top/u_sdram_2fifo_top/u_dcfifo_ctrl/rst_n_rd_load_flag_OR_147_o1
+    SLICE_X11Y11.SR      net (fanout=3)        0.565   u_sdram_vga_top/u_sdram_2fifo_top/u_dcfifo_ctrl/rst_n_rd_load_flag_OR_147_o
+    SLICE_X11Y11.CLK     Trck                  0.321   u_sdram_vga_top/u_sdram_2fifo_top/u_dcfifo_ctrl/u_rdfifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/rstblk/rd_rst_asreg
+                                                       u_sdram_vga_top/u_sdram_2fifo_top/u_dcfifo_ctrl/u_rdfifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/rstblk/rd_rst_asreg
+    -------------------------------------------------  ---------------------------
+    Total                                      1.995ns (1.032ns logic, 0.963ns route)
+                                                       (51.7% logic, 48.3% route)
+
+--------------------------------------------------------------------------------
+
+Hold Paths: TS_u_system_ctrl_u_sdram_pll_clkfx = PERIOD TIMEGRP
+        "u_system_ctrl_u_sdram_pll_clkfx" TS_sys_clk_pin * 1.3 HIGH 50%;
+--------------------------------------------------------------------------------
+
+Paths for end point u_sdram_vga_top/u_sdram_2fifo_top/u_dcfifo_ctrl/u_rdfifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/rpntr/gc0.count_8 (SLICE_X14Y12.C5), 1 path
+--------------------------------------------------------------------------------
+Slack (hold path):      0.397ns (requirement - (clock path skew + uncertainty - data path))
+  Source:               u_sdram_vga_top/u_sdram_2fifo_top/u_dcfifo_ctrl/u_rdfifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/rpntr/gc0.count_7 (FF)
+  Destination:          u_sdram_vga_top/u_sdram_2fifo_top/u_dcfifo_ctrl/u_rdfifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/rpntr/gc0.count_8 (FF)
+  Requirement:          0.000ns
+  Data Path Delay:      0.397ns (Levels of Logic = 1)
+  Clock Path Skew:      0.000ns
+  Source Clock:         clk_vga falling at 7.692ns
+  Destination Clock:    clk_vga falling at 7.692ns
+  Clock Uncertainty:    0.000ns
+
+  Minimum Data Path at Fast Process Corner: u_sdram_vga_top/u_sdram_2fifo_top/u_dcfifo_ctrl/u_rdfifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/rpntr/gc0.count_7 to u_sdram_vga_top/u_sdram_2fifo_top/u_dcfifo_ctrl/u_rdfifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/rpntr/gc0.count_8
+    Location             Delay type         Delay(ns)  Physical Resource
+                                                       Logical Resource(s)
+    -------------------------------------------------  -------------------
+    SLICE_X14Y12.CQ      Tcko                  0.200   u_sdram_vga_top/u_sdram_2fifo_top/u_dcfifo_ctrl/u_rdfifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/rpntr/gc0.count_d1<7>
+                                                       u_sdram_vga_top/u_sdram_2fifo_top/u_dcfifo_ctrl/u_rdfifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/rpntr/gc0.count_7
+    SLICE_X14Y12.C5      net (fanout=3)        0.076   u_sdram_vga_top/u_sdram_2fifo_top/u_dcfifo_ctrl/u_rdfifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/rpntr/gc0.count<7>
+    SLICE_X14Y12.CLK     Tah         (-Th)    -0.121   u_sdram_vga_top/u_sdram_2fifo_top/u_dcfifo_ctrl/u_rdfifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/rpntr/gc0.count_d1<7>
+                                                       u_sdram_vga_top/u_sdram_2fifo_top/u_dcfifo_ctrl/u_rdfifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/rpntr/Madd_gc0.count[8]_GND_23_o_add_0_OUT_xor<8>11
+                                                       u_sdram_vga_top/u_sdram_2fifo_top/u_dcfifo_ctrl/u_rdfifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/rpntr/gc0.count_8
+    -------------------------------------------------  ---------------------------
+    Total                                      0.397ns (0.321ns logic, 0.076ns route)
+                                                       (80.9% logic, 19.1% route)
+
+--------------------------------------------------------------------------------
+
+Paths for end point u_sdram_vga_top/u_sdram_2fifo_top/u_dcfifo_ctrl/u_rdfifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/rpntr/gc0.count_d1_7 (SLICE_X14Y12.DX), 1 path
+--------------------------------------------------------------------------------
+Slack (hold path):      0.401ns (requirement - (clock path skew + uncertainty - data path))
+  Source:               u_sdram_vga_top/u_sdram_2fifo_top/u_dcfifo_ctrl/u_rdfifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/rpntr/gc0.count_7 (FF)
+  Destination:          u_sdram_vga_top/u_sdram_2fifo_top/u_dcfifo_ctrl/u_rdfifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/rpntr/gc0.count_d1_7 (FF)
+  Requirement:          0.000ns
+  Data Path Delay:      0.401ns (Levels of Logic = 0)
+  Clock Path Skew:      0.000ns
+  Source Clock:         clk_vga falling at 7.692ns
+  Destination Clock:    clk_vga falling at 7.692ns
+  Clock Uncertainty:    0.000ns
+
+  Minimum Data Path at Fast Process Corner: u_sdram_vga_top/u_sdram_2fifo_top/u_dcfifo_ctrl/u_rdfifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/rpntr/gc0.count_7 to u_sdram_vga_top/u_sdram_2fifo_top/u_dcfifo_ctrl/u_rdfifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/rpntr/gc0.count_d1_7
+    Location             Delay type         Delay(ns)  Physical Resource
+                                                       Logical Resource(s)
+    -------------------------------------------------  -------------------
+    SLICE_X14Y12.CQ      Tcko                  0.200   u_sdram_vga_top/u_sdram_2fifo_top/u_dcfifo_ctrl/u_rdfifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/rpntr/gc0.count_d1<7>
+                                                       u_sdram_vga_top/u_sdram_2fifo_top/u_dcfifo_ctrl/u_rdfifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/rpntr/gc0.count_7
+    SLICE_X14Y12.DX      net (fanout=3)        0.153   u_sdram_vga_top/u_sdram_2fifo_top/u_dcfifo_ctrl/u_rdfifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/rpntr/gc0.count<7>
+    SLICE_X14Y12.CLK     Tckdi       (-Th)    -0.048   u_sdram_vga_top/u_sdram_2fifo_top/u_dcfifo_ctrl/u_rdfifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/rpntr/gc0.count_d1<7>
+                                                       u_sdram_vga_top/u_sdram_2fifo_top/u_dcfifo_ctrl/u_rdfifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/rpntr/gc0.count_d1_7
+    -------------------------------------------------  ---------------------------
+    Total                                      0.401ns (0.248ns logic, 0.153ns route)
+                                                       (61.8% logic, 38.2% route)
+
+--------------------------------------------------------------------------------
+
+Paths for end point u_sdram_vga_top/u_sdram_2fifo_top/u_dcfifo_ctrl/u_rdfifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/rstblk/rd_rst_asreg_d2 (SLICE_X12Y11.DX), 1 path
+--------------------------------------------------------------------------------
+Slack (hold path):      0.446ns (requirement - (clock path skew + uncertainty - data path))
+  Source:               u_sdram_vga_top/u_sdram_2fifo_top/u_dcfifo_ctrl/u_rdfifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/rstblk/rd_rst_asreg_d1 (FF)
+  Destination:          u_sdram_vga_top/u_sdram_2fifo_top/u_dcfifo_ctrl/u_rdfifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/rstblk/rd_rst_asreg_d2 (FF)
+  Requirement:          0.000ns
+  Data Path Delay:      0.446ns (Levels of Logic = 0)
+  Clock Path Skew:      0.000ns
+  Source Clock:         clk_vga falling at 7.692ns
+  Destination Clock:    clk_vga falling at 7.692ns
+  Clock Uncertainty:    0.000ns
+
+  Minimum Data Path at Fast Process Corner: u_sdram_vga_top/u_sdram_2fifo_top/u_dcfifo_ctrl/u_rdfifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/rstblk/rd_rst_asreg_d1 to u_sdram_vga_top/u_sdram_2fifo_top/u_dcfifo_ctrl/u_rdfifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/rstblk/rd_rst_asreg_d2
+    Location             Delay type         Delay(ns)  Physical Resource
+                                                       Logical Resource(s)
+    -------------------------------------------------  -------------------
+    SLICE_X12Y11.CQ      Tcko                  0.234   u_sdram_vga_top/u_sdram_2fifo_top/u_dcfifo_ctrl/u_rdfifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/rstblk/rd_rst_asreg_d2
+                                                       u_sdram_vga_top/u_sdram_2fifo_top/u_dcfifo_ctrl/u_rdfifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/rstblk/rd_rst_asreg_d1
+    SLICE_X12Y11.DX      net (fanout=2)        0.171   u_sdram_vga_top/u_sdram_2fifo_top/u_dcfifo_ctrl/u_rdfifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/rstblk/rd_rst_asreg_d1
+    SLICE_X12Y11.CLK     Tckdi       (-Th)    -0.041   u_sdram_vga_top/u_sdram_2fifo_top/u_dcfifo_ctrl/u_rdfifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/rstblk/rd_rst_asreg_d2
+                                                       u_sdram_vga_top/u_sdram_2fifo_top/u_dcfifo_ctrl/u_rdfifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/rstblk/rd_rst_asreg_d2
+    -------------------------------------------------  ---------------------------
+    Total                                      0.446ns (0.275ns logic, 0.171ns route)
+                                                       (61.7% logic, 38.3% route)
+
+--------------------------------------------------------------------------------
+
+Component Switching Limit Checks: TS_u_system_ctrl_u_sdram_pll_clkfx = PERIOD TIMEGRP
+        "u_system_ctrl_u_sdram_pll_clkfx" TS_sys_clk_pin * 1.3 HIGH 50%;
+--------------------------------------------------------------------------------
+Slack: 12.718ns (period - min period limit)
+  Period: 15.384ns
+  Min period limit: 2.666ns (375.094MHz) (Tbcper_I)
+  Physical resource: u_system_ctrl/u_sdram_pll/clkout4_buf/I0
+  Logical resource: u_system_ctrl/u_sdram_pll/clkout4_buf/I0
+  Location pin: BUFGMUX_X2Y12.I0
+  Clock network: u_system_ctrl/u_sdram_pll/clkfx
+--------------------------------------------------------------------------------
+Slack: 14.904ns (period - min period limit)
+  Period: 15.384ns
+  Min period limit: 0.480ns (2083.333MHz) (Tcp)
+  Physical resource: u_sdram_vga_top/u_lcd_top/u_lcd_driver/hcnt<3>/CLK
+  Logical resource: u_sdram_vga_top/u_lcd_top/u_lcd_driver/hcnt_0/CK
+  Location pin: SLICE_X12Y4.CLK
+  Clock network: clk_vga
+--------------------------------------------------------------------------------
+Slack: 14.904ns (period - (min high pulse limit / (high pulse / period)))
+  Period: 15.384ns
+  High pulse: 7.692ns
+  High pulse limit: 0.240ns (Trpw)
+  Physical resource: u_sdram_vga_top/u_lcd_top/u_lcd_driver/hcnt<3>/SR
+  Logical resource: u_sdram_vga_top/u_lcd_top/u_lcd_driver/hcnt_0/SR
+  Location pin: SLICE_X12Y4.SR
+  Clock network: u_sdram_vga_top/u_sdram_2fifo_top/u_sdramtop/module_003/rst_n_inv1
+--------------------------------------------------------------------------------
+
+================================================================================
+Timing constraint: TS_u_system_ctrl_u_sdram_pll_clk0 = PERIOD TIMEGRP         
+"u_system_ctrl_u_sdram_pll_clk0" TS_sys_clk_pin HIGH 50%;
+For more information, see Period Analysis in the Timing Closure User Guide (UG612).
+
+ 0 paths analyzed, 0 endpoints analyzed, 0 failing endpoints
+ 0 timing errors detected. (0 component switching limit errors)
+ Minimum period is   8.000ns.
+--------------------------------------------------------------------------------
+
+Component Switching Limit Checks: TS_u_system_ctrl_u_sdram_pll_clk0 = PERIOD TIMEGRP
+        "u_system_ctrl_u_sdram_pll_clk0" TS_sys_clk_pin HIGH 50%;
+--------------------------------------------------------------------------------
+Slack: 12.000ns (period - (min low pulse limit / (low pulse / period)))
+  Period: 20.000ns
+  Low pulse: 10.000ns
+  Low pulse limit: 4.000ns (Tdcmpw_CLKIN_50_100)
+  Physical resource: u_system_ctrl/u_pll_24M/dcm_sp_inst/CLKIN
+  Logical resource: u_system_ctrl/u_pll_24M/dcm_sp_inst/CLKIN
+  Location pin: DCM_X0Y2.CLKIN
+  Clock network: u_system_ctrl/u_pll_24M/clkin1
+--------------------------------------------------------------------------------
+Slack: 12.000ns (period - (min high pulse limit / (high pulse / period)))
+  Period: 20.000ns
+  High pulse: 10.000ns
+  High pulse limit: 4.000ns (Tdcmpw_CLKIN_50_100)
+  Physical resource: u_system_ctrl/u_pll_24M/dcm_sp_inst/CLKIN
+  Logical resource: u_system_ctrl/u_pll_24M/dcm_sp_inst/CLKIN
+  Location pin: DCM_X0Y2.CLKIN
+  Clock network: u_system_ctrl/u_pll_24M/clkin1
+--------------------------------------------------------------------------------
+Slack: 16.000ns (period - min period limit)
+  Period: 20.000ns
+  Min period limit: 4.000ns (250.000MHz) (Tdcmper_CLKIN)
+  Physical resource: u_system_ctrl/u_pll_24M/dcm_sp_inst/CLKIN
+  Logical resource: u_system_ctrl/u_pll_24M/dcm_sp_inst/CLKIN
+  Location pin: DCM_X0Y2.CLKIN
+  Clock network: u_system_ctrl/u_pll_24M/clkin1
+--------------------------------------------------------------------------------
+
+================================================================================
+Timing constraint: TS_u_system_ctrl_u_pll_24M_clkfx = PERIOD TIMEGRP         
+"u_system_ctrl_u_pll_24M_clkfx" TS_u_system_ctrl_u_sdram_pll_clk0 *         
+0.48 HIGH 50%;
+For more information, see Period Analysis in the Timing Closure User Guide (UG612).
+
+ 1363 paths analyzed, 169 endpoints analyzed, 1 failing endpoint
+ 1 timing error detected. (1 setup error, 0 hold errors, 0 component switching limit errors)
+ Minimum period is  45.542ns.
+--------------------------------------------------------------------------------
+
+Paths for end point power_on_delay_inst/camera_pwnd_reg (SLICE_X13Y10.SR), 1 path
+--------------------------------------------------------------------------------
+Slack (setup path):     -0.155ns (requirement - (data path - clock path skew + uncertainty))
+  Source:               u_system_ctrl/delay_done (FF)
+  Destination:          power_on_delay_inst/camera_pwnd_reg (FF)
+  Requirement:          1.666ns
+  Data Path Delay:      1.736ns (Levels of Logic = 0)
+  Clock Path Skew:      0.977ns (3.445 - 2.468)
+  Source Clock:         clk_ref rising at 40.000ns
+  Destination Clock:    clk_camera rising at 41.666ns
+  Clock Uncertainty:    1.062ns
+
+  Clock Uncertainty:          1.062ns  ((TSJ^2 + TIJ^2)^1/2 + DJ) / 2 + PE
+    Total System Jitter (TSJ):  0.070ns
+    Total Input Jitter (TIJ):   0.000ns
+    Discrete Jitter (DJ):       1.033ns
+    Phase Error (PE):           0.509ns
+
+  Maximum Data Path at Slow Process Corner: u_system_ctrl/delay_done to power_on_delay_inst/camera_pwnd_reg
+    Location             Delay type         Delay(ns)  Physical Resource
+                                                       Logical Resource(s)
+    -------------------------------------------------  -------------------
+    SLICE_X11Y10.DQ      Tcko                  0.430   u_system_ctrl/delay_done
+                                                       u_system_ctrl/delay_done
+    SLICE_X13Y10.SR      net (fanout=7)        0.838   u_system_ctrl/delay_done
+    SLICE_X13Y10.CLK     Tsrck                 0.468   power_on_delay_inst/camera_pwnd_reg
+                                                       power_on_delay_inst/camera_pwnd_reg
+    -------------------------------------------------  ---------------------------
+    Total                                      1.736ns (0.898ns logic, 0.838ns route)
+                                                       (51.7% logic, 48.3% route)
+
+--------------------------------------------------------------------------------
+
+Paths for end point reg_config_inst/clock_20k_cnt_9 (SLICE_X16Y41.CIN), 107 paths
+--------------------------------------------------------------------------------
+Slack (setup path):     36.719ns (requirement - (data path - clock path skew + uncertainty))
+  Source:               reg_config_inst/clock_20k_cnt_0 (FF)
+  Destination:          reg_config_inst/clock_20k_cnt_9 (FF)
+  Requirement:          41.666ns
+  Data Path Delay:      4.370ns (Levels of Logic = 5)
+  Clock Path Skew:      -0.015ns (0.286 - 0.301)
+  Source Clock:         clk_camera rising at 0.000ns
+  Destination Clock:    clk_camera rising at 41.666ns
+  Clock Uncertainty:    0.562ns
+
+  Clock Uncertainty:          0.562ns  ((TSJ^2 + TIJ^2)^1/2 + DJ) / 2 + PE
+    Total System Jitter (TSJ):  0.070ns
+    Total Input Jitter (TIJ):   0.000ns
+    Discrete Jitter (DJ):       1.052ns
+    Phase Error (PE):           0.000ns
+
+  Maximum Data Path at Slow Process Corner: reg_config_inst/clock_20k_cnt_0 to reg_config_inst/clock_20k_cnt_9
+    Location             Delay type         Delay(ns)  Physical Resource
+                                                       Logical Resource(s)
+    -------------------------------------------------  -------------------
+    SLICE_X16Y39.AQ      Tcko                  0.525   reg_config_inst/clock_20k_cnt<3>
+                                                       reg_config_inst/clock_20k_cnt_0
+    SLICE_X17Y40.B1      net (fanout=2)        1.269   reg_config_inst/clock_20k_cnt<0>
+    SLICE_X17Y40.B       Tilo                  0.259   reg_config_inst/clock_20k
+                                                       reg_config_inst/clock_20k_cnt[15]_GND_11_o_LessThan_1_o_inv1_inv21
+    SLICE_X17Y40.A5      net (fanout=2)        0.237   reg_config_inst/clock_20k_cnt[15]_GND_11_o_LessThan_1_o_inv1_inv2
+    SLICE_X17Y40.A       Tilo                  0.259   reg_config_inst/clock_20k
+                                                       reg_config_inst/clock_20k_cnt[15]_GND_11_o_LessThan_1_o_inv1_inv22
+    SLICE_X16Y39.D2      net (fanout=12)       1.028   reg_config_inst/clock_20k_cnt[15]_GND_11_o_LessThan_1_o_inv1_inv
+    SLICE_X16Y39.COUT    Topcyd                0.312   reg_config_inst/clock_20k_cnt<3>
+                                                       reg_config_inst/Mcount_clock_20k_cnt_lut<3>
+                                                       reg_config_inst/Mcount_clock_20k_cnt_cy<3>
+    SLICE_X16Y40.CIN     net (fanout=1)        0.082   reg_config_inst/Mcount_clock_20k_cnt_cy<3>
+    SLICE_X16Y40.COUT    Tbyp                  0.093   reg_config_inst/clock_20k_cnt<7>
+                                                       reg_config_inst/Mcount_clock_20k_cnt_cy<7>
+    SLICE_X16Y41.CIN     net (fanout=1)        0.003   reg_config_inst/Mcount_clock_20k_cnt_cy<7>
+    SLICE_X16Y41.CLK     Tcinck                0.303   reg_config_inst/clock_20k_cnt<10>
+                                                       reg_config_inst/Mcount_clock_20k_cnt_xor<10>
+                                                       reg_config_inst/clock_20k_cnt_9
+    -------------------------------------------------  ---------------------------
+    Total                                      4.370ns (1.751ns logic, 2.619ns route)
+                                                       (40.1% logic, 59.9% route)
+
+--------------------------------------------------------------------------------
+Slack (setup path):     36.804ns (requirement - (data path - clock path skew + uncertainty))
+  Source:               reg_config_inst/clock_20k_cnt_0 (FF)
+  Destination:          reg_config_inst/clock_20k_cnt_9 (FF)
+  Requirement:          41.666ns
+  Data Path Delay:      4.285ns (Levels of Logic = 5)
+  Clock Path Skew:      -0.015ns (0.286 - 0.301)
+  Source Clock:         clk_camera rising at 0.000ns
+  Destination Clock:    clk_camera rising at 41.666ns
+  Clock Uncertainty:    0.562ns
+
+  Clock Uncertainty:          0.562ns  ((TSJ^2 + TIJ^2)^1/2 + DJ) / 2 + PE
+    Total System Jitter (TSJ):  0.070ns
+    Total Input Jitter (TIJ):   0.000ns
+    Discrete Jitter (DJ):       1.052ns
+    Phase Error (PE):           0.000ns
+
+  Maximum Data Path at Slow Process Corner: reg_config_inst/clock_20k_cnt_0 to reg_config_inst/clock_20k_cnt_9
+    Location             Delay type         Delay(ns)  Physical Resource
+                                                       Logical Resource(s)
+    -------------------------------------------------  -------------------
+    SLICE_X16Y39.AQ      Tcko                  0.525   reg_config_inst/clock_20k_cnt<3>
+                                                       reg_config_inst/clock_20k_cnt_0
+    SLICE_X17Y40.B1      net (fanout=2)        1.269   reg_config_inst/clock_20k_cnt<0>
+    SLICE_X17Y40.B       Tilo                  0.259   reg_config_inst/clock_20k
+                                                       reg_config_inst/clock_20k_cnt[15]_GND_11_o_LessThan_1_o_inv1_inv21
+    SLICE_X17Y40.A5      net (fanout=2)        0.237   reg_config_inst/clock_20k_cnt[15]_GND_11_o_LessThan_1_o_inv1_inv2
+    SLICE_X17Y40.A       Tilo                  0.259   reg_config_inst/clock_20k
+                                                       reg_config_inst/clock_20k_cnt[15]_GND_11_o_LessThan_1_o_inv1_inv22
+    SLICE_X16Y39.B2      net (fanout=12)       0.772   reg_config_inst/clock_20k_cnt[15]_GND_11_o_LessThan_1_o_inv1_inv
+    SLICE_X16Y39.COUT    Topcyb                0.483   reg_config_inst/clock_20k_cnt<3>
+                                                       reg_config_inst/Mcount_clock_20k_cnt_lut<1>
+                                                       reg_config_inst/Mcount_clock_20k_cnt_cy<3>
+    SLICE_X16Y40.CIN     net (fanout=1)        0.082   reg_config_inst/Mcount_clock_20k_cnt_cy<3>
+    SLICE_X16Y40.COUT    Tbyp                  0.093   reg_config_inst/clock_20k_cnt<7>
+                                                       reg_config_inst/Mcount_clock_20k_cnt_cy<7>
+    SLICE_X16Y41.CIN     net (fanout=1)        0.003   reg_config_inst/Mcount_clock_20k_cnt_cy<7>
+    SLICE_X16Y41.CLK     Tcinck                0.303   reg_config_inst/clock_20k_cnt<10>
+                                                       reg_config_inst/Mcount_clock_20k_cnt_xor<10>
+                                                       reg_config_inst/clock_20k_cnt_9
+    -------------------------------------------------  ---------------------------
+    Total                                      4.285ns (1.922ns logic, 2.363ns route)
+                                                       (44.9% logic, 55.1% route)
+
+--------------------------------------------------------------------------------
+Slack (setup path):     36.821ns (requirement - (data path - clock path skew + uncertainty))
+  Source:               reg_config_inst/clock_20k_cnt_0 (FF)
+  Destination:          reg_config_inst/clock_20k_cnt_9 (FF)
+  Requirement:          41.666ns
+  Data Path Delay:      4.268ns (Levels of Logic = 5)
+  Clock Path Skew:      -0.015ns (0.286 - 0.301)
+  Source Clock:         clk_camera rising at 0.000ns
+  Destination Clock:    clk_camera rising at 41.666ns
+  Clock Uncertainty:    0.562ns
+
+  Clock Uncertainty:          0.562ns  ((TSJ^2 + TIJ^2)^1/2 + DJ) / 2 + PE
+    Total System Jitter (TSJ):  0.070ns
+    Total Input Jitter (TIJ):   0.000ns
+    Discrete Jitter (DJ):       1.052ns
+    Phase Error (PE):           0.000ns
+
+  Maximum Data Path at Slow Process Corner: reg_config_inst/clock_20k_cnt_0 to reg_config_inst/clock_20k_cnt_9
+    Location             Delay type         Delay(ns)  Physical Resource
+                                                       Logical Resource(s)
+    -------------------------------------------------  -------------------
+    SLICE_X16Y39.AQ      Tcko                  0.525   reg_config_inst/clock_20k_cnt<3>
+                                                       reg_config_inst/clock_20k_cnt_0
+    SLICE_X17Y40.B1      net (fanout=2)        1.269   reg_config_inst/clock_20k_cnt<0>
+    SLICE_X17Y40.B       Tilo                  0.259   reg_config_inst/clock_20k
+                                                       reg_config_inst/clock_20k_cnt[15]_GND_11_o_LessThan_1_o_inv1_inv21
+    SLICE_X17Y40.A5      net (fanout=2)        0.237   reg_config_inst/clock_20k_cnt[15]_GND_11_o_LessThan_1_o_inv1_inv2
+    SLICE_X17Y40.A       Tilo                  0.259   reg_config_inst/clock_20k
+                                                       reg_config_inst/clock_20k_cnt[15]_GND_11_o_LessThan_1_o_inv1_inv22
+    SLICE_X16Y39.A4      net (fanout=12)       0.764   reg_config_inst/clock_20k_cnt[15]_GND_11_o_LessThan_1_o_inv1_inv
+    SLICE_X16Y39.COUT    Topcya                0.474   reg_config_inst/clock_20k_cnt<3>
+                                                       reg_config_inst/Mcount_clock_20k_cnt_lut<0>
+                                                       reg_config_inst/Mcount_clock_20k_cnt_cy<3>
+    SLICE_X16Y40.CIN     net (fanout=1)        0.082   reg_config_inst/Mcount_clock_20k_cnt_cy<3>
+    SLICE_X16Y40.COUT    Tbyp                  0.093   reg_config_inst/clock_20k_cnt<7>
+                                                       reg_config_inst/Mcount_clock_20k_cnt_cy<7>
+    SLICE_X16Y41.CIN     net (fanout=1)        0.003   reg_config_inst/Mcount_clock_20k_cnt_cy<7>
+    SLICE_X16Y41.CLK     Tcinck                0.303   reg_config_inst/clock_20k_cnt<10>
+                                                       reg_config_inst/Mcount_clock_20k_cnt_xor<10>
+                                                       reg_config_inst/clock_20k_cnt_9
+    -------------------------------------------------  ---------------------------
+    Total                                      4.268ns (1.913ns logic, 2.355ns route)
+                                                       (44.8% logic, 55.2% route)
+
+--------------------------------------------------------------------------------
+
+Paths for end point power_on_delay_inst/camera_rstn_reg (SLICE_X22Y40.SR), 1 path
+--------------------------------------------------------------------------------
+Slack (setup path):     36.729ns (requirement - (data path - clock path skew + uncertainty))
+  Source:               power_on_delay_inst/camera_pwnd_reg (FF)
+  Destination:          power_on_delay_inst/camera_rstn_reg (FF)
+  Requirement:          41.666ns
+  Data Path Delay:      4.286ns (Levels of Logic = 0)
+  Clock Path Skew:      -0.089ns (0.682 - 0.771)
+  Source Clock:         clk_camera rising at 0.000ns
+  Destination Clock:    clk_camera rising at 41.666ns
+  Clock Uncertainty:    0.562ns
+
+  Clock Uncertainty:          0.562ns  ((TSJ^2 + TIJ^2)^1/2 + DJ) / 2 + PE
+    Total System Jitter (TSJ):  0.070ns
+    Total Input Jitter (TIJ):   0.000ns
+    Discrete Jitter (DJ):       1.052ns
+    Phase Error (PE):           0.000ns
+
+  Maximum Data Path at Slow Process Corner: power_on_delay_inst/camera_pwnd_reg to power_on_delay_inst/camera_rstn_reg
+    Location             Delay type         Delay(ns)  Physical Resource
+                                                       Logical Resource(s)
+    -------------------------------------------------  -------------------
+    SLICE_X13Y10.DQ      Tcko                  0.430   power_on_delay_inst/camera_pwnd_reg
+                                                       power_on_delay_inst/camera_pwnd_reg
+    SLICE_X22Y40.SR      net (fanout=6)        3.461   power_on_delay_inst/camera_pwnd_reg
+    SLICE_X22Y40.CLK     Tsrck                 0.395   power_on_delay_inst/camera_rstn_reg
+                                                       power_on_delay_inst/camera_rstn_reg
+    -------------------------------------------------  ---------------------------
+    Total                                      4.286ns (0.825ns logic, 3.461ns route)
+                                                       (19.2% logic, 80.8% route)
+
+--------------------------------------------------------------------------------
+
+Hold Paths: TS_u_system_ctrl_u_pll_24M_clkfx = PERIOD TIMEGRP
+        "u_system_ctrl_u_pll_24M_clkfx" TS_u_system_ctrl_u_sdram_pll_clk0 *
+        0.48 HIGH 50%;
+--------------------------------------------------------------------------------
+
+Paths for end point power_on_delay_inst/cnt2_15 (SLICE_X22Y39.D6), 1 path
+--------------------------------------------------------------------------------
+Slack (hold path):      0.470ns (requirement - (clock path skew + uncertainty - data path))
+  Source:               power_on_delay_inst/cnt2_15 (FF)
+  Destination:          power_on_delay_inst/cnt2_15 (FF)
+  Requirement:          0.000ns
+  Data Path Delay:      0.470ns (Levels of Logic = 1)
+  Clock Path Skew:      0.000ns
+  Source Clock:         clk_camera rising at 0.000ns
+  Destination Clock:    clk_camera rising at 0.000ns
+  Clock Uncertainty:    0.000ns
+
+  Minimum Data Path at Fast Process Corner: power_on_delay_inst/cnt2_15 to power_on_delay_inst/cnt2_15
+    Location             Delay type         Delay(ns)  Physical Resource
+                                                       Logical Resource(s)
+    -------------------------------------------------  -------------------
+    SLICE_X22Y39.DQ      Tcko                  0.200   power_on_delay_inst/cnt2<15>
+                                                       power_on_delay_inst/cnt2_15
+    SLICE_X22Y39.D6      net (fanout=3)        0.033   power_on_delay_inst/cnt2<15>
+    SLICE_X22Y39.CLK     Tah         (-Th)    -0.237   power_on_delay_inst/cnt2<15>
+                                                       power_on_delay_inst/cnt2<15>_rt
+                                                       power_on_delay_inst/Mcount_cnt2_xor<15>
+                                                       power_on_delay_inst/cnt2_15
+    -------------------------------------------------  ---------------------------
+    Total                                      0.470ns (0.437ns logic, 0.033ns route)
+                                                       (93.0% logic, 7.0% route)
+
+--------------------------------------------------------------------------------
+
+Paths for end point reg_config_inst/clock_20k (SLICE_X17Y40.C5), 1 path
+--------------------------------------------------------------------------------
+Slack (hold path):      0.481ns (requirement - (clock path skew + uncertainty - data path))
+  Source:               reg_config_inst/clock_20k (FF)
+  Destination:          reg_config_inst/clock_20k (FF)
+  Requirement:          0.000ns
+  Data Path Delay:      0.481ns (Levels of Logic = 1)
+  Clock Path Skew:      0.000ns
+  Source Clock:         clk_camera rising at 0.000ns
+  Destination Clock:    clk_camera rising at 0.000ns
+  Clock Uncertainty:    0.000ns
+
+  Minimum Data Path at Fast Process Corner: reg_config_inst/clock_20k to reg_config_inst/clock_20k
+    Location             Delay type         Delay(ns)  Physical Resource
+                                                       Logical Resource(s)
+    -------------------------------------------------  -------------------
+    SLICE_X17Y40.CQ      Tcko                  0.198   reg_config_inst/clock_20k
+                                                       reg_config_inst/clock_20k
+    SLICE_X17Y40.C5      net (fanout=20)       0.068   reg_config_inst/clock_20k
+    SLICE_X17Y40.CLK     Tah         (-Th)    -0.215   reg_config_inst/clock_20k
+                                                       reg_config_inst/clock_20k_INV_49_o1_INV_0
+                                                       reg_config_inst/clock_20k
+    -------------------------------------------------  ---------------------------
+    Total                                      0.481ns (0.413ns logic, 0.068ns route)
+                                                       (85.9% logic, 14.1% route)
+
+--------------------------------------------------------------------------------
+
+Paths for end point power_on_delay_inst/cnt2_5 (SLICE_X22Y37.B5), 1 path
+--------------------------------------------------------------------------------
+Slack (hold path):      0.513ns (requirement - (clock path skew + uncertainty - data path))
+  Source:               power_on_delay_inst/cnt2_5 (FF)
+  Destination:          power_on_delay_inst/cnt2_5 (FF)
+  Requirement:          0.000ns
+  Data Path Delay:      0.513ns (Levels of Logic = 1)
+  Clock Path Skew:      0.000ns
+  Source Clock:         clk_camera rising at 0.000ns
+  Destination Clock:    clk_camera rising at 0.000ns
+  Clock Uncertainty:    0.000ns
+
+  Minimum Data Path at Fast Process Corner: power_on_delay_inst/cnt2_5 to power_on_delay_inst/cnt2_5
+    Location             Delay type         Delay(ns)  Physical Resource
+                                                       Logical Resource(s)
+    -------------------------------------------------  -------------------
+    SLICE_X22Y37.BQ      Tcko                  0.200   power_on_delay_inst/cnt2<7>
+                                                       power_on_delay_inst/cnt2_5
+    SLICE_X22Y37.B5      net (fanout=2)        0.079   power_on_delay_inst/cnt2<5>
+    SLICE_X22Y37.CLK     Tah         (-Th)    -0.234   power_on_delay_inst/cnt2<7>
+                                                       power_on_delay_inst/cnt2<5>_rt
+                                                       power_on_delay_inst/Mcount_cnt2_cy<7>
+                                                       power_on_delay_inst/cnt2_5
+    -------------------------------------------------  ---------------------------
+    Total                                      0.513ns (0.434ns logic, 0.079ns route)
+                                                       (84.6% logic, 15.4% route)
+
+--------------------------------------------------------------------------------
+
+Component Switching Limit Checks: TS_u_system_ctrl_u_pll_24M_clkfx = PERIOD TIMEGRP
+        "u_system_ctrl_u_pll_24M_clkfx" TS_u_system_ctrl_u_sdram_pll_clk0 *
+        0.48 HIGH 50%;
+--------------------------------------------------------------------------------
+Slack: 39.000ns (period - min period limit)
+  Period: 41.666ns
+  Min period limit: 2.666ns (375.094MHz) (Tbcper_I)
+  Physical resource: u_system_ctrl/u_pll_24M/clkout1_buf/I0
+  Logical resource: u_system_ctrl/u_pll_24M/clkout1_buf/I0
+  Location pin: BUFGMUX_X2Y4.I0
+  Clock network: u_system_ctrl/u_pll_24M/clkfx
+--------------------------------------------------------------------------------
+Slack: 41.186ns (period - min period limit)
+  Period: 41.666ns
+  Min period limit: 0.480ns (2083.333MHz) (Tcp)
+  Physical resource: reg_config_inst/clock_20k_cnt<3>/CLK
+  Logical resource: reg_config_inst/clock_20k_cnt_0/CK
+  Location pin: SLICE_X16Y39.CLK
+  Clock network: clk_camera
+--------------------------------------------------------------------------------
+Slack: 41.186ns (period - (min high pulse limit / (high pulse / period)))
+  Period: 41.666ns
+  High pulse: 20.833ns
+  High pulse limit: 0.240ns (Trpw)
+  Physical resource: reg_config_inst/clock_20k_cnt<3>/SR
+  Logical resource: reg_config_inst/clock_20k_cnt_0/SR
+  Location pin: SLICE_X16Y39.SR
+  Clock network: reg_config_inst/camera_rstn_inv
+--------------------------------------------------------------------------------
+
+
+Derived Constraint Report
+Derived Constraints for TS_sys_clk_pin
++-------------------------------+-------------+-------------+-------------+-------------+-------------+-------------+-------------+
+|                               |   Period    |       Actual Period       |      Timing Errors        |      Paths Analyzed       |
+|           Constraint          | Requirement |-------------+-------------|-------------+-------------|-------------+-------------|
+|                               |             |   Direct    | Derivative  |   Direct    | Derivative  |   Direct    | Derivative  |
++-------------------------------+-------------+-------------+-------------+-------------+-------------+-------------+-------------+
+|TS_sys_clk_pin                 |     20.000ns|      8.000ns|    181.138ns|            0|          176|            0|        20326|
+| TS_u_system_ctrl_u_sdram_pll_c|     10.000ns|     79.454ns|          N/A|           15|            0|        13713|            0|
+| lk2x                          |             |             |             |             |             |             |             |
+| TS_u_system_ctrl_u_sdram_pll_c|     15.385ns|    139.337ns|          N/A|          160|            0|         5250|            0|
+| lkfx                          |             |             |             |             |             |             |             |
+| TS_u_system_ctrl_u_sdram_pll_c|     20.000ns|      8.000ns|     21.860ns|            0|            1|            0|         1363|
+| lk0                           |             |             |             |             |             |             |             |
+|  TS_u_system_ctrl_u_pll_24M_cl|     41.667ns|     45.542ns|          N/A|            1|            0|         1363|            0|
+|  kfx                          |             |             |             |             |             |             |             |
++-------------------------------+-------------+-------------+-------------+-------------+-------------+-------------+-------------+
+
+3 constraints not met.
+
+
+Data Sheet report:
+-----------------
+All values displayed in nanoseconds (ns)
+
+Clock to Setup on destination clock CLOCK
+---------------+---------+---------+---------+---------+
+               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------+---------+---------+---------+---------+
+CLOCK          |    9.155|    4.321|    7.123|    5.836|
+---------------+---------+---------+---------+---------+
+
+
+Timing summary:
+---------------
+
+Timing errors: 176  Score: 438334  (Setup/Max: 438334, Hold: 0)
+
+Constraints cover 20326 paths, 0 nets, and 3565 connections
+
+Design statistics:
+   Minimum period: 139.337ns{1}   (Maximum frequency:   7.177MHz)
+
+
+------------------------------------Footnotes-----------------------------------
+1)  The minimum period statistic assumes all single cycle delays.
+
+Analysis completed Thu Jul 02 18:40:29 2015 
+--------------------------------------------------------------------------------
+
+Trace Settings:
+-------------------------
+Trace Settings 
+
+Peak Memory Usage: 231 MB
+
+
+

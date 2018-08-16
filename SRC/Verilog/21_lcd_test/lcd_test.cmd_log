@@ -1,0 +1,162 @@
+xst -intstyle ise -ifn "E:/Project/AX516/verilog/lcd_test/lcd_test.xst" -ofn "E:/Project/AX516/verilog/lcd_test/lcd_test.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc lcd_test.ucf -p xc6slx16-csg324-2 lcd_test.ngc lcd_test.ngd  
+map -intstyle ise -p xc6slx16-csg324-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o lcd_test_map.ncd lcd_test.ngd lcd_test.pcf 
+par -w -intstyle ise -ol high -mt off lcd_test_map.ncd lcd_test.ncd lcd_test.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml lcd_test.twx lcd_test.ncd -o lcd_test.twr lcd_test.pcf -ucf lcd_test.ucf 
+bitgen -intstyle ise -f lcd_test.ut lcd_test.ncd 
+xst -intstyle ise -ifn "E:/Project/AX516/verilog/lcd_test/lcd_test.xst" -ofn "E:/Project/AX516/verilog/lcd_test/lcd_test.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc lcd_test.ucf -p xc6slx16-csg324-2 lcd_test.ngc lcd_test.ngd  
+xst -intstyle ise -ifn "E:/Project/AX516/verilog/lcd_test/lcd_test.xst" -ofn "E:/Project/AX516/verilog/lcd_test/lcd_test.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc lcd_test.ucf -p xc6slx16-csg324-2 lcd_test.ngc lcd_test.ngd  
+map -intstyle ise -p xc6slx16-csg324-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o lcd_test_map.ncd lcd_test.ngd lcd_test.pcf 
+par -w -intstyle ise -ol high -mt off lcd_test_map.ncd lcd_test.ncd lcd_test.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml lcd_test.twx lcd_test.ncd -o lcd_test.twr lcd_test.pcf -ucf lcd_test.ucf 
+bitgen -intstyle ise -f lcd_test.ut lcd_test.ncd 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc lcd_test.ucf -p xc6slx16-csg324-2 lcd_test.ngc lcd_test.ngd  
+map -intstyle ise -p xc6slx16-csg324-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o lcd_test_map.ncd lcd_test.ngd lcd_test.pcf 
+par -w -intstyle ise -ol high -mt off lcd_test_map.ncd lcd_test.ncd lcd_test.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml lcd_test.twx lcd_test.ncd -o lcd_test.twr lcd_test.pcf -ucf lcd_test.ucf 
+bitgen -intstyle ise -f lcd_test.ut lcd_test.ncd 
+xst -intstyle ise -ifn "E:/Project/AX516/verilog/lcd_test/lcd_test.xst" -ofn "E:/Project/AX516/verilog/lcd_test/lcd_test.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc lcd_test.ucf -p xc6slx16-csg324-2 lcd_test.ngc lcd_test.ngd  
+map -intstyle ise -p xc6slx16-csg324-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o lcd_test_map.ncd lcd_test.ngd lcd_test.pcf 
+par -w -intstyle ise -ol high -mt off lcd_test_map.ncd lcd_test.ncd lcd_test.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml lcd_test.twx lcd_test.ncd -o lcd_test.twr lcd_test.pcf -ucf lcd_test.ucf 
+bitgen -intstyle ise -f lcd_test.ut lcd_test.ncd 
+xst -intstyle ise -ifn "E:/Project/AX516/verilog/lcd_test/lcd_test.xst" -ofn "E:/Project/AX516/verilog/lcd_test/lcd_test.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc lcd_test.ucf -p xc6slx16-csg324-2 lcd_test.ngc lcd_test.ngd  
+map -intstyle ise -p xc6slx16-csg324-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o lcd_test_map.ncd lcd_test.ngd lcd_test.pcf 
+par -w -intstyle ise -ol high -mt off lcd_test_map.ncd lcd_test.ncd lcd_test.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml lcd_test.twx lcd_test.ncd -o lcd_test.twr lcd_test.pcf -ucf lcd_test.ucf 
+bitgen -intstyle ise -f lcd_test.ut lcd_test.ncd 
+xst -intstyle ise -ifn "E:/Project/AX516/verilog/lcd_test/lcd_test.xst" -ofn "E:/Project/AX516/verilog/lcd_test/lcd_test.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc lcd_test.ucf -p xc6slx16-csg324-2 lcd_test.ngc lcd_test.ngd  
+xst -intstyle ise -ifn "E:/Project/AX516/verilog/lcd_test/lcd_test.xst" -ofn "E:/Project/AX516/verilog/lcd_test/lcd_test.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc lcd_test.ucf -p xc6slx16-csg324-2 lcd_test.ngc lcd_test.ngd  
+map -intstyle ise -p xc6slx16-csg324-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o lcd_test_map.ncd lcd_test.ngd lcd_test.pcf 
+par -w -intstyle ise -ol high -mt off lcd_test_map.ncd lcd_test.ncd lcd_test.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml lcd_test.twx lcd_test.ncd -o lcd_test.twr lcd_test.pcf -ucf lcd_test.ucf 
+bitgen -intstyle ise -f lcd_test.ut lcd_test.ncd 
+xst -intstyle ise -ifn "E:/Project/AX516/verilog/lcd_test/lcd_test.xst" -ofn "E:/Project/AX516/verilog/lcd_test/lcd_test.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc lcd_test.ucf -p xc6slx16-csg324-2 lcd_test.ngc lcd_test.ngd  
+map -intstyle ise -p xc6slx16-csg324-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o lcd_test_map.ncd lcd_test.ngd lcd_test.pcf 
+par -w -intstyle ise -ol high -mt off lcd_test_map.ncd lcd_test.ncd lcd_test.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml lcd_test.twx lcd_test.ncd -o lcd_test.twr lcd_test.pcf -ucf lcd_test.ucf 
+bitgen -intstyle ise -f lcd_test.ut lcd_test.ncd 
+xst -intstyle ise -ifn "E:/Project/AX516/verilog/lcd_test/lcd_test.xst" -ofn "E:/Project/AX516/verilog/lcd_test/lcd_test.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc lcd_test.ucf -p xc6slx16-csg324-2 lcd_test.ngc lcd_test.ngd  
+map -intstyle ise -p xc6slx16-csg324-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o lcd_test_map.ncd lcd_test.ngd lcd_test.pcf 
+par -w -intstyle ise -ol high -mt off lcd_test_map.ncd lcd_test.ncd lcd_test.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml lcd_test.twx lcd_test.ncd -o lcd_test.twr lcd_test.pcf -ucf lcd_test.ucf 
+bitgen -intstyle ise -f lcd_test.ut lcd_test.ncd 
+xst -intstyle ise -ifn "E:/Project/AX516/verilog/lcd_test/lcd_test.xst" -ofn "E:/Project/AX516/verilog/lcd_test/lcd_test.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc lcd_test.ucf -p xc6slx16-csg324-2 lcd_test.ngc lcd_test.ngd  
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc lcd_test.ucf -p xc6slx16-csg324-2 lcd_test.ngc lcd_test.ngd  
+map -intstyle ise -p xc6slx16-csg324-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o lcd_test_map.ncd lcd_test.ngd lcd_test.pcf 
+par -w -intstyle ise -ol high -mt off lcd_test_map.ncd lcd_test.ncd lcd_test.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml lcd_test.twx lcd_test.ncd -o lcd_test.twr lcd_test.pcf -ucf lcd_test.ucf 
+bitgen -intstyle ise -f lcd_test.ut lcd_test.ncd 
+xst -intstyle ise -ifn "E:/Project/AX516/verilog/lcd_test/lcd_test.xst" -ofn "E:/Project/AX516/verilog/lcd_test/lcd_test.syr" 
+xst -intstyle ise -ifn "E:/Project/AX516/verilog/lcd_test/lcd_test.xst" -ofn "E:/Project/AX516/verilog/lcd_test/lcd_test.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc lcd_test.ucf -p xc6slx16-csg324-2 lcd_test.ngc lcd_test.ngd  
+map -intstyle ise -p xc6slx16-csg324-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o lcd_test_map.ncd lcd_test.ngd lcd_test.pcf 
+par -w -intstyle ise -ol high -mt off lcd_test_map.ncd lcd_test.ncd lcd_test.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml lcd_test.twx lcd_test.ncd -o lcd_test.twr lcd_test.pcf -ucf lcd_test.ucf 
+bitgen -intstyle ise -f lcd_test.ut lcd_test.ncd 
+xst -intstyle ise -ifn "E:/Project/AX516/verilog/lcd_test/lcd_test.xst" -ofn "E:/Project/AX516/verilog/lcd_test/lcd_test.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc lcd_test.ucf -p xc6slx16-csg324-2 lcd_test.ngc lcd_test.ngd  
+map -intstyle ise -p xc6slx16-csg324-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o lcd_test_map.ncd lcd_test.ngd lcd_test.pcf 
+par -w -intstyle ise -ol high -mt off lcd_test_map.ncd lcd_test.ncd lcd_test.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml lcd_test.twx lcd_test.ncd -o lcd_test.twr lcd_test.pcf -ucf lcd_test.ucf 
+bitgen -intstyle ise -f lcd_test.ut lcd_test.ncd 
+xst -intstyle ise -ifn "E:/Project/AX516/verilog/lcd_test/lcd_test.xst" -ofn "E:/Project/AX516/verilog/lcd_test/lcd_test.syr" 
+xst -intstyle ise -ifn "E:/Project/AX516/verilog/lcd_test/lcd_test.xst" -ofn "E:/Project/AX516/verilog/lcd_test/lcd_test.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc lcd_test.ucf -p xc6slx16-csg324-2 lcd_test.ngc lcd_test.ngd  
+map -intstyle ise -p xc6slx16-csg324-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o lcd_test_map.ncd lcd_test.ngd lcd_test.pcf 
+par -w -intstyle ise -ol high -mt off lcd_test_map.ncd lcd_test.ncd lcd_test.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml lcd_test.twx lcd_test.ncd -o lcd_test.twr lcd_test.pcf -ucf lcd_test.ucf 
+bitgen -intstyle ise -f lcd_test.ut lcd_test.ncd 
+xst -intstyle ise -ifn "E:/Project/AX516/verilog/lcd_test/lcd_test.xst" -ofn "E:/Project/AX516/verilog/lcd_test/lcd_test.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc lcd_test.ucf -p xc6slx16-csg324-2 lcd_test.ngc lcd_test.ngd  
+map -intstyle ise -p xc6slx16-csg324-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o lcd_test_map.ncd lcd_test.ngd lcd_test.pcf 
+par -w -intstyle ise -ol high -mt off lcd_test_map.ncd lcd_test.ncd lcd_test.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml lcd_test.twx lcd_test.ncd -o lcd_test.twr lcd_test.pcf -ucf lcd_test.ucf 
+bitgen -intstyle ise -f lcd_test.ut lcd_test.ncd 
+xst -intstyle ise -ifn "E:/Project/AX516/verilog/lcd_test/lcd_test.xst" -ofn "E:/Project/AX516/verilog/lcd_test/lcd_test.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc lcd_test.ucf -p xc6slx16-csg324-2 lcd_test.ngc lcd_test.ngd  
+map -intstyle ise -p xc6slx16-csg324-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o lcd_test_map.ncd lcd_test.ngd lcd_test.pcf 
+par -w -intstyle ise -ol high -mt off lcd_test_map.ncd lcd_test.ncd lcd_test.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml lcd_test.twx lcd_test.ncd -o lcd_test.twr lcd_test.pcf -ucf lcd_test.ucf 
+bitgen -intstyle ise -f lcd_test.ut lcd_test.ncd 
+xst -intstyle ise -ifn "E:/Project/AX516/verilog/lcd_test/lcd_test.xst" -ofn "E:/Project/AX516/verilog/lcd_test/lcd_test.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc lcd_test.ucf -p xc6slx16-csg324-2 lcd_test.ngc lcd_test.ngd  
+map -intstyle ise -p xc6slx16-csg324-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o lcd_test_map.ncd lcd_test.ngd lcd_test.pcf 
+par -w -intstyle ise -ol high -mt off lcd_test_map.ncd lcd_test.ncd lcd_test.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml lcd_test.twx lcd_test.ncd -o lcd_test.twr lcd_test.pcf -ucf lcd_test.ucf 
+bitgen -intstyle ise -f lcd_test.ut lcd_test.ncd 
+xst -intstyle ise -ifn "E:/Project/AX545/verilog/lcd_test/lcd_test.xst" -ofn "E:/Project/AX545/verilog/lcd_test/lcd_test.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc lcd_test.ucf -p xc6slx45-csg324-2 lcd_test.ngc lcd_test.ngd  
+map -intstyle ise -p xc6slx45-csg324-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o lcd_test_map.ncd lcd_test.ngd lcd_test.pcf 
+par -w -intstyle ise -ol high -mt off lcd_test_map.ncd lcd_test.ncd lcd_test.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml lcd_test.twx lcd_test.ncd -o lcd_test.twr lcd_test.pcf -ucf lcd_test.ucf 
+bitgen -intstyle ise -f lcd_test.ut lcd_test.ncd 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc lcd_test.ucf -p xc6slx45-csg324-2 lcd_test.ngc lcd_test.ngd  
+map -intstyle ise -p xc6slx45-csg324-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o lcd_test_map.ncd lcd_test.ngd lcd_test.pcf 
+par -w -intstyle ise -ol high -mt off lcd_test_map.ncd lcd_test.ncd lcd_test.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml lcd_test.twx lcd_test.ncd -o lcd_test.twr lcd_test.pcf -ucf lcd_test.ucf 
+bitgen -intstyle ise -f lcd_test.ut lcd_test.ncd 
+xst -intstyle ise -ifn "E:/Project/AX309/Verilog/lcd_test/lcd_test.xst" -ofn "E:/Project/AX309/Verilog/lcd_test/lcd_test.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc lcd_test.ucf -p xc6slx9-ftg256-2 lcd_test.ngc lcd_test.ngd  
+map -intstyle ise -p xc6slx9-ftg256-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o lcd_test_map.ncd lcd_test.ngd lcd_test.pcf 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc lcd_test.ucf -p xc6slx9-ftg256-2 lcd_test.ngc lcd_test.ngd  
+map -intstyle ise -p xc6slx9-ftg256-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o lcd_test_map.ncd lcd_test.ngd lcd_test.pcf 
+par -w -intstyle ise -ol high -mt off lcd_test_map.ncd lcd_test.ncd lcd_test.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml lcd_test.twx lcd_test.ncd -o lcd_test.twr lcd_test.pcf -ucf lcd_test.ucf 
+bitgen -intstyle ise -f lcd_test.ut lcd_test.ncd 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc lcd_test.ucf -p xc6slx9-ftg256-2 lcd_test.ngc lcd_test.ngd  
+map -intstyle ise -p xc6slx9-ftg256-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o lcd_test_map.ncd lcd_test.ngd lcd_test.pcf 
+par -w -intstyle ise -ol high -mt off lcd_test_map.ncd lcd_test.ncd lcd_test.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml lcd_test.twx lcd_test.ncd -o lcd_test.twr lcd_test.pcf -ucf lcd_test.ucf 
+bitgen -intstyle ise -f lcd_test.ut lcd_test.ncd 
+xst -intstyle ise -ifn "E:/BaiduYunDownload/AX309.161028/AX309/09_VERILOG/21_lcd_test/lcd_test.xst" -ofn "E:/BaiduYunDownload/AX309.161028/AX309/09_VERILOG/21_lcd_test/lcd_test.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc lcd_test.ucf -p xc6slx9-ftg256-2 lcd_test.ngc lcd_test.ngd  
+map -intstyle ise -p xc6slx9-ftg256-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o lcd_test_map.ncd lcd_test.ngd lcd_test.pcf 
+par -w -intstyle ise -ol high -mt off lcd_test_map.ncd lcd_test.ncd lcd_test.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml lcd_test.twx lcd_test.ncd -o lcd_test.twr lcd_test.pcf -ucf lcd_test.ucf 
+bitgen -intstyle ise -f lcd_test.ut lcd_test.ncd 
+xst -intstyle ise -ifn "E:/BaiduYunDownload/AX309.161028/AX309/09_VERILOG/21_lcd_test/lcd_test.xst" -ofn "E:/BaiduYunDownload/AX309.161028/AX309/09_VERILOG/21_lcd_test/lcd_test.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc lcd_test.ucf -p xc6slx9-ftg256-2 lcd_test.ngc lcd_test.ngd  
+map -intstyle ise -p xc6slx9-ftg256-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o lcd_test_map.ncd lcd_test.ngd lcd_test.pcf 
+par -w -intstyle ise -ol high -mt off lcd_test_map.ncd lcd_test.ncd lcd_test.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml lcd_test.twx lcd_test.ncd -o lcd_test.twr lcd_test.pcf -ucf lcd_test.ucf 
+bitgen -intstyle ise -f lcd_test.ut lcd_test.ncd 
+xst -intstyle ise -ifn "E:/BaiduYunDownload/AX309.161028/AX309/09_VERILOG/21_lcd_test/lcd_test.xst" -ofn "E:/BaiduYunDownload/AX309.161028/AX309/09_VERILOG/21_lcd_test/lcd_test.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc lcd_test.ucf -p xc6slx9-ftg256-2 lcd_test.ngc lcd_test.ngd  
+map -intstyle ise -p xc6slx9-ftg256-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o lcd_test_map.ncd lcd_test.ngd lcd_test.pcf 
+par -w -intstyle ise -ol high -mt off lcd_test_map.ncd lcd_test.ncd lcd_test.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml lcd_test.twx lcd_test.ncd -o lcd_test.twr lcd_test.pcf -ucf lcd_test.ucf 
+bitgen -intstyle ise -f lcd_test.ut lcd_test.ncd 
+xst -intstyle ise -ifn "E:/BaiduYunDownload/AX309.161028/AX309/09_VERILOG/21_lcd_test/lcd_test.xst" -ofn "E:/BaiduYunDownload/AX309.161028/AX309/09_VERILOG/21_lcd_test/lcd_test.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc lcd_test.ucf -p xc6slx9-ftg256-2 lcd_test.ngc lcd_test.ngd  
+map -intstyle ise -p xc6slx9-ftg256-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o lcd_test_map.ncd lcd_test.ngd lcd_test.pcf 
+par -w -intstyle ise -ol high -mt off lcd_test_map.ncd lcd_test.ncd lcd_test.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml lcd_test.twx lcd_test.ncd -o lcd_test.twr lcd_test.pcf -ucf lcd_test.ucf 
+bitgen -intstyle ise -f lcd_test.ut lcd_test.ncd 
+xst -intstyle ise -ifn "E:/BaiduYunDownload/AX309.161028/AX309/09_VERILOG/21_lcd_test/lcd_test.xst" -ofn "E:/BaiduYunDownload/AX309.161028/AX309/09_VERILOG/21_lcd_test/lcd_test.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc lcd_test.ucf -p xc6slx9-ftg256-2 lcd_test.ngc lcd_test.ngd  
+map -intstyle ise -p xc6slx9-ftg256-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o lcd_test_map.ncd lcd_test.ngd lcd_test.pcf 
+par -w -intstyle ise -ol high -mt off lcd_test_map.ncd lcd_test.ncd lcd_test.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml lcd_test.twx lcd_test.ncd -o lcd_test.twr lcd_test.pcf -ucf lcd_test.ucf 
+bitgen -intstyle ise -f lcd_test.ut lcd_test.ncd 
+xst -intstyle ise -ifn "E:/BaiduYunDownload/AX309.161219/AX309/09_VERILOG/21_lcd_test/lcd_test.xst" -ofn "E:/BaiduYunDownload/AX309.161219/AX309/09_VERILOG/21_lcd_test/lcd_test.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc lcd_test.ucf -p xc6slx9-ftg256-2 lcd_test.ngc lcd_test.ngd  
+map -intstyle ise -p xc6slx9-ftg256-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o lcd_test_map.ncd lcd_test.ngd lcd_test.pcf 
+par -w -intstyle ise -ol high -mt off lcd_test_map.ncd lcd_test.ncd lcd_test.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml lcd_test.twx lcd_test.ncd -o lcd_test.twr lcd_test.pcf -ucf lcd_test.ucf 
+bitgen -intstyle ise -f lcd_test.ut lcd_test.ncd 
+xst -intstyle ise -ifn "E:/BaiduYunDownload/AX309.170526/AX309.170526/09_VERILOG/21_lcd_test/lcd_test.xst" -ofn "E:/BaiduYunDownload/AX309.170526/AX309.170526/09_VERILOG/21_lcd_test/lcd_test.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc lcd_test.ucf -p xc6slx9-ftg256-2 lcd_test.ngc lcd_test.ngd  
+map -intstyle ise -p xc6slx9-ftg256-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o lcd_test_map.ncd lcd_test.ngd lcd_test.pcf 
+par -w -intstyle ise -ol high -mt off lcd_test_map.ncd lcd_test.ncd lcd_test.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml lcd_test.twx lcd_test.ncd -o lcd_test.twr lcd_test.pcf -ucf lcd_test.ucf 
+bitgen -intstyle ise -f lcd_test.ut lcd_test.ncd 

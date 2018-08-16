@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- IMPORTANT: This is an internal file that has been generated
+     by the Xilinx ISE software.  Any direct editing or
+     changes made to this file may result in unpredictable
+     behavior or data corruption.  It is strongly advised that
+     users do not edit the contents of this file. -->
+<messages>
+<msg type="warning" file="HDLCompiler" num="413" delta="old" >"E:\BaiduYunDownload\AX309.170526\AX309.170526\09_VERILOG\18_vga_test\vga_test.v" Line 82: Result of <arg fmt="%d" index="1">12</arg>-bit expression is truncated to fit in <arg fmt="%d" index="2">11</arg>-bit target.
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="413" delta="old" >"E:\BaiduYunDownload\AX309.170526\AX309.170526\09_VERILOG\18_vga_test\vga_test.v" Line 105: Result of <arg fmt="%d" index="1">11</arg>-bit expression is truncated to fit in <arg fmt="%d" index="2">10</arg>-bit target.
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="1127" delta="old" >"E:\BaiduYunDownload\AX309.170526\AX309.170526\09_VERILOG\18_vga_test\ipcore_dir\pll1.v" Line 130: Assignment to <arg fmt="%s" index="1">status_int</arg> ignored, since the identifier is never used
+</msg>
+
+<msg type="info" file="Xst" num="3210" delta="new" >&quot;<arg fmt="%s" index="1">E:\BaiduYunDownload\AX309.170526\AX309.170526\09_VERILOG\18_vga_test\vga_test.v</arg>&quot; line <arg fmt="%s" index="2">258</arg>: Output port &lt;<arg fmt="%s" index="3">LOCKED</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">pll1_inst</arg>&gt; is unconnected or connected to loadless signal.
+</msg>
+
+<msg type="info" file="Xst" num="2261" delta="old" >The FF/Latch &lt;<arg fmt="%s" index="1">grid_data_1_0</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">vga_test</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">15 FFs/Latches</arg>, which will be removed : <arg fmt="%s" index="4">&lt;grid_data_1_1&gt; &lt;grid_data_1_2&gt; &lt;grid_data_1_3&gt; &lt;grid_data_1_4&gt; &lt;grid_data_1_5&gt; &lt;grid_data_1_6&gt; &lt;grid_data_1_7&gt; &lt;grid_data_1_8&gt; &lt;grid_data_1_9&gt; &lt;grid_data_1_10&gt; &lt;grid_data_1_11&gt; &lt;grid_data_1_12&gt; &lt;grid_data_1_13&gt; &lt;grid_data_1_14&gt; &lt;grid_data_1_15&gt; </arg>
+</msg>
+
+<msg type="info" file="Xst" num="2261" delta="old" >The FF/Latch &lt;<arg fmt="%s" index="1">grid_data_2_0</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">vga_test</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">15 FFs/Latches</arg>, which will be removed : <arg fmt="%s" index="4">&lt;grid_data_2_1&gt; &lt;grid_data_2_2&gt; &lt;grid_data_2_3&gt; &lt;grid_data_2_4&gt; &lt;grid_data_2_5&gt; &lt;grid_data_2_6&gt; &lt;grid_data_2_7&gt; &lt;grid_data_2_8&gt; &lt;grid_data_2_9&gt; &lt;grid_data_2_10&gt; &lt;grid_data_2_11&gt; &lt;grid_data_2_12&gt; &lt;grid_data_2_13&gt; &lt;grid_data_2_14&gt; &lt;grid_data_2_15&gt; </arg>
+</msg>
+
+<msg type="info" file="Xst" num="2261" delta="old" >The FF/Latch &lt;<arg fmt="%s" index="1">bar_data_5</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">vga_test</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">4 FFs/Latches</arg>, which will be removed : <arg fmt="%s" index="4">&lt;bar_data_6&gt; &lt;bar_data_7&gt; &lt;bar_data_8&gt; &lt;bar_data_9&gt; </arg>
+</msg>
+
+<msg type="info" file="Xst" num="2261" delta="old" >The FF/Latch &lt;<arg fmt="%s" index="1">bar_data_11</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">vga_test</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">4 FFs/Latches</arg>, which will be removed : <arg fmt="%s" index="4">&lt;bar_data_12&gt; &lt;bar_data_13&gt; &lt;bar_data_14&gt; &lt;bar_data_15&gt; </arg>
+</msg>
+
+<msg type="info" file="Xst" num="2261" delta="old" >The FF/Latch &lt;<arg fmt="%s" index="1">bar_data_0</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">vga_test</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">4 FFs/Latches</arg>, which will be removed : <arg fmt="%s" index="4">&lt;bar_data_1&gt; &lt;bar_data_2&gt; &lt;bar_data_3&gt; &lt;bar_data_4&gt; </arg>
+</msg>
+
+</messages>
+

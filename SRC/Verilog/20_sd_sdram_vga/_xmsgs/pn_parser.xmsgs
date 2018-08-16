@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- IMPORTANT: This is an internal file that has been generated   -->
+<!--     by the Xilinx ISE software.  Any direct editing or        -->
+<!--     changes made to this file may result in unpredictable     -->
+<!--     behavior or data corruption.  It is strongly advised that -->
+<!--     users do not edit the contents of this file.              -->
+<!--                                                               -->
+<!-- Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.    -->
+
+<messages>
+<msg type="info" file="ProjectMgmt" num="1845" ><arg fmt="%s" index="1">Analyzing Verilog file &quot;E:/BaiduYunDownload/AX309.1600808/AX309/09_VERILOG/20_sd_sdram_vga/rtl/sd_ip/SD_TOP.v&quot; into library work</arg>
+</msg>
+
+<msg type="info" file="ProjectMgmt" num="1845" ><arg fmt="%s" index="1">Analyzing Verilog file &quot;E:/BaiduYunDownload/AX309.1600808/AX309/09_VERILOG/20_sd_sdram_vga/rtl/sd_ip/SD_initial.v&quot; into library work</arg>
+</msg>
+
+<msg type="info" file="ProjectMgmt" num="1845" ><arg fmt="%s" index="1">Analyzing Verilog file &quot;E:/BaiduYunDownload/AX309.1600808/AX309/09_VERILOG/20_sd_sdram_vga/rtl/sd_ip/SD_read.v&quot; into library work</arg>
+</msg>
+
+<msg type="info" file="ProjectMgmt" num="1845" ><arg fmt="%s" index="1">Analyzing Verilog file &quot;E:/BaiduYunDownload/AX309.1600808/AX309/09_VERILOG/20_sd_sdram_vga/rtl/sd_sdram_vga.v&quot; into library work</arg>
+</msg>
+
+<msg type="info" file="ProjectMgmt" num="1845" ><arg fmt="%s" index="1">Analyzing Verilog file &quot;E:/BaiduYunDownload/AX309.1600808/AX309/09_VERILOG/20_sd_sdram_vga/rtl/sdram_vga_ip/lcd_ip/lcd_driver.v&quot; into library work</arg>
+</msg>
+
+<msg type="info" file="ProjectMgmt" num="1065" >&quot;<arg fmt="%s" index="1">E:/BaiduYunDownload/AX309.1600808/AX309/09_VERILOG/20_sd_sdram_vga/rtl/sdram_vga_ip/lcd_ip/lcd_driver.v</arg>&quot; Line <arg fmt="%d" index="2">30</arg>. <arg fmt="%s" index="3">Include file found: &apos;E:/BaiduYunDownload/AX309.1600808/AX309/09_VERILOG/20_sd_sdram_vga/rtl/sdram_vga_ip/lcd_ip/lcd_para.v&apos; in file &quot;E:/BaiduYunDownload/AX309.1600808/AX309/09_VERILOG/20_sd_sdram_vga/rtl/sdram_vga_ip/lcd_ip/lcd_driver.v&quot; line 30
+</arg>
+</msg>
+
+<msg type="info" file="ProjectMgmt" num="1845" ><arg fmt="%s" index="1">Analyzing Verilog file &quot;E:/BaiduYunDownload/AX309.1600808/AX309/09_VERILOG/20_sd_sdram_vga/rtl/sdram_vga_ip/lcd_ip/lcd_top.v&quot; into library work</arg>
+</msg>
+
+<msg type="info" file="ProjectMgmt" num="1845" ><arg fmt="%s" index="1">Analyzing Verilog file &quot;E:/BaiduYunDownload/AX309.1600808/AX309/09_VERILOG/20_sd_sdram_vga/rtl/sdram_vga_ip/sdram_ip/dcfifo_ctrl.v&quot; into library work</arg>
+</msg>
+
+<msg type="info" file="ProjectMgmt" num="1845" ><arg fmt="%s" index="1">Analyzing Verilog file &quot;E:/BaiduYunDownload/AX309.1600808/AX309/09_VERILOG/20_sd_sdram_vga/rtl/sdram_vga_ip/sdram_ip/sdram_2fifo_top.v&quot; into library work</arg>
+</msg>
+
+<msg type="info" file="ProjectMgmt" num="1845" ><arg fmt="%s" index="1">Analyzing Verilog file &quot;E:/BaiduYunDownload/AX309.1600808/AX309/09_VERILOG/20_sd_sdram_vga/rtl/sdram_vga_ip/sdram_ip/sdram_cmd.v&quot; into library work</arg>
+</msg>
+
+<msg type="info" file="ProjectMgmt" num="1065" >&quot;<arg fmt="%s" index="1">E:/BaiduYunDownload/AX309.1600808/AX309/09_VERILOG/20_sd_sdram_vga/rtl/sdram_vga_ip/sdram_ip/sdram_cmd.v</arg>&quot; Line <arg fmt="%d" index="2">38</arg>. <arg fmt="%s" index="3">Include file found: &apos;E:/BaiduYunDownload/AX309.1600808/AX309/09_VERILOG/20_sd_sdram_vga/rtl/sdram_vga_ip/sdram_ip/sdram_para.v&apos; in file &quot;E:/BaiduYunDownload/AX309.1600808/AX309/09_VERILOG/20_sd_sdram_vga/rtl/sdram_vga_ip/sdram_ip/sdram_cmd.v&quot; line 38
+</arg>
+</msg>
+
+<msg type="info" file="ProjectMgmt" num="1845" ><arg fmt="%s" index="1">Analyzing Verilog file &quot;E:/BaiduYunDownload/AX309.1600808/AX309/09_VERILOG/20_sd_sdram_vga/rtl/sdram_vga_ip/sdram_ip/sdram_ctrl.v&quot; into library work</arg>
+</msg>
+
+<msg type="info" file="ProjectMgmt" num="1065" >&quot;<arg fmt="%s" index="1">E:/BaiduYunDownload/AX309.1600808/AX309/09_VERILOG/20_sd_sdram_vga/rtl/sdram_vga_ip/sdram_ip/sdram_ctrl.v</arg>&quot; Line <arg fmt="%d" index="2">49</arg>. <arg fmt="%s" index="3">Include file found: &apos;E:/BaiduYunDownload/AX309.1600808/AX309/09_VERILOG/20_sd_sdram_vga/rtl/sdram_vga_ip/sdram_ip/sdram_para.v&apos; in file &quot;E:/BaiduYunDownload/AX309.1600808/AX309/09_VERILOG/20_sd_sdram_vga/rtl/sdram_vga_ip/sdram_ip/sdram_ctrl.v&quot; line 49
+</arg>
+</msg>
+
+<msg type="info" file="ProjectMgmt" num="1845" ><arg fmt="%s" index="1">Analyzing Verilog file &quot;E:/BaiduYunDownload/AX309.1600808/AX309/09_VERILOG/20_sd_sdram_vga/rtl/sdram_vga_ip/sdram_ip/sdram_top.v&quot; into library work</arg>
+</msg>
+
+<msg type="info" file="ProjectMgmt" num="1845" ><arg fmt="%s" index="1">Analyzing Verilog file &quot;E:/BaiduYunDownload/AX309.1600808/AX309/09_VERILOG/20_sd_sdram_vga/rtl/sdram_vga_ip/sdram_ip/sdram_wr_data.v&quot; into library work</arg>
+</msg>
+
+<msg type="info" file="ProjectMgmt" num="1065" >&quot;<arg fmt="%s" index="1">E:/BaiduYunDownload/AX309.1600808/AX309/09_VERILOG/20_sd_sdram_vga/rtl/sdram_vga_ip/sdram_ip/sdram_wr_data.v</arg>&quot; Line <arg fmt="%d" index="2">25</arg>. <arg fmt="%s" index="3">Include file found: &apos;E:/BaiduYunDownload/AX309.1600808/AX309/09_VERILOG/20_sd_sdram_vga/rtl/sdram_vga_ip/sdram_ip/sdram_para.v&apos; in file &quot;E:/BaiduYunDownload/AX309.1600808/AX309/09_VERILOG/20_sd_sdram_vga/rtl/sdram_vga_ip/sdram_ip/sdram_wr_data.v&quot; line 25
+</arg>
+</msg>
+
+<msg type="info" file="ProjectMgmt" num="1845" ><arg fmt="%s" index="1">Analyzing Verilog file &quot;E:/BaiduYunDownload/AX309.1600808/AX309/09_VERILOG/20_sd_sdram_vga/rtl/sdram_vga_ip/sdram_vga_top.v&quot; into library work</arg>
+</msg>
+
+<msg type="info" file="ProjectMgmt" num="1845" ><arg fmt="%s" index="1">Analyzing Verilog file &quot;E:/BaiduYunDownload/AX309.1600808/AX309/09_VERILOG/20_sd_sdram_vga/rtl/system_ctrl.v&quot; into library work</arg>
+</msg>
+
+</messages>
+

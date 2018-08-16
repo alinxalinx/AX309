@@ -1,0 +1,75 @@
+xst -intstyle ise -ifn "E:/Project/AX516/verilog/sd_audio/sd_audio/sd_audio.xst" -ofn "E:/Project/AX516/verilog/sd_audio/sd_audio/sd_audio.syr" 
+xst -intstyle ise -ifn "E:/Project/AX516/verilog/sd_audio/sd_audio/sd_audio.xst" -ofn "E:/Project/AX516/verilog/sd_audio/sd_audio/sd_audio.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc rtl/SD.ucf -p xc6slx16-csg324-3 sd_audio.ngc sd_audio.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o sd_audio_map.ncd sd_audio.ngd sd_audio.pcf 
+par -w -intstyle ise -ol high -mt off sd_audio_map.ncd sd_audio.ncd sd_audio.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml sd_audio.twx sd_audio.ncd -o sd_audio.twr sd_audio.pcf 
+bitgen -intstyle ise -f sd_audio.ut sd_audio.ncd 
+xst -intstyle ise -ifn "E:/Project/AX516/verilog/sd_audio/sd_audio/sd_audio.xst" -ofn "E:/Project/AX516/verilog/sd_audio/sd_audio/sd_audio.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc rtl/SD.ucf -p xc6slx16-csg324-3 sd_audio.ngc sd_audio.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o sd_audio_map.ncd sd_audio.ngd sd_audio.pcf 
+par -w -intstyle ise -ol high -mt off sd_audio_map.ncd sd_audio.ncd sd_audio.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml sd_audio.twx sd_audio.ncd -o sd_audio.twr sd_audio.pcf 
+bitgen -intstyle ise -f sd_audio.ut sd_audio.ncd 
+xst -intstyle ise -ifn "E:/Project/AX516/verilog/sd_audio/sd_audio/sd_audio.xst" -ofn "E:/Project/AX516/verilog/sd_audio/sd_audio/sd_audio.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc rtl/SD.ucf -p xc6slx16-csg324-3 sd_audio.ngc sd_audio.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o sd_audio_map.ncd sd_audio.ngd sd_audio.pcf 
+par -w -intstyle ise -ol high -mt off sd_audio_map.ncd sd_audio.ncd sd_audio.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml sd_audio.twx sd_audio.ncd -o sd_audio.twr sd_audio.pcf 
+bitgen -intstyle ise -f sd_audio.ut sd_audio.ncd 
+xst -intstyle ise -ifn "E:/Project/AX516/verilog/sd_audio/sd_audio/sd_audio.xst" -ofn "E:/Project/AX516/verilog/sd_audio/sd_audio/sd_audio.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc rtl/SD.ucf -p xc6slx16-csg324-3 sd_audio.ngc sd_audio.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o sd_audio_map.ncd sd_audio.ngd sd_audio.pcf 
+par -w -intstyle ise -ol high -mt off sd_audio_map.ncd sd_audio.ncd sd_audio.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml sd_audio.twx sd_audio.ncd -o sd_audio.twr sd_audio.pcf 
+bitgen -intstyle ise -f sd_audio.ut sd_audio.ncd 
+xst -intstyle ise -ifn "E:/Project/AX545/verilog/sd_audio/sd_audio/sd_audio.xst" -ofn "E:/Project/AX545/verilog/sd_audio/sd_audio/sd_audio.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc rtl/SD.ucf -p xc6slx45-csg324-2 sd_audio.ngc sd_audio.ngd  
+map -intstyle ise -p xc6slx45-csg324-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o sd_audio_map.ncd sd_audio.ngd sd_audio.pcf 
+par -w -intstyle ise -ol high -mt off sd_audio_map.ncd sd_audio.ncd sd_audio.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml sd_audio.twx sd_audio.ncd -o sd_audio.twr sd_audio.pcf 
+bitgen -intstyle ise -f sd_audio.ut sd_audio.ncd 
+xst -intstyle ise -ifn "E:/Project/AX545/verilog/sd_audio/sd_audio/sd_audio.xst" -ofn "E:/Project/AX545/verilog/sd_audio/sd_audio/sd_audio.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc rtl/SD.ucf -p xc6slx45-csg324-2 sd_audio.ngc sd_audio.ngd  
+map -intstyle ise -p xc6slx45-csg324-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o sd_audio_map.ncd sd_audio.ngd sd_audio.pcf 
+par -w -intstyle ise -ol high -mt off sd_audio_map.ncd sd_audio.ncd sd_audio.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml sd_audio.twx sd_audio.ncd -o sd_audio.twr sd_audio.pcf 
+bitgen -intstyle ise -f sd_audio.ut sd_audio.ncd 
+xst -intstyle ise -ifn "E:/Project/AX545/verilog/sd_audio/sd_audio/sd_audio.xst" -ofn "E:/Project/AX545/verilog/sd_audio/sd_audio/sd_audio.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc rtl/SD.ucf -p xc6slx45-csg324-2 sd_audio.ngc sd_audio.ngd  
+map -intstyle ise -p xc6slx45-csg324-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o sd_audio_map.ncd sd_audio.ngd sd_audio.pcf 
+par -w -intstyle ise -ol high -mt off sd_audio_map.ncd sd_audio.ncd sd_audio.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml sd_audio.twx sd_audio.ncd -o sd_audio.twr sd_audio.pcf 
+bitgen -intstyle ise -f sd_audio.ut sd_audio.ncd 
+xst -intstyle ise -ifn "E:/Project/AX545/verilog/sd_audio/sd_audio/sd_audio.xst" -ofn "E:/Project/AX545/verilog/sd_audio/sd_audio/sd_audio.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc rtl/SD.ucf -p xc6slx45-csg324-2 sd_audio.ngc sd_audio.ngd  
+map -intstyle ise -p xc6slx45-csg324-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o sd_audio_map.ncd sd_audio.ngd sd_audio.pcf 
+par -w -intstyle ise -ol high -mt off sd_audio_map.ncd sd_audio.ncd sd_audio.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml sd_audio.twx sd_audio.ncd -o sd_audio.twr sd_audio.pcf 
+bitgen -intstyle ise -f sd_audio.ut sd_audio.ncd 
+xst -intstyle ise -ifn "E:/Project/AX545/verilog/sd_audio/sd_audio/sd_audio.xst" -ofn "E:/Project/AX545/verilog/sd_audio/sd_audio/sd_audio.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc rtl/SD.ucf -p xc6slx45-csg324-2 sd_audio.ngc sd_audio.ngd  
+map -intstyle ise -p xc6slx45-csg324-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o sd_audio_map.ncd sd_audio.ngd sd_audio.pcf 
+par -w -intstyle ise -ol high -mt off sd_audio_map.ncd sd_audio.ncd sd_audio.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml sd_audio.twx sd_audio.ncd -o sd_audio.twr sd_audio.pcf 
+bitgen -intstyle ise -f sd_audio.ut sd_audio.ncd 
+xst -intstyle ise -ifn "E:/Project/AX309/Verilog/sd_audio/sd_audio/sd_audio.xst" -ofn "E:/Project/AX309/Verilog/sd_audio/sd_audio/sd_audio.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc rtl/SD.ucf -p xc6slx9-ftg256-2 sd_audio.ngc sd_audio.ngd  
+map -intstyle ise -p xc6slx9-ftg256-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o sd_audio_map.ncd sd_audio.ngd sd_audio.pcf 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc rtl/SD.ucf -p xc6slx9-ftg256-2 sd_audio.ngc sd_audio.ngd  
+map -intstyle ise -p xc6slx9-ftg256-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o sd_audio_map.ncd sd_audio.ngd sd_audio.pcf 
+par -w -intstyle ise -ol high -mt off sd_audio_map.ncd sd_audio.ncd sd_audio.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml sd_audio.twx sd_audio.ncd -o sd_audio.twr sd_audio.pcf 
+bitgen -intstyle ise -f sd_audio.ut sd_audio.ncd 
+xst -intstyle ise -ifn "E:/Project/AX309/Verilog/sd_audio/sd_audio/sd_audio.xst" -ofn "E:/Project/AX309/Verilog/sd_audio/sd_audio/sd_audio.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc rtl/SD.ucf -p xc6slx9-ftg256-2 sd_audio.ngc sd_audio.ngd  
+map -intstyle ise -p xc6slx9-ftg256-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o sd_audio_map.ncd sd_audio.ngd sd_audio.pcf 
+par -w -intstyle ise -ol high -mt off sd_audio_map.ncd sd_audio.ncd sd_audio.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml sd_audio.twx sd_audio.ncd -o sd_audio.twr sd_audio.pcf 
+bitgen -intstyle ise -f sd_audio.ut sd_audio.ncd 
+xst -intstyle ise -ifn "E:/Project/AX309/CD/09_VERILOG/17_sd_audio/sd_audio/sd_audio.xst" -ofn "E:/Project/AX309/CD/09_VERILOG/17_sd_audio/sd_audio/sd_audio.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc rtl/SD.ucf -p xc6slx9-ftg256-2 sd_audio.ngc sd_audio.ngd  
+map -intstyle ise -p xc6slx9-ftg256-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o sd_audio_map.ncd sd_audio.ngd sd_audio.pcf 
+par -w -intstyle ise -ol high -mt off sd_audio_map.ncd sd_audio.ncd sd_audio.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml sd_audio.twx sd_audio.ncd -o sd_audio.twr sd_audio.pcf 
+bitgen -intstyle ise -f sd_audio.ut sd_audio.ncd 

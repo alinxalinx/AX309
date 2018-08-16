@@ -1,0 +1,1392 @@
+Release 14.7 - xst P.20131013 (nt64)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+--> Parameter TMPDIR set to xst/projnav.tmp
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.07 secs
+ 
+--> Parameter xsthdpdir set to xst
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.07 secs
+ 
+--> Reading design: sdram_ov5640_vga.prj
+
+TABLE OF CONTENTS
+  1) Synthesis Options Summary
+  2) HDL Parsing
+  3) HDL Elaboration
+  4) HDL Synthesis
+       4.1) HDL Synthesis Report
+  5) Advanced HDL Synthesis
+       5.1) Advanced HDL Synthesis Report
+  6) Low Level Synthesis
+  7) Partition Report
+  8) Design Summary
+       8.1) Primitive and Black Box Usage
+       8.2) Device utilization summary
+       8.3) Partition Resource Summary
+       8.4) Timing Report
+            8.4.1) Clock Information
+            8.4.2) Asynchronous Control Signals Information
+            8.4.3) Timing Summary
+            8.4.4) Timing Details
+            8.4.5) Cross Clock Domains Report
+
+
+=========================================================================
+*                      Synthesis Options Summary                        *
+=========================================================================
+---- Source Parameters
+Input File Name                    : "sdram_ov5640_vga.prj"
+Ignore Synthesis Constraint File   : NO
+
+---- Target Parameters
+Output File Name                   : "sdram_ov5640_vga"
+Output Format                      : NGC
+Target Device                      : xc6slx9-2-ftg256
+
+---- Source Options
+Top Module Name                    : sdram_ov5640_vga
+Automatic FSM Extraction           : YES
+FSM Encoding Algorithm             : Auto
+Safe Implementation                : No
+FSM Style                          : LUT
+RAM Extraction                     : Yes
+RAM Style                          : Auto
+ROM Extraction                     : Yes
+Shift Register Extraction          : YES
+ROM Style                          : Auto
+Resource Sharing                   : YES
+Asynchronous To Synchronous        : NO
+Shift Register Minimum Size        : 2
+Use DSP Block                      : Auto
+Automatic Register Balancing       : No
+
+---- Target Options
+LUT Combining                      : Auto
+Reduce Control Sets                : Auto
+Add IO Buffers                     : YES
+Global Maximum Fanout              : 100000
+Add Generic Clock Buffer(BUFG)     : 16
+Register Duplication               : YES
+Optimize Instantiated Primitives   : NO
+Use Clock Enable                   : Auto
+Use Synchronous Set                : Auto
+Use Synchronous Reset              : Auto
+Pack IO Registers into IOBs        : Auto
+Equivalent register Removal        : YES
+
+---- General Options
+Optimization Goal                  : Speed
+Optimization Effort                : 1
+Power Reduction                    : NO
+Keep Hierarchy                     : No
+Netlist Hierarchy                  : As_Optimized
+RTL Output                         : Yes
+Global Optimization                : AllClockNets
+Read Cores                         : YES
+Write Timing Constraints           : NO
+Cross Clock Analysis               : NO
+Hierarchy Separator                : /
+Bus Delimiter                      : <>
+Case Specifier                     : Maintain
+Slice Utilization Ratio            : 100
+BRAM Utilization Ratio             : 100
+DSP48 Utilization Ratio            : 100
+Auto BRAM Packing                  : NO
+Slice Utilization Ratio Delta      : 5
+
+---- Other Options
+Cores Search Directories           : {"ipcore_dir"  }
+
+=========================================================================
+
+
+=========================================================================
+*                          HDL Parsing                                  *
+=========================================================================
+Analyzing Verilog file "E:\Project\AX309\Verilog\22_sdram_ov5640_lcd\sdram_ov5640_lcd\ipcore_dir\sdram_pll.v" into library work
+Parsing module <sdram_pll>.
+Analyzing Verilog file "E:\Project\AX309\Verilog\22_sdram_ov5640_lcd\sdram_ov5640_lcd\ipcore_dir\pll_24M.v" into library work
+Parsing module <pll_24M>.
+Analyzing Verilog file "E:\Project\AX309\Verilog\22_sdram_ov5640_lcd\sdram_ov5640_lcd\rtl\sdram_vga_ip\sdram_ip\sdram_wr_data.v" into library work
+Parsing module <sdram_wr_data>.
+Parsing verilog file "E:\Project\AX309\Verilog\22_sdram_ov5640_lcd\sdram_ov5640_lcd\rtl\sdram_vga_ip\sdram_ip\/sdram_para.v" included at line 25.
+WARNING:HDLCompiler:1142 - "E:\Project\AX309\Verilog\22_sdram_ov5640_lcd\sdram_ov5640_lcd\rtl\sdram_vga_ip\sdram_ip\sdram_wr_data.v" Line 1: Compiler directive `timescale is not allowed here
+Analyzing Verilog file "E:\Project\AX309\Verilog\22_sdram_ov5640_lcd\sdram_ov5640_lcd\rtl\sdram_vga_ip\sdram_ip\sdram_ctrl.v" into library work
+Parsing module <sdram_ctrl>.
+Parsing verilog file "E:\Project\AX309\Verilog\22_sdram_ov5640_lcd\sdram_ov5640_lcd\rtl\sdram_vga_ip\sdram_ip\/sdram_para.v" included at line 49.
+WARNING:HDLCompiler:1142 - "E:\Project\AX309\Verilog\22_sdram_ov5640_lcd\sdram_ov5640_lcd\rtl\sdram_vga_ip\sdram_ip\sdram_ctrl.v" Line 1: Compiler directive `timescale is not allowed here
+Analyzing Verilog file "E:\Project\AX309\Verilog\22_sdram_ov5640_lcd\sdram_ov5640_lcd\rtl\sdram_vga_ip\sdram_ip\sdram_cmd.v" into library work
+Parsing module <sdram_cmd>.
+Parsing verilog file "E:\Project\AX309\Verilog\22_sdram_ov5640_lcd\sdram_ov5640_lcd\rtl\sdram_vga_ip\sdram_ip\/sdram_para.v" included at line 38.
+WARNING:HDLCompiler:1142 - "E:\Project\AX309\Verilog\22_sdram_ov5640_lcd\sdram_ov5640_lcd\rtl\sdram_vga_ip\sdram_ip\sdram_cmd.v" Line 1: Compiler directive `timescale is not allowed here
+Analyzing Verilog file "E:\Project\AX309\Verilog\22_sdram_ov5640_lcd\sdram_ov5640_lcd\ipcore_dir\wrfifo.v" into library work
+Parsing module <wrfifo>.
+Analyzing Verilog file "E:\Project\AX309\Verilog\22_sdram_ov5640_lcd\sdram_ov5640_lcd\ipcore_dir\rdfifo.v" into library work
+Parsing module <rdfifo>.
+Analyzing Verilog file "E:\Project\AX309\Verilog\22_sdram_ov5640_lcd\sdram_ov5640_lcd\rtl\sdram_vga_ip\sdram_ip\sdram_top.v" into library work
+Parsing module <sdram_top>.
+Analyzing Verilog file "E:\Project\AX309\Verilog\22_sdram_ov5640_lcd\sdram_ov5640_lcd\rtl\sdram_vga_ip\sdram_ip\dcfifo_ctrl.v" into library work
+Parsing module <dcfifo_ctrl>.
+Analyzing Verilog file "E:\Project\AX309\Verilog\22_sdram_ov5640_lcd\sdram_ov5640_lcd\rtl\sdram_vga_ip\lcd_ip\lcd_driver.v" into library work
+Parsing module <lcd_driver>.
+Parsing verilog file "E:\Project\AX309\Verilog\22_sdram_ov5640_lcd\sdram_ov5640_lcd\rtl\sdram_vga_ip\lcd_ip\/lcd_para.v" included at line 29.
+Analyzing Verilog file "E:\Project\AX309\Verilog\22_sdram_ov5640_lcd\sdram_ov5640_lcd\rtl\sdram_vga_ip\sdram_ip\sdram_2fifo_top.v" into library work
+Parsing module <sdram_2fifo_top>.
+WARNING:HDLCompiler:751 - "E:\Project\AX309\Verilog\22_sdram_ov5640_lcd\sdram_ov5640_lcd\rtl\sdram_vga_ip\sdram_ip\sdram_2fifo_top.v" Line 68: Redeclaration of ansi port sdram_wr_req is not allowed
+WARNING:HDLCompiler:751 - "E:\Project\AX309\Verilog\22_sdram_ov5640_lcd\sdram_ov5640_lcd\rtl\sdram_vga_ip\sdram_ip\sdram_2fifo_top.v" Line 70: Redeclaration of ansi port sdram_rd_req is not allowed
+Analyzing Verilog file "E:\Project\AX309\Verilog\22_sdram_ov5640_lcd\sdram_ov5640_lcd\rtl\sdram_vga_ip\sdram_ip\sdbank_switch.v" into library work
+Parsing module <sdbank_switch>.
+Analyzing Verilog file "E:\Project\AX309\Verilog\22_sdram_ov5640_lcd\sdram_ov5640_lcd\rtl\sdram_vga_ip\lcd_ip\lcd_top.v" into library work
+Parsing module <lcd_top>.
+Analyzing Verilog file "E:\Project\AX309\Verilog\22_sdram_ov5640_lcd\sdram_ov5640_lcd\rtl\cmos_i2c_ov5640\i2c_com.v" into library work
+Parsing module <i2c_com>.
+Analyzing Verilog file "E:\Project\AX309\Verilog\22_sdram_ov5640_lcd\sdram_ov5640_lcd\rtl\system_ctrl.v" into library work
+Parsing module <system_ctrl>.
+Analyzing Verilog file "E:\Project\AX309\Verilog\22_sdram_ov5640_lcd\sdram_ov5640_lcd\rtl\sdram_vga_ip\sdram_vga_top.v" into library work
+Parsing module <sdram_vga_top>.
+Analyzing Verilog file "E:\Project\AX309\Verilog\22_sdram_ov5640_lcd\sdram_ov5640_lcd\rtl\cmos_i2c_ov5640\reg_config.v" into library work
+Parsing module <reg_config>.
+Analyzing Verilog file "E:\Project\AX309\Verilog\22_sdram_ov5640_lcd\sdram_ov5640_lcd\rtl\cmos_i2c_ov5640\power_on_delay.v" into library work
+Parsing module <power_on_delay>.
+Analyzing Verilog file "E:\Project\AX309\Verilog\22_sdram_ov5640_lcd\sdram_ov5640_lcd\rtl\cmos_i2c_ov5640\CMOS_Capture.v" into library work
+Parsing module <CMOS_Capture>.
+Analyzing Verilog file "E:\Project\AX309\Verilog\22_sdram_ov5640_lcd\sdram_ov5640_lcd\rtl\sdram_ov5640_lcd.v" into library work
+Parsing module <sdram_ov5640_vga>.
+
+=========================================================================
+*                            HDL Elaboration                            *
+=========================================================================
+
+Elaborating module <sdram_ov5640_vga>.
+
+Elaborating module <system_ctrl>.
+
+Elaborating module <sdram_pll>.
+
+Elaborating module <IBUFG>.
+
+Elaborating module <DCM_SP(CLKDV_DIVIDE=2.0,CLKFX_DIVIDE=10,CLKFX_MULTIPLY=13,CLKIN_DIVIDE_BY_2="FALSE",CLKIN_PERIOD=20.0,CLKOUT_PHASE_SHIFT="NONE",CLK_FEEDBACK="1X",DESKEW_ADJUST="SYSTEM_SYNCHRONOUS",PHASE_SHIFT=0,STARTUP_WAIT="FALSE")>.
+WARNING:HDLCompiler:1127 - "E:\Project\AX309\Verilog\22_sdram_ov5640_lcd\sdram_ov5640_lcd\ipcore_dir\sdram_pll.v" Line 137: Assignment to status_int ignored, since the identifier is never used
+
+Elaborating module <BUFG>.
+
+Elaborating module <pll_24M>.
+
+Elaborating module <DCM_SP(CLKDV_DIVIDE=2.0,CLKFX_DIVIDE=25,CLKFX_MULTIPLY=12,CLKIN_DIVIDE_BY_2="FALSE",CLKIN_PERIOD=20.0,CLKOUT_PHASE_SHIFT="NONE",CLK_FEEDBACK="1X",DESKEW_ADJUST="SYSTEM_SYNCHRONOUS",PHASE_SHIFT=0,STARTUP_WAIT="FALSE")>.
+WARNING:HDLCompiler:1127 - "E:\Project\AX309\Verilog\22_sdram_ov5640_lcd\sdram_ov5640_lcd\ipcore_dir\pll_24M.v" Line 130: Assignment to status_int ignored, since the identifier is never used
+
+Elaborating module <ODDR2(DDR_ALIGNMENT="NONE",INIT=1'b0,SRTYPE="SYNC")>.
+
+Elaborating module <power_on_delay>.
+
+Elaborating module <reg_config>.
+
+Elaborating module <i2c_com>.
+WARNING:HDLCompiler:413 - "E:\Project\AX309\Verilog\22_sdram_ov5640_lcd\sdram_ov5640_lcd\rtl\cmos_i2c_ov5640\i2c_com.v" Line 30: Result of 32-bit expression is truncated to fit in 1-bit target.
+WARNING:HDLCompiler:413 - "E:\Project\AX309\Verilog\22_sdram_ov5640_lcd\sdram_ov5640_lcd\rtl\cmos_i2c_ov5640\i2c_com.v" Line 31: Result of 32-bit expression is truncated to fit in 1-bit target.
+WARNING:HDLCompiler:413 - "E:\Project\AX309\Verilog\22_sdram_ov5640_lcd\sdram_ov5640_lcd\rtl\cmos_i2c_ov5640\i2c_com.v" Line 43: Result of 7-bit expression is truncated to fit in 6-bit target.
+WARNING:HDLCompiler:1127 - "E:\Project\AX309\Verilog\22_sdram_ov5640_lcd\sdram_ov5640_lcd\rtl\cmos_i2c_ov5640\reg_config.v" Line 30: Assignment to ack ignored, since the identifier is never used
+
+Elaborating module <CMOS_Capture>.
+
+Elaborating module <sdram_vga_top>.
+
+Elaborating module <sdram_2fifo_top>.
+
+Elaborating module <sdram_top>.
+
+Elaborating module <sdram_ctrl>.
+
+Elaborating module <sdram_cmd>.
+
+Elaborating module <sdram_wr_data>.
+
+Elaborating module <dcfifo_ctrl>.
+
+Elaborating module <wrfifo>.
+WARNING:HDLCompiler:1499 - "E:\Project\AX309\Verilog\22_sdram_ov5640_lcd\sdram_ov5640_lcd\ipcore_dir\wrfifo.v" Line 39: Empty module <wrfifo> remains a black box.
+
+Elaborating module <rdfifo>.
+WARNING:HDLCompiler:1499 - "E:\Project\AX309\Verilog\22_sdram_ov5640_lcd\sdram_ov5640_lcd\ipcore_dir\rdfifo.v" Line 39: Empty module <rdfifo> remains a black box.
+WARNING:HDLCompiler:1127 - "E:\Project\AX309\Verilog\22_sdram_ov5640_lcd\sdram_ov5640_lcd\rtl\sdram_vga_ip\sdram_vga_top.v" Line 71: Assignment to sdram_wr_req ignored, since the identifier is never used
+WARNING:HDLCompiler:1127 - "E:\Project\AX309\Verilog\22_sdram_ov5640_lcd\sdram_ov5640_lcd\rtl\sdram_vga_ip\sdram_vga_top.v" Line 72: Assignment to sdram_rd_req ignored, since the identifier is never used
+
+Elaborating module <sdbank_switch>.
+WARNING:HDLCompiler:1127 - "E:\Project\AX309\Verilog\22_sdram_ov5640_lcd\sdram_ov5640_lcd\rtl\sdram_vga_ip\sdram_vga_top.v" Line 133: Assignment to state_write ignored, since the identifier is never used
+
+Elaborating module <lcd_top>.
+
+Elaborating module <lcd_driver>.
+WARNING:HDLCompiler:1127 - "E:\Project\AX309\Verilog\22_sdram_ov5640_lcd\sdram_ov5640_lcd\rtl\sdram_vga_ip\sdram_vga_top.v" Line 174: Assignment to lcd_xpos ignored, since the identifier is never used
+WARNING:HDLCompiler:1127 - "E:\Project\AX309\Verilog\22_sdram_ov5640_lcd\sdram_ov5640_lcd\rtl\sdram_vga_ip\sdram_vga_top.v" Line 175: Assignment to lcd_ypos ignored, since the identifier is never used
+WARNING:HDLCompiler:189 - "E:\Project\AX309\Verilog\22_sdram_ov5640_lcd\sdram_ov5640_lcd\rtl\sdram_ov5640_lcd.v" Line 150: Size mismatch in connection of port <sdram_addr>. Formal port size is 12-bit while actual signal size is 13-bit.
+
+=========================================================================
+*                           HDL Synthesis                               *
+=========================================================================
+
+Synthesizing Unit <sdram_ov5640_vga>.
+    Related source file is "E:\Project\AX309\Verilog\22_sdram_ov5640_lcd\sdram_ov5640_lcd\rtl\sdram_ov5640_lcd.v".
+INFO:Xst:3210 - "E:\Project\AX309\Verilog\22_sdram_ov5640_lcd\sdram_ov5640_lcd\rtl\sdram_ov5640_lcd.v" line 88: Output port <reg_index> of the instance <reg_config_inst> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "E:\Project\AX309\Verilog\22_sdram_ov5640_lcd\sdram_ov5640_lcd\rtl\sdram_ov5640_lcd.v" line 88: Output port <strobe_flash> of the instance <reg_config_inst> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "E:\Project\AX309\Verilog\22_sdram_ov5640_lcd\sdram_ov5640_lcd\rtl\sdram_ov5640_lcd.v" line 88: Output port <clock_20k> of the instance <reg_config_inst> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "E:\Project\AX309\Verilog\22_sdram_ov5640_lcd\sdram_ov5640_lcd\rtl\sdram_ov5640_lcd.v" line 106: Output port <CMOS_FPS_DATA> of the instance <u_CMOS_Capture> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "E:\Project\AX309\Verilog\22_sdram_ov5640_lcd\sdram_ov5640_lcd\rtl\sdram_ov5640_lcd.v" line 132: Output port <lcd_dclk> of the instance <u_sdram_vga_top> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "E:\Project\AX309\Verilog\22_sdram_ov5640_lcd\sdram_ov5640_lcd\rtl\sdram_ov5640_lcd.v" line 132: Output port <lcd_sync> of the instance <u_sdram_vga_top> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "E:\Project\AX309\Verilog\22_sdram_ov5640_lcd\sdram_ov5640_lcd\rtl\sdram_ov5640_lcd.v" line 132: Output port <lcd_blank> of the instance <u_sdram_vga_top> is unconnected or connected to loadless signal.
+    Summary:
+	no macro.
+Unit <sdram_ov5640_vga> synthesized.
+
+Synthesizing Unit <system_ctrl>.
+    Related source file is "E:\Project\AX309\Verilog\22_sdram_ov5640_lcd\sdram_ov5640_lcd\rtl\system_ctrl.v".
+INFO:Xst:3210 - "E:\Project\AX309\Verilog\22_sdram_ov5640_lcd\sdram_ov5640_lcd\rtl\system_ctrl.v" line 45: Output port <LOCKED> of the instance <u_sdram_pll> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "E:\Project\AX309\Verilog\22_sdram_ov5640_lcd\sdram_ov5640_lcd\rtl\system_ctrl.v" line 60: Output port <LOCKED> of the instance <u_pll_24M> is unconnected or connected to loadless signal.
+    Found 10-bit register for signal <delay_cnt>.
+    Found 1-bit register for signal <delay_done>.
+    Found 10-bit adder for signal <delay_cnt[9]_GND_2_o_add_1_OUT> created at line 35.
+    Summary:
+	inferred   1 Adder/Subtractor(s).
+	inferred  11 D-type flip-flop(s).
+Unit <system_ctrl> synthesized.
+
+Synthesizing Unit <sdram_pll>.
+    Related source file is "E:\Project\AX309\Verilog\22_sdram_ov5640_lcd\sdram_ov5640_lcd\ipcore_dir\sdram_pll.v".
+    Summary:
+	no macro.
+Unit <sdram_pll> synthesized.
+
+Synthesizing Unit <pll_24M>.
+    Related source file is "E:\Project\AX309\Verilog\22_sdram_ov5640_lcd\sdram_ov5640_lcd\ipcore_dir\pll_24M.v".
+    Summary:
+	no macro.
+Unit <pll_24M> synthesized.
+
+Synthesizing Unit <power_on_delay>.
+    Related source file is "E:\Project\AX309\Verilog\22_sdram_ov5640_lcd\sdram_ov5640_lcd\rtl\cmos_i2c_ov5640\power_on_delay.v".
+    Found 1-bit register for signal <camera_pwnd_reg>.
+    Found 16-bit register for signal <cnt2>.
+    Found 1-bit register for signal <camera_rstn_reg>.
+    Found 20-bit register for signal <cnt3>.
+    Found 1-bit register for signal <initial_en>.
+    Found 16-bit adder for signal <cnt2[15]_GND_10_o_add_7_OUT> created at line 41.
+    Found 20-bit adder for signal <cnt3[19]_GND_10_o_add_14_OUT> created at line 56.
+    Found 16-bit comparator greater for signal <cnt2[15]_PWR_10_o_LessThan_7_o> created at line 40
+    Found 20-bit comparator greater for signal <cnt3[19]_PWR_10_o_LessThan_14_o> created at line 55
+    Summary:
+	inferred   2 Adder/Subtractor(s).
+	inferred  39 D-type flip-flop(s).
+	inferred   2 Comparator(s).
+Unit <power_on_delay> synthesized.
+
+Synthesizing Unit <reg_config>.
+    Related source file is "E:\Project\AX309\Verilog\22_sdram_ov5640_lcd\sdram_ov5640_lcd\rtl\cmos_i2c_ov5640\reg_config.v".
+WARNING:Xst:647 - Input <initial_en> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+INFO:Xst:3210 - "E:\Project\AX309\Verilog\22_sdram_ov5640_lcd\sdram_ov5640_lcd\rtl\cmos_i2c_ov5640\reg_config.v" line 28: Output port <ack> of the instance <u1> is unconnected or connected to loadless signal.
+    Found 1-bit register for signal <key_on>.
+    Found 1-bit register for signal <key_off>.
+    Found 1-bit register for signal <start>.
+    Found 1-bit register for signal <reg_conf_done_reg>.
+    Found 1-bit register for signal <strobe_flash>.
+    Found 1-bit register for signal <clock_20k>.
+    Found 16-bit register for signal <clock_20k_cnt>.
+    Found 16-bit register for signal <on_counter>.
+    Found 16-bit register for signal <off_counter>.
+    Found 2-bit register for signal <config_step>.
+    Found 9-bit register for signal <reg_index>.
+    Found 32-bit register for signal <i2c_data>.
+    Found finite state machine <FSM_0> for signal <config_step>.
+    -----------------------------------------------------------------------
+    | States             | 4                                              |
+    | Transitions        | 15                                             |
+    | Inputs             | 5                                              |
+    | Outputs            | 4                                              |
+    | Clock              | clock_20k (rising_edge)                        |
+    | Reset              | camera_rstn (negative)                         |
+    | Reset type         | asynchronous                                   |
+    | Reset State        | 00                                             |
+    | Encoding           | auto                                           |
+    | Implementation     | LUT                                            |
+    -----------------------------------------------------------------------
+    Found 16-bit adder for signal <clock_20k_cnt[15]_GND_11_o_add_1_OUT> created at line 46.
+    Found 16-bit adder for signal <on_counter[15]_GND_11_o_add_7_OUT> created at line 65.
+    Found 16-bit adder for signal <off_counter[15]_GND_11_o_add_14_OUT> created at line 75.
+    Found 9-bit adder for signal <reg_index[8]_GND_11_o_add_23_OUT> created at line 112.
+    Found 512x32-bit Read Only RAM for signal <n0110>
+    Found 16-bit comparator greater for signal <clock_20k_cnt[15]_GND_11_o_LessThan_1_o> created at line 45
+    Found 16-bit comparator lessequal for signal <n0010> created at line 64
+    Found 16-bit comparator lessequal for signal <n0017> created at line 74
+    Found 9-bit comparator greater for signal <reg_index[8]_PWR_11_o_LessThan_22_o> created at line 98
+    Summary:
+	inferred   1 RAM(s).
+	inferred   4 Adder/Subtractor(s).
+	inferred  95 D-type flip-flop(s).
+	inferred   4 Comparator(s).
+	inferred   6 Multiplexer(s).
+	inferred   1 Finite State Machine(s).
+Unit <reg_config> synthesized.
+
+Synthesizing Unit <i2c_com>.
+    Related source file is "E:\Project\AX309\Verilog\22_sdram_ov5640_lcd\sdram_ov5640_lcd\rtl\cmos_i2c_ov5640\i2c_com.v".
+    Found 1-bit register for signal <ack1>.
+    Found 1-bit register for signal <ack2>.
+    Found 1-bit register for signal <ack3>.
+    Found 1-bit register for signal <sclk>.
+    Found 1-bit register for signal <reg_sdat>.
+    Found 6-bit register for signal <cyc_count>.
+    Found 1-bit register for signal <tr_end>.
+    Found 6-bit adder for signal <cyc_count[5]_GND_12_o_add_8_OUT> created at line 43.
+    Found 1-bit tristate buffer for signal <i2c_sdat> created at line 31
+    Found 6-bit comparator lessequal for signal <n0002> created at line 30
+    Found 6-bit comparator lessequal for signal <n0004> created at line 30
+    Found 6-bit comparator lessequal for signal <cyc_count[5]_PWR_12_o_LessThan_8_o> created at line 42
+    Summary:
+	inferred   1 Adder/Subtractor(s).
+	inferred  12 D-type flip-flop(s).
+	inferred   3 Comparator(s).
+	inferred  44 Multiplexer(s).
+	inferred   1 Tristate(s).
+Unit <i2c_com> synthesized.
+
+Synthesizing Unit <CMOS_Capture>.
+    Related source file is "E:\Project\AX309\Verilog\22_sdram_ov5640_lcd\sdram_ov5640_lcd\rtl\cmos_i2c_ov5640\CMOS_Capture.v".
+    Found 1-bit register for signal <mCMOS_VSYNC>.
+    Found 1-bit register for signal <byte_state>.
+    Found 1-bit register for signal <Frame_valid>.
+    Found 1-bit register for signal <CMOS_oCLK>.
+    Found 1-bit register for signal <CMOS_VALID>.
+    Found 1-bit register for signal <fps_state>.
+    Found 8-bit register for signal <Pre_CMOS_iDATA>.
+    Found 8-bit register for signal <fps_data>.
+    Found 8-bit register for signal <CMOS_FPS_DATA>.
+    Found 16-bit register for signal <CMOS_oDATA>.
+    Found 4-bit register for signal <Frame_Cont>.
+    Found 26-bit register for signal <delay_cnt>.
+    Found 1-bit adder for signal <byte_state_PWR_13_o_add_1_OUT<0>> created at line 117.
+    Found 4-bit adder for signal <Frame_Cont[3]_GND_15_o_add_10_OUT> created at line 150.
+    Found 26-bit adder for signal <delay_cnt[25]_GND_15_o_add_18_OUT> created at line 200.
+    Found 8-bit adder for signal <fps_data[7]_GND_15_o_add_25_OUT> created at line 230.
+    Found 4-bit comparator lessequal for signal <Frame_Cont[3]_PWR_13_o_LessThan_10_o> created at line 148
+    Found 26-bit comparator greater for signal <delay_cnt[25]_PWR_13_o_LessThan_18_o> created at line 199
+    Summary:
+	inferred   4 Adder/Subtractor(s).
+	inferred  76 D-type flip-flop(s).
+	inferred   2 Comparator(s).
+	inferred  11 Multiplexer(s).
+Unit <CMOS_Capture> synthesized.
+
+Synthesizing Unit <sdram_vga_top>.
+    Related source file is "E:\Project\AX309\Verilog\22_sdram_ov5640_lcd\sdram_ov5640_lcd\rtl\sdram_vga_ip\sdram_vga_top.v".
+INFO:Xst:3210 - "E:\Project\AX309\Verilog\22_sdram_ov5640_lcd\sdram_ov5640_lcd\rtl\sdram_vga_ip\sdram_vga_top.v" line 62: Output port <sdram_wr_req> of the instance <u_sdram_2fifo_top> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "E:\Project\AX309\Verilog\22_sdram_ov5640_lcd\sdram_ov5640_lcd\rtl\sdram_vga_ip\sdram_vga_top.v" line 62: Output port <sdram_rd_req> of the instance <u_sdram_2fifo_top> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "E:\Project\AX309\Verilog\22_sdram_ov5640_lcd\sdram_ov5640_lcd\rtl\sdram_vga_ip\sdram_vga_top.v" line 128: Output port <state_write> of the instance <u_sdbank_switch> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "E:\Project\AX309\Verilog\22_sdram_ov5640_lcd\sdram_ov5640_lcd\rtl\sdram_vga_ip\sdram_vga_top.v" line 155: Output port <lcd_xpos> of the instance <u_lcd_top> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "E:\Project\AX309\Verilog\22_sdram_ov5640_lcd\sdram_ov5640_lcd\rtl\sdram_vga_ip\sdram_vga_top.v" line 155: Output port <lcd_ypos> of the instance <u_lcd_top> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "E:\Project\AX309\Verilog\22_sdram_ov5640_lcd\sdram_ov5640_lcd\rtl\sdram_vga_ip\sdram_vga_top.v" line 155: Output port <lcd_en> of the instance <u_lcd_top> is unconnected or connected to loadless signal.
+    Summary:
+	no macro.
+Unit <sdram_vga_top> synthesized.
+
+Synthesizing Unit <sdram_2fifo_top>.
+    Related source file is "E:\Project\AX309\Verilog\22_sdram_ov5640_lcd\sdram_ov5640_lcd\rtl\sdram_vga_ip\sdram_ip\sdram_2fifo_top.v".
+    Summary:
+	no macro.
+Unit <sdram_2fifo_top> synthesized.
+
+Synthesizing Unit <sdram_top>.
+    Related source file is "E:\Project\AX309\Verilog\22_sdram_ov5640_lcd\sdram_ov5640_lcd\rtl\sdram_vga_ip\sdram_ip\sdram_top.v".
+    Summary:
+	no macro.
+Unit <sdram_top> synthesized.
+
+Synthesizing Unit <sdram_ctrl>.
+    Related source file is "E:\Project\AX309\Verilog\22_sdram_ov5640_lcd\sdram_ov5640_lcd\rtl\sdram_vga_ip\sdram_ip\sdram_ctrl.v".
+        TRP_CLK = 9'b000000100
+        TRFC_CLK = 9'b000000110
+        TMRD_CLK = 9'b000000110
+        TRCD_CLK = 9'b000000010
+        TCL_CLK = 9'b000000011
+        TDAL_CLK = 9'b000000011
+    Found 4-bit register for signal <init_state_r>.
+    Found 4-bit register for signal <work_state_r>.
+    Found 11-bit register for signal <cnt_15us>.
+    Found 9-bit register for signal <cnt_clk_r>.
+    Found 15-bit register for signal <cnt_200us>.
+    Found 1-bit register for signal <sdram_ref_req>.
+    Found 1-bit register for signal <sys_r_wn>.
+    Found finite state machine <FSM_1> for signal <init_state_r>.
+    -----------------------------------------------------------------------
+    | States             | 10                                             |
+    | Transitions        | 15                                             |
+    | Inputs             | 3                                              |
+    | Outputs            | 6                                              |
+    | Clock              | clk (rising_edge)                              |
+    | Reset              | rst_n (negative)                               |
+    | Reset type         | asynchronous                                   |
+    | Reset State        | 0000                                           |
+    | Encoding           | auto                                           |
+    | Implementation     | LUT                                            |
+    -----------------------------------------------------------------------
+INFO:Xst:1799 - State 0110 is never reached in FSM <work_state_r>.
+    Found finite state machine <FSM_2> for signal <work_state_r>.
+    -----------------------------------------------------------------------
+    | States             | 12                                             |
+    | Transitions        | 22                                             |
+    | Inputs             | 12                                             |
+    | Outputs            | 9                                              |
+    | Clock              | clk (rising_edge)                              |
+    | Reset              | rst_n (negative)                               |
+    | Reset type         | asynchronous                                   |
+    | Reset State        | 0000                                           |
+    | Encoding           | auto                                           |
+    | Implementation     | LUT                                            |
+    -----------------------------------------------------------------------
+    Found 15-bit adder for signal <cnt_200us[14]_GND_20_o_add_1_OUT> created at line 71.
+    Found 11-bit adder for signal <cnt_15us[10]_GND_20_o_add_19_OUT> created at line 107.
+    Found 9-bit adder for signal <cnt_clk_r[8]_GND_20_o_add_57_OUT> created at line 213.
+    Found 15-bit comparator greater for signal <cnt_200us[14]_PWR_17_o_LessThan_1_o> created at line 71
+    Found 11-bit comparator greater for signal <cnt_15us[10]_PWR_17_o_LessThan_19_o> created at line 107
+    Found 9-bit comparator greater for signal <cnt_clk_r[8]_sdwr_byte[8]_LessThan_53_o> created at line 197
+    Found 9-bit comparator lessequal for signal <n0066> created at line 200
+    Found 9-bit comparator greater for signal <cnt_clk_r[8]_sdrd_byte[8]_LessThan_57_o> created at line 200
+    Summary:
+	inferred   3 Adder/Subtractor(s).
+	inferred  37 D-type flip-flop(s).
+	inferred   5 Comparator(s).
+	inferred  12 Multiplexer(s).
+	inferred   2 Finite State Machine(s).
+Unit <sdram_ctrl> synthesized.
+
+Synthesizing Unit <sdram_cmd>.
+    Related source file is "E:\Project\AX309\Verilog\22_sdram_ov5640_lcd\sdram_ov5640_lcd\rtl\sdram_vga_ip\sdram_ip\sdram_cmd.v".
+    Found 12-bit register for signal <sdram_addr_r>.
+    Found 2-bit register for signal <sdram_ba_r>.
+    Found 5-bit register for signal <sdram_cmd_r>.
+    Summary:
+	inferred  19 D-type flip-flop(s).
+	inferred  44 Multiplexer(s).
+Unit <sdram_cmd> synthesized.
+
+Synthesizing Unit <sdram_wr_data>.
+    Related source file is "E:\Project\AX309\Verilog\22_sdram_ov5640_lcd\sdram_ov5640_lcd\rtl\sdram_vga_ip\sdram_ip\sdram_wr_data.v".
+WARNING:Xst:647 - Input <cnt_clk> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+    Found 16-bit register for signal <sdr_dout>.
+    Found 16-bit register for signal <sdr_din>.
+    Found 1-bit register for signal <sdr_dlink>.
+    Found 1-bit tristate buffer for signal <sdram_data<15>> created at line 46
+    Found 1-bit tristate buffer for signal <sdram_data<14>> created at line 46
+    Found 1-bit tristate buffer for signal <sdram_data<13>> created at line 46
+    Found 1-bit tristate buffer for signal <sdram_data<12>> created at line 46
+    Found 1-bit tristate buffer for signal <sdram_data<11>> created at line 46
+    Found 1-bit tristate buffer for signal <sdram_data<10>> created at line 46
+    Found 1-bit tristate buffer for signal <sdram_data<9>> created at line 46
+    Found 1-bit tristate buffer for signal <sdram_data<8>> created at line 46
+    Found 1-bit tristate buffer for signal <sdram_data<7>> created at line 46
+    Found 1-bit tristate buffer for signal <sdram_data<6>> created at line 46
+    Found 1-bit tristate buffer for signal <sdram_data<5>> created at line 46
+    Found 1-bit tristate buffer for signal <sdram_data<4>> created at line 46
+    Found 1-bit tristate buffer for signal <sdram_data<3>> created at line 46
+    Found 1-bit tristate buffer for signal <sdram_data<2>> created at line 46
+    Found 1-bit tristate buffer for signal <sdram_data<1>> created at line 46
+    Found 1-bit tristate buffer for signal <sdram_data<0>> created at line 46
+    Summary:
+	inferred  33 D-type flip-flop(s).
+	inferred  16 Tristate(s).
+Unit <sdram_wr_data> synthesized.
+
+Synthesizing Unit <dcfifo_ctrl>.
+    Related source file is "E:\Project\AX309\Verilog\22_sdram_ov5640_lcd\sdram_ov5640_lcd\rtl\sdram_vga_ip\sdram_ip\dcfifo_ctrl.v".
+INFO:Xst:3210 - "E:\Project\AX309\Verilog\22_sdram_ov5640_lcd\sdram_ov5640_lcd\rtl\sdram_vga_ip\sdram_ip\dcfifo_ctrl.v" line 235: Output port <wr_data_count> of the instance <u_wrfifo> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "E:\Project\AX309\Verilog\22_sdram_ov5640_lcd\sdram_ov5640_lcd\rtl\sdram_vga_ip\sdram_ip\dcfifo_ctrl.v" line 235: Output port <full> of the instance <u_wrfifo> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "E:\Project\AX309\Verilog\22_sdram_ov5640_lcd\sdram_ov5640_lcd\rtl\sdram_vga_ip\sdram_ip\dcfifo_ctrl.v" line 235: Output port <empty> of the instance <u_wrfifo> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "E:\Project\AX309\Verilog\22_sdram_ov5640_lcd\sdram_ov5640_lcd\rtl\sdram_vga_ip\sdram_ip\dcfifo_ctrl.v" line 256: Output port <rd_data_count> of the instance <u_rdfifo> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "E:\Project\AX309\Verilog\22_sdram_ov5640_lcd\sdram_ov5640_lcd\rtl\sdram_vga_ip\sdram_ip\dcfifo_ctrl.v" line 256: Output port <full> of the instance <u_rdfifo> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "E:\Project\AX309\Verilog\22_sdram_ov5640_lcd\sdram_ov5640_lcd\rtl\sdram_vga_ip\sdram_ip\dcfifo_ctrl.v" line 256: Output port <empty> of the instance <u_rdfifo> is unconnected or connected to loadless signal.
+    Found 22-bit register for signal <sdram_wraddr>.
+    Found 22-bit register for signal <sdram_rdaddr>.
+    Found 1-bit register for signal <sdram_wr_ackr2>.
+    Found 1-bit register for signal <sdram_rd_ackr1>.
+    Found 1-bit register for signal <sdram_rd_ackr2>.
+    Found 1-bit register for signal <wr_load_r1>.
+    Found 1-bit register for signal <wr_load_r2>.
+    Found 1-bit register for signal <rd_load_r1>.
+    Found 1-bit register for signal <rd_load_r2>.
+    Found 1-bit register for signal <data_valid_r>.
+    Found 1-bit register for signal <frame_write_done>.
+    Found 1-bit register for signal <frame_read_done>.
+    Found 1-bit register for signal <sdram_wr_req>.
+    Found 1-bit register for signal <sdram_rd_req>.
+    Found 1-bit register for signal <sdram_wr_ackr1>.
+    Found 22-bit subtractor for signal <wr_max_addr[21]_GND_40_o_sub_1_OUT> created at line 136.
+    Found 22-bit subtractor for signal <rd_max_addr[21]_GND_40_o_sub_8_OUT> created at line 175.
+    Found 22-bit adder for signal <sdram_wraddr[21]_GND_40_o_add_2_OUT> created at line 138.
+    Found 22-bit adder for signal <sdram_rdaddr[21]_GND_40_o_add_9_OUT> created at line 177.
+    Found 22-bit comparator lessequal for signal <sdram_wraddr[21]_wr_max_addr[21]_LessThan_2_o> created at line 136
+    Found 22-bit comparator lessequal for signal <sdram_rdaddr[21]_rd_max_addr[21]_LessThan_9_o> created at line 175
+    Found 9-bit comparator lessequal for signal <n0044> created at line 208
+    Found 9-bit comparator greater for signal <rdf_use[8]_rd_length[8]_LessThan_18_o> created at line 213
+    Summary:
+	inferred   4 Adder/Subtractor(s).
+	inferred  57 D-type flip-flop(s).
+	inferred   4 Comparator(s).
+	inferred   9 Multiplexer(s).
+Unit <dcfifo_ctrl> synthesized.
+
+Synthesizing Unit <sdbank_switch>.
+    Related source file is "E:\Project\AX309\Verilog\22_sdram_ov5640_lcd\sdram_ov5640_lcd\rtl\sdram_vga_ip\sdram_ip\sdbank_switch.v".
+    Found 2-bit register for signal <rd_bank>.
+    Found 2-bit register for signal <wr_bank>.
+    Found 3-bit register for signal <state_write>.
+    Found 3-bit register for signal <state_read>.
+    Found 1-bit register for signal <bank_valid_r1>.
+    Found 1-bit register for signal <wr_load>.
+    Found 1-bit register for signal <rd_load>.
+    Found 1-bit register for signal <bank_valid_r0>.
+    Found finite state machine <FSM_3> for signal <state_write>.
+    -----------------------------------------------------------------------
+    | States             | 5                                              |
+    | Transitions        | 8                                              |
+    | Inputs             | 3                                              |
+    | Outputs            | 4                                              |
+    | Clock              | clk (falling_edge)                             |
+    | Reset              | rst_n (negative)                               |
+    | Reset type         | asynchronous                                   |
+    | Reset State        | 000                                            |
+    | Encoding           | auto                                           |
+    | Implementation     | LUT                                            |
+    -----------------------------------------------------------------------
+    Found finite state machine <FSM_4> for signal <state_read>.
+    -----------------------------------------------------------------------
+    | States             | 5                                              |
+    | Transitions        | 8                                              |
+    | Inputs             | 3                                              |
+    | Outputs            | 4                                              |
+    | Clock              | clk (falling_edge)                             |
+    | Reset              | rst_n (negative)                               |
+    | Reset type         | asynchronous                                   |
+    | Reset State        | 000                                            |
+    | Encoding           | auto                                           |
+    | Implementation     | LUT                                            |
+    -----------------------------------------------------------------------
+    Summary:
+	inferred   8 D-type flip-flop(s).
+	inferred   2 Finite State Machine(s).
+Unit <sdbank_switch> synthesized.
+
+Synthesizing Unit <lcd_top>.
+    Related source file is "E:\Project\AX309\Verilog\22_sdram_ov5640_lcd\sdram_ov5640_lcd\rtl\sdram_vga_ip\lcd_ip\lcd_top.v".
+    Summary:
+	no macro.
+Unit <lcd_top> synthesized.
+
+Synthesizing Unit <lcd_driver>.
+    Related source file is "E:\Project\AX309\Verilog\22_sdram_ov5640_lcd\sdram_ov5640_lcd\rtl\sdram_vga_ip\lcd_ip\lcd_driver.v".
+    Found 11-bit register for signal <vcnt>.
+    Found 11-bit register for signal <hcnt>.
+    Found 11-bit subtractor for signal <hcnt[10]_GND_46_o_sub_22_OUT> created at line 87.
+    Found 11-bit subtractor for signal <vcnt[10]_GND_46_o_sub_24_OUT> created at line 88.
+    Found 11-bit adder for signal <hcnt[10]_GND_46_o_add_1_OUT> created at line 44.
+    Found 11-bit adder for signal <vcnt[10]_GND_46_o_add_7_OUT> created at line 61.
+    Found 11-bit comparator greater for signal <hcnt[10]_PWR_28_o_LessThan_1_o> created at line 43
+    Found 11-bit comparator greater for signal <lcd_hs> created at line 49
+    Found 11-bit comparator greater for signal <vcnt[10]_GND_46_o_LessThan_7_o> created at line 60
+    Found 11-bit comparator greater for signal <lcd_vs> created at line 66
+    Found 11-bit comparator lessequal for signal <n0019> created at line 73
+    Found 11-bit comparator greater for signal <hcnt[10]_PWR_28_o_LessThan_14_o> created at line 73
+    Found 11-bit comparator lessequal for signal <n0023> created at line 74
+    Found 11-bit comparator greater for signal <vcnt[10]_GND_46_o_LessThan_16_o> created at line 74
+    Found 11-bit comparator lessequal for signal <n0030> created at line 83
+    Found 11-bit comparator greater for signal <hcnt[10]_PWR_28_o_LessThan_19_o> created at line 83
+    Summary:
+	inferred   4 Adder/Subtractor(s).
+	inferred  22 D-type flip-flop(s).
+	inferred  10 Comparator(s).
+	inferred   5 Multiplexer(s).
+Unit <lcd_driver> synthesized.
+
+=========================================================================
+HDL Synthesis Report
+
+Macro Statistics
+# RAMs                                                 : 1
+ 512x32-bit single-port Read Only RAM                  : 1
+# Adders/Subtractors                                   : 23
+ 1-bit adder                                           : 1
+ 10-bit adder                                          : 1
+ 11-bit adder                                          : 3
+ 11-bit subtractor                                     : 2
+ 15-bit adder                                          : 1
+ 16-bit adder                                          : 4
+ 20-bit adder                                          : 1
+ 22-bit adder                                          : 2
+ 22-bit subtractor                                     : 2
+ 26-bit adder                                          : 1
+ 4-bit adder                                           : 1
+ 6-bit adder                                           : 1
+ 8-bit adder                                           : 1
+ 9-bit adder                                           : 2
+# Registers                                            : 71
+ 1-bit register                                        : 42
+ 10-bit register                                       : 1
+ 11-bit register                                       : 3
+ 12-bit register                                       : 1
+ 15-bit register                                       : 1
+ 16-bit register                                       : 7
+ 2-bit register                                        : 3
+ 20-bit register                                       : 1
+ 22-bit register                                       : 2
+ 26-bit register                                       : 1
+ 32-bit register                                       : 1
+ 4-bit register                                        : 1
+ 5-bit register                                        : 1
+ 6-bit register                                        : 1
+ 8-bit register                                        : 3
+ 9-bit register                                        : 2
+# Comparators                                          : 30
+ 11-bit comparator greater                             : 8
+ 11-bit comparator lessequal                           : 3
+ 15-bit comparator greater                             : 1
+ 16-bit comparator greater                             : 2
+ 16-bit comparator lessequal                           : 2
+ 20-bit comparator greater                             : 1
+ 22-bit comparator lessequal                           : 2
+ 26-bit comparator greater                             : 1
+ 4-bit comparator lessequal                            : 1
+ 6-bit comparator lessequal                            : 3
+ 9-bit comparator greater                              : 4
+ 9-bit comparator lessequal                            : 2
+# Multiplexers                                         : 131
+ 1-bit 2-to-1 multiplexer                              : 64
+ 11-bit 2-to-1 multiplexer                             : 5
+ 12-bit 2-to-1 multiplexer                             : 14
+ 16-bit 2-to-1 multiplexer                             : 4
+ 2-bit 2-to-1 multiplexer                              : 14
+ 22-bit 2-to-1 multiplexer                             : 4
+ 26-bit 2-to-1 multiplexer                             : 2
+ 32-bit 2-to-1 multiplexer                             : 1
+ 5-bit 2-to-1 multiplexer                              : 15
+ 6-bit 2-to-1 multiplexer                              : 1
+ 8-bit 2-to-1 multiplexer                              : 4
+ 9-bit 2-to-1 multiplexer                              : 3
+# Tristates                                            : 17
+ 1-bit tristate buffer                                 : 17
+# FSMs                                                 : 5
+
+=========================================================================
+
+=========================================================================
+*                       Advanced HDL Synthesis                          *
+=========================================================================
+
+Reading core <ipcore_dir/wrfifo.ngc>.
+Reading core <ipcore_dir/rdfifo.ngc>.
+Loading core <wrfifo> for timing and area information for instance <u_wrfifo>.
+Loading core <rdfifo> for timing and area information for instance <u_rdfifo>.
+
+Synthesizing (advanced) Unit <CMOS_Capture>.
+The following registers are absorbed into counter <byte_state>: 1 register on signal <byte_state>.
+The following registers are absorbed into counter <Frame_Cont>: 1 register on signal <Frame_Cont>.
+Unit <CMOS_Capture> synthesized (advanced).
+
+Synthesizing (advanced) Unit <i2c_com>.
+The following registers are absorbed into counter <cyc_count>: 1 register on signal <cyc_count>.
+Unit <i2c_com> synthesized (advanced).
+
+Synthesizing (advanced) Unit <lcd_driver>.
+The following registers are absorbed into counter <hcnt>: 1 register on signal <hcnt>.
+The following registers are absorbed into counter <vcnt>: 1 register on signal <vcnt>.
+Unit <lcd_driver> synthesized (advanced).
+
+Synthesizing (advanced) Unit <power_on_delay>.
+The following registers are absorbed into counter <cnt2>: 1 register on signal <cnt2>.
+The following registers are absorbed into counter <cnt3>: 1 register on signal <cnt3>.
+Unit <power_on_delay> synthesized (advanced).
+
+Synthesizing (advanced) Unit <reg_config>.
+The following registers are absorbed into counter <clock_20k_cnt>: 1 register on signal <clock_20k_cnt>.
+The following registers are absorbed into counter <on_counter>: 1 register on signal <on_counter>.
+The following registers are absorbed into counter <off_counter>: 1 register on signal <off_counter>.
+The following registers are absorbed into counter <reg_index>: 1 register on signal <reg_index>.
+INFO:Xst:3226 - The RAM <Mram_n0110> will be implemented as a BLOCK RAM, absorbing the following register(s): <i2c_data>
+    -----------------------------------------------------------------------
+    | ram_type           | Block                               |          |
+    -----------------------------------------------------------------------
+    | Port A                                                              |
+    |     aspect ratio   | 512-word x 32-bit                   |          |
+    |     mode           | write-first                         |          |
+    |     clkA           | connected to signal <clock_20k>     | rise     |
+    |     enA            | connected to internal node          | low      |
+    |     weA            | connected to signal <GND>           | high     |
+    |     addrA          | connected to signal <reg_index>     |          |
+    |     diA            | connected to signal <GND>           |          |
+    |     doA            | connected to signal <i2c_data>      |          |
+    -----------------------------------------------------------------------
+    | optimization       | speed                               |          |
+    -----------------------------------------------------------------------
+Unit <reg_config> synthesized (advanced).
+
+Synthesizing (advanced) Unit <sdram_ctrl>.
+The following registers are absorbed into counter <cnt_15us>: 1 register on signal <cnt_15us>.
+The following registers are absorbed into counter <cnt_clk_r>: 1 register on signal <cnt_clk_r>.
+The following registers are absorbed into counter <cnt_200us>: 1 register on signal <cnt_200us>.
+Unit <sdram_ctrl> synthesized (advanced).
+
+Synthesizing (advanced) Unit <system_ctrl>.
+The following registers are absorbed into counter <delay_cnt>: 1 register on signal <delay_cnt>.
+Unit <system_ctrl> synthesized (advanced).
+
+=========================================================================
+Advanced HDL Synthesis Report
+
+Macro Statistics
+# RAMs                                                 : 1
+ 512x32-bit single-port block Read Only RAM            : 1
+# Adders/Subtractors                                   : 8
+ 11-bit subtractor                                     : 2
+ 22-bit adder                                          : 2
+ 22-bit subtractor                                     : 2
+ 26-bit adder                                          : 1
+ 8-bit adder                                           : 1
+# Counters                                             : 15
+ 1-bit up counter                                      : 1
+ 10-bit up counter                                     : 1
+ 11-bit up counter                                     : 3
+ 15-bit up counter                                     : 1
+ 16-bit up counter                                     : 4
+ 20-bit up counter                                     : 1
+ 4-bit up counter                                      : 1
+ 6-bit up counter                                      : 1
+ 9-bit up counter                                      : 2
+# Registers                                            : 206
+ Flip-Flops                                            : 206
+# Comparators                                          : 30
+ 11-bit comparator greater                             : 8
+ 11-bit comparator lessequal                           : 3
+ 15-bit comparator greater                             : 1
+ 16-bit comparator greater                             : 2
+ 16-bit comparator lessequal                           : 2
+ 20-bit comparator greater                             : 1
+ 22-bit comparator lessequal                           : 2
+ 26-bit comparator greater                             : 1
+ 4-bit comparator lessequal                            : 1
+ 6-bit comparator lessequal                            : 3
+ 9-bit comparator greater                              : 4
+ 9-bit comparator lessequal                            : 2
+# Multiplexers                                         : 121
+ 1-bit 2-to-1 multiplexer                              : 63
+ 11-bit 2-to-1 multiplexer                             : 2
+ 12-bit 2-to-1 multiplexer                             : 14
+ 16-bit 2-to-1 multiplexer                             : 1
+ 2-bit 2-to-1 multiplexer                              : 14
+ 22-bit 2-to-1 multiplexer                             : 4
+ 26-bit 2-to-1 multiplexer                             : 2
+ 32-bit 2-to-1 multiplexer                             : 1
+ 5-bit 2-to-1 multiplexer                              : 15
+ 8-bit 2-to-1 multiplexer                              : 4
+ 9-bit 2-to-1 multiplexer                              : 1
+# FSMs                                                 : 5
+
+=========================================================================
+
+=========================================================================
+*                         Low Level Synthesis                           *
+=========================================================================
+Analyzing FSM <MFsm> for best encoding.
+Optimizing FSM <u_sdram_vga_top/u_sdram_2fifo_top/u_sdramtop/module_001/FSM_1> on signal <init_state_r[1:4]> with user encoding.
+-------------------
+ State | Encoding
+-------------------
+ 0000  | 0000
+ 0001  | 0001
+ 0010  | 0010
+ 0011  | 0011
+ 0100  | 0100
+ 0101  | 0101
+ 0110  | 0110
+ 0111  | 0111
+ 1000  | 1000
+ 1001  | 1001
+-------------------
+Analyzing FSM <MFsm> for best encoding.
+Optimizing FSM <u_sdram_vga_top/u_sdram_2fifo_top/u_sdramtop/module_001/FSM_2> on signal <work_state_r[1:4]> with user encoding.
+-------------------
+ State | Encoding
+-------------------
+ 0000  | 0000
+ 0001  | 0001
+ 1010  | 1010
+ 0010  | 0010
+ 0111  | 0111
+ 0011  | 0011
+ 0100  | 0100
+ 0101  | 0101
+ 0110  | unreached
+ 1000  | 1000
+ 1001  | 1001
+ 1011  | 1011
+-------------------
+Analyzing FSM <MFsm> for best encoding.
+Optimizing FSM <u_sdram_vga_top/u_sdbank_switch/FSM_3> on signal <state_write[1:3]> with user encoding.
+-------------------
+ State | Encoding
+-------------------
+ 000   | 000
+ 001   | 001
+ 010   | 010
+ 011   | 011
+ 100   | 100
+-------------------
+Analyzing FSM <MFsm> for best encoding.
+Optimizing FSM <u_sdram_vga_top/u_sdbank_switch/FSM_4> on signal <state_read[1:3]> with user encoding.
+-------------------
+ State | Encoding
+-------------------
+ 000   | 000
+ 001   | 001
+ 010   | 010
+ 011   | 011
+ 100   | 100
+-------------------
+Analyzing FSM <MFsm> for best encoding.
+Optimizing FSM <reg_config_inst/FSM_0> on signal <config_step[1:2]> with user encoding.
+-------------------
+ State | Encoding
+-------------------
+ 00    | 00
+ 01    | 01
+ 10    | 10
+ 11    | 11
+-------------------
+WARNING:Xst:1710 - FF/Latch <CMOS_FPS_DATA_7> (without init value) has a constant value of 0 in block <CMOS_Capture>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <sdram_wraddr_0> (without init value) has a constant value of 0 in block <dcfifo_ctrl>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <sdram_wraddr_1> (without init value) has a constant value of 0 in block <dcfifo_ctrl>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <sdram_wraddr_2> (without init value) has a constant value of 0 in block <dcfifo_ctrl>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <sdram_wraddr_3> (without init value) has a constant value of 0 in block <dcfifo_ctrl>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <sdram_wraddr_4> (without init value) has a constant value of 0 in block <dcfifo_ctrl>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <sdram_wraddr_5> (without init value) has a constant value of 0 in block <dcfifo_ctrl>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <sdram_wraddr_6> (without init value) has a constant value of 0 in block <dcfifo_ctrl>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <sdram_wraddr_7> (without init value) has a constant value of 0 in block <dcfifo_ctrl>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <sdram_rdaddr_0> (without init value) has a constant value of 0 in block <dcfifo_ctrl>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <sdram_rdaddr_1> (without init value) has a constant value of 0 in block <dcfifo_ctrl>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <sdram_rdaddr_2> (without init value) has a constant value of 0 in block <dcfifo_ctrl>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <sdram_rdaddr_3> (without init value) has a constant value of 0 in block <dcfifo_ctrl>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <sdram_rdaddr_4> (without init value) has a constant value of 0 in block <dcfifo_ctrl>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <sdram_rdaddr_5> (without init value) has a constant value of 0 in block <dcfifo_ctrl>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <sdram_rdaddr_6> (without init value) has a constant value of 0 in block <dcfifo_ctrl>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <sdram_rdaddr_7> (without init value) has a constant value of 0 in block <dcfifo_ctrl>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:2677 - Node <reg_config_inst/strobe_flash> of sequential type is unconnected in block <sdram_ov5640_vga>.
+WARNING:Xst:2677 - Node <reg_config_inst/u1/ack1> of sequential type is unconnected in block <sdram_ov5640_vga>.
+WARNING:Xst:2677 - Node <reg_config_inst/u1/ack3> of sequential type is unconnected in block <sdram_ov5640_vga>.
+WARNING:Xst:2677 - Node <reg_config_inst/u1/ack2> of sequential type is unconnected in block <sdram_ov5640_vga>.
+
+Optimizing unit <sdram_ov5640_vga> ...
+
+Optimizing unit <CMOS_Capture> ...
+
+Optimizing unit <system_ctrl> ...
+
+Optimizing unit <dcfifo_ctrl> ...
+
+Optimizing unit <sdram_cmd> ...
+
+Optimizing unit <sdram_ctrl> ...
+
+Optimizing unit <lcd_driver> ...
+
+Optimizing unit <sdbank_switch> ...
+
+Optimizing unit <power_on_delay> ...
+WARNING:Xst:2677 - Node <u_CMOS_Capture/CMOS_FPS_DATA_6> of sequential type is unconnected in block <sdram_ov5640_vga>.
+WARNING:Xst:2677 - Node <u_CMOS_Capture/CMOS_FPS_DATA_5> of sequential type is unconnected in block <sdram_ov5640_vga>.
+WARNING:Xst:2677 - Node <u_CMOS_Capture/CMOS_FPS_DATA_4> of sequential type is unconnected in block <sdram_ov5640_vga>.
+WARNING:Xst:2677 - Node <u_CMOS_Capture/CMOS_FPS_DATA_3> of sequential type is unconnected in block <sdram_ov5640_vga>.
+WARNING:Xst:2677 - Node <u_CMOS_Capture/CMOS_FPS_DATA_2> of sequential type is unconnected in block <sdram_ov5640_vga>.
+WARNING:Xst:2677 - Node <u_CMOS_Capture/CMOS_FPS_DATA_1> of sequential type is unconnected in block <sdram_ov5640_vga>.
+WARNING:Xst:2677 - Node <u_CMOS_Capture/CMOS_FPS_DATA_0> of sequential type is unconnected in block <sdram_ov5640_vga>.
+WARNING:Xst:2677 - Node <u_CMOS_Capture/fps_data_7> of sequential type is unconnected in block <sdram_ov5640_vga>.
+WARNING:Xst:2677 - Node <u_CMOS_Capture/fps_data_6> of sequential type is unconnected in block <sdram_ov5640_vga>.
+WARNING:Xst:2677 - Node <u_CMOS_Capture/fps_data_5> of sequential type is unconnected in block <sdram_ov5640_vga>.
+WARNING:Xst:2677 - Node <u_CMOS_Capture/fps_data_4> of sequential type is unconnected in block <sdram_ov5640_vga>.
+WARNING:Xst:2677 - Node <u_CMOS_Capture/fps_data_3> of sequential type is unconnected in block <sdram_ov5640_vga>.
+WARNING:Xst:2677 - Node <u_CMOS_Capture/fps_data_2> of sequential type is unconnected in block <sdram_ov5640_vga>.
+WARNING:Xst:2677 - Node <u_CMOS_Capture/fps_data_1> of sequential type is unconnected in block <sdram_ov5640_vga>.
+WARNING:Xst:2677 - Node <u_CMOS_Capture/fps_data_0> of sequential type is unconnected in block <sdram_ov5640_vga>.
+WARNING:Xst:2677 - Node <u_CMOS_Capture/delay_cnt_25> of sequential type is unconnected in block <sdram_ov5640_vga>.
+WARNING:Xst:2677 - Node <u_CMOS_Capture/delay_cnt_24> of sequential type is unconnected in block <sdram_ov5640_vga>.
+WARNING:Xst:2677 - Node <u_CMOS_Capture/delay_cnt_23> of sequential type is unconnected in block <sdram_ov5640_vga>.
+WARNING:Xst:2677 - Node <u_CMOS_Capture/delay_cnt_22> of sequential type is unconnected in block <sdram_ov5640_vga>.
+WARNING:Xst:2677 - Node <u_CMOS_Capture/delay_cnt_21> of sequential type is unconnected in block <sdram_ov5640_vga>.
+WARNING:Xst:2677 - Node <u_CMOS_Capture/delay_cnt_20> of sequential type is unconnected in block <sdram_ov5640_vga>.
+WARNING:Xst:2677 - Node <u_CMOS_Capture/delay_cnt_19> of sequential type is unconnected in block <sdram_ov5640_vga>.
+WARNING:Xst:2677 - Node <u_CMOS_Capture/delay_cnt_18> of sequential type is unconnected in block <sdram_ov5640_vga>.
+WARNING:Xst:2677 - Node <u_CMOS_Capture/delay_cnt_17> of sequential type is unconnected in block <sdram_ov5640_vga>.
+WARNING:Xst:2677 - Node <u_CMOS_Capture/delay_cnt_16> of sequential type is unconnected in block <sdram_ov5640_vga>.
+WARNING:Xst:2677 - Node <u_CMOS_Capture/delay_cnt_15> of sequential type is unconnected in block <sdram_ov5640_vga>.
+WARNING:Xst:2677 - Node <u_CMOS_Capture/delay_cnt_14> of sequential type is unconnected in block <sdram_ov5640_vga>.
+WARNING:Xst:2677 - Node <u_CMOS_Capture/delay_cnt_13> of sequential type is unconnected in block <sdram_ov5640_vga>.
+WARNING:Xst:2677 - Node <u_CMOS_Capture/delay_cnt_12> of sequential type is unconnected in block <sdram_ov5640_vga>.
+WARNING:Xst:2677 - Node <u_CMOS_Capture/delay_cnt_11> of sequential type is unconnected in block <sdram_ov5640_vga>.
+WARNING:Xst:2677 - Node <u_CMOS_Capture/delay_cnt_10> of sequential type is unconnected in block <sdram_ov5640_vga>.
+WARNING:Xst:2677 - Node <u_CMOS_Capture/delay_cnt_9> of sequential type is unconnected in block <sdram_ov5640_vga>.
+WARNING:Xst:2677 - Node <u_CMOS_Capture/delay_cnt_8> of sequential type is unconnected in block <sdram_ov5640_vga>.
+WARNING:Xst:2677 - Node <u_CMOS_Capture/delay_cnt_7> of sequential type is unconnected in block <sdram_ov5640_vga>.
+WARNING:Xst:2677 - Node <u_CMOS_Capture/delay_cnt_6> of sequential type is unconnected in block <sdram_ov5640_vga>.
+WARNING:Xst:2677 - Node <u_CMOS_Capture/delay_cnt_5> of sequential type is unconnected in block <sdram_ov5640_vga>.
+WARNING:Xst:2677 - Node <u_CMOS_Capture/delay_cnt_4> of sequential type is unconnected in block <sdram_ov5640_vga>.
+WARNING:Xst:2677 - Node <u_CMOS_Capture/delay_cnt_3> of sequential type is unconnected in block <sdram_ov5640_vga>.
+WARNING:Xst:2677 - Node <u_CMOS_Capture/delay_cnt_2> of sequential type is unconnected in block <sdram_ov5640_vga>.
+WARNING:Xst:2677 - Node <u_CMOS_Capture/delay_cnt_1> of sequential type is unconnected in block <sdram_ov5640_vga>.
+WARNING:Xst:2677 - Node <u_CMOS_Capture/delay_cnt_0> of sequential type is unconnected in block <sdram_ov5640_vga>.
+WARNING:Xst:2677 - Node <u_CMOS_Capture/fps_state> of sequential type is unconnected in block <sdram_ov5640_vga>.
+WARNING:Xst:2677 - Node <power_on_delay_inst/cnt3_19> of sequential type is unconnected in block <sdram_ov5640_vga>.
+WARNING:Xst:2677 - Node <power_on_delay_inst/cnt3_18> of sequential type is unconnected in block <sdram_ov5640_vga>.
+WARNING:Xst:2677 - Node <power_on_delay_inst/cnt3_17> of sequential type is unconnected in block <sdram_ov5640_vga>.
+WARNING:Xst:2677 - Node <power_on_delay_inst/cnt3_16> of sequential type is unconnected in block <sdram_ov5640_vga>.
+WARNING:Xst:2677 - Node <power_on_delay_inst/cnt3_15> of sequential type is unconnected in block <sdram_ov5640_vga>.
+WARNING:Xst:2677 - Node <power_on_delay_inst/cnt3_14> of sequential type is unconnected in block <sdram_ov5640_vga>.
+WARNING:Xst:2677 - Node <power_on_delay_inst/cnt3_13> of sequential type is unconnected in block <sdram_ov5640_vga>.
+WARNING:Xst:2677 - Node <power_on_delay_inst/cnt3_12> of sequential type is unconnected in block <sdram_ov5640_vga>.
+WARNING:Xst:2677 - Node <power_on_delay_inst/cnt3_11> of sequential type is unconnected in block <sdram_ov5640_vga>.
+WARNING:Xst:2677 - Node <power_on_delay_inst/cnt3_10> of sequential type is unconnected in block <sdram_ov5640_vga>.
+WARNING:Xst:2677 - Node <power_on_delay_inst/cnt3_9> of sequential type is unconnected in block <sdram_ov5640_vga>.
+WARNING:Xst:2677 - Node <power_on_delay_inst/cnt3_8> of sequential type is unconnected in block <sdram_ov5640_vga>.
+WARNING:Xst:2677 - Node <power_on_delay_inst/cnt3_7> of sequential type is unconnected in block <sdram_ov5640_vga>.
+WARNING:Xst:2677 - Node <power_on_delay_inst/cnt3_6> of sequential type is unconnected in block <sdram_ov5640_vga>.
+WARNING:Xst:2677 - Node <power_on_delay_inst/cnt3_5> of sequential type is unconnected in block <sdram_ov5640_vga>.
+WARNING:Xst:2677 - Node <power_on_delay_inst/cnt3_4> of sequential type is unconnected in block <sdram_ov5640_vga>.
+WARNING:Xst:2677 - Node <power_on_delay_inst/cnt3_3> of sequential type is unconnected in block <sdram_ov5640_vga>.
+WARNING:Xst:2677 - Node <power_on_delay_inst/cnt3_2> of sequential type is unconnected in block <sdram_ov5640_vga>.
+WARNING:Xst:2677 - Node <power_on_delay_inst/cnt3_1> of sequential type is unconnected in block <sdram_ov5640_vga>.
+WARNING:Xst:2677 - Node <power_on_delay_inst/cnt3_0> of sequential type is unconnected in block <sdram_ov5640_vga>.
+WARNING:Xst:2677 - Node <power_on_delay_inst/initial_en> of sequential type is unconnected in block <sdram_ov5640_vga>.
+WARNING:Xst:1710 - FF/Latch <reg_config_inst/off_counter_8> (without init value) has a constant value of 0 in block <sdram_ov5640_vga>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <reg_config_inst/off_counter_9> (without init value) has a constant value of 0 in block <sdram_ov5640_vga>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <reg_config_inst/off_counter_10> (without init value) has a constant value of 0 in block <sdram_ov5640_vga>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <reg_config_inst/off_counter_11> (without init value) has a constant value of 0 in block <sdram_ov5640_vga>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <reg_config_inst/off_counter_12> (without init value) has a constant value of 0 in block <sdram_ov5640_vga>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <reg_config_inst/off_counter_13> (without init value) has a constant value of 0 in block <sdram_ov5640_vga>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <reg_config_inst/off_counter_14> (without init value) has a constant value of 0 in block <sdram_ov5640_vga>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <reg_config_inst/off_counter_15> (without init value) has a constant value of 0 in block <sdram_ov5640_vga>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <reg_config_inst/clock_20k_cnt_11> (without init value) has a constant value of 0 in block <sdram_ov5640_vga>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <reg_config_inst/clock_20k_cnt_12> (without init value) has a constant value of 0 in block <sdram_ov5640_vga>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <reg_config_inst/clock_20k_cnt_13> (without init value) has a constant value of 0 in block <sdram_ov5640_vga>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <reg_config_inst/clock_20k_cnt_14> (without init value) has a constant value of 0 in block <sdram_ov5640_vga>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <reg_config_inst/clock_20k_cnt_15> (without init value) has a constant value of 0 in block <sdram_ov5640_vga>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <reg_config_inst/on_counter_8> (without init value) has a constant value of 0 in block <sdram_ov5640_vga>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <reg_config_inst/on_counter_9> (without init value) has a constant value of 0 in block <sdram_ov5640_vga>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <reg_config_inst/on_counter_10> (without init value) has a constant value of 0 in block <sdram_ov5640_vga>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <reg_config_inst/on_counter_11> (without init value) has a constant value of 0 in block <sdram_ov5640_vga>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <reg_config_inst/on_counter_12> (without init value) has a constant value of 0 in block <sdram_ov5640_vga>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <reg_config_inst/on_counter_13> (without init value) has a constant value of 0 in block <sdram_ov5640_vga>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <reg_config_inst/on_counter_14> (without init value) has a constant value of 0 in block <sdram_ov5640_vga>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <reg_config_inst/on_counter_15> (without init value) has a constant value of 0 in block <sdram_ov5640_vga>. This FF/Latch will be trimmed during the optimization process.
+
+Mapping all equations...
+Building and optimizing final netlist ...
+Found area constraint ratio of 100 (+ 5) on block sdram_ov5640_vga, actual ratio is 14.
+INFO:Xst:2260 - The FF/Latch <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/gras.rsts/ram_empty_i> in Unit <u_sdram_vga_top/u_sdram_2fifo_top/u_dcfifo_ctrl/u_wrfifo> is equivalent to the following FF/Latch : <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/gras.rsts/ram_empty_fb_i> 
+INFO:Xst:2260 - The FF/Latch <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.wr_rst_reg_1> in Unit <u_sdram_vga_top/u_sdram_2fifo_top/u_dcfifo_ctrl/u_wrfifo> is equivalent to the following FF/Latch : <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.wr_rst_reg_0> 
+INFO:Xst:2260 - The FF/Latch <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.rd_rst_reg_2> in Unit <u_sdram_vga_top/u_sdram_2fifo_top/u_dcfifo_ctrl/u_wrfifo> is equivalent to the following 2 FFs/Latches : <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.rd_rst_reg_1> <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.rd_rst_reg_0> 
+INFO:Xst:2260 - The FF/Latch <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/gwas.wsts/ram_full_i> in Unit <u_sdram_vga_top/u_sdram_2fifo_top/u_dcfifo_ctrl/u_wrfifo> is equivalent to the following FF/Latch : <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/gwas.wsts/ram_full_fb_i> 
+INFO:Xst:2260 - The FF/Latch <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/rpntr/gc0.count_d1_1> in Unit <u_sdram_vga_top/u_sdram_2fifo_top/u_dcfifo_ctrl/u_rdfifo> is equivalent to the following FF/Latch : <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/rpntr/gc0.count_d1_1_1> 
+INFO:Xst:2260 - The FF/Latch <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/rpntr/gc0.count_d1_2> in Unit <u_sdram_vga_top/u_sdram_2fifo_top/u_dcfifo_ctrl/u_rdfifo> is equivalent to the following FF/Latch : <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/rpntr/gc0.count_d1_2_1> 
+INFO:Xst:2260 - The FF/Latch <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/gras.rsts/ram_empty_i> in Unit <u_sdram_vga_top/u_sdram_2fifo_top/u_dcfifo_ctrl/u_rdfifo> is equivalent to the following FF/Latch : <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/gras.rsts/ram_empty_fb_i> 
+INFO:Xst:2260 - The FF/Latch <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/gwas.wsts/ram_full_i> in Unit <u_sdram_vga_top/u_sdram_2fifo_top/u_dcfifo_ctrl/u_rdfifo> is equivalent to the following FF/Latch : <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/gwas.wsts/ram_full_fb_i> 
+INFO:Xst:2260 - The FF/Latch <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/rpntr/gc0.count_d1_0> in Unit <u_sdram_vga_top/u_sdram_2fifo_top/u_dcfifo_ctrl/u_rdfifo> is equivalent to the following FF/Latch : <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/rpntr/gc0.count_d1_0_1> 
+INFO:Xst:2260 - The FF/Latch <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/rpntr/gc0.count_d1_3> in Unit <u_sdram_vga_top/u_sdram_2fifo_top/u_dcfifo_ctrl/u_rdfifo> is equivalent to the following FF/Latch : <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/rpntr/gc0.count_d1_3_1> 
+INFO:Xst:2260 - The FF/Latch <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/rpntr/gc0.count_d1_4> in Unit <u_sdram_vga_top/u_sdram_2fifo_top/u_dcfifo_ctrl/u_rdfifo> is equivalent to the following FF/Latch : <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/rpntr/gc0.count_d1_4_1> 
+INFO:Xst:2260 - The FF/Latch <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/rpntr/gc0.count_d1_5> in Unit <u_sdram_vga_top/u_sdram_2fifo_top/u_dcfifo_ctrl/u_rdfifo> is equivalent to the following FF/Latch : <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/rpntr/gc0.count_d1_5_1> 
+INFO:Xst:2260 - The FF/Latch <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.wr_rst_reg_1> in Unit <u_sdram_vga_top/u_sdram_2fifo_top/u_dcfifo_ctrl/u_rdfifo> is equivalent to the following FF/Latch : <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.wr_rst_reg_0> 
+INFO:Xst:2260 - The FF/Latch <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.rd_rst_reg_2> in Unit <u_sdram_vga_top/u_sdram_2fifo_top/u_dcfifo_ctrl/u_rdfifo> is equivalent to the following 2 FFs/Latches : <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.rd_rst_reg_1> <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.rd_rst_reg_0> 
+INFO:Xst:2260 - The FF/Latch <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/gras.rsts/ram_empty_i> in Unit <u_sdram_vga_top/u_sdram_2fifo_top/u_dcfifo_ctrl/u_wrfifo> is equivalent to the following FF/Latch : <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/gras.rsts/ram_empty_fb_i> 
+INFO:Xst:2260 - The FF/Latch <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.wr_rst_reg_1> in Unit <u_sdram_vga_top/u_sdram_2fifo_top/u_dcfifo_ctrl/u_wrfifo> is equivalent to the following FF/Latch : <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.wr_rst_reg_0> 
+INFO:Xst:2260 - The FF/Latch <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.rd_rst_reg_2> in Unit <u_sdram_vga_top/u_sdram_2fifo_top/u_dcfifo_ctrl/u_wrfifo> is equivalent to the following 2 FFs/Latches : <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.rd_rst_reg_1> <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.rd_rst_reg_0> 
+INFO:Xst:2260 - The FF/Latch <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/gwas.wsts/ram_full_i> in Unit <u_sdram_vga_top/u_sdram_2fifo_top/u_dcfifo_ctrl/u_wrfifo> is equivalent to the following FF/Latch : <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/gwas.wsts/ram_full_fb_i> 
+INFO:Xst:2260 - The FF/Latch <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/rpntr/gc0.count_d1_1> in Unit <u_sdram_vga_top/u_sdram_2fifo_top/u_dcfifo_ctrl/u_rdfifo> is equivalent to the following FF/Latch : <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/rpntr/gc0.count_d1_1_1> 
+INFO:Xst:2260 - The FF/Latch <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/rpntr/gc0.count_d1_2> in Unit <u_sdram_vga_top/u_sdram_2fifo_top/u_dcfifo_ctrl/u_rdfifo> is equivalent to the following FF/Latch : <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/rpntr/gc0.count_d1_2_1> 
+INFO:Xst:2260 - The FF/Latch <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/gras.rsts/ram_empty_i> in Unit <u_sdram_vga_top/u_sdram_2fifo_top/u_dcfifo_ctrl/u_rdfifo> is equivalent to the following FF/Latch : <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/gras.rsts/ram_empty_fb_i> 
+INFO:Xst:2260 - The FF/Latch <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/gwas.wsts/ram_full_i> in Unit <u_sdram_vga_top/u_sdram_2fifo_top/u_dcfifo_ctrl/u_rdfifo> is equivalent to the following FF/Latch : <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/gwas.wsts/ram_full_fb_i> 
+INFO:Xst:2260 - The FF/Latch <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/rpntr/gc0.count_d1_0> in Unit <u_sdram_vga_top/u_sdram_2fifo_top/u_dcfifo_ctrl/u_rdfifo> is equivalent to the following FF/Latch : <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/rpntr/gc0.count_d1_0_1> 
+INFO:Xst:2260 - The FF/Latch <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/rpntr/gc0.count_d1_3> in Unit <u_sdram_vga_top/u_sdram_2fifo_top/u_dcfifo_ctrl/u_rdfifo> is equivalent to the following FF/Latch : <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/rpntr/gc0.count_d1_3_1> 
+INFO:Xst:2260 - The FF/Latch <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/rpntr/gc0.count_d1_4> in Unit <u_sdram_vga_top/u_sdram_2fifo_top/u_dcfifo_ctrl/u_rdfifo> is equivalent to the following FF/Latch : <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/rpntr/gc0.count_d1_4_1> 
+INFO:Xst:2260 - The FF/Latch <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/rpntr/gc0.count_d1_5> in Unit <u_sdram_vga_top/u_sdram_2fifo_top/u_dcfifo_ctrl/u_rdfifo> is equivalent to the following FF/Latch : <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/rpntr/gc0.count_d1_5_1> 
+INFO:Xst:2260 - The FF/Latch <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.wr_rst_reg_1> in Unit <u_sdram_vga_top/u_sdram_2fifo_top/u_dcfifo_ctrl/u_rdfifo> is equivalent to the following FF/Latch : <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.wr_rst_reg_0> 
+INFO:Xst:2260 - The FF/Latch <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.rd_rst_reg_2> in Unit <u_sdram_vga_top/u_sdram_2fifo_top/u_dcfifo_ctrl/u_rdfifo> is equivalent to the following 2 FFs/Latches : <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.rd_rst_reg_1> <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.rd_rst_reg_0> 
+
+Final Macro Processing ...
+
+=========================================================================
+Final Register Report
+
+Macro Statistics
+# Registers                                            : 288
+ Flip-Flops                                            : 288
+
+=========================================================================
+
+=========================================================================
+*                           Partition Report                            *
+=========================================================================
+
+Partition Implementation Status
+-------------------------------
+
+  No Partitions were found in this design.
+
+-------------------------------
+
+=========================================================================
+*                            Design Summary                             *
+=========================================================================
+
+Top Level Output File Name         : sdram_ov5640_vga.ngc
+
+Primitive and Black Box Usage:
+------------------------------
+# BELS                             : 1098
+#      GND                         : 4
+#      INV                         : 28
+#      LUT1                        : 64
+#      LUT2                        : 158
+#      LUT3                        : 88
+#      LUT4                        : 86
+#      LUT5                        : 69
+#      LUT6                        : 188
+#      MUXCY                       : 206
+#      MUXF7                       : 21
+#      VCC                         : 3
+#      XORCY                       : 183
+# FlipFlops/Latches                : 611
+#      FD                          : 8
+#      FDC                         : 253
+#      FDC_1                       : 7
+#      FDCE                        : 258
+#      FDCE_1                      : 4
+#      FDP                         : 47
+#      FDPE                        : 12
+#      FDPE_1                      : 2
+#      FDR                         : 2
+#      FDRE                        : 16
+#      FDSE                        : 1
+#      ODDR2                       : 1
+# RAMS                             : 50
+#      RAM64M                      : 40
+#      RAM64X1D                    : 8
+#      RAMB16BWER                  : 1
+#      RAMB8BWER                   : 1
+# Clock Buffers                    : 8
+#      BUFG                        : 7
+#      BUFGP                       : 1
+# IO Buffers                       : 75
+#      IBUF                        : 12
+#      IBUFG                       : 1
+#      IOBUF                       : 16
+#      OBUF                        : 45
+#      OBUFT                       : 1
+# DCMs                             : 2
+#      DCM_SP                      : 2
+
+Device utilization summary:
+---------------------------
+
+Selected Device : 6slx9ftg256-2 
+
+
+Slice Logic Utilization: 
+ Number of Slice Registers:             611  out of  11440     5%  
+ Number of Slice LUTs:                  857  out of   5720    14%  
+    Number used as Logic:               681  out of   5720    11%  
+    Number used as Memory:              176  out of   1440    12%  
+       Number used as RAM:              176
+
+Slice Logic Distribution: 
+ Number of LUT Flip Flop pairs used:   1125
+   Number with an unused Flip Flop:     514  out of   1125    45%  
+   Number with an unused LUT:           268  out of   1125    23%  
+   Number of fully used LUT-FF pairs:   343  out of   1125    30%  
+   Number of unique control sets:        66
+
+IO Utilization: 
+ Number of IOs:                          80
+ Number of bonded IOBs:                  76  out of    186    40%  
+
+Specific Feature Utilization:
+ Number of Block RAM/FIFO:                2  out of     32     6%  
+    Number using Block RAM only:          2
+ Number of BUFG/BUFGCTRLs:                8  out of     16    50%  
+
+---------------------------
+Partition Resource Summary:
+---------------------------
+
+  No Partitions were found in this design.
+
+---------------------------
+
+
+=========================================================================
+Timing Report
+
+NOTE: THESE TIMING NUMBERS ARE ONLY A SYNTHESIS ESTIMATE.
+      FOR ACCURATE TIMING INFORMATION PLEASE REFER TO THE TRACE REPORT
+      GENERATED AFTER PLACE-and-ROUTE.
+
+Clock Information:
+------------------
+-----------------------------------+-------------------------------------------+-------+
+Clock Signal                       | Clock buffer(FF name)                     | Load  |
+-----------------------------------+-------------------------------------------+-------+
+CLOCK                              | DCM_SP:CLK2X                              | 364   |
+reg_config_inst/clock_20k          | NONE(reg_config_inst/config_step_FSM_FFd2)| 41    |
+CLOCK                              | DCM_SP:CLK0+DCM_SP:CLKFX                  | 30    |
+CMOS_PCLK                          | BUFGP                                     | 114   |
+CLOCK                              | DCM_SP:CLKFX                              | 114   |
+-----------------------------------+-------------------------------------------+-------+
+INFO:Xst:2169 - HDL ADVISOR - Some clock signals were not automatically buffered by XST with BUFG/BUFR resources. Please use the buffer_type constraint in order to insert these buffers to the clock signals to help prevent skew problems.
+
+Asynchronous Control Signals Information:
+----------------------------------------
+No asynchronous control signals found in this design
+
+Timing Summary:
+---------------
+Speed Grade: -2
+
+   Minimum period: 83.616ns (Maximum Frequency: 11.959MHz)
+   Minimum input arrival time before clock: 4.429ns
+   Maximum output required time after clock: 9.530ns
+   Maximum combinational path delay: No path found
+
+Timing Details:
+---------------
+All values displayed in nanoseconds (ns)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'CLOCK'
+  Clock period: 83.616ns (frequency: 11.959MHz)
+  Total number of paths / destination ports: 17372 / 1585
+-------------------------------------------------------------------------
+Delay:               3.216ns (Levels of Logic = 1)
+  Source:            u_system_ctrl/delay_done (FF)
+  Destination:       u_sdram_vga_top/u_lcd_top/u_lcd_driver/vcnt_0 (FF)
+  Source Clock:      CLOCK rising 2.0X
+  Destination Clock: CLOCK rising 1.3X
+
+  Data Path: u_system_ctrl/delay_done to u_sdram_vga_top/u_lcd_top/u_lcd_driver/vcnt_0
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDCE:C->Q             7   0.525   0.909  u_system_ctrl/delay_done (u_system_ctrl/delay_done)
+     INV:I->O             12   0.255   1.068  u_sdram_vga_top/u_sdram_2fifo_top/u_sdramtop/module_003/rst_n_inv1_1_INV_0 (u_sdram_vga_top/u_sdram_2fifo_top/u_sdramtop/module_003/rst_n_inv1)
+     FDC:CLR                   0.459          u_sdram_vga_top/u_lcd_top/u_lcd_driver/hcnt_0
+    ----------------------------------------
+    Total                      3.216ns (1.239ns logic, 1.977ns route)
+                                       (38.5% logic, 61.5% route)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'reg_config_inst/clock_20k'
+  Clock period: 5.941ns (frequency: 168.322MHz)
+  Total number of paths / destination ports: 687 / 85
+-------------------------------------------------------------------------
+Delay:               5.941ns (Levels of Logic = 3)
+  Source:            reg_config_inst_Mram_n0110 (RAM)
+  Destination:       reg_config_inst/u1/reg_sdat (FF)
+  Source Clock:      reg_config_inst/clock_20k rising
+  Destination Clock: reg_config_inst/clock_20k rising
+
+  Data Path: reg_config_inst_Mram_n0110 to reg_config_inst/u1/reg_sdat
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     RAMB16BWER:CLKA->DOA31    2   2.100   1.002  reg_config_inst_Mram_n0110 (reg_config_inst/i2c_data<31>)
+     LUT5:I1->O            1   0.254   0.910  reg_config_inst/u1/cyc_count[5]_reg_sdat_Mux_12_o8 (reg_config_inst/u1/cyc_count[5]_reg_sdat_Mux_12_o8)
+     LUT6:I3->O            1   0.235   1.112  reg_config_inst/u1/cyc_count[5]_reg_sdat_Mux_12_o12 (reg_config_inst/u1/cyc_count[5]_reg_sdat_Mux_12_o12)
+     LUT6:I1->O            1   0.254   0.000  reg_config_inst/u1/cyc_count[5]_reg_sdat_Mux_12_o15 (reg_config_inst/u1/cyc_count[5]_reg_sdat_Mux_12_o)
+     FDPE:D                    0.074          reg_config_inst/u1/reg_sdat
+    ----------------------------------------
+    Total                      5.941ns (2.917ns logic, 3.024ns route)
+                                       (49.1% logic, 50.9% route)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'CMOS_PCLK'
+  Clock period: 3.455ns (frequency: 289.436MHz)
+  Total number of paths / destination ports: 558 / 238
+-------------------------------------------------------------------------
+Delay:               3.455ns (Levels of Logic = 7)
+  Source:            u_sdram_vga_top/u_sdram_2fifo_top/u_dcfifo_ctrl/u_wrfifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/rd_pntr_bin_1 (FF)
+  Destination:       u_sdram_vga_top/u_sdram_2fifo_top/u_dcfifo_ctrl/u_wrfifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/gwas.wsts/ram_full_i (FF)
+  Source Clock:      CMOS_PCLK rising
+  Destination Clock: CMOS_PCLK rising
+
+  Data Path: u_sdram_vga_top/u_sdram_2fifo_top/u_dcfifo_ctrl/u_wrfifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/rd_pntr_bin_1 to u_sdram_vga_top/u_sdram_2fifo_top/u_dcfifo_ctrl/u_wrfifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/gwas.wsts/ram_full_i
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDC:C->Q              3   0.525   1.042  U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/rd_pntr_bin_1 (U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/rd_pntr_bin<1>)
+     LUT4:I0->O            1   0.254   0.000  U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/gwas.wsts/c1/v1<0>1 (U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/gwas.wsts/c1/v1<0>)
+     MUXCY:S->O            1   0.215   0.000  U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/gwas.wsts/c1/gmux.gm[0].gm1.m1 (U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/gwas.wsts/c1/gmux.carrynet<0>)
+     MUXCY:CI->O           1   0.023   0.000  U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/gwas.wsts/c1/gmux.gm[1].gms.ms (U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/gwas.wsts/c1/gmux.carrynet<1>)
+     MUXCY:CI->O           1   0.023   0.000  U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/gwas.wsts/c1/gmux.gm[2].gms.ms (U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/gwas.wsts/c1/gmux.carrynet<2>)
+     MUXCY:CI->O           1   0.023   0.000  U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/gwas.wsts/c1/gmux.gm[3].gms.ms (U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/gwas.wsts/c1/gmux.carrynet<3>)
+     MUXCY:CI->O           1   0.235   0.790  U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/gwas.wsts/c1/gmux.gm[4].gms.ms (U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/gwas.wsts/comp1)
+     LUT5:I3->O            2   0.250   0.000  U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/gwas.wsts/Mmux_comp1_GND_196_o_MUX_13_o11 (U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/gwas.wsts/comp1_GND_196_o_MUX_13_o)
+     FDP:D                     0.074          U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/gwas.wsts/ram_full_fb_i
+    ----------------------------------------
+    Total                      3.455ns (1.623ns logic, 1.832ns route)
+                                       (47.0% logic, 53.0% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'reg_config_inst/clock_20k'
+  Total number of paths / destination ports: 104 / 32
+-------------------------------------------------------------------------
+Offset:              4.322ns (Levels of Logic = 2)
+  Source:            KEY1 (PAD)
+  Destination:       reg_config_inst/on_counter_7 (FF)
+  Destination Clock: reg_config_inst/clock_20k rising
+
+  Data Path: KEY1 to reg_config_inst/on_counter_7
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O            20   1.328   1.514  KEY1_IBUF (KEY1_IBUF)
+     LUT4:I1->O            8   0.235   0.943  reg_config_inst/_n0181_inv2 (reg_config_inst/_n0181_inv)
+     FDCE:CE                   0.302          reg_config_inst/off_counter_0
+    ----------------------------------------
+    Total                      4.322ns (1.865ns logic, 2.457ns route)
+                                       (43.2% logic, 56.8% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'CMOS_PCLK'
+  Total number of paths / destination ports: 89 / 48
+-------------------------------------------------------------------------
+Offset:              4.429ns (Levels of Logic = 2)
+  Source:            CMOS_VSYNC (PAD)
+  Destination:       u_CMOS_Capture/CMOS_oDATA_15 (FF)
+  Destination Clock: CMOS_PCLK rising
+
+  Data Path: CMOS_VSYNC to u_CMOS_Capture/CMOS_oDATA_15
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O            15   1.328   1.383  CMOS_VSYNC_IBUF (CMOS_VSYNC_IBUF)
+     LUT3:I0->O           16   0.235   1.181  u_CMOS_Capture/Mcount_byte_state_lut<0>1 (u_CMOS_Capture/Mcount_byte_state_lut<0>)
+     FDCE:CE                   0.302          u_CMOS_Capture/CMOS_oDATA_0
+    ----------------------------------------
+    Total                      4.429ns (1.865ns logic, 2.564ns route)
+                                       (42.1% logic, 57.9% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'CLOCK'
+  Total number of paths / destination ports: 27 / 27
+-------------------------------------------------------------------------
+Offset:              3.761ns (Levels of Logic = 2)
+  Source:            rst_n (PAD)
+  Destination:       u_system_ctrl/delay_cnt_9 (FF)
+  Destination Clock: CLOCK rising 2.0X
+
+  Data Path: rst_n to u_system_ctrl/delay_cnt_9
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O             1   1.328   0.681  rst_n_IBUF (rst_n_IBUF)
+     INV:I->O             11   0.255   1.038  u_system_ctrl/rst_n_inv1_INV_0 (u_system_ctrl/rst_n_inv)
+     FDCE:CLR                  0.459          u_system_ctrl/delay_done
+    ----------------------------------------
+    Total                      3.761ns (2.042ns logic, 1.719ns route)
+                                       (54.3% logic, 45.7% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'CLOCK'
+  Total number of paths / destination ports: 696 / 56
+-------------------------------------------------------------------------
+Offset:              9.530ns (Levels of Logic = 5)
+  Source:            u_sdram_vga_top/u_lcd_top/u_lcd_driver/vcnt_7 (FF)
+  Destination:       lcd_rgb<15> (PAD)
+  Source Clock:      CLOCK rising 1.3X
+
+  Data Path: u_sdram_vga_top/u_lcd_top/u_lcd_driver/vcnt_7 to lcd_rgb<15>
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDCE:C->Q             5   0.525   1.117  u_sdram_vga_top/u_lcd_top/u_lcd_driver/vcnt_7 (u_sdram_vga_top/u_lcd_top/u_lcd_driver/vcnt_7)
+     LUT4:I0->O            1   0.254   1.112  u_sdram_vga_top/u_lcd_top/u_lcd_driver/lcd_en21 (u_sdram_vga_top/u_lcd_top/u_lcd_driver/lcd_en21)
+     LUT6:I1->O            1   0.254   0.682  u_sdram_vga_top/u_lcd_top/u_lcd_driver/lcd_en22 (u_sdram_vga_top/u_lcd_top/u_lcd_driver/lcd_en22)
+     LUT6:I5->O           17   0.254   1.485  u_sdram_vga_top/u_lcd_top/u_lcd_driver/lcd_en24 (u_sdram_vga_top/u_lcd_top/u_lcd_driver/lcd_en24)
+     LUT5:I1->O            1   0.254   0.681  u_sdram_vga_top/u_lcd_top/u_lcd_driver/Mmux_lcd_rgb17 (lcd_rgb_0_OBUF)
+     OBUF:I->O                 2.912          lcd_rgb_0_OBUF (lcd_rgb<0>)
+    ----------------------------------------
+    Total                      9.530ns (4.453ns logic, 5.077ns route)
+                                       (46.7% logic, 53.3% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'reg_config_inst/clock_20k'
+  Total number of paths / destination ports: 6 / 2
+-------------------------------------------------------------------------
+Offset:              5.841ns (Levels of Logic = 2)
+  Source:            reg_config_inst/u1/cyc_count_5 (FF)
+  Destination:       CMOS_SCLK (PAD)
+  Source Clock:      reg_config_inst/clock_20k rising
+
+  Data Path: reg_config_inst/u1/cyc_count_5 to CMOS_SCLK
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDPE:C->Q            11   0.525   1.469  reg_config_inst/u1/cyc_count_5 (reg_config_inst/u1/cyc_count_5)
+     LUT6:I1->O            1   0.254   0.681  CMOS_SCLK1 (CMOS_SCLK_OBUF)
+     OBUF:I->O                 2.912          CMOS_SCLK_OBUF (CMOS_SCLK)
+    ----------------------------------------
+    Total                      5.841ns (3.691ns logic, 2.150ns route)
+                                       (63.2% logic, 36.8% route)
+
+=========================================================================
+
+Cross Clock Domains Report:
+--------------------------
+
+Clock to Setup on destination clock CLOCK
+---------------+---------+---------+---------+---------+
+               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------+---------+---------+---------+---------+
+CLOCK          |    8.436|    4.659|    9.138|         |
+CMOS_PCLK      |    1.280|         |         |         |
+---------------+---------+---------+---------+---------+
+
+Clock to Setup on destination clock CMOS_PCLK
+-------------------------+---------+---------+---------+---------+
+                         | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock             |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+-------------------------+---------+---------+---------+---------+
+CLOCK                    |    4.636|         |         |         |
+CMOS_PCLK                |    3.455|         |         |         |
+reg_config_inst/clock_20k|    3.421|         |         |         |
+-------------------------+---------+---------+---------+---------+
+
+Clock to Setup on destination clock reg_config_inst/clock_20k
+-------------------------+---------+---------+---------+---------+
+                         | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock             |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+-------------------------+---------+---------+---------+---------+
+CLOCK                    |    3.840|         |         |         |
+reg_config_inst/clock_20k|    5.941|         |         |         |
+-------------------------+---------+---------+---------+---------+
+
+=========================================================================
+
+
+Total REAL time to Xst completion: 8.00 secs
+Total CPU time to Xst completion: 8.37 secs
+ 
+--> 
+
+Total memory usage is 268640 kilobytes
+
+Number of errors   :    0 (   0 filtered)
+Number of warnings :  126 (   0 filtered)
+Number of infos    :   53 (   0 filtered)
+

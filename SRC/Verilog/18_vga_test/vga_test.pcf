@@ -1,0 +1,56 @@
+//! **************************************************************************
+// Written by: Map P.20131013 on Fri May 26 11:32:08 2017
+//! **************************************************************************
+
+SCHEMATIC START;
+COMP "vga_b<0>" LOCATE = SITE "P7" LEVEL 1;
+COMP "vga_b<1>" LOCATE = SITE "M7" LEVEL 1;
+COMP "vga_b<2>" LOCATE = SITE "P8" LEVEL 1;
+COMP "vga_hs" LOCATE = SITE "M14" LEVEL 1;
+COMP "vga_b<3>" LOCATE = SITE "N8" LEVEL 1;
+COMP "key1" LOCATE = SITE "C3" LEVEL 1;
+COMP "vga_b<4>" LOCATE = SITE "L7" LEVEL 1;
+COMP "vga_r<0>" LOCATE = SITE "M11" LEVEL 1;
+COMP "vga_r<1>" LOCATE = SITE "M12" LEVEL 1;
+COMP "vga_r<2>" LOCATE = SITE "L12" LEVEL 1;
+COMP "vga_vs" LOCATE = SITE "L13" LEVEL 1;
+COMP "vga_r<3>" LOCATE = SITE "N14" LEVEL 1;
+COMP "vga_r<4>" LOCATE = SITE "M13" LEVEL 1;
+COMP "vga_g<0>" LOCATE = SITE "M9" LEVEL 1;
+COMP "vga_g<1>" LOCATE = SITE "N9" LEVEL 1;
+COMP "vga_g<2>" LOCATE = SITE "P9" LEVEL 1;
+COMP "rst_n" LOCATE = SITE "L3" LEVEL 1;
+COMP "vga_g<3>" LOCATE = SITE "L10" LEVEL 1;
+COMP "vga_g<4>" LOCATE = SITE "M10" LEVEL 1;
+COMP "vga_g<5>" LOCATE = SITE "P11" LEVEL 1;
+COMP "fpga_gclk" LOCATE = SITE "T8" LEVEL 1;
+TIMEGRP pll1_inst_clkfx = BEL "grid_data_1_0" BEL "grid_data_2_0" BEL
+        "vga_r_reg_0" BEL "vga_r_reg_1" BEL "vga_r_reg_2" BEL "vga_r_reg_3"
+        BEL "vga_r_reg_4" BEL "vga_g_reg_0" BEL "vga_g_reg_1" BEL
+        "vga_g_reg_2" BEL "vga_g_reg_3" BEL "vga_g_reg_4" BEL "vga_g_reg_5"
+        BEL "vga_b_reg_0" BEL "vga_b_reg_1" BEL "vga_b_reg_2" BEL
+        "vga_b_reg_3" BEL "vga_b_reg_4" BEL "y_cnt_0" BEL "y_cnt_1" BEL
+        "y_cnt_2" BEL "y_cnt_3" BEL "y_cnt_4" BEL "y_cnt_5" BEL "y_cnt_6" BEL
+        "y_cnt_9" BEL "y_cnt_7" BEL "y_cnt_8" BEL "x_cnt_0" BEL "x_cnt_1" BEL
+        "x_cnt_2" BEL "x_cnt_3" BEL "x_cnt_4" BEL "x_cnt_5" BEL "x_cnt_8" BEL
+        "x_cnt_6" BEL "x_cnt_7" BEL "x_cnt_9" BEL "x_cnt_10" BEL
+        "key1_counter_0" BEL "key1_counter_1" BEL "key1_counter_2" BEL
+        "key1_counter_3" BEL "key1_counter_4" BEL "key1_counter_5" BEL
+        "key1_counter_6" BEL "key1_counter_7" BEL "key1_counter_8" BEL
+        "key1_counter_9" BEL "key1_counter_10" BEL "key1_counter_11" BEL
+        "key1_counter_12" BEL "key1_counter_13" BEL "key1_counter_14" BEL
+        "key1_counter_15" BEL "vga_dis_mode_0" BEL "vga_dis_mode_1" BEL
+        "vga_dis_mode_2" BEL "vga_dis_mode_3" BEL "pll1_inst/clkout1_buf" BEL
+        "hsync_r" BEL "hsync_de" BEL "vsync_r" BEL "vsync_de" BEL "bar_data_0"
+        BEL "bar_data_5" BEL "bar_data_10" BEL "bar_data_11" BEL "x_cnt_6_1"
+        BEL "x_cnt_6_2";
+PIN SP6_BUFIO_INSERT_ML_BUFIO2_0_pins<0> = BEL "SP6_BUFIO_INSERT_ML_BUFIO2_0"
+        PINNAME DIVCLK;
+PIN pll1_inst/dcm_sp_inst_pins<3> = BEL "pll1_inst/dcm_sp_inst" PINNAME CLKIN;
+TIMEGRP sys_clk_pin = PIN "SP6_BUFIO_INSERT_ML_BUFIO2_0_pins<0>" PIN
+        "pll1_inst/dcm_sp_inst_pins<3>";
+TS_sys_clk_pin = PERIOD TIMEGRP "sys_clk_pin" 50 MHz HIGH 50%;
+TS_pll1_inst_clkfx = PERIOD TIMEGRP "pll1_inst_clkfx" TS_sys_clk_pin * 1.3
+        HIGH 50%;
+SCHEMATIC END;
+

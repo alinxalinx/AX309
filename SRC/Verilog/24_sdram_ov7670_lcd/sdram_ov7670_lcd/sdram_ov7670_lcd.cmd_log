@@ -1,0 +1,83 @@
+xst -intstyle ise -ifn "E:/Project/AX309/Verilog/20_sdram_ov7670_lcd/sdram_ov7670_lcd/sdram_ov7670_lcd.xst" -ofn "E:/Project/AX309/Verilog/20_sdram_ov7670_lcd/sdram_ov7670_lcd/sdram_ov7670_lcd.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc sdram_ov7670_vga.ucf -p xc6slx9-ftg256-2 sdram_ov7670_lcd.ngc sdram_ov7670_lcd.ngd  
+map -intstyle ise -p xc6slx9-ftg256-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o sdram_ov7670_lcd_map.ncd sdram_ov7670_lcd.ngd sdram_ov7670_lcd.pcf 
+par -w -intstyle ise -ol high -mt off sdram_ov7670_lcd_map.ncd sdram_ov7670_lcd.ncd sdram_ov7670_lcd.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml sdram_ov7670_lcd.twx sdram_ov7670_lcd.ncd -o sdram_ov7670_lcd.twr sdram_ov7670_lcd.pcf -ucf sdram_ov7670_vga.ucf 
+bitgen -intstyle ise -f sdram_ov7670_lcd.ut sdram_ov7670_lcd.ncd 
+xst -intstyle ise -ifn "E:/Project/AX309/Verilog/20_sdram_ov7670_lcd/sdram_ov7670_lcd/sdram_ov7670_lcd.xst" -ofn "E:/Project/AX309/Verilog/20_sdram_ov7670_lcd/sdram_ov7670_lcd/sdram_ov7670_lcd.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc sdram_ov7670_vga.ucf -p xc6slx9-ftg256-2 sdram_ov7670_lcd.ngc sdram_ov7670_lcd.ngd  
+map -intstyle ise -p xc6slx9-ftg256-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o sdram_ov7670_lcd_map.ncd sdram_ov7670_lcd.ngd sdram_ov7670_lcd.pcf 
+par -w -intstyle ise -ol high -mt off sdram_ov7670_lcd_map.ncd sdram_ov7670_lcd.ncd sdram_ov7670_lcd.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml sdram_ov7670_lcd.twx sdram_ov7670_lcd.ncd -o sdram_ov7670_lcd.twr sdram_ov7670_lcd.pcf -ucf sdram_ov7670_vga.ucf 
+bitgen -intstyle ise -f sdram_ov7670_lcd.ut sdram_ov7670_lcd.ncd 
+xst -intstyle ise -ifn "E:/Project/AX309/Verilog/20_sdram_ov7670_lcd/sdram_ov7670_lcd/sdram_ov7670_lcd.xst" -ofn "E:/Project/AX309/Verilog/20_sdram_ov7670_lcd/sdram_ov7670_lcd/sdram_ov7670_lcd.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc sdram_ov7670_lcd.ucf -p xc6slx9-ftg256-2 sdram_ov7670_lcd.ngc sdram_ov7670_lcd.ngd  
+map -intstyle ise -p xc6slx9-ftg256-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o sdram_ov7670_lcd_map.ncd sdram_ov7670_lcd.ngd sdram_ov7670_lcd.pcf 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc sdram_ov7670_lcd.ucf -p xc6slx9-ftg256-2 sdram_ov7670_lcd.ngc sdram_ov7670_lcd.ngd  
+map -intstyle ise -p xc6slx9-ftg256-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o sdram_ov7670_lcd_map.ncd sdram_ov7670_lcd.ngd sdram_ov7670_lcd.pcf 
+par -w -intstyle ise -ol high -mt off sdram_ov7670_lcd_map.ncd sdram_ov7670_lcd.ncd sdram_ov7670_lcd.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml sdram_ov7670_lcd.twx sdram_ov7670_lcd.ncd -o sdram_ov7670_lcd.twr sdram_ov7670_lcd.pcf -ucf sdram_ov7670_lcd.ucf 
+bitgen -intstyle ise -f sdram_ov7670_lcd.ut sdram_ov7670_lcd.ncd 
+xst -intstyle ise -ifn "E:/Project/AX309/Verilog/20_sdram_ov7670_lcd/sdram_ov7670_lcd/sdram_ov7670_lcd.xst" -ofn "E:/Project/AX309/Verilog/20_sdram_ov7670_lcd/sdram_ov7670_lcd/sdram_ov7670_lcd.syr" 
+xst -intstyle ise -ifn "E:/Project/AX309/Verilog/20_sdram_ov7670_lcd/sdram_ov7670_lcd/sdram_ov7670_lcd.xst" -ofn "E:/Project/AX309/Verilog/20_sdram_ov7670_lcd/sdram_ov7670_lcd/sdram_ov7670_lcd.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc sdram_ov7670_lcd.ucf -p xc6slx9-ftg256-2 sdram_ov7670_lcd.ngc sdram_ov7670_lcd.ngd  
+map -intstyle ise -p xc6slx9-ftg256-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o sdram_ov7670_lcd_map.ncd sdram_ov7670_lcd.ngd sdram_ov7670_lcd.pcf 
+par -w -intstyle ise -ol high -mt off sdram_ov7670_lcd_map.ncd sdram_ov7670_lcd.ncd sdram_ov7670_lcd.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml sdram_ov7670_lcd.twx sdram_ov7670_lcd.ncd -o sdram_ov7670_lcd.twr sdram_ov7670_lcd.pcf -ucf sdram_ov7670_lcd.ucf 
+bitgen -intstyle ise -f sdram_ov7670_lcd.ut sdram_ov7670_lcd.ncd 
+xst -intstyle ise -ifn "E:/Project/AX309/Verilog/20_sdram_ov7670_lcd/sdram_ov7670_lcd/sdram_ov7670_lcd.xst" -ofn "E:/Project/AX309/Verilog/20_sdram_ov7670_lcd/sdram_ov7670_lcd/sdram_ov7670_lcd.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc sdram_ov7670_lcd.ucf -p xc6slx9-ftg256-2 sdram_ov7670_lcd.ngc sdram_ov7670_lcd.ngd  
+map -intstyle ise -p xc6slx9-ftg256-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o sdram_ov7670_lcd_map.ncd sdram_ov7670_lcd.ngd sdram_ov7670_lcd.pcf 
+xst -intstyle ise -ifn "E:/Project/AX309/Verilog/20_sdram_ov7670_lcd/sdram_ov7670_lcd/sdram_ov7670_lcd.xst" -ofn "E:/Project/AX309/Verilog/20_sdram_ov7670_lcd/sdram_ov7670_lcd/sdram_ov7670_lcd.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc sdram_ov7670_lcd.ucf -p xc6slx9-ftg256-2 sdram_ov7670_lcd.ngc sdram_ov7670_lcd.ngd  
+map -intstyle ise -p xc6slx9-ftg256-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o sdram_ov7670_lcd_map.ncd sdram_ov7670_lcd.ngd sdram_ov7670_lcd.pcf 
+par -w -intstyle ise -ol high -mt off sdram_ov7670_lcd_map.ncd sdram_ov7670_lcd.ncd sdram_ov7670_lcd.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml sdram_ov7670_lcd.twx sdram_ov7670_lcd.ncd -o sdram_ov7670_lcd.twr sdram_ov7670_lcd.pcf -ucf sdram_ov7670_lcd.ucf 
+bitgen -intstyle ise -f sdram_ov7670_lcd.ut sdram_ov7670_lcd.ncd 
+xst -intstyle ise -ifn "E:/Project/AX309/Verilog/20_sdram_ov7670_lcd/sdram_ov7670_lcd/sdram_ov7670_lcd.xst" -ofn "E:/Project/AX309/Verilog/20_sdram_ov7670_lcd/sdram_ov7670_lcd/sdram_ov7670_lcd.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc sdram_ov7670_lcd.ucf -p xc6slx9-ftg256-2 sdram_ov7670_lcd.ngc sdram_ov7670_lcd.ngd  
+map -intstyle ise -p xc6slx9-ftg256-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o sdram_ov7670_lcd_map.ncd sdram_ov7670_lcd.ngd sdram_ov7670_lcd.pcf 
+par -w -intstyle ise -ol high -mt off sdram_ov7670_lcd_map.ncd sdram_ov7670_lcd.ncd sdram_ov7670_lcd.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml sdram_ov7670_lcd.twx sdram_ov7670_lcd.ncd -o sdram_ov7670_lcd.twr sdram_ov7670_lcd.pcf -ucf sdram_ov7670_lcd.ucf 
+bitgen -intstyle ise -f sdram_ov7670_lcd.ut sdram_ov7670_lcd.ncd 
+xst -intstyle ise -ifn "E:/Project/AX309/Verilog/20_sdram_ov7670_lcd/sdram_ov7670_lcd/sdram_ov7670_lcd.xst" -ofn "E:/Project/AX309/Verilog/20_sdram_ov7670_lcd/sdram_ov7670_lcd/sdram_ov7670_lcd.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc sdram_ov7670_lcd.ucf -p xc6slx9-ftg256-2 sdram_ov7670_lcd.ngc sdram_ov7670_lcd.ngd  
+map -intstyle ise -p xc6slx9-ftg256-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o sdram_ov7670_lcd_map.ncd sdram_ov7670_lcd.ngd sdram_ov7670_lcd.pcf 
+par -w -intstyle ise -ol high -mt off sdram_ov7670_lcd_map.ncd sdram_ov7670_lcd.ncd sdram_ov7670_lcd.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml sdram_ov7670_lcd.twx sdram_ov7670_lcd.ncd -o sdram_ov7670_lcd.twr sdram_ov7670_lcd.pcf -ucf sdram_ov7670_lcd.ucf 
+bitgen -intstyle ise -f sdram_ov7670_lcd.ut sdram_ov7670_lcd.ncd 
+xst -intstyle ise -ifn "E:/Project/AX309/Verilog/20_sdram_ov7670_lcd/sdram_ov7670_lcd/sdram_ov7670_lcd.xst" -ofn "E:/Project/AX309/Verilog/20_sdram_ov7670_lcd/sdram_ov7670_lcd/sdram_ov7670_lcd.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc sdram_ov7670_lcd.ucf -p xc6slx9-ftg256-2 sdram_ov7670_lcd.ngc sdram_ov7670_lcd.ngd  
+map -intstyle ise -p xc6slx9-ftg256-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o sdram_ov7670_lcd_map.ncd sdram_ov7670_lcd.ngd sdram_ov7670_lcd.pcf 
+par -w -intstyle ise -ol high -mt off sdram_ov7670_lcd_map.ncd sdram_ov7670_lcd.ncd sdram_ov7670_lcd.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml sdram_ov7670_lcd.twx sdram_ov7670_lcd.ncd -o sdram_ov7670_lcd.twr sdram_ov7670_lcd.pcf -ucf sdram_ov7670_lcd.ucf 
+bitgen -intstyle ise -f sdram_ov7670_lcd.ut sdram_ov7670_lcd.ncd 
+xst -intstyle ise -ifn "E:/Project/AX309/Verilog/20_sdram_ov7670_lcd/sdram_ov7670_lcd/sdram_ov7670_lcd.xst" -ofn "E:/Project/AX309/Verilog/20_sdram_ov7670_lcd/sdram_ov7670_lcd/sdram_ov7670_lcd.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc sdram_ov7670_lcd.ucf -p xc6slx9-ftg256-2 sdram_ov7670_lcd.ngc sdram_ov7670_lcd.ngd  
+map -intstyle ise -p xc6slx9-ftg256-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o sdram_ov7670_lcd_map.ncd sdram_ov7670_lcd.ngd sdram_ov7670_lcd.pcf 
+par -w -intstyle ise -ol high -mt off sdram_ov7670_lcd_map.ncd sdram_ov7670_lcd.ncd sdram_ov7670_lcd.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml sdram_ov7670_lcd.twx sdram_ov7670_lcd.ncd -o sdram_ov7670_lcd.twr sdram_ov7670_lcd.pcf -ucf sdram_ov7670_lcd.ucf 
+bitgen -intstyle ise -f sdram_ov7670_lcd.ut sdram_ov7670_lcd.ncd 
+xst -intstyle ise -ifn "E:/Project/AX309/Verilog/20_sdram_ov7670_lcd/sdram_ov7670_lcd/sdram_ov7670_lcd.xst" -ofn "E:/Project/AX309/Verilog/20_sdram_ov7670_lcd/sdram_ov7670_lcd/sdram_ov7670_lcd.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc sdram_ov7670_lcd.ucf -p xc6slx9-ftg256-2 sdram_ov7670_lcd.ngc sdram_ov7670_lcd.ngd  
+map -intstyle ise -p xc6slx9-ftg256-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o sdram_ov7670_lcd_map.ncd sdram_ov7670_lcd.ngd sdram_ov7670_lcd.pcf 
+par -w -intstyle ise -ol high -mt off sdram_ov7670_lcd_map.ncd sdram_ov7670_lcd.ncd sdram_ov7670_lcd.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml sdram_ov7670_lcd.twx sdram_ov7670_lcd.ncd -o sdram_ov7670_lcd.twr sdram_ov7670_lcd.pcf -ucf sdram_ov7670_lcd.ucf 
+bitgen -intstyle ise -f sdram_ov7670_lcd.ut sdram_ov7670_lcd.ncd 
+xst -intstyle ise -ifn "E:/Project/AX309/Verilog/20_sdram_ov7670_lcd/sdram_ov7670_lcd/sdram_ov7670_lcd.xst" -ofn "E:/Project/AX309/Verilog/20_sdram_ov7670_lcd/sdram_ov7670_lcd/sdram_ov7670_lcd.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc sdram_ov7670_lcd.ucf -p xc6slx9-ftg256-2 sdram_ov7670_lcd.ngc sdram_ov7670_lcd.ngd  
+map -intstyle ise -p xc6slx9-ftg256-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o sdram_ov7670_lcd_map.ncd sdram_ov7670_lcd.ngd sdram_ov7670_lcd.pcf 
+par -w -intstyle ise -ol high -mt off sdram_ov7670_lcd_map.ncd sdram_ov7670_lcd.ncd sdram_ov7670_lcd.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml sdram_ov7670_lcd.twx sdram_ov7670_lcd.ncd -o sdram_ov7670_lcd.twr sdram_ov7670_lcd.pcf -ucf sdram_ov7670_lcd.ucf 
+bitgen -intstyle ise -f sdram_ov7670_lcd.ut sdram_ov7670_lcd.ncd 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc sdram_ov7670_lcd.ucf -p xc6slx9-ftg256-2 sdram_ov7670_lcd.ngc sdram_ov7670_lcd.ngd  
+map -intstyle ise -p xc6slx9-ftg256-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o sdram_ov7670_lcd_map.ncd sdram_ov7670_lcd.ngd sdram_ov7670_lcd.pcf 
+par -w -intstyle ise -ol high -mt off sdram_ov7670_lcd_map.ncd sdram_ov7670_lcd.ncd sdram_ov7670_lcd.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml sdram_ov7670_lcd.twx sdram_ov7670_lcd.ncd -o sdram_ov7670_lcd.twr sdram_ov7670_lcd.pcf -ucf sdram_ov7670_lcd.ucf 
+bitgen -intstyle ise -f sdram_ov7670_lcd.ut sdram_ov7670_lcd.ncd 
+xst -intstyle ise -ifn "E:/BaiduYunDownload/AX309.161028/AX309/09_VERILOG/24_sdram_ov7670_lcd/sdram_ov7670_lcd/sdram_ov7670_lcd.xst" -ofn "E:/BaiduYunDownload/AX309.161028/AX309/09_VERILOG/24_sdram_ov7670_lcd/sdram_ov7670_lcd/sdram_ov7670_lcd.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc sdram_ov7670_lcd.ucf -p xc6slx9-ftg256-2 sdram_ov7670_lcd.ngc sdram_ov7670_lcd.ngd  
+map -intstyle ise -p xc6slx9-ftg256-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o sdram_ov7670_lcd_map.ncd sdram_ov7670_lcd.ngd sdram_ov7670_lcd.pcf 
+par -w -intstyle ise -ol high -mt off sdram_ov7670_lcd_map.ncd sdram_ov7670_lcd.ncd sdram_ov7670_lcd.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml sdram_ov7670_lcd.twx sdram_ov7670_lcd.ncd -o sdram_ov7670_lcd.twr sdram_ov7670_lcd.pcf -ucf sdram_ov7670_lcd.ucf 
+bitgen -intstyle ise -f sdram_ov7670_lcd.ut sdram_ov7670_lcd.ncd 

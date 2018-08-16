@@ -1,0 +1,19 @@
+PROMGEN: Xilinx Prom Generator P.20131013
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+
+promgen -w -p mcs -c FF -o E:\Project\AX309\Verilog\18_flash_sdram_lcd//flash_sdram_lcd -s 2048 -u 0000 E:/Project/AX309/Verilog/18_flash_sdram_lcd/flash_sdram_lcd/flash_sdram_lcd.bit -data_file up 60000 E:/Project/AX309/Verilog/18_flash_sdram_lcd/flash_sdram_lcd/picture/car.bin -data_file up c0000 E:/Project/AX309/Verilog/18_flash_sdram_lcd/flash_sdram_lcd/picture/flower.bin -spi 
+
+PROM E:\Project\AX309\Verilog\18_flash_sdram_lcd\flash_sdram_lcd.prm map: Thu Jul 16 13:55:40 2015
+
+Calculating PROM checksum with fill value ff
+
+Format        Mcs86 (32-bit)
+Size          2048K
+PROM start    0000:0000
+PROM end      001f:ffff
+PROM checksum 13b1c94e
+
+        Addr1        Addr2                     Date File(s)
+    0000:0000    0005:34a7     Jul 16 13:44:46 2015 E:/Project/AX309/Verilog/18_flash_sdram_lcd/flash_sdram_lcd/flash_sdram_lcd.bit
+    0006:0000    000b:f9ff     Apr 18 17:36:34 2013 E:/Project/AX309/Verilog/18_flash_sdram_lcd/flash_sdram_lcd/picture/car.bin
+    000c:0000    0011:f9ff     Oct 02 09:02:37 2013 E:/Project/AX309/Verilog/18_flash_sdram_lcd/flash_sdram_lcd/picture/flower.bin

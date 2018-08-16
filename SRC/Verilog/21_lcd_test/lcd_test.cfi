@@ -1,0 +1,11 @@
+# PROMGEN: Xilinx Prom Generator P.20131013
+# Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+
+SOFTWARE_VERSION P.20131013
+DATE            12/07/2016 - 17:00
+SOURCE          E:\BaiduYunDownload\AX309.161028\AX309\09_VERILOG\21_lcd_test\lcd_test.mcs
+DEVICE          1024K
+DATA_WIDTH      1
+FILL_DATA       0xFF
+SIGNATURE       0x0ACAE7EF
+START_ADDRESS   0x00000000 END_ADDRESS 0x0005327B DIRECTION_UP   "E:/BaiduYunDownload/AX309.161028/AX309/09_VERILOG/21_lcd_test/lcd_test.bit" 6slx9ftg256

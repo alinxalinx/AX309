@@ -1,0 +1,864 @@
+--------------------------------------------------------------------------------
+Release 14.7 Trace  (nt64)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+
+C:\Xilinx\14.7\ISE_DS\ISE\bin\nt64\unwrapped\trce.exe -intstyle ise -v 3 -s 2
+-n 3 -fastpaths -xml sdram_ov7670_lcd.twx sdram_ov7670_lcd.ncd -o
+sdram_ov7670_lcd.twr sdram_ov7670_lcd.pcf -ucf sdram_ov7670_lcd.ucf
+
+Design file:              sdram_ov7670_lcd.ncd
+Physical constraint file: sdram_ov7670_lcd.pcf
+Device,package,speed:     xc6slx9,ftg256,C,-2 (PRODUCTION 1.23 2013-10-13)
+Report level:             verbose report
+
+Environment Variable      Effect 
+--------------------      ------ 
+NONE                      No environment variables were set
+--------------------------------------------------------------------------------
+
+INFO:Timing:3412 - To improve timing, see the Timing Closure User Guide (UG612).
+INFO:Timing:2752 - To get complete path coverage, use the unconstrained paths 
+   option. All paths that are not constrained will be reported in the 
+   unconstrained paths section(s) of the report.
+INFO:Timing:3339 - The clock-to-out numbers in this timing report are based on 
+   a 50 Ohm transmission line loading model.  For the details of this model, 
+   and for more information on accounting for different loading conditions, 
+   please see the device datasheet.
+
+================================================================================
+Timing constraint: TS_sys_clk_pin = PERIOD TIMEGRP "sys_clk_pin" 50 MHz HIGH 
+50%;
+For more information, see Period Analysis in the Timing Closure User Guide (UG612).
+
+ 0 paths analyzed, 0 endpoints analyzed, 0 failing endpoints
+ 0 timing errors detected. (0 component switching limit errors)
+ Minimum period is   5.000ns.
+--------------------------------------------------------------------------------
+
+Component Switching Limit Checks: TS_sys_clk_pin = PERIOD TIMEGRP "sys_clk_pin" 50 MHz HIGH 50%;
+--------------------------------------------------------------------------------
+Slack: 7.334ns (period - min period limit)
+  Period: 10.000ns
+  Min period limit: 2.666ns (375.094MHz) (Tpllper_CLKOUT(Foutmax))
+  Physical resource: u_system_ctrl/u_sdram_pll/pll_base_inst/PLL_ADV/CLKOUT3
+  Logical resource: u_system_ctrl/u_sdram_pll/pll_base_inst/PLL_ADV/CLKOUT3
+  Location pin: PLL_ADV_X0Y0.CLKOUT3
+  Clock network: u_system_ctrl/u_sdram_pll/clkout3
+--------------------------------------------------------------------------------
+Slack: 15.000ns (period - (min low pulse limit / (low pulse / period)))
+  Period: 20.000ns
+  Low pulse: 10.000ns
+  Low pulse limit: 2.500ns (Tdcmpw_CLKIN_50_100)
+  Physical resource: u_system_ctrl/u_sdram_pll/pll_base_inst/PLL_ADV/CLKIN1
+  Logical resource: u_system_ctrl/u_sdram_pll/pll_base_inst/PLL_ADV/CLKIN1
+  Location pin: PLL_ADV_X0Y0.CLKIN1
+  Clock network: u_system_ctrl/u_sdram_pll/pll_base_inst/PLL_ADV_ML_NEW_DIVCLK
+--------------------------------------------------------------------------------
+Slack: 15.000ns (period - (min high pulse limit / (high pulse / period)))
+  Period: 20.000ns
+  High pulse: 10.000ns
+  High pulse limit: 2.500ns (Tdcmpw_CLKIN_50_100)
+  Physical resource: u_system_ctrl/u_sdram_pll/pll_base_inst/PLL_ADV/CLKIN1
+  Logical resource: u_system_ctrl/u_sdram_pll/pll_base_inst/PLL_ADV/CLKIN1
+  Location pin: PLL_ADV_X0Y0.CLKIN1
+  Clock network: u_system_ctrl/u_sdram_pll/pll_base_inst/PLL_ADV_ML_NEW_DIVCLK
+--------------------------------------------------------------------------------
+
+================================================================================
+Timing constraint: TS_u_system_ctrl_u_sdram_pll_clkout2 = PERIOD TIMEGRP        
+ "u_system_ctrl_u_sdram_pll_clkout2" TS_sys_clk_pin * 2 HIGH 50%;
+For more information, see Period Analysis in the Timing Closure User Guide (UG612).
+
+ 16215 paths analyzed, 2655 endpoints analyzed, 174 failing endpoints
+ 174 timing errors detected. (174 setup errors, 0 hold errors, 0 component switching limit errors)
+ Minimum period is  77.266ns.
+--------------------------------------------------------------------------------
+
+Paths for end point u_sdram_vga_top/u_sdbank_switch/wr_load (SLICE_X5Y23.SR), 1 path
+--------------------------------------------------------------------------------
+Slack (setup path):     -3.740ns (requirement - (data path - clock path skew + uncertainty))
+  Source:               u_system_ctrl/delay_done (FF)
+  Destination:          u_sdram_vga_top/u_sdbank_switch/wr_load (FF)
+  Requirement:          0.556ns
+  Data Path Delay:      3.377ns (Levels of Logic = 1)(Component delays alone exceeds constraint)
+  Clock Path Skew:      -0.640ns (1.348 - 1.988)
+  Source Clock:         clk_vga rising at 444.444ns
+  Destination Clock:    clk_ref falling at 445.000ns
+  Clock Uncertainty:    0.279ns
+
+  Clock Uncertainty:          0.279ns  ((TSJ^2 + DJ^2)^1/2) / 2 + PE
+    Total System Jitter (TSJ):  0.070ns
+    Discrete Jitter (DJ):       0.310ns
+    Phase Error (PE):           0.120ns
+
+  Maximum Data Path at Slow Process Corner: u_system_ctrl/delay_done to u_sdram_vga_top/u_sdbank_switch/wr_load
+    Location             Delay type         Delay(ns)  Physical Resource
+                                                       Logical Resource(s)
+    -------------------------------------------------  -------------------
+    SLICE_X10Y37.BQ      Tcko                  0.476   u_system_ctrl/delay_done
+                                                       u_system_ctrl/delay_done
+    SLICE_X6Y37.A6       net (fanout=4)        0.689   u_system_ctrl/delay_done
+    SLICE_X6Y37.A        Tilo                  0.235   u_sdram_vga_top/u_sdbank_switch/state_read_FSM_FFd1
+                                                       u_I2C_AV_Config/iRST_N_inv1_INV_0
+    SLICE_X5Y23.SR       net (fanout=104)      1.710   u_CMOS_Capture/iRST_N_inv
+    SLICE_X5Y23.CLK      Trck                  0.267   u_sdram_vga_top/u_sdbank_switch/wr_load
+                                                       u_sdram_vga_top/u_sdbank_switch/wr_load
+    -------------------------------------------------  ---------------------------
+    Total                                      3.377ns (0.978ns logic, 2.399ns route)
+                                                       (29.0% logic, 71.0% route)
+
+--------------------------------------------------------------------------------
+
+Paths for end point u_sdram_vga_top/u_sdram_2fifo_top/u_dcfifo_ctrl/data_valid_r (SLICE_X7Y23.SR), 1 path
+--------------------------------------------------------------------------------
+Slack (setup path):     -3.496ns (requirement - (data path - clock path skew + uncertainty))
+  Source:               u_system_ctrl/delay_done (FF)
+  Destination:          u_sdram_vga_top/u_sdram_2fifo_top/u_dcfifo_ctrl/data_valid_r (FF)
+  Requirement:          0.556ns
+  Data Path Delay:      3.133ns (Levels of Logic = 1)(Component delays alone exceeds constraint)
+  Clock Path Skew:      -0.640ns (1.348 - 1.988)
+  Source Clock:         clk_vga rising at 444.444ns
+  Destination Clock:    clk_ref falling at 445.000ns
+  Clock Uncertainty:    0.279ns
+
+  Clock Uncertainty:          0.279ns  ((TSJ^2 + DJ^2)^1/2) / 2 + PE
+    Total System Jitter (TSJ):  0.070ns
+    Discrete Jitter (DJ):       0.310ns
+    Phase Error (PE):           0.120ns
+
+  Maximum Data Path at Slow Process Corner: u_system_ctrl/delay_done to u_sdram_vga_top/u_sdram_2fifo_top/u_dcfifo_ctrl/data_valid_r
+    Location             Delay type         Delay(ns)  Physical Resource
+                                                       Logical Resource(s)
+    -------------------------------------------------  -------------------
+    SLICE_X10Y37.BQ      Tcko                  0.476   u_system_ctrl/delay_done
+                                                       u_system_ctrl/delay_done
+    SLICE_X6Y37.A6       net (fanout=4)        0.689   u_system_ctrl/delay_done
+    SLICE_X6Y37.A        Tilo                  0.235   u_sdram_vga_top/u_sdbank_switch/state_read_FSM_FFd1
+                                                       u_I2C_AV_Config/iRST_N_inv1_INV_0
+    SLICE_X7Y23.SR       net (fanout=104)      1.466   u_CMOS_Capture/iRST_N_inv
+    SLICE_X7Y23.CLK      Trck                  0.267   u_sdram_vga_top/u_sdram_2fifo_top/u_dcfifo_ctrl/data_valid_r
+                                                       u_sdram_vga_top/u_sdram_2fifo_top/u_dcfifo_ctrl/data_valid_r
+    -------------------------------------------------  ---------------------------
+    Total                                      3.133ns (0.978ns logic, 2.155ns route)
+                                                       (31.2% logic, 68.8% route)
+
+--------------------------------------------------------------------------------
+
+Paths for end point u_sdram_vga_top/u_sdbank_switch/rd_load (SLICE_X14Y37.SR), 1 path
+--------------------------------------------------------------------------------
+Slack (setup path):     -3.209ns (requirement - (data path - clock path skew + uncertainty))
+  Source:               u_system_ctrl/delay_done (FF)
+  Destination:          u_sdram_vga_top/u_sdbank_switch/rd_load (FF)
+  Requirement:          0.556ns
+  Data Path Delay:      2.814ns (Levels of Logic = 1)(Component delays alone exceeds constraint)
+  Clock Path Skew:      -0.672ns (1.316 - 1.988)
+  Source Clock:         clk_vga rising at 444.444ns
+  Destination Clock:    clk_ref falling at 445.000ns
+  Clock Uncertainty:    0.279ns
+
+  Clock Uncertainty:          0.279ns  ((TSJ^2 + DJ^2)^1/2) / 2 + PE
+    Total System Jitter (TSJ):  0.070ns
+    Discrete Jitter (DJ):       0.310ns
+    Phase Error (PE):           0.120ns
+
+  Maximum Data Path at Slow Process Corner: u_system_ctrl/delay_done to u_sdram_vga_top/u_sdbank_switch/rd_load
+    Location             Delay type         Delay(ns)  Physical Resource
+                                                       Logical Resource(s)
+    -------------------------------------------------  -------------------
+    SLICE_X10Y37.BQ      Tcko                  0.476   u_system_ctrl/delay_done
+                                                       u_system_ctrl/delay_done
+    SLICE_X6Y37.A6       net (fanout=4)        0.689   u_system_ctrl/delay_done
+    SLICE_X6Y37.A        Tilo                  0.235   u_sdram_vga_top/u_sdbank_switch/state_read_FSM_FFd1
+                                                       u_I2C_AV_Config/iRST_N_inv1_INV_0
+    SLICE_X14Y37.SR      net (fanout=104)      1.192   u_CMOS_Capture/iRST_N_inv
+    SLICE_X14Y37.CLK     Trck                  0.222   u_sdram_vga_top/u_sdbank_switch/rd_load
+                                                       u_sdram_vga_top/u_sdbank_switch/rd_load
+    -------------------------------------------------  ---------------------------
+    Total                                      2.814ns (0.933ns logic, 1.881ns route)
+                                                       (33.2% logic, 66.8% route)
+
+--------------------------------------------------------------------------------
+
+Hold Paths: TS_u_system_ctrl_u_sdram_pll_clkout2 = PERIOD TIMEGRP
+        "u_system_ctrl_u_sdram_pll_clkout2" TS_sys_clk_pin * 2 HIGH 50%;
+--------------------------------------------------------------------------------
+
+Paths for end point u_sdram_vga_top/u_sdram_2fifo_top/u_dcfifo_ctrl/u_wrfifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/gsync_stage[2].rd_stg_inst/Q_reg_2 (SLICE_X6Y59.C5), 1 path
+--------------------------------------------------------------------------------
+Slack (hold path):      0.382ns (requirement - (clock path skew + uncertainty - data path))
+  Source:               u_sdram_vga_top/u_sdram_2fifo_top/u_dcfifo_ctrl/u_wrfifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/gsync_stage[1].rd_stg_inst/Q_reg_2 (FF)
+  Destination:          u_sdram_vga_top/u_sdram_2fifo_top/u_dcfifo_ctrl/u_wrfifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/gsync_stage[2].rd_stg_inst/Q_reg_2 (FF)
+  Requirement:          0.000ns
+  Data Path Delay:      0.382ns (Levels of Logic = 1)
+  Clock Path Skew:      0.000ns
+  Source Clock:         clk_ref rising at 10.000ns
+  Destination Clock:    clk_ref rising at 10.000ns
+  Clock Uncertainty:    0.000ns
+
+  Minimum Data Path at Fast Process Corner: u_sdram_vga_top/u_sdram_2fifo_top/u_dcfifo_ctrl/u_wrfifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/gsync_stage[1].rd_stg_inst/Q_reg_2 to u_sdram_vga_top/u_sdram_2fifo_top/u_dcfifo_ctrl/u_wrfifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/gsync_stage[2].rd_stg_inst/Q_reg_2
+    Location             Delay type         Delay(ns)  Physical Resource
+                                                       Logical Resource(s)
+    -------------------------------------------------  -------------------
+    SLICE_X6Y59.CQ       Tcko                  0.200   u_sdram_vga_top/u_sdram_2fifo_top/u_dcfifo_ctrl/u_wrfifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/gsync_stage[2].rd_stg_inst/D<3>
+                                                       u_sdram_vga_top/u_sdram_2fifo_top/u_dcfifo_ctrl/u_wrfifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/gsync_stage[1].rd_stg_inst/Q_reg_2
+    SLICE_X6Y59.C5       net (fanout=1)        0.061   u_sdram_vga_top/u_sdram_2fifo_top/u_dcfifo_ctrl/u_wrfifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/gsync_stage[2].rd_stg_inst/D<2>
+    SLICE_X6Y59.CLK      Tah         (-Th)    -0.121   u_sdram_vga_top/u_sdram_2fifo_top/u_dcfifo_ctrl/u_wrfifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/gsync_stage[2].rd_stg_inst/D<3>
+                                                       u_sdram_vga_top/u_sdram_2fifo_top/u_dcfifo_ctrl/u_wrfifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/gsync_stage[2].rd_stg_inst/D<2>_rt
+                                                       u_sdram_vga_top/u_sdram_2fifo_top/u_dcfifo_ctrl/u_wrfifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/gsync_stage[2].rd_stg_inst/Q_reg_2
+    -------------------------------------------------  ---------------------------
+    Total                                      0.382ns (0.321ns logic, 0.061ns route)
+                                                       (84.0% logic, 16.0% route)
+
+--------------------------------------------------------------------------------
+
+Paths for end point u_sdram_vga_top/u_sdbank_switch/state_write_FSM_FFd3 (SLICE_X6Y37.C5), 1 path
+--------------------------------------------------------------------------------
+Slack (hold path):      0.390ns (requirement - (clock path skew + uncertainty - data path))
+  Source:               u_sdram_vga_top/u_sdbank_switch/state_write_FSM_FFd2 (FF)
+  Destination:          u_sdram_vga_top/u_sdbank_switch/state_write_FSM_FFd3 (FF)
+  Requirement:          0.000ns
+  Data Path Delay:      0.390ns (Levels of Logic = 1)
+  Clock Path Skew:      0.000ns
+  Source Clock:         clk_ref falling at 15.000ns
+  Destination Clock:    clk_ref falling at 15.000ns
+  Clock Uncertainty:    0.000ns
+
+  Minimum Data Path at Fast Process Corner: u_sdram_vga_top/u_sdbank_switch/state_write_FSM_FFd2 to u_sdram_vga_top/u_sdbank_switch/state_write_FSM_FFd3
+    Location             Delay type         Delay(ns)  Physical Resource
+                                                       Logical Resource(s)
+    -------------------------------------------------  -------------------
+    SLICE_X6Y37.CQ       Tcko                  0.200   u_sdram_vga_top/u_sdbank_switch/state_read_FSM_FFd1
+                                                       u_sdram_vga_top/u_sdbank_switch/state_write_FSM_FFd2
+    SLICE_X6Y37.C5       net (fanout=4)        0.069   u_sdram_vga_top/u_sdbank_switch/state_write_FSM_FFd2
+    SLICE_X6Y37.CLK      Tah         (-Th)    -0.121   u_sdram_vga_top/u_sdbank_switch/state_read_FSM_FFd1
+                                                       u_sdram_vga_top/u_sdbank_switch/state_write_FSM_FFd3-In11
+                                                       u_sdram_vga_top/u_sdbank_switch/state_write_FSM_FFd3
+    -------------------------------------------------  ---------------------------
+    Total                                      0.390ns (0.321ns logic, 0.069ns route)
+                                                       (82.3% logic, 17.7% route)
+
+--------------------------------------------------------------------------------
+
+Paths for end point u_sdram_vga_top/u_sdram_2fifo_top/u_dcfifo_ctrl/u_wrfifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/gsync_stage[2].rd_stg_inst/Q_reg_1 (SLICE_X6Y59.B5), 1 path
+--------------------------------------------------------------------------------
+Slack (hold path):      0.392ns (requirement - (clock path skew + uncertainty - data path))
+  Source:               u_sdram_vga_top/u_sdram_2fifo_top/u_dcfifo_ctrl/u_wrfifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/gsync_stage[1].rd_stg_inst/Q_reg_1 (FF)
+  Destination:          u_sdram_vga_top/u_sdram_2fifo_top/u_dcfifo_ctrl/u_wrfifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/gsync_stage[2].rd_stg_inst/Q_reg_1 (FF)
+  Requirement:          0.000ns
+  Data Path Delay:      0.392ns (Levels of Logic = 1)
+  Clock Path Skew:      0.000ns
+  Source Clock:         clk_ref rising at 10.000ns
+  Destination Clock:    clk_ref rising at 10.000ns
+  Clock Uncertainty:    0.000ns
+
+  Minimum Data Path at Fast Process Corner: u_sdram_vga_top/u_sdram_2fifo_top/u_dcfifo_ctrl/u_wrfifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/gsync_stage[1].rd_stg_inst/Q_reg_1 to u_sdram_vga_top/u_sdram_2fifo_top/u_dcfifo_ctrl/u_wrfifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/gsync_stage[2].rd_stg_inst/Q_reg_1
+    Location             Delay type         Delay(ns)  Physical Resource
+                                                       Logical Resource(s)
+    -------------------------------------------------  -------------------
+    SLICE_X6Y59.BQ       Tcko                  0.200   u_sdram_vga_top/u_sdram_2fifo_top/u_dcfifo_ctrl/u_wrfifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/gsync_stage[2].rd_stg_inst/D<3>
+                                                       u_sdram_vga_top/u_sdram_2fifo_top/u_dcfifo_ctrl/u_wrfifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/gsync_stage[1].rd_stg_inst/Q_reg_1
+    SLICE_X6Y59.B5       net (fanout=1)        0.071   u_sdram_vga_top/u_sdram_2fifo_top/u_dcfifo_ctrl/u_wrfifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/gsync_stage[2].rd_stg_inst/D<1>
+    SLICE_X6Y59.CLK      Tah         (-Th)    -0.121   u_sdram_vga_top/u_sdram_2fifo_top/u_dcfifo_ctrl/u_wrfifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/gsync_stage[2].rd_stg_inst/D<3>
+                                                       u_sdram_vga_top/u_sdram_2fifo_top/u_dcfifo_ctrl/u_wrfifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/gsync_stage[2].rd_stg_inst/D<1>_rt
+                                                       u_sdram_vga_top/u_sdram_2fifo_top/u_dcfifo_ctrl/u_wrfifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/gsync_stage[2].rd_stg_inst/Q_reg_1
+    -------------------------------------------------  ---------------------------
+    Total                                      0.392ns (0.321ns logic, 0.071ns route)
+                                                       (81.9% logic, 18.1% route)
+
+--------------------------------------------------------------------------------
+
+Component Switching Limit Checks: TS_u_system_ctrl_u_sdram_pll_clkout2 = PERIOD TIMEGRP
+        "u_system_ctrl_u_sdram_pll_clkout2" TS_sys_clk_pin * 2 HIGH 50%;
+--------------------------------------------------------------------------------
+Slack: 6.430ns (period - min period limit)
+  Period: 10.000ns
+  Min period limit: 3.570ns (280.112MHz) (Trper_CLKB(Fmax))
+  Physical resource: u_sdram_vga_top/u_sdram_2fifo_top/u_dcfifo_ctrl/u_wrfifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gbm.gbmg.gbmga.ngecc.bmg/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/s6_noinit.ram/SDP.SIMPLE_PRIM9.ram/CLKBRDCLK
+  Logical resource: u_sdram_vga_top/u_sdram_2fifo_top/u_dcfifo_ctrl/u_wrfifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gbm.gbmg.gbmga.ngecc.bmg/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/s6_noinit.ram/SDP.SIMPLE_PRIM9.ram/CLKBRDCLK
+  Location pin: RAMB8_X0Y26.CLKBRDCLK
+  Clock network: clk_ref
+--------------------------------------------------------------------------------
+Slack: 7.334ns (period - min period limit)
+  Period: 10.000ns
+  Min period limit: 2.666ns (375.094MHz) (Tbcper_I)
+  Physical resource: u_system_ctrl/u_sdram_pll/clkout3_buf/I0
+  Logical resource: u_system_ctrl/u_sdram_pll/clkout3_buf/I0
+  Location pin: BUFGMUX_X2Y4.I0
+  Clock network: u_system_ctrl/u_sdram_pll/clkout2
+--------------------------------------------------------------------------------
+Slack: 7.751ns (period - min period limit)
+  Period: 10.000ns
+  Min period limit: 2.249ns (444.642MHz) (Tockper)
+  Physical resource: u_sdram_vga_top/u_sdram_2fifo_top/u_sdramtop/module_002/sdram_cmd_r<4>/CLK0
+  Logical resource: u_sdram_vga_top/u_sdram_2fifo_top/u_sdramtop/module_002/sdram_cmd_r_4/CK0
+  Location pin: OLOGIC_X0Y25.CLK0
+  Clock network: clk_ref
+--------------------------------------------------------------------------------
+
+================================================================================
+Timing constraint: TS_u_system_ctrl_u_sdram_pll_clkout0 = PERIOD TIMEGRP        
+ "u_system_ctrl_u_sdram_pll_clkout0" TS_sys_clk_pin * 0.5 HIGH 50%;
+For more information, see Period Analysis in the Timing Closure User Guide (UG612).
+
+ 0 paths analyzed, 0 endpoints analyzed, 0 failing endpoints
+ 0 timing errors detected. (0 component switching limit errors)
+ Minimum period is   2.666ns.
+--------------------------------------------------------------------------------
+
+Component Switching Limit Checks: TS_u_system_ctrl_u_sdram_pll_clkout0 = PERIOD TIMEGRP
+        "u_system_ctrl_u_sdram_pll_clkout0" TS_sys_clk_pin * 0.5 HIGH 50%;
+--------------------------------------------------------------------------------
+Slack: 37.334ns (period - min period limit)
+  Period: 40.000ns
+  Min period limit: 2.666ns (375.094MHz) (Tbcper_I)
+  Physical resource: u_system_ctrl/u_sdram_pll/clkout1_buf/I0
+  Logical resource: u_system_ctrl/u_sdram_pll/clkout1_buf/I0
+  Location pin: BUFGMUX_X2Y12.I0
+  Clock network: u_system_ctrl/u_sdram_pll/clkout0
+--------------------------------------------------------------------------------
+Slack: 37.751ns (period - min period limit)
+  Period: 40.000ns
+  Min period limit: 2.249ns (444.642MHz) (Tockper)
+  Physical resource: clk_camera/CLK0
+  Logical resource: u_system_ctrl/U_ODDR2_c0/CK0
+  Location pin: OLOGIC_X12Y29.CLK0
+  Clock network: u_system_ctrl/clk_c0_oddr
+--------------------------------------------------------------------------------
+Slack: 37.960ns (period - min period limit)
+  Period: 40.000ns
+  Min period limit: 2.040ns (490.196MHz) (Tockper)
+  Physical resource: clk_camera/CLK1
+  Logical resource: u_system_ctrl/U_ODDR2_c0/CK1
+  Location pin: OLOGIC_X12Y29.CLK1
+  Clock network: u_system_ctrl/clk_c0_oddr
+--------------------------------------------------------------------------------
+
+================================================================================
+Timing constraint: TS_u_system_ctrl_u_sdram_pll_clkout1 = PERIOD TIMEGRP        
+ "u_system_ctrl_u_sdram_pll_clkout1" TS_sys_clk_pin * 0.18 HIGH 50%;
+For more information, see Period Analysis in the Timing Closure User Guide (UG612).
+
+ 5230 paths analyzed, 1003 endpoints analyzed, 138 failing endpoints
+ 138 timing errors detected. (138 setup errors, 0 hold errors, 0 component switching limit errors)
+ Minimum period is 769.568ns.
+--------------------------------------------------------------------------------
+
+Paths for end point u_sdram_vga_top/u_sdram_2fifo_top/u_dcfifo_ctrl/u_rdfifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/rstblk/rd_rst_asreg (SLICE_X10Y34.SR), 4 paths
+--------------------------------------------------------------------------------
+Slack (setup path):     -3.289ns (requirement - (data path - clock path skew + uncertainty))
+  Source:               u_sdram_vga_top/u_sdram_2fifo_top/u_dcfifo_ctrl/data_valid_r (FF)
+  Destination:          u_sdram_vga_top/u_sdram_2fifo_top/u_dcfifo_ctrl/u_rdfifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/rstblk/rd_rst_asreg (FF)
+  Requirement:          0.555ns
+  Data Path Delay:      2.923ns (Levels of Logic = 1)(Component delays alone exceeds constraint)
+  Clock Path Skew:      -0.642ns (1.350 - 1.992)
+  Source Clock:         clk_ref falling at 555.000ns
+  Destination Clock:    clk_vga rising at 555.555ns
+  Clock Uncertainty:    0.279ns
+
+  Clock Uncertainty:          0.279ns  ((TSJ^2 + DJ^2)^1/2) / 2 + PE
+    Total System Jitter (TSJ):  0.070ns
+    Discrete Jitter (DJ):       0.310ns
+    Phase Error (PE):           0.120ns
+
+  Maximum Data Path at Slow Process Corner: u_sdram_vga_top/u_sdram_2fifo_top/u_dcfifo_ctrl/data_valid_r to u_sdram_vga_top/u_sdram_2fifo_top/u_dcfifo_ctrl/u_rdfifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/rstblk/rd_rst_asreg
+    Location             Delay type         Delay(ns)  Physical Resource
+                                                       Logical Resource(s)
+    -------------------------------------------------  -------------------
+    SLICE_X7Y23.AQ       Tcko                  0.430   u_sdram_vga_top/u_sdram_2fifo_top/u_dcfifo_ctrl/data_valid_r
+                                                       u_sdram_vga_top/u_sdram_2fifo_top/u_dcfifo_ctrl/data_valid_r
+    SLICE_X10Y35.D3      net (fanout=18)       1.578   u_sdram_vga_top/u_sdram_2fifo_top/u_dcfifo_ctrl/data_valid_r
+    SLICE_X10Y35.DMUX    Tilo                  0.298   u_sdram_vga_top/u_sdram_2fifo_top/u_dcfifo_ctrl/frame_read_done
+                                                       u_sdram_vga_top/u_sdram_2fifo_top/u_dcfifo_ctrl/rst_n_rd_load_flag_OR_126_o1
+    SLICE_X10Y34.SR      net (fanout=3)        0.371   u_sdram_vga_top/u_sdram_2fifo_top/u_dcfifo_ctrl/rst_n_rd_load_flag_OR_126_o
+    SLICE_X10Y34.CLK     Trck                  0.246   u_sdram_vga_top/u_sdram_2fifo_top/u_dcfifo_ctrl/u_rdfifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/rstblk/rd_rst_asreg
+                                                       u_sdram_vga_top/u_sdram_2fifo_top/u_dcfifo_ctrl/u_rdfifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/rstblk/rd_rst_asreg
+    -------------------------------------------------  ---------------------------
+    Total                                      2.923ns (0.974ns logic, 1.949ns route)
+                                                       (33.3% logic, 66.7% route)
+
+--------------------------------------------------------------------------------
+Slack (setup path):     -1.942ns (requirement - (data path - clock path skew + uncertainty))
+  Source:               u_sdram_vga_top/u_sdram_2fifo_top/u_dcfifo_ctrl/rd_load_r1 (FF)
+  Destination:          u_sdram_vga_top/u_sdram_2fifo_top/u_dcfifo_ctrl/u_rdfifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/rstblk/rd_rst_asreg (FF)
+  Requirement:          1.111ns
+  Data Path Delay:      2.132ns (Levels of Logic = 1)(Component delays alone exceeds constraint)
+  Clock Path Skew:      -0.642ns (1.350 - 1.992)
+  Source Clock:         clk_ref rising at 110.000ns
+  Destination Clock:    clk_vga rising at 111.111ns
+  Clock Uncertainty:    0.279ns
+
+  Clock Uncertainty:          0.279ns  ((TSJ^2 + DJ^2)^1/2) / 2 + PE
+    Total System Jitter (TSJ):  0.070ns
+    Discrete Jitter (DJ):       0.310ns
+    Phase Error (PE):           0.120ns
+
+  Maximum Data Path at Slow Process Corner: u_sdram_vga_top/u_sdram_2fifo_top/u_dcfifo_ctrl/rd_load_r1 to u_sdram_vga_top/u_sdram_2fifo_top/u_dcfifo_ctrl/u_rdfifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/rstblk/rd_rst_asreg
+    Location             Delay type         Delay(ns)  Physical Resource
+                                                       Logical Resource(s)
+    -------------------------------------------------  -------------------
+    SLICE_X8Y36.AQ       Tcko                  0.525   u_sdram_vga_top/u_sdram_2fifo_top/u_dcfifo_ctrl/rd_load_r2
+                                                       u_sdram_vga_top/u_sdram_2fifo_top/u_dcfifo_ctrl/rd_load_r1
+    SLICE_X10Y35.D5      net (fanout=17)       0.692   u_sdram_vga_top/u_sdram_2fifo_top/u_dcfifo_ctrl/rd_load_r1
+    SLICE_X10Y35.DMUX    Tilo                  0.298   u_sdram_vga_top/u_sdram_2fifo_top/u_dcfifo_ctrl/frame_read_done
+                                                       u_sdram_vga_top/u_sdram_2fifo_top/u_dcfifo_ctrl/rst_n_rd_load_flag_OR_126_o1
+    SLICE_X10Y34.SR      net (fanout=3)        0.371   u_sdram_vga_top/u_sdram_2fifo_top/u_dcfifo_ctrl/rst_n_rd_load_flag_OR_126_o
+    SLICE_X10Y34.CLK     Trck                  0.246   u_sdram_vga_top/u_sdram_2fifo_top/u_dcfifo_ctrl/u_rdfifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/rstblk/rd_rst_asreg
+                                                       u_sdram_vga_top/u_sdram_2fifo_top/u_dcfifo_ctrl/u_rdfifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/rstblk/rd_rst_asreg
+    -------------------------------------------------  ---------------------------
+    Total                                      2.132ns (1.069ns logic, 1.063ns route)
+                                                       (50.1% logic, 49.9% route)
+
+--------------------------------------------------------------------------------
+Slack (setup path):     -1.812ns (requirement - (data path - clock path skew + uncertainty))
+  Source:               u_sdram_vga_top/u_sdram_2fifo_top/u_dcfifo_ctrl/rd_load_r2 (FF)
+  Destination:          u_sdram_vga_top/u_sdram_2fifo_top/u_dcfifo_ctrl/u_rdfifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/rstblk/rd_rst_asreg (FF)
+  Requirement:          1.111ns
+  Data Path Delay:      2.002ns (Levels of Logic = 1)(Component delays alone exceeds constraint)
+  Clock Path Skew:      -0.642ns (1.350 - 1.992)
+  Source Clock:         clk_ref rising at 110.000ns
+  Destination Clock:    clk_vga rising at 111.111ns
+  Clock Uncertainty:    0.279ns
+
+  Clock Uncertainty:          0.279ns  ((TSJ^2 + DJ^2)^1/2) / 2 + PE
+    Total System Jitter (TSJ):  0.070ns
+    Discrete Jitter (DJ):       0.310ns
+    Phase Error (PE):           0.120ns
+
+  Maximum Data Path at Slow Process Corner: u_sdram_vga_top/u_sdram_2fifo_top/u_dcfifo_ctrl/rd_load_r2 to u_sdram_vga_top/u_sdram_2fifo_top/u_dcfifo_ctrl/u_rdfifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/rstblk/rd_rst_asreg
+    Location             Delay type         Delay(ns)  Physical Resource
+                                                       Logical Resource(s)
+    -------------------------------------------------  -------------------
+    SLICE_X8Y36.BQ       Tcko                  0.525   u_sdram_vga_top/u_sdram_2fifo_top/u_dcfifo_ctrl/rd_load_r2
+                                                       u_sdram_vga_top/u_sdram_2fifo_top/u_dcfifo_ctrl/rd_load_r2
+    SLICE_X10Y35.D4      net (fanout=16)       0.562   u_sdram_vga_top/u_sdram_2fifo_top/u_dcfifo_ctrl/rd_load_r2
+    SLICE_X10Y35.DMUX    Tilo                  0.298   u_sdram_vga_top/u_sdram_2fifo_top/u_dcfifo_ctrl/frame_read_done
+                                                       u_sdram_vga_top/u_sdram_2fifo_top/u_dcfifo_ctrl/rst_n_rd_load_flag_OR_126_o1
+    SLICE_X10Y34.SR      net (fanout=3)        0.371   u_sdram_vga_top/u_sdram_2fifo_top/u_dcfifo_ctrl/rst_n_rd_load_flag_OR_126_o
+    SLICE_X10Y34.CLK     Trck                  0.246   u_sdram_vga_top/u_sdram_2fifo_top/u_dcfifo_ctrl/u_rdfifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/rstblk/rd_rst_asreg
+                                                       u_sdram_vga_top/u_sdram_2fifo_top/u_dcfifo_ctrl/u_rdfifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/rstblk/rd_rst_asreg
+    -------------------------------------------------  ---------------------------
+    Total                                      2.002ns (1.069ns logic, 0.933ns route)
+                                                       (53.4% logic, 46.6% route)
+
+--------------------------------------------------------------------------------
+
+Paths for end point u_sdram_vga_top/u_sdram_2fifo_top/u_dcfifo_ctrl/u_rdfifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gdm.dm/dout_i_13 (SLICE_X12Y50.D4), 7 paths
+--------------------------------------------------------------------------------
+Slack (setup path):     -2.429ns (requirement - (data path - clock path skew + uncertainty))
+  Source:               u_sdram_vga_top/u_sdram_2fifo_top/u_dcfifo_ctrl/u_rdfifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gdm.dm/Mram_RAM34_RAMB (RAM)
+  Destination:          u_sdram_vga_top/u_sdram_2fifo_top/u_dcfifo_ctrl/u_rdfifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gdm.dm/dout_i_13 (FF)
+  Requirement:          1.111ns
+  Data Path Delay:      2.590ns (Levels of Logic = 1)(Component delays alone exceeds constraint)
+  Clock Path Skew:      -0.671ns (1.383 - 2.054)
+  Source Clock:         clk_ref rising at 110.000ns
+  Destination Clock:    clk_vga rising at 111.111ns
+  Clock Uncertainty:    0.279ns
+
+  Clock Uncertainty:          0.279ns  ((TSJ^2 + DJ^2)^1/2) / 2 + PE
+    Total System Jitter (TSJ):  0.070ns
+    Discrete Jitter (DJ):       0.310ns
+    Phase Error (PE):           0.120ns
+
+  Maximum Data Path at Slow Process Corner: u_sdram_vga_top/u_sdram_2fifo_top/u_dcfifo_ctrl/u_rdfifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gdm.dm/Mram_RAM34_RAMB to u_sdram_vga_top/u_sdram_2fifo_top/u_dcfifo_ctrl/u_rdfifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gdm.dm/dout_i_13
+    Location             Delay type         Delay(ns)  Physical Resource
+                                                       Logical Resource(s)
+    -------------------------------------------------  -------------------
+    SLICE_X8Y52.B        Tshcko                1.106   u_sdram_vga_top/u_sdram_2fifo_top/u_dcfifo_ctrl/u_rdfifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gdm.dm/Mram_RAM34_RAMD_O
+                                                       u_sdram_vga_top/u_sdram_2fifo_top/u_dcfifo_ctrl/u_rdfifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gdm.dm/Mram_RAM34_RAMB
+    SLICE_X12Y50.D4      net (fanout=1)        1.035   u_sdram_vga_top/u_sdram_2fifo_top/u_dcfifo_ctrl/u_rdfifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gdm.dm/N212
+    SLICE_X12Y50.CLK     Tas                   0.449   u_sdram_vga_top/sys_data_out<13>
+                                                       u_sdram_vga_top/u_sdram_2fifo_top/u_dcfifo_ctrl/u_rdfifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gdm.dm/inst_LPM_MUX13_4
+                                                       u_sdram_vga_top/u_sdram_2fifo_top/u_dcfifo_ctrl/u_rdfifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gdm.dm/inst_LPM_MUX13_2_f7
+                                                       u_sdram_vga_top/u_sdram_2fifo_top/u_dcfifo_ctrl/u_rdfifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gdm.dm/dout_i_13
+    -------------------------------------------------  ---------------------------
+    Total                                      2.590ns (1.555ns logic, 1.035ns route)
+                                                       (60.0% logic, 40.0% route)
+
+--------------------------------------------------------------------------------
+Slack (setup path):     102.434ns (requirement - (data path - clock path skew + uncertainty))
+  Source:               u_sdram_vga_top/u_sdram_2fifo_top/u_dcfifo_ctrl/u_rdfifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/rpntr/gc0.count_d1_5 (FF)
+  Destination:          u_sdram_vga_top/u_sdram_2fifo_top/u_dcfifo_ctrl/u_rdfifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gdm.dm/dout_i_13 (FF)
+  Requirement:          111.111ns
+  Data Path Delay:      8.523ns (Levels of Logic = 2)
+  Clock Path Skew:      0.005ns (0.748 - 0.743)
+  Source Clock:         clk_vga rising at 0.000ns
+  Destination Clock:    clk_vga rising at 111.111ns
+  Clock Uncertainty:    0.159ns
+
+  Clock Uncertainty:          0.159ns  ((TSJ^2 + DJ^2)^1/2) / 2 + PE
+    Total System Jitter (TSJ):  0.070ns
+    Discrete Jitter (DJ):       0.310ns
+    Phase Error (PE):           0.000ns
+
+  Maximum Data Path at Slow Process Corner: u_sdram_vga_top/u_sdram_2fifo_top/u_dcfifo_ctrl/u_rdfifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/rpntr/gc0.count_d1_5 to u_sdram_vga_top/u_sdram_2fifo_top/u_dcfifo_ctrl/u_rdfifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gdm.dm/dout_i_13
+    Location             Delay type         Delay(ns)  Physical Resource
+                                                       Logical Resource(s)
+    -------------------------------------------------  -------------------
+    SLICE_X11Y19.BQ      Tcko                  0.430   u_sdram_vga_top/u_sdram_2fifo_top/u_dcfifo_ctrl/u_rdfifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/rpntr/gc0.count_d1<7>
+                                                       u_sdram_vga_top/u_sdram_2fifo_top/u_dcfifo_ctrl/u_rdfifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/rpntr/gc0.count_d1_5
+    SLICE_X8Y52.B6       net (fanout=129)      6.355   u_sdram_vga_top/u_sdram_2fifo_top/u_dcfifo_ctrl/u_rdfifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/rpntr/gc0.count_d1<5>
+    SLICE_X8Y52.B        Tilo                  0.254   u_sdram_vga_top/u_sdram_2fifo_top/u_dcfifo_ctrl/u_rdfifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gdm.dm/Mram_RAM34_RAMD_O
+                                                       u_sdram_vga_top/u_sdram_2fifo_top/u_dcfifo_ctrl/u_rdfifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gdm.dm/Mram_RAM34_RAMB
+    SLICE_X12Y50.D4      net (fanout=1)        1.035   u_sdram_vga_top/u_sdram_2fifo_top/u_dcfifo_ctrl/u_rdfifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gdm.dm/N212
+    SLICE_X12Y50.CLK     Tas                   0.449   u_sdram_vga_top/sys_data_out<13>
+                                                       u_sdram_vga_top/u_sdram_2fifo_top/u_dcfifo_ctrl/u_rdfifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gdm.dm/inst_LPM_MUX13_4
+                                                       u_sdram_vga_top/u_sdram_2fifo_top/u_dcfifo_ctrl/u_rdfifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gdm.dm/inst_LPM_MUX13_2_f7
+                                                       u_sdram_vga_top/u_sdram_2fifo_top/u_dcfifo_ctrl/u_rdfifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gdm.dm/dout_i_13
+    -------------------------------------------------  ---------------------------
+    Total                                      8.523ns (1.133ns logic, 7.390ns route)
+                                                       (13.3% logic, 86.7% route)
+
+--------------------------------------------------------------------------------
+Slack (setup path):     102.784ns (requirement - (data path - clock path skew + uncertainty))
+  Source:               u_sdram_vga_top/u_sdram_2fifo_top/u_dcfifo_ctrl/u_rdfifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/rpntr/gc0.count_d1_4 (FF)
+  Destination:          u_sdram_vga_top/u_sdram_2fifo_top/u_dcfifo_ctrl/u_rdfifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gdm.dm/dout_i_13 (FF)
+  Requirement:          111.111ns
+  Data Path Delay:      8.173ns (Levels of Logic = 2)
+  Clock Path Skew:      0.005ns (0.748 - 0.743)
+  Source Clock:         clk_vga rising at 0.000ns
+  Destination Clock:    clk_vga rising at 111.111ns
+  Clock Uncertainty:    0.159ns
+
+  Clock Uncertainty:          0.159ns  ((TSJ^2 + DJ^2)^1/2) / 2 + PE
+    Total System Jitter (TSJ):  0.070ns
+    Discrete Jitter (DJ):       0.310ns
+    Phase Error (PE):           0.000ns
+
+  Maximum Data Path at Slow Process Corner: u_sdram_vga_top/u_sdram_2fifo_top/u_dcfifo_ctrl/u_rdfifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/rpntr/gc0.count_d1_4 to u_sdram_vga_top/u_sdram_2fifo_top/u_dcfifo_ctrl/u_rdfifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gdm.dm/dout_i_13
+    Location             Delay type         Delay(ns)  Physical Resource
+                                                       Logical Resource(s)
+    -------------------------------------------------  -------------------
+    SLICE_X11Y19.AMUX    Tshcko                0.518   u_sdram_vga_top/u_sdram_2fifo_top/u_dcfifo_ctrl/u_rdfifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/rpntr/gc0.count_d1<7>
+                                                       u_sdram_vga_top/u_sdram_2fifo_top/u_dcfifo_ctrl/u_rdfifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/rpntr/gc0.count_d1_4
+    SLICE_X8Y52.B5       net (fanout=127)      5.917   u_sdram_vga_top/u_sdram_2fifo_top/u_dcfifo_ctrl/u_rdfifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/rpntr/gc0.count_d1<4>
+    SLICE_X8Y52.B        Tilo                  0.254   u_sdram_vga_top/u_sdram_2fifo_top/u_dcfifo_ctrl/u_rdfifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gdm.dm/Mram_RAM34_RAMD_O
+                                                       u_sdram_vga_top/u_sdram_2fifo_top/u_dcfifo_ctrl/u_rdfifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gdm.dm/Mram_RAM34_RAMB
+    SLICE_X12Y50.D4      net (fanout=1)        1.035   u_sdram_vga_top/u_sdram_2fifo_top/u_dcfifo_ctrl/u_rdfifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gdm.dm/N212
+    SLICE_X12Y50.CLK     Tas                   0.449   u_sdram_vga_top/sys_data_out<13>
+                                                       u_sdram_vga_top/u_sdram_2fifo_top/u_dcfifo_ctrl/u_rdfifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gdm.dm/inst_LPM_MUX13_4
+                                                       u_sdram_vga_top/u_sdram_2fifo_top/u_dcfifo_ctrl/u_rdfifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gdm.dm/inst_LPM_MUX13_2_f7
+                                                       u_sdram_vga_top/u_sdram_2fifo_top/u_dcfifo_ctrl/u_rdfifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gdm.dm/dout_i_13
+    -------------------------------------------------  ---------------------------
+    Total                                      8.173ns (1.221ns logic, 6.952ns route)
+                                                       (14.9% logic, 85.1% route)
+
+--------------------------------------------------------------------------------
+
+Paths for end point u_sdram_vga_top/u_sdram_2fifo_top/u_dcfifo_ctrl/u_rdfifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gdm.dm/dout_i_7 (SLICE_X20Y27.D3), 7 paths
+--------------------------------------------------------------------------------
+Slack (setup path):     -2.356ns (requirement - (data path - clock path skew + uncertainty))
+  Source:               u_sdram_vga_top/u_sdram_2fifo_top/u_dcfifo_ctrl/u_rdfifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gdm.dm/Mram_RAM17_RAMB (RAM)
+  Destination:          u_sdram_vga_top/u_sdram_2fifo_top/u_dcfifo_ctrl/u_rdfifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gdm.dm/dout_i_7 (FF)
+  Requirement:          1.111ns
+  Data Path Delay:      2.545ns (Levels of Logic = 1)(Component delays alone exceeds constraint)
+  Clock Path Skew:      -0.643ns (1.324 - 1.967)
+  Source Clock:         clk_ref rising at 110.000ns
+  Destination Clock:    clk_vga rising at 111.111ns
+  Clock Uncertainty:    0.279ns
+
+  Clock Uncertainty:          0.279ns  ((TSJ^2 + DJ^2)^1/2) / 2 + PE
+    Total System Jitter (TSJ):  0.070ns
+    Discrete Jitter (DJ):       0.310ns
+    Phase Error (PE):           0.120ns
+
+  Maximum Data Path at Slow Process Corner: u_sdram_vga_top/u_sdram_2fifo_top/u_dcfifo_ctrl/u_rdfifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gdm.dm/Mram_RAM17_RAMB to u_sdram_vga_top/u_sdram_2fifo_top/u_dcfifo_ctrl/u_rdfifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gdm.dm/dout_i_7
+    Location             Delay type         Delay(ns)  Physical Resource
+                                                       Logical Resource(s)
+    -------------------------------------------------  -------------------
+    SLICE_X16Y29.B       Tshcko                1.106   u_sdram_vga_top/u_sdram_2fifo_top/u_dcfifo_ctrl/u_rdfifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gdm.dm/Mram_RAM17_RAMD_O
+                                                       u_sdram_vga_top/u_sdram_2fifo_top/u_dcfifo_ctrl/u_rdfifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gdm.dm/Mram_RAM17_RAMB
+    SLICE_X20Y27.D3      net (fanout=1)        0.990   u_sdram_vga_top/u_sdram_2fifo_top/u_dcfifo_ctrl/u_rdfifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gdm.dm/N110
+    SLICE_X20Y27.CLK     Tas                   0.449   u_sdram_vga_top/sys_data_out<7>
+                                                       u_sdram_vga_top/u_sdram_2fifo_top/u_dcfifo_ctrl/u_rdfifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gdm.dm/inst_LPM_MUX7_4
+                                                       u_sdram_vga_top/u_sdram_2fifo_top/u_dcfifo_ctrl/u_rdfifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gdm.dm/inst_LPM_MUX7_2_f7
+                                                       u_sdram_vga_top/u_sdram_2fifo_top/u_dcfifo_ctrl/u_rdfifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gdm.dm/dout_i_7
+    -------------------------------------------------  ---------------------------
+    Total                                      2.545ns (1.555ns logic, 0.990ns route)
+                                                       (61.1% logic, 38.9% route)
+
+--------------------------------------------------------------------------------
+Slack (setup path):     105.806ns (requirement - (data path - clock path skew + uncertainty))
+  Source:               u_sdram_vga_top/u_sdram_2fifo_top/u_dcfifo_ctrl/u_rdfifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/rpntr/gc0.count_d1_2 (FF)
+  Destination:          u_sdram_vga_top/u_sdram_2fifo_top/u_dcfifo_ctrl/u_rdfifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gdm.dm/dout_i_7 (FF)
+  Requirement:          111.111ns
+  Data Path Delay:      5.101ns (Levels of Logic = 2)
+  Clock Path Skew:      -0.045ns (0.601 - 0.646)
+  Source Clock:         clk_vga rising at 0.000ns
+  Destination Clock:    clk_vga rising at 111.111ns
+  Clock Uncertainty:    0.159ns
+
+  Clock Uncertainty:          0.159ns  ((TSJ^2 + DJ^2)^1/2) / 2 + PE
+    Total System Jitter (TSJ):  0.070ns
+    Discrete Jitter (DJ):       0.310ns
+    Phase Error (PE):           0.000ns
+
+  Maximum Data Path at Slow Process Corner: u_sdram_vga_top/u_sdram_2fifo_top/u_dcfifo_ctrl/u_rdfifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/rpntr/gc0.count_d1_2 to u_sdram_vga_top/u_sdram_2fifo_top/u_dcfifo_ctrl/u_rdfifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gdm.dm/dout_i_7
+    Location             Delay type         Delay(ns)  Physical Resource
+                                                       Logical Resource(s)
+    -------------------------------------------------  -------------------
+    SLICE_X8Y21.CQ       Tcko                  0.525   u_sdram_vga_top/u_sdram_2fifo_top/u_dcfifo_ctrl/u_rdfifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/rpntr/gc0.count_d1<3>
+                                                       u_sdram_vga_top/u_sdram_2fifo_top/u_dcfifo_ctrl/u_rdfifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/rpntr/gc0.count_d1_2
+    SLICE_X16Y29.B3      net (fanout=128)      2.883   u_sdram_vga_top/u_sdram_2fifo_top/u_dcfifo_ctrl/u_rdfifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/rpntr/gc0.count_d1<2>
+    SLICE_X16Y29.B       Tilo                  0.254   u_sdram_vga_top/u_sdram_2fifo_top/u_dcfifo_ctrl/u_rdfifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gdm.dm/Mram_RAM17_RAMD_O
+                                                       u_sdram_vga_top/u_sdram_2fifo_top/u_dcfifo_ctrl/u_rdfifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gdm.dm/Mram_RAM17_RAMB
+    SLICE_X20Y27.D3      net (fanout=1)        0.990   u_sdram_vga_top/u_sdram_2fifo_top/u_dcfifo_ctrl/u_rdfifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gdm.dm/N110
+    SLICE_X20Y27.CLK     Tas                   0.449   u_sdram_vga_top/sys_data_out<7>
+                                                       u_sdram_vga_top/u_sdram_2fifo_top/u_dcfifo_ctrl/u_rdfifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gdm.dm/inst_LPM_MUX7_4
+                                                       u_sdram_vga_top/u_sdram_2fifo_top/u_dcfifo_ctrl/u_rdfifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gdm.dm/inst_LPM_MUX7_2_f7
+                                                       u_sdram_vga_top/u_sdram_2fifo_top/u_dcfifo_ctrl/u_rdfifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gdm.dm/dout_i_7
+    -------------------------------------------------  ---------------------------
+    Total                                      5.101ns (1.228ns logic, 3.873ns route)
+                                                       (24.1% logic, 75.9% route)
+
+--------------------------------------------------------------------------------
+Slack (setup path):     105.892ns (requirement - (data path - clock path skew + uncertainty))
+  Source:               u_sdram_vga_top/u_sdram_2fifo_top/u_dcfifo_ctrl/u_rdfifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/rpntr/gc0.count_d1_4 (FF)
+  Destination:          u_sdram_vga_top/u_sdram_2fifo_top/u_dcfifo_ctrl/u_rdfifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gdm.dm/dout_i_7 (FF)
+  Requirement:          111.111ns
+  Data Path Delay:      5.011ns (Levels of Logic = 2)
+  Clock Path Skew:      -0.049ns (0.601 - 0.650)
+  Source Clock:         clk_vga rising at 0.000ns
+  Destination Clock:    clk_vga rising at 111.111ns
+  Clock Uncertainty:    0.159ns
+
+  Clock Uncertainty:          0.159ns  ((TSJ^2 + DJ^2)^1/2) / 2 + PE
+    Total System Jitter (TSJ):  0.070ns
+    Discrete Jitter (DJ):       0.310ns
+    Phase Error (PE):           0.000ns
+
+  Maximum Data Path at Slow Process Corner: u_sdram_vga_top/u_sdram_2fifo_top/u_dcfifo_ctrl/u_rdfifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/rpntr/gc0.count_d1_4 to u_sdram_vga_top/u_sdram_2fifo_top/u_dcfifo_ctrl/u_rdfifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gdm.dm/dout_i_7
+    Location             Delay type         Delay(ns)  Physical Resource
+                                                       Logical Resource(s)
+    -------------------------------------------------  -------------------
+    SLICE_X11Y19.AMUX    Tshcko                0.518   u_sdram_vga_top/u_sdram_2fifo_top/u_dcfifo_ctrl/u_rdfifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/rpntr/gc0.count_d1<7>
+                                                       u_sdram_vga_top/u_sdram_2fifo_top/u_dcfifo_ctrl/u_rdfifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/rpntr/gc0.count_d1_4
+    SLICE_X16Y29.B5      net (fanout=127)      2.800   u_sdram_vga_top/u_sdram_2fifo_top/u_dcfifo_ctrl/u_rdfifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/rpntr/gc0.count_d1<4>
+    SLICE_X16Y29.B       Tilo                  0.254   u_sdram_vga_top/u_sdram_2fifo_top/u_dcfifo_ctrl/u_rdfifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gdm.dm/Mram_RAM17_RAMD_O
+                                                       u_sdram_vga_top/u_sdram_2fifo_top/u_dcfifo_ctrl/u_rdfifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gdm.dm/Mram_RAM17_RAMB
+    SLICE_X20Y27.D3      net (fanout=1)        0.990   u_sdram_vga_top/u_sdram_2fifo_top/u_dcfifo_ctrl/u_rdfifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gdm.dm/N110
+    SLICE_X20Y27.CLK     Tas                   0.449   u_sdram_vga_top/sys_data_out<7>
+                                                       u_sdram_vga_top/u_sdram_2fifo_top/u_dcfifo_ctrl/u_rdfifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gdm.dm/inst_LPM_MUX7_4
+                                                       u_sdram_vga_top/u_sdram_2fifo_top/u_dcfifo_ctrl/u_rdfifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gdm.dm/inst_LPM_MUX7_2_f7
+                                                       u_sdram_vga_top/u_sdram_2fifo_top/u_dcfifo_ctrl/u_rdfifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gdm.dm/dout_i_7
+    -------------------------------------------------  ---------------------------
+    Total                                      5.011ns (1.221ns logic, 3.790ns route)
+                                                       (24.4% logic, 75.6% route)
+
+--------------------------------------------------------------------------------
+
+Hold Paths: TS_u_system_ctrl_u_sdram_pll_clkout1 = PERIOD TIMEGRP
+        "u_system_ctrl_u_sdram_pll_clkout1" TS_sys_clk_pin * 0.18 HIGH 50%;
+--------------------------------------------------------------------------------
+
+Paths for end point u_sdram_vga_top/u_sdram_2fifo_top/u_dcfifo_ctrl/u_rdfifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/gsync_stage[2].rd_stg_inst/Q_reg_2 (SLICE_X14Y12.C5), 1 path
+--------------------------------------------------------------------------------
+Slack (hold path):      0.382ns (requirement - (clock path skew + uncertainty - data path))
+  Source:               u_sdram_vga_top/u_sdram_2fifo_top/u_dcfifo_ctrl/u_rdfifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/gsync_stage[1].rd_stg_inst/Q_reg_2 (FF)
+  Destination:          u_sdram_vga_top/u_sdram_2fifo_top/u_dcfifo_ctrl/u_rdfifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/gsync_stage[2].rd_stg_inst/Q_reg_2 (FF)
+  Requirement:          0.000ns
+  Data Path Delay:      0.382ns (Levels of Logic = 1)
+  Clock Path Skew:      0.000ns
+  Source Clock:         clk_vga rising at 111.111ns
+  Destination Clock:    clk_vga rising at 111.111ns
+  Clock Uncertainty:    0.000ns
+
+  Minimum Data Path at Fast Process Corner: u_sdram_vga_top/u_sdram_2fifo_top/u_dcfifo_ctrl/u_rdfifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/gsync_stage[1].rd_stg_inst/Q_reg_2 to u_sdram_vga_top/u_sdram_2fifo_top/u_dcfifo_ctrl/u_rdfifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/gsync_stage[2].rd_stg_inst/Q_reg_2
+    Location             Delay type         Delay(ns)  Physical Resource
+                                                       Logical Resource(s)
+    -------------------------------------------------  -------------------
+    SLICE_X14Y12.CQ      Tcko                  0.200   u_sdram_vga_top/u_sdram_2fifo_top/u_dcfifo_ctrl/u_rdfifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/gsync_stage[2].rd_stg_inst/D<2>
+                                                       u_sdram_vga_top/u_sdram_2fifo_top/u_dcfifo_ctrl/u_rdfifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/gsync_stage[1].rd_stg_inst/Q_reg_2
+    SLICE_X14Y12.C5      net (fanout=1)        0.061   u_sdram_vga_top/u_sdram_2fifo_top/u_dcfifo_ctrl/u_rdfifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/gsync_stage[2].rd_stg_inst/D<2>
+    SLICE_X14Y12.CLK     Tah         (-Th)    -0.121   u_sdram_vga_top/u_sdram_2fifo_top/u_dcfifo_ctrl/u_rdfifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/gsync_stage[2].rd_stg_inst/D<2>
+                                                       u_sdram_vga_top/u_sdram_2fifo_top/u_dcfifo_ctrl/u_rdfifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/gsync_stage[2].rd_stg_inst/D<2>_rt
+                                                       u_sdram_vga_top/u_sdram_2fifo_top/u_dcfifo_ctrl/u_rdfifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/gsync_stage[2].rd_stg_inst/Q_reg_2
+    -------------------------------------------------  ---------------------------
+    Total                                      0.382ns (0.321ns logic, 0.061ns route)
+                                                       (84.0% logic, 16.0% route)
+
+--------------------------------------------------------------------------------
+
+Paths for end point u_sdram_vga_top/u_sdram_2fifo_top/u_dcfifo_ctrl/u_rdfifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/gsync_stage[2].rd_stg_inst/Q_reg_1 (SLICE_X14Y13.B5), 1 path
+--------------------------------------------------------------------------------
+Slack (hold path):      0.392ns (requirement - (clock path skew + uncertainty - data path))
+  Source:               u_sdram_vga_top/u_sdram_2fifo_top/u_dcfifo_ctrl/u_rdfifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/gsync_stage[1].rd_stg_inst/Q_reg_1 (FF)
+  Destination:          u_sdram_vga_top/u_sdram_2fifo_top/u_dcfifo_ctrl/u_rdfifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/gsync_stage[2].rd_stg_inst/Q_reg_1 (FF)
+  Requirement:          0.000ns
+  Data Path Delay:      0.392ns (Levels of Logic = 1)
+  Clock Path Skew:      0.000ns
+  Source Clock:         clk_vga rising at 111.111ns
+  Destination Clock:    clk_vga rising at 111.111ns
+  Clock Uncertainty:    0.000ns
+
+  Minimum Data Path at Fast Process Corner: u_sdram_vga_top/u_sdram_2fifo_top/u_dcfifo_ctrl/u_rdfifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/gsync_stage[1].rd_stg_inst/Q_reg_1 to u_sdram_vga_top/u_sdram_2fifo_top/u_dcfifo_ctrl/u_rdfifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/gsync_stage[2].rd_stg_inst/Q_reg_1
+    Location             Delay type         Delay(ns)  Physical Resource
+                                                       Logical Resource(s)
+    -------------------------------------------------  -------------------
+    SLICE_X14Y13.BQ      Tcko                  0.200   u_sdram_vga_top/u_sdram_2fifo_top/u_dcfifo_ctrl/u_rdfifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/gsync_stage[2].rd_stg_inst/D<3>
+                                                       u_sdram_vga_top/u_sdram_2fifo_top/u_dcfifo_ctrl/u_rdfifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/gsync_stage[1].rd_stg_inst/Q_reg_1
+    SLICE_X14Y13.B5      net (fanout=1)        0.071   u_sdram_vga_top/u_sdram_2fifo_top/u_dcfifo_ctrl/u_rdfifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/gsync_stage[2].rd_stg_inst/D<1>
+    SLICE_X14Y13.CLK     Tah         (-Th)    -0.121   u_sdram_vga_top/u_sdram_2fifo_top/u_dcfifo_ctrl/u_rdfifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/gsync_stage[2].rd_stg_inst/D<3>
+                                                       u_sdram_vga_top/u_sdram_2fifo_top/u_dcfifo_ctrl/u_rdfifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/gsync_stage[2].rd_stg_inst/D<1>_rt
+                                                       u_sdram_vga_top/u_sdram_2fifo_top/u_dcfifo_ctrl/u_rdfifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/gsync_stage[2].rd_stg_inst/Q_reg_1
+    -------------------------------------------------  ---------------------------
+    Total                                      0.392ns (0.321ns logic, 0.071ns route)
+                                                       (81.9% logic, 18.1% route)
+
+--------------------------------------------------------------------------------
+
+Paths for end point u_sdram_vga_top/u_sdram_2fifo_top/u_dcfifo_ctrl/u_rdfifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/rpntr/gc0.count_8 (SLICE_X10Y19.C5), 1 path
+--------------------------------------------------------------------------------
+Slack (hold path):      0.398ns (requirement - (clock path skew + uncertainty - data path))
+  Source:               u_sdram_vga_top/u_sdram_2fifo_top/u_dcfifo_ctrl/u_rdfifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/rpntr/gc0.count_7 (FF)
+  Destination:          u_sdram_vga_top/u_sdram_2fifo_top/u_dcfifo_ctrl/u_rdfifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/rpntr/gc0.count_8 (FF)
+  Requirement:          0.000ns
+  Data Path Delay:      0.398ns (Levels of Logic = 1)
+  Clock Path Skew:      0.000ns
+  Source Clock:         clk_vga rising at 111.111ns
+  Destination Clock:    clk_vga rising at 111.111ns
+  Clock Uncertainty:    0.000ns
+
+  Minimum Data Path at Fast Process Corner: u_sdram_vga_top/u_sdram_2fifo_top/u_dcfifo_ctrl/u_rdfifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/rpntr/gc0.count_7 to u_sdram_vga_top/u_sdram_2fifo_top/u_dcfifo_ctrl/u_rdfifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/rpntr/gc0.count_8
+    Location             Delay type         Delay(ns)  Physical Resource
+                                                       Logical Resource(s)
+    -------------------------------------------------  -------------------
+    SLICE_X10Y19.CQ      Tcko                  0.200   u_sdram_vga_top/u_sdram_2fifo_top/u_dcfifo_ctrl/u_rdfifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/rpntr/gc0.count<7>
+                                                       u_sdram_vga_top/u_sdram_2fifo_top/u_dcfifo_ctrl/u_rdfifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/rpntr/gc0.count_7
+    SLICE_X10Y19.C5      net (fanout=3)        0.077   u_sdram_vga_top/u_sdram_2fifo_top/u_dcfifo_ctrl/u_rdfifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/rpntr/gc0.count<7>
+    SLICE_X10Y19.CLK     Tah         (-Th)    -0.121   u_sdram_vga_top/u_sdram_2fifo_top/u_dcfifo_ctrl/u_rdfifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/rpntr/gc0.count<7>
+                                                       u_sdram_vga_top/u_sdram_2fifo_top/u_dcfifo_ctrl/u_rdfifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/rpntr/Madd_gc0.count[8]_GND_23_o_add_0_OUT_xor<8>11
+                                                       u_sdram_vga_top/u_sdram_2fifo_top/u_dcfifo_ctrl/u_rdfifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/rpntr/gc0.count_8
+    -------------------------------------------------  ---------------------------
+    Total                                      0.398ns (0.321ns logic, 0.077ns route)
+                                                       (80.7% logic, 19.3% route)
+
+--------------------------------------------------------------------------------
+
+Component Switching Limit Checks: TS_u_system_ctrl_u_sdram_pll_clkout1 = PERIOD TIMEGRP
+        "u_system_ctrl_u_sdram_pll_clkout1" TS_sys_clk_pin * 0.18 HIGH 50%;
+--------------------------------------------------------------------------------
+Slack: 108.445ns (period - min period limit)
+  Period: 111.111ns
+  Min period limit: 2.666ns (375.094MHz) (Tbcper_I)
+  Physical resource: u_system_ctrl/u_sdram_pll/clkout2_buf/I0
+  Logical resource: u_system_ctrl/u_sdram_pll/clkout2_buf/I0
+  Location pin: BUFGMUX_X2Y1.I0
+  Clock network: u_system_ctrl/u_sdram_pll/clkout1
+--------------------------------------------------------------------------------
+Slack: 110.631ns (period - (min high pulse limit / (high pulse / period)))
+  Period: 111.111ns
+  High pulse: 55.555ns
+  High pulse limit: 0.240ns (Trpw)
+  Physical resource: u_I2C_AV_Config/mI2C_CLK_DIV<3>/SR
+  Logical resource: u_I2C_AV_Config/mI2C_CLK_DIV_0/SR
+  Location pin: SLICE_X20Y22.SR
+  Clock network: u_CMOS_Capture/iRST_N_inv
+--------------------------------------------------------------------------------
+Slack: 110.631ns (period - (min high pulse limit / (high pulse / period)))
+  Period: 111.111ns
+  High pulse: 55.555ns
+  High pulse limit: 0.240ns (Trpw)
+  Physical resource: u_I2C_AV_Config/mI2C_CLK_DIV<3>/SR
+  Logical resource: u_I2C_AV_Config/mI2C_CLK_DIV_1/SR
+  Location pin: SLICE_X20Y22.SR
+  Clock network: u_CMOS_Capture/iRST_N_inv
+--------------------------------------------------------------------------------
+
+================================================================================
+Timing constraint: TS_u_system_ctrl_u_sdram_pll_clkout3 = PERIOD TIMEGRP        
+ "u_system_ctrl_u_sdram_pll_clkout3" TS_sys_clk_pin * 2 HIGH 50%;
+For more information, see Period Analysis in the Timing Closure User Guide (UG612).
+
+ 0 paths analyzed, 0 endpoints analyzed, 0 failing endpoints
+ 0 timing errors detected. (0 component switching limit errors)
+ Minimum period is   2.666ns.
+--------------------------------------------------------------------------------
+
+Component Switching Limit Checks: TS_u_system_ctrl_u_sdram_pll_clkout3 = PERIOD TIMEGRP
+        "u_system_ctrl_u_sdram_pll_clkout3" TS_sys_clk_pin * 2 HIGH 50%;
+--------------------------------------------------------------------------------
+Slack: 7.334ns (period - min period limit)
+  Period: 10.000ns
+  Min period limit: 2.666ns (375.094MHz) (Tbcper_I)
+  Physical resource: u_system_ctrl/u_sdram_pll/clkout4_buf/I0
+  Logical resource: u_system_ctrl/u_sdram_pll/clkout4_buf/I0
+  Location pin: BUFGMUX_X3Y13.I0
+  Clock network: u_system_ctrl/u_sdram_pll/clkout3
+--------------------------------------------------------------------------------
+Slack: 7.751ns (period - min period limit)
+  Period: 10.000ns
+  Min period limit: 2.249ns (444.642MHz) (Tockper)
+  Physical resource: clk_refout/CLK0
+  Logical resource: u_system_ctrl/U_ODDR2_c3/CK0
+  Location pin: OLOGIC_X0Y35.CLK0
+  Clock network: u_system_ctrl/clk_c3_oddr
+--------------------------------------------------------------------------------
+Slack: 7.960ns (period - min period limit)
+  Period: 10.000ns
+  Min period limit: 2.040ns (490.196MHz) (Tockper)
+  Physical resource: clk_refout/CLK1
+  Logical resource: u_system_ctrl/U_ODDR2_c3/CK1
+  Location pin: OLOGIC_X0Y35.CLK1
+  Clock network: u_system_ctrl/clk_c3_oddr
+--------------------------------------------------------------------------------
+
+
+Derived Constraint Report
+Derived Constraints for TS_sys_clk_pin
++-------------------------------+-------------+-------------+-------------+-------------+-------------+-------------+-------------+
+|                               |   Period    |       Actual Period       |      Timing Errors        |      Paths Analyzed       |
+|           Constraint          | Requirement |-------------+-------------|-------------+-------------|-------------+-------------|
+|                               |             |   Direct    | Derivative  |   Direct    | Derivative  |   Direct    | Derivative  |
++-------------------------------+-------------+-------------+-------------+-------------+-------------+-------------+-------------+
+|TS_sys_clk_pin                 |     20.000ns|      5.000ns|    154.532ns|            0|          312|            0|        21445|
+| TS_u_system_ctrl_u_sdram_pll_c|     10.000ns|     77.266ns|          N/A|          174|            0|        16215|            0|
+| lkout2                        |             |             |             |             |             |             |             |
+| TS_u_system_ctrl_u_sdram_pll_c|     40.000ns|      2.666ns|          N/A|            0|            0|            0|            0|
+| lkout0                        |             |             |             |             |             |             |             |
+| TS_u_system_ctrl_u_sdram_pll_c|    111.111ns|    769.568ns|          N/A|          138|            0|         5230|            0|
+| lkout1                        |             |             |             |             |             |             |             |
+| TS_u_system_ctrl_u_sdram_pll_c|     10.000ns|      2.666ns|          N/A|            0|            0|            0|            0|
+| lkout3                        |             |             |             |             |             |             |             |
++-------------------------------+-------------+-------------+-------------+-------------+-------------+-------------+-------------+
+
+2 constraints not met.
+
+
+Data Sheet report:
+-----------------
+All values displayed in nanoseconds (ns)
+
+Clock to Setup on destination clock CLOCK
+---------------+---------+---------+---------+---------+
+               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------+---------+---------+---------+---------+
+CLOCK          |    8.677|    4.041|    4.296|    4.027|
+---------------+---------+---------+---------+---------+
+
+
+Timing summary:
+---------------
+
+Timing errors: 312  Score: 677916  (Setup/Max: 677916, Hold: 0)
+
+Constraints cover 21445 paths, 0 nets, and 4441 connections
+
+Design statistics:
+   Minimum period: 769.568ns{1}   (Maximum frequency:   1.299MHz)
+
+
+------------------------------------Footnotes-----------------------------------
+1)  The minimum period statistic assumes all single cycle delays.
+
+Analysis completed Wed Dec 07 21:18:43 2016 
+--------------------------------------------------------------------------------
+
+Trace Settings:
+-------------------------
+Trace Settings 
+
+Peak Memory Usage: 232 MB
+
+
+

@@ -1,0 +1,13 @@
+# PROMGEN: Xilinx Prom Generator P.20131013
+# Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+
+SOFTWARE_VERSION P.20131013
+DATE            07/16/2015 - 13:55
+SOURCE          E:\Project\AX309\Verilog\18_flash_sdram_lcd\flash_sdram_lcd.mcs
+DEVICE          2048K
+DATA_WIDTH      1
+FILL_DATA       0xFF
+SIGNATURE       0x13B1C94E
+START_ADDRESS   0x00000000 END_ADDRESS 0x000534A7 DIRECTION_UP   "E:/Project/AX309/Verilog/18_flash_sdram_lcd/flash_sdram_lcd/flash_sdram_lcd.bit" 6slx9ftg256
+START_ADDRESS   0x00060000 END_ADDRESS 0x000BF9FF DIRECTION_UP   "E:/Project/AX309/Verilog/18_flash_sdram_lcd/flash_sdram_lcd/picture/car.bin" DATAFILE
+START_ADDRESS   0x000C0000 END_ADDRESS 0x0011F9FF DIRECTION_UP   "E:/Project/AX309/Verilog/18_flash_sdram_lcd/flash_sdram_lcd/picture/flower.bin" DATAFILE

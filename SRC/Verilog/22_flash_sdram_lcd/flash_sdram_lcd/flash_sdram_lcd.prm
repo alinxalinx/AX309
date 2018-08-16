@@ -1,0 +1,19 @@
+PROMGEN: Xilinx Prom Generator P.20131013
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+
+promgen -w -p mcs -c FF -o E:\BaiduYunDownload\AX309.161028\AX309\09_VERILOG\22_flash_sdram_lcd\flash_sdram_lcd//flash_sdram_lcd -s 2048 -u 0000 E:/BaiduYunDownload/AX309.161028/AX309/09_VERILOG/22_flash_sdram_lcd/flash_sdram_lcd/flash_sdram_lcd.bit -data_file up 60000 E:/BaiduYunDownload/AX309.161028/AX309/09_VERILOG/22_flash_sdram_lcd/flash_sdram_lcd/picture/car.bin -data_file up c0000 E:/BaiduYunDownload/AX309.161028/AX309/09_VERILOG/22_flash_sdram_lcd/flash_sdram_lcd/picture/flower.bin -spi 
+
+PROM E:\BaiduYunDownload\AX309.161028\AX309\09_VERILOG\22_flash_sdram_lcd\flash_sdram_lcd\flash_sdram_lcd.prm map: Wed Dec 07 21:09:27 2016
+
+Calculating PROM checksum with fill value ff
+
+Format        Mcs86 (32-bit)
+Size          2048K
+PROM start    0000:0000
+PROM end      001f:ffff
+PROM checksum 13b1f2fc
+
+        Addr1        Addr2                     Date File(s)
+    0000:0000    0005:34a7     Dec 07 16:46:07 2016 E:/BaiduYunDownload/AX309.161028/AX309/09_VERILOG/22_flash_sdram_lcd/flash_sdram_lcd/flash_sdram_lcd.bit
+    0006:0000    000b:f9ff     Nov 04 17:12:57 2015 E:/BaiduYunDownload/AX309.161028/AX309/09_VERILOG/22_flash_sdram_lcd/flash_sdram_lcd/picture/car.bin
+    000c:0000    0011:f9ff     Nov 04 17:12:56 2015 E:/BaiduYunDownload/AX309.161028/AX309/09_VERILOG/22_flash_sdram_lcd/flash_sdram_lcd/picture/flower.bin

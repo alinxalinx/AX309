@@ -1,0 +1,21 @@
+xst -intstyle ise -ifn "E:/Project/AX516/verilog/lcd_test/LCD_Control.xst" -ofn "E:/Project/AX516/verilog/lcd_test/LCD_Control.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc lcd_test.ucf -p xc6slx16-csg324-2 LCD_Control.ngc LCD_Control.ngd  
+xst -intstyle ise -ifn "E:/Project/AX516/verilog/lcd_test/LCD_Control.xst" -ofn "E:/Project/AX516/verilog/lcd_test/LCD_Control.syr" 
+xst -intstyle ise -ifn "E:/Project/AX516/verilog/lcd_test/LCD_Control.xst" -ofn "E:/Project/AX516/verilog/lcd_test/LCD_Control.syr" 
+xst -intstyle ise -ifn "E:/Project/AX516/verilog/lcd_test/LCD_Control.xst" -ofn "E:/Project/AX516/verilog/lcd_test/LCD_Control.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc lcd_test.ucf -p xc6slx16-csg324-2 LCD_Control.ngc LCD_Control.ngd  
+xst -intstyle ise -ifn "E:/Project/AX516/verilog/lcd_test/LCD_Control.xst" -ofn "E:/Project/AX516/verilog/lcd_test/LCD_Control.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc lcd_test.ucf -p xc6slx16-csg324-2 LCD_Control.ngc LCD_Control.ngd  
+map -intstyle ise -p xc6slx16-csg324-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o LCD_Control_map.ncd LCD_Control.ngd LCD_Control.pcf 
+xst -intstyle ise -ifn "E:/Project/AX516/verilog/lcd_test/LCD_Control.xst" -ofn "E:/Project/AX516/verilog/lcd_test/LCD_Control.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc lcd_test.ucf -p xc6slx16-csg324-2 LCD_Control.ngc LCD_Control.ngd  
+map -intstyle ise -p xc6slx16-csg324-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o LCD_Control_map.ncd LCD_Control.ngd LCD_Control.pcf 
+par -w -intstyle ise -ol high -mt off LCD_Control_map.ncd LCD_Control.ncd LCD_Control.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml LCD_Control.twx LCD_Control.ncd -o LCD_Control.twr LCD_Control.pcf -ucf lcd_test.ucf 
+bitgen -intstyle ise -f LCD_Control.ut LCD_Control.ncd 
+xst -intstyle ise -ifn "E:/Project/AX516/verilog/lcd_test/LCD_Control.xst" -ofn "E:/Project/AX516/verilog/lcd_test/LCD_Control.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc lcd_test.ucf -p xc6slx16-csg324-2 LCD_Control.ngc LCD_Control.ngd  
+map -intstyle ise -p xc6slx16-csg324-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o LCD_Control_map.ncd LCD_Control.ngd LCD_Control.pcf 
+par -w -intstyle ise -ol high -mt off LCD_Control_map.ncd LCD_Control.ncd LCD_Control.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml LCD_Control.twx LCD_Control.ncd -o LCD_Control.twr LCD_Control.pcf -ucf lcd_test.ucf 
+bitgen -intstyle ise -f LCD_Control.ut LCD_Control.ncd 

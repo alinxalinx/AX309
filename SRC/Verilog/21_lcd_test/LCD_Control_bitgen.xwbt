@@ -1,0 +1,8 @@
+INTSTYLE=ise
+INFILE=E:\Project\AX516\verilog\lcd_test\LCD_Control.ncd
+OUTFILE=E:\Project\AX516\verilog\lcd_test\LCD_Control.bit
+FAMILY=Spartan6
+PART=xc6slx16-2csg324
+WORKINGDIR=E:\Project\AX516\verilog\lcd_test
+LICENSE=WebPack
+USER_INFO=__0_0_0

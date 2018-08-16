@@ -1,0 +1,193 @@
+xst -intstyle ise -ifn "E:/Star/vga_test/vga_test.xst" -ofn "E:/Star/vga_test/vga_test.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc vga_test.ucf -p xc7z010-clg400-1 vga_test.ngc vga_test.ngd  
+map -intstyle ise -p xc7z010-clg400-1 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off -power off -o vga_test_map.ncd vga_test.ngd vga_test.pcf 
+par -w -intstyle ise -ol high -mt off vga_test_map.ncd vga_test.ncd vga_test.pcf 
+trce -intstyle ise -v 3 -s 1 -n 3 -fastpaths -xml vga_test.twx vga_test.ncd -o vga_test.twr vga_test.pcf -ucf vga_test.ucf 
+bitgen -intstyle ise -f vga_test.ut vga_test.ncd 
+xst -intstyle ise -ifn "E:/Star/vga_test/vga_test.xst" -ofn "E:/Star/vga_test/vga_test.syr" 
+xst -intstyle ise -ifn "E:/Star/vga_test/vga_test.xst" -ofn "E:/Star/vga_test/vga_test.syr" 
+xst -intstyle ise -ifn "E:/Star/vga_test/vga_test.xst" -ofn "E:/Star/vga_test/vga_test.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc vga_test.ucf -p xc7z010-clg400-1 vga_test.ngc vga_test.ngd  
+map -intstyle ise -p xc7z010-clg400-1 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off -power off -o vga_test_map.ncd vga_test.ngd vga_test.pcf 
+par -w -intstyle ise -ol high -mt off vga_test_map.ncd vga_test.ncd vga_test.pcf 
+trce -intstyle ise -v 3 -s 1 -n 3 -fastpaths -xml vga_test.twx vga_test.ncd -o vga_test.twr vga_test.pcf -ucf vga_test.ucf 
+bitgen -intstyle ise -f vga_test.ut vga_test.ncd 
+xst -intstyle ise -ifn "E:/Star/vga_test/vga_test.xst" -ofn "E:/Star/vga_test/vga_test.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc vga_test.ucf -p xc7z010-clg400-1 vga_test.ngc vga_test.ngd  
+map -intstyle ise -p xc7z010-clg400-1 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off -power off -o vga_test_map.ncd vga_test.ngd vga_test.pcf 
+par -w -intstyle ise -ol high -mt off vga_test_map.ncd vga_test.ncd vga_test.pcf 
+trce -intstyle ise -v 3 -s 1 -n 3 -fastpaths -xml vga_test.twx vga_test.ncd -o vga_test.twr vga_test.pcf -ucf vga_test.ucf 
+bitgen -intstyle ise -f vga_test.ut vga_test.ncd 
+xst -intstyle ise -ifn "E:/Star/vga_test/vga_test.xst" -ofn "E:/Star/vga_test/vga_test.syr" 
+xst -intstyle ise -ifn "E:/Star/vga_test/vga_test.xst" -ofn "E:/Star/vga_test/vga_test.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc vga_test.ucf -p xc7z010-clg400-1 vga_test.ngc vga_test.ngd  
+map -intstyle ise -p xc7z010-clg400-1 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off -power off -o vga_test_map.ncd vga_test.ngd vga_test.pcf 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc vga_test.ucf -p xc7z010-clg400-1 vga_test.ngc vga_test.ngd  
+map -intstyle ise -p xc7z010-clg400-1 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off -power off -o vga_test_map.ncd vga_test.ngd vga_test.pcf 
+par -w -intstyle ise -ol high -mt off vga_test_map.ncd vga_test.ncd vga_test.pcf 
+trce -intstyle ise -v 3 -s 1 -n 3 -fastpaths -xml vga_test.twx vga_test.ncd -o vga_test.twr vga_test.pcf -ucf vga_test.ucf 
+bitgen -intstyle ise -f vga_test.ut vga_test.ncd 
+xst -intstyle ise -ifn "E:/Star/vga_test/vga_test.xst" -ofn "E:/Star/vga_test/vga_test.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc vga_test.ucf -p xc7z010-clg400-1 vga_test.ngc vga_test.ngd  
+map -intstyle ise -p xc7z010-clg400-1 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off -power off -o vga_test_map.ncd vga_test.ngd vga_test.pcf 
+par -w -intstyle ise -ol high -mt off vga_test_map.ncd vga_test.ncd vga_test.pcf 
+trce -intstyle ise -v 3 -s 1 -n 3 -fastpaths -xml vga_test.twx vga_test.ncd -o vga_test.twr vga_test.pcf -ucf vga_test.ucf 
+bitgen -intstyle ise -f vga_test.ut vga_test.ncd 
+xst -intstyle ise -ifn "E:/Star/vga_test/vga_test.xst" -ofn "E:/Star/vga_test/vga_test.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc vga_test.ucf -p xc7z010-clg400-1 vga_test.ngc vga_test.ngd  
+map -intstyle ise -p xc7z010-clg400-1 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off -power off -o vga_test_map.ncd vga_test.ngd vga_test.pcf 
+par -w -intstyle ise -ol high -mt off vga_test_map.ncd vga_test.ncd vga_test.pcf 
+trce -intstyle ise -v 3 -s 1 -n 3 -fastpaths -xml vga_test.twx vga_test.ncd -o vga_test.twr vga_test.pcf -ucf vga_test.ucf 
+bitgen -intstyle ise -f vga_test.ut vga_test.ncd 
+xst -intstyle ise -ifn "E:/Star/vga_test/vga_test.xst" -ofn "E:/Star/vga_test/vga_test.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc vga_test.ucf -p xc7z010-clg400-1 vga_test.ngc vga_test.ngd  
+map -intstyle ise -p xc7z010-clg400-1 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off -power off -o vga_test_map.ncd vga_test.ngd vga_test.pcf 
+par -w -intstyle ise -ol high -mt off vga_test_map.ncd vga_test.ncd vga_test.pcf 
+trce -intstyle ise -v 3 -s 1 -n 3 -fastpaths -xml vga_test.twx vga_test.ncd -o vga_test.twr vga_test.pcf -ucf vga_test.ucf 
+bitgen -intstyle ise -f vga_test.ut vga_test.ncd 
+xst -intstyle ise -ifn "E:/Star/vga_test/vga_test.xst" -ofn "E:/Star/vga_test/vga_test.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc vga_test.ucf -p xc7z010-clg400-1 vga_test.ngc vga_test.ngd  
+map -intstyle ise -p xc7z010-clg400-1 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off -power off -o vga_test_map.ncd vga_test.ngd vga_test.pcf 
+par -w -intstyle ise -ol high -mt off vga_test_map.ncd vga_test.ncd vga_test.pcf 
+trce -intstyle ise -v 3 -s 1 -n 3 -fastpaths -xml vga_test.twx vga_test.ncd -o vga_test.twr vga_test.pcf -ucf vga_test.ucf 
+bitgen -intstyle ise -f vga_test.ut vga_test.ncd 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc vga_test.ucf -p xc7z010-clg400-1 vga_test_cs.ngc vga_test.ngd  
+map -intstyle ise -p xc7z010-clg400-1 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off -power off -o vga_test_map.ncd vga_test.ngd vga_test.pcf 
+par -w -intstyle ise -ol high -mt off vga_test_map.ncd vga_test.ncd vga_test.pcf 
+trce -intstyle ise -v 3 -s 1 -n 3 -fastpaths -xml vga_test.twx vga_test.ncd -o vga_test.twr vga_test.pcf -ucf vga_test.ucf 
+bitgen -intstyle ise -f vga_test.ut vga_test.ncd 
+xst -intstyle ise -ifn "E:/Star/vga_test/vga_test.xst" -ofn "E:/Star/vga_test/vga_test.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc vga_test.ucf -p xc7z010-clg400-1 vga_test_cs.ngc vga_test.ngd  
+map -intstyle ise -p xc7z010-clg400-1 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off -power off -o vga_test_map.ncd vga_test.ngd vga_test.pcf 
+par -w -intstyle ise -ol high -mt off vga_test_map.ncd vga_test.ncd vga_test.pcf 
+trce -intstyle ise -v 3 -s 1 -n 3 -fastpaths -xml vga_test.twx vga_test.ncd -o vga_test.twr vga_test.pcf -ucf vga_test.ucf 
+bitgen -intstyle ise -f vga_test.ut vga_test.ncd 
+xst -intstyle ise -ifn "E:/Star/vga_test/vga_test.xst" -ofn "E:/Star/vga_test/vga_test.syr" 
+xst -intstyle ise -ifn "E:/Star/vga_test/vga_test.xst" -ofn "E:/Star/vga_test/vga_test.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc vga_test.ucf -p xc7z010-clg400-1 vga_test_cs.ngc vga_test.ngd  
+map -intstyle ise -p xc7z010-clg400-1 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off -power off -o vga_test_map.ncd vga_test.ngd vga_test.pcf 
+par -w -intstyle ise -ol high -mt off vga_test_map.ncd vga_test.ncd vga_test.pcf 
+trce -intstyle ise -v 3 -s 1 -n 3 -fastpaths -xml vga_test.twx vga_test.ncd -o vga_test.twr vga_test.pcf -ucf vga_test.ucf 
+bitgen -intstyle ise -f vga_test.ut vga_test.ncd 
+xst -intstyle ise -ifn "E:/Star/vga_test/vga_test.xst" -ofn "E:/Star/vga_test/vga_test.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc vga_test.ucf -p xc7z010-clg400-1 vga_test_cs.ngc vga_test.ngd  
+map -intstyle ise -p xc7z010-clg400-1 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off -power off -o vga_test_map.ncd vga_test.ngd vga_test.pcf 
+par -w -intstyle ise -ol high -mt off vga_test_map.ncd vga_test.ncd vga_test.pcf 
+trce -intstyle ise -v 3 -s 1 -n 3 -fastpaths -xml vga_test.twx vga_test.ncd -o vga_test.twr vga_test.pcf -ucf vga_test.ucf 
+bitgen -intstyle ise -f vga_test.ut vga_test.ncd 
+xst -intstyle ise -ifn "E:/Star/vga_test/vga_test.xst" -ofn "E:/Star/vga_test/vga_test.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc vga_test.ucf -p xc7z010-clg400-1 vga_test_cs.ngc vga_test.ngd  
+map -intstyle ise -p xc7z010-clg400-1 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off -power off -o vga_test_map.ncd vga_test.ngd vga_test.pcf 
+par -w -intstyle ise -ol high -mt off vga_test_map.ncd vga_test.ncd vga_test.pcf 
+trce -intstyle ise -v 3 -s 1 -n 3 -fastpaths -xml vga_test.twx vga_test.ncd -o vga_test.twr vga_test.pcf -ucf vga_test.ucf 
+bitgen -intstyle ise -f vga_test.ut vga_test.ncd 
+xst -intstyle ise -ifn "E:/Star/vga_test/vga_test.xst" -ofn "E:/Star/vga_test/vga_test.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc vga_test.ucf -p xc7z010-clg400-1 vga_test_cs.ngc vga_test.ngd  
+map -intstyle ise -p xc7z010-clg400-1 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off -power off -o vga_test_map.ncd vga_test.ngd vga_test.pcf 
+par -w -intstyle ise -ol high -mt off vga_test_map.ncd vga_test.ncd vga_test.pcf 
+trce -intstyle ise -v 3 -s 1 -n 3 -fastpaths -xml vga_test.twx vga_test.ncd -o vga_test.twr vga_test.pcf -ucf vga_test.ucf 
+bitgen -intstyle ise -f vga_test.ut vga_test.ncd 
+xst -intstyle ise -ifn "E:/Star/vga_test/vga_test.xst" -ofn "E:/Star/vga_test/vga_test.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc vga_test.ucf -p xc7z010-clg400-1 vga_test_cs.ngc vga_test.ngd  
+map -intstyle ise -p xc7z010-clg400-1 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off -power off -o vga_test_map.ncd vga_test.ngd vga_test.pcf 
+par -w -intstyle ise -ol high -mt off vga_test_map.ncd vga_test.ncd vga_test.pcf 
+trce -intstyle ise -v 3 -s 1 -n 3 -fastpaths -xml vga_test.twx vga_test.ncd -o vga_test.twr vga_test.pcf -ucf vga_test.ucf 
+bitgen -intstyle ise -f vga_test.ut vga_test.ncd 
+xst -intstyle ise -ifn "E:/Star/vga_test/vga_test.xst" -ofn "E:/Star/vga_test/vga_test.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc vga_test.ucf -p xc7z010-clg400-1 vga_test_cs.ngc vga_test.ngd  
+map -intstyle ise -p xc7z010-clg400-1 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off -power off -o vga_test_map.ncd vga_test.ngd vga_test.pcf 
+par -w -intstyle ise -ol high -mt off vga_test_map.ncd vga_test.ncd vga_test.pcf 
+trce -intstyle ise -v 3 -s 1 -n 3 -fastpaths -xml vga_test.twx vga_test.ncd -o vga_test.twr vga_test.pcf -ucf vga_test.ucf 
+bitgen -intstyle ise -f vga_test.ut vga_test.ncd 
+xst -intstyle ise -ifn "E:/Star/vga_test/vga_test.xst" -ofn "E:/Star/vga_test/vga_test.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc vga_test.ucf -p xc7z010-clg400-1 vga_test_cs.ngc vga_test.ngd  
+map -intstyle ise -p xc7z010-clg400-1 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off -power off -o vga_test_map.ncd vga_test.ngd vga_test.pcf 
+par -w -intstyle ise -ol high -mt off vga_test_map.ncd vga_test.ncd vga_test.pcf 
+trce -intstyle ise -v 3 -s 1 -n 3 -fastpaths -xml vga_test.twx vga_test.ncd -o vga_test.twr vga_test.pcf -ucf vga_test.ucf 
+bitgen -intstyle ise -f vga_test.ut vga_test.ncd 
+xst -intstyle ise -ifn "E:/Star/vga_test/vga_test.xst" -ofn "E:/Star/vga_test/vga_test.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc vga_test.ucf -p xc7z010-clg400-1 vga_test_cs.ngc vga_test.ngd  
+map -intstyle ise -p xc7z010-clg400-1 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off -power off -o vga_test_map.ncd vga_test.ngd vga_test.pcf 
+par -w -intstyle ise -ol high -mt off vga_test_map.ncd vga_test.ncd vga_test.pcf 
+trce -intstyle ise -v 3 -s 1 -n 3 -fastpaths -xml vga_test.twx vga_test.ncd -o vga_test.twr vga_test.pcf -ucf vga_test.ucf 
+bitgen -intstyle ise -f vga_test.ut vga_test.ncd 
+xst -intstyle ise -ifn "E:/Project/AX516/verilog/vga_test/vga_test.xst" -ofn "E:/Project/AX516/verilog/vga_test/vga_test.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc vga_test.ucf -p xc7z010-clg400-1 vga_test_cs.ngc vga_test.ngd  
+map -intstyle ise -p xc7z010-clg400-1 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off -power off -o vga_test_map.ncd vga_test.ngd vga_test.pcf 
+xst -intstyle ise -ifn "E:/Project/AX516/verilog/vga_test/vga_test.xst" -ofn "E:/Project/AX516/verilog/vga_test/vga_test.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc vga_test.ucf -p xc7z010-clg400-1 vga_test_cs.ngc vga_test.ngd  
+map -intstyle ise -p xc7z010-clg400-1 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off -power off -o vga_test_map.ncd vga_test.ngd vga_test.pcf 
+xst -intstyle ise -ifn "E:/Project/AX516/verilog/vga_test/vga_test.xst" -ofn "E:/Project/AX516/verilog/vga_test/vga_test.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc vga_test.ucf -p xc6slx16-csg324-3 vga_test_cs.ngc vga_test.ngd  
+xst -intstyle ise -ifn "E:/Project/AX516/verilog/vga_test/vga_test.xst" -ofn "E:/Project/AX516/verilog/vga_test/vga_test.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc vga_test.ucf -p xc6slx16-csg324-3 vga_test_cs.ngc vga_test.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o vga_test_map.ncd vga_test.ngd vga_test.pcf 
+par -w -intstyle ise -ol high -mt off vga_test_map.ncd vga_test.ncd vga_test.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml vga_test.twx vga_test.ncd -o vga_test.twr vga_test.pcf -ucf vga_test.ucf 
+bitgen -intstyle ise -f vga_test.ut vga_test.ncd 
+bitgen -intstyle ise -f vga_test.ut vga_test.ncd 
+xst -intstyle ise -ifn "E:/Project/AX516/verilog/vga_test/vga_test.xst" -ofn "E:/Project/AX516/verilog/vga_test/vga_test.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc vga_test.ucf -p xc6slx16-csg324-3 vga_test_cs.ngc vga_test.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o vga_test_map.ncd vga_test.ngd vga_test.pcf 
+par -w -intstyle ise -ol high -mt off vga_test_map.ncd vga_test.ncd vga_test.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml vga_test.twx vga_test.ncd -o vga_test.twr vga_test.pcf -ucf vga_test.ucf 
+bitgen -intstyle ise -f vga_test.ut vga_test.ncd 
+xst -intstyle ise -ifn "E:/Project/AX545/verilog/vga_test/vga_test.xst" -ofn "E:/Project/AX545/verilog/vga_test/vga_test.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc vga_test.ucf -p xc6slx45-csg324-3 vga_test_cs.ngc vga_test.ngd  
+map -intstyle ise -p xc6slx45-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o vga_test_map.ncd vga_test.ngd vga_test.pcf 
+par -w -intstyle ise -ol high -mt off vga_test_map.ncd vga_test.ncd vga_test.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml vga_test.twx vga_test.ncd -o vga_test.twr vga_test.pcf -ucf vga_test.ucf 
+bitgen -intstyle ise -f vga_test.ut vga_test.ncd 
+xst -intstyle ise -ifn "E:/Project/AX309/Verilog/vga_test/vga_test.xst" -ofn "E:/Project/AX309/Verilog/vga_test/vga_test.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc vga_test.ucf -p xc6slx9-ftg256-2 vga_test_cs.ngc vga_test.ngd  
+map -intstyle ise -p xc6slx9-ftg256-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o vga_test_map.ncd vga_test.ngd vga_test.pcf 
+xst -intstyle ise -ifn "E:/Project/AX309/Verilog/vga_test/vga_test.xst" -ofn "E:/Project/AX309/Verilog/vga_test/vga_test.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc vga_test.ucf -uc pll2.ucf -p xc6slx9-ftg256-2 vga_test_cs.ngc vga_test.ngd  
+xst -intstyle ise -ifn "E:/Project/AX309/Verilog/vga_test/vga_test.xst" -ofn "E:/Project/AX309/Verilog/vga_test/vga_test.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc vga_test.ucf -uc pll2.ucf -p xc6slx9-ftg256-2 vga_test_cs.ngc vga_test.ngd  
+xst -intstyle ise -ifn "E:/Project/AX309/Verilog/vga_test/vga_test.xst" -ofn "E:/Project/AX309/Verilog/vga_test/vga_test.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc vga_test.ucf -uc pll2.ucf -p xc6slx9-ftg256-2 vga_test.ngc vga_test.ngd  
+map -intstyle ise -p xc6slx9-ftg256-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o vga_test_map.ncd vga_test.ngd vga_test.pcf 
+par -w -intstyle ise -ol high -mt off vga_test_map.ncd vga_test.ncd vga_test.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml vga_test.twx vga_test.ncd -o vga_test.twr vga_test.pcf -ucf vga_test.ucf -ucf pll2.ucf 
+bitgen -intstyle ise -f vga_test.ut vga_test.ncd 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc vga_test.ucf -p xc6slx9-ftg256-2 vga_test.ngc vga_test.ngd  
+map -intstyle ise -p xc6slx9-ftg256-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o vga_test_map.ncd vga_test.ngd vga_test.pcf 
+par -w -intstyle ise -ol high -mt off vga_test_map.ncd vga_test.ncd vga_test.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml vga_test.twx vga_test.ncd -o vga_test.twr vga_test.pcf -ucf vga_test.ucf 
+bitgen -intstyle ise -f vga_test.ut vga_test.ncd 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc vga_test.ucf -p xc6slx9-ftg256-2 vga_test.ngc vga_test.ngd  
+map -intstyle ise -p xc6slx9-ftg256-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o vga_test_map.ncd vga_test.ngd vga_test.pcf 
+par -w -intstyle ise -ol high -mt off vga_test_map.ncd vga_test.ncd vga_test.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml vga_test.twx vga_test.ncd -o vga_test.twr vga_test.pcf -ucf vga_test.ucf 
+bitgen -intstyle ise -f vga_test.ut vga_test.ncd 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc vga_test.ucf -p xc6slx9-ftg256-2 vga_test.ngc vga_test.ngd  
+map -intstyle ise -p xc6slx9-ftg256-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o vga_test_map.ncd vga_test.ngd vga_test.pcf 
+par -w -intstyle ise -ol high -mt off vga_test_map.ncd vga_test.ncd vga_test.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml vga_test.twx vga_test.ncd -o vga_test.twr vga_test.pcf -ucf vga_test.ucf 
+bitgen -intstyle ise -f vga_test.ut vga_test.ncd 
+xst -intstyle ise -ifn "E:/BaiduYunDownload/AX309.160229/AX309/09_VERILOG/18_vga_test/vga_test.xst" -ofn "E:/BaiduYunDownload/AX309.160229/AX309/09_VERILOG/18_vga_test/vga_test.syr" 
+xst -intstyle ise -ifn "E:/BaiduYunDownload/AX309.160229/AX309/09_VERILOG/18_vga_test/vga_test.xst" -ofn "E:/BaiduYunDownload/AX309.160229/AX309/09_VERILOG/18_vga_test/vga_test.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc vga_test.ucf -p xc6slx9-ftg256-2 vga_test.ngc vga_test.ngd  
+map -intstyle ise -p xc6slx9-ftg256-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o vga_test_map.ncd vga_test.ngd vga_test.pcf 
+par -w -intstyle ise -ol high -mt off vga_test_map.ncd vga_test.ncd vga_test.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml vga_test.twx vga_test.ncd -o vga_test.twr vga_test.pcf -ucf vga_test.ucf 
+bitgen -intstyle ise -f vga_test.ut vga_test.ncd 
+xst -intstyle ise -ifn "E:/BaiduYunDownload/AX309.160229/AX309/09_VERILOG/18_vga_test/vga_test.xst" -ofn "E:/BaiduYunDownload/AX309.160229/AX309/09_VERILOG/18_vga_test/vga_test.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc vga_test.ucf -p xc6slx9-ftg256-2 vga_test.ngc vga_test.ngd  
+map -intstyle ise -p xc6slx9-ftg256-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o vga_test_map.ncd vga_test.ngd vga_test.pcf 
+par -w -intstyle ise -ol high -mt off vga_test_map.ncd vga_test.ncd vga_test.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml vga_test.twx vga_test.ncd -o vga_test.twr vga_test.pcf -ucf vga_test.ucf 
+bitgen -intstyle ise -f vga_test.ut vga_test.ncd 
+xst -intstyle ise -ifn "E:/BaiduYunDownload/AX309.161219/AX309/09_VERILOG/18_vga_test/vga_test.xst" -ofn "E:/BaiduYunDownload/AX309.161219/AX309/09_VERILOG/18_vga_test/vga_test.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc vga_test.ucf -p xc6slx9-ftg256-2 vga_test.ngc vga_test.ngd  
+map -intstyle ise -p xc6slx9-ftg256-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o vga_test_map.ncd vga_test.ngd vga_test.pcf 
+par -w -intstyle ise -ol high -mt off vga_test_map.ncd vga_test.ncd vga_test.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml vga_test.twx vga_test.ncd -o vga_test.twr vga_test.pcf -ucf vga_test.ucf 
+bitgen -intstyle ise -f vga_test.ut vga_test.ncd 
+xst -intstyle ise -ifn "E:/BaiduYunDownload/AX309.170526/AX309.170526/09_VERILOG/18_vga_test/vga_test.xst" -ofn "E:/BaiduYunDownload/AX309.170526/AX309.170526/09_VERILOG/18_vga_test/vga_test.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc vga_test.ucf -p xc6slx9-ftg256-2 vga_test.ngc vga_test.ngd  
+map -intstyle ise -p xc6slx9-ftg256-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o vga_test_map.ncd vga_test.ngd vga_test.pcf 
+par -w -intstyle ise -ol high -mt off vga_test_map.ncd vga_test.ncd vga_test.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml vga_test.twx vga_test.ncd -o vga_test.twr vga_test.pcf -ucf vga_test.ucf 
+bitgen -intstyle ise -f vga_test.ut vga_test.ncd 

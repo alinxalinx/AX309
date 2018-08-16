@@ -1,0 +1,507 @@
+Release 14.7 - xst P.20131013 (nt64)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+--> Parameter TMPDIR set to xst/projnav.tmp
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.11 secs
+ 
+--> Parameter xsthdpdir set to xst
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.11 secs
+ 
+--> Reading design: lcd_test.prj
+
+TABLE OF CONTENTS
+  1) Synthesis Options Summary
+  2) HDL Parsing
+  3) HDL Elaboration
+  4) HDL Synthesis
+       4.1) HDL Synthesis Report
+  5) Advanced HDL Synthesis
+       5.1) Advanced HDL Synthesis Report
+  6) Low Level Synthesis
+  7) Partition Report
+  8) Design Summary
+       8.1) Primitive and Black Box Usage
+       8.2) Device utilization summary
+       8.3) Partition Resource Summary
+       8.4) Timing Report
+            8.4.1) Clock Information
+            8.4.2) Asynchronous Control Signals Information
+            8.4.3) Timing Summary
+            8.4.4) Timing Details
+            8.4.5) Cross Clock Domains Report
+
+
+=========================================================================
+*                      Synthesis Options Summary                        *
+=========================================================================
+---- Source Parameters
+Input File Name                    : "lcd_test.prj"
+Ignore Synthesis Constraint File   : NO
+
+---- Target Parameters
+Output File Name                   : "lcd_test"
+Output Format                      : NGC
+Target Device                      : xc6slx9-2-ftg256
+
+---- Source Options
+Top Module Name                    : lcd_test
+Automatic FSM Extraction           : YES
+FSM Encoding Algorithm             : Auto
+Safe Implementation                : No
+FSM Style                          : LUT
+RAM Extraction                     : Yes
+RAM Style                          : Auto
+ROM Extraction                     : Yes
+Shift Register Extraction          : YES
+ROM Style                          : Auto
+Resource Sharing                   : YES
+Asynchronous To Synchronous        : NO
+Shift Register Minimum Size        : 2
+Use DSP Block                      : Auto
+Automatic Register Balancing       : No
+
+---- Target Options
+LUT Combining                      : Auto
+Reduce Control Sets                : Auto
+Add IO Buffers                     : YES
+Global Maximum Fanout              : 100000
+Add Generic Clock Buffer(BUFG)     : 16
+Register Duplication               : YES
+Optimize Instantiated Primitives   : NO
+Use Clock Enable                   : Auto
+Use Synchronous Set                : Auto
+Use Synchronous Reset              : Auto
+Pack IO Registers into IOBs        : Auto
+Equivalent register Removal        : YES
+
+---- General Options
+Optimization Goal                  : Speed
+Optimization Effort                : 1
+Power Reduction                    : NO
+Keep Hierarchy                     : No
+Netlist Hierarchy                  : As_Optimized
+RTL Output                         : Yes
+Global Optimization                : AllClockNets
+Read Cores                         : YES
+Write Timing Constraints           : NO
+Cross Clock Analysis               : NO
+Hierarchy Separator                : /
+Bus Delimiter                      : <>
+Case Specifier                     : Maintain
+Slice Utilization Ratio            : 100
+BRAM Utilization Ratio             : 100
+DSP48 Utilization Ratio            : 100
+Auto BRAM Packing                  : NO
+Slice Utilization Ratio Delta      : 5
+
+---- Other Options
+Cores Search Directories           : {"ipcore_dir"  }
+
+=========================================================================
+
+
+=========================================================================
+*                          HDL Parsing                                  *
+=========================================================================
+Analyzing Verilog file "E:\BaiduYunDownload\AX309.170526\AX309.170526\09_VERILOG\21_lcd_test\ipcore_dir\pll.v" into library work
+Parsing module <pll>.
+Analyzing Verilog file "E:\BaiduYunDownload\AX309.170526\AX309.170526\09_VERILOG\21_lcd_test\lcd_test.v" into library work
+Parsing module <lcd_test>.
+
+=========================================================================
+*                            HDL Elaboration                            *
+=========================================================================
+
+Elaborating module <lcd_test>.
+WARNING:HDLCompiler:413 - "E:\BaiduYunDownload\AX309.170526\AX309.170526\09_VERILOG\21_lcd_test\lcd_test.v" Line 81: Result of 12-bit expression is truncated to fit in 11-bit target.
+WARNING:HDLCompiler:413 - "E:\BaiduYunDownload\AX309.170526\AX309.170526\09_VERILOG\21_lcd_test\lcd_test.v" Line 104: Result of 11-bit expression is truncated to fit in 10-bit target.
+
+Elaborating module <pll>.
+
+Elaborating module <IBUFG>.
+
+Elaborating module <DCM_SP(CLKDV_DIVIDE=2.0,CLKFX_DIVIDE=25,CLKFX_MULTIPLY=9,CLKIN_DIVIDE_BY_2="TRUE",CLKIN_PERIOD=20.0,CLKOUT_PHASE_SHIFT="NONE",CLK_FEEDBACK="1X",DESKEW_ADJUST="SYSTEM_SYNCHRONOUS",PHASE_SHIFT=0,STARTUP_WAIT="FALSE")>.
+WARNING:HDLCompiler:1127 - "E:\BaiduYunDownload\AX309.170526\AX309.170526\09_VERILOG\21_lcd_test\ipcore_dir\pll.v" Line 130: Assignment to status_int ignored, since the identifier is never used
+
+Elaborating module <BUFG>.
+WARNING:HDLCompiler:1127 - "E:\BaiduYunDownload\AX309.170526\AX309.170526\09_VERILOG\21_lcd_test\lcd_test.v" Line 273: Assignment to LOCKED ignored, since the identifier is never used
+
+=========================================================================
+*                           HDL Synthesis                               *
+=========================================================================
+
+Synthesizing Unit <lcd_test>.
+    Related source file is "E:\BaiduYunDownload\AX309.170526\AX309.170526\09_VERILOG\21_lcd_test\lcd_test.v".
+        LinePeriod = 525
+        H_SyncPulse = 41
+        H_BackPorch = 2
+        H_ActivePix = 480
+        H_FrontPorch = 2
+        Hde_start = 43
+        Hde_end = 523
+        FramePeriod = 286
+        V_SyncPulse = 10
+        V_BackPorch = 2
+        V_ActivePix = 272
+        V_FrontPorch = 2
+        Vde_start = 12
+        Vde_end = 284
+INFO:Xst:3210 - "E:\BaiduYunDownload\AX309.170526\AX309.170526\09_VERILOG\21_lcd_test\lcd_test.v" line 266: Output port <LOCKED> of the instance <pll_inst> is unconnected or connected to loadless signal.
+    Found 1-bit register for signal <lcd_hsync>.
+    Found 1-bit register for signal <hsync_de>.
+    Found 10-bit register for signal <y_cnt>.
+    Found 1-bit register for signal <lcd_vsync>.
+    Found 1-bit register for signal <vsync_de>.
+    Found 8-bit register for signal <grid_data_1>.
+    Found 8-bit register for signal <grid_data_2>.
+    Found 24-bit register for signal <bar_data>.
+    Found 8-bit register for signal <lcd_r_reg>.
+    Found 8-bit register for signal <lcd_g_reg>.
+    Found 8-bit register for signal <lcd_b_reg>.
+    Found 16-bit register for signal <key1_counter>.
+    Found 4-bit register for signal <lcd_dis_mode>.
+    Found 11-bit register for signal <x_cnt>.
+    Found 11-bit adder for signal <x_cnt[10]_GND_1_o_add_6_OUT> created at line 81.
+    Found 10-bit adder for signal <y_cnt[9]_GND_1_o_add_17_OUT> created at line 104.
+    Found 16-bit adder for signal <_n0230> created at line 149.
+    Found 17-bit adder for signal <_n0236> created at line 153.
+    Found 17-bit adder for signal <_n0239> created at line 155.
+    Found 17-bit adder for signal <_n0242> created at line 157.
+    Found 16-bit adder for signal <key1_counter[15]_GND_1_o_add_79_OUT> created at line 254.
+    Found 4-bit adder for signal <lcd_dis_mode[3]_GND_1_o_add_84_OUT> created at line 261.
+    Found 13x2-bit multiplier for signal <bar_interval[12]_PWR_1_o_MuLt_42_OUT> created at line 149.
+    Found 13x3-bit multiplier for signal <bar_interval[12]_PWR_1_o_MuLt_47_OUT> created at line 153.
+    Found 13x3-bit multiplier for signal <bar_interval[12]_PWR_1_o_MuLt_50_OUT> created at line 155.
+    Found 13x3-bit multiplier for signal <bar_interval[12]_PWR_1_o_MuLt_53_OUT> created at line 157.
+    Found 16-bit comparator lessequal for signal <n0090> created at line 253
+    Found 16-bit comparator equal for signal <GND_1_o_GND_1_o_equal_45_o> created at line 149
+    Found 17-bit comparator not equal for signal <GND_1_o_GND_1_o_equal_50_o> created at line 153
+    Found 17-bit comparator equal for signal <GND_1_o_GND_1_o_equal_53_o> created at line 155
+    Found 17-bit comparator equal for signal <GND_1_o_GND_1_o_equal_56_o> created at line 157
+    Summary:
+	inferred   4 Multiplier(s).
+	inferred   8 Adder/Subtractor(s).
+	inferred 109 D-type flip-flop(s).
+	inferred   5 Comparator(s).
+	inferred  43 Multiplexer(s).
+Unit <lcd_test> synthesized.
+
+Synthesizing Unit <pll>.
+    Related source file is "E:\BaiduYunDownload\AX309.170526\AX309.170526\09_VERILOG\21_lcd_test\ipcore_dir\pll.v".
+    Summary:
+	no macro.
+Unit <pll> synthesized.
+
+=========================================================================
+HDL Synthesis Report
+
+Macro Statistics
+# Multipliers                                          : 4
+ 13x2-bit multiplier                                   : 1
+ 13x3-bit multiplier                                   : 3
+# Adders/Subtractors                                   : 8
+ 10-bit adder                                          : 1
+ 11-bit adder                                          : 1
+ 16-bit adder                                          : 2
+ 17-bit adder                                          : 3
+ 4-bit adder                                           : 1
+# Registers                                            : 14
+ 1-bit register                                        : 4
+ 10-bit register                                       : 1
+ 11-bit register                                       : 1
+ 16-bit register                                       : 1
+ 24-bit register                                       : 1
+ 4-bit register                                        : 1
+ 8-bit register                                        : 5
+# Comparators                                          : 5
+ 16-bit comparator equal                               : 1
+ 16-bit comparator lessequal                           : 1
+ 17-bit comparator equal                               : 2
+ 17-bit comparator not equal                           : 1
+# Multiplexers                                         : 43
+ 10-bit 2-to-1 multiplexer                             : 1
+ 24-bit 2-to-1 multiplexer                             : 4
+ 8-bit 2-to-1 multiplexer                              : 38
+# Xors                                                 : 2
+ 1-bit xor2                                            : 2
+
+=========================================================================
+
+=========================================================================
+*                       Advanced HDL Synthesis                          *
+=========================================================================
+
+
+Synthesizing (advanced) Unit <lcd_test>.
+The following registers are absorbed into counter <y_cnt>: 1 register on signal <y_cnt>.
+The following registers are absorbed into counter <key1_counter>: 1 register on signal <key1_counter>.
+The following registers are absorbed into counter <x_cnt>: 1 register on signal <x_cnt>.
+The following registers are absorbed into counter <lcd_dis_mode>: 1 register on signal <lcd_dis_mode>.
+Unit <lcd_test> synthesized (advanced).
+
+=========================================================================
+Advanced HDL Synthesis Report
+
+Macro Statistics
+# Multipliers                                          : 4
+ 7x2-bit multiplier                                    : 1
+ 7x3-bit multiplier                                    : 3
+# Adders/Subtractors                                   : 4
+ 16-bit adder                                          : 1
+ 17-bit adder                                          : 3
+# Counters                                             : 4
+ 10-bit up counter                                     : 1
+ 11-bit up counter                                     : 1
+ 16-bit up counter                                     : 1
+ 4-bit up counter                                      : 1
+# Registers                                            : 68
+ Flip-Flops                                            : 68
+# Comparators                                          : 5
+ 16-bit comparator equal                               : 1
+ 16-bit comparator lessequal                           : 1
+ 17-bit comparator equal                               : 2
+ 17-bit comparator not equal                           : 1
+# Multiplexers                                         : 42
+ 24-bit 2-to-1 multiplexer                             : 4
+ 8-bit 2-to-1 multiplexer                              : 38
+# Xors                                                 : 2
+ 1-bit xor2                                            : 2
+
+=========================================================================
+
+=========================================================================
+*                         Low Level Synthesis                           *
+=========================================================================
+INFO:Xst:2261 - The FF/Latch <grid_data_1_0> in Unit <lcd_test> is equivalent to the following 7 FFs/Latches, which will be removed : <grid_data_1_1> <grid_data_1_2> <grid_data_1_3> <grid_data_1_4> <grid_data_1_5> <grid_data_1_6> <grid_data_1_7> 
+INFO:Xst:2261 - The FF/Latch <grid_data_2_0> in Unit <lcd_test> is equivalent to the following 7 FFs/Latches, which will be removed : <grid_data_2_1> <grid_data_2_2> <grid_data_2_3> <grid_data_2_4> <grid_data_2_5> <grid_data_2_6> <grid_data_2_7> 
+INFO:Xst:2261 - The FF/Latch <bar_data_0> in Unit <lcd_test> is equivalent to the following 7 FFs/Latches, which will be removed : <bar_data_1> <bar_data_2> <bar_data_3> <bar_data_4> <bar_data_5> <bar_data_6> <bar_data_7> 
+INFO:Xst:2261 - The FF/Latch <bar_data_16> in Unit <lcd_test> is equivalent to the following 7 FFs/Latches, which will be removed : <bar_data_17> <bar_data_18> <bar_data_19> <bar_data_20> <bar_data_21> <bar_data_22> <bar_data_23> 
+INFO:Xst:2261 - The FF/Latch <bar_data_8> in Unit <lcd_test> is equivalent to the following 7 FFs/Latches, which will be removed : <bar_data_9> <bar_data_10> <bar_data_11> <bar_data_12> <bar_data_13> <bar_data_14> <bar_data_15> 
+
+Optimizing unit <lcd_test> ...
+
+Mapping all equations...
+Building and optimizing final netlist ...
+Found area constraint ratio of 100 (+ 5) on block lcd_test, actual ratio is 3.
+
+Final Macro Processing ...
+
+=========================================================================
+Final Register Report
+
+Macro Statistics
+# Registers                                            : 74
+ Flip-Flops                                            : 74
+
+=========================================================================
+
+=========================================================================
+*                           Partition Report                            *
+=========================================================================
+
+Partition Implementation Status
+-------------------------------
+
+  No Partitions were found in this design.
+
+-------------------------------
+
+=========================================================================
+*                            Design Summary                             *
+=========================================================================
+
+Top Level Output File Name         : lcd_test.ngc
+
+Primitive and Black Box Usage:
+------------------------------
+# BELS                             : 254
+#      GND                         : 1
+#      INV                         : 6
+#      LUT1                        : 25
+#      LUT2                        : 9
+#      LUT3                        : 37
+#      LUT4                        : 32
+#      LUT5                        : 19
+#      LUT6                        : 51
+#      MUXCY                       : 34
+#      MUXF7                       : 2
+#      VCC                         : 1
+#      XORCY                       : 37
+# FlipFlops/Latches                : 74
+#      FD                          : 1
+#      FDR                         : 42
+#      FDRE                        : 29
+#      FDS                         : 1
+#      FDSE                        : 1
+# Clock Buffers                    : 2
+#      BUFG                        : 2
+# IO Buffers                       : 31
+#      IBUF                        : 2
+#      IBUFG                       : 1
+#      OBUF                        : 28
+# DCMs                             : 1
+#      DCM_SP                      : 1
+
+Device utilization summary:
+---------------------------
+
+Selected Device : 6slx9ftg256-2 
+
+
+Slice Logic Utilization: 
+ Number of Slice Registers:              74  out of  11440     0%  
+ Number of Slice LUTs:                  179  out of   5720     3%  
+    Number used as Logic:               179  out of   5720     3%  
+
+Slice Logic Distribution: 
+ Number of LUT Flip Flop pairs used:    181
+   Number with an unused Flip Flop:     107  out of    181    59%  
+   Number with an unused LUT:             2  out of    181     1%  
+   Number of fully used LUT-FF pairs:    72  out of    181    39%  
+   Number of unique control sets:        11
+
+IO Utilization: 
+ Number of IOs:                          31
+ Number of bonded IOBs:                  31  out of    186    16%  
+
+Specific Feature Utilization:
+ Number of BUFG/BUFGCTRLs:                2  out of     16    12%  
+
+---------------------------
+Partition Resource Summary:
+---------------------------
+
+  No Partitions were found in this design.
+
+---------------------------
+
+
+=========================================================================
+Timing Report
+
+NOTE: THESE TIMING NUMBERS ARE ONLY A SYNTHESIS ESTIMATE.
+      FOR ACCURATE TIMING INFORMATION PLEASE REFER TO THE TRACE REPORT
+      GENERATED AFTER PLACE-and-ROUTE.
+
+Clock Information:
+------------------
+-----------------------------------+------------------------+-------+
+Clock Signal                       | Clock buffer(FF name)  | Load  |
+-----------------------------------+------------------------+-------+
+clk_50M                            | DCM_SP:CLKFX           | 74    |
+-----------------------------------+------------------------+-------+
+
+Asynchronous Control Signals Information:
+----------------------------------------
+No asynchronous control signals found in this design
+
+Timing Summary:
+---------------
+Speed Grade: -2
+
+   Minimum period: 2.065ns (Maximum Frequency: 484.186MHz)
+   Minimum input arrival time before clock: 4.603ns
+   Maximum output required time after clock: 6.001ns
+   Maximum combinational path delay: No path found
+
+Timing Details:
+---------------
+All values displayed in nanoseconds (ns)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'clk_50M'
+  Clock period: 2.065ns (frequency: 484.186MHz)
+  Total number of paths / destination ports: 2522 / 124
+-------------------------------------------------------------------------
+Delay:               5.737ns (Levels of Logic = 3)
+  Source:            x_cnt_7 (FF)
+  Destination:       y_cnt_1 (FF)
+  Source Clock:      clk_50M rising 0.4X
+  Destination Clock: clk_50M rising 0.4X
+
+  Data Path: x_cnt_7 to y_cnt_1
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDR:C->Q             14   0.525   1.127  x_cnt_7 (x_cnt_7)
+     LUT3:I2->O            5   0.254   0.949  _n0310_inv121 (_n0310_inv12)
+     LUT6:I4->O           12   0.250   1.069  GND_1_o_GND_1_o_equal_17_o<10> (GND_1_o_GND_1_o_equal_17_o)
+     LUT3:I2->O           10   0.254   1.007  _n0313_inv1 (_n0313_inv)
+     FDRE:CE                   0.302          y_cnt_1
+    ----------------------------------------
+    Total                      5.737ns (1.585ns logic, 4.152ns route)
+                                       (27.6% logic, 72.4% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'clk_50M'
+  Total number of paths / destination ports: 71 / 70
+-------------------------------------------------------------------------
+Offset:              4.603ns (Levels of Logic = 3)
+  Source:            reset_n (PAD)
+  Destination:       vsync_r (FF)
+  Destination Clock: clk_50M rising 0.4X
+
+  Data Path: reset_n to vsync_r
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O             5   1.328   0.949  reset_n_IBUF (reset_n_IBUF)
+     LUT3:I1->O            1   0.250   0.682  _n0262_SW0 (N14)
+     LUT6:I5->O            1   0.254   0.681  _n0262 (_n0262)
+     FDR:R                     0.459          vsync_r
+    ----------------------------------------
+    Total                      4.603ns (2.291ns logic, 2.312ns route)
+                                       (49.8% logic, 50.2% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'clk_50M'
+  Total number of paths / destination ports: 76 / 27
+-------------------------------------------------------------------------
+Offset:              6.001ns (Levels of Logic = 2)
+  Source:            hsync_de (FF)
+  Destination:       lcd_r<7> (PAD)
+  Source Clock:      clk_50M rising 0.4X
+
+  Data Path: hsync_de to lcd_r<7>
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDR:C->Q             26   0.525   1.648  hsync_de (hsync_de)
+     LUT3:I0->O            1   0.235   0.681  Mmux_lcd_b81 (lcd_b_7_OBUF)
+     OBUF:I->O                 2.912          lcd_b_7_OBUF (lcd_b<7>)
+    ----------------------------------------
+    Total                      6.001ns (3.672ns logic, 2.329ns route)
+                                       (61.2% logic, 38.8% route)
+
+=========================================================================
+
+Cross Clock Domains Report:
+--------------------------
+
+Clock to Setup on destination clock clk_50M
+---------------+---------+---------+---------+---------+
+               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------+---------+---------+---------+---------+
+clk_50M        |    5.737|         |         |         |
+---------------+---------+---------+---------+---------+
+
+=========================================================================
+
+
+Total REAL time to Xst completion: 5.00 secs
+Total CPU time to Xst completion: 5.13 secs
+ 
+--> 
+
+Total memory usage is 261380 kilobytes
+
+Number of errors   :    0 (   0 filtered)
+Number of warnings :    4 (   0 filtered)
+Number of infos    :    6 (   0 filtered)
+

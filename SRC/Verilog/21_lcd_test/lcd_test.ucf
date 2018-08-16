@@ -1,0 +1,43 @@
+
+NET clk_50M LOC = T8 | TNM_NET = sys_clk_pin | IOSTANDARD = "LVCMOS33";
+TIMESPEC TS_sys_clk_pin = PERIOD sys_clk_pin 50000 kHz;
+
+############################################################################
+##reset
+############################################################################
+NET "reset_n"                                    LOC = L3 | IOSTANDARD = "LVCMOS33"; ## Reset pushbutton
+
+########Switch Pin define#####################
+NET "key1"                       		          LOC = C3 | IOSTANDARD = "LVCMOS33";        ## KEY1
+
+########J2 Expend I/O Pin define##################### 
+NET "lcd_r[0]"                                   LOC = K16 | IOSTANDARD = "LVCMOS33";  ##  PIN3
+NET "lcd_r[1]"                                   LOC = J16 | IOSTANDARD = "LVCMOS33";  ##  PIN4
+NET "lcd_r[2]"                                   LOC = L16 | IOSTANDARD = "LVCMOS33";  ##  PIN5
+NET "lcd_r[3]"                                   LOC = K15 | IOSTANDARD = "LVCMOS33";  ##  PIN6
+NET "lcd_r[4]"                                   LOC = M15 | IOSTANDARD = "LVCMOS33";  ##  PIN7
+NET "lcd_r[5]"                                   LOC = M16 | IOSTANDARD = "LVCMOS33";  ##  PIN8
+NET "lcd_r[6]"                                   LOC = P16 | IOSTANDARD = "LVCMOS33";  ##  PIN9
+NET "lcd_r[7]"                                   LOC = N16 | IOSTANDARD = "LVCMOS33";  ##  PIN10 
+NET "lcd_g[0]"                                   LOC = R16 | IOSTANDARD = "LVCMOS33";  ##  PIN11
+NET "lcd_g[1]"                           	       LOC = P15 | IOSTANDARD = "LVCMOS33";  ##  PIN12
+NET "lcd_g[2]"                                   LOC = T15 | IOSTANDARD = "LVCMOS33";  ##  PIN13
+NET "lcd_g[3]"                                   LOC = R15 | IOSTANDARD = "LVCMOS33";  ##  PIN14
+NET "lcd_g[4]"                                   LOC = T14 | IOSTANDARD = "LVCMOS33";  ##  PIN15
+NET "lcd_g[5]"                                   LOC = R14 | IOSTANDARD = "LVCMOS33";  ##  PIN16
+NET "lcd_g[6]"                                   LOC = R12 | IOSTANDARD = "LVCMOS33";  ##  PIN17
+NET "lcd_g[7]"                                   LOC = T13 | IOSTANDARD = "LVCMOS33";  ##  PIN18
+NET "lcd_b[0]"                                   LOC = R9 | IOSTANDARD = "LVCMOS33";  ##  PIN19
+NET "lcd_b[1]"                                   LOC = T12 | IOSTANDARD = "LVCMOS33";  ##  PIN20
+NET "lcd_b[2]"                                   LOC = L8 | IOSTANDARD = "LVCMOS33";  ##  PIN21
+NET "lcd_b[3]"                                   LOC = T9 | IOSTANDARD = "LVCMOS33";  ##  PIN22
+NET "lcd_b[4]"                                   LOC = R7 | IOSTANDARD = "LVCMOS33";  ##  PIN23
+NET "lcd_b[5]"                                   LOC = T7 | IOSTANDARD = "LVCMOS33";  ##  PIN24
+NET "lcd_b[6]"                                   LOC = T5 | IOSTANDARD = "LVCMOS33";  ##  PIN25
+NET "lcd_b[7]"                                   LOC = T6 | IOSTANDARD = "LVCMOS33";  ##  PIN26
+NET "lcd_dclk"                                   LOC = T4 | IOSTANDARD = "LVCMOS33";  ##  PIN27
+NET "lcd_hsync"                                  LOC = R5 | IOSTANDARD = "LVCMOS33";  ##  PIN28
+NET "lcd_vsync"                                  LOC = R1 | IOSTANDARD = "LVCMOS33";  ##  PIN29
+NET "lcd_de"                                     LOC = R2 | IOSTANDARD = "LVCMOS33";  ##  PIN30
+
+PIN "pll_inst/clkout1_buf.O" CLOCK_DEDICATED_ROUTE = FALSE;

@@ -1,0 +1,6 @@
+verilog work "rtl/sd_write.v"
+verilog work "rtl/sd_read.v"
+verilog work "rtl/sd_initial.v"
+verilog work "chipscope_ila.v"
+verilog work "chipscope_icon.v"
+verilog work "rtl/sd_test.v"

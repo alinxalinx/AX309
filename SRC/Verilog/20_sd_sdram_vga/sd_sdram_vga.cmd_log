@@ -1,0 +1,232 @@
+xst -intstyle ise -ifn "E:/Project/AX309/sd_sdram_vga/sd_sdram_vga.xst" -ofn "E:/Project/AX309/sd_sdram_vga/sd_sdram_vga.syr" 
+xst -intstyle ise -ifn "E:/Project/AX309/sd_sdram_vga/sd_sdram_vga.xst" -ofn "E:/Project/AX309/sd_sdram_vga/sd_sdram_vga.syr" 
+xst -intstyle ise -ifn "E:/Project/AX309/sd_sdram_vga/sd_sdram_vga.xst" -ofn "E:/Project/AX309/sd_sdram_vga/sd_sdram_vga.syr" 
+xst -intstyle ise -ifn "E:/Project/AX309/sd_sdram_vga/sd_sdram_vga.xst" -ofn "E:/Project/AX309/sd_sdram_vga/sd_sdram_vga.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc sd_sdram_vga.ucf -p xc6slx9-ftg256-2 sd_sdram_vga.ngc sd_sdram_vga.ngd  
+map -intstyle ise -p xc6slx9-ftg256-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o sd_sdram_vga_map.ncd sd_sdram_vga.ngd sd_sdram_vga.pcf 
+xst -intstyle ise -ifn "E:/Project/AX309/sd_sdram_vga/sd_sdram_vga.xst" -ofn "E:/Project/AX309/sd_sdram_vga/sd_sdram_vga.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc sd_sdram_vga.ucf -p xc6slx9-ftg256-2 sd_sdram_vga.ngc sd_sdram_vga.ngd  
+map -intstyle ise -p xc6slx9-ftg256-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o sd_sdram_vga_map.ncd sd_sdram_vga.ngd sd_sdram_vga.pcf 
+xst -intstyle ise -ifn "E:/Project/AX309/sd_sdram_vga/sd_sdram_vga.xst" -ofn "E:/Project/AX309/sd_sdram_vga/sd_sdram_vga.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc sd_sdram_vga.ucf -p xc6slx9-ftg256-2 sd_sdram_vga.ngc sd_sdram_vga.ngd  
+map -intstyle ise -p xc6slx9-ftg256-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o sd_sdram_vga_map.ncd sd_sdram_vga.ngd sd_sdram_vga.pcf 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc sd_sdram_vga.ucf -p xc6slx9-ftg256-2 sd_sdram_vga.ngc sd_sdram_vga.ngd  
+map -intstyle ise -p xc6slx9-ftg256-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o sd_sdram_vga_map.ncd sd_sdram_vga.ngd sd_sdram_vga.pcf 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc sd_sdram_vga.ucf -p xc6slx9-ftg256-2 sd_sdram_vga.ngc sd_sdram_vga.ngd  
+map -intstyle ise -p xc6slx9-ftg256-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o sd_sdram_vga_map.ncd sd_sdram_vga.ngd sd_sdram_vga.pcf 
+par -w -intstyle ise -ol high -mt off sd_sdram_vga_map.ncd sd_sdram_vga.ncd sd_sdram_vga.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml sd_sdram_vga.twx sd_sdram_vga.ncd -o sd_sdram_vga.twr sd_sdram_vga.pcf -ucf sd_sdram_vga.ucf 
+bitgen -intstyle ise -f sd_sdram_vga.ut sd_sdram_vga.ncd 
+xst -intstyle ise -ifn "E:/Project/AX309/sd_sdram_vga/sd_sdram_vga.xst" -ofn "E:/Project/AX309/sd_sdram_vga/sd_sdram_vga.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc sd_sdram_vga.ucf -p xc6slx9-ftg256-2 sd_sdram_vga.ngc sd_sdram_vga.ngd  
+map -intstyle ise -p xc6slx9-ftg256-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o sd_sdram_vga_map.ncd sd_sdram_vga.ngd sd_sdram_vga.pcf 
+par -w -intstyle ise -ol high -mt off sd_sdram_vga_map.ncd sd_sdram_vga.ncd sd_sdram_vga.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml sd_sdram_vga.twx sd_sdram_vga.ncd -o sd_sdram_vga.twr sd_sdram_vga.pcf -ucf sd_sdram_vga.ucf 
+bitgen -intstyle ise -f sd_sdram_vga.ut sd_sdram_vga.ncd 
+xst -intstyle ise -ifn "E:/Project/AX309/sd_sdram_vga/sd_sdram_vga.xst" -ofn "E:/Project/AX309/sd_sdram_vga/sd_sdram_vga.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc sd_sdram_vga.ucf -p xc6slx9-ftg256-2 sd_sdram_vga.ngc sd_sdram_vga.ngd  
+map -intstyle ise -p xc6slx9-ftg256-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o sd_sdram_vga_map.ncd sd_sdram_vga.ngd sd_sdram_vga.pcf 
+par -w -intstyle ise -ol high -mt off sd_sdram_vga_map.ncd sd_sdram_vga.ncd sd_sdram_vga.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml sd_sdram_vga.twx sd_sdram_vga.ncd -o sd_sdram_vga.twr sd_sdram_vga.pcf -ucf sd_sdram_vga.ucf 
+bitgen -intstyle ise -f sd_sdram_vga.ut sd_sdram_vga.ncd 
+xst -intstyle ise -ifn "E:/Project/AX309/sd_sdram_vga/sd_sdram_vga.xst" -ofn "E:/Project/AX309/sd_sdram_vga/sd_sdram_vga.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc sd_sdram_vga.ucf -p xc6slx9-ftg256-2 sd_sdram_vga.ngc sd_sdram_vga.ngd  
+map -intstyle ise -p xc6slx9-ftg256-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o sd_sdram_vga_map.ncd sd_sdram_vga.ngd sd_sdram_vga.pcf 
+par -w -intstyle ise -ol high -mt off sd_sdram_vga_map.ncd sd_sdram_vga.ncd sd_sdram_vga.pcf 
+bitgen -intstyle ise -f sd_sdram_vga.ut sd_sdram_vga.ncd 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc sd_sdram_vga.ucf -p xc6slx9-ftg256-2 sd_sdram_vga.ngc sd_sdram_vga.ngd  
+map -intstyle ise -p xc6slx9-ftg256-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o sd_sdram_vga_map.ncd sd_sdram_vga.ngd sd_sdram_vga.pcf 
+par -w -intstyle ise -ol high -mt off sd_sdram_vga_map.ncd sd_sdram_vga.ncd sd_sdram_vga.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml sd_sdram_vga.twx sd_sdram_vga.ncd -o sd_sdram_vga.twr sd_sdram_vga.pcf -ucf sd_sdram_vga.ucf 
+bitgen -intstyle ise -f sd_sdram_vga.ut sd_sdram_vga.ncd 
+xst -intstyle ise -ifn "E:/Project/AX309/sd_sdram_vga/sd_sdram_vga.xst" -ofn "E:/Project/AX309/sd_sdram_vga/sd_sdram_vga.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc sd_sdram_vga.ucf -p xc6slx9-ftg256-2 sd_sdram_vga.ngc sd_sdram_vga.ngd  
+map -intstyle ise -p xc6slx9-ftg256-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o sd_sdram_vga_map.ncd sd_sdram_vga.ngd sd_sdram_vga.pcf 
+par -w -intstyle ise -ol high -mt off sd_sdram_vga_map.ncd sd_sdram_vga.ncd sd_sdram_vga.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml sd_sdram_vga.twx sd_sdram_vga.ncd -o sd_sdram_vga.twr sd_sdram_vga.pcf -ucf sd_sdram_vga.ucf 
+bitgen -intstyle ise -f sd_sdram_vga.ut sd_sdram_vga.ncd 
+xst -intstyle ise -ifn "E:/Project/AX309/sd_sdram_vga/sd_sdram_vga.xst" -ofn "E:/Project/AX309/sd_sdram_vga/sd_sdram_vga.syr" 
+xst -intstyle ise -ifn "E:/Project/AX309/sd_sdram_vga/sd_sdram_vga.xst" -ofn "E:/Project/AX309/sd_sdram_vga/sd_sdram_vga.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc sd_sdram_vga.ucf -p xc6slx9-ftg256-2 sd_sdram_vga.ngc sd_sdram_vga.ngd  
+map -intstyle ise -p xc6slx9-ftg256-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o sd_sdram_vga_map.ncd sd_sdram_vga.ngd sd_sdram_vga.pcf 
+par -w -intstyle ise -ol high -mt off sd_sdram_vga_map.ncd sd_sdram_vga.ncd sd_sdram_vga.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml sd_sdram_vga.twx sd_sdram_vga.ncd -o sd_sdram_vga.twr sd_sdram_vga.pcf -ucf sd_sdram_vga.ucf 
+bitgen -intstyle ise -f sd_sdram_vga.ut sd_sdram_vga.ncd 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc sd_sdram_vga.ucf -p xc6slx9-ftg256-2 sd_sdram_vga.ngc sd_sdram_vga.ngd  
+map -intstyle ise -p xc6slx9-ftg256-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o sd_sdram_vga_map.ncd sd_sdram_vga.ngd sd_sdram_vga.pcf 
+par -w -intstyle ise -ol high -mt off sd_sdram_vga_map.ncd sd_sdram_vga.ncd sd_sdram_vga.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml sd_sdram_vga.twx sd_sdram_vga.ncd -o sd_sdram_vga.twr sd_sdram_vga.pcf -ucf sd_sdram_vga.ucf 
+bitgen -intstyle ise -f sd_sdram_vga.ut sd_sdram_vga.ncd 
+xst -intstyle ise -ifn "E:/Project/AX309/sd_sdram_vga/sd_sdram_vga.xst" -ofn "E:/Project/AX309/sd_sdram_vga/sd_sdram_vga.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc sd_sdram_vga.ucf -p xc6slx9-ftg256-2 sd_sdram_vga.ngc sd_sdram_vga.ngd  
+map -intstyle ise -p xc6slx9-ftg256-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o sd_sdram_vga_map.ncd sd_sdram_vga.ngd sd_sdram_vga.pcf 
+par -w -intstyle ise -ol high -mt off sd_sdram_vga_map.ncd sd_sdram_vga.ncd sd_sdram_vga.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml sd_sdram_vga.twx sd_sdram_vga.ncd -o sd_sdram_vga.twr sd_sdram_vga.pcf -ucf sd_sdram_vga.ucf 
+bitgen -intstyle ise -f sd_sdram_vga.ut sd_sdram_vga.ncd 
+xst -intstyle ise -ifn "E:/Project/AX309/sd_sdram_vga/sd_sdram_vga.xst" -ofn "E:/Project/AX309/sd_sdram_vga/sd_sdram_vga.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc sd_sdram_vga.ucf -p xc6slx9-ftg256-2 sd_sdram_vga.ngc sd_sdram_vga.ngd  
+map -intstyle ise -p xc6slx9-ftg256-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o sd_sdram_vga_map.ncd sd_sdram_vga.ngd sd_sdram_vga.pcf 
+par -w -intstyle ise -ol high -mt off sd_sdram_vga_map.ncd sd_sdram_vga.ncd sd_sdram_vga.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml sd_sdram_vga.twx sd_sdram_vga.ncd -o sd_sdram_vga.twr sd_sdram_vga.pcf -ucf sd_sdram_vga.ucf 
+bitgen -intstyle ise -f sd_sdram_vga.ut sd_sdram_vga.ncd 
+xst -intstyle ise -ifn "E:/Project/AX309/sd_sdram_vga/sd_sdram_vga.xst" -ofn "E:/Project/AX309/sd_sdram_vga/sd_sdram_vga.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc sd_sdram_vga.ucf -p xc6slx9-ftg256-2 sd_sdram_vga.ngc sd_sdram_vga.ngd  
+map -intstyle ise -p xc6slx9-ftg256-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o sd_sdram_vga_map.ncd sd_sdram_vga.ngd sd_sdram_vga.pcf 
+par -w -intstyle ise -ol high -mt off sd_sdram_vga_map.ncd sd_sdram_vga.ncd sd_sdram_vga.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml sd_sdram_vga.twx sd_sdram_vga.ncd -o sd_sdram_vga.twr sd_sdram_vga.pcf -ucf sd_sdram_vga.ucf 
+bitgen -intstyle ise -f sd_sdram_vga.ut sd_sdram_vga.ncd 
+xst -intstyle ise -ifn "E:/Project/AX309/sd_sdram_vga/sd_sdram_vga.xst" -ofn "E:/Project/AX309/sd_sdram_vga/sd_sdram_vga.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc sd_sdram_vga.ucf -p xc6slx9-ftg256-2 sd_sdram_vga.ngc sd_sdram_vga.ngd  
+map -intstyle ise -p xc6slx9-ftg256-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o sd_sdram_vga_map.ncd sd_sdram_vga.ngd sd_sdram_vga.pcf 
+par -w -intstyle ise -ol high -mt off sd_sdram_vga_map.ncd sd_sdram_vga.ncd sd_sdram_vga.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml sd_sdram_vga.twx sd_sdram_vga.ncd -o sd_sdram_vga.twr sd_sdram_vga.pcf -ucf sd_sdram_vga.ucf 
+bitgen -intstyle ise -f sd_sdram_vga.ut sd_sdram_vga.ncd 
+xst -intstyle ise -ifn "E:/Project/AX309/sd_sdram_vga/sd_sdram_vga.xst" -ofn "E:/Project/AX309/sd_sdram_vga/sd_sdram_vga.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc sd_sdram_vga.ucf -p xc6slx9-ftg256-2 sd_sdram_vga.ngc sd_sdram_vga.ngd  
+map -intstyle ise -p xc6slx9-ftg256-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o sd_sdram_vga_map.ncd sd_sdram_vga.ngd sd_sdram_vga.pcf 
+par -w -intstyle ise -ol high -mt off sd_sdram_vga_map.ncd sd_sdram_vga.ncd sd_sdram_vga.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml sd_sdram_vga.twx sd_sdram_vga.ncd -o sd_sdram_vga.twr sd_sdram_vga.pcf -ucf sd_sdram_vga.ucf 
+bitgen -intstyle ise -f sd_sdram_vga.ut sd_sdram_vga.ncd 
+xst -intstyle ise -ifn "E:/Project/AX309/sd_sdram_vga/sd_sdram_vga.xst" -ofn "E:/Project/AX309/sd_sdram_vga/sd_sdram_vga.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc sd_sdram_vga.ucf -p xc6slx9-ftg256-2 sd_sdram_vga.ngc sd_sdram_vga.ngd  
+map -intstyle ise -p xc6slx9-ftg256-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o sd_sdram_vga_map.ncd sd_sdram_vga.ngd sd_sdram_vga.pcf 
+par -w -intstyle ise -ol high -mt off sd_sdram_vga_map.ncd sd_sdram_vga.ncd sd_sdram_vga.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml sd_sdram_vga.twx sd_sdram_vga.ncd -o sd_sdram_vga.twr sd_sdram_vga.pcf -ucf sd_sdram_vga.ucf 
+bitgen -intstyle ise -f sd_sdram_vga.ut sd_sdram_vga.ncd 
+xst -intstyle ise -ifn "E:/Project/AX309/sd_sdram_vga/sd_sdram_vga.xst" -ofn "E:/Project/AX309/sd_sdram_vga/sd_sdram_vga.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc sd_sdram_vga.ucf -p xc6slx9-ftg256-2 sd_sdram_vga.ngc sd_sdram_vga.ngd  
+map -intstyle ise -p xc6slx9-ftg256-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o sd_sdram_vga_map.ncd sd_sdram_vga.ngd sd_sdram_vga.pcf 
+par -w -intstyle ise -ol high -mt off sd_sdram_vga_map.ncd sd_sdram_vga.ncd sd_sdram_vga.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml sd_sdram_vga.twx sd_sdram_vga.ncd -o sd_sdram_vga.twr sd_sdram_vga.pcf -ucf sd_sdram_vga.ucf 
+bitgen -intstyle ise -f sd_sdram_vga.ut sd_sdram_vga.ncd 
+xst -intstyle ise -ifn "E:/Project/AX309/sd_sdram_vga/sd_sdram_vga.xst" -ofn "E:/Project/AX309/sd_sdram_vga/sd_sdram_vga.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc sd_sdram_vga.ucf -p xc6slx9-ftg256-2 sd_sdram_vga.ngc sd_sdram_vga.ngd  
+map -intstyle ise -p xc6slx9-ftg256-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o sd_sdram_vga_map.ncd sd_sdram_vga.ngd sd_sdram_vga.pcf 
+par -w -intstyle ise -ol high -mt off sd_sdram_vga_map.ncd sd_sdram_vga.ncd sd_sdram_vga.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml sd_sdram_vga.twx sd_sdram_vga.ncd -o sd_sdram_vga.twr sd_sdram_vga.pcf -ucf sd_sdram_vga.ucf 
+bitgen -intstyle ise -f sd_sdram_vga.ut sd_sdram_vga.ncd 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc sd_sdram_vga.ucf -p xc6slx9-ftg256-2 sd_sdram_vga.ngc sd_sdram_vga.ngd  
+map -intstyle ise -p xc6slx9-ftg256-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o sd_sdram_vga_map.ncd sd_sdram_vga.ngd sd_sdram_vga.pcf 
+par -w -intstyle ise -ol high -mt off sd_sdram_vga_map.ncd sd_sdram_vga.ncd sd_sdram_vga.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml sd_sdram_vga.twx sd_sdram_vga.ncd -o sd_sdram_vga.twr sd_sdram_vga.pcf -ucf sd_sdram_vga.ucf 
+bitgen -intstyle ise -f sd_sdram_vga.ut sd_sdram_vga.ncd 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc sd_sdram_vga.ucf -p xc6slx9-ftg256-2 sd_sdram_vga.ngc sd_sdram_vga.ngd  
+map -intstyle ise -p xc6slx9-ftg256-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o sd_sdram_vga_map.ncd sd_sdram_vga.ngd sd_sdram_vga.pcf 
+par -w -intstyle ise -ol high -mt off sd_sdram_vga_map.ncd sd_sdram_vga.ncd sd_sdram_vga.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml sd_sdram_vga.twx sd_sdram_vga.ncd -o sd_sdram_vga.twr sd_sdram_vga.pcf -ucf sd_sdram_vga.ucf 
+bitgen -intstyle ise -f sd_sdram_vga.ut sd_sdram_vga.ncd 
+xst -intstyle ise -ifn "E:/Project/AX309/Verilog/sd_sdram_vga/sd_sdram_vga.xst" -ofn "E:/Project/AX309/Verilog/sd_sdram_vga/sd_sdram_vga.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc sd_sdram_vga.ucf -p xc6slx9-ftg256-2 sd_sdram_vga.ngc sd_sdram_vga.ngd  
+map -intstyle ise -p xc6slx9-ftg256-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o sd_sdram_vga_map.ncd sd_sdram_vga.ngd sd_sdram_vga.pcf 
+par -w -intstyle ise -ol high -mt off sd_sdram_vga_map.ncd sd_sdram_vga.ncd sd_sdram_vga.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml sd_sdram_vga.twx sd_sdram_vga.ncd -o sd_sdram_vga.twr sd_sdram_vga.pcf -ucf sd_sdram_vga.ucf 
+bitgen -intstyle ise -f sd_sdram_vga.ut sd_sdram_vga.ncd 
+xst -intstyle ise -ifn "E:/Project/AX309/Verilog/sd_sdram_vga/sd_sdram_vga.xst" -ofn "E:/Project/AX309/Verilog/sd_sdram_vga/sd_sdram_vga.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc sd_sdram_vga.ucf -p xc6slx9-ftg256-2 sd_sdram_vga.ngc sd_sdram_vga.ngd  
+map -intstyle ise -p xc6slx9-ftg256-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o sd_sdram_vga_map.ncd sd_sdram_vga.ngd sd_sdram_vga.pcf 
+par -w -intstyle ise -ol high -mt off sd_sdram_vga_map.ncd sd_sdram_vga.ncd sd_sdram_vga.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml sd_sdram_vga.twx sd_sdram_vga.ncd -o sd_sdram_vga.twr sd_sdram_vga.pcf -ucf sd_sdram_vga.ucf 
+bitgen -intstyle ise -f sd_sdram_vga.ut sd_sdram_vga.ncd 
+xst -intstyle ise -ifn "E:/Project/AX309/Verilog/sd_sdram_vga/sd_sdram_vga.xst" -ofn "E:/Project/AX309/Verilog/sd_sdram_vga/sd_sdram_vga.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc sd_sdram_vga.ucf -p xc6slx9-ftg256-2 sd_sdram_vga.ngc sd_sdram_vga.ngd  
+map -intstyle ise -p xc6slx9-ftg256-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o sd_sdram_vga_map.ncd sd_sdram_vga.ngd sd_sdram_vga.pcf 
+par -w -intstyle ise -ol high -mt off sd_sdram_vga_map.ncd sd_sdram_vga.ncd sd_sdram_vga.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml sd_sdram_vga.twx sd_sdram_vga.ncd -o sd_sdram_vga.twr sd_sdram_vga.pcf -ucf sd_sdram_vga.ucf 
+bitgen -intstyle ise -f sd_sdram_vga.ut sd_sdram_vga.ncd 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc sd_sdram_vga.ucf -p xc6slx9-ftg256-2 sd_sdram_vga.ngc sd_sdram_vga.ngd  
+map -intstyle ise -p xc6slx9-ftg256-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o sd_sdram_vga_map.ncd sd_sdram_vga.ngd sd_sdram_vga.pcf 
+par -w -intstyle ise -ol high -mt off sd_sdram_vga_map.ncd sd_sdram_vga.ncd sd_sdram_vga.pcf 
+bitgen -intstyle ise -f sd_sdram_vga.ut sd_sdram_vga.ncd 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc sd_sdram_vga.ucf -p xc6slx9-ftg256-2 sd_sdram_vga.ngc sd_sdram_vga.ngd  
+map -intstyle ise -p xc6slx9-ftg256-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o sd_sdram_vga_map.ncd sd_sdram_vga.ngd sd_sdram_vga.pcf 
+par -w -intstyle ise -ol high -mt off sd_sdram_vga_map.ncd sd_sdram_vga.ncd sd_sdram_vga.pcf 
+bitgen -intstyle ise -f sd_sdram_vga.ut sd_sdram_vga.ncd 
+xst -intstyle ise -ifn "E:/Project/AX309/Verilog/sd_sdram_vga/sd_sdram_vga.xst" -ofn "E:/Project/AX309/Verilog/sd_sdram_vga/sd_sdram_vga.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc sd_sdram_vga.ucf -p xc6slx9-ftg256-2 sd_sdram_vga.ngc sd_sdram_vga.ngd  
+map -intstyle ise -p xc6slx9-ftg256-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o sd_sdram_vga_map.ncd sd_sdram_vga.ngd sd_sdram_vga.pcf 
+par -w -intstyle ise -ol high -mt off sd_sdram_vga_map.ncd sd_sdram_vga.ncd sd_sdram_vga.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml sd_sdram_vga.twx sd_sdram_vga.ncd -o sd_sdram_vga.twr sd_sdram_vga.pcf -ucf sd_sdram_vga.ucf 
+bitgen -intstyle ise -f sd_sdram_vga.ut sd_sdram_vga.ncd 
+xst -intstyle ise -ifn "E:/Project/AX309/Verilog/sd_sdram_vga/sd_sdram_vga.xst" -ofn "E:/Project/AX309/Verilog/sd_sdram_vga/sd_sdram_vga.syr" 
+xst -intstyle ise -ifn "E:/Project/AX309/Verilog/sd_sdram_vga/sd_sdram_vga.xst" -ofn "E:/Project/AX309/Verilog/sd_sdram_vga/sd_sdram_vga.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc sd_sdram_vga.ucf -p xc6slx9-ftg256-2 sd_sdram_vga.ngc sd_sdram_vga.ngd  
+map -intstyle ise -p xc6slx9-ftg256-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o sd_sdram_vga_map.ncd sd_sdram_vga.ngd sd_sdram_vga.pcf 
+par -w -intstyle ise -ol high -mt off sd_sdram_vga_map.ncd sd_sdram_vga.ncd sd_sdram_vga.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml sd_sdram_vga.twx sd_sdram_vga.ncd -o sd_sdram_vga.twr sd_sdram_vga.pcf -ucf sd_sdram_vga.ucf 
+bitgen -intstyle ise -f sd_sdram_vga.ut sd_sdram_vga.ncd 
+xst -intstyle ise -ifn "E:/Project/AX309/Verilog/sd_sdram_vga/sd_sdram_vga.xst" -ofn "E:/Project/AX309/Verilog/sd_sdram_vga/sd_sdram_vga.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc sd_sdram_vga.ucf -p xc6slx9-ftg256-2 sd_sdram_vga.ngc sd_sdram_vga.ngd  
+map -intstyle ise -p xc6slx9-ftg256-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o sd_sdram_vga_map.ncd sd_sdram_vga.ngd sd_sdram_vga.pcf 
+par -w -intstyle ise -ol high -mt off sd_sdram_vga_map.ncd sd_sdram_vga.ncd sd_sdram_vga.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml sd_sdram_vga.twx sd_sdram_vga.ncd -o sd_sdram_vga.twr sd_sdram_vga.pcf -ucf sd_sdram_vga.ucf 
+bitgen -intstyle ise -f sd_sdram_vga.ut sd_sdram_vga.ncd 
+xst -intstyle ise -ifn "E:/Project/AX309/Verilog/sd_sdram_vga/sd_sdram_vga.xst" -ofn "E:/Project/AX309/Verilog/sd_sdram_vga/sd_sdram_vga.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc sd_sdram_vga.ucf -p xc6slx9-ftg256-2 sd_sdram_vga.ngc sd_sdram_vga.ngd  
+map -intstyle ise -p xc6slx9-ftg256-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o sd_sdram_vga_map.ncd sd_sdram_vga.ngd sd_sdram_vga.pcf 
+par -w -intstyle ise -ol high -mt off sd_sdram_vga_map.ncd sd_sdram_vga.ncd sd_sdram_vga.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml sd_sdram_vga.twx sd_sdram_vga.ncd -o sd_sdram_vga.twr sd_sdram_vga.pcf -ucf sd_sdram_vga.ucf 
+bitgen -intstyle ise -f sd_sdram_vga.ut sd_sdram_vga.ncd 
+xst -intstyle ise -ifn "E:/Project/AX309/Verilog/sd_sdram_vga/sd_sdram_vga.xst" -ofn "E:/Project/AX309/Verilog/sd_sdram_vga/sd_sdram_vga.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc sd_sdram_vga.ucf -p xc6slx9-ftg256-2 sd_sdram_vga.ngc sd_sdram_vga.ngd  
+map -intstyle ise -p xc6slx9-ftg256-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o sd_sdram_vga_map.ncd sd_sdram_vga.ngd sd_sdram_vga.pcf 
+par -w -intstyle ise -ol high -mt off sd_sdram_vga_map.ncd sd_sdram_vga.ncd sd_sdram_vga.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml sd_sdram_vga.twx sd_sdram_vga.ncd -o sd_sdram_vga.twr sd_sdram_vga.pcf -ucf sd_sdram_vga.ucf 
+bitgen -intstyle ise -f sd_sdram_vga.ut sd_sdram_vga.ncd 
+xst -intstyle ise -ifn "E:/Project/AX309/Verilog/sd_sdram_vga/sd_sdram_vga.xst" -ofn "E:/Project/AX309/Verilog/sd_sdram_vga/sd_sdram_vga.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc sd_sdram_vga.ucf -p xc6slx9-ftg256-2 sd_sdram_vga.ngc sd_sdram_vga.ngd  
+map -intstyle ise -p xc6slx9-ftg256-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o sd_sdram_vga_map.ncd sd_sdram_vga.ngd sd_sdram_vga.pcf 
+par -w -intstyle ise -ol high -mt off sd_sdram_vga_map.ncd sd_sdram_vga.ncd sd_sdram_vga.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml sd_sdram_vga.twx sd_sdram_vga.ncd -o sd_sdram_vga.twr sd_sdram_vga.pcf -ucf sd_sdram_vga.ucf 
+bitgen -intstyle ise -f sd_sdram_vga.ut sd_sdram_vga.ncd 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc sd_sdram_vga.ucf -p xc6slx9-ftg256-2 sd_sdram_vga.ngc sd_sdram_vga.ngd  
+map -intstyle ise -p xc6slx9-ftg256-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o sd_sdram_vga_map.ncd sd_sdram_vga.ngd sd_sdram_vga.pcf 
+par -w -intstyle ise -ol high -mt off sd_sdram_vga_map.ncd sd_sdram_vga.ncd sd_sdram_vga.pcf 
+bitgen -intstyle ise -f sd_sdram_vga.ut sd_sdram_vga.ncd 
+xst -intstyle ise -ifn "E:/Project/AX309/Verilog/16_sd_sdram_vga/sd_sdram_vga.xst" -ofn "E:/Project/AX309/Verilog/16_sd_sdram_vga/sd_sdram_vga.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc sd_sdram_vga.ucf -p xc6slx9-ftg256-2 sd_sdram_vga.ngc sd_sdram_vga.ngd  
+map -intstyle ise -p xc6slx9-ftg256-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o sd_sdram_vga_map.ncd sd_sdram_vga.ngd sd_sdram_vga.pcf 
+par -w -intstyle ise -ol high -mt off sd_sdram_vga_map.ncd sd_sdram_vga.ncd sd_sdram_vga.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml sd_sdram_vga.twx sd_sdram_vga.ncd -o sd_sdram_vga.twr sd_sdram_vga.pcf -ucf sd_sdram_vga.ucf 
+bitgen -intstyle ise -f sd_sdram_vga.ut sd_sdram_vga.ncd 
+xst -intstyle ise -ifn "E:/Project/AX309/Verilog/16_sd_sdram_vga/sd_sdram_vga.xst" -ofn "E:/Project/AX309/Verilog/16_sd_sdram_vga/sd_sdram_vga.syr" 
+xst -intstyle ise -ifn "E:/Project/AX309/Verilog/16_sd_sdram_vga/sd_sdram_vga.xst" -ofn "E:/Project/AX309/Verilog/16_sd_sdram_vga/sd_sdram_vga.syr" 
+xst -intstyle ise -ifn "E:/Project/AX309/Verilog/16_sd_sdram_vga/sd_sdram_vga.xst" -ofn "E:/Project/AX309/Verilog/16_sd_sdram_vga/sd_sdram_vga.syr" 
+xst -intstyle ise -ifn "E:/Project/AX309/Verilog/16_sd_sdram_vga/sd_sdram_vga.xst" -ofn "E:/Project/AX309/Verilog/16_sd_sdram_vga/sd_sdram_vga.syr" 
+xst -intstyle ise -ifn "E:/Project/AX309/Verilog/16_sd_sdram_vga/sd_sdram_vga.xst" -ofn "E:/Project/AX309/Verilog/16_sd_sdram_vga/sd_sdram_vga.syr" 
+xst -intstyle ise -ifn "E:/Project/AX309/Verilog/16_sd_sdram_vga/sd_sdram_vga.xst" -ofn "E:/Project/AX309/Verilog/16_sd_sdram_vga/sd_sdram_vga.syr" 
+xst -intstyle ise -ifn "E:/Project/AX309/Verilog/16_sd_sdram_vga/sd_sdram_vga.xst" -ofn "E:/Project/AX309/Verilog/16_sd_sdram_vga/sd_sdram_vga.syr" 
+xst -intstyle ise -ifn "E:/Project/AX309/Verilog/16_sd_sdram_vga/sd_sdram_vga.xst" -ofn "E:/Project/AX309/Verilog/16_sd_sdram_vga/sd_sdram_vga.syr" 
+xst -intstyle ise -ifn "E:/Project/AX309/Verilog/16_sd_sdram_vga/sd_sdram_vga.xst" -ofn "E:/Project/AX309/Verilog/16_sd_sdram_vga/sd_sdram_vga.syr" 
+xst -intstyle ise -ifn "E:/Project/AX309/Verilog/16_sd_sdram_vga/sd_sdram_vga.xst" -ofn "E:/Project/AX309/Verilog/16_sd_sdram_vga/sd_sdram_vga.syr" 
+xst -intstyle ise -ifn "E:/Project/AX309/Verilog/16_sd_sdram_vga/sd_sdram_vga.xst" -ofn "E:/Project/AX309/Verilog/16_sd_sdram_vga/sd_sdram_vga.syr" 
+xst -intstyle ise -ifn "E:/Project/AX309/Verilog/16_sd_sdram_vga/sd_sdram_vga.xst" -ofn "E:/Project/AX309/Verilog/16_sd_sdram_vga/sd_sdram_vga.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc sd_sdram_vga.ucf -p xc6slx9-ftg256-2 sd_sdram_vga.ngc sd_sdram_vga.ngd  
+map -intstyle ise -p xc6slx9-ftg256-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o sd_sdram_vga_map.ncd sd_sdram_vga.ngd sd_sdram_vga.pcf 
+par -w -intstyle ise -ol high -mt off sd_sdram_vga_map.ncd sd_sdram_vga.ncd sd_sdram_vga.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml sd_sdram_vga.twx sd_sdram_vga.ncd -o sd_sdram_vga.twr sd_sdram_vga.pcf -ucf sd_sdram_vga.ucf 
+bitgen -intstyle ise -f sd_sdram_vga.ut sd_sdram_vga.ncd 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc sd_sdram_vga.ucf -p xc6slx9-ftg256-2 sd_sdram_vga.ngc sd_sdram_vga.ngd  
+map -intstyle ise -p xc6slx9-ftg256-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o sd_sdram_vga_map.ncd sd_sdram_vga.ngd sd_sdram_vga.pcf 
+par -w -intstyle ise -ol high -mt off sd_sdram_vga_map.ncd sd_sdram_vga.ncd sd_sdram_vga.pcf 
+bitgen -intstyle ise -f sd_sdram_vga.ut sd_sdram_vga.ncd 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc sd_sdram_vga.ucf -p xc6slx9-ftg256-2 sd_sdram_vga.ngc sd_sdram_vga.ngd  
+map -intstyle ise -p xc6slx9-ftg256-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o sd_sdram_vga_map.ncd sd_sdram_vga.ngd sd_sdram_vga.pcf 
+par -w -intstyle ise -ol high -mt off sd_sdram_vga_map.ncd sd_sdram_vga.ncd sd_sdram_vga.pcf 
+bitgen -intstyle ise -f sd_sdram_vga.ut sd_sdram_vga.ncd 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc sd_sdram_vga.ucf -p xc6slx9-ftg256-2 sd_sdram_vga.ngc sd_sdram_vga.ngd  
+map -intstyle ise -p xc6slx9-ftg256-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o sd_sdram_vga_map.ncd sd_sdram_vga.ngd sd_sdram_vga.pcf 
+par -w -intstyle ise -ol high -mt off sd_sdram_vga_map.ncd sd_sdram_vga.ncd sd_sdram_vga.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml sd_sdram_vga.twx sd_sdram_vga.ncd -o sd_sdram_vga.twr sd_sdram_vga.pcf -ucf sd_sdram_vga.ucf 
+bitgen -intstyle ise -f sd_sdram_vga.ut sd_sdram_vga.ncd 
+xst -intstyle ise -ifn "E:/Project/AX309/CD/09_VERILOG/19_sd_sdram_vga/sd_sdram_vga.xst" -ofn "E:/Project/AX309/CD/09_VERILOG/19_sd_sdram_vga/sd_sdram_vga.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc sd_sdram_vga.ucf -p xc6slx9-ftg256-2 sd_sdram_vga.ngc sd_sdram_vga.ngd  
+map -intstyle ise -p xc6slx9-ftg256-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o sd_sdram_vga_map.ncd sd_sdram_vga.ngd sd_sdram_vga.pcf 
+par -w -intstyle ise -ol high -mt off sd_sdram_vga_map.ncd sd_sdram_vga.ncd sd_sdram_vga.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml sd_sdram_vga.twx sd_sdram_vga.ncd -o sd_sdram_vga.twr sd_sdram_vga.pcf -ucf sd_sdram_vga.ucf 
+bitgen -intstyle ise -f sd_sdram_vga.ut sd_sdram_vga.ncd 
+xst -intstyle ise -ifn "E:/BaiduYunDownload/AX309.160128/AX309/09_VERILOG/20_sd_sdram_vga/sd_sdram_vga.xst" -ofn "E:/BaiduYunDownload/AX309.160128/AX309/09_VERILOG/20_sd_sdram_vga/sd_sdram_vga.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc sd_sdram_vga.ucf -p xc6slx9-ftg256-2 sd_sdram_vga.ngc sd_sdram_vga.ngd  
+map -intstyle ise -p xc6slx9-ftg256-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o sd_sdram_vga_map.ncd sd_sdram_vga.ngd sd_sdram_vga.pcf 
+par -w -intstyle ise -ol high -mt off sd_sdram_vga_map.ncd sd_sdram_vga.ncd sd_sdram_vga.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml sd_sdram_vga.twx sd_sdram_vga.ncd -o sd_sdram_vga.twr sd_sdram_vga.pcf -ucf sd_sdram_vga.ucf 
+bitgen -intstyle ise -f sd_sdram_vga.ut sd_sdram_vga.ncd 

@@ -1,0 +1,11 @@
+Release 14.7 Drc P.20131013 (nt64)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+
+Fri May 26 11:29:51 2017
+
+drc -z lcd_test.ncd lcd_test.pcf
+
+INFO:PhysDesignRules:1861 - To achieve optimal frequency synthesis performance
+   with the CLKFX and CLKFX180 outputs of the DCM comp pll_inst/dcm_sp_inst,
+   consult the device Data Sheet.
+DRC detected 0 errors and 0 warnings.
