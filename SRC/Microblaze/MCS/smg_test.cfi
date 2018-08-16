@@ -1,0 +1,11 @@
+# PROMGEN: Xilinx Prom Generator P.20131013
+# Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+
+SOFTWARE_VERSION P.20131013
+DATE            07/27/2015 - 14:42
+SOURCE          E:\Project\AX309\Microblaze\MCS\smg_test.mcs
+DEVICE          2048K
+DATA_WIDTH      1
+FILL_DATA       0xFF
+SIGNATURE       0x1B2EB57B
+START_ADDRESS   0x00000000 END_ADDRESS 0x00053393 DIRECTION_UP   "E:/Project/AX309/Microblaze/implementation/download_cclktemp.bit" 6slx9ftg256

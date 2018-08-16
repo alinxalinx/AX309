@@ -1,0 +1,10 @@
+Release 14.7 - libgen Xilinx EDK 14.7 Build EDK_P.20131013
+ (nt64)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+
+Command Line: libgen -hw ../Microblaze_hw_platform/system.xml -pe microblaze_0
+-log libgen.log system.mss 
+
+ERROR:EDK:410 - spi - E:\Project\AX309\Microblaze\SDK\sd_test_bsp\system.mss
+   line 99 - No IP instance named spi_sd is present in the hardware!
+ERROR:EDK:1206 - Errors occured while parsing MSS file.

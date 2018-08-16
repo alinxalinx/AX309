@@ -1,0 +1,14 @@
+set -tmpdir E:\Project\AX309\Microblaze\synthesis\xst_temp_dir\
+run
+-opt_mode speed
+-netlist_hierarchy as_optimized
+-opt_level 1
+-p xc6slx9ftg256-2
+-top system_axi_rtc_wrapper
+-ifmt MIXED
+-ifn system_axi_rtc_wrapper_xst.prj
+-ofn ../implementation/system_axi_rtc_wrapper.ngc
+-hierarchy_separator /
+-iobuf NO
+-sd {../implementation}
+-vlgincdir {"E:\Project\AX309\Microblaze\pcores\" "C:\Xilinx\14.7\ISE_DS\EDK\hw\XilinxBFMinterface\pcores\" "C:\Xilinx\14.7\ISE_DS\EDK\hw\XilinxProcessorIPLib\pcores\" }

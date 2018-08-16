@@ -1,0 +1,17 @@
+/*smg display test */
+
+#include <stdio.h>
+#include "platform.h"
+#include "xparameters.h"
+#include "smg_ip.h"
+
+void print(char *str);
+
+int main()
+{
+    init_platform();
+
+    SMG_IP_mReset(XPAR_SMG_IP_0_BASEADDR);	// Reset USB IP
+
+    return 0;
+}

@@ -1,0 +1,11 @@
+-batch 
+-create vga_ip 
+-ver 1.00.a 
+-dir "E:\Project\AX309\Microblaze\Microblaze" 
+-lang verilog 
+-bus axi4lite s 
+-rst 
+-reg 4 
+-xps 
+-ise 
+-driver 

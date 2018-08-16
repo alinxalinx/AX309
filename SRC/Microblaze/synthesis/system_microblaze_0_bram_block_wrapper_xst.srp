@@ -1,0 +1,353 @@
+Release 14.7 - xst P.20131013 (nt64)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+--> Parameter TMPDIR set to E:\Project\AX309\Microblaze\synthesis\xst_temp_dir\
+
+
+Total REAL time to Xst completion: 1.00 secs
+Total CPU time to Xst completion: 0.07 secs
+ 
+--> 
+TABLE OF CONTENTS
+  1) Synthesis Options Summary
+  2) HDL Parsing
+  3) HDL Elaboration
+  4) HDL Synthesis
+       4.1) HDL Synthesis Report
+  5) Advanced HDL Synthesis
+       5.1) Advanced HDL Synthesis Report
+  6) Low Level Synthesis
+  7) Partition Report
+  8) Design Summary
+       8.1) Primitive and Black Box Usage
+       8.2) Device utilization summary
+       8.3) Partition Resource Summary
+       8.4) Timing Report
+            8.4.1) Clock Information
+            8.4.2) Asynchronous Control Signals Information
+            8.4.3) Timing Summary
+            8.4.4) Timing Details
+            8.4.5) Cross Clock Domains Report
+
+
+=========================================================================
+*                      Synthesis Options Summary                        *
+=========================================================================
+---- Source Parameters
+Input Format                       : MIXED
+Input File Name                    : "system_microblaze_0_bram_block_wrapper_xst.prj"
+Verilog Include Directory          : {"E:\Project\AX309\Microblaze\pcores\" "C:\Xilinx\14.7\ISE_DS\EDK\hw\XilinxBFMinterface\pcores\" "C:\Xilinx\14.7\ISE_DS\EDK\hw\XilinxProcessorIPLib\pcores\" }
+
+---- Target Parameters
+Target Device                      : xc6slx9ftg256-2
+Output File Name                   : "../implementation/system_microblaze_0_bram_block_wrapper.ngc"
+
+---- Source Options
+Top Module Name                    : system_microblaze_0_bram_block_wrapper
+
+---- Target Options
+Add IO Buffers                     : NO
+
+---- General Options
+Optimization Goal                  : speed
+Netlist Hierarchy                  : as_optimized
+Optimization Effort                : 1
+Hierarchy Separator                : /
+
+---- Other Options
+Cores Search Directories           : {../implementation}
+
+=========================================================================
+
+
+=========================================================================
+*                          HDL Parsing                                  *
+=========================================================================
+Parsing VHDL file "E:/Project/AX309/Microblaze/hdl/elaborate/microblaze_0_bram_block_elaborate_v1_00_a/hdl/vhdl/microblaze_0_bram_block_elaborate.vhd" into library microblaze_0_bram_block_elaborate_v1_00_a
+Parsing entity <microblaze_0_bram_block_elaborate>.
+Parsing architecture <STRUCTURE> of entity <microblaze_0_bram_block_elaborate>.
+Parsing VHDL file "E:\Project\AX309\Microblaze\hdl\system_microblaze_0_bram_block_wrapper.vhd" into library work
+Parsing entity <system_microblaze_0_bram_block_wrapper>.
+Parsing architecture <STRUCTURE> of entity <system_microblaze_0_bram_block_wrapper>.
+
+=========================================================================
+*                            HDL Elaboration                            *
+=========================================================================
+
+Elaborating entity <system_microblaze_0_bram_block_wrapper> (architecture <STRUCTURE>) from library <work>.
+
+Elaborating entity <microblaze_0_bram_block_elaborate> (architecture <STRUCTURE>) with generics from library <microblaze_0_bram_block_elaborate_v1_00_a>.
+WARNING:HDLCompiler:89 - "E:/Project/AX309/Microblaze/hdl/elaborate/microblaze_0_bram_block_elaborate_v1_00_a/hdl/vhdl/microblaze_0_bram_block_elaborate.vhd" Line 42: <ramb16bwer> remains a black-box since it has no binding entity.
+
+=========================================================================
+*                           HDL Synthesis                               *
+=========================================================================
+
+Synthesizing Unit <system_microblaze_0_bram_block_wrapper>.
+    Related source file is "E:\Project\AX309\Microblaze\hdl\system_microblaze_0_bram_block_wrapper.vhd".
+    Set property "KEEP_HIERARCHY = YES".
+    Summary:
+	no macro.
+Unit <system_microblaze_0_bram_block_wrapper> synthesized.
+
+Synthesizing Unit <microblaze_0_bram_block_elaborate>.
+    Related source file is "E:/Project/AX309/Microblaze/hdl/elaborate/microblaze_0_bram_block_elaborate_v1_00_a/hdl/vhdl/microblaze_0_bram_block_elaborate.vhd".
+        C_MEMSIZE = 16384
+        C_PORT_DWIDTH = 32
+        C_PORT_AWIDTH = 32
+        C_NUM_WE = 4
+        C_FAMILY = "spartan6"
+    Set property "KEEP_HIERARCHY = YES".
+    Set property "BMM_INFO =  " for instance <ramb16bwer_0>.
+    Set property "BMM_INFO =  " for instance <ramb16bwer_1>.
+    Set property "BMM_INFO =  " for instance <ramb16bwer_2>.
+    Set property "BMM_INFO =  " for instance <ramb16bwer_3>.
+    Set property "BMM_INFO =  " for instance <ramb16bwer_4>.
+    Set property "BMM_INFO =  " for instance <ramb16bwer_5>.
+    Set property "BMM_INFO =  " for instance <ramb16bwer_6>.
+    Set property "BMM_INFO =  " for instance <ramb16bwer_7>.
+WARNING:Xst:647 - Input <BRAM_Addr_A<0:17>> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <BRAM_Addr_A<30:31>> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <BRAM_Addr_B<0:17>> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <BRAM_Addr_B<30:31>> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+INFO:Xst:3210 - "E:/Project/AX309/Microblaze/hdl/elaborate/microblaze_0_bram_block_elaborate_v1_00_a/hdl/vhdl/microblaze_0_bram_block_elaborate.vhd" line 306: Output port <DOPA> of the instance <ramb16bwer_0> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "E:/Project/AX309/Microblaze/hdl/elaborate/microblaze_0_bram_block_elaborate_v1_00_a/hdl/vhdl/microblaze_0_bram_block_elaborate.vhd" line 306: Output port <DOPB> of the instance <ramb16bwer_0> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "E:/Project/AX309/Microblaze/hdl/elaborate/microblaze_0_bram_block_elaborate_v1_00_a/hdl/vhdl/microblaze_0_bram_block_elaborate.vhd" line 335: Output port <DOPA> of the instance <ramb16bwer_1> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "E:/Project/AX309/Microblaze/hdl/elaborate/microblaze_0_bram_block_elaborate_v1_00_a/hdl/vhdl/microblaze_0_bram_block_elaborate.vhd" line 335: Output port <DOPB> of the instance <ramb16bwer_1> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "E:/Project/AX309/Microblaze/hdl/elaborate/microblaze_0_bram_block_elaborate_v1_00_a/hdl/vhdl/microblaze_0_bram_block_elaborate.vhd" line 364: Output port <DOPA> of the instance <ramb16bwer_2> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "E:/Project/AX309/Microblaze/hdl/elaborate/microblaze_0_bram_block_elaborate_v1_00_a/hdl/vhdl/microblaze_0_bram_block_elaborate.vhd" line 364: Output port <DOPB> of the instance <ramb16bwer_2> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "E:/Project/AX309/Microblaze/hdl/elaborate/microblaze_0_bram_block_elaborate_v1_00_a/hdl/vhdl/microblaze_0_bram_block_elaborate.vhd" line 393: Output port <DOPA> of the instance <ramb16bwer_3> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "E:/Project/AX309/Microblaze/hdl/elaborate/microblaze_0_bram_block_elaborate_v1_00_a/hdl/vhdl/microblaze_0_bram_block_elaborate.vhd" line 393: Output port <DOPB> of the instance <ramb16bwer_3> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "E:/Project/AX309/Microblaze/hdl/elaborate/microblaze_0_bram_block_elaborate_v1_00_a/hdl/vhdl/microblaze_0_bram_block_elaborate.vhd" line 422: Output port <DOPA> of the instance <ramb16bwer_4> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "E:/Project/AX309/Microblaze/hdl/elaborate/microblaze_0_bram_block_elaborate_v1_00_a/hdl/vhdl/microblaze_0_bram_block_elaborate.vhd" line 422: Output port <DOPB> of the instance <ramb16bwer_4> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "E:/Project/AX309/Microblaze/hdl/elaborate/microblaze_0_bram_block_elaborate_v1_00_a/hdl/vhdl/microblaze_0_bram_block_elaborate.vhd" line 451: Output port <DOPA> of the instance <ramb16bwer_5> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "E:/Project/AX309/Microblaze/hdl/elaborate/microblaze_0_bram_block_elaborate_v1_00_a/hdl/vhdl/microblaze_0_bram_block_elaborate.vhd" line 451: Output port <DOPB> of the instance <ramb16bwer_5> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "E:/Project/AX309/Microblaze/hdl/elaborate/microblaze_0_bram_block_elaborate_v1_00_a/hdl/vhdl/microblaze_0_bram_block_elaborate.vhd" line 480: Output port <DOPA> of the instance <ramb16bwer_6> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "E:/Project/AX309/Microblaze/hdl/elaborate/microblaze_0_bram_block_elaborate_v1_00_a/hdl/vhdl/microblaze_0_bram_block_elaborate.vhd" line 480: Output port <DOPB> of the instance <ramb16bwer_6> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "E:/Project/AX309/Microblaze/hdl/elaborate/microblaze_0_bram_block_elaborate_v1_00_a/hdl/vhdl/microblaze_0_bram_block_elaborate.vhd" line 509: Output port <DOPA> of the instance <ramb16bwer_7> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "E:/Project/AX309/Microblaze/hdl/elaborate/microblaze_0_bram_block_elaborate_v1_00_a/hdl/vhdl/microblaze_0_bram_block_elaborate.vhd" line 509: Output port <DOPB> of the instance <ramb16bwer_7> is unconnected or connected to loadless signal.
+    Summary:
+	no macro.
+Unit <microblaze_0_bram_block_elaborate> synthesized.
+
+=========================================================================
+HDL Synthesis Report
+
+Found no macro
+=========================================================================
+
+=========================================================================
+*                       Advanced HDL Synthesis                          *
+=========================================================================
+
+
+=========================================================================
+Advanced HDL Synthesis Report
+
+Found no macro
+=========================================================================
+
+=========================================================================
+*                         Low Level Synthesis                           *
+=========================================================================
+
+Optimizing unit <system_microblaze_0_bram_block_wrapper> ...
+
+Optimizing unit <microblaze_0_bram_block_elaborate> ...
+
+Mapping all equations...
+Building and optimizing final netlist ...
+Found area constraint ratio of 100 (+ 0) on block system_microblaze_0_bram_block_wrapper, actual ratio is 0.
+
+Final Macro Processing ...
+
+=========================================================================
+Final Register Report
+
+Found no macro
+=========================================================================
+
+=========================================================================
+*                           Partition Report                            *
+=========================================================================
+
+Partition Implementation Status
+-------------------------------
+
+  No Partitions were found in this design.
+
+-------------------------------
+
+=========================================================================
+*                            Design Summary                             *
+=========================================================================
+
+Top Level Output File Name         : system_microblaze_0_bram_block_wrapper.ngc
+
+Primitive and Black Box Usage:
+------------------------------
+# BELS                             : 1
+#      GND                         : 1
+# RAMS                             : 8
+#      RAMB16BWER                  : 8
+
+Device utilization summary:
+---------------------------
+
+Selected Device : 6slx9ftg256-2 
+
+
+Slice Logic Utilization: 
+
+Slice Logic Distribution: 
+ Number of LUT Flip Flop pairs used:      0
+   Number with an unused Flip Flop:       0  out of      0         
+   Number with an unused LUT:             0  out of      0         
+   Number of fully used LUT-FF pairs:     0  out of      0         
+   Number of unique control sets:         0
+
+IO Utilization: 
+ Number of IOs:                         206
+ Number of bonded IOBs:                   0  out of    186     0%  
+
+Specific Feature Utilization:
+ Number of Block RAM/FIFO:                8  out of     32    25%  
+    Number using Block RAM only:          8
+
+---------------------------
+Partition Resource Summary:
+---------------------------
+
+  No Partitions were found in this design.
+
+---------------------------
+
+
+=========================================================================
+Timing Report
+
+NOTE: THESE TIMING NUMBERS ARE ONLY A SYNTHESIS ESTIMATE.
+      FOR ACCURATE TIMING INFORMATION PLEASE REFER TO THE TRACE REPORT
+      GENERATED AFTER PLACE-and-ROUTE.
+
+Clock Information:
+------------------
+-----------------------------------+-------------------------------------------+-------+
+Clock Signal                       | Clock buffer(FF name)                     | Load  |
+-----------------------------------+-------------------------------------------+-------+
+BRAM_Clk_A                         | NONE(microblaze_0_bram_block/ramb16bwer_0)| 8     |
+BRAM_Clk_B                         | NONE(microblaze_0_bram_block/ramb16bwer_0)| 8     |
+-----------------------------------+-------------------------------------------+-------+
+INFO:Xst:2169 - HDL ADVISOR - Some clock signals were not automatically buffered by XST with BUFG/BUFR resources. Please use the buffer_type constraint in order to insert these buffers to the clock signals to help prevent skew problems.
+
+Asynchronous Control Signals Information:
+----------------------------------------
+No asynchronous control signals found in this design
+
+Timing Summary:
+---------------
+Speed Grade: -2
+
+   Minimum period: No path found
+   Minimum input arrival time before clock: 0.400ns
+   Maximum output required time after clock: 2.100ns
+   Maximum combinational path delay: No path found
+
+Timing Details:
+---------------
+All values displayed in nanoseconds (ns)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'BRAM_Clk_B'
+  Total number of paths / destination ports: 176 / 176
+-------------------------------------------------------------------------
+Offset:              0.400ns (Levels of Logic = 1)
+  Source:            BRAM_Addr_B<18> (PAD)
+  Destination:       microblaze_0_bram_block/ramb16bwer_0 (RAM)
+  Destination Clock: BRAM_Clk_B rising
+
+  Data Path: BRAM_Addr_B<18> to microblaze_0_bram_block/ramb16bwer_0
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     begin scope: 'microblaze_0_bram_block:BRAM_Addr_B<18>'
+     RAMB16BWER:ADDRB13        0.400          ramb16bwer_0
+    ----------------------------------------
+    Total                      0.400ns (0.400ns logic, 0.000ns route)
+                                       (100.0% logic, 0.0% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'BRAM_Clk_A'
+  Total number of paths / destination ports: 176 / 176
+-------------------------------------------------------------------------
+Offset:              0.400ns (Levels of Logic = 1)
+  Source:            BRAM_Addr_A<18> (PAD)
+  Destination:       microblaze_0_bram_block/ramb16bwer_0 (RAM)
+  Destination Clock: BRAM_Clk_A rising
+
+  Data Path: BRAM_Addr_A<18> to microblaze_0_bram_block/ramb16bwer_0
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     begin scope: 'microblaze_0_bram_block:BRAM_Addr_A<18>'
+     RAMB16BWER:ADDRA13        0.400          ramb16bwer_0
+    ----------------------------------------
+    Total                      0.400ns (0.400ns logic, 0.000ns route)
+                                       (100.0% logic, 0.0% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'BRAM_Clk_A'
+  Total number of paths / destination ports: 32 / 32
+-------------------------------------------------------------------------
+Offset:              2.100ns (Levels of Logic = 1)
+  Source:            microblaze_0_bram_block/ramb16bwer_0 (RAM)
+  Destination:       BRAM_Din_A<0> (PAD)
+  Source Clock:      BRAM_Clk_A rising
+
+  Data Path: microblaze_0_bram_block/ramb16bwer_0 to BRAM_Din_A<0>
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     RAMB16BWER:CLKA->DOA3    0   2.100   0.000  ramb16bwer_0 (BRAM_Din_A<0>)
+     end scope: 'microblaze_0_bram_block:BRAM_Din_A<0>'
+    ----------------------------------------
+    Total                      2.100ns (2.100ns logic, 0.000ns route)
+                                       (100.0% logic, 0.0% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'BRAM_Clk_B'
+  Total number of paths / destination ports: 32 / 32
+-------------------------------------------------------------------------
+Offset:              2.100ns (Levels of Logic = 1)
+  Source:            microblaze_0_bram_block/ramb16bwer_0 (RAM)
+  Destination:       BRAM_Din_B<0> (PAD)
+  Source Clock:      BRAM_Clk_B rising
+
+  Data Path: microblaze_0_bram_block/ramb16bwer_0 to BRAM_Din_B<0>
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     RAMB16BWER:CLKB->DOB3    0   2.100   0.000  ramb16bwer_0 (BRAM_Din_B<0>)
+     end scope: 'microblaze_0_bram_block:BRAM_Din_B<0>'
+    ----------------------------------------
+    Total                      2.100ns (2.100ns logic, 0.000ns route)
+                                       (100.0% logic, 0.0% route)
+
+=========================================================================
+
+Cross Clock Domains Report:
+--------------------------
+
+=========================================================================
+
+
+Total REAL time to Xst completion: 5.00 secs
+Total CPU time to Xst completion: 4.28 secs
+ 
+--> 
+
+Total memory usage is 271712 kilobytes
+
+Number of errors   :    0 (   0 filtered)
+Number of warnings :    5 (   0 filtered)
+Number of infos    :   17 (   0 filtered)
+

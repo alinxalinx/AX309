@@ -1,0 +1,2 @@
+INST "microblaze_0_dlmb/POR_FF_I" TNM = "microblaze_0_dlmb_POR_FF_I_dst";
+TIMESPEC "TS_TIG_microblaze_0_dlmb_POR_FF_I" = FROM FFS TO "microblaze_0_dlmb_POR_FF_I_dst" TIG;

@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- IMPORTANT: This is an internal file that has been generated
+     by the Xilinx ISE software.  Any direct editing or
+     changes made to this file may result in unpredictable
+     behavior or data corruption.  It is strongly advised that
+     users do not edit the contents of this file. -->
+<messages>
+<msg type="warning" file="ConstraintSystem" num="192" delta="new" >The <arg fmt="%s" index="1">TNM</arg> &apos;<arg fmt="%s" index="2">D2_CLK</arg>&apos;, does not directly or indirectly drive any flip-flops, latches and/or RAMS and cannot be actively used by the referencing <arg fmt="%s" index="3">TIg</arg> constraint &apos;<arg fmt="%s" index="4"></arg>&apos;. If clock manager blocks are directly or indirectly driven, a new TNM constraint will not be derived since the none of the referencing constraints are a PERIOD constraint. This TNM is used in the following user groups and/or specifications:
+<arg fmt="%s" index="5">&lt;TIMESPEC TS_D2_TO_T2 = FROM D2_CLK TO &quot;FFS&quot; TIG;&gt; [E:/Project/AX309/Microblaze/implementation/system_chipscope_ila_0_wrapper.ncf(6)]
+&lt;TIMESPEC TS_J2_TO_D2 = FROM &quot;FFS&quot; TO D2_CLK TIG;&gt; [E:/Project/AX309/Microblaze/implementation/system_chipscope_ila_0_wrapper.ncf(7)]
+&lt;TIMESPEC TS_J3_TO_D2 = FROM &quot;FFS&quot; TO D2_CLK TIG;&gt; [E:/Project/AX309/Microblaze/implementation/system_chipscope_ila_0_wrapper.ncf(8)]
+&lt;TIMESPEC TS_J4_TO_D2 = FROM &quot;FFS&quot; TO D2_CLK TIG;&gt; [E:/Project/AX309/Microblaze/implementation/system_chipscope_ila_0_wrapper.ncf(9)]
+</arg></msg>
+
+<msg type="warning" file="ConstraintSystem" num="197" delta="new" >The following specification is invalid because the referenced TNM constraint was removed:
+<arg fmt="%s" index="1">&lt;TIMESPEC TS_D2_TO_T2 = FROM D2_CLK TO &quot;FFS&quot; TIG;&gt; [E:/Project/AX309/Microblaze/implementation/system_chipscope_ila_0_wrapper.ncf(6)]</arg>
+</msg>
+
+<msg type="warning" file="ConstraintSystem" num="197" delta="new" >The following specification is invalid because the referenced TNM constraint was removed:
+<arg fmt="%s" index="1">&lt;TIMESPEC TS_J2_TO_D2 = FROM &quot;FFS&quot; TO D2_CLK TIG;&gt; [E:/Project/AX309/Microblaze/implementation/system_chipscope_ila_0_wrapper.ncf(7)]</arg>
+</msg>
+
+<msg type="warning" file="ConstraintSystem" num="197" delta="new" >The following specification is invalid because the referenced TNM constraint was removed:
+<arg fmt="%s" index="1">&lt;TIMESPEC TS_J3_TO_D2 = FROM &quot;FFS&quot; TO D2_CLK TIG;&gt; [E:/Project/AX309/Microblaze/implementation/system_chipscope_ila_0_wrapper.ncf(8)]</arg>
+</msg>
+
+<msg type="warning" file="ConstraintSystem" num="197" delta="new" >The following specification is invalid because the referenced TNM constraint was removed:
+<arg fmt="%s" index="1">&lt;TIMESPEC TS_J4_TO_D2 = FROM &quot;FFS&quot; TO D2_CLK TIG;&gt; [E:/Project/AX309/Microblaze/implementation/system_chipscope_ila_0_wrapper.ncf(9)]</arg>
+</msg>
+
+<msg type="info" file="NgdBuild" num="981" delta="new" >Could not find any associations for the following constraint:
+    &apos;<arg fmt="%s" index="1">&lt;INST &quot;U0/*/U_STAT/U_DIRTY_LDC&quot; TNM = D2_CLK;&gt; [E:/Project/AX309/Microblaze/implementation/system_chipscope_ila_0_wrapper.ncf(5)]</arg>&apos;
+</msg>
+
+<msg type="warning" file="ConstraintSystem" num="190" delta="new" >The <arg fmt="%s" index="1">TNM</arg> &apos;<arg fmt="%s" index="2">J_CLK</arg>&apos;, does not directly or indirectly drive any flip-flops, latches and/or RAMS and cannot be actively used by the referencing <arg fmt="%s" index="3">Period</arg> constraint &apos;<arg fmt="%s" index="4">TS_J_CLK</arg>&apos;. If clock manager blocks are directly or indirectly driven, a new TNM and PERIOD are derived only if the PERIOD constraint is the only referencing constraint and if an output of the clock manager block drives flip-flops, latches or RAMs.  
+This TNM is used in the following user groups and/or specifications:
+<arg fmt="%s" index="5">&lt;TIMESPEC TS_J_CLK = PERIOD J_CLK 30 ns ;&gt; [E:/Project/AX309/Microblaze/implementation/system_chipscope_icon_0_wrapper.ncf(2)]
+&lt;TIMESPEC TS_U_TO_J = FROM U_CLK TO J_CLK 15 ns ;&gt; [E:/Project/AX309/Microblaze/implementation/system_chipscope_icon_0_wrapper.ncf(6)]
+&lt;TIMESPEC TS_J_TO_D = FROM J_CLK TO D_CLK TIG ;&gt; [E:/Project/AX309/Microblaze/implementation/system_chipscope_icon_0_wrapper.ncf(8)]
+&lt;TIMESPEC TS_D_TO_J = FROM D_CLK TO J_CLK TIG ;&gt; [E:/Project/AX309/Microblaze/implementation/system_chipscope_icon_0_wrapper.ncf(9)]
+</arg></msg>
+
+<msg type="warning" file="ConstraintSystem" num="197" delta="new" >The following specification is invalid because the referenced TNM constraint was removed:
+<arg fmt="%s" index="1">&lt;TIMESPEC TS_J_CLK = PERIOD J_CLK 30 ns ;&gt; [E:/Project/AX309/Microblaze/implementation/system_chipscope_icon_0_wrapper.ncf(2)]</arg>
+</msg>
+
+<msg type="warning" file="ConstraintSystem" num="197" delta="new" >The following specification is invalid because the referenced TNM constraint was removed:
+<arg fmt="%s" index="1">&lt;TIMESPEC TS_U_TO_J = FROM U_CLK TO J_CLK 15 ns ;&gt; [E:/Project/AX309/Microblaze/implementation/system_chipscope_icon_0_wrapper.ncf(6)]</arg>
+</msg>
+
+<msg type="warning" file="ConstraintSystem" num="197" delta="new" >The following specification is invalid because the referenced TNM constraint was removed:
+<arg fmt="%s" index="1">&lt;TIMESPEC TS_J_TO_D = FROM J_CLK TO D_CLK TIG ;&gt; [E:/Project/AX309/Microblaze/implementation/system_chipscope_icon_0_wrapper.ncf(8)]</arg>
+</msg>
+
+<msg type="warning" file="ConstraintSystem" num="197" delta="new" >The following specification is invalid because the referenced TNM constraint was removed:
+<arg fmt="%s" index="1">&lt;TIMESPEC TS_D_TO_J = FROM D_CLK TO J_CLK TIG ;&gt; [E:/Project/AX309/Microblaze/implementation/system_chipscope_icon_0_wrapper.ncf(9)]</arg>
+</msg>
+
+<msg type="warning" file="ConstraintSystem" num="192" delta="new" >The <arg fmt="%s" index="1">TNM</arg> &apos;<arg fmt="%s" index="2">U_CLK</arg>&apos;, does not directly or indirectly drive any flip-flops, latches and/or RAMS and cannot be actively used by the referencing <arg fmt="%s" index="3">MaxDelay</arg> constraint &apos;<arg fmt="%s" index="4">TS_U_TO_J</arg>&apos;. If clock manager blocks are directly or indirectly driven, a new TNM constraint will not be derived since the none of the referencing constraints are a PERIOD constraint. This TNM is used in the following user groups and/or specifications:
+<arg fmt="%s" index="5">&lt;TIMESPEC TS_U_TO_J = FROM U_CLK TO J_CLK 15 ns ;&gt; [E:/Project/AX309/Microblaze/implementation/system_chipscope_icon_0_wrapper.ncf(6)]
+&lt;TIMESPEC TS_U_TO_U = FROM U_CLK TO U_CLK 15 ns ;&gt; [E:/Project/AX309/Microblaze/implementation/system_chipscope_icon_0_wrapper.ncf(7)]
+</arg></msg>
+
+<msg type="warning" file="ConstraintSystem" num="197" delta="new" >The following specification is invalid because the referenced TNM constraint was removed:
+<arg fmt="%s" index="1">&lt;TIMESPEC TS_U_TO_J = FROM U_CLK TO J_CLK 15 ns ;&gt; [E:/Project/AX309/Microblaze/implementation/system_chipscope_icon_0_wrapper.ncf(6)]</arg>
+</msg>
+
+<msg type="warning" file="ConstraintSystem" num="197" delta="new" >The following specification is invalid because the referenced TNM constraint was removed:
+<arg fmt="%s" index="1">&lt;TIMESPEC TS_U_TO_U = FROM U_CLK TO U_CLK 15 ns ;&gt; [E:/Project/AX309/Microblaze/implementation/system_chipscope_icon_0_wrapper.ncf(7)]</arg>
+</msg>
+
+<msg type="info" file="NgdBuild" num="981" delta="new" >Could not find any associations for the following constraint:
+    &apos;<arg fmt="%s" index="1">&lt;NET &quot;U0/U_ICON/*/iDRCK_LOCAL&quot; TNM_NET = J_CLK ;&gt; [E:/Project/AX309/Microblaze/implementation/system_chipscope_icon_0_wrapper.ncf(1)]</arg>&apos;
+</msg>
+
+<msg type="info" file="NgdBuild" num="981" delta="new" >Could not find any associations for the following constraint:
+    &apos;<arg fmt="%s" index="1">&lt;NET &quot;U0/iUPDATE_OUT&quot; TNM_NET = U_CLK ;&gt; [E:/Project/AX309/Microblaze/implementation/system_chipscope_icon_0_wrapper.ncf(4)]</arg>&apos;
+</msg>
+
+<msg type="warning" file="NgdBuild" num="981" delta="new" >Could not find any associations for the following constraint:
+    &apos;<arg fmt="%s" index="1">&lt;NET &quot;U0/iSHIFT_OUT&quot; TIG ;&gt; [E:/Project/AX309/Microblaze/implementation/system_chipscope_icon_0_wrapper.ncf(5)]</arg>&apos;
+</msg>
+
+<msg type="warning" file="ConstraintSystem" num="56" delta="new" >Constraint <arg fmt="%s" index="1">&lt;TIMESPEC TS_J_CLK = PERIOD &quot;J_CLK&quot; 30000.000000000 pS HIGH 50.000000000 %;&gt;</arg>: Unable to find an active <arg fmt="%s" index="2">&apos;TNM&apos; or &apos;TimeGrp&apos;</arg> constraint named &apos;<arg fmt="%s" index="3">J_CLK</arg>&apos;.
+</msg>
+
+<msg type="warning" file="ConstraintSystem" num="56" delta="new" >Constraint <arg fmt="%s" index="1">&lt;TIMESPEC TS_U_TO_J = FROM &quot;U_CLK&quot; TO &quot;J_CLK&quot; 15000.000000000 pS;&gt;</arg>: Unable to find an active <arg fmt="%s" index="2">&apos;TimeGrp&apos; or &apos;TNM&apos; or &apos;TPSync&apos;</arg> constraint named &apos;<arg fmt="%s" index="3">U_CLK</arg>&apos;.
+</msg>
+
+<msg type="warning" file="ConstraintSystem" num="56" delta="new" >Constraint <arg fmt="%s" index="1">&lt;TIMESPEC TS_U_TO_J = FROM &quot;U_CLK&quot; TO &quot;J_CLK&quot; 15000.000000000 pS;&gt;</arg>: Unable to find an active <arg fmt="%s" index="2">&apos;TimeGrp&apos; or &apos;TNM&apos; or &apos;TPSync&apos;</arg> constraint named &apos;<arg fmt="%s" index="3">J_CLK</arg>&apos;.
+</msg>
+
+<msg type="warning" file="ConstraintSystem" num="56" delta="new" >Constraint <arg fmt="%s" index="1">&lt;TIMESPEC TS_U_TO_U = FROM &quot;U_CLK&quot; TO &quot;U_CLK&quot; 15000.000000000 pS;&gt;</arg>: Unable to find an active <arg fmt="%s" index="2">&apos;TimeGrp&apos; or &apos;TNM&apos; or &apos;TPSync&apos;</arg> constraint named &apos;<arg fmt="%s" index="3">U_CLK</arg>&apos;.
+</msg>
+
+<msg type="warning" file="ConstraintSystem" num="56" delta="new" >Constraint <arg fmt="%s" index="1">&lt;TIMESPEC TS_U_TO_U = FROM &quot;U_CLK&quot; TO &quot;U_CLK&quot; 15000.000000000 pS;&gt;</arg>: Unable to find an active <arg fmt="%s" index="2">&apos;TimeGrp&apos; or &apos;TNM&apos; or &apos;TPSync&apos;</arg> constraint named &apos;<arg fmt="%s" index="3">U_CLK</arg>&apos;.
+</msg>
+
+<msg type="warning" file="ConstraintSystem" num="56" delta="new" >Constraint <arg fmt="%s" index="1">&lt;TIMESPEC TS_J_TO_D = FROM &quot;J_CLK&quot; TO &quot;D_CLK&quot; TIG;&gt;</arg>: Unable to find an active <arg fmt="%s" index="2">&apos;TimeGrp&apos; or &apos;TNM&apos; or &apos;TPSync&apos;</arg> constraint named &apos;<arg fmt="%s" index="3">J_CLK</arg>&apos;.
+</msg>
+
+<msg type="warning" file="ConstraintSystem" num="56" delta="new" >Constraint <arg fmt="%s" index="1">&lt;TIMESPEC TS_D_TO_J = FROM &quot;D_CLK&quot; TO &quot;J_CLK&quot; TIG;&gt;</arg>: Unable to find an active <arg fmt="%s" index="2">&apos;TimeGrp&apos; or &apos;TNM&apos; or &apos;TPSync&apos;</arg> constraint named &apos;<arg fmt="%s" index="3">J_CLK</arg>&apos;.
+</msg>
+
+<msg type="warning" file="ConstraintSystem" num="135" delta="new" >Constraint <arg fmt="%s" index="1">&lt;INST /system/EXPANDED/system/axi4lite_0/axi4lite_0\/si_converter_bank\/gen_conv_slot[0].clock_conv_inst\/interconnect_aresetn_resync&lt;2&gt;_inv1_INV_0 TNM = FFS:axi4lite_0_reset_resync&gt;</arg>: No instances of type <arg fmt="%s" index="2">FFS</arg> were found under block &quot;<arg fmt="%s" index="3">axi4lite_0/axi4lite_0/si_converter_bank/gen_conv_slot[0].clock_conv_inst/interconnect_aresetn_resync&lt;2&gt;_inv1_INV_0</arg>&quot; (type=<arg fmt="%s" index="4">INV</arg>).
+</msg>
+
+<msg type="warning" file="ConstraintSystem" num="56" delta="new" >Constraint <arg fmt="%s" index="1">&lt;TIMESPEC TS_D2_TO_T2 = FROM &quot;D2_CLK&quot; TO FFS TIG;&gt;</arg>: Unable to find an active <arg fmt="%s" index="2">&apos;TimeGrp&apos; or &apos;TNM&apos; or &apos;TPSync&apos;</arg> constraint named &apos;<arg fmt="%s" index="3">D2_CLK</arg>&apos;.
+</msg>
+
+<msg type="warning" file="ConstraintSystem" num="56" delta="new" >Constraint <arg fmt="%s" index="1">&lt;TIMESPEC TS_J2_TO_D2 = FROM FFS TO &quot;D2_CLK&quot; TIG;&gt;</arg>: Unable to find an active <arg fmt="%s" index="2">&apos;TimeGrp&apos; or &apos;TNM&apos; or &apos;TPSync&apos;</arg> constraint named &apos;<arg fmt="%s" index="3">D2_CLK</arg>&apos;.
+</msg>
+
+<msg type="warning" file="ConstraintSystem" num="56" delta="new" >Constraint <arg fmt="%s" index="1">&lt;TIMESPEC TS_J3_TO_D2 = FROM FFS TO &quot;D2_CLK&quot; TIG;&gt;</arg>: Unable to find an active <arg fmt="%s" index="2">&apos;TimeGrp&apos; or &apos;TNM&apos; or &apos;TPSync&apos;</arg> constraint named &apos;<arg fmt="%s" index="3">D2_CLK</arg>&apos;.
+</msg>
+
+<msg type="warning" file="ConstraintSystem" num="56" delta="new" >Constraint <arg fmt="%s" index="1">&lt;TIMESPEC TS_J4_TO_D2 = FROM FFS TO &quot;D2_CLK&quot; TIG;&gt;</arg>: Unable to find an active <arg fmt="%s" index="2">&apos;TimeGrp&apos; or &apos;TNM&apos; or &apos;TPSync&apos;</arg> constraint named &apos;<arg fmt="%s" index="3">D2_CLK</arg>&apos;.
+</msg>
+
+<msg type="warning" file="ConstraintSystem" num="58" delta="new" >Constraint <arg fmt="%s" index="1">&lt;TIMEGRP axi4lite_0_reset_source = FFS PADS CPUS;&gt;</arg>: <arg fmt="%s" index="2">CPUS &quot;*&quot;</arg> does not match any design objects.
+</msg>
+
+<msg type="warning" file="ConstraintSystem" num="194" delta="new" >The <arg fmt="%s" index="1">TNM</arg> &apos;<arg fmt="%s" index="2">axi4lite_0_reset_resync</arg>&apos;, does not directly or indirectly drive any flip-flops, latches and/or RAMs and is not actively used by any referencing constraint.
+ </msg>
+
+<msg type="info" file="ConstraintSystem" num="178" delta="new" ><arg fmt="%s" index="1">TNM</arg> &apos;<arg fmt="%s" index="2">sys_clk_pin</arg>&apos;, used in period specification &apos;<arg fmt="%s" index="3">TS_sys_clk_pin</arg>&apos;, was traced into <arg fmt="%s" index="4">PLL_ADV</arg> instance <arg fmt="%s" index="5">clock_generator_0/PLL0_INST/Using_PLL_ADV.PLL_ADV_inst</arg>. The following new TNM groups and period specifications were generated at the <arg fmt="%s" index="6">PLL_ADV</arg> output(s): 
+<arg fmt="%s" index="7">CLKOUT0</arg>: <arg fmt="%s" index="8">&lt;TIMESPEC TS_clock_generator_0_clock_generator_0_SIG_PLL0_CLKOUT0_0 = PERIOD &quot;clock_generator_0_clock_generator_0_SIG_PLL0_CLKOUT0_0&quot; TS_sys_clk_pin * 2 HIGH 50%&gt;</arg>
+</msg>
+
+<msg type="warning" file="NgdBuild" num="443" delta="new" >SFF primitive &apos;<arg fmt="%s" index="1">microblaze_0/microblaze_0/MicroBlaze_Core_I/Performance.Decode_I/Using_FPGA.Gen_Bits[27].MEM_EX_Result_Inst</arg>&apos; has unconnected output pin
+</msg>
+
+<msg type="warning" file="NgdBuild" num="443" delta="new" >SFF primitive &apos;<arg fmt="%s" index="1">axi_iic_0/axi_iic_0/X_IIC/X_AXI_IPIF_SSP1/X_SOFT_RESET/FF_WRACK</arg>&apos; has unconnected output pin
+</msg>
+
+</messages>
+

@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<launchConfiguration type="com.xilinx.sdk.debug.ui.launchConfigurationWrapper">
+<stringAttribute key="org.eclipse.cdt.debug.mi.core.HOST" value="localhost"/>
+<stringAttribute key="org.eclipse.cdt.debug.mi.core.PORT" value="1234"/>
+<booleanAttribute key="org.eclipse.cdt.debug.mi.core.REMOTE_TCP" value="true"/>
+<booleanAttribute key="org.eclipse.cdt.debug.mi.core.verboseMode" value="false"/>
+<intAttribute key="org.eclipse.cdt.launch.ATTR_BUILD_BEFORE_LAUNCH_ATTR" value="2"/>
+<stringAttribute key="org.eclipse.cdt.launch.DEBUGGER_ID" value="com.xilinx.sdk.debug.core.XMDDebuggerId"/>
+<stringAttribute key="org.eclipse.cdt.launch.DEBUGGER_REGISTER_GROUPS" value=""/>
+<stringAttribute key="org.eclipse.cdt.launch.DEBUGGER_START_MODE" value="run"/>
+<booleanAttribute key="org.eclipse.cdt.launch.DEBUGGER_STOP_AT_MAIN" value="true"/>
+<stringAttribute key="org.eclipse.cdt.launch.FORMAT" value="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot; standalone=&quot;no&quot;?&gt;&lt;contentList/&gt;"/>
+<stringAttribute key="org.eclipse.cdt.launch.GLOBAL_VARIABLES" value="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot; standalone=&quot;no&quot;?&gt;&#13;&#10;&lt;globalVariableList/&gt;&#13;&#10;"/>
+<stringAttribute key="org.eclipse.cdt.launch.MEMORY_BLOCKS" value="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot; standalone=&quot;no&quot;?&gt;&#13;&#10;&lt;memoryBlockExpressionList/&gt;&#13;&#10;"/>
+<stringAttribute key="org.eclipse.cdt.launch.PROGRAM_NAME" value="Debug/hello_world.elf"/>
+<stringAttribute key="org.eclipse.cdt.launch.PROJECT_ATTR" value="hello_world"/>
+<stringAttribute key="org.eclipse.cdt.launch.PROJECT_BUILD_CONFIG_ID_ATTR" value="xilinx.gnu.mb.exe.debug.1482921927"/>
+<booleanAttribute key="org.eclipse.cdt.launch.use_terminal" value="true"/>
+<listAttribute key="org.eclipse.debug.core.MAPPED_RESOURCE_PATHS">
+<listEntry value="/hello_world"/>
+</listAttribute>
+<listAttribute key="org.eclipse.debug.core.MAPPED_RESOURCE_TYPES">
+<listEntry value="4"/>
+</listAttribute>
+<mapAttribute key="org.eclipse.debug.core.preferred_launchers">
+<mapEntry key="[debug]" value="com.xilinx.sdk.debug.ui.launchConfigurationWrapper"/>
+</mapAttribute>
+<stringAttribute key="xilinx.data.files.list" value=""/>
+<booleanAttribute key="xilinx.elf.verify" value="false"/>
+<stringAttribute key="xilinx.init.tcl" value="ps7_init is applicable only for zynq platforms"/>
+<booleanAttribute key="xilinx.no.download.program" value="false"/>
+<intAttribute key="xilinx.reset.type" value="0"/>
+<stringAttribute key="xilinx.romem.base" value=""/>
+<stringAttribute key="xilinx.romem.size" value=""/>
+<stringAttribute key="xilinx.stdio.baud" value="9600"/>
+<booleanAttribute key="xilinx.stdio.connect" value="true"/>
+<stringAttribute key="xilinx.stdio.port" value="JTAG UART"/>
+<booleanAttribute key="xilinx.use.remote.gdbserver" value="false"/>
+<booleanAttribute key="xilinx.xmd.crosstrigger" value="false"/>
+<booleanAttribute key="xilinx.xmd.safe.mode" value="false"/>
+</launchConfiguration>

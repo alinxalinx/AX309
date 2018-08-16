@@ -1,0 +1,15 @@
+##############################################################################
+## Filename:          E:\Project\AX309\Microblaze/drivers/smg_ip_v1_00_a/data/smg_ip_v2_1_0.mdd
+## Description:       Microprocessor Driver Definition
+## Date:              Tue Jul 21 14:34:51 2015 (by Create and Import Peripheral Wizard)
+##############################################################################
+
+OPTION psf_version = 2.1.0;
+
+BEGIN DRIVER smg_ip
+
+  OPTION supported_peripherals = (smg_ip);
+  OPTION depends = (common_v1_00_a);
+  OPTION copyfiles = all;
+
+END DRIVER

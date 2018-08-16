@@ -1,0 +1,270 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- IMPORTANT: This is an internal file that has been generated
+     by the Xilinx ISE software.  Any direct editing or
+     changes made to this file may result in unpredictable
+     behavior or data corruption.  It is strongly advised that
+     users do not edit the contents of this file. -->
+<messages>
+<msg type="warning" file="Xst" num="37" delta="new" >Detected unknown constraint/property &quot;<arg fmt="%s" index="1">sigis</arg>&quot;. This constraint/property is not supported by the current software release and will be ignored.
+</msg>
+
+<msg type="warning" file="Xst" num="37" delta="new" >Detected unknown constraint/property &quot;<arg fmt="%s" index="1">sigis</arg>&quot;. This constraint/property is not supported by the current software release and will be ignored.
+</msg>
+
+<msg type="warning" file="Xst" num="37" delta="new" >Detected unknown constraint/property &quot;<arg fmt="%s" index="1">sigis</arg>&quot;. This constraint/property is not supported by the current software release and will be ignored.
+</msg>
+
+<msg type="warning" file="Xst" num="37" delta="new" >Detected unknown constraint/property &quot;<arg fmt="%s" index="1">sigis</arg>&quot;. This constraint/property is not supported by the current software release and will be ignored.
+</msg>
+
+<msg type="info" file="Xst" num="3210" delta="new" >&quot;<arg fmt="%s" index="1">E:\Project\AX309\Microblaze\pcores\smg_ip_v1_00_a\hdl\vhdl\smg_ip.vhd</arg>&quot; line <arg fmt="%s" index="2">297</arg>: Output port &lt;<arg fmt="%s" index="3">Bus2IP_Addr</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">AXI_LITE_IPIF_I</arg>&gt; is unconnected or connected to loadless signal.
+</msg>
+
+<msg type="info" file="Xst" num="3210" delta="new" >&quot;<arg fmt="%s" index="1">E:\Project\AX309\Microblaze\pcores\smg_ip_v1_00_a\hdl\vhdl\smg_ip.vhd</arg>&quot; line <arg fmt="%s" index="2">297</arg>: Output port &lt;<arg fmt="%s" index="3">Bus2IP_RNW</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">AXI_LITE_IPIF_I</arg>&gt; is unconnected or connected to loadless signal.
+</msg>
+
+<msg type="info" file="Xst" num="3210" delta="new" >&quot;<arg fmt="%s" index="1">E:\Project\AX309\Microblaze\pcores\smg_ip_v1_00_a\hdl\vhdl\smg_ip.vhd</arg>&quot; line <arg fmt="%s" index="2">348</arg>: Output port &lt;<arg fmt="%s" index="3">Reset2Bus_ToutSup</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">SOFT_RESET_I</arg>&gt; is unconnected or connected to loadless signal.
+</msg>
+
+<msg type="warning" file="Xst" num="647" delta="new" >Input &lt;<arg fmt="%s" index="1">S_AXI_AWADDR&lt;31:9&gt;</arg>&gt; is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+</msg>
+
+<msg type="warning" file="Xst" num="647" delta="new" >Input &lt;<arg fmt="%s" index="1">S_AXI_WSTRB</arg>&gt; is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+</msg>
+
+<msg type="warning" file="Xst" num="647" delta="new" >Input &lt;<arg fmt="%s" index="1">S_AXI_ARADDR&lt;31:9&gt;</arg>&gt; is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+</msg>
+
+<msg type="info" file="Xst" num="3210" delta="new" >&quot;<arg fmt="%s" index="1">C:/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/axi_lite_ipif_v1_01_a/hdl/vhdl/slave_attachment.vhd</arg>&quot; line <arg fmt="%s" index="2">341</arg>: Output port &lt;<arg fmt="%s" index="3">CS_for_gaps</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">I_DECODER</arg>&gt; is unconnected or connected to loadless signal.
+</msg>
+
+<msg type="warning" file="Xst" num="647" delta="new" >Input &lt;<arg fmt="%s" index="1">Bus_RNW</arg>&gt; is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+</msg>
+
+<msg type="warning" file="Xst" num="647" delta="new" >Input &lt;<arg fmt="%s" index="1">Bus2IP_Data&lt;0:27&gt;</arg>&gt; is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+</msg>
+
+<msg type="warning" file="Xst" num="647" delta="new" >Input &lt;<arg fmt="%s" index="1">Bus2IP_BE&lt;0:2&gt;</arg>&gt; is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+</msg>
+
+<msg type="warning" file="Xst" num="1293" delta="new" >FF/Latch &lt;<arg fmt="%s" index="1">s_axi_bresp_i_0</arg>&gt; has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">I_SLAVE_ATTACHMENT</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1293" delta="new" >FF/Latch &lt;<arg fmt="%s" index="1">s_axi_rresp_i_0</arg>&gt; has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">I_SLAVE_ATTACHMENT</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1989" delta="new" >Unit &lt;<arg fmt="%s" index="1">address_decoder</arg>&gt;: instances &lt;<arg fmt="%s" index="2">MEM_DECODE_GEN[0].GEN_FOR_MULTI_CS.MEM_SELECT_I</arg>&gt;, &lt;<arg fmt="%s" index="3">MEM_DECODE_GEN[1].GEN_FOR_MULTI_CS.MEM_SELECT_I</arg>&gt; of unit &lt;<arg fmt="%s" index="4">pselect_f</arg>&gt; are equivalent, second instance is removed
+</msg>
+
+<msg type="warning" file="Xst" num="1293" delta="new" >FF/Latch &lt;<arg fmt="%s" index="1">s_axi_rresp_i_0</arg>&gt; has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">slave_attachment</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1896" delta="new" >Due to other FF/Latch trimming, FF/Latch &lt;<arg fmt="%s" index="1">s_axi_bresp_i_0</arg>&gt; has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">slave_attachment</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="info" file="Xst" num="2261" delta="new" >The FF/Latch &lt;<arg fmt="%s" index="1">ce_out_i_0</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">address_decoder</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">FF/Latch</arg>, which will be removed : <arg fmt="%s" index="4">&lt;ce_out_i_1&gt; </arg>
+</msg>
+
+<msg type="info" file="Xst" num="2261" delta="new" >The FF/Latch &lt;<arg fmt="%s" index="1">cs_out_i_1</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">address_decoder</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">FF/Latch</arg>, which will be removed : <arg fmt="%s" index="4">&lt;cs_out_i_0&gt; </arg>
+</msg>
+
+<msg type="info" file="Xst" num="2261" delta="new" >The FF/Latch &lt;<arg fmt="%s" index="1">I_DECODER/ce_out_i_0</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">slave_attachment</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">FF/Latch</arg>, which will be removed : <arg fmt="%s" index="4">&lt;I_DECODER/cs_out_i_1&gt; </arg>
+</msg>
+
+<msg type="warning" file="Xst" num="1710" delta="new" >FF/Latch &lt;<arg fmt="%s" index="1">rSMG_7</arg>&gt; (without init value) has a constant value of <arg fmt="%d" index="2">1</arg> in block &lt;<arg fmt="%s" index="3">smg_encode_module</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1710" delta="new" >FF/Latch &lt;<arg fmt="%s" index="1">i_3</arg>&gt; (without init value) has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">smg_control_module</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1710" delta="new" >FF/Latch &lt;<arg fmt="%s" index="1">i_3</arg>&gt; (without init value) has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">smg_control_module</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1710" delta="new" >FF/Latch &lt;<arg fmt="%s" index="1">i_3</arg>&gt; (without init value) has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">smg_scan_module</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1293" delta="new" >FF/Latch &lt;<arg fmt="%s" index="1">AXI_LITE_IPIF_I/I_SLAVE_ATTACHMENT/s_axi_rdata_i_0</arg>&gt; has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">smg_ip</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1896" delta="new" >Due to other FF/Latch trimming, FF/Latch &lt;<arg fmt="%s" index="1">AXI_LITE_IPIF_I/I_SLAVE_ATTACHMENT/s_axi_rdata_i_1</arg>&gt; has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">smg_ip</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1896" delta="new" >Due to other FF/Latch trimming, FF/Latch &lt;<arg fmt="%s" index="1">AXI_LITE_IPIF_I/I_SLAVE_ATTACHMENT/s_axi_rdata_i_2</arg>&gt; has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">smg_ip</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1896" delta="new" >Due to other FF/Latch trimming, FF/Latch &lt;<arg fmt="%s" index="1">AXI_LITE_IPIF_I/I_SLAVE_ATTACHMENT/s_axi_rdata_i_3</arg>&gt; has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">smg_ip</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1896" delta="new" >Due to other FF/Latch trimming, FF/Latch &lt;<arg fmt="%s" index="1">AXI_LITE_IPIF_I/I_SLAVE_ATTACHMENT/s_axi_rdata_i_4</arg>&gt; has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">smg_ip</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1896" delta="new" >Due to other FF/Latch trimming, FF/Latch &lt;<arg fmt="%s" index="1">AXI_LITE_IPIF_I/I_SLAVE_ATTACHMENT/s_axi_rdata_i_5</arg>&gt; has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">smg_ip</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1896" delta="new" >Due to other FF/Latch trimming, FF/Latch &lt;<arg fmt="%s" index="1">AXI_LITE_IPIF_I/I_SLAVE_ATTACHMENT/s_axi_rdata_i_6</arg>&gt; has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">smg_ip</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1896" delta="new" >Due to other FF/Latch trimming, FF/Latch &lt;<arg fmt="%s" index="1">AXI_LITE_IPIF_I/I_SLAVE_ATTACHMENT/s_axi_rdata_i_7</arg>&gt; has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">smg_ip</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1896" delta="new" >Due to other FF/Latch trimming, FF/Latch &lt;<arg fmt="%s" index="1">AXI_LITE_IPIF_I/I_SLAVE_ATTACHMENT/s_axi_rdata_i_8</arg>&gt; has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">smg_ip</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1896" delta="new" >Due to other FF/Latch trimming, FF/Latch &lt;<arg fmt="%s" index="1">AXI_LITE_IPIF_I/I_SLAVE_ATTACHMENT/s_axi_rdata_i_9</arg>&gt; has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">smg_ip</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1896" delta="new" >Due to other FF/Latch trimming, FF/Latch &lt;<arg fmt="%s" index="1">AXI_LITE_IPIF_I/I_SLAVE_ATTACHMENT/s_axi_rdata_i_10</arg>&gt; has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">smg_ip</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1896" delta="new" >Due to other FF/Latch trimming, FF/Latch &lt;<arg fmt="%s" index="1">AXI_LITE_IPIF_I/I_SLAVE_ATTACHMENT/s_axi_rdata_i_11</arg>&gt; has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">smg_ip</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1896" delta="new" >Due to other FF/Latch trimming, FF/Latch &lt;<arg fmt="%s" index="1">AXI_LITE_IPIF_I/I_SLAVE_ATTACHMENT/s_axi_rdata_i_12</arg>&gt; has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">smg_ip</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1896" delta="new" >Due to other FF/Latch trimming, FF/Latch &lt;<arg fmt="%s" index="1">AXI_LITE_IPIF_I/I_SLAVE_ATTACHMENT/s_axi_rdata_i_13</arg>&gt; has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">smg_ip</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1896" delta="new" >Due to other FF/Latch trimming, FF/Latch &lt;<arg fmt="%s" index="1">AXI_LITE_IPIF_I/I_SLAVE_ATTACHMENT/s_axi_rdata_i_14</arg>&gt; has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">smg_ip</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1896" delta="new" >Due to other FF/Latch trimming, FF/Latch &lt;<arg fmt="%s" index="1">AXI_LITE_IPIF_I/I_SLAVE_ATTACHMENT/s_axi_rdata_i_15</arg>&gt; has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">smg_ip</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1896" delta="new" >Due to other FF/Latch trimming, FF/Latch &lt;<arg fmt="%s" index="1">AXI_LITE_IPIF_I/I_SLAVE_ATTACHMENT/s_axi_rdata_i_16</arg>&gt; has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">smg_ip</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1896" delta="new" >Due to other FF/Latch trimming, FF/Latch &lt;<arg fmt="%s" index="1">AXI_LITE_IPIF_I/I_SLAVE_ATTACHMENT/s_axi_rdata_i_17</arg>&gt; has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">smg_ip</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1896" delta="new" >Due to other FF/Latch trimming, FF/Latch &lt;<arg fmt="%s" index="1">AXI_LITE_IPIF_I/I_SLAVE_ATTACHMENT/s_axi_rdata_i_18</arg>&gt; has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">smg_ip</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1896" delta="new" >Due to other FF/Latch trimming, FF/Latch &lt;<arg fmt="%s" index="1">AXI_LITE_IPIF_I/I_SLAVE_ATTACHMENT/s_axi_rdata_i_19</arg>&gt; has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">smg_ip</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1896" delta="new" >Due to other FF/Latch trimming, FF/Latch &lt;<arg fmt="%s" index="1">AXI_LITE_IPIF_I/I_SLAVE_ATTACHMENT/s_axi_rdata_i_20</arg>&gt; has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">smg_ip</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1896" delta="new" >Due to other FF/Latch trimming, FF/Latch &lt;<arg fmt="%s" index="1">AXI_LITE_IPIF_I/I_SLAVE_ATTACHMENT/s_axi_rdata_i_21</arg>&gt; has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">smg_ip</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1896" delta="new" >Due to other FF/Latch trimming, FF/Latch &lt;<arg fmt="%s" index="1">AXI_LITE_IPIF_I/I_SLAVE_ATTACHMENT/s_axi_rdata_i_22</arg>&gt; has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">smg_ip</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1896" delta="new" >Due to other FF/Latch trimming, FF/Latch &lt;<arg fmt="%s" index="1">AXI_LITE_IPIF_I/I_SLAVE_ATTACHMENT/s_axi_rdata_i_23</arg>&gt; has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">smg_ip</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1896" delta="new" >Due to other FF/Latch trimming, FF/Latch &lt;<arg fmt="%s" index="1">AXI_LITE_IPIF_I/I_SLAVE_ATTACHMENT/s_axi_rdata_i_24</arg>&gt; has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">smg_ip</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1896" delta="new" >Due to other FF/Latch trimming, FF/Latch &lt;<arg fmt="%s" index="1">AXI_LITE_IPIF_I/I_SLAVE_ATTACHMENT/s_axi_rdata_i_25</arg>&gt; has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">smg_ip</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1896" delta="new" >Due to other FF/Latch trimming, FF/Latch &lt;<arg fmt="%s" index="1">AXI_LITE_IPIF_I/I_SLAVE_ATTACHMENT/s_axi_rdata_i_26</arg>&gt; has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">smg_ip</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1896" delta="new" >Due to other FF/Latch trimming, FF/Latch &lt;<arg fmt="%s" index="1">AXI_LITE_IPIF_I/I_SLAVE_ATTACHMENT/s_axi_rdata_i_27</arg>&gt; has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">smg_ip</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1896" delta="new" >Due to other FF/Latch trimming, FF/Latch &lt;<arg fmt="%s" index="1">AXI_LITE_IPIF_I/I_SLAVE_ATTACHMENT/s_axi_rdata_i_28</arg>&gt; has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">smg_ip</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1896" delta="new" >Due to other FF/Latch trimming, FF/Latch &lt;<arg fmt="%s" index="1">AXI_LITE_IPIF_I/I_SLAVE_ATTACHMENT/s_axi_rdata_i_29</arg>&gt; has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">smg_ip</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1896" delta="new" >Due to other FF/Latch trimming, FF/Latch &lt;<arg fmt="%s" index="1">AXI_LITE_IPIF_I/I_SLAVE_ATTACHMENT/s_axi_rdata_i_30</arg>&gt; has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">smg_ip</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1896" delta="new" >Due to other FF/Latch trimming, FF/Latch &lt;<arg fmt="%s" index="1">AXI_LITE_IPIF_I/I_SLAVE_ATTACHMENT/s_axi_rdata_i_31</arg>&gt; has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">smg_ip</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">USER_LOGIC_I/slv_reg0_31</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">smg_ip</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">USER_LOGIC_I/slv_reg0_25</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">smg_ip</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">USER_LOGIC_I/slv_reg0_26</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">smg_ip</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">USER_LOGIC_I/slv_reg0_24</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">smg_ip</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">USER_LOGIC_I/slv_reg0_28</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">smg_ip</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">USER_LOGIC_I/slv_reg0_29</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">smg_ip</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">USER_LOGIC_I/slv_reg0_27</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">smg_ip</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">USER_LOGIC_I/slv_reg0_30</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">smg_ip</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="1293" delta="new" >FF/Latch &lt;<arg fmt="%s" index="1">AXI_LITE_IPIF_I/I_SLAVE_ATTACHMENT/s_axi_rresp_i_1</arg>&gt; has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">smg_ip</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="info" file="Xst" num="2261" delta="new" >The FF/Latch &lt;<arg fmt="%s" index="1">USER_LOGIC_I/U1/C1_0</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">smg_ip</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">FF/Latch</arg>, which will be removed : <arg fmt="%s" index="4">&lt;USER_LOGIC_I/U3/C1_0&gt; </arg>
+</msg>
+
+<msg type="info" file="Xst" num="2261" delta="new" >The FF/Latch &lt;<arg fmt="%s" index="1">USER_LOGIC_I/U1/C1_1</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">smg_ip</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">FF/Latch</arg>, which will be removed : <arg fmt="%s" index="4">&lt;USER_LOGIC_I/U3/C1_1&gt; </arg>
+</msg>
+
+<msg type="info" file="Xst" num="2261" delta="new" >The FF/Latch &lt;<arg fmt="%s" index="1">USER_LOGIC_I/U1/C1_2</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">smg_ip</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">FF/Latch</arg>, which will be removed : <arg fmt="%s" index="4">&lt;USER_LOGIC_I/U3/C1_2&gt; </arg>
+</msg>
+
+<msg type="info" file="Xst" num="2261" delta="new" >The FF/Latch &lt;<arg fmt="%s" index="1">USER_LOGIC_I/U1/C1_3</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">smg_ip</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">FF/Latch</arg>, which will be removed : <arg fmt="%s" index="4">&lt;USER_LOGIC_I/U3/C1_3&gt; </arg>
+</msg>
+
+<msg type="info" file="Xst" num="2261" delta="new" >The FF/Latch &lt;<arg fmt="%s" index="1">USER_LOGIC_I/U1/C1_4</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">smg_ip</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">FF/Latch</arg>, which will be removed : <arg fmt="%s" index="4">&lt;USER_LOGIC_I/U3/C1_4&gt; </arg>
+</msg>
+
+<msg type="info" file="Xst" num="2261" delta="new" >The FF/Latch &lt;<arg fmt="%s" index="1">USER_LOGIC_I/U1/C1_5</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">smg_ip</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">FF/Latch</arg>, which will be removed : <arg fmt="%s" index="4">&lt;USER_LOGIC_I/U3/C1_5&gt; </arg>
+</msg>
+
+<msg type="info" file="Xst" num="2261" delta="new" >The FF/Latch &lt;<arg fmt="%s" index="1">USER_LOGIC_I/U1/C1_6</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">smg_ip</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">FF/Latch</arg>, which will be removed : <arg fmt="%s" index="4">&lt;USER_LOGIC_I/U3/C1_6&gt; </arg>
+</msg>
+
+<msg type="info" file="Xst" num="2261" delta="new" >The FF/Latch &lt;<arg fmt="%s" index="1">USER_LOGIC_I/U1/C1_7</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">smg_ip</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">FF/Latch</arg>, which will be removed : <arg fmt="%s" index="4">&lt;USER_LOGIC_I/U3/C1_7&gt; </arg>
+</msg>
+
+<msg type="info" file="Xst" num="2261" delta="new" >The FF/Latch &lt;<arg fmt="%s" index="1">USER_LOGIC_I/U1/C1_8</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">smg_ip</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">FF/Latch</arg>, which will be removed : <arg fmt="%s" index="4">&lt;USER_LOGIC_I/U3/C1_8&gt; </arg>
+</msg>
+
+<msg type="info" file="Xst" num="2261" delta="new" >The FF/Latch &lt;<arg fmt="%s" index="1">SOFT_RESET_I/sw_rst_cond_d1</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">smg_ip</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">FF/Latch</arg>, which will be removed : <arg fmt="%s" index="4">&lt;SOFT_RESET_I/reset_trig&gt; </arg>
+</msg>
+
+<msg type="info" file="Xst" num="2261" delta="new" >The FF/Latch &lt;<arg fmt="%s" index="1">USER_LOGIC_I/U1/C1_9</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">smg_ip</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">FF/Latch</arg>, which will be removed : <arg fmt="%s" index="4">&lt;USER_LOGIC_I/U3/C1_9&gt; </arg>
+</msg>
+
+<msg type="info" file="Xst" num="2261" delta="new" >The FF/Latch &lt;<arg fmt="%s" index="1">USER_LOGIC_I/U1/i_0</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">smg_ip</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">FF/Latch</arg>, which will be removed : <arg fmt="%s" index="4">&lt;USER_LOGIC_I/U3/i_0&gt; </arg>
+</msg>
+
+<msg type="info" file="Xst" num="2261" delta="new" >The FF/Latch &lt;<arg fmt="%s" index="1">USER_LOGIC_I/U1/i_1</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">smg_ip</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">FF/Latch</arg>, which will be removed : <arg fmt="%s" index="4">&lt;USER_LOGIC_I/U3/i_1&gt; </arg>
+</msg>
+
+<msg type="info" file="Xst" num="2261" delta="new" >The FF/Latch &lt;<arg fmt="%s" index="1">USER_LOGIC_I/U1/i_2</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">smg_ip</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">FF/Latch</arg>, which will be removed : <arg fmt="%s" index="4">&lt;USER_LOGIC_I/U3/i_2&gt; </arg>
+</msg>
+
+<msg type="info" file="Xst" num="2261" delta="new" >The FF/Latch &lt;<arg fmt="%s" index="1">USER_LOGIC_I/U1/C1_10</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">smg_ip</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">FF/Latch</arg>, which will be removed : <arg fmt="%s" index="4">&lt;USER_LOGIC_I/U3/C1_10&gt; </arg>
+</msg>
+
+<msg type="info" file="Xst" num="2261" delta="new" >The FF/Latch &lt;<arg fmt="%s" index="1">USER_LOGIC_I/U1/C1_11</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">smg_ip</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">FF/Latch</arg>, which will be removed : <arg fmt="%s" index="4">&lt;USER_LOGIC_I/U3/C1_11&gt; </arg>
+</msg>
+
+<msg type="info" file="Xst" num="2261" delta="new" >The FF/Latch &lt;<arg fmt="%s" index="1">USER_LOGIC_I/U1/C1_12</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">smg_ip</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">FF/Latch</arg>, which will be removed : <arg fmt="%s" index="4">&lt;USER_LOGIC_I/U3/C1_12&gt; </arg>
+</msg>
+
+<msg type="info" file="Xst" num="2261" delta="new" >The FF/Latch &lt;<arg fmt="%s" index="1">USER_LOGIC_I/U1/C1_13</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">smg_ip</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">FF/Latch</arg>, which will be removed : <arg fmt="%s" index="4">&lt;USER_LOGIC_I/U3/C1_13&gt; </arg>
+</msg>
+
+<msg type="info" file="Xst" num="2261" delta="new" >The FF/Latch &lt;<arg fmt="%s" index="1">USER_LOGIC_I/U1/C1_14</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">smg_ip</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">FF/Latch</arg>, which will be removed : <arg fmt="%s" index="4">&lt;USER_LOGIC_I/U3/C1_14&gt; </arg>
+</msg>
+
+<msg type="info" file="Xst" num="2261" delta="new" >The FF/Latch &lt;<arg fmt="%s" index="1">USER_LOGIC_I/U1/C1_15</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">smg_ip</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">FF/Latch</arg>, which will be removed : <arg fmt="%s" index="4">&lt;USER_LOGIC_I/U3/C1_15&gt; </arg>
+</msg>
+
+</messages>
+

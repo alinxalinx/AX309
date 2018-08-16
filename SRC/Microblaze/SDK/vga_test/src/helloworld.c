@@ -1,0 +1,30 @@
+
+
+#include <stdio.h>
+#include "platform.h"
+#include "xparameters.h"
+#include "vga_ip.h"
+
+
+int main()
+{
+    init_platform();
+
+    u32 vga_data[4]={0xf80007e0, 0x001ff81f,0xffe007ff,0xfffffc00};
+
+    VGA_IP_mReset(XPAR_VGA_IP_0_BASEADDR);	// Reset VGA IP
+
+	VGA_IP_mWriteSlaveReg0(XPAR_VGA_IP_0_BASEADDR,0,vga_data[0]);         //write vga_data to register0 of vga_ip
+	VGA_IP_mWriteSlaveReg1(XPAR_VGA_IP_0_BASEADDR,0,vga_data[1]);         //write vga_data to register1 of vga_ip
+	VGA_IP_mWriteSlaveReg2(XPAR_VGA_IP_0_BASEADDR,0,vga_data[2]);         //write vga_data to register2 of vga_ip
+	VGA_IP_mWriteSlaveReg3(XPAR_VGA_IP_0_BASEADDR,0,vga_data[3]);         //write vga_data to register3 of vga_ip
+
+
+	while (1)
+	{
+
+	}
+
+
+    return 0;
+}

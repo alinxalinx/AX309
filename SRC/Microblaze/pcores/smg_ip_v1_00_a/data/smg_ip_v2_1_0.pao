@@ -1,0 +1,13 @@
+##############################################################################
+## Filename:          E:\Project\AX309\Microblaze\pcores/smg_ip_v1_00_a/data/smg_ip_v2_1_0.pao
+## Description:       Peripheral Analysis Order
+## Date:              Thu Jul 23 09:21:36 2015 (by Create and Import Peripheral Wizard)
+##############################################################################
+
+lib proc_common_v3_00_a all vhdl
+lib axi_lite_ipif_v1_01_a all vhdl
+lib smg_ip_v1_00_a user_logic verilog
+lib smg_ip_v1_00_a smg_ip vhdl
+lib smg_ip_v1_00_a smg_control_module verilog
+lib smg_ip_v1_00_a smg_encode_module verilog
+lib smg_ip_v1_00_a smg_scan_module verilog

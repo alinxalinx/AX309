@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<launchConfiguration type="com.xilinx.sdk.debug.ui.launchConfigurationWrapper">
+<stringAttribute key="org.eclipse.cdt.debug.mi.core.HOST" value="localhost"/>
+<stringAttribute key="org.eclipse.cdt.debug.mi.core.PORT" value="1234"/>
+<booleanAttribute key="org.eclipse.cdt.debug.mi.core.REMOTE_TCP" value="true"/>
+<stringAttribute key="org.eclipse.cdt.launch.DEBUGGER_ID" value="com.xilinx.sdk.debug.core.XMDDebuggerId"/>
+<stringAttribute key="org.eclipse.cdt.launch.DEBUGGER_REGISTER_GROUPS" value=""/>
+<stringAttribute key="org.eclipse.cdt.launch.DEBUGGER_START_MODE" value="run"/>
+<booleanAttribute key="org.eclipse.cdt.launch.DEBUGGER_STOP_AT_MAIN" value="true"/>
+<stringAttribute key="org.eclipse.cdt.launch.FORMAT" value="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot; standalone=&quot;no&quot;?&gt;&lt;contentList/&gt;"/>
+<stringAttribute key="org.eclipse.cdt.launch.GLOBAL_VARIABLES" value="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot; standalone=&quot;no&quot;?&gt;&#13;&#10;&lt;globalVariableList/&gt;&#13;&#10;"/>
+<stringAttribute key="org.eclipse.cdt.launch.MEMORY_BLOCKS" value="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot; standalone=&quot;no&quot;?&gt;&#13;&#10;&lt;memoryBlockExpressionList/&gt;&#13;&#10;"/>
+<stringAttribute key="org.eclipse.cdt.launch.PROGRAM_NAME" value="Debug/vga_test.elf"/>
+<stringAttribute key="org.eclipse.cdt.launch.PROJECT_ATTR" value="vga_test"/>
+<stringAttribute key="org.eclipse.cdt.launch.PROJECT_BUILD_CONFIG_ID_ATTR" value="xilinx.gnu.mb.exe.debug.1527097269"/>
+<listAttribute key="org.eclipse.debug.core.MAPPED_RESOURCE_PATHS">
+<listEntry value="/vga_test"/>
+</listAttribute>
+<listAttribute key="org.eclipse.debug.core.MAPPED_RESOURCE_TYPES">
+<listEntry value="4"/>
+</listAttribute>
+<mapAttribute key="org.eclipse.debug.core.preferred_launchers">
+<mapEntry key="[debug]" value="com.xilinx.sdk.debug.ui.launchConfigurationWrapper"/>
+</mapAttribute>
+</launchConfiguration>

@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- IMPORTANT: This is an internal file that has been generated
+     by the Xilinx ISE software.  Any direct editing or
+     changes made to this file may result in unpredictable
+     behavior or data corruption.  It is strongly advised that
+     users do not edit the contents of this file. -->
+<messages>
+<msg type="info" file="EDK" num="4130" delta="new" >IPNAME: <arg fmt="%s" index="1">microblaze</arg>, INSTANCE:<arg fmt="%s" index="2">microblaze_0</arg> - <arg fmt="%s" index="3">tcl</arg> is overriding <arg fmt="%s" index="4">PARAMETER</arg> <arg fmt="%s" index="5">C_ENDIANNESS</arg> value to <arg fmt="%s" index="6">1</arg> - <arg fmt="%s" index="7">C:\Xilinx\14.7\ISE_DS\EDK\hw\XilinxProcessorIPLib\pcores\microblaze_v8_50_c\data\microblaze_v2_1_0.mpd line 198</arg> 
+</msg>
+
+<msg type="info" file="EDK" num="4130" delta="new" >IPNAME: <arg fmt="%s" index="1">microblaze</arg>, INSTANCE:<arg fmt="%s" index="2">microblaze_0</arg> - <arg fmt="%s" index="3">tcl</arg> is overriding <arg fmt="%s" index="4">PARAMETER</arg> <arg fmt="%s" index="5">C_ICACHE_USE_FSL</arg> value to <arg fmt="%s" index="6">0</arg> - <arg fmt="%s" index="7">C:\Xilinx\14.7\ISE_DS\EDK\hw\XilinxProcessorIPLib\pcores\microblaze_v8_50_c\data\microblaze_v2_1_0.mpd line 339</arg> 
+</msg>
+
+<msg type="info" file="EDK" num="4130" delta="new" >IPNAME: <arg fmt="%s" index="1">microblaze</arg>, INSTANCE:<arg fmt="%s" index="2">microblaze_0</arg> - <arg fmt="%s" index="3">tcl</arg> is overriding <arg fmt="%s" index="4">PARAMETER</arg> <arg fmt="%s" index="5">C_DCACHE_USE_FSL</arg> value to <arg fmt="%s" index="6">0</arg> - <arg fmt="%s" index="7">C:\Xilinx\14.7\ISE_DS\EDK\hw\XilinxProcessorIPLib\pcores\microblaze_v8_50_c\data\microblaze_v2_1_0.mpd line 369</arg> 
+</msg>
+
+<msg type="info" file="EDK" num="4130" delta="new" >IPNAME: <arg fmt="%s" index="1">axi_interconnect</arg>, INSTANCE:<arg fmt="%s" index="2">axi4lite_0</arg> - <arg fmt="%s" index="3">tcl</arg> is overriding <arg fmt="%s" index="4">PARAMETER</arg> <arg fmt="%s" index="5">C_BASEFAMILY</arg> value to <arg fmt="%s" index="6">spartan6</arg> - <arg fmt="%s" index="7">C:\Xilinx\14.7\ISE_DS\EDK\hw\XilinxProcessorIPLib\pcores\axi_interconnect_v1_06_a\data\axi_interconnect_v2_1_0.mpd line 81</arg> 
+</msg>
+
+<msg type="info" file="EDK" num="4130" delta="new" >IPNAME: <arg fmt="%s" index="1">axi_intc</arg>, INSTANCE:<arg fmt="%s" index="2">axi_intc_0</arg> - <arg fmt="%s" index="3">tcl</arg> is overriding <arg fmt="%s" index="4">PARAMETER</arg> <arg fmt="%s" index="5">C_NUM_INTR_INPUTS</arg> value to <arg fmt="%s" index="6">3</arg> - <arg fmt="%s" index="7">C:\Xilinx\14.7\ISE_DS\EDK\hw\XilinxProcessorIPLib\pcores\axi_intc_v1_04_a\data\axi_intc_v2_1_0.mpd line 85</arg> 
+</msg>
+
+<msg type="info" file="EDK" num="740" delta="new" >Cannot determine the input clock associated with port : <arg fmt="%s" index="1">microblaze_0_i_bram_ctrl</arg>:<arg fmt="%s" index="2">BRAM_Clk_A</arg>. Clock DRCs will not be performed on this core and cores connected to it. 
+</msg>
+
+<msg type="info" file="EDK" num="740" delta="new" >Cannot determine the input clock associated with port : <arg fmt="%s" index="1">microblaze_0_d_bram_ctrl</arg>:<arg fmt="%s" index="2">BRAM_Clk_A</arg>. Clock DRCs will not be performed on this core and cores connected to it. 
+</msg>
+
+<msg type="info" file="EDK" num="4130" delta="new" >IPNAME: <arg fmt="%s" index="1">lmb_v10</arg>, INSTANCE:<arg fmt="%s" index="2">microblaze_0_ilmb</arg> - <arg fmt="%s" index="3">tool</arg> is overriding <arg fmt="%s" index="4">PARAMETER</arg> <arg fmt="%s" index="5">C_LMB_NUM_SLAVES</arg> value to <arg fmt="%s" index="6">1</arg> - <arg fmt="%s" index="7">C:\Xilinx\14.7\ISE_DS\EDK\hw\XilinxProcessorIPLib\pcores\lmb_v10_v2_00_b\data\lmb_v10_v2_1_0.mpd line 82</arg> 
+</msg>
+
+<msg type="info" file="EDK" num="4130" delta="new" >IPNAME: <arg fmt="%s" index="1">lmb_v10</arg>, INSTANCE:<arg fmt="%s" index="2">microblaze_0_dlmb</arg> - <arg fmt="%s" index="3">tool</arg> is overriding <arg fmt="%s" index="4">PARAMETER</arg> <arg fmt="%s" index="5">C_LMB_NUM_SLAVES</arg> value to <arg fmt="%s" index="6">1</arg> - <arg fmt="%s" index="7">C:\Xilinx\14.7\ISE_DS\EDK\hw\XilinxProcessorIPLib\pcores\lmb_v10_v2_00_b\data\lmb_v10_v2_1_0.mpd line 82</arg> 
+</msg>
+
+<msg type="info" file="EDK" num="4130" delta="new" >IPNAME: <arg fmt="%s" index="1">bram_block</arg>, INSTANCE:<arg fmt="%s" index="2">microblaze_0_bram_block</arg> - <arg fmt="%s" index="3">tool</arg> is overriding <arg fmt="%s" index="4">PARAMETER</arg> <arg fmt="%s" index="5">C_MEMSIZE</arg> value to <arg fmt="%s" index="6">0x4000</arg> - <arg fmt="%s" index="7">C:\Xilinx\14.7\ISE_DS\EDK\hw\XilinxProcessorIPLib\pcores\bram_block_v1_00_a\data\bram_block_v2_1_0.mpd line 78</arg> 
+</msg>
+
+</messages>
+

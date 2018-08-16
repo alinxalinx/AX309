@@ -1,0 +1,508 @@
+11:30:15 **** Incremental Build of configuration Debug for project sd_test ****
+make all 
+make: Nothing to be done for `all'.
+11:31:20 **** Auto Build of configuration Debug for project sd_test ****
+make all 
+'Building target: sd_test.elf'
+'Invoking: MicroBlaze gcc linker'
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../sd_test_bsp/microblaze_0/lib -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mcpu=v8.50.c -mno-xl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "sd_test.elf"  ./src/helloworld.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+c:/xilinx/14.7/ise_ds/edk/gnu/microblaze/nt/bin/../lib/gcc/microblaze-xilinx-elf/4.6.4/../../../../microblaze-xilinx-elf/bin/ld.exe: sd_test.elf section `.stack' will not fit in region `microblaze_0_i_bram_ctrl_microblaze_0_d_bram_ctrl'
+c:/xilinx/14.7/ise_ds/edk/gnu/microblaze/nt/bin/../lib/gcc/microblaze-xilinx-elf/4.6.4/../../../../microblaze-xilinx-elf/bin/ld.exe: region `microblaze_0_i_bram_ctrl_microblaze_0_d_bram_ctrl' overflowed by 968 bytes
+collect2: ld returned 1 exit status
+make: *** [sd_test.elf] 错误 1
+14:24:58 **** Auto Build of project buzzer_test_bsp ****
+make -k all 
+libgen -hw ../Microblaze_hw_platform/system.xml\
+	       \
+	       -pe microblaze_0 \
+	       -log libgen.log \
+	       system.mss
+libgen
+Xilinx EDK 14.7 Build EDK_P.20131013
+Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
+
+Command Line: libgen -hw ../Microblaze_hw_platform/system.xml -pe microblaze_0
+-log libgen.log system.mss 
+
+
+Staging source files.
+Running DRCs.
+Running generate.
+Running post_generate.
+Running include - 'make -s include "COMPILER=mb-gcc" "ARCHIVER=mb-ar"
+"COMPILER_FLAGS=-mlittle-endian -mno-xl-soft-mul -mxl-barrel-shift
+-mxl-pattern-compare -mcpu=v8.50.c  -O2 -c" "EXTRA_COMPILER_FLAGS=-g
+-ffunction-sections -fdata-sections"'.
+
+Running libs - 'make -s libs "COMPILER=mb-gcc" "ARCHIVER=mb-ar"
+"COMPILER_FLAGS=-mlittle-endian -mno-xl-soft-mul -mxl-barrel-shift
+-mxl-pattern-compare -mcpu=v8.50.c  -O2 -c" "EXTRA_COMPILER_FLAGS=-g
+-ffunction-sections -fdata-sections"'.
+"Compiling common"
+"Compiling standalone";
+"Compiling iic"
+"Compiling intc"
+"Compiling gpio"
+"Compiling tmrctr"
+"Compiling uartlite"
+"Compiling bram"
+"Compiling spi"
+"Compiling cpu"
+Running execs_generate.
+'Finished building libraries'
+14:25:22 **** Auto Build of configuration Debug for project buzzer_test ****
+make all 
+make: Nothing to be done for `all'.
+14:25:22 **** Auto Build of project eeprom_test_bsp ****
+make -k all 
+libgen -hw ../Microblaze_hw_platform/system.xml\
+	       \
+	       -pe microblaze_0 \
+	       -log libgen.log \
+	       system.mss
+libgen
+Xilinx EDK 14.7 Build EDK_P.20131013
+Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
+
+Command Line: libgen -hw ../Microblaze_hw_platform/system.xml -pe microblaze_0
+-log libgen.log system.mss 
+
+
+Staging source files.
+Running DRCs.
+Running generate.
+Running post_generate.
+Running include - 'make -s include "COMPILER=mb-gcc" "ARCHIVER=mb-ar"
+"COMPILER_FLAGS=-mlittle-endian -mno-xl-soft-mul -mxl-barrel-shift
+-mxl-pattern-compare -mcpu=v8.50.c  -O2 -c" "EXTRA_COMPILER_FLAGS=-g
+-ffunction-sections -fdata-sections"'.
+
+Running libs - 'make -s libs "COMPILER=mb-gcc" "ARCHIVER=mb-ar"
+"COMPILER_FLAGS=-mlittle-endian -mno-xl-soft-mul -mxl-barrel-shift
+-mxl-pattern-compare -mcpu=v8.50.c  -O2 -c" "EXTRA_COMPILER_FLAGS=-g
+-ffunction-sections -fdata-sections"'.
+"Compiling common"
+"Compiling standalone";
+"Compiling iic"
+"Compiling intc"
+"Compiling tmrctr"
+"Compiling uartlite"
+"Compiling gpio"
+"Compiling bram"
+"Compiling cpu"
+Running execs_generate.
+'Finished building libraries'
+14:25:33 **** Auto Build of configuration Debug for project eeprom_test ****
+make all 
+make: Nothing to be done for `all'.
+14:25:33 **** Auto Build of project flash_test_bsp ****
+make -k all 
+libgen -hw ../Microblaze_hw_platform/system.xml\
+	       \
+	       -pe microblaze_0 \
+	       -log libgen.log \
+	       system.mss
+libgen
+Xilinx EDK 14.7 Build EDK_P.20131013
+Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
+
+Command Line: libgen -hw ../Microblaze_hw_platform/system.xml -pe microblaze_0
+-log libgen.log system.mss 
+
+
+Staging source files.
+Running DRCs.
+Running generate.
+Running post_generate.
+Running include - 'make -s include "COMPILER=mb-gcc" "ARCHIVER=mb-ar"
+"COMPILER_FLAGS=-mlittle-endian -mno-xl-soft-mul -mxl-barrel-shift
+-mxl-pattern-compare -mcpu=v8.50.c  -O2 -c" "EXTRA_COMPILER_FLAGS=-g
+-ffunction-sections -fdata-sections"'.
+
+Running libs - 'make -s libs "COMPILER=mb-gcc" "ARCHIVER=mb-ar"
+"COMPILER_FLAGS=-mlittle-endian -mno-xl-soft-mul -mxl-barrel-shift
+-mxl-pattern-compare -mcpu=v8.50.c  -O2 -c" "EXTRA_COMPILER_FLAGS=-g
+-ffunction-sections -fdata-sections"'.
+"Compiling common"
+"Compiling standalone";
+"Compiling iic"
+"Compiling intc"
+"Compiling gpio"
+"Compiling tmrctr"
+"Compiling uartlite"
+"Compiling bram"
+"Compiling spi"
+"Compiling cpu"
+Running execs_generate.
+'Finished building libraries'
+14:25:45 **** Auto Build of configuration Debug for project flash_test ****
+make all 
+make: Nothing to be done for `all'.
+14:25:45 **** Auto Build of project hello_world_bsp ****
+make -k all 
+libgen -hw ../Microblaze_hw_platform/system.xml\
+	       \
+	       -pe microblaze_0 \
+	       -log libgen.log \
+	       system.mss
+libgen
+Xilinx EDK 14.7 Build EDK_P.20131013
+Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
+
+Command Line: libgen -hw ../Microblaze_hw_platform/system.xml -pe microblaze_0
+-log libgen.log system.mss 
+
+
+Staging source files.
+Running DRCs.
+Running generate.
+Running post_generate.
+Running include - 'make -s include "COMPILER=mb-gcc" "ARCHIVER=mb-ar"
+"COMPILER_FLAGS=-mlittle-endian -mno-xl-soft-mul -mxl-barrel-shift
+-mxl-pattern-compare -mcpu=v8.50.c  -O2 -c" "EXTRA_COMPILER_FLAGS=-g
+-ffunction-sections -fdata-sections"'.
+
+Running libs - 'make -s libs "COMPILER=mb-gcc" "ARCHIVER=mb-ar"
+"COMPILER_FLAGS=-mlittle-endian -mno-xl-soft-mul -mxl-barrel-shift
+-mxl-pattern-compare -mcpu=v8.50.c  -O2 -c" "EXTRA_COMPILER_FLAGS=-g
+-ffunction-sections -fdata-sections"'.
+"Compiling common"
+"Compiling standalone";
+"Compiling uartlite"
+"Compiling bram"
+"Compiling cpu"
+Running execs_generate.
+'Finished building libraries'
+14:25:52 **** Auto Build of configuration Debug for project hello_world ****
+make all 
+make: Nothing to be done for `all'.
+14:25:52 **** Auto Build of project key_test_bsp ****
+make -k all 
+libgen -hw ../Microblaze_hw_platform/system.xml\
+	       \
+	       -pe microblaze_0 \
+	       -log libgen.log \
+	       system.mss
+libgen
+Xilinx EDK 14.7 Build EDK_P.20131013
+Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
+
+Command Line: libgen -hw ../Microblaze_hw_platform/system.xml -pe microblaze_0
+-log libgen.log system.mss 
+
+
+Staging source files.
+Running DRCs.
+Running generate.
+Running post_generate.
+Running include - 'make -s include "COMPILER=mb-gcc" "ARCHIVER=mb-ar"
+"COMPILER_FLAGS=-mlittle-endian -mno-xl-soft-mul -mxl-barrel-shift
+-mxl-pattern-compare -mcpu=v8.50.c  -O2 -c" "EXTRA_COMPILER_FLAGS=-g
+-ffunction-sections -fdata-sections"'.
+
+Running libs - 'make -s libs "COMPILER=mb-gcc" "ARCHIVER=mb-ar"
+"COMPILER_FLAGS=-mlittle-endian -mno-xl-soft-mul -mxl-barrel-shift
+-mxl-pattern-compare -mcpu=v8.50.c  -O2 -c" "EXTRA_COMPILER_FLAGS=-g
+-ffunction-sections -fdata-sections"'.
+"Compiling common"
+"Compiling standalone";
+"Compiling uartlite"
+"Compiling gpio"
+"Compiling bram"
+"Compiling cpu"
+Running execs_generate.
+'Finished building libraries'
+14:26:00 **** Auto Build of configuration Debug for project key_test ****
+make all 
+make: Nothing to be done for `all'.
+14:26:01 **** Auto Build of project led_test_bsp ****
+make -k all 
+libgen -hw ../Microblaze_hw_platform/system.xml\
+	       \
+	       -pe microblaze_0 \
+	       -log libgen.log \
+	       system.mss
+libgen
+Xilinx EDK 14.7 Build EDK_P.20131013
+Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
+
+Command Line: libgen -hw ../Microblaze_hw_platform/system.xml -pe microblaze_0
+-log libgen.log system.mss 
+
+
+Staging source files.
+Running DRCs.
+Running generate.
+Running post_generate.
+Running include - 'make -s include "COMPILER=mb-gcc" "ARCHIVER=mb-ar"
+"COMPILER_FLAGS=-mlittle-endian -mno-xl-soft-mul -mxl-barrel-shift
+-mxl-pattern-compare -mcpu=v8.50.c  -O2 -c" "EXTRA_COMPILER_FLAGS=-g
+-ffunction-sections -fdata-sections"'.
+
+Running libs - 'make -s libs "COMPILER=mb-gcc" "ARCHIVER=mb-ar"
+"COMPILER_FLAGS=-mlittle-endian -mno-xl-soft-mul -mxl-barrel-shift
+-mxl-pattern-compare -mcpu=v8.50.c  -O2 -c" "EXTRA_COMPILER_FLAGS=-g
+-ffunction-sections -fdata-sections"'.
+"Compiling common"
+"Compiling standalone";
+"Compiling uartlite"
+"Compiling gpio"
+"Compiling bram"
+"Compiling cpu"
+Running execs_generate.
+'Finished building libraries'
+14:26:09 **** Auto Build of configuration Debug for project led_test ****
+make all 
+make: Nothing to be done for `all'.
+14:26:09 **** Auto Build of project rtc_test_bsp ****
+make -k all 
+libgen -hw ../Microblaze_hw_platform/system.xml\
+	       \
+	       -pe microblaze_0 \
+	       -log libgen.log \
+	       system.mss
+libgen
+Xilinx EDK 14.7 Build EDK_P.20131013
+Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
+
+Command Line: libgen -hw ../Microblaze_hw_platform/system.xml -pe microblaze_0
+-log libgen.log system.mss 
+
+
+Staging source files.
+Running DRCs.
+Running generate.
+Running post_generate.
+Running include - 'make -s include "COMPILER=mb-gcc" "ARCHIVER=mb-ar"
+"COMPILER_FLAGS=-mlittle-endian -mno-xl-soft-mul -mxl-barrel-shift
+-mxl-pattern-compare -mcpu=v8.50.c  -O2 -c" "EXTRA_COMPILER_FLAGS=-g
+-ffunction-sections -fdata-sections"'.
+
+Running libs - 'make -s libs "COMPILER=mb-gcc" "ARCHIVER=mb-ar"
+"COMPILER_FLAGS=-mlittle-endian -mno-xl-soft-mul -mxl-barrel-shift
+-mxl-pattern-compare -mcpu=v8.50.c  -O2 -c" "EXTRA_COMPILER_FLAGS=-g
+-ffunction-sections -fdata-sections"'.
+"Compiling common"
+"Compiling standalone";
+"Compiling iic"
+"Compiling intc"
+"Compiling gpio"
+"Compiling tmrctr"
+"Compiling uartlite"
+"Compiling bram"
+"Compiling cpu"
+Running execs_generate.
+'Finished building libraries'
+14:26:20 **** Auto Build of configuration Debug for project rtc_test ****
+make all 
+make: Nothing to be done for `all'.
+14:26:20 **** Auto Build of project sd_test_bsp ****
+make -k all 
+libgen -hw ../Microblaze_hw_platform/system.xml\
+	       \
+	       -pe microblaze_0 \
+	       -log libgen.log \
+	       system.mss
+libgen
+Xilinx EDK 14.7 Build EDK_P.20131013
+Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
+
+Command Line: libgen -hw ../Microblaze_hw_platform/system.xml -pe microblaze_0
+-log libgen.log system.mss 
+
+ERROR:EDK:410 - spi - E:\Project\AX309\Microblaze\SDK\sd_test_bsp\system.mss
+   line 99 - No IP instance named spi_sd is present in the hardware!
+ERROR:EDK:1206 - Errors occured while parsing MSS file.
+make: *** [microblaze_0/lib/libxil.a] 错误 2
+make: 由于错误目标“all”并未重新创建。
+14:26:21 **** Auto Build of configuration Debug for project sd_test ****
+make all 
+'Invoking: MicroBlaze Print Size'
+mb-size sd_test.elf  |tee "sd_test.elf.size"
+mb-size: sd_test.elf: File format not recognized
+'Finished building: sd_test.elf.size'
+' '
+'Invoking: Xilinx ELF Check'
+elfcheck sd_test.elf -hw ../../Microblaze_hw_platform/system.xml -pe microblaze_0  |tee "sd_test.elf.elfcheck"
+elfcheck
+Xilinx EDK 14.7 Build EDK_P.20131013
+Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
+
+Command Line: elfcheck -hw ../../Microblaze_hw_platform/system.xml -pe
+microblaze_0 sd_test.elf 
+
+ELF file	: sd_test.elf
+ERROR:EDK:3322 - sd_test.elf is not a valid ELF file.
+'Finished building: sd_test.elf.elfcheck'
+' '
+14:26:23 **** Auto Build of project smg_test_bsp ****
+make -k all 
+libgen -hw ../Microblaze_hw_platform/system.xml\
+	       \
+	       -pe microblaze_0 \
+	       -log libgen.log \
+	       system.mss
+libgen
+Xilinx EDK 14.7 Build EDK_P.20131013
+Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
+
+Command Line: libgen -hw ../Microblaze_hw_platform/system.xml -pe microblaze_0
+-log libgen.log system.mss 
+
+
+Staging source files.
+Running DRCs.
+Running generate.
+Running post_generate.
+Running include - 'make -s include "COMPILER=mb-gcc" "ARCHIVER=mb-ar"
+"COMPILER_FLAGS=-mlittle-endian -mno-xl-soft-mul -mxl-barrel-shift
+-mxl-pattern-compare -mcpu=v8.50.c  -O2 -c" "EXTRA_COMPILER_FLAGS=-g
+-ffunction-sections -fdata-sections"'.
+
+Running libs - 'make -s libs "COMPILER=mb-gcc" "ARCHIVER=mb-ar"
+"COMPILER_FLAGS=-mlittle-endian -mno-xl-soft-mul -mxl-barrel-shift
+-mxl-pattern-compare -mcpu=v8.50.c  -O2 -c" "EXTRA_COMPILER_FLAGS=-g
+-ffunction-sections -fdata-sections"'.
+"Compiling common"
+"Compiling standalone";
+"Compiling iic"
+"Compiling intc"
+"Compiling gpio"
+"Compiling tmrctr"
+"Compiling uartlite"
+"Compiling bram"
+"Compiling spi"
+"Compiling cpu"
+Running execs_generate.
+'Finished building libraries'
+14:26:35 **** Auto Build of configuration Debug for project smg_test ****
+make all 
+make: Nothing to be done for `all'.
+14:26:35 **** Auto Build of project timer_intr_test_bsp ****
+make -k all 
+libgen -hw ../Microblaze_hw_platform/system.xml\
+	       \
+	       -pe microblaze_0 \
+	       -log libgen.log \
+	       system.mss
+libgen
+Xilinx EDK 14.7 Build EDK_P.20131013
+Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
+
+Command Line: libgen -hw ../Microblaze_hw_platform/system.xml -pe microblaze_0
+-log libgen.log system.mss 
+
+
+Staging source files.
+Running DRCs.
+Running generate.
+Running post_generate.
+Running include - 'make -s include "COMPILER=mb-gcc" "ARCHIVER=mb-ar"
+"COMPILER_FLAGS=-mlittle-endian -mno-xl-soft-mul -mxl-barrel-shift
+-mxl-pattern-compare -mcpu=v8.50.c  -O2 -c" "EXTRA_COMPILER_FLAGS=-g
+-ffunction-sections -fdata-sections"'.
+
+Running libs - 'make -s libs "COMPILER=mb-gcc" "ARCHIVER=mb-ar"
+"COMPILER_FLAGS=-mlittle-endian -mno-xl-soft-mul -mxl-barrel-shift
+-mxl-pattern-compare -mcpu=v8.50.c  -O2 -c" "EXTRA_COMPILER_FLAGS=-g
+-ffunction-sections -fdata-sections"'.
+"Compiling common"
+"Compiling standalone";
+"Compiling intc"
+"Compiling tmrctr"
+"Compiling uartlite"
+"Compiling gpio"
+"Compiling bram"
+"Compiling cpu"
+Running execs_generate.
+'Finished building libraries'
+14:26:45 **** Auto Build of configuration Debug for project timer_intr_test ****
+make all 
+make: Nothing to be done for `all'.
+14:26:45 **** Auto Build of project uart_test_bsp ****
+make -k all 
+libgen -hw ../Microblaze_hw_platform/system.xml\
+	       \
+	       -pe microblaze_0 \
+	       -log libgen.log \
+	       system.mss
+libgen
+Xilinx EDK 14.7 Build EDK_P.20131013
+Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
+
+Command Line: libgen -hw ../Microblaze_hw_platform/system.xml -pe microblaze_0
+-log libgen.log system.mss 
+
+
+Staging source files.
+Running DRCs.
+Running generate.
+Running post_generate.
+Running include - 'make -s include "COMPILER=mb-gcc" "ARCHIVER=mb-ar"
+"COMPILER_FLAGS=-mlittle-endian -mno-xl-soft-mul -mxl-barrel-shift
+-mxl-pattern-compare -mcpu=v8.50.c  -O2 -c" "EXTRA_COMPILER_FLAGS=-g
+-ffunction-sections -fdata-sections"'.
+
+Running libs - 'make -s libs "COMPILER=mb-gcc" "ARCHIVER=mb-ar"
+"COMPILER_FLAGS=-mlittle-endian -mno-xl-soft-mul -mxl-barrel-shift
+-mxl-pattern-compare -mcpu=v8.50.c  -O2 -c" "EXTRA_COMPILER_FLAGS=-g
+-ffunction-sections -fdata-sections"'.
+"Compiling common"
+"Compiling standalone";
+"Compiling intc"
+"Compiling tmrctr"
+"Compiling uartlite"
+"Compiling gpio"
+"Compiling bram"
+"Compiling cpu"
+Running execs_generate.
+'Finished building libraries'
+14:26:55 **** Auto Build of configuration Debug for project uart_test ****
+make all 
+make: Nothing to be done for `all'.
+14:26:55 **** Auto Build of project vga_test_bsp ****
+make -k all 
+libgen -hw ../Microblaze_hw_platform/system.xml\
+	       \
+	       -pe microblaze_0 \
+	       -log libgen.log \
+	       system.mss
+libgen
+Xilinx EDK 14.7 Build EDK_P.20131013
+Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
+
+Command Line: libgen -hw ../Microblaze_hw_platform/system.xml -pe microblaze_0
+-log libgen.log system.mss 
+
+
+Staging source files.
+Running DRCs.
+Running generate.
+Running post_generate.
+Running include - 'make -s include "COMPILER=mb-gcc" "ARCHIVER=mb-ar"
+"COMPILER_FLAGS=-mlittle-endian -mno-xl-soft-mul -mxl-barrel-shift
+-mxl-pattern-compare -mcpu=v8.50.c  -O2 -c" "EXTRA_COMPILER_FLAGS=-g
+-ffunction-sections -fdata-sections"'.
+
+Running libs - 'make -s libs "COMPILER=mb-gcc" "ARCHIVER=mb-ar"
+"COMPILER_FLAGS=-mlittle-endian -mno-xl-soft-mul -mxl-barrel-shift
+-mxl-pattern-compare -mcpu=v8.50.c  -O2 -c" "EXTRA_COMPILER_FLAGS=-g
+-ffunction-sections -fdata-sections"'.
+"Compiling common"
+"Compiling standalone";
+"Compiling iic"
+"Compiling intc"
+"Compiling gpio"
+"Compiling tmrctr"
+"Compiling uartlite"
+"Compiling bram"
+"Compiling spi"
+"Compiling cpu"
+Running execs_generate.
+'Finished building libraries'
+14:27:08 **** Auto Build of configuration Debug for project vga_test ****
+make all 
+make: Nothing to be done for `all'.
+14:27:38 **** Auto Build of configuration Debug for project sd_test ****
+make all 
+make: Nothing to be done for `all'.

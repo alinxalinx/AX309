@@ -1,0 +1,18 @@
+// File: E:\Project\AX309\Microblaze\implementation\system_stub.bmm
+
+ADDRESS_MAP microblaze_0 MICROBLAZE-LE 100
+	ADDRESS_SPACE microblaze_0_bram_block_combined COMBINED [0x00000000:0x00003fff]
+		ADDRESS_RANGE RAMB16
+		BUS_BLOCK
+			system_i/microblaze_0_bram_block/microblaze_0_bram_block/ramb16bwer_0 [31:28] INPUT = microblaze_0_bram_block_combined_0.mem ;
+			system_i/microblaze_0_bram_block/microblaze_0_bram_block/ramb16bwer_1 [27:24] INPUT = microblaze_0_bram_block_combined_1.mem ;
+			system_i/microblaze_0_bram_block/microblaze_0_bram_block/ramb16bwer_2 [23:20] INPUT = microblaze_0_bram_block_combined_2.mem ;
+			system_i/microblaze_0_bram_block/microblaze_0_bram_block/ramb16bwer_3 [19:16] INPUT = microblaze_0_bram_block_combined_3.mem ;
+			system_i/microblaze_0_bram_block/microblaze_0_bram_block/ramb16bwer_4 [15:12] INPUT = microblaze_0_bram_block_combined_4.mem ;
+			system_i/microblaze_0_bram_block/microblaze_0_bram_block/ramb16bwer_5 [11:8] INPUT = microblaze_0_bram_block_combined_5.mem ;
+			system_i/microblaze_0_bram_block/microblaze_0_bram_block/ramb16bwer_6 [7:4] INPUT = microblaze_0_bram_block_combined_6.mem ;
+			system_i/microblaze_0_bram_block/microblaze_0_bram_block/ramb16bwer_7 [3:0] INPUT = microblaze_0_bram_block_combined_7.mem ;
+		END_BUS_BLOCK;
+		END_ADDRESS_RANGE;
+	END_ADDRESS_SPACE;
+END_ADDRESS_MAP;

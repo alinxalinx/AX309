@@ -1,0 +1,461 @@
+Release 14.7 - xst P.20131013 (nt64)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+--> Parameter TMPDIR set to E:\Project\AX309\Microblaze\synthesis\xst_temp_dir\
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.07 secs
+ 
+--> 
+TABLE OF CONTENTS
+  1) Synthesis Options Summary
+  2) HDL Parsing
+  3) HDL Elaboration
+  4) HDL Synthesis
+       4.1) HDL Synthesis Report
+  5) Advanced HDL Synthesis
+       5.1) Advanced HDL Synthesis Report
+  6) Low Level Synthesis
+  7) Partition Report
+  8) Design Summary
+       8.1) Primitive and Black Box Usage
+       8.2) Device utilization summary
+       8.3) Partition Resource Summary
+       8.4) Timing Report
+            8.4.1) Clock Information
+            8.4.2) Asynchronous Control Signals Information
+            8.4.3) Timing Summary
+            8.4.4) Timing Details
+            8.4.5) Cross Clock Domains Report
+
+
+=========================================================================
+*                      Synthesis Options Summary                        *
+=========================================================================
+---- Source Parameters
+Input Format                       : MIXED
+Input File Name                    : "system_microblaze_0_i_bram_ctrl_wrapper_xst.prj"
+Verilog Include Directory          : {"E:\Project\AX309\Microblaze\pcores\" "C:\Xilinx\14.7\ISE_DS\EDK\hw\XilinxBFMinterface\pcores\" "C:\Xilinx\14.7\ISE_DS\EDK\hw\XilinxProcessorIPLib\pcores\" }
+
+---- Target Parameters
+Target Device                      : xc6slx9ftg256-2
+Output File Name                   : "../implementation/system_microblaze_0_i_bram_ctrl_wrapper.ngc"
+
+---- Source Options
+Top Module Name                    : system_microblaze_0_i_bram_ctrl_wrapper
+
+---- Target Options
+Add IO Buffers                     : NO
+
+---- General Options
+Optimization Goal                  : speed
+Netlist Hierarchy                  : as_optimized
+Optimization Effort                : 1
+Hierarchy Separator                : /
+
+---- Other Options
+Cores Search Directories           : {../implementation}
+
+=========================================================================
+
+
+=========================================================================
+*                          HDL Parsing                                  *
+=========================================================================
+Parsing VHDL file "C:/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/lmb_bram_if_cntlr_v3_10_c/hdl/vhdl/lmb_bram_if_funcs.vhd" into library lmb_bram_if_cntlr_v3_10_c
+Parsing package <lmb_bram_if_funcs>.
+Parsing package body <lmb_bram_if_funcs>.
+Parsing VHDL file "C:/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/lmb_bram_if_cntlr_v3_10_c/hdl/vhdl/xor18.vhd" into library lmb_bram_if_cntlr_v3_10_c
+Parsing entity <XOR18>.
+Parsing architecture <IMP> of entity <xor18>.
+Parsing VHDL file "C:/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/lmb_bram_if_cntlr_v3_10_c/hdl/vhdl/parity.vhd" into library lmb_bram_if_cntlr_v3_10_c
+Parsing entity <Parity>.
+Parsing architecture <IMP> of entity <parity>.
+Parsing VHDL file "C:/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/lmb_bram_if_cntlr_v3_10_c/hdl/vhdl/parityenable.vhd" into library lmb_bram_if_cntlr_v3_10_c
+Parsing entity <ParityEnable>.
+Parsing architecture <IMP> of entity <parityenable>.
+Parsing VHDL file "C:/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/lmb_bram_if_cntlr_v3_10_c/hdl/vhdl/checkbit_handler.vhd" into library lmb_bram_if_cntlr_v3_10_c
+Parsing entity <checkbit_handler>.
+Parsing architecture <IMP> of entity <checkbit_handler>.
+Parsing VHDL file "C:/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/lmb_bram_if_cntlr_v3_10_c/hdl/vhdl/correct_one_bit.vhd" into library lmb_bram_if_cntlr_v3_10_c
+Parsing entity <Correct_One_Bit>.
+Parsing architecture <IMP> of entity <correct_one_bit>.
+Parsing VHDL file "C:/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/lmb_bram_if_cntlr_v3_10_c/hdl/vhdl/pselect.vhd" into library lmb_bram_if_cntlr_v3_10_c
+Parsing entity <pselect>.
+Parsing architecture <imp> of entity <pselect>.
+Parsing VHDL file "C:/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/lmb_bram_if_cntlr_v3_10_c/hdl/vhdl/pselect_mask.vhd" into library lmb_bram_if_cntlr_v3_10_c
+Parsing entity <pselect_mask>.
+Parsing architecture <imp> of entity <pselect_mask>.
+Parsing VHDL file "C:/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/lmb_bram_if_cntlr_v3_10_c/hdl/vhdl/plb_interface.vhd" into library lmb_bram_if_cntlr_v3_10_c
+Parsing entity <plb_interface>.
+Parsing architecture <IMP> of entity <plb_interface>.
+Parsing VHDL file "C:/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/lmb_bram_if_cntlr_v3_10_c/hdl/vhdl/axi_interface.vhd" into library lmb_bram_if_cntlr_v3_10_c
+Parsing entity <axi_interface>.
+Parsing architecture <IMP> of entity <axi_interface>.
+Parsing VHDL file "C:/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/lmb_bram_if_cntlr_v3_10_c/hdl/vhdl/lmb_mux.vhd" into library lmb_bram_if_cntlr_v3_10_c
+Parsing entity <lmb_mux>.
+Parsing architecture <imp> of entity <lmb_mux>.
+Parsing VHDL file "C:/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/lmb_bram_if_cntlr_v3_10_c/hdl/vhdl/lmb_bram_if_cntlr.vhd" into library lmb_bram_if_cntlr_v3_10_c
+Parsing entity <lmb_bram_if_cntlr>.
+Parsing architecture <imp> of entity <lmb_bram_if_cntlr>.
+Parsing VHDL file "E:\Project\AX309\Microblaze\hdl\system_microblaze_0_i_bram_ctrl_wrapper.vhd" into library work
+Parsing entity <system_microblaze_0_i_bram_ctrl_wrapper>.
+Parsing architecture <STRUCTURE> of entity <system_microblaze_0_i_bram_ctrl_wrapper>.
+
+=========================================================================
+*                            HDL Elaboration                            *
+=========================================================================
+
+Elaborating entity <system_microblaze_0_i_bram_ctrl_wrapper> (architecture <STRUCTURE>) from library <work>.
+
+Elaborating entity <lmb_bram_if_cntlr> (architecture <imp>) with generics from library <lmb_bram_if_cntlr_v3_10_c>.
+
+Elaborating entity <lmb_mux> (architecture <imp>) with generics from library <lmb_bram_if_cntlr_v3_10_c>.
+
+Elaborating entity <pselect_mask> (architecture <imp>) with generics from library <lmb_bram_if_cntlr_v3_10_c>.
+
+=========================================================================
+*                           HDL Synthesis                               *
+=========================================================================
+
+Synthesizing Unit <system_microblaze_0_i_bram_ctrl_wrapper>.
+    Related source file is "E:\Project\AX309\Microblaze\hdl\system_microblaze_0_i_bram_ctrl_wrapper.vhd".
+    Summary:
+	no macro.
+Unit <system_microblaze_0_i_bram_ctrl_wrapper> synthesized.
+
+Synthesizing Unit <lmb_bram_if_cntlr>.
+    Related source file is "C:/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/lmb_bram_if_cntlr_v3_10_c/hdl/vhdl/lmb_bram_if_cntlr.vhd".
+        C_FAMILY = "spartan6"
+        C_HIGHADDR = "00000000000000000011111111111111"
+        C_BASEADDR = "00000000000000000000000000000000"
+        C_MASK = "01000000000000000000000000000000"
+        C_MASK1 = "00000000100000000000000000000000"
+        C_MASK2 = "00000000100000000000000000000000"
+        C_MASK3 = "00000000100000000000000000000000"
+        C_LMB_AWIDTH = 32
+        C_LMB_DWIDTH = 32
+        C_ECC = 0
+        C_INTERCONNECT = 0
+        C_FAULT_INJECT = 0
+        C_CE_FAILING_REGISTERS = 0
+        C_UE_FAILING_REGISTERS = 0
+        C_ECC_STATUS_REGISTERS = 0
+        C_ECC_ONOFF_REGISTER = 0
+        C_ECC_ONOFF_RESET_VALUE = 1
+        C_CE_COUNTER_WIDTH = 0
+        C_WRITE_ACCESS = 2
+        C_NUM_LMB = 1
+        C_SPLB_CTRL_BASEADDR = "11111111111111111111111111111111"
+        C_SPLB_CTRL_HIGHADDR = "00000000000000000000000000000000"
+        C_SPLB_CTRL_AWIDTH = 32
+        C_SPLB_CTRL_DWIDTH = 32
+        C_SPLB_CTRL_P2P = 0
+        C_SPLB_CTRL_MID_WIDTH = 1
+        C_SPLB_CTRL_NUM_MASTERS = 1
+        C_SPLB_CTRL_SUPPORT_BURSTS = 0
+        C_SPLB_CTRL_NATIVE_DWIDTH = 32
+        C_S_AXI_CTRL_BASEADDR = "11111111111111111111111111111111"
+        C_S_AXI_CTRL_HIGHADDR = "00000000000000000000000000000000"
+        C_S_AXI_CTRL_ADDR_WIDTH = 32
+        C_S_AXI_CTRL_DATA_WIDTH = 32
+WARNING:Xst:647 - Input <SPLB_CTRL_PLB_ABus> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <SPLB_CTRL_PLB_UABus> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <SPLB_CTRL_PLB_masterID> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <SPLB_CTRL_PLB_BE> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <SPLB_CTRL_PLB_MSize> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <SPLB_CTRL_PLB_size> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <SPLB_CTRL_PLB_type> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <SPLB_CTRL_PLB_wrDBus> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <SPLB_CTRL_PLB_wrPendPri> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <SPLB_CTRL_PLB_rdPendPri> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <SPLB_CTRL_PLB_reqPri> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <SPLB_CTRL_PLB_TAttribute> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <S_AXI_CTRL_AWADDR> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <S_AXI_CTRL_WDATA> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <S_AXI_CTRL_WSTRB> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <S_AXI_CTRL_ARADDR> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <SPLB_CTRL_PLB_PAValid> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <SPLB_CTRL_PLB_SAValid> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <SPLB_CTRL_PLB_rdPrim> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <SPLB_CTRL_PLB_wrPrim> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <SPLB_CTRL_PLB_abort> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <SPLB_CTRL_PLB_busLock> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <SPLB_CTRL_PLB_RNW> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <SPLB_CTRL_PLB_lockErr> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <SPLB_CTRL_PLB_wrBurst> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <SPLB_CTRL_PLB_rdBurst> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <SPLB_CTRL_PLB_wrPendReq> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <SPLB_CTRL_PLB_rdPendReq> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <S_AXI_CTRL_ACLK> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <S_AXI_CTRL_ARESETN> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <S_AXI_CTRL_AWVALID> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <S_AXI_CTRL_WVALID> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <S_AXI_CTRL_BREADY> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <S_AXI_CTRL_ARVALID> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <S_AXI_CTRL_RREADY> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+INFO:Xst:3210 - "C:/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/lmb_bram_if_cntlr_v3_10_c/hdl/vhdl/lmb_bram_if_cntlr.vhd" line 547: Output port <LMB_ReadStrobe> of the instance <lmb_mux_I> is unconnected or connected to loadless signal.
+    Found 1-bit register for signal <lmb_as>.
+    Found 1-bit register for signal <Sl_Rdy>.
+    Summary:
+	inferred   2 D-type flip-flop(s).
+Unit <lmb_bram_if_cntlr> synthesized.
+
+Synthesizing Unit <lmb_mux>.
+    Related source file is "C:/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/lmb_bram_if_cntlr_v3_10_c/hdl/vhdl/lmb_mux.vhd".
+        C_BASEADDR = "00000000000000000000000000000000"
+        C_MASK = "01000000000000000000000000000000"
+        C_MASK1 = "00000000100000000000000000000000"
+        C_MASK2 = "00000000100000000000000000000000"
+        C_MASK3 = "00000000100000000000000000000000"
+        C_LMB_AWIDTH = 32
+        C_LMB_DWIDTH = 32
+        C_NUM_LMB = 1
+WARNING:Xst:647 - Input <LMB1_ABus> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <LMB1_WriteDBus> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <LMB1_BE> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <LMB2_ABus> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <LMB2_WriteDBus> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <LMB2_BE> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <LMB3_ABus> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <LMB3_WriteDBus> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <LMB3_BE> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <LMB_Clk> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <LMB_Rst> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <LMB1_AddrStrobe> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <LMB1_ReadStrobe> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <LMB1_WriteStrobe> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <LMB2_AddrStrobe> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <LMB2_ReadStrobe> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <LMB2_WriteStrobe> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <LMB3_AddrStrobe> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <LMB3_ReadStrobe> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <LMB3_WriteStrobe> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+    Summary:
+	no macro.
+Unit <lmb_mux> synthesized.
+
+Synthesizing Unit <pselect_mask>.
+    Related source file is "C:/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/lmb_bram_if_cntlr_v3_10_c/hdl/vhdl/pselect_mask.vhd".
+        C_AW = 32
+        C_BAR = "00000000000000000000000000000000"
+        C_MASK = "01000000000000000000000000000000"
+WARNING:Xst:647 - Input <A<0:0>> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <A<2:31>> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+    Summary:
+	no macro.
+Unit <pselect_mask> synthesized.
+
+=========================================================================
+HDL Synthesis Report
+
+Macro Statistics
+# Registers                                            : 2
+ 1-bit register                                        : 2
+
+=========================================================================
+
+=========================================================================
+*                       Advanced HDL Synthesis                          *
+=========================================================================
+
+
+=========================================================================
+Advanced HDL Synthesis Report
+
+Macro Statistics
+# Registers                                            : 2
+ Flip-Flops                                            : 2
+
+=========================================================================
+
+=========================================================================
+*                         Low Level Synthesis                           *
+=========================================================================
+
+Optimizing unit <system_microblaze_0_i_bram_ctrl_wrapper> ...
+
+Optimizing unit <lmb_bram_if_cntlr> ...
+
+Mapping all equations...
+Building and optimizing final netlist ...
+Found area constraint ratio of 100 (+ 0) on block system_microblaze_0_i_bram_ctrl_wrapper, actual ratio is 0.
+
+Final Macro Processing ...
+
+=========================================================================
+Final Register Report
+
+Macro Statistics
+# Registers                                            : 2
+ Flip-Flops                                            : 2
+
+=========================================================================
+
+=========================================================================
+*                           Partition Report                            *
+=========================================================================
+
+Partition Implementation Status
+-------------------------------
+
+  No Partitions were found in this design.
+
+-------------------------------
+
+=========================================================================
+*                            Design Summary                             *
+=========================================================================
+
+Top Level Output File Name         : system_microblaze_0_i_bram_ctrl_wrapper.ngc
+
+Primitive and Black Box Usage:
+------------------------------
+# BELS                             : 7
+#      GND                         : 1
+#      INV                         : 1
+#      LUT2                        : 1
+#      LUT3                        : 4
+# FlipFlops/Latches                : 2
+#      FDR                         : 2
+
+Device utilization summary:
+---------------------------
+
+Selected Device : 6slx9ftg256-2 
+
+
+Slice Logic Utilization: 
+ Number of Slice Registers:               2  out of  11440     0%  
+ Number of Slice LUTs:                    6  out of   5720     0%  
+    Number used as Logic:                 6  out of   5720     0%  
+
+Slice Logic Distribution: 
+ Number of LUT Flip Flop pairs used:      8
+   Number with an unused Flip Flop:       6  out of      8    75%  
+   Number with an unused LUT:             2  out of      8    25%  
+   Number of fully used LUT-FF pairs:     0  out of      8     0%  
+   Number of unique control sets:         1
+
+IO Utilization: 
+ Number of IOs:                         879
+ Number of bonded IOBs:                   0  out of    186     0%  
+
+Specific Feature Utilization:
+
+---------------------------
+Partition Resource Summary:
+---------------------------
+
+  No Partitions were found in this design.
+
+---------------------------
+
+
+=========================================================================
+Timing Report
+
+NOTE: THESE TIMING NUMBERS ARE ONLY A SYNTHESIS ESTIMATE.
+      FOR ACCURATE TIMING INFORMATION PLEASE REFER TO THE TRACE REPORT
+      GENERATED AFTER PLACE-and-ROUTE.
+
+Clock Information:
+------------------
+-----------------------------------+--------------------------------------+-------+
+Clock Signal                       | Clock buffer(FF name)                | Load  |
+-----------------------------------+--------------------------------------+-------+
+BRAM_Clk_A                         | NONE(microblaze_0_i_bram_ctrl/lmb_as)| 2     |
+-----------------------------------+--------------------------------------+-------+
+INFO:Xst:2169 - HDL ADVISOR - Some clock signals were not automatically buffered by XST with BUFG/BUFR resources. Please use the buffer_type constraint in order to insert these buffers to the clock signals to help prevent skew problems.
+
+Asynchronous Control Signals Information:
+----------------------------------------
+No asynchronous control signals found in this design
+
+Timing Summary:
+---------------
+Speed Grade: -2
+
+   Minimum period: No path found
+   Minimum input arrival time before clock: 1.010ns
+   Maximum output required time after clock: 1.565ns
+   Maximum combinational path delay: 0.464ns
+
+Timing Details:
+---------------
+All values displayed in nanoseconds (ns)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'BRAM_Clk_A'
+  Total number of paths / destination ports: 4 / 4
+-------------------------------------------------------------------------
+Offset:              1.010ns (Levels of Logic = 1)
+  Source:            LMB_ABus<1> (PAD)
+  Destination:       microblaze_0_i_bram_ctrl/Sl_Rdy (FF)
+  Destination Clock: BRAM_Clk_A rising
+
+  Data Path: LMB_ABus<1> to microblaze_0_i_bram_ctrl/Sl_Rdy
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     INV:I->O              1   0.255   0.681  microblaze_0_i_bram_ctrl/lmb_mux_I/one_lmb.pselect_mask_lmb/CS<1>1_INV_0 (microblaze_0_i_bram_ctrl/lmb_select)
+     FDR:D                     0.074          microblaze_0_i_bram_ctrl/Sl_Rdy
+    ----------------------------------------
+    Total                      1.010ns (0.329ns logic, 0.681ns route)
+                                       (32.6% logic, 67.4% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'BRAM_Clk_A'
+  Total number of paths / destination ports: 2 / 1
+-------------------------------------------------------------------------
+Offset:              1.565ns (Levels of Logic = 1)
+  Source:            microblaze_0_i_bram_ctrl/Sl_Rdy (FF)
+  Destination:       Sl_Ready (PAD)
+  Source Clock:      BRAM_Clk_A rising
+
+  Data Path: microblaze_0_i_bram_ctrl/Sl_Rdy to Sl_Ready
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDR:C->Q              1   0.525   0.790  microblaze_0_i_bram_ctrl/Sl_Rdy (microblaze_0_i_bram_ctrl/Sl_Rdy)
+     LUT2:I0->O            0   0.250   0.000  microblaze_0_i_bram_ctrl/Sl_Ready_i1 (Sl_Ready)
+    ----------------------------------------
+    Total                      1.565ns (0.775ns logic, 0.790ns route)
+                                       (49.5% logic, 50.5% route)
+
+=========================================================================
+Timing constraint: Default path analysis
+  Total number of paths / destination ports: 110 / 102
+-------------------------------------------------------------------------
+Delay:               0.464ns (Levels of Logic = 1)
+  Source:            LMB_BE<0> (PAD)
+  Destination:       BRAM_WEN_A<0> (PAD)
+
+  Data Path: LMB_BE<0> to BRAM_WEN_A<0>
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     LUT3:I0->O            0   0.235   0.000  microblaze_0_i_bram_ctrl/lmb_we<0><0>1 (BRAM_WEN_A<0>)
+    ----------------------------------------
+    Total                      0.464ns (0.464ns logic, 0.000ns route)
+                                       (100.0% logic, 0.0% route)
+
+=========================================================================
+
+Cross Clock Domains Report:
+--------------------------
+
+=========================================================================
+
+
+Total REAL time to Xst completion: 4.00 secs
+Total CPU time to Xst completion: 3.85 secs
+ 
+--> 
+
+Total memory usage is 274784 kilobytes
+
+Number of errors   :    0 (   0 filtered)
+Number of warnings :   57 (   0 filtered)
+Number of infos    :    2 (   0 filtered)
+

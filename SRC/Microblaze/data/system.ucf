@@ -1,0 +1,88 @@
+#
+# pin constraints
+#
+#
+# additional constraints
+#
+
+NET "CLK_P" LOC = T8 | TNM_NET = sys_clk_pin;
+TIMESPEC TS_sys_clk_pin = PERIOD sys_clk_pin 50000 kHz;
+
+##
+NET RESET          LOC = L3 | IOSTANDARD = "LVCMOS33"; ## Reset pushbutton
+##
+
+########LED Pin define#####################
+NET led_4b_GPIO_IO_pin<0>           LOC = P4 | IOSTANDARD = "LVCMOS33";       ## LED1
+NET led_4b_GPIO_IO_pin<1>           LOC = N5 | IOSTANDARD = "LVCMOS33";       ## LED2
+NET led_4b_GPIO_IO_pin<2>           LOC = P5 | IOSTANDARD = "LVCMOS33";       ## LED3
+NET led_4b_GPIO_IO_pin<3>           LOC = M6 | IOSTANDARD = "LVCMOS33";       ## LED4
+
+########KEY Pin define#####################
+NET key_4b_GPIO_IO_pin<0>           LOC = C3 | IOSTANDARD = "LVCMOS33";       ## KEY1
+NET key_4b_GPIO_IO_pin<1>           LOC = D3 | IOSTANDARD = "LVCMOS33";       ## KEY2
+NET key_4b_GPIO_IO_pin<2>           LOC = E4 | IOSTANDARD = "LVCMOS33";       ## KEY3
+NET key_4b_GPIO_IO_pin<3>           LOC = E3 | IOSTANDARD = "LVCMOS33";       ## KEY4
+
+########USB Uart SerialPin define#####################
+NET axi_uartlite_0_RX_pin           LOC = C11 | IOSTANDARD = "LVCMOS33";		## Uart RXD:U4_TXD
+NET axi_uartlite_0_TX_pin           LOC = D12 | IOSTANDARD = "LVCMOS33"; 		## Uart TXD:U4_RXD
+
+########EEPROM Pin define#####################
+NET axi_iic_0_Scl_pin               LOC = N12 | IOSTANDARD = "LVCMOS33";		  
+NET axi_iic_0_Sda_pin               LOC = P12 | IOSTANDARD = "LVCMOS33"; 	
+
+########DS1302 Pin define#####################
+NET axi_rtc_GPIO_IO_pin<0>          LOC = C13 | IOSTANDARD = "LVCMOS33";		## DS1302_RST
+NET axi_rtc_GPIO_IO_pin<1>          LOC = E13 | IOSTANDARD = "LVCMOS33"; 		## DS1302_SCLK
+NET axi_rtc_GPIO_IO_pin<2>          LOC = D14 | IOSTANDARD = "LVCMOS33"; 		## DS1302_SIO
+
+########SPI Flash Pin define##################### 
+NET spi_flash_SS_pin                LOC = T3 | IOSTANDARD = "LVCMOS33";       ##  FLASH SPI CS
+NET spi_flash_SCK_pin               LOC = R11 | IOSTANDARD = "LVCMOS33";      ##  FLASH SPI CLK
+NET spi_flash_MOSI_pin              LOC = T10 | IOSTANDARD = "LVCMOS33";      ##  FLASH SPI DIN 
+NET spi_flash_MISO_pin              LOC = P10 | IOSTANDARD = "LVCMOS33";      ##  FLASH SPI DOUT
+
+########smg interface Pin define##################### 
+NET smg_ip_0_SMG_Data_pin<0>        LOC = C7 | IOSTANDARD = "LVCMOS33";  ##  
+NET smg_ip_0_SMG_Data_pin<1>        LOC = E6 | IOSTANDARD = "LVCMOS33";  ##  
+NET smg_ip_0_SMG_Data_pin<2>        LOC = C5 | IOSTANDARD = "LVCMOS33";  ##  
+NET smg_ip_0_SMG_Data_pin<3>        LOC = F7 | IOSTANDARD = "LVCMOS33";  ##  
+NET smg_ip_0_SMG_Data_pin<4>        LOC = D6 | IOSTANDARD = "LVCMOS33";  ## 
+NET smg_ip_0_SMG_Data_pin<5>        LOC = E7 | IOSTANDARD = "LVCMOS33";  ## 
+NET smg_ip_0_SMG_Data_pin<6>        LOC = D5 | IOSTANDARD = "LVCMOS33";  ## 
+NET smg_ip_0_SMG_Data_pin<7>        LOC = C6 | IOSTANDARD = "LVCMOS33";  ## 
+
+NET smg_ip_0_Scan_Sig_pin<5>        LOC = D9 | IOSTANDARD = "LVCMOS33";  ##  
+NET smg_ip_0_Scan_Sig_pin<4>        LOC = E10 | IOSTANDARD = "LVCMOS33";  ##  
+NET smg_ip_0_Scan_Sig_pin<3>        LOC = F10 | IOSTANDARD = "LVCMOS33";  ## 
+NET smg_ip_0_Scan_Sig_pin<2>        LOC = F9 | IOSTANDARD = "LVCMOS33";  ## 
+NET smg_ip_0_Scan_Sig_pin<1>        LOC = E8 | IOSTANDARD = "LVCMOS33";  ## 
+NET smg_ip_0_Scan_Sig_pin<0>        LOC = D8 | IOSTANDARD = "LVCMOS33";  ## 
+
+########buzzer Pin define##################### 
+NET buzzer_1b_GPIO_IO_pin           LOC = J11 | IOSTANDARD = "LVCMOS33";   ##  Buzzer output
+
+#######VGA 565 Pin define#####################
+NET vga_ip_0_vga_r_pin<0>           LOC = M11 | IOSTANDARD = "LVCMOS33";        ## VGA R0
+NET vga_ip_0_vga_r_pin<1>           LOC = M12 | IOSTANDARD = "LVCMOS33";        ## VGA R1
+NET vga_ip_0_vga_r_pin<2>           LOC = L12 | IOSTANDARD = "LVCMOS33";        ## VGA R2
+NET vga_ip_0_vga_r_pin<3>           LOC = N14 | IOSTANDARD = "LVCMOS33";        ## VGA R3
+NET vga_ip_0_vga_r_pin<4>           LOC = M13 | IOSTANDARD = "LVCMOS33";        ## VGA R4
+NET vga_ip_0_vga_g_pin<0>           LOC = M9 | IOSTANDARD = "LVCMOS33";         ## VGA G0
+NET vga_ip_0_vga_g_pin<1>           LOC = N9 | IOSTANDARD = "LVCMOS33";         ## VGA G1
+NET vga_ip_0_vga_g_pin<2>           LOC = P9 | IOSTANDARD = "LVCMOS33";         ## VGA G2
+NET vga_ip_0_vga_g_pin<3>           LOC = L10 | IOSTANDARD = "LVCMOS33";        ## VGA G3
+NET vga_ip_0_vga_g_pin<4>           LOC = M10 | IOSTANDARD = "LVCMOS33";        ## VGA G4
+NET vga_ip_0_vga_g_pin<5>           LOC = P11 | IOSTANDARD = "LVCMOS33";        ## VGA G4
+NET vga_ip_0_vga_b_pin<0>           LOC = P7 | IOSTANDARD = "LVCMOS33";         ## VGA B0
+NET vga_ip_0_vga_b_pin<1>           LOC = M7 | IOSTANDARD = "LVCMOS33";         ## VGA B1
+NET vga_ip_0_vga_b_pin<2>           LOC = P8 | IOSTANDARD = "LVCMOS33";         ## VGA B2
+NET vga_ip_0_vga_b_pin<3>           LOC = N8 | IOSTANDARD = "LVCMOS33";         ## VGA B3
+NET vga_ip_0_vga_b_pin<4>           LOC = L7 | IOSTANDARD = "LVCMOS33";         ## VGA B4
+
+NET vga_ip_0_vga_vs_pin             LOC = L13 | IOSTANDARD = "LVCMOS33";        ## VGA VS
+NET vga_ip_0_vga_hs_pin             LOC = M14 | IOSTANDARD = "LVCMOS33";        ## VGA HS    
+
+
+

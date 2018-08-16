@@ -1,0 +1,326 @@
+Release 14.7 ngdbuild P.20131013 (nt64)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+
+Command Line: C:\Xilinx\14.7\ISE_DS\ISE\bin\nt64\unwrapped\ngdbuild.exe -p
+xc6slx9ftg256-2 -nt timestamp -bm system.bmm
+E:/Project/AX309/Microblaze/implementation/system.ngc -uc system.ucf system.ngd
+
+Reading NGO file "E:/Project/AX309/Microblaze/implementation/system.ngc" ...
+Loading design module
+"E:/Project/AX309/Microblaze/implementation/system_proc_sys_reset_0_wrapper.ngc"
+...
+Loading design module
+"E:/Project/AX309/Microblaze/implementation/system_clock_generator_0_wrapper.ngc
+"...
+Loading design module
+"E:/Project/AX309/Microblaze/implementation/system_chipscope_ila_0_wrapper.ngc".
+..
+Loading design module
+"E:/Project/AX309/Microblaze/implementation/system_axi_uartlite_0_wrapper.ngc"..
+.
+Loading design module
+"E:/Project/AX309/Microblaze/implementation/system_microblaze_0_ilmb_wrapper.ngc
+"...
+Loading design module
+"E:/Project/AX309/Microblaze/implementation/system_microblaze_0_dlmb_wrapper.ngc
+"...
+Loading design module
+"E:/Project/AX309/Microblaze/implementation/system_axi4lite_0_wrapper.ngc"...
+Loading design module
+"E:/Project/AX309/Microblaze/implementation/system_microblaze_0_wrapper.ngc"...
+Loading design module
+"E:/Project/AX309/Microblaze/implementation/system_microblaze_0_i_bram_ctrl_wrap
+per.ngc"...
+Loading design module
+"E:/Project/AX309/Microblaze/implementation/system_microblaze_0_d_bram_ctrl_wrap
+per.ngc"...
+Loading design module
+"E:/Project/AX309/Microblaze/implementation/system_axi_intc_0_wrapper.ngc"...
+Loading design module
+"E:/Project/AX309/Microblaze/implementation/system_debug_module_wrapper.ngc"...
+Loading design module
+"E:/Project/AX309/Microblaze/implementation/system_led_4b_wrapper.ngc"...
+Loading design module
+"E:/Project/AX309/Microblaze/implementation/system_key_4b_wrapper.ngc"...
+Loading design module
+"E:/Project/AX309/Microblaze/implementation/system_axi_timer_0_wrapper.ngc"...
+Loading design module
+"E:/Project/AX309/Microblaze/implementation/system_axi_iic_0_wrapper.ngc"...
+Loading design module
+"E:/Project/AX309/Microblaze/implementation/system_axi_rtc_wrapper.ngc"...
+Loading design module
+"E:/Project/AX309/Microblaze/implementation/system_spi_flash_wrapper.ngc"...
+Loading design module
+"E:/Project/AX309/Microblaze/implementation/system_smg_ip_0_wrapper.ngc"...
+Loading design module
+"E:/Project/AX309/Microblaze/implementation/system_buzzer_1b_wrapper.ngc"...
+Loading design module
+"E:/Project/AX309/Microblaze/implementation/system_vga_ip_0_wrapper.ngc"...
+Loading design module
+"E:/Project/AX309/Microblaze/implementation/system_microblaze_0_bram_block_wrapp
+er.ngc"...
+Loading design module
+"E:/Project/AX309/Microblaze/implementation/system_chipscope_icon_0_wrapper.ngc"
+...
+Applying constraints in
+"E:/Project/AX309/Microblaze/implementation/system_chipscope_ila_0_wrapper.ncf"
+to module "chipscope_ila_0"...
+WARNING:ConstraintSystem:192 - The TNM 'D2_CLK', does not directly or indirectly
+   drive any flip-flops, latches and/or RAMS and cannot be actively used by the
+   referencing TIg constraint ''. If clock manager blocks are directly or
+   indirectly driven, a new TNM constraint will not be derived since the none of
+   the referencing constraints are a PERIOD constraint. This TNM is used in the
+   following user groups and/or specifications:
+   <TIMESPEC TS_D2_TO_T2 = FROM D2_CLK TO "FFS" TIG;>
+   [E:/Project/AX309/Microblaze/implementation/system_chipscope_ila_0_wrapper.nc
+   f(6)]
+   <TIMESPEC TS_J2_TO_D2 = FROM "FFS" TO D2_CLK TIG;>
+   [E:/Project/AX309/Microblaze/implementation/system_chipscope_ila_0_wrapper.nc
+   f(7)]
+   <TIMESPEC TS_J3_TO_D2 = FROM "FFS" TO D2_CLK TIG;>
+   [E:/Project/AX309/Microblaze/implementation/system_chipscope_ila_0_wrapper.nc
+   f(8)]
+   <TIMESPEC TS_J4_TO_D2 = FROM "FFS" TO D2_CLK TIG;>
+   [E:/Project/AX309/Microblaze/implementation/system_chipscope_ila_0_wrapper.nc
+   f(9)]
+
+WARNING:ConstraintSystem:197 - The following specification is invalid because
+   the referenced TNM constraint was removed:
+   <TIMESPEC TS_D2_TO_T2 = FROM D2_CLK TO "FFS" TIG;>
+   [E:/Project/AX309/Microblaze/implementation/system_chipscope_ila_0_wrapper.nc
+   f(6)]
+
+WARNING:ConstraintSystem:197 - The following specification is invalid because
+   the referenced TNM constraint was removed:
+   <TIMESPEC TS_J2_TO_D2 = FROM "FFS" TO D2_CLK TIG;>
+   [E:/Project/AX309/Microblaze/implementation/system_chipscope_ila_0_wrapper.nc
+   f(7)]
+
+WARNING:ConstraintSystem:197 - The following specification is invalid because
+   the referenced TNM constraint was removed:
+   <TIMESPEC TS_J3_TO_D2 = FROM "FFS" TO D2_CLK TIG;>
+   [E:/Project/AX309/Microblaze/implementation/system_chipscope_ila_0_wrapper.nc
+   f(8)]
+
+WARNING:ConstraintSystem:197 - The following specification is invalid because
+   the referenced TNM constraint was removed:
+   <TIMESPEC TS_J4_TO_D2 = FROM "FFS" TO D2_CLK TIG;>
+   [E:/Project/AX309/Microblaze/implementation/system_chipscope_ila_0_wrapper.nc
+   f(9)]
+
+Checking Constraint Associations...
+INFO:NgdBuild:981 - Could not find any associations for the following
+   constraint:
+       '<INST "U0/*/U_STAT/U_DIRTY_LDC" TNM = D2_CLK;>
+   [E:/Project/AX309/Microblaze/implementation/system_chipscope_ila_0_wrapper.nc
+   f(5)]'
+Applying constraints in
+"E:/Project/AX309/Microblaze/implementation/system_microblaze_0_ilmb_wrapper.ncf
+" to module "microblaze_0_ilmb"...
+Checking Constraint Associations...
+Applying constraints in
+"E:/Project/AX309/Microblaze/implementation/system_microblaze_0_dlmb_wrapper.ncf
+" to module "microblaze_0_dlmb"...
+Checking Constraint Associations...
+Applying constraints in
+"E:/Project/AX309/Microblaze/implementation/system_axi4lite_0_wrapper.ncf" to
+module "axi4lite_0"...
+Checking Constraint Associations...
+Applying constraints in
+"E:/Project/AX309/Microblaze/implementation/system_microblaze_0_wrapper.ncf" to
+module "microblaze_0"...
+Checking Constraint Associations...
+Applying constraints in
+"E:/Project/AX309/Microblaze/implementation/system_axi_intc_0_wrapper.ncf" to
+module "axi_intc_0"...
+Checking Constraint Associations...
+Applying constraints in
+"E:/Project/AX309/Microblaze/implementation/system_chipscope_icon_0_wrapper.ncf"
+to module "chipscope_icon_0"...
+WARNING:ConstraintSystem:190 - The TNM 'J_CLK', does not directly or indirectly
+   drive any flip-flops, latches and/or RAMS and cannot be actively used by the
+   referencing Period constraint 'TS_J_CLK'. If clock manager blocks are
+   directly or indirectly driven, a new TNM and PERIOD are derived only if the
+   PERIOD constraint is the only referencing constraint and if an output of the
+   clock manager block drives flip-flops, latches or RAMs.  
+   This TNM is used in the following user groups and/or specifications:
+   <TIMESPEC TS_J_CLK = PERIOD J_CLK 30 ns ;>
+   [E:/Project/AX309/Microblaze/implementation/system_chipscope_icon_0_wrapper.n
+   cf(2)]
+   <TIMESPEC TS_U_TO_J = FROM U_CLK TO J_CLK 15 ns ;>
+   [E:/Project/AX309/Microblaze/implementation/system_chipscope_icon_0_wrapper.n
+   cf(6)]
+   <TIMESPEC TS_J_TO_D = FROM J_CLK TO D_CLK TIG ;>
+   [E:/Project/AX309/Microblaze/implementation/system_chipscope_icon_0_wrapper.n
+   cf(8)]
+   <TIMESPEC TS_D_TO_J = FROM D_CLK TO J_CLK TIG ;>
+   [E:/Project/AX309/Microblaze/implementation/system_chipscope_icon_0_wrapper.n
+   cf(9)]
+
+WARNING:ConstraintSystem:197 - The following specification is invalid because
+   the referenced TNM constraint was removed:
+   <TIMESPEC TS_J_CLK = PERIOD J_CLK 30 ns ;>
+   [E:/Project/AX309/Microblaze/implementation/system_chipscope_icon_0_wrapper.n
+   cf(2)]
+
+WARNING:ConstraintSystem:197 - The following specification is invalid because
+   the referenced TNM constraint was removed:
+   <TIMESPEC TS_U_TO_J = FROM U_CLK TO J_CLK 15 ns ;>
+   [E:/Project/AX309/Microblaze/implementation/system_chipscope_icon_0_wrapper.n
+   cf(6)]
+
+WARNING:ConstraintSystem:197 - The following specification is invalid because
+   the referenced TNM constraint was removed:
+   <TIMESPEC TS_J_TO_D = FROM J_CLK TO D_CLK TIG ;>
+   [E:/Project/AX309/Microblaze/implementation/system_chipscope_icon_0_wrapper.n
+   cf(8)]
+
+WARNING:ConstraintSystem:197 - The following specification is invalid because
+   the referenced TNM constraint was removed:
+   <TIMESPEC TS_D_TO_J = FROM D_CLK TO J_CLK TIG ;>
+   [E:/Project/AX309/Microblaze/implementation/system_chipscope_icon_0_wrapper.n
+   cf(9)]
+
+WARNING:ConstraintSystem:192 - The TNM 'U_CLK', does not directly or indirectly
+   drive any flip-flops, latches and/or RAMS and cannot be actively used by the
+   referencing MaxDelay constraint 'TS_U_TO_J'. If clock manager blocks are
+   directly or indirectly driven, a new TNM constraint will not be derived since
+   the none of the referencing constraints are a PERIOD constraint. This TNM is
+   used in the following user groups and/or specifications:
+   <TIMESPEC TS_U_TO_J = FROM U_CLK TO J_CLK 15 ns ;>
+   [E:/Project/AX309/Microblaze/implementation/system_chipscope_icon_0_wrapper.n
+   cf(6)]
+   <TIMESPEC TS_U_TO_U = FROM U_CLK TO U_CLK 15 ns ;>
+   [E:/Project/AX309/Microblaze/implementation/system_chipscope_icon_0_wrapper.n
+   cf(7)]
+
+WARNING:ConstraintSystem:197 - The following specification is invalid because
+   the referenced TNM constraint was removed:
+   <TIMESPEC TS_U_TO_J = FROM U_CLK TO J_CLK 15 ns ;>
+   [E:/Project/AX309/Microblaze/implementation/system_chipscope_icon_0_wrapper.n
+   cf(6)]
+
+WARNING:ConstraintSystem:197 - The following specification is invalid because
+   the referenced TNM constraint was removed:
+   <TIMESPEC TS_U_TO_U = FROM U_CLK TO U_CLK 15 ns ;>
+   [E:/Project/AX309/Microblaze/implementation/system_chipscope_icon_0_wrapper.n
+   cf(7)]
+
+Checking Constraint Associations...
+INFO:NgdBuild:981 - Could not find any associations for the following
+   constraint:
+       '<NET "U0/U_ICON/*/iDRCK_LOCAL" TNM_NET = J_CLK ;>
+   [E:/Project/AX309/Microblaze/implementation/system_chipscope_icon_0_wrapper.n
+   cf(1)]'
+INFO:NgdBuild:981 - Could not find any associations for the following
+   constraint:
+       '<NET "U0/iUPDATE_OUT" TNM_NET = U_CLK ;>
+   [E:/Project/AX309/Microblaze/implementation/system_chipscope_icon_0_wrapper.n
+   cf(4)]'
+WARNING:NgdBuild:981 - Could not find any associations for the following
+   constraint:
+       '<NET "U0/iSHIFT_OUT" TIG ;>
+   [E:/Project/AX309/Microblaze/implementation/system_chipscope_icon_0_wrapper.n
+   cf(5)]'
+Gathering constraint information from source properties...
+Done.
+
+Annotating constraints to design from ucf file "system.ucf" ...
+Resolving constraint associations...
+Checking Constraint Associations...
+WARNING:ConstraintSystem:56 - Constraint <TIMESPEC TS_J_CLK = PERIOD "J_CLK"
+   30000.000000000 pS HIGH 50.000000000 %;>: Unable to find an active 'TNM' or
+   'TimeGrp' constraint named 'J_CLK'.
+
+WARNING:ConstraintSystem:56 - Constraint <TIMESPEC TS_U_TO_J = FROM "U_CLK" TO
+   "J_CLK" 15000.000000000 pS;>: Unable to find an active 'TimeGrp' or 'TNM' or
+   'TPSync' constraint named 'U_CLK'.
+
+WARNING:ConstraintSystem:56 - Constraint <TIMESPEC TS_U_TO_J = FROM "U_CLK" TO
+   "J_CLK" 15000.000000000 pS;>: Unable to find an active 'TimeGrp' or 'TNM' or
+   'TPSync' constraint named 'J_CLK'.
+
+WARNING:ConstraintSystem:56 - Constraint <TIMESPEC TS_U_TO_U = FROM "U_CLK" TO
+   "U_CLK" 15000.000000000 pS;>: Unable to find an active 'TimeGrp' or 'TNM' or
+   'TPSync' constraint named 'U_CLK'.
+
+WARNING:ConstraintSystem:56 - Constraint <TIMESPEC TS_U_TO_U = FROM "U_CLK" TO
+   "U_CLK" 15000.000000000 pS;>: Unable to find an active 'TimeGrp' or 'TNM' or
+   'TPSync' constraint named 'U_CLK'.
+
+WARNING:ConstraintSystem:56 - Constraint <TIMESPEC TS_J_TO_D = FROM "J_CLK" TO
+   "D_CLK" TIG;>: Unable to find an active 'TimeGrp' or 'TNM' or 'TPSync'
+   constraint named 'J_CLK'.
+
+WARNING:ConstraintSystem:56 - Constraint <TIMESPEC TS_D_TO_J = FROM "D_CLK" TO
+   "J_CLK" TIG;>: Unable to find an active 'TimeGrp' or 'TNM' or 'TPSync'
+   constraint named 'J_CLK'.
+
+WARNING:ConstraintSystem:135 - Constraint <INST
+   /system/EXPANDED/system/axi4lite_0/axi4lite_0\/si_converter_bank\/gen_conv_sl
+   ot[0].clock_conv_inst\/interconnect_aresetn_resync<2>_inv1_INV_0 TNM =
+   FFS:axi4lite_0_reset_resync>: No instances of type FFS were found under block
+   "axi4lite_0/axi4lite_0/si_converter_bank/gen_conv_slot[0].clock_conv_inst/int
+   erconnect_aresetn_resync<2>_inv1_INV_0" (type=INV).
+
+WARNING:ConstraintSystem:56 - Constraint <TIMESPEC TS_D2_TO_T2 = FROM "D2_CLK"
+   TO FFS TIG;>: Unable to find an active 'TimeGrp' or 'TNM' or 'TPSync'
+   constraint named 'D2_CLK'.
+
+WARNING:ConstraintSystem:56 - Constraint <TIMESPEC TS_J2_TO_D2 = FROM FFS TO
+   "D2_CLK" TIG;>: Unable to find an active 'TimeGrp' or 'TNM' or 'TPSync'
+   constraint named 'D2_CLK'.
+
+WARNING:ConstraintSystem:56 - Constraint <TIMESPEC TS_J3_TO_D2 = FROM FFS TO
+   "D2_CLK" TIG;>: Unable to find an active 'TimeGrp' or 'TNM' or 'TPSync'
+   constraint named 'D2_CLK'.
+
+WARNING:ConstraintSystem:56 - Constraint <TIMESPEC TS_J4_TO_D2 = FROM FFS TO
+   "D2_CLK" TIG;>: Unable to find an active 'TimeGrp' or 'TNM' or 'TPSync'
+   constraint named 'D2_CLK'.
+
+WARNING:ConstraintSystem:58 - Constraint <TIMEGRP axi4lite_0_reset_source = FFS
+   PADS CPUS;>: CPUS "*" does not match any design objects.
+
+WARNING:ConstraintSystem:194 - The TNM 'axi4lite_0_reset_resync', does not
+   directly or indirectly drive any flip-flops, latches and/or RAMs and is not
+   actively used by any referencing constraint.
+
+INFO:ConstraintSystem:178 - TNM 'sys_clk_pin', used in period specification
+   'TS_sys_clk_pin', was traced into PLL_ADV instance
+   clock_generator_0/PLL0_INST/Using_PLL_ADV.PLL_ADV_inst. The following new TNM
+   groups and period specifications were generated at the PLL_ADV output(s): 
+   CLKOUT0: <TIMESPEC TS_clock_generator_0_clock_generator_0_SIG_PLL0_CLKOUT0_0
+   = PERIOD "clock_generator_0_clock_generator_0_SIG_PLL0_CLKOUT0_0"
+   TS_sys_clk_pin * 2 HIGH 50%>
+
+Done...
+
+Processing BMM file "system.bmm" ...
+
+Checking expanded design ...
+WARNING:NgdBuild:443 - SFF primitive
+   'microblaze_0/microblaze_0/MicroBlaze_Core_I/Performance.Decode_I/Using_FPGA.
+   Gen_Bits[27].MEM_EX_Result_Inst' has unconnected output pin
+WARNING:NgdBuild:443 - SFF primitive
+   'axi_iic_0/axi_iic_0/X_IIC/X_AXI_IPIF_SSP1/X_SOFT_RESET/FF_WRACK' has
+   unconnected output pin
+
+Partition Implementation Status
+-------------------------------
+
+  No Partitions were found in this design.
+
+-------------------------------
+
+NGDBUILD Design Results Summary:
+  Number of errors:     0
+  Number of warnings:  30
+
+Total memory usage is 279564 kilobytes
+
+Writing NGD file "system.ngd" ...
+Total REAL time to NGDBUILD completion:  39 sec
+Total CPU time to NGDBUILD completion:   39 sec
+
+Writing NGDBUILD log file "system.bld"...

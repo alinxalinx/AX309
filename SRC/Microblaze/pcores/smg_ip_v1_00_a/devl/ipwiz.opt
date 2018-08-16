@@ -1,0 +1,11 @@
+-batch 
+-create smg_ip 
+-ver 1.00.a 
+-dir "E:\Project\AX309\Microblaze" 
+-lang verilog 
+-bus axi4lite s 
+-rst 
+-reg 1 
+-xps 
+-ise 
+-driver 

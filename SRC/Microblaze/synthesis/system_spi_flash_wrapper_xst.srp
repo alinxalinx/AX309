@@ -1,0 +1,1710 @@
+Release 14.7 - xst P.20131013 (nt64)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+--> Parameter TMPDIR set to E:\Project\AX309\Microblaze\synthesis\xst_temp_dir\
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.07 secs
+ 
+--> 
+TABLE OF CONTENTS
+  1) Synthesis Options Summary
+  2) HDL Parsing
+  3) HDL Elaboration
+  4) HDL Synthesis
+       4.1) HDL Synthesis Report
+  5) Advanced HDL Synthesis
+       5.1) Advanced HDL Synthesis Report
+  6) Low Level Synthesis
+  7) Partition Report
+  8) Design Summary
+       8.1) Primitive and Black Box Usage
+       8.2) Device utilization summary
+       8.3) Partition Resource Summary
+       8.4) Timing Report
+            8.4.1) Clock Information
+            8.4.2) Asynchronous Control Signals Information
+            8.4.3) Timing Summary
+            8.4.4) Timing Details
+            8.4.5) Cross Clock Domains Report
+
+
+=========================================================================
+*                      Synthesis Options Summary                        *
+=========================================================================
+---- Source Parameters
+Input Format                       : MIXED
+Input File Name                    : "system_spi_flash_wrapper_xst.prj"
+Verilog Include Directory          : {"E:\Project\AX309\Microblaze\pcores\" "C:\Xilinx\14.7\ISE_DS\EDK\hw\XilinxBFMinterface\pcores\" "C:\Xilinx\14.7\ISE_DS\EDK\hw\XilinxProcessorIPLib\pcores\" }
+
+---- Target Parameters
+Target Device                      : xc6slx9ftg256-2
+Output File Name                   : "../implementation/system_spi_flash_wrapper.ngc"
+
+---- Source Options
+Top Module Name                    : system_spi_flash_wrapper
+
+---- Target Options
+Add IO Buffers                     : NO
+
+---- General Options
+Optimization Goal                  : speed
+Netlist Hierarchy                  : as_optimized
+Optimization Effort                : 1
+Hierarchy Separator                : /
+
+---- Other Options
+Cores Search Directories           : {../implementation}
+
+=========================================================================
+
+
+=========================================================================
+*                          HDL Parsing                                  *
+=========================================================================
+Parsing VHDL file "C:/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/vhdl/family.vhd" into library proc_common_v3_00_a
+Parsing package <family>.
+Parsing package body <family>.
+Parsing VHDL file "C:/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/vhdl/family_support.vhd" into library proc_common_v3_00_a
+Parsing package <family_support>.
+Parsing package body <family_support>.
+Parsing VHDL file "C:/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/vhdl/coregen_comp_defs.vhd" into library proc_common_v3_00_a
+Parsing package <coregen_comp_defs>.
+Parsing VHDL file "C:/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/vhdl/common_types_pkg.vhd" into library proc_common_v3_00_a
+Parsing package <Common_Types>.
+Parsing package body <Common_Types>.
+Parsing VHDL file "C:/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/vhdl/proc_common_pkg.vhd" into library proc_common_v3_00_a
+Parsing package <proc_common_pkg>.
+Parsing package body <proc_common_pkg>.
+Parsing VHDL file "C:/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/vhdl/conv_funs_pkg.vhd" into library proc_common_v3_00_a
+Parsing package <conv_funs_pkg>.
+Parsing package body <conv_funs_pkg>.
+Parsing VHDL file "C:/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/vhdl/ipif_pkg.vhd" into library proc_common_v3_00_a
+Parsing package <ipif_pkg>.
+Parsing package body <ipif_pkg>.
+Parsing VHDL file "C:/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/vhdl/async_fifo_fg.vhd" into library proc_common_v3_00_a
+Parsing entity <async_fifo_fg>.
+Parsing architecture <implementation> of entity <async_fifo_fg>.
+Parsing VHDL file "C:/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/vhdl/sync_fifo_fg.vhd" into library proc_common_v3_00_a
+Parsing entity <sync_fifo_fg>.
+Parsing architecture <implementation> of entity <sync_fifo_fg>.
+Parsing VHDL file "C:/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/vhdl/basic_sfifo_fg.vhd" into library proc_common_v3_00_a
+Parsing entity <basic_sfifo_fg>.
+Parsing architecture <implementation> of entity <basic_sfifo_fg>.
+Parsing VHDL file "C:/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/vhdl/blk_mem_gen_wrapper.vhd" into library proc_common_v3_00_a
+Parsing entity <blk_mem_gen_wrapper>.
+Parsing architecture <implementation> of entity <blk_mem_gen_wrapper>.
+Parsing VHDL file "C:/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/vhdl/addsub.vhd" into library proc_common_v3_00_a
+Parsing entity <addsub>.
+Parsing architecture <imp> of entity <addsub>.
+Parsing VHDL file "C:/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/vhdl/counter_bit.vhd" into library proc_common_v3_00_a
+Parsing entity <counter_bit>.
+Parsing architecture <imp> of entity <counter_bit>.
+Parsing VHDL file "C:/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/vhdl/counter.vhd" into library proc_common_v3_00_a
+Parsing entity <Counter>.
+Parsing architecture <imp> of entity <counter>.
+Parsing VHDL file "C:/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/vhdl/direct_path_cntr.vhd" into library proc_common_v3_00_a
+Parsing entity <direct_path_cntr>.
+Parsing architecture <imp> of entity <direct_path_cntr>.
+Parsing VHDL file "C:/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/vhdl/direct_path_cntr_ai.vhd" into library proc_common_v3_00_a
+Parsing entity <direct_path_cntr_ai>.
+Parsing architecture <imp> of entity <direct_path_cntr_ai>.
+Parsing VHDL file "C:/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/vhdl/down_counter.vhd" into library proc_common_v3_00_a
+Parsing entity <down_counter>.
+Parsing architecture <simulation> of entity <down_counter>.
+Parsing VHDL file "C:/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/vhdl/eval_timer.vhd" into library proc_common_v3_00_a
+Parsing entity <eval_timer>.
+Parsing architecture <imp> of entity <eval_timer>.
+Parsing VHDL file "C:/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/vhdl/inferred_lut4.vhd" into library proc_common_v3_00_a
+Parsing entity <inferred_lut4>.
+Parsing architecture <implementation> of entity <inferred_lut4>.
+Parsing VHDL file "C:/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/vhdl/ipif_steer.vhd" into library proc_common_v3_00_a
+Parsing entity <IPIF_Steer>.
+Parsing architecture <IMP> of entity <ipif_steer>.
+Parsing VHDL file "C:/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/vhdl/ipif_steer128.vhd" into library proc_common_v3_00_a
+Parsing entity <ipif_steer128>.
+Parsing architecture <IMP> of entity <ipif_steer128>.
+Parsing VHDL file "C:/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/vhdl/ipif_mirror128.vhd" into library proc_common_v3_00_a
+Parsing entity <ipif_mirror128>.
+Parsing architecture <IMP> of entity <ipif_mirror128>.
+Parsing VHDL file "C:/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/vhdl/ld_arith_reg.vhd" into library proc_common_v3_00_a
+Parsing entity <ld_arith_reg>.
+Parsing architecture <imp> of entity <ld_arith_reg>.
+Parsing VHDL file "C:/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/vhdl/ld_arith_reg2.vhd" into library proc_common_v3_00_a
+Parsing entity <ld_arith_reg2>.
+Parsing architecture <imp> of entity <ld_arith_reg2>.
+Parsing VHDL file "C:/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/vhdl/mux_onehot.vhd" into library proc_common_v3_00_a
+Parsing entity <mux_onehot>.
+Parsing architecture <imp> of entity <mux_onehot>.
+Parsing VHDL file "C:/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/vhdl/or_bits.vhd" into library proc_common_v3_00_a
+Parsing entity <or_bits>.
+Parsing architecture <implementation> of entity <or_bits>.
+Parsing VHDL file "C:/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/vhdl/or_muxcy.vhd" into library proc_common_v3_00_a
+Parsing entity <or_muxcy>.
+Parsing architecture <implementation> of entity <or_muxcy>.
+Parsing VHDL file "C:/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/vhdl/or_gate.vhd" into library proc_common_v3_00_a
+Parsing entity <or_gate>.
+Parsing architecture <imp> of entity <or_gate>.
+Parsing VHDL file "C:/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/vhdl/or_gate128.vhd" into library proc_common_v3_00_a
+Parsing entity <or_gate128>.
+Parsing architecture <imp> of entity <or_gate128>.
+Parsing VHDL file "C:/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/vhdl/pf_adder_bit.vhd" into library proc_common_v3_00_a
+Parsing entity <pf_adder_bit>.
+Parsing architecture <implementation> of entity <pf_adder_bit>.
+Parsing VHDL file "C:/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/vhdl/pf_adder.vhd" into library proc_common_v3_00_a
+Parsing entity <pf_adder>.
+Parsing architecture <implementation> of entity <pf_adder>.
+Parsing VHDL file "C:/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/vhdl/pf_counter_bit.vhd" into library proc_common_v3_00_a
+Parsing entity <pf_counter_bit>.
+Parsing architecture <implementation> of entity <pf_counter_bit>.
+Parsing VHDL file "C:/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/vhdl/pf_counter.vhd" into library proc_common_v3_00_a
+Parsing entity <pf_counter>.
+Parsing architecture <implementation> of entity <pf_counter>.
+Parsing VHDL file "C:/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/vhdl/pf_counter_top.vhd" into library proc_common_v3_00_a
+Parsing entity <pf_counter_top>.
+Parsing architecture <implementation> of entity <pf_counter_top>.
+Parsing VHDL file "C:/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/vhdl/pf_occ_counter.vhd" into library proc_common_v3_00_a
+Parsing entity <pf_occ_counter>.
+Parsing architecture <implementation> of entity <pf_occ_counter>.
+Parsing VHDL file "C:/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/vhdl/pf_occ_counter_top.vhd" into library proc_common_v3_00_a
+Parsing entity <pf_occ_counter_top>.
+Parsing architecture <implementation> of entity <pf_occ_counter_top>.
+Parsing VHDL file "C:/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/vhdl/pf_dpram_select.vhd" into library proc_common_v3_00_a
+Parsing entity <pf_dpram_select>.
+Parsing architecture <implementation> of entity <pf_dpram_select>.
+Parsing VHDL file "C:/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/vhdl/pselect.vhd" into library proc_common_v3_00_a
+Parsing entity <pselect>.
+Parsing architecture <imp> of entity <pselect>.
+Parsing VHDL file "C:/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/vhdl/pselect_mask.vhd" into library proc_common_v3_00_a
+Parsing entity <pselect_mask>.
+Parsing architecture <imp> of entity <pselect_mask>.
+Parsing VHDL file "C:/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/vhdl/srl16_fifo.vhd" into library proc_common_v3_00_a
+Parsing entity <srl16_fifo>.
+Parsing architecture <implementation> of entity <srl16_fifo>.
+Parsing VHDL file "C:/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/vhdl/srl_fifo.vhd" into library proc_common_v3_00_a
+Parsing entity <SRL_FIFO>.
+Parsing architecture <IMP> of entity <srl_fifo>.
+Parsing VHDL file "C:/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/vhdl/srl_fifo2.vhd" into library proc_common_v3_00_a
+Parsing entity <srl_fifo2>.
+Parsing architecture <imp> of entity <srl_fifo2>.
+Parsing VHDL file "C:/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/vhdl/srl_fifo3.vhd" into library proc_common_v3_00_a
+Parsing entity <srl_fifo3>.
+Parsing architecture <imp> of entity <srl_fifo3>.
+Parsing VHDL file "C:/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/vhdl/srl_fifo_rbu.vhd" into library proc_common_v3_00_a
+Parsing entity <srl_fifo_rbu>.
+Parsing architecture <imp> of entity <srl_fifo_rbu>.
+Parsing VHDL file "C:/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/vhdl/valid_be.vhd" into library proc_common_v3_00_a
+Parsing entity <valid_be>.
+Parsing architecture <implementation> of entity <valid_be>.
+Parsing VHDL file "C:/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/vhdl/or_with_enable_f.vhd" into library proc_common_v3_00_a
+Parsing entity <or_with_enable_f>.
+Parsing architecture <implementation> of entity <or_with_enable_f>.
+Parsing VHDL file "C:/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/vhdl/muxf_struct_f.vhd" into library proc_common_v3_00_a
+Parsing entity <muxf_struct>.
+Parsing architecture <imp> of entity <muxf_struct>.
+Parsing entity <muxf_struct_f>.
+Parsing architecture <imp> of entity <muxf_struct_f>.
+Parsing VHDL file "C:/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/vhdl/cntr_incr_decr_addn_f.vhd" into library proc_common_v3_00_a
+Parsing entity <cntr_incr_decr_addn_f>.
+Parsing architecture <imp> of entity <cntr_incr_decr_addn_f>.
+Parsing VHDL file "C:/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/vhdl/dynshreg_f.vhd" into library proc_common_v3_00_a
+Parsing entity <dynshreg_f>.
+Parsing architecture <behavioral> of entity <dynshreg_f>.
+Parsing VHDL file "C:/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/vhdl/dynshreg_i_f.vhd" into library proc_common_v3_00_a
+Parsing entity <dynshreg_i_f>.
+Parsing architecture <behavioral> of entity <dynshreg_i_f>.
+Parsing VHDL file "C:/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/vhdl/mux_onehot_f.vhd" into library proc_common_v3_00_a
+Parsing entity <mux_onehot_f>.
+Parsing architecture <imp> of entity <mux_onehot_f>.
+Parsing VHDL file "C:/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/vhdl/srl_fifo_rbu_f.vhd" into library proc_common_v3_00_a
+Parsing entity <srl_fifo_rbu_f>.
+Parsing architecture <imp> of entity <srl_fifo_rbu_f>.
+Parsing VHDL file "C:/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/vhdl/srl_fifo_f.vhd" into library proc_common_v3_00_a
+Parsing entity <srl_fifo_f>.
+Parsing architecture <imp> of entity <srl_fifo_f>.
+Parsing VHDL file "C:/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/vhdl/compare_vectors_f.vhd" into library proc_common_v3_00_a
+Parsing entity <compare_vectors_f>.
+Parsing architecture <imp> of entity <compare_vectors_f>.
+Parsing VHDL file "C:/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/vhdl/pselect_f.vhd" into library proc_common_v3_00_a
+Parsing entity <pselect_f>.
+Parsing architecture <imp> of entity <pselect_f>.
+Parsing VHDL file "C:/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/vhdl/counter_f.vhd" into library proc_common_v3_00_a
+Parsing entity <counter_f>.
+Parsing architecture <imp> of entity <counter_f>.
+Parsing VHDL file "C:/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/vhdl/or_muxcy_f.vhd" into library proc_common_v3_00_a
+Parsing entity <or_muxcy_f>.
+Parsing architecture <implementation> of entity <or_muxcy_f>.
+Parsing VHDL file "C:/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/vhdl/or_gate_f.vhd" into library proc_common_v3_00_a
+Parsing entity <or_gate_f>.
+Parsing architecture <imp> of entity <or_gate_f>.
+Parsing VHDL file "C:/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/vhdl/soft_reset.vhd" into library proc_common_v3_00_a
+Parsing entity <soft_reset>.
+Parsing architecture <implementation> of entity <soft_reset>.
+Parsing VHDL file "C:/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/vhdl/family.vhd" into library proc_common_v3_00_a
+Parsing package <family>.
+Parsing package body <family>.
+Parsing VHDL file "C:/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/vhdl/family_support.vhd" into library proc_common_v3_00_a
+Parsing package <family_support>.
+Parsing package body <family_support>.
+Parsing VHDL file "C:/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/vhdl/coregen_comp_defs.vhd" into library proc_common_v3_00_a
+Parsing package <coregen_comp_defs>.
+Parsing VHDL file "C:/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/vhdl/common_types_pkg.vhd" into library proc_common_v3_00_a
+Parsing package <Common_Types>.
+Parsing package body <Common_Types>.
+Parsing VHDL file "C:/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/vhdl/proc_common_pkg.vhd" into library proc_common_v3_00_a
+Parsing package <proc_common_pkg>.
+Parsing package body <proc_common_pkg>.
+Parsing VHDL file "C:/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/vhdl/conv_funs_pkg.vhd" into library proc_common_v3_00_a
+Parsing package <conv_funs_pkg>.
+Parsing package body <conv_funs_pkg>.
+Parsing VHDL file "C:/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/vhdl/ipif_pkg.vhd" into library proc_common_v3_00_a
+Parsing package <ipif_pkg>.
+Parsing package body <ipif_pkg>.
+Parsing VHDL file "C:/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/vhdl/async_fifo_fg.vhd" into library proc_common_v3_00_a
+Parsing entity <async_fifo_fg>.
+Parsing architecture <implementation> of entity <async_fifo_fg>.
+Parsing VHDL file "C:/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/vhdl/sync_fifo_fg.vhd" into library proc_common_v3_00_a
+Parsing entity <sync_fifo_fg>.
+Parsing architecture <implementation> of entity <sync_fifo_fg>.
+Parsing VHDL file "C:/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/vhdl/basic_sfifo_fg.vhd" into library proc_common_v3_00_a
+Parsing entity <basic_sfifo_fg>.
+Parsing architecture <implementation> of entity <basic_sfifo_fg>.
+Parsing VHDL file "C:/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/vhdl/blk_mem_gen_wrapper.vhd" into library proc_common_v3_00_a
+Parsing entity <blk_mem_gen_wrapper>.
+Parsing architecture <implementation> of entity <blk_mem_gen_wrapper>.
+Parsing VHDL file "C:/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/vhdl/addsub.vhd" into library proc_common_v3_00_a
+Parsing entity <addsub>.
+Parsing architecture <imp> of entity <addsub>.
+Parsing VHDL file "C:/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/vhdl/counter_bit.vhd" into library proc_common_v3_00_a
+Parsing entity <counter_bit>.
+Parsing architecture <imp> of entity <counter_bit>.
+Parsing VHDL file "C:/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/vhdl/counter.vhd" into library proc_common_v3_00_a
+Parsing entity <Counter>.
+Parsing architecture <imp> of entity <counter>.
+Parsing VHDL file "C:/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/vhdl/direct_path_cntr.vhd" into library proc_common_v3_00_a
+Parsing entity <direct_path_cntr>.
+Parsing architecture <imp> of entity <direct_path_cntr>.
+Parsing VHDL file "C:/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/vhdl/direct_path_cntr_ai.vhd" into library proc_common_v3_00_a
+Parsing entity <direct_path_cntr_ai>.
+Parsing architecture <imp> of entity <direct_path_cntr_ai>.
+Parsing VHDL file "C:/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/vhdl/down_counter.vhd" into library proc_common_v3_00_a
+Parsing entity <down_counter>.
+Parsing architecture <simulation> of entity <down_counter>.
+Parsing VHDL file "C:/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/vhdl/eval_timer.vhd" into library proc_common_v3_00_a
+Parsing entity <eval_timer>.
+Parsing architecture <imp> of entity <eval_timer>.
+Parsing VHDL file "C:/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/vhdl/inferred_lut4.vhd" into library proc_common_v3_00_a
+Parsing entity <inferred_lut4>.
+Parsing architecture <implementation> of entity <inferred_lut4>.
+Parsing VHDL file "C:/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/vhdl/ipif_steer.vhd" into library proc_common_v3_00_a
+Parsing entity <IPIF_Steer>.
+Parsing architecture <IMP> of entity <ipif_steer>.
+Parsing VHDL file "C:/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/vhdl/ipif_steer128.vhd" into library proc_common_v3_00_a
+Parsing entity <ipif_steer128>.
+Parsing architecture <IMP> of entity <ipif_steer128>.
+Parsing VHDL file "C:/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/vhdl/ipif_mirror128.vhd" into library proc_common_v3_00_a
+Parsing entity <ipif_mirror128>.
+Parsing architecture <IMP> of entity <ipif_mirror128>.
+Parsing VHDL file "C:/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/vhdl/ld_arith_reg.vhd" into library proc_common_v3_00_a
+Parsing entity <ld_arith_reg>.
+Parsing architecture <imp> of entity <ld_arith_reg>.
+Parsing VHDL file "C:/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/vhdl/ld_arith_reg2.vhd" into library proc_common_v3_00_a
+Parsing entity <ld_arith_reg2>.
+Parsing architecture <imp> of entity <ld_arith_reg2>.
+Parsing VHDL file "C:/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/vhdl/mux_onehot.vhd" into library proc_common_v3_00_a
+Parsing entity <mux_onehot>.
+Parsing architecture <imp> of entity <mux_onehot>.
+Parsing VHDL file "C:/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/vhdl/or_bits.vhd" into library proc_common_v3_00_a
+Parsing entity <or_bits>.
+Parsing architecture <implementation> of entity <or_bits>.
+Parsing VHDL file "C:/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/vhdl/or_muxcy.vhd" into library proc_common_v3_00_a
+Parsing entity <or_muxcy>.
+Parsing architecture <implementation> of entity <or_muxcy>.
+Parsing VHDL file "C:/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/vhdl/or_gate.vhd" into library proc_common_v3_00_a
+Parsing entity <or_gate>.
+Parsing architecture <imp> of entity <or_gate>.
+Parsing VHDL file "C:/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/vhdl/or_gate128.vhd" into library proc_common_v3_00_a
+Parsing entity <or_gate128>.
+Parsing architecture <imp> of entity <or_gate128>.
+Parsing VHDL file "C:/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/vhdl/pf_adder_bit.vhd" into library proc_common_v3_00_a
+Parsing entity <pf_adder_bit>.
+Parsing architecture <implementation> of entity <pf_adder_bit>.
+Parsing VHDL file "C:/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/vhdl/pf_adder.vhd" into library proc_common_v3_00_a
+Parsing entity <pf_adder>.
+Parsing architecture <implementation> of entity <pf_adder>.
+Parsing VHDL file "C:/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/vhdl/pf_counter_bit.vhd" into library proc_common_v3_00_a
+Parsing entity <pf_counter_bit>.
+Parsing architecture <implementation> of entity <pf_counter_bit>.
+Parsing VHDL file "C:/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/vhdl/pf_counter.vhd" into library proc_common_v3_00_a
+Parsing entity <pf_counter>.
+Parsing architecture <implementation> of entity <pf_counter>.
+Parsing VHDL file "C:/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/vhdl/pf_counter_top.vhd" into library proc_common_v3_00_a
+Parsing entity <pf_counter_top>.
+Parsing architecture <implementation> of entity <pf_counter_top>.
+Parsing VHDL file "C:/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/vhdl/pf_occ_counter.vhd" into library proc_common_v3_00_a
+Parsing entity <pf_occ_counter>.
+Parsing architecture <implementation> of entity <pf_occ_counter>.
+Parsing VHDL file "C:/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/vhdl/pf_occ_counter_top.vhd" into library proc_common_v3_00_a
+Parsing entity <pf_occ_counter_top>.
+Parsing architecture <implementation> of entity <pf_occ_counter_top>.
+Parsing VHDL file "C:/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/vhdl/pf_dpram_select.vhd" into library proc_common_v3_00_a
+Parsing entity <pf_dpram_select>.
+Parsing architecture <implementation> of entity <pf_dpram_select>.
+Parsing VHDL file "C:/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/vhdl/pselect.vhd" into library proc_common_v3_00_a
+Parsing entity <pselect>.
+Parsing architecture <imp> of entity <pselect>.
+Parsing VHDL file "C:/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/vhdl/pselect_mask.vhd" into library proc_common_v3_00_a
+Parsing entity <pselect_mask>.
+Parsing architecture <imp> of entity <pselect_mask>.
+Parsing VHDL file "C:/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/vhdl/srl16_fifo.vhd" into library proc_common_v3_00_a
+Parsing entity <srl16_fifo>.
+Parsing architecture <implementation> of entity <srl16_fifo>.
+Parsing VHDL file "C:/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/vhdl/srl_fifo.vhd" into library proc_common_v3_00_a
+Parsing entity <SRL_FIFO>.
+Parsing architecture <IMP> of entity <srl_fifo>.
+Parsing VHDL file "C:/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/vhdl/srl_fifo2.vhd" into library proc_common_v3_00_a
+Parsing entity <srl_fifo2>.
+Parsing architecture <imp> of entity <srl_fifo2>.
+Parsing VHDL file "C:/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/vhdl/srl_fifo3.vhd" into library proc_common_v3_00_a
+Parsing entity <srl_fifo3>.
+Parsing architecture <imp> of entity <srl_fifo3>.
+Parsing VHDL file "C:/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/vhdl/srl_fifo_rbu.vhd" into library proc_common_v3_00_a
+Parsing entity <srl_fifo_rbu>.
+Parsing architecture <imp> of entity <srl_fifo_rbu>.
+Parsing VHDL file "C:/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/vhdl/valid_be.vhd" into library proc_common_v3_00_a
+Parsing entity <valid_be>.
+Parsing architecture <implementation> of entity <valid_be>.
+Parsing VHDL file "C:/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/vhdl/or_with_enable_f.vhd" into library proc_common_v3_00_a
+Parsing entity <or_with_enable_f>.
+Parsing architecture <implementation> of entity <or_with_enable_f>.
+Parsing VHDL file "C:/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/vhdl/muxf_struct_f.vhd" into library proc_common_v3_00_a
+Parsing entity <muxf_struct>.
+Parsing architecture <imp> of entity <muxf_struct>.
+Parsing entity <muxf_struct_f>.
+Parsing architecture <imp> of entity <muxf_struct_f>.
+Parsing VHDL file "C:/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/vhdl/cntr_incr_decr_addn_f.vhd" into library proc_common_v3_00_a
+Parsing entity <cntr_incr_decr_addn_f>.
+Parsing architecture <imp> of entity <cntr_incr_decr_addn_f>.
+Parsing VHDL file "C:/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/vhdl/dynshreg_f.vhd" into library proc_common_v3_00_a
+Parsing entity <dynshreg_f>.
+Parsing architecture <behavioral> of entity <dynshreg_f>.
+Parsing VHDL file "C:/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/vhdl/dynshreg_i_f.vhd" into library proc_common_v3_00_a
+Parsing entity <dynshreg_i_f>.
+Parsing architecture <behavioral> of entity <dynshreg_i_f>.
+Parsing VHDL file "C:/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/vhdl/mux_onehot_f.vhd" into library proc_common_v3_00_a
+Parsing entity <mux_onehot_f>.
+Parsing architecture <imp> of entity <mux_onehot_f>.
+Parsing VHDL file "C:/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/vhdl/srl_fifo_rbu_f.vhd" into library proc_common_v3_00_a
+Parsing entity <srl_fifo_rbu_f>.
+Parsing architecture <imp> of entity <srl_fifo_rbu_f>.
+Parsing VHDL file "C:/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/vhdl/srl_fifo_f.vhd" into library proc_common_v3_00_a
+Parsing entity <srl_fifo_f>.
+Parsing architecture <imp> of entity <srl_fifo_f>.
+Parsing VHDL file "C:/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/vhdl/compare_vectors_f.vhd" into library proc_common_v3_00_a
+Parsing entity <compare_vectors_f>.
+Parsing architecture <imp> of entity <compare_vectors_f>.
+Parsing VHDL file "C:/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/vhdl/pselect_f.vhd" into library proc_common_v3_00_a
+Parsing entity <pselect_f>.
+Parsing architecture <imp> of entity <pselect_f>.
+Parsing VHDL file "C:/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/vhdl/counter_f.vhd" into library proc_common_v3_00_a
+Parsing entity <counter_f>.
+Parsing architecture <imp> of entity <counter_f>.
+Parsing VHDL file "C:/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/vhdl/or_muxcy_f.vhd" into library proc_common_v3_00_a
+Parsing entity <or_muxcy_f>.
+Parsing architecture <implementation> of entity <or_muxcy_f>.
+Parsing VHDL file "C:/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/vhdl/or_gate_f.vhd" into library proc_common_v3_00_a
+Parsing entity <or_gate_f>.
+Parsing architecture <imp> of entity <or_gate_f>.
+Parsing VHDL file "C:/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/vhdl/soft_reset.vhd" into library proc_common_v3_00_a
+Parsing entity <soft_reset>.
+Parsing architecture <implementation> of entity <soft_reset>.
+Parsing VHDL file "C:/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/axi_lite_ipif_v1_01_a/hdl/vhdl/address_decoder.vhd" into library axi_lite_ipif_v1_01_a
+Parsing entity <address_decoder>.
+Parsing architecture <IMP> of entity <address_decoder>.
+Parsing VHDL file "C:/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/axi_lite_ipif_v1_01_a/hdl/vhdl/slave_attachment.vhd" into library axi_lite_ipif_v1_01_a
+Parsing entity <slave_attachment>.
+Parsing architecture <imp> of entity <slave_attachment>.
+Parsing VHDL file "C:/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/axi_lite_ipif_v1_01_a/hdl/vhdl/axi_lite_ipif.vhd" into library axi_lite_ipif_v1_01_a
+Parsing entity <axi_lite_ipif>.
+Parsing architecture <imp> of entity <axi_lite_ipif>.
+Parsing VHDL file "C:/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/vhdl/family.vhd" into library proc_common_v3_00_a
+Parsing package <family>.
+Parsing package body <family>.
+Parsing VHDL file "C:/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/vhdl/family_support.vhd" into library proc_common_v3_00_a
+Parsing package <family_support>.
+Parsing package body <family_support>.
+Parsing VHDL file "C:/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/vhdl/coregen_comp_defs.vhd" into library proc_common_v3_00_a
+Parsing package <coregen_comp_defs>.
+Parsing VHDL file "C:/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/vhdl/common_types_pkg.vhd" into library proc_common_v3_00_a
+Parsing package <Common_Types>.
+Parsing package body <Common_Types>.
+Parsing VHDL file "C:/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/vhdl/proc_common_pkg.vhd" into library proc_common_v3_00_a
+Parsing package <proc_common_pkg>.
+Parsing package body <proc_common_pkg>.
+Parsing VHDL file "C:/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/vhdl/conv_funs_pkg.vhd" into library proc_common_v3_00_a
+Parsing package <conv_funs_pkg>.
+Parsing package body <conv_funs_pkg>.
+Parsing VHDL file "C:/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/vhdl/ipif_pkg.vhd" into library proc_common_v3_00_a
+Parsing package <ipif_pkg>.
+Parsing package body <ipif_pkg>.
+Parsing VHDL file "C:/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/vhdl/async_fifo_fg.vhd" into library proc_common_v3_00_a
+Parsing entity <async_fifo_fg>.
+Parsing architecture <implementation> of entity <async_fifo_fg>.
+Parsing VHDL file "C:/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/vhdl/sync_fifo_fg.vhd" into library proc_common_v3_00_a
+Parsing entity <sync_fifo_fg>.
+Parsing architecture <implementation> of entity <sync_fifo_fg>.
+Parsing VHDL file "C:/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/vhdl/basic_sfifo_fg.vhd" into library proc_common_v3_00_a
+Parsing entity <basic_sfifo_fg>.
+Parsing architecture <implementation> of entity <basic_sfifo_fg>.
+Parsing VHDL file "C:/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/vhdl/blk_mem_gen_wrapper.vhd" into library proc_common_v3_00_a
+Parsing entity <blk_mem_gen_wrapper>.
+Parsing architecture <implementation> of entity <blk_mem_gen_wrapper>.
+Parsing VHDL file "C:/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/vhdl/addsub.vhd" into library proc_common_v3_00_a
+Parsing entity <addsub>.
+Parsing architecture <imp> of entity <addsub>.
+Parsing VHDL file "C:/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/vhdl/counter_bit.vhd" into library proc_common_v3_00_a
+Parsing entity <counter_bit>.
+Parsing architecture <imp> of entity <counter_bit>.
+Parsing VHDL file "C:/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/vhdl/counter.vhd" into library proc_common_v3_00_a
+Parsing entity <Counter>.
+Parsing architecture <imp> of entity <counter>.
+Parsing VHDL file "C:/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/vhdl/direct_path_cntr.vhd" into library proc_common_v3_00_a
+Parsing entity <direct_path_cntr>.
+Parsing architecture <imp> of entity <direct_path_cntr>.
+Parsing VHDL file "C:/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/vhdl/direct_path_cntr_ai.vhd" into library proc_common_v3_00_a
+Parsing entity <direct_path_cntr_ai>.
+Parsing architecture <imp> of entity <direct_path_cntr_ai>.
+Parsing VHDL file "C:/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/vhdl/down_counter.vhd" into library proc_common_v3_00_a
+Parsing entity <down_counter>.
+Parsing architecture <simulation> of entity <down_counter>.
+Parsing VHDL file "C:/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/vhdl/eval_timer.vhd" into library proc_common_v3_00_a
+Parsing entity <eval_timer>.
+Parsing architecture <imp> of entity <eval_timer>.
+Parsing VHDL file "C:/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/vhdl/inferred_lut4.vhd" into library proc_common_v3_00_a
+Parsing entity <inferred_lut4>.
+Parsing architecture <implementation> of entity <inferred_lut4>.
+Parsing VHDL file "C:/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/vhdl/ipif_steer.vhd" into library proc_common_v3_00_a
+Parsing entity <IPIF_Steer>.
+Parsing architecture <IMP> of entity <ipif_steer>.
+Parsing VHDL file "C:/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/vhdl/ipif_steer128.vhd" into library proc_common_v3_00_a
+Parsing entity <ipif_steer128>.
+Parsing architecture <IMP> of entity <ipif_steer128>.
+Parsing VHDL file "C:/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/vhdl/ipif_mirror128.vhd" into library proc_common_v3_00_a
+Parsing entity <ipif_mirror128>.
+Parsing architecture <IMP> of entity <ipif_mirror128>.
+Parsing VHDL file "C:/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/vhdl/ld_arith_reg.vhd" into library proc_common_v3_00_a
+Parsing entity <ld_arith_reg>.
+Parsing architecture <imp> of entity <ld_arith_reg>.
+Parsing VHDL file "C:/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/vhdl/ld_arith_reg2.vhd" into library proc_common_v3_00_a
+Parsing entity <ld_arith_reg2>.
+Parsing architecture <imp> of entity <ld_arith_reg2>.
+Parsing VHDL file "C:/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/vhdl/mux_onehot.vhd" into library proc_common_v3_00_a
+Parsing entity <mux_onehot>.
+Parsing architecture <imp> of entity <mux_onehot>.
+Parsing VHDL file "C:/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/vhdl/or_bits.vhd" into library proc_common_v3_00_a
+Parsing entity <or_bits>.
+Parsing architecture <implementation> of entity <or_bits>.
+Parsing VHDL file "C:/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/vhdl/or_muxcy.vhd" into library proc_common_v3_00_a
+Parsing entity <or_muxcy>.
+Parsing architecture <implementation> of entity <or_muxcy>.
+Parsing VHDL file "C:/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/vhdl/or_gate.vhd" into library proc_common_v3_00_a
+Parsing entity <or_gate>.
+Parsing architecture <imp> of entity <or_gate>.
+Parsing VHDL file "C:/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/vhdl/or_gate128.vhd" into library proc_common_v3_00_a
+Parsing entity <or_gate128>.
+Parsing architecture <imp> of entity <or_gate128>.
+Parsing VHDL file "C:/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/vhdl/pf_adder_bit.vhd" into library proc_common_v3_00_a
+Parsing entity <pf_adder_bit>.
+Parsing architecture <implementation> of entity <pf_adder_bit>.
+Parsing VHDL file "C:/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/vhdl/pf_adder.vhd" into library proc_common_v3_00_a
+Parsing entity <pf_adder>.
+Parsing architecture <implementation> of entity <pf_adder>.
+Parsing VHDL file "C:/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/vhdl/pf_counter_bit.vhd" into library proc_common_v3_00_a
+Parsing entity <pf_counter_bit>.
+Parsing architecture <implementation> of entity <pf_counter_bit>.
+Parsing VHDL file "C:/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/vhdl/pf_counter.vhd" into library proc_common_v3_00_a
+Parsing entity <pf_counter>.
+Parsing architecture <implementation> of entity <pf_counter>.
+Parsing VHDL file "C:/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/vhdl/pf_counter_top.vhd" into library proc_common_v3_00_a
+Parsing entity <pf_counter_top>.
+Parsing architecture <implementation> of entity <pf_counter_top>.
+Parsing VHDL file "C:/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/vhdl/pf_occ_counter.vhd" into library proc_common_v3_00_a
+Parsing entity <pf_occ_counter>.
+Parsing architecture <implementation> of entity <pf_occ_counter>.
+Parsing VHDL file "C:/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/vhdl/pf_occ_counter_top.vhd" into library proc_common_v3_00_a
+Parsing entity <pf_occ_counter_top>.
+Parsing architecture <implementation> of entity <pf_occ_counter_top>.
+Parsing VHDL file "C:/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/vhdl/pf_dpram_select.vhd" into library proc_common_v3_00_a
+Parsing entity <pf_dpram_select>.
+Parsing architecture <implementation> of entity <pf_dpram_select>.
+Parsing VHDL file "C:/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/vhdl/pselect.vhd" into library proc_common_v3_00_a
+Parsing entity <pselect>.
+Parsing architecture <imp> of entity <pselect>.
+Parsing VHDL file "C:/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/vhdl/pselect_mask.vhd" into library proc_common_v3_00_a
+Parsing entity <pselect_mask>.
+Parsing architecture <imp> of entity <pselect_mask>.
+Parsing VHDL file "C:/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/vhdl/srl16_fifo.vhd" into library proc_common_v3_00_a
+Parsing entity <srl16_fifo>.
+Parsing architecture <implementation> of entity <srl16_fifo>.
+Parsing VHDL file "C:/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/vhdl/srl_fifo.vhd" into library proc_common_v3_00_a
+Parsing entity <SRL_FIFO>.
+Parsing architecture <IMP> of entity <srl_fifo>.
+Parsing VHDL file "C:/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/vhdl/srl_fifo2.vhd" into library proc_common_v3_00_a
+Parsing entity <srl_fifo2>.
+Parsing architecture <imp> of entity <srl_fifo2>.
+Parsing VHDL file "C:/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/vhdl/srl_fifo3.vhd" into library proc_common_v3_00_a
+Parsing entity <srl_fifo3>.
+Parsing architecture <imp> of entity <srl_fifo3>.
+Parsing VHDL file "C:/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/vhdl/srl_fifo_rbu.vhd" into library proc_common_v3_00_a
+Parsing entity <srl_fifo_rbu>.
+Parsing architecture <imp> of entity <srl_fifo_rbu>.
+Parsing VHDL file "C:/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/vhdl/valid_be.vhd" into library proc_common_v3_00_a
+Parsing entity <valid_be>.
+Parsing architecture <implementation> of entity <valid_be>.
+Parsing VHDL file "C:/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/vhdl/or_with_enable_f.vhd" into library proc_common_v3_00_a
+Parsing entity <or_with_enable_f>.
+Parsing architecture <implementation> of entity <or_with_enable_f>.
+Parsing VHDL file "C:/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/vhdl/muxf_struct_f.vhd" into library proc_common_v3_00_a
+Parsing entity <muxf_struct>.
+Parsing architecture <imp> of entity <muxf_struct>.
+Parsing entity <muxf_struct_f>.
+Parsing architecture <imp> of entity <muxf_struct_f>.
+Parsing VHDL file "C:/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/vhdl/cntr_incr_decr_addn_f.vhd" into library proc_common_v3_00_a
+Parsing entity <cntr_incr_decr_addn_f>.
+Parsing architecture <imp> of entity <cntr_incr_decr_addn_f>.
+Parsing VHDL file "C:/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/vhdl/dynshreg_f.vhd" into library proc_common_v3_00_a
+Parsing entity <dynshreg_f>.
+Parsing architecture <behavioral> of entity <dynshreg_f>.
+Parsing VHDL file "C:/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/vhdl/dynshreg_i_f.vhd" into library proc_common_v3_00_a
+Parsing entity <dynshreg_i_f>.
+Parsing architecture <behavioral> of entity <dynshreg_i_f>.
+Parsing VHDL file "C:/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/vhdl/mux_onehot_f.vhd" into library proc_common_v3_00_a
+Parsing entity <mux_onehot_f>.
+Parsing architecture <imp> of entity <mux_onehot_f>.
+Parsing VHDL file "C:/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/vhdl/srl_fifo_rbu_f.vhd" into library proc_common_v3_00_a
+Parsing entity <srl_fifo_rbu_f>.
+Parsing architecture <imp> of entity <srl_fifo_rbu_f>.
+Parsing VHDL file "C:/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/vhdl/srl_fifo_f.vhd" into library proc_common_v3_00_a
+Parsing entity <srl_fifo_f>.
+Parsing architecture <imp> of entity <srl_fifo_f>.
+Parsing VHDL file "C:/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/vhdl/compare_vectors_f.vhd" into library proc_common_v3_00_a
+Parsing entity <compare_vectors_f>.
+Parsing architecture <imp> of entity <compare_vectors_f>.
+Parsing VHDL file "C:/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/vhdl/pselect_f.vhd" into library proc_common_v3_00_a
+Parsing entity <pselect_f>.
+Parsing architecture <imp> of entity <pselect_f>.
+Parsing VHDL file "C:/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/vhdl/counter_f.vhd" into library proc_common_v3_00_a
+Parsing entity <counter_f>.
+Parsing architecture <imp> of entity <counter_f>.
+Parsing VHDL file "C:/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/vhdl/or_muxcy_f.vhd" into library proc_common_v3_00_a
+Parsing entity <or_muxcy_f>.
+Parsing architecture <implementation> of entity <or_muxcy_f>.
+Parsing VHDL file "C:/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/vhdl/or_gate_f.vhd" into library proc_common_v3_00_a
+Parsing entity <or_gate_f>.
+Parsing architecture <imp> of entity <or_gate_f>.
+Parsing VHDL file "C:/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/vhdl/soft_reset.vhd" into library proc_common_v3_00_a
+Parsing entity <soft_reset>.
+Parsing architecture <implementation> of entity <soft_reset>.
+Parsing VHDL file "C:/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/interrupt_control_v2_01_a/hdl/vhdl/interrupt_control.vhd" into library interrupt_control_v2_01_a
+Parsing entity <interrupt_control>.
+Parsing architecture <implementation> of entity <interrupt_control>.
+Parsing VHDL file "C:/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/axi_spi_v1_02_a/hdl/vhdl/spi_cntrl_reg.vhd" into library axi_spi_v1_02_a
+Parsing entity <spi_cntrl_reg>.
+Parsing architecture <imp> of entity <spi_cntrl_reg>.
+Parsing VHDL file "C:/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/axi_spi_v1_02_a/hdl/vhdl/spi_receive_transmit_reg.vhd" into library axi_spi_v1_02_a
+Parsing entity <spi_receive_transmit_reg>.
+Parsing architecture <imp> of entity <spi_receive_transmit_reg>.
+Parsing VHDL file "C:/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/axi_spi_v1_02_a/hdl/vhdl/spi_status_slave_sel_reg.vhd" into library axi_spi_v1_02_a
+Parsing entity <spi_status_slave_sel_reg>.
+Parsing architecture <imp> of entity <spi_status_slave_sel_reg>.
+Parsing VHDL file "C:/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/axi_spi_v1_02_a/hdl/vhdl/spi_occupancy_reg.vhd" into library axi_spi_v1_02_a
+Parsing entity <spi_occupancy_reg>.
+Parsing architecture <imp> of entity <spi_occupancy_reg>.
+Parsing VHDL file "C:/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/axi_spi_v1_02_a/hdl/vhdl/spi_fifo_ifmodule.vhd" into library axi_spi_v1_02_a
+Parsing entity <spi_fifo_ifmodule>.
+Parsing architecture <imp> of entity <spi_fifo_ifmodule>.
+Parsing VHDL file "C:/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/axi_spi_v1_02_a/hdl/vhdl/spi_module.vhd" into library axi_spi_v1_02_a
+Parsing entity <spi_module>.
+Parsing architecture <imp> of entity <spi_module>.
+Parsing VHDL file "C:/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/axi_spi_v1_02_a/hdl/vhdl/spi_core_interface.vhd" into library axi_spi_v1_02_a
+Parsing entity <spi_core_interface>.
+Parsing architecture <imp> of entity <spi_core_interface>.
+Parsing VHDL file "C:/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/axi_spi_v1_02_a/hdl/vhdl/axi_spi.vhd" into library axi_spi_v1_02_a
+Parsing entity <axi_spi>.
+Parsing architecture <imp> of entity <axi_spi>.
+Parsing VHDL file "E:\Project\AX309\Microblaze\hdl\system_spi_flash_wrapper.vhd" into library work
+Parsing entity <system_spi_flash_wrapper>.
+Parsing architecture <STRUCTURE> of entity <system_spi_flash_wrapper>.
+
+=========================================================================
+*                            HDL Elaboration                            *
+=========================================================================
+
+Elaborating entity <system_spi_flash_wrapper> (architecture <STRUCTURE>) from library <work>.
+
+Elaborating entity <axi_spi> (architecture <imp>) with generics from library <axi_spi_v1_02_a>.
+
+Elaborating entity <axi_lite_ipif> (architecture <imp>) with generics from library <axi_lite_ipif_v1_01_a>.
+
+Elaborating entity <slave_attachment> (architecture <imp>) with generics from library <axi_lite_ipif_v1_01_a>.
+
+Elaborating entity <address_decoder> (architecture <IMP>) with generics from library <axi_lite_ipif_v1_01_a>.
+
+Elaborating entity <pselect_f> (architecture <imp>) with generics from library <proc_common_v3_00_a>.
+
+Elaborating entity <pselect_f> (architecture <imp>) with generics from library <proc_common_v3_00_a>.
+
+Elaborating entity <pselect_f> (architecture <imp>) with generics from library <proc_common_v3_00_a>.
+
+Elaborating entity <pselect_f> (architecture <imp>) with generics from library <proc_common_v3_00_a>.
+
+Elaborating entity <pselect_f> (architecture <imp>) with generics from library <proc_common_v3_00_a>.
+
+Elaborating entity <pselect_f> (architecture <imp>) with generics from library <proc_common_v3_00_a>.
+
+Elaborating entity <pselect_f> (architecture <imp>) with generics from library <proc_common_v3_00_a>.
+
+Elaborating entity <pselect_f> (architecture <imp>) with generics from library <proc_common_v3_00_a>.
+
+Elaborating entity <pselect_f> (architecture <imp>) with generics from library <proc_common_v3_00_a>.
+
+Elaborating entity <pselect_f> (architecture <imp>) with generics from library <proc_common_v3_00_a>.
+
+Elaborating entity <pselect_f> (architecture <imp>) with generics from library <proc_common_v3_00_a>.
+
+Elaborating entity <pselect_f> (architecture <imp>) with generics from library <proc_common_v3_00_a>.
+
+Elaborating entity <pselect_f> (architecture <imp>) with generics from library <proc_common_v3_00_a>.
+
+Elaborating entity <pselect_f> (architecture <imp>) with generics from library <proc_common_v3_00_a>.
+
+Elaborating entity <pselect_f> (architecture <imp>) with generics from library <proc_common_v3_00_a>.
+
+Elaborating entity <pselect_f> (architecture <imp>) with generics from library <proc_common_v3_00_a>.
+
+Elaborating entity <pselect_f> (architecture <imp>) with generics from library <proc_common_v3_00_a>.
+
+Elaborating entity <pselect_f> (architecture <imp>) with generics from library <proc_common_v3_00_a>.
+
+Elaborating entity <pselect_f> (architecture <imp>) with generics from library <proc_common_v3_00_a>.
+
+Elaborating entity <pselect_f> (architecture <imp>) with generics from library <proc_common_v3_00_a>.
+
+Elaborating entity <pselect_f> (architecture <imp>) with generics from library <proc_common_v3_00_a>.
+
+Elaborating entity <pselect_f> (architecture <imp>) with generics from library <proc_common_v3_00_a>.
+
+Elaborating entity <pselect_f> (architecture <imp>) with generics from library <proc_common_v3_00_a>.
+
+Elaborating entity <pselect_f> (architecture <imp>) with generics from library <proc_common_v3_00_a>.
+
+Elaborating entity <pselect_f> (architecture <imp>) with generics from library <proc_common_v3_00_a>.
+
+Elaborating entity <pselect_f> (architecture <imp>) with generics from library <proc_common_v3_00_a>.
+
+Elaborating entity <pselect_f> (architecture <imp>) with generics from library <proc_common_v3_00_a>.
+INFO:HDLCompiler:679 - "C:/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/axi_lite_ipif_v1_01_a/hdl/vhdl/slave_attachment.vhd" Line 417. Case statement is complete. others clause is never selected
+
+Elaborating entity <spi_core_interface> (architecture <imp>) with generics from library <axi_spi_v1_02_a>.
+
+Elaborating entity <SRL_FIFO> (architecture <IMP>) with generics from library <proc_common_v3_00_a>.
+WARNING:HDLCompiler:89 - "C:/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/vhdl/srl_fifo.vhd" Line 197: <fdr> remains a black-box since it has no binding entity.
+WARNING:HDLCompiler:89 - "C:/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/vhdl/srl_fifo.vhd" Line 173: <muxcy_l> remains a black-box since it has no binding entity.
+WARNING:HDLCompiler:89 - "C:/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/vhdl/srl_fifo.vhd" Line 181: <xorcy> remains a black-box since it has no binding entity.
+WARNING:HDLCompiler:89 - "C:/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/vhdl/srl_fifo.vhd" Line 188: <fdre> remains a black-box since it has no binding entity.
+WARNING:HDLCompiler:89 - "C:/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/vhdl/srl_fifo.vhd" Line 137: <srl16e> remains a black-box since it has no binding entity.
+
+Elaborating entity <spi_fifo_ifmodule> (architecture <imp>) with generics from library <axi_spi_v1_02_a>.
+
+Elaborating entity <spi_occupancy_reg> (architecture <imp>) with generics from library <axi_spi_v1_02_a>.
+
+Elaborating entity <spi_cntrl_reg> (architecture <imp>) with generics from library <axi_spi_v1_02_a>.
+
+Elaborating entity <spi_status_slave_sel_reg> (architecture <imp>) with generics from library <axi_spi_v1_02_a>.
+
+Elaborating entity <spi_module> (architecture <imp>) with generics from library <axi_spi_v1_02_a>.
+
+Elaborating entity <soft_reset> (architecture <implementation>) with generics from library <proc_common_v3_00_a>.
+
+Elaborating entity <interrupt_control> (architecture <implementation>) with generics from library <interrupt_control_v2_01_a>.
+WARNING:HDLCompiler:1127 - "C:/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/interrupt_control_v2_01_a/hdl/vhdl/interrupt_control.vhd" Line 1086: Assignment to ipif_pri_encode_present ignored, since the identifier is never used
+
+=========================================================================
+*                           HDL Synthesis                               *
+=========================================================================
+
+Synthesizing Unit <system_spi_flash_wrapper>.
+    Related source file is "E:\Project\AX309\Microblaze\hdl\system_spi_flash_wrapper.vhd".
+    Summary:
+	no macro.
+Unit <system_spi_flash_wrapper> synthesized.
+
+Synthesizing Unit <axi_spi>.
+    Related source file is "C:/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/axi_spi_v1_02_a/hdl/vhdl/axi_spi.vhd".
+WARNING:Xst:37 - Detected unknown constraint/property "sigis". This constraint/property is not supported by the current software release and will be ignored.
+WARNING:Xst:37 - Detected unknown constraint/property "sigis". This constraint/property is not supported by the current software release and will be ignored.
+WARNING:Xst:37 - Detected unknown constraint/property "initialval". This constraint/property is not supported by the current software release and will be ignored.
+WARNING:Xst:37 - Detected unknown constraint/property "sigis". This constraint/property is not supported by the current software release and will be ignored.
+        C_FAMILY = "spartan6"
+        C_INSTANCE = "spi_flash"
+        C_BASEADDR = "01000000101000100000000000000000"
+        C_HIGHADDR = "01000000101000101111111111111111"
+        C_S_AXI_ADDR_WIDTH = 32
+        C_S_AXI_DATA_WIDTH = 32
+        C_FIFO_EXIST = 1
+        C_SCK_RATIO = 32
+        C_NUM_SS_BITS = 1
+        C_NUM_TRANSFER_BITS = 8
+WARNING:Xst:37 - Detected unknown constraint/property "HDL". This constraint/property is not supported by the current software release and will be ignored.
+WARNING:Xst:37 - Detected unknown constraint/property "IMP_NETLIST". This constraint/property is not supported by the current software release and will be ignored.
+WARNING:Xst:37 - Detected unknown constraint/property "IPTYPE". This constraint/property is not supported by the current software release and will be ignored.
+WARNING:Xst:37 - Detected unknown constraint/property "STYLE". This constraint/property is not supported by the current software release and will be ignored.
+    Set property "MAX_FANOUT = 10000" for signal <S_AXI_ACLK>.
+WARNING:Xst:37 - Detected unknown constraint/property "sigis". This constraint/property is not supported by the current software release and will be ignored.
+    Set property "MAX_FANOUT = 10000" for signal <S_AXI_ARESETN>.
+WARNING:Xst:37 - Detected unknown constraint/property "sigis". This constraint/property is not supported by the current software release and will be ignored.
+WARNING:Xst:37 - Detected unknown constraint/property "initialval". This constraint/property is not supported by the current software release and will be ignored.
+WARNING:Xst:37 - Detected unknown constraint/property "sigis". This constraint/property is not supported by the current software release and will be ignored.
+INFO:Xst:3210 - "C:/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/axi_spi_v1_02_a/hdl/vhdl/axi_spi.vhd" line 408: Output port <Bus2IP_Addr> of the instance <AXI_LITE_IPIF_I> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/axi_spi_v1_02_a/hdl/vhdl/axi_spi.vhd" line 408: Output port <Bus2IP_RNW> of the instance <AXI_LITE_IPIF_I> is unconnected or connected to loadless signal.
+    Found 1-bit register for signal <bus2ip_reset_int_core>.
+    Summary:
+	inferred   1 D-type flip-flop(s).
+Unit <axi_spi> synthesized.
+
+Synthesizing Unit <axi_lite_ipif>.
+    Related source file is "C:/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/axi_lite_ipif_v1_01_a/hdl/vhdl/axi_lite_ipif.vhd".
+        C_S_AXI_DATA_WIDTH = 32
+        C_S_AXI_ADDR_WIDTH = 32
+        C_S_AXI_MIN_SIZE = "00000000000000000000000001111100"
+        C_USE_WSTRB = 1
+        C_DPHASE_TIMEOUT = 8
+        C_ARD_ADDR_RANGE_ARRAY = ("0000000000000000000000000000000001000000101000100000000000000000","0000000000000000000000000000000001000000101000100000000000111111","0000000000000000000000000000000001000000101000100000000001000000","0000000000000000000000000000000001000000101000100000000001000011","0000000000000000000000000000000001000000101000100000000001100000","0000000000000000000000000000000001000000101000100000000001111000")
+        C_ARD_NUM_CE_ARRAY = (16,1,8)
+        C_FAMILY = "spartan6"
+    Summary:
+	no macro.
+Unit <axi_lite_ipif> synthesized.
+
+Synthesizing Unit <slave_attachment>.
+    Related source file is "C:/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/axi_lite_ipif_v1_01_a/hdl/vhdl/slave_attachment.vhd".
+        C_ARD_ADDR_RANGE_ARRAY = ("0000000000000000000000000000000001000000101000100000000000000000","0000000000000000000000000000000001000000101000100000000000111111","0000000000000000000000000000000001000000101000100000000001000000","0000000000000000000000000000000001000000101000100000000001000011","0000000000000000000000000000000001000000101000100000000001100000","0000000000000000000000000000000001000000101000100000000001111000")
+        C_ARD_NUM_CE_ARRAY = (16,1,8)
+        C_IPIF_ABUS_WIDTH = 32
+        C_IPIF_DBUS_WIDTH = 32
+        C_S_AXI_MIN_SIZE = "00000000000000000000000001111100"
+        C_USE_WSTRB = 1
+        C_DPHASE_TIMEOUT = 8
+        C_FAMILY = "spartan6"
+WARNING:Xst:647 - Input <S_AXI_AWADDR<31:7>> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <S_AXI_ARADDR<31:7>> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+INFO:Xst:3210 - "C:/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/axi_lite_ipif_v1_01_a/hdl/vhdl/slave_attachment.vhd" line 341: Output port <CS_for_gaps> of the instance <I_DECODER> is unconnected or connected to loadless signal.
+    Found 2-bit register for signal <state>.
+    Found 2-bit register for signal <s_axi_rresp_i>.
+    Found 32-bit register for signal <s_axi_rdata_i>.
+    Found 1-bit register for signal <s_axi_rvalid_i>.
+    Found 2-bit register for signal <s_axi_bresp_i>.
+    Found 1-bit register for signal <s_axi_bvalid_i>.
+    Found 4-bit register for signal <INCLUDE_DPHASE_TIMER.dpto_cnt>.
+    Found 1-bit register for signal <rst>.
+    Found finite state machine <FSM_0> for signal <state>.
+    -----------------------------------------------------------------------
+    | States             | 4                                              |
+    | Transitions        | 10                                             |
+    | Inputs             | 6                                              |
+    | Outputs            | 4                                              |
+    | Clock              | S_AXI_ACLK (rising_edge)                       |
+    | Reset              | rst (positive)                                 |
+    | Reset type         | synchronous                                    |
+    | Reset State        | sm_idle                                        |
+    | Power Up State     | sm_idle                                        |
+    | Encoding           | auto                                           |
+    | Implementation     | LUT                                            |
+    -----------------------------------------------------------------------
+    Found 4-bit adder for signal <INCLUDE_DPHASE_TIMER.dpto_cnt[3]_GND_14_o_add_31_OUT> created at line 507.
+    Summary:
+	inferred   1 Adder/Subtractor(s).
+	inferred  43 D-type flip-flop(s).
+	inferred   3 Multiplexer(s).
+	inferred   1 Finite State Machine(s).
+Unit <slave_attachment> synthesized.
+
+Synthesizing Unit <address_decoder>.
+    Related source file is "C:/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/axi_lite_ipif_v1_01_a/hdl/vhdl/address_decoder.vhd".
+        C_BUS_AWIDTH = 7
+        C_S_AXI_MIN_SIZE = "00000000000000000000000001111100"
+        C_ARD_ADDR_RANGE_ARRAY = ("0000000000000000000000000000000001000000101000100000000000000000","0000000000000000000000000000000001000000101000100000000000111111","0000000000000000000000000000000001000000101000100000000001000000","0000000000000000000000000000000001000000101000100000000001000011","0000000000000000000000000000000001000000101000100000000001100000","0000000000000000000000000000000001000000101000100000000001111000")
+        C_ARD_NUM_CE_ARRAY = (16,1,8)
+        C_FAMILY = "nofamily"
+WARNING:Xst:647 - Input <Bus_RNW> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+    Found 1-bit register for signal <cs_out_i<1>>.
+    Found 1-bit register for signal <cs_out_i<2>>.
+    Found 1-bit register for signal <Bus_RNW_reg>.
+    Found 1-bit register for signal <ce_out_i<0>>.
+    Found 1-bit register for signal <ce_out_i<1>>.
+    Found 1-bit register for signal <ce_out_i<2>>.
+    Found 1-bit register for signal <ce_out_i<3>>.
+    Found 1-bit register for signal <ce_out_i<4>>.
+    Found 1-bit register for signal <ce_out_i<5>>.
+    Found 1-bit register for signal <ce_out_i<6>>.
+    Found 1-bit register for signal <ce_out_i<7>>.
+    Found 1-bit register for signal <ce_out_i<8>>.
+    Found 1-bit register for signal <ce_out_i<9>>.
+    Found 1-bit register for signal <ce_out_i<10>>.
+    Found 1-bit register for signal <ce_out_i<11>>.
+    Found 1-bit register for signal <ce_out_i<12>>.
+    Found 1-bit register for signal <ce_out_i<13>>.
+    Found 1-bit register for signal <ce_out_i<14>>.
+    Found 1-bit register for signal <ce_out_i<15>>.
+    Found 1-bit register for signal <ce_out_i<16>>.
+    Found 1-bit register for signal <ce_out_i<17>>.
+    Found 1-bit register for signal <ce_out_i<18>>.
+    Found 1-bit register for signal <ce_out_i<19>>.
+    Found 1-bit register for signal <ce_out_i<20>>.
+    Found 1-bit register for signal <ce_out_i<21>>.
+    Found 1-bit register for signal <ce_out_i<22>>.
+    Found 1-bit register for signal <ce_out_i<23>>.
+    Found 1-bit register for signal <ce_out_i<24>>.
+    Found 1-bit register for signal <cs_out_i<0>>.
+    Summary:
+	inferred  29 D-type flip-flop(s).
+Unit <address_decoder> synthesized.
+
+Synthesizing Unit <pselect_f_1>.
+    Related source file is "C:/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/vhdl/pselect_f.vhd".
+        C_AB = 1
+        C_AW = 7
+        C_BAR = "0000000"
+        C_FAMILY = "nofamily"
+WARNING:Xst:647 - Input <A<1:6>> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+    Summary:
+	inferred   1 Multiplexer(s).
+Unit <pselect_f_1> synthesized.
+
+Synthesizing Unit <pselect_f_2>.
+    Related source file is "C:/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/vhdl/pselect_f.vhd".
+        C_AB = 4
+        C_AW = 4
+        C_BAR = "0000"
+        C_FAMILY = "nofamily"
+    Summary:
+	inferred   1 Multiplexer(s).
+Unit <pselect_f_2> synthesized.
+
+Synthesizing Unit <pselect_f_3>.
+    Related source file is "C:/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/vhdl/pselect_f.vhd".
+        C_AB = 4
+        C_AW = 4
+        C_BAR = "0001"
+        C_FAMILY = "nofamily"
+    Summary:
+	inferred   1 Multiplexer(s).
+Unit <pselect_f_3> synthesized.
+
+Synthesizing Unit <pselect_f_4>.
+    Related source file is "C:/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/vhdl/pselect_f.vhd".
+        C_AB = 4
+        C_AW = 4
+        C_BAR = "0010"
+        C_FAMILY = "nofamily"
+    Summary:
+	inferred   1 Multiplexer(s).
+Unit <pselect_f_4> synthesized.
+
+Synthesizing Unit <pselect_f_5>.
+    Related source file is "C:/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/vhdl/pselect_f.vhd".
+        C_AB = 4
+        C_AW = 4
+        C_BAR = "0011"
+        C_FAMILY = "nofamily"
+    Summary:
+	inferred   1 Multiplexer(s).
+Unit <pselect_f_5> synthesized.
+
+Synthesizing Unit <pselect_f_6>.
+    Related source file is "C:/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/vhdl/pselect_f.vhd".
+        C_AB = 4
+        C_AW = 4
+        C_BAR = "0100"
+        C_FAMILY = "nofamily"
+    Summary:
+	inferred   1 Multiplexer(s).
+Unit <pselect_f_6> synthesized.
+
+Synthesizing Unit <pselect_f_7>.
+    Related source file is "C:/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/vhdl/pselect_f.vhd".
+        C_AB = 4
+        C_AW = 4
+        C_BAR = "0101"
+        C_FAMILY = "nofamily"
+    Summary:
+	inferred   1 Multiplexer(s).
+Unit <pselect_f_7> synthesized.
+
+Synthesizing Unit <pselect_f_8>.
+    Related source file is "C:/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/vhdl/pselect_f.vhd".
+        C_AB = 4
+        C_AW = 4
+        C_BAR = "0110"
+        C_FAMILY = "nofamily"
+    Summary:
+	inferred   1 Multiplexer(s).
+Unit <pselect_f_8> synthesized.
+
+Synthesizing Unit <pselect_f_9>.
+    Related source file is "C:/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/vhdl/pselect_f.vhd".
+        C_AB = 4
+        C_AW = 4
+        C_BAR = "0111"
+        C_FAMILY = "nofamily"
+    Summary:
+	inferred   1 Multiplexer(s).
+Unit <pselect_f_9> synthesized.
+
+Synthesizing Unit <pselect_f_10>.
+    Related source file is "C:/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/vhdl/pselect_f.vhd".
+        C_AB = 4
+        C_AW = 4
+        C_BAR = "1000"
+        C_FAMILY = "nofamily"
+    Summary:
+	inferred   1 Multiplexer(s).
+Unit <pselect_f_10> synthesized.
+
+Synthesizing Unit <pselect_f_11>.
+    Related source file is "C:/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/vhdl/pselect_f.vhd".
+        C_AB = 4
+        C_AW = 4
+        C_BAR = "1001"
+        C_FAMILY = "nofamily"
+    Summary:
+	inferred   1 Multiplexer(s).
+Unit <pselect_f_11> synthesized.
+
+Synthesizing Unit <pselect_f_12>.
+    Related source file is "C:/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/vhdl/pselect_f.vhd".
+        C_AB = 4
+        C_AW = 4
+        C_BAR = "1010"
+        C_FAMILY = "nofamily"
+    Summary:
+	inferred   1 Multiplexer(s).
+Unit <pselect_f_12> synthesized.
+
+Synthesizing Unit <pselect_f_13>.
+    Related source file is "C:/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/vhdl/pselect_f.vhd".
+        C_AB = 4
+        C_AW = 4
+        C_BAR = "1011"
+        C_FAMILY = "nofamily"
+    Summary:
+	inferred   1 Multiplexer(s).
+Unit <pselect_f_13> synthesized.
+
+Synthesizing Unit <pselect_f_14>.
+    Related source file is "C:/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/vhdl/pselect_f.vhd".
+        C_AB = 4
+        C_AW = 4
+        C_BAR = "1100"
+        C_FAMILY = "nofamily"
+    Summary:
+	inferred   1 Multiplexer(s).
+Unit <pselect_f_14> synthesized.
+
+Synthesizing Unit <pselect_f_15>.
+    Related source file is "C:/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/vhdl/pselect_f.vhd".
+        C_AB = 4
+        C_AW = 4
+        C_BAR = "1101"
+        C_FAMILY = "nofamily"
+    Summary:
+	inferred   1 Multiplexer(s).
+Unit <pselect_f_15> synthesized.
+
+Synthesizing Unit <pselect_f_16>.
+    Related source file is "C:/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/vhdl/pselect_f.vhd".
+        C_AB = 4
+        C_AW = 4
+        C_BAR = "1110"
+        C_FAMILY = "nofamily"
+    Summary:
+	inferred   1 Multiplexer(s).
+Unit <pselect_f_16> synthesized.
+
+Synthesizing Unit <pselect_f_17>.
+    Related source file is "C:/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/vhdl/pselect_f.vhd".
+        C_AB = 4
+        C_AW = 4
+        C_BAR = "1111"
+        C_FAMILY = "nofamily"
+    Summary:
+	inferred   1 Multiplexer(s).
+Unit <pselect_f_17> synthesized.
+
+Synthesizing Unit <pselect_f_18>.
+    Related source file is "C:/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/vhdl/pselect_f.vhd".
+        C_AB = 5
+        C_AW = 7
+        C_BAR = "1000000"
+        C_FAMILY = "nofamily"
+WARNING:Xst:647 - Input <A<5:6>> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+    Summary:
+	inferred   1 Multiplexer(s).
+Unit <pselect_f_18> synthesized.
+
+Synthesizing Unit <pselect_f_19>.
+    Related source file is "C:/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/vhdl/pselect_f.vhd".
+        C_AB = 2
+        C_AW = 7
+        C_BAR = "1100000"
+        C_FAMILY = "nofamily"
+WARNING:Xst:647 - Input <A<2:6>> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+    Summary:
+	inferred   1 Multiplexer(s).
+Unit <pselect_f_19> synthesized.
+
+Synthesizing Unit <pselect_f_20>.
+    Related source file is "C:/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/vhdl/pselect_f.vhd".
+        C_AB = 3
+        C_AW = 3
+        C_BAR = "000"
+        C_FAMILY = "nofamily"
+    Summary:
+	inferred   1 Multiplexer(s).
+Unit <pselect_f_20> synthesized.
+
+Synthesizing Unit <pselect_f_21>.
+    Related source file is "C:/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/vhdl/pselect_f.vhd".
+        C_AB = 3
+        C_AW = 3
+        C_BAR = "001"
+        C_FAMILY = "nofamily"
+    Summary:
+	inferred   1 Multiplexer(s).
+Unit <pselect_f_21> synthesized.
+
+Synthesizing Unit <pselect_f_22>.
+    Related source file is "C:/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/vhdl/pselect_f.vhd".
+        C_AB = 3
+        C_AW = 3
+        C_BAR = "010"
+        C_FAMILY = "nofamily"
+    Summary:
+	inferred   1 Multiplexer(s).
+Unit <pselect_f_22> synthesized.
+
+Synthesizing Unit <pselect_f_23>.
+    Related source file is "C:/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/vhdl/pselect_f.vhd".
+        C_AB = 3
+        C_AW = 3
+        C_BAR = "011"
+        C_FAMILY = "nofamily"
+    Summary:
+	inferred   1 Multiplexer(s).
+Unit <pselect_f_23> synthesized.
+
+Synthesizing Unit <pselect_f_24>.
+    Related source file is "C:/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/vhdl/pselect_f.vhd".
+        C_AB = 3
+        C_AW = 3
+        C_BAR = "100"
+        C_FAMILY = "nofamily"
+    Summary:
+	inferred   1 Multiplexer(s).
+Unit <pselect_f_24> synthesized.
+
+Synthesizing Unit <pselect_f_25>.
+    Related source file is "C:/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/vhdl/pselect_f.vhd".
+        C_AB = 3
+        C_AW = 3
+        C_BAR = "101"
+        C_FAMILY = "nofamily"
+    Summary:
+	inferred   1 Multiplexer(s).
+Unit <pselect_f_25> synthesized.
+
+Synthesizing Unit <pselect_f_26>.
+    Related source file is "C:/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/vhdl/pselect_f.vhd".
+        C_AB = 3
+        C_AW = 3
+        C_BAR = "110"
+        C_FAMILY = "nofamily"
+    Summary:
+	inferred   1 Multiplexer(s).
+Unit <pselect_f_26> synthesized.
+
+Synthesizing Unit <pselect_f_27>.
+    Related source file is "C:/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/vhdl/pselect_f.vhd".
+        C_AB = 3
+        C_AW = 3
+        C_BAR = "111"
+        C_FAMILY = "nofamily"
+    Summary:
+	inferred   1 Multiplexer(s).
+Unit <pselect_f_27> synthesized.
+
+Synthesizing Unit <spi_core_interface>.
+    Related source file is "C:/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/axi_spi_v1_02_a/hdl/vhdl/spi_core_interface.vhd".
+        C_S_AXI_ADDR_WIDTH = 32
+        C_S_AXI_DATA_WIDTH = 32
+        C_NUM_CE_SIGNALS = 25
+        C_NUM_CS_SIGNALS = 3
+        C_IP_INTR_MODE_ARRAY = (3,3,3,3,3,3,3,3,3)
+        C_NUM_BITS_REG = 8
+        C_OCCUPANCY_NUM_BITS = 4
+        C_FIFO_DEPTH = 16
+        C_FIFO_EXIST = 1
+        C_SCK_RATIO = 32
+        C_NUM_SS_BITS = 1
+        C_NUM_TRANSFER_BITS = 8
+WARNING:Xst:647 - Input <Bus2IP_CS> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+INFO:Xst:3210 - "C:/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/axi_spi_v1_02_a/hdl/vhdl/spi_core_interface.vhd" line 929: Output port <Reset2Bus_ToutSup> of the instance <SOFT_RESET_I> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/axi_spi_v1_02_a/hdl/vhdl/spi_core_interface.vhd" line 1003: Output port <Intr2Bus_Retry> of the instance <INTERRUPT_CONTROL_I> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/axi_spi_v1_02_a/hdl/vhdl/spi_core_interface.vhd" line 1003: Output port <Intr2Bus_ToutSup> of the instance <INTERRUPT_CONTROL_I> is unconnected or connected to loadless signal.
+    Found 1-bit register for signal <ip2Bus_WrAck_core_reg>.
+    Found 1-bit register for signal <ip2Bus_RdAck_core_reg_d1>.
+    Found 1-bit register for signal <ip2Bus_RdAck_core_reg>.
+    Found 1-bit register for signal <MAP_SIGNALS_AND_REG_WITH_FIFOS.data_Exists_RcFIFO_int_d1>.
+    Found 1-bit register for signal <ip2Bus_RdAck_intr_reg_hole>.
+    Found 1-bit register for signal <ip2Bus_RdAck_intr_reg_hole_d1>.
+    Found 1-bit register for signal <ip2Bus_WrAck_intr_reg_hole>.
+    Found 1-bit register for signal <ip2Bus_WrAck_intr_reg_hole_d1>.
+    Found 1-bit register for signal <ip2Bus_WrAck_core_reg_d1>.
+    Summary:
+	inferred   9 D-type flip-flop(s).
+Unit <spi_core_interface> synthesized.
+
+Synthesizing Unit <SRL_FIFO>.
+    Related source file is "C:/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/vhdl/srl_fifo.vhd".
+        C_DATA_BITS = 8
+        C_DEPTH = 16
+        C_XON = false
+INFO:Xst:3210 - "C:/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/vhdl/srl_fifo.vhd" line 246: Output port <LO> of the instance <Addr_Counters[3].MUXCY_L_I> is unconnected or connected to loadless signal.
+    Summary:
+Unit <SRL_FIFO> synthesized.
+
+Synthesizing Unit <spi_fifo_ifmodule>.
+    Related source file is "C:/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/axi_spi_v1_02_a/hdl/vhdl/spi_fifo_ifmodule.vhd".
+        C_NUM_TRANSFER_BITS = 8
+WARNING:Xst:647 - Input <Wr_ce_reduce_ack_gen> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+    Found 1-bit register for signal <Receive_ip2bus_error>.
+    Found 1-bit register for signal <rc_FIFO_Full_d1>.
+    Found 1-bit register for signal <Transmit_ip2bus_error>.
+    Found 1-bit register for signal <tx_FIFO_Empty_d1>.
+    Found 1-bit register for signal <dtr_underrun_d1>.
+    Found 1-bit register for signal <tx_FIFO_Occpncy_MSB_d1>.
+    Found 1-bit register for signal <drr_Overrun_i>.
+    Summary:
+	inferred   7 D-type flip-flop(s).
+Unit <spi_fifo_ifmodule> synthesized.
+
+Synthesizing Unit <spi_occupancy_reg>.
+    Related source file is "C:/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/axi_spi_v1_02_a/hdl/vhdl/spi_occupancy_reg.vhd".
+        C_OCCUPANCY_NUM_BITS = 4
+    Summary:
+	no macro.
+Unit <spi_occupancy_reg> synthesized.
+
+Synthesizing Unit <spi_cntrl_reg>.
+    Related source file is "C:/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/axi_spi_v1_02_a/hdl/vhdl/spi_cntrl_reg.vhd".
+        C_DBUS_WIDTH = 32
+        C_NUM_BITS_REG = 10
+WARNING:Xst:647 - Input <Bus2IP_Control_Reg_Data<0:21>> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+    Found 1-bit register for signal <control_register_data_int<1>>.
+    Found 1-bit register for signal <control_register_data_int<2>>.
+    Found 1-bit register for signal <control_register_data_int<3>>.
+    Found 1-bit register for signal <control_register_data_int<4>>.
+    Found 1-bit register for signal <control_register_data_int<5>>.
+    Found 1-bit register for signal <control_register_data_int<6>>.
+    Found 1-bit register for signal <control_register_data_int<7>>.
+    Found 1-bit register for signal <control_register_data_int<8>>.
+    Found 1-bit register for signal <control_register_data_int<9>>.
+    Found 1-bit register for signal <control_register_data_int<0>>.
+    Summary:
+	inferred  10 D-type flip-flop(s).
+Unit <spi_cntrl_reg> synthesized.
+
+Synthesizing Unit <spi_status_slave_sel_reg>.
+    Related source file is "C:/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/axi_spi_v1_02_a/hdl/vhdl/spi_status_slave_sel_reg.vhd".
+        C_NUM_BITS_REG = 8
+        C_DBUS_WIDTH = 32
+        C_NUM_SS_BITS = 1
+WARNING:Xst:647 - Input <Bus2IP_Data_slave_sel<0:30>> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+    Found 1-bit register for signal <register_Data_int>.
+    Found 1-bit register for signal <modf>.
+    Summary:
+	inferred   2 D-type flip-flop(s).
+Unit <spi_status_slave_sel_reg> synthesized.
+
+Synthesizing Unit <spi_module>.
+    Related source file is "C:/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/axi_spi_v1_02_a/hdl/vhdl/spi_module.vhd".
+        C_SCK_RATIO = 32
+        C_NUM_BITS_REG = 10
+        C_NUM_SS_BITS = 1
+        C_NUM_TRANSFER_BITS = 8
+    Set property "IOB = TRUE" for instance <SPI_TRISTATE_CONTROL_II>.
+    Set property "IOB = TRUE" for instance <SPI_TRISTATE_CONTROL_III>.
+    Set property "IOB = TRUE" for instance <SPI_TRISTATE_CONTROL_IV>.
+    Set property "IOB = TRUE" for instance <SPI_TRISTATE_CONTROL_V>.
+    Set property "IOB = TRUE" for instance <SPISEL_REG>.
+    Set property "IOB = TRUE" for instance <SCK_I_REG>.
+    Set property "IOB = TRUE" for instance <OTHER_RATIO_GENERATE.MOSI_I_REG>.
+    Set property "IOB = TRUE" for instance <OTHER_RATIO_GENERATE.MISO_I_REG>.
+WARNING:Xst:647 - Input <Control_Reg<3:4>> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <SS_I> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+    Register <MODF_strobe_int> equivalent to <MODF_strobe> has been removed
+    Register <SS_Asserted> equivalent to <transfer_start_d1> has been removed
+    Found 1-bit register for signal <spisel_d1>.
+    Found 1-bit register for signal <sck_i_d1>.
+    Found 1-bit register for signal <transfer_start>.
+    Found 1-bit register for signal <transfer_start_d1>.
+    Found 1-bit register for signal <SPIXfer_done_int>.
+    Found 1-bit register for signal <SPIXfer_done_int_d1>.
+    Found 1-bit register for signal <SPIXfer_done_int_pulse_d1>.
+    Found 1-bit register for signal <SPIXfer_done_int_pulse_d2>.
+    Found 8-bit register for signal <receive_Data_int>.
+    Found 1-bit register for signal <serial_dout_int>.
+    Found 4-bit register for signal <Ratio_Count>.
+    Found 1-bit register for signal <Count_trigger>.
+    Found 1-bit register for signal <Count_trigger_d1>.
+    Found 5-bit register for signal <Count>.
+    Found 1-bit register for signal <sck_o_int>.
+    Found 1-bit register for signal <sck_d1>.
+    Found 1-bit register for signal <sck_d2>.
+    Found 8-bit register for signal <rx_shft_reg_mode_0011>.
+    Found 8-bit register for signal <rx_shft_reg_mode_0110>.
+    Found 8-bit register for signal <Shift_Reg>.
+    Found 1-bit register for signal <Serial_Dout>.
+    Found 8-bit register for signal <rx_shft_reg_s>.
+    Found 1-bit register for signal <SCK_O>.
+    Found 1-bit register for signal <SS_O>.
+    Found 1-bit register for signal <SS_Asserted_1dly>.
+    Found 1-bit register for signal <MODF_strobe>.
+    Found 1-bit register for signal <Allow_MODF_Strobe>.
+    Found 1-bit register for signal <Slave_MODF_strobe>.
+    Found 1-bit register for signal <Allow_Slave_MODF_Strobe>.
+    Found 1-bit register for signal <DTR_underrun>.
+    Found 5-bit adder for signal <Count[4]_GND_49_o_add_19_OUT> created at line 951.
+    Found 4-bit subtractor for signal <GND_49_o_GND_49_o_sub_10_OUT<3:0>> created at line 886.
+    Summary:
+	inferred   2 Adder/Subtractor(s).
+	inferred  72 D-type flip-flop(s).
+	inferred  28 Multiplexer(s).
+Unit <spi_module> synthesized.
+
+Synthesizing Unit <soft_reset>.
+    Related source file is "C:/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/vhdl/soft_reset.vhd".
+        C_SIPIF_DWIDTH = 32
+        C_RESET_WIDTH = 8
+WARNING:Xst:647 - Input <Bus2IP_Data<0:27>> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <Bus2IP_BE<0:2>> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+    Found 1-bit register for signal <reset_trig>.
+    Found 1-bit register for signal <sw_rst_cond_d1>.
+    Summary:
+	inferred   2 D-type flip-flop(s).
+Unit <soft_reset> synthesized.
+
+Synthesizing Unit <interrupt_control>.
+    Related source file is "C:/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/interrupt_control_v2_01_a/hdl/vhdl/interrupt_control.vhd".
+        C_NUM_CE = 16
+        C_NUM_IPIF_IRPT_SRC = 1
+        C_IP_INTR_MODE_ARRAY = (3,3,3,3,3,3,3,3,3)
+        C_INCLUDE_DEV_PENCODER = false
+        C_INCLUDE_DEV_ISC = false
+        C_IPIF_DWIDTH = 32
+WARNING:Xst:647 - Input <Bus2IP_Data<1:22>> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <Bus2IP_BE<1:3>> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <Interrupt_RdCE<0:6>> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <Interrupt_RdCE<9:9>> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <Interrupt_RdCE<11:15>> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <Interrupt_WrCE<0:6>> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <Interrupt_WrCE<9:9>> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <Interrupt_WrCE<11:15>> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <IPIF_Reg_Interrupts> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <IPIF_Lvl_Interrupts> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+    Found 1-bit register for signal <Intr2Bus_WrAck>.
+    Found 1-bit register for signal <irpt_rdack_d1>.
+    Found 1-bit register for signal <Intr2Bus_RdAck>.
+    Found 1-bit register for signal <ip_irpt_status_reg<0>>.
+    Found 1-bit register for signal <ip_irpt_status_reg<1>>.
+    Found 1-bit register for signal <ip_irpt_status_reg<2>>.
+    Found 1-bit register for signal <ip_irpt_status_reg<3>>.
+    Found 1-bit register for signal <ip_irpt_status_reg<4>>.
+    Found 1-bit register for signal <ip_irpt_status_reg<5>>.
+    Found 1-bit register for signal <ip_irpt_status_reg<6>>.
+    Found 1-bit register for signal <ip_irpt_status_reg<7>>.
+    Found 1-bit register for signal <ip_irpt_status_reg<8>>.
+    Found 9-bit register for signal <ip_irpt_enable_reg>.
+    Found 1-bit register for signal <ipif_glbl_irpt_enable_reg>.
+    Found 1-bit register for signal <irpt_wrack_d1>.
+    Summary:
+	inferred  23 D-type flip-flop(s).
+	inferred  14 Multiplexer(s).
+Unit <interrupt_control> synthesized.
+
+=========================================================================
+HDL Synthesis Report
+
+Macro Statistics
+# Adders/Subtractors                                   : 3
+ 4-bit adder                                           : 1
+ 4-bit subtractor                                      : 1
+ 5-bit adder                                           : 1
+# Registers                                            : 110
+ 1-bit register                                        : 97
+ 2-bit register                                        : 2
+ 3-bit register                                        : 1
+ 32-bit register                                       : 1
+ 4-bit register                                        : 2
+ 5-bit register                                        : 1
+ 8-bit register                                        : 5
+ 9-bit register                                        : 1
+# Multiplexers                                         : 72
+ 1-bit 2-to-1 multiplexer                              : 52
+ 32-bit 2-to-1 multiplexer                             : 4
+ 4-bit 2-to-1 multiplexer                              : 2
+ 5-bit 2-to-1 multiplexer                              : 4
+ 8-bit 2-to-1 multiplexer                              : 10
+# FSMs                                                 : 1
+# Xors                                                 : 19
+ 1-bit xor2                                            : 19
+
+=========================================================================
+
+=========================================================================
+*                       Advanced HDL Synthesis                          *
+=========================================================================
+
+
+Synthesizing (advanced) Unit <slave_attachment>.
+The following registers are absorbed into counter <INCLUDE_DPHASE_TIMER.dpto_cnt>: 1 register on signal <INCLUDE_DPHASE_TIMER.dpto_cnt>.
+Unit <slave_attachment> synthesized (advanced).
+
+Synthesizing (advanced) Unit <spi_module>.
+The following registers are absorbed into counter <Ratio_Count>: 1 register on signal <Ratio_Count>.
+Unit <spi_module> synthesized (advanced).
+
+=========================================================================
+Advanced HDL Synthesis Report
+
+Macro Statistics
+# Adders/Subtractors                                   : 1
+ 5-bit adder                                           : 1
+# Counters                                             : 2
+ 4-bit down counter                                    : 1
+ 4-bit up counter                                      : 1
+# Registers                                            : 219
+ Flip-Flops                                            : 219
+# Multiplexers                                         : 64
+ 1-bit 2-to-1 multiplexer                              : 48
+ 32-bit 2-to-1 multiplexer                             : 4
+ 4-bit 2-to-1 multiplexer                              : 1
+ 5-bit 2-to-1 multiplexer                              : 4
+ 8-bit 2-to-1 multiplexer                              : 7
+# FSMs                                                 : 1
+# Xors                                                 : 19
+ 1-bit xor2                                            : 19
+
+=========================================================================
+
+=========================================================================
+*                         Low Level Synthesis                           *
+=========================================================================
+WARNING:Xst:1293 - FF/Latch <s_axi_bresp_i_0> has a constant value of 0 in block <slave_attachment>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <s_axi_rresp_i_0> has a constant value of 0 in block <slave_attachment>. This FF/Latch will be trimmed during the optimization process.
+INFO:Xst:2261 - The FF/Latch <ce_out_i_16> in Unit <address_decoder> is equivalent to the following FF/Latch, which will be removed : <cs_out_i_1> 
+Analyzing FSM <MFsm> for best encoding.
+Optimizing FSM <spi_flash/AXI_LITE_IPIF_I/I_SLAVE_ATTACHMENT/FSM_0> on signal <state[1:2]> with user encoding.
+----------------------
+ State    | Encoding
+----------------------
+ sm_idle  | 00
+ sm_read  | 01
+ sm_write | 10
+ sm_resp  | 11
+----------------------
+
+Optimizing unit <system_spi_flash_wrapper> ...
+
+Optimizing unit <slave_attachment> ...
+
+Optimizing unit <address_decoder> ...
+
+Optimizing unit <spi_core_interface> ...
+
+Optimizing unit <soft_reset> ...
+
+Optimizing unit <interrupt_control> ...
+
+Optimizing unit <spi_cntrl_reg> ...
+
+Optimizing unit <spi_status_slave_sel_reg> ...
+
+Optimizing unit <spi_module> ...
+
+Optimizing unit <SRL_FIFO> ...
+
+Optimizing unit <spi_fifo_ifmodule> ...
+WARNING:Xst:1293 - FF/Latch <spi_flash/AXI_LITE_IPIF_I/I_SLAVE_ATTACHMENT/s_axi_rdata_i_10> has a constant value of 0 in block <system_spi_flash_wrapper>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <spi_flash/AXI_LITE_IPIF_I/I_SLAVE_ATTACHMENT/s_axi_rdata_i_11> has a constant value of 0 in block <system_spi_flash_wrapper>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <spi_flash/AXI_LITE_IPIF_I/I_SLAVE_ATTACHMENT/s_axi_rdata_i_12> has a constant value of 0 in block <system_spi_flash_wrapper>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <spi_flash/AXI_LITE_IPIF_I/I_SLAVE_ATTACHMENT/s_axi_rdata_i_13> has a constant value of 0 in block <system_spi_flash_wrapper>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <spi_flash/AXI_LITE_IPIF_I/I_SLAVE_ATTACHMENT/s_axi_rdata_i_14> has a constant value of 0 in block <system_spi_flash_wrapper>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <spi_flash/AXI_LITE_IPIF_I/I_SLAVE_ATTACHMENT/s_axi_rdata_i_15> has a constant value of 0 in block <system_spi_flash_wrapper>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <spi_flash/AXI_LITE_IPIF_I/I_SLAVE_ATTACHMENT/s_axi_rdata_i_16> has a constant value of 0 in block <system_spi_flash_wrapper>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <spi_flash/AXI_LITE_IPIF_I/I_SLAVE_ATTACHMENT/s_axi_rdata_i_17> has a constant value of 0 in block <system_spi_flash_wrapper>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <spi_flash/AXI_LITE_IPIF_I/I_SLAVE_ATTACHMENT/s_axi_rdata_i_18> has a constant value of 0 in block <system_spi_flash_wrapper>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <spi_flash/AXI_LITE_IPIF_I/I_SLAVE_ATTACHMENT/s_axi_rdata_i_19> has a constant value of 0 in block <system_spi_flash_wrapper>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <spi_flash/AXI_LITE_IPIF_I/I_SLAVE_ATTACHMENT/s_axi_rdata_i_20> has a constant value of 0 in block <system_spi_flash_wrapper>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <spi_flash/AXI_LITE_IPIF_I/I_SLAVE_ATTACHMENT/s_axi_rdata_i_21> has a constant value of 0 in block <system_spi_flash_wrapper>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <spi_flash/AXI_LITE_IPIF_I/I_SLAVE_ATTACHMENT/s_axi_rdata_i_22> has a constant value of 0 in block <system_spi_flash_wrapper>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <spi_flash/AXI_LITE_IPIF_I/I_SLAVE_ATTACHMENT/s_axi_rdata_i_23> has a constant value of 0 in block <system_spi_flash_wrapper>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <spi_flash/AXI_LITE_IPIF_I/I_SLAVE_ATTACHMENT/s_axi_rdata_i_24> has a constant value of 0 in block <system_spi_flash_wrapper>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <spi_flash/AXI_LITE_IPIF_I/I_SLAVE_ATTACHMENT/s_axi_rdata_i_25> has a constant value of 0 in block <system_spi_flash_wrapper>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <spi_flash/AXI_LITE_IPIF_I/I_SLAVE_ATTACHMENT/s_axi_rdata_i_26> has a constant value of 0 in block <system_spi_flash_wrapper>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <spi_flash/AXI_LITE_IPIF_I/I_SLAVE_ATTACHMENT/s_axi_rdata_i_27> has a constant value of 0 in block <system_spi_flash_wrapper>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <spi_flash/AXI_LITE_IPIF_I/I_SLAVE_ATTACHMENT/s_axi_rdata_i_28> has a constant value of 0 in block <system_spi_flash_wrapper>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <spi_flash/AXI_LITE_IPIF_I/I_SLAVE_ATTACHMENT/s_axi_rdata_i_29> has a constant value of 0 in block <system_spi_flash_wrapper>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <spi_flash/AXI_LITE_IPIF_I/I_SLAVE_ATTACHMENT/s_axi_rdata_i_30> has a constant value of 0 in block <system_spi_flash_wrapper>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:2677 - Node <spi_flash/AXI_LITE_IPIF_I/I_SLAVE_ATTACHMENT/I_DECODER/cs_out_i_0> of sequential type is unconnected in block <system_spi_flash_wrapper>.
+WARNING:Xst:2677 - Node <spi_flash/AXI_LITE_IPIF_I/I_SLAVE_ATTACHMENT/I_DECODER/cs_out_i_2> of sequential type is unconnected in block <system_spi_flash_wrapper>.
+INFO:Xst:2261 - The FF/Latch <spi_flash/bus2ip_reset_int_core> in Unit <system_spi_flash_wrapper> is equivalent to the following FF/Latch, which will be removed : <spi_flash/AXI_LITE_IPIF_I/I_SLAVE_ATTACHMENT/rst> 
+
+Mapping all equations...
+Building and optimizing final netlist ...
+Found area constraint ratio of 100 (+ 0) on block system_spi_flash_wrapper, actual ratio is 6.
+FlipFlop spi_flash/AXI_LITE_IPIF_I/I_SLAVE_ATTACHMENT/I_DECODER/Bus_RNW_reg has been replicated 1 time(s)
+FlipFlop spi_flash/AXI_SPI_CORE_INTERFACE_I/CONTROL_REG_I/control_register_data_int_7 has been replicated 1 time(s)
+FlipFlop spi_flash/bus2ip_reset_int_core has been replicated 2 time(s)
+
+Final Macro Processing ...
+
+=========================================================================
+Final Register Report
+
+Macro Statistics
+# Registers                                            : 206
+ Flip-Flops                                            : 206
+
+=========================================================================
+
+=========================================================================
+*                           Partition Report                            *
+=========================================================================
+
+Partition Implementation Status
+-------------------------------
+
+  No Partitions were found in this design.
+
+-------------------------------
+
+=========================================================================
+*                            Design Summary                             *
+=========================================================================
+
+Top Level Output File Name         : system_spi_flash_wrapper.ngc
+
+Primitive and Black Box Usage:
+------------------------------
+# BELS                             : 325
+#      GND                         : 1
+#      INV                         : 4
+#      LUT2                        : 43
+#      LUT3                        : 32
+#      LUT4                        : 63
+#      LUT5                        : 37
+#      LUT6                        : 125
+#      MUXCY_L                     : 8
+#      MUXF7                       : 3
+#      VCC                         : 1
+#      XORCY                       : 8
+# FlipFlops/Latches                : 206
+#      FD                          : 58
+#      FDE                         : 24
+#      FDR                         : 52
+#      FDRE                        : 61
+#      FDS                         : 9
+#      FDSE                        : 2
+# Shift Registers                  : 16
+#      SRL16E                      : 16
+
+Device utilization summary:
+---------------------------
+
+Selected Device : 6slx9ftg256-2 
+
+
+Slice Logic Utilization: 
+ Number of Slice Registers:             198  out of  11440     1%  
+ Number of Slice LUTs:                  320  out of   5720     5%  
+    Number used as Logic:               304  out of   5720     5%  
+    Number used as Memory:               16  out of   1440     1%  
+       Number used as SRL:               16
+
+Slice Logic Distribution: 
+ Number of LUT Flip Flop pairs used:    362
+   Number with an unused Flip Flop:     164  out of    362    45%  
+   Number with an unused LUT:            42  out of    362    11%  
+   Number of fully used LUT-FF pairs:   156  out of    362    43%  
+   Number of unique control sets:        22
+
+IO Utilization: 
+ Number of IOs:                         162
+ Number of bonded IOBs:                   0  out of    186     0%  
+    IOB Flip Flops/Latches:               8
+
+Specific Feature Utilization:
+
+---------------------------
+Partition Resource Summary:
+---------------------------
+
+  No Partitions were found in this design.
+
+---------------------------
+
+
+=========================================================================
+Timing Report
+
+NOTE: THESE TIMING NUMBERS ARE ONLY A SYNTHESIS ESTIMATE.
+      FOR ACCURATE TIMING INFORMATION PLEASE REFER TO THE TRACE REPORT
+      GENERATED AFTER PLACE-and-ROUTE.
+
+Clock Information:
+------------------
+-----------------------------------+-----------------------------------------------------------------------------------+-------+
+Clock Signal                       | Clock buffer(FF name)                                                             | Load  |
+-----------------------------------+-----------------------------------------------------------------------------------+-------+
+S_AXI_ACLK                         | NONE(spi_flash/AXI_LITE_IPIF_I/I_SLAVE_ATTACHMENT/INCLUDE_DPHASE_TIMER.dpto_cnt_3)| 222   |
+-----------------------------------+-----------------------------------------------------------------------------------+-------+
+INFO:Xst:2169 - HDL ADVISOR - Some clock signals were not automatically buffered by XST with BUFG/BUFR resources. Please use the buffer_type constraint in order to insert these buffers to the clock signals to help prevent skew problems.
+
+Asynchronous Control Signals Information:
+----------------------------------------
+No asynchronous control signals found in this design
+
+Timing Summary:
+---------------
+Speed Grade: -2
+
+   Minimum period: 5.117ns (Maximum Frequency: 195.427MHz)
+   Minimum input arrival time before clock: 3.876ns
+   Maximum output required time after clock: 3.120ns
+   Maximum combinational path delay: 2.145ns
+
+Timing Details:
+---------------
+All values displayed in nanoseconds (ns)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'S_AXI_ACLK'
+  Clock period: 5.117ns (frequency: 195.427MHz)
+  Total number of paths / destination ports: 2814 / 477
+-------------------------------------------------------------------------
+Delay:               5.117ns (Levels of Logic = 3)
+  Source:            spi_flash/AXI_SPI_CORE_INTERFACE_I/SPI_MODULE_I/transfer_start (FF)
+  Destination:       spi_flash/AXI_SPI_CORE_INTERFACE_I/SPI_MODULE_I/Shift_Reg_0 (FF)
+  Source Clock:      S_AXI_ACLK rising
+  Destination Clock: S_AXI_ACLK rising
+
+  Data Path: spi_flash/AXI_SPI_CORE_INTERFACE_I/SPI_MODULE_I/transfer_start to spi_flash/AXI_SPI_CORE_INTERFACE_I/SPI_MODULE_I/Shift_Reg_0
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FD:C->Q              20   0.525   1.286  spi_flash/AXI_SPI_CORE_INTERFACE_I/SPI_MODULE_I/transfer_start (spi_flash/AXI_SPI_CORE_INTERFACE_I/SPI_MODULE_I/transfer_start)
+     LUT6:I5->O           20   0.254   1.394  spi_flash/AXI_SPI_CORE_INTERFACE_I/SPI_MODULE_I/SPI_En_Mst_N_Slv_AND_178_o1 (spi_flash/AXI_SPI_CORE_INTERFACE_I/SPI_MODULE_I/SPI_En_Mst_N_Slv_AND_178_o)
+     LUT6:I4->O            1   0.250   0.000  spi_flash/AXI_SPI_CORE_INTERFACE_I/SPI_MODULE_I/_n0367_inv4_F (N89)
+     MUXF7:I0->O           8   0.163   0.943  spi_flash/AXI_SPI_CORE_INTERFACE_I/SPI_MODULE_I/_n0367_inv4 (spi_flash/AXI_SPI_CORE_INTERFACE_I/SPI_MODULE_I/_n0367_inv)
+     FDE:CE                    0.302          spi_flash/AXI_SPI_CORE_INTERFACE_I/SPI_MODULE_I/Shift_Reg_7
+    ----------------------------------------
+    Total                      5.117ns (1.494ns logic, 3.623ns route)
+                                       (29.2% logic, 70.8% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'S_AXI_ACLK'
+  Total number of paths / destination ports: 872 / 106
+-------------------------------------------------------------------------
+Offset:              3.876ns (Levels of Logic = 3)
+  Source:            S_AXI_WDATA<0> (PAD)
+  Destination:       spi_flash/AXI_LITE_IPIF_I/I_SLAVE_ATTACHMENT/I_DECODER/ce_out_i_15 (FF)
+  Destination Clock: S_AXI_ACLK rising
+
+  Data Path: S_AXI_WDATA<0> to spi_flash/AXI_LITE_IPIF_I/I_SLAVE_ATTACHMENT/I_DECODER/ce_out_i_15
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     LUT6:I0->O            2   0.254   1.181  spi_flash/AXI_SPI_CORE_INTERFACE_I/ip2Bus_WrAck_int_SW0 (N18)
+     LUT6:I0->O           25   0.254   1.403  spi_flash/AXI_LITE_IPIF_I/I_SLAVE_ATTACHMENT/I_DECODER/cs_ce_clr1 (spi_flash/AXI_LITE_IPIF_I/I_SLAVE_ATTACHMENT/I_DECODER/cs_ce_clr)
+     LUT4:I3->O            1   0.254   0.000  spi_flash/AXI_LITE_IPIF_I/I_SLAVE_ATTACHMENT/I_DECODER/ce_out_i_15_rstpot (spi_flash/AXI_LITE_IPIF_I/I_SLAVE_ATTACHMENT/I_DECODER/ce_out_i_15_rstpot)
+     FD:D                      0.074          spi_flash/AXI_LITE_IPIF_I/I_SLAVE_ATTACHMENT/I_DECODER/ce_out_i_15
+    ----------------------------------------
+    Total                      3.876ns (1.292ns logic, 2.584ns route)
+                                       (33.3% logic, 66.7% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'S_AXI_ACLK'
+  Total number of paths / destination ports: 60 / 27
+-------------------------------------------------------------------------
+Offset:              3.120ns (Levels of Logic = 2)
+  Source:            spi_flash/AXI_SPI_CORE_INTERFACE_I/INTERRUPT_CONTROL_I/ip_irpt_status_reg_4 (FF)
+  Destination:       IP2INTC_Irpt (PAD)
+  Source Clock:      S_AXI_ACLK rising
+
+  Data Path: spi_flash/AXI_SPI_CORE_INTERFACE_I/INTERRUPT_CONTROL_I/ip_irpt_status_reg_4 to IP2INTC_Irpt
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDR:C->Q              3   0.525   1.196  spi_flash/AXI_SPI_CORE_INTERFACE_I/INTERRUPT_CONTROL_I/ip_irpt_status_reg_4 (spi_flash/AXI_SPI_CORE_INTERFACE_I/INTERRUPT_CONTROL_I/ip_irpt_status_reg_4)
+     LUT6:I1->O            1   0.254   0.910  spi_flash/AXI_SPI_CORE_INTERFACE_I/INTERRUPT_CONTROL_I/ipif_interrupt2 (spi_flash/AXI_SPI_CORE_INTERFACE_I/INTERRUPT_CONTROL_I/ipif_interrupt1)
+     LUT4:I1->O            0   0.235   0.000  spi_flash/AXI_SPI_CORE_INTERFACE_I/INTERRUPT_CONTROL_I/ipif_interrupt4 (IP2INTC_Irpt)
+    ----------------------------------------
+    Total                      3.120ns (1.014ns logic, 2.106ns route)
+                                       (32.5% logic, 67.5% route)
+
+=========================================================================
+Timing constraint: Default path analysis
+  Total number of paths / destination ports: 12 / 2
+-------------------------------------------------------------------------
+Delay:               2.145ns (Levels of Logic = 2)
+  Source:            S_AXI_WDATA<0> (PAD)
+  Destination:       S_AXI_AWREADY (PAD)
+
+  Data Path: S_AXI_WDATA<0> to S_AXI_AWREADY
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     LUT6:I0->O            2   0.254   1.181  spi_flash/AXI_SPI_CORE_INTERFACE_I/ip2Bus_WrAck_int_SW0 (N18)
+     LUT6:I0->O            2   0.254   0.000  spi_flash/AXI_LITE_IPIF_I/I_SLAVE_ATTACHMENT/wr_done1 (S_AXI_WREADY)
+    ----------------------------------------
+    Total                      2.145ns (0.964ns logic, 1.181ns route)
+                                       (44.9% logic, 55.1% route)
+
+=========================================================================
+
+Cross Clock Domains Report:
+--------------------------
+
+Clock to Setup on destination clock S_AXI_ACLK
+---------------+---------+---------+---------+---------+
+               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------+---------+---------+---------+---------+
+S_AXI_ACLK     |    5.117|         |         |         |
+---------------+---------+---------+---------+---------+
+
+=========================================================================
+
+
+Total REAL time to Xst completion: 7.00 secs
+Total CPU time to Xst completion: 7.04 secs
+ 
+--> 
+
+Total memory usage is 291552 kilobytes
+
+Number of errors   :    0 (   0 filtered)
+Number of warnings :   67 (   0 filtered)
+Number of infos    :   10 (   0 filtered)
+

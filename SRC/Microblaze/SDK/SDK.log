@@ -1,0 +1,669 @@
+10:35:17.655 INFO  - Processing command line option -hwspec E:\Project\AX309\Microblaze\SDK\SDK_Export\hw\system.xml. 
+10:36:37.442 INFO  - FPGA configured successfully with bitstream "E:/Project/AX309/Microblaze/SDK/Microblaze_hw_platform/download.bit" 
+10:36:52.159 INFO  - System reset is completed. 
+10:37:24.538 INFO  - microblaze_0 Processor is in use. Please stop existing Run or Debug sessions before launching. 
+10:37:25.836 INFO  - System reset is completed. 
+10:37:38.665 ERROR - Unable to disconnect from existing targets java.lang.NullPointerException
+	at com.xilinx.sdk.targetmanager.internal.json.XMDJSONProcess.issueCommand(Unknown Source)
+	at com.xilinx.sdk.targetmanager.internal.TM.disconnectTarget(Unknown Source)
+
+10:37:38.668 ERROR - Unexpected error while parsing XMD response ?: com.google.gson.JsonSyntaxException: com.google.gson.stream.MalformedJsonException: invalid number or unquoted string near  
+10:44:05.945 INFO  - Processing command line option -hwspec E:\Project\AX309\Microblaze\SDK\SDK_Export\hw\system.xml. 
+10:44:06.910 INFO  - The hardware specification for project 'Microblaze_hw_platform' is different from E:\Project\AX309\Microblaze\SDK\SDK_Export\hw\system.xml. 
+10:44:07.038 INFO  - Copied contents of E:\Project\AX309\Microblaze\SDK\SDK_Export\hw\system.xml into \Microblaze_hw_platform\system.xml. 
+10:44:07.040 INFO  - Copied contents of E:\Project\AX309\Microblaze\SDK\SDK_Export\hw\system.bit into \Microblaze_hw_platform\system.bit. 
+10:44:07.041 INFO  - Copied contents of E:\Project\AX309\Microblaze\SDK\SDK_Export\hw\system_bd.bmm into \Microblaze_hw_platform\system_bd.bmm. 
+10:44:07.162 INFO  - Synchronizing projects in the workspace with the hardware platform specification changes. 
+10:44:09.003 INFO  - Updating hardware inferred compiler options for hello_world. 
+10:44:09.007 INFO  - Clearing existing target manager status. 
+10:44:14.514 ERROR - Unexpected error while parsing XMD response ?: com.google.gson.JsonSyntaxException: com.google.gson.stream.MalformedJsonException: invalid number or unquoted string near  
+10:44:27.655 INFO  - Processing command line option -hwspec E:\Project\AX309\Microblaze\SDK\SDK_Export\hw\system.xml. 
+10:45:53.448 INFO  - FPGA configured successfully with bitstream "E:/Project/AX309/Microblaze/SDK/Microblaze_hw_platform/download.bit" 
+10:46:14.463 INFO  - microblaze_0 Processor is in use. Please stop existing Run or Debug sessions before launching. 
+10:46:15.750 INFO  - System reset is completed. 
+10:46:34.769 INFO  - microblaze_0 Processor is in use. Please stop existing Run or Debug sessions before launching. 
+10:46:43.702 ERROR - Unable to disconnect from existing targets java.lang.NullPointerException
+	at com.xilinx.sdk.targetmanager.internal.json.XMDJSONProcess.issueCommand(Unknown Source)
+	at com.xilinx.sdk.targetmanager.internal.TM.disconnectTarget(Unknown Source)
+
+10:46:48.498 ERROR - Unexpected error while fetching XMD's response:  java.net.SocketException: Connection reset
+	at java.net.SocketInputStream.read(Unknown Source)
+	at sun.nio.cs.StreamDecoder.readBytes(Unknown Source)
+
+10:46:48.502 ERROR - Zero sized response read from XMD. This indicates a communication error or a programming error. 
+10:52:41.963 INFO  - Processing command line option -hwspec E:\Project\AX309\Microblaze\SDK\SDK_Export\hw\system.xml. 
+10:52:42.940 INFO  - The hardware specification for project 'Microblaze_hw_platform' is different from E:\Project\AX309\Microblaze\SDK\SDK_Export\hw\system.xml. 
+10:52:43.058 INFO  - Copied contents of E:\Project\AX309\Microblaze\SDK\SDK_Export\hw\system.xml into \Microblaze_hw_platform\system.xml. 
+10:52:43.060 INFO  - Copied contents of E:\Project\AX309\Microblaze\SDK\SDK_Export\hw\system.bit into \Microblaze_hw_platform\system.bit. 
+10:52:43.061 INFO  - Copied contents of E:\Project\AX309\Microblaze\SDK\SDK_Export\hw\system_bd.bmm into \Microblaze_hw_platform\system_bd.bmm. 
+10:52:43.185 INFO  - Synchronizing projects in the workspace with the hardware platform specification changes. 
+10:52:54.944 INFO  - Updating hardware inferred compiler options for hello_world. 
+10:52:55.735 INFO  - Updating hardware inferred compiler options for key_test. 
+10:52:56.525 INFO  - Updating hardware inferred compiler options for led_test. 
+10:52:56.528 INFO  - Clearing existing target manager status. 
+10:53:41.622 ERROR - Unexpected error while parsing XMD response ?: com.google.gson.JsonSyntaxException: com.google.gson.stream.MalformedJsonException: invalid number or unquoted string near  
+10:53:56.303 INFO  - Processing command line option -hwspec E:\Project\AX309\Microblaze\SDK\SDK_Export\hw\system.xml. 
+10:55:13.327 INFO  - FPGA configured successfully with bitstream "E:/Project/AX309/Microblaze/SDK/Microblaze_hw_platform/download.bit" 
+10:55:27.354 INFO  - System reset is completed. 
+10:55:40.261 INFO  - microblaze_0 Processor is in use. Please stop existing Run or Debug sessions before launching. 
+10:55:47.430 ERROR - Unable to disconnect from existing targets java.lang.NullPointerException
+	at com.xilinx.sdk.targetmanager.internal.json.XMDJSONProcess.issueCommand(Unknown Source)
+	at com.xilinx.sdk.targetmanager.internal.TM.disconnectTarget(Unknown Source)
+
+10:55:53.435 ERROR - Unexpected error while terminating XMD: {} org.eclipse.debug.core.DebugException: Terminate failed
+	at org.eclipse.debug.core.model.RuntimeProcess.terminate(RuntimeProcess.java:224)
+	at com.xilinx.sdk.targetmanager.internal.json.XMDJSONProcess.terminate(Unknown Source)
+
+11:00:37.063 INFO  - Processing command line option -hwspec E:\Project\AX309\Microblaze\SDK\SDK_Export\hw\system.xml. 
+11:00:38.096 INFO  - The hardware specification for project 'Microblaze_hw_platform' is different from E:\Project\AX309\Microblaze\SDK\SDK_Export\hw\system.xml. 
+11:00:38.222 INFO  - Copied contents of E:\Project\AX309\Microblaze\SDK\SDK_Export\hw\system.xml into \Microblaze_hw_platform\system.xml. 
+11:00:38.225 INFO  - Copied contents of E:\Project\AX309\Microblaze\SDK\SDK_Export\hw\system.bit into \Microblaze_hw_platform\system.bit. 
+11:00:38.226 INFO  - Copied contents of E:\Project\AX309\Microblaze\SDK\SDK_Export\hw\system_bd.bmm into \Microblaze_hw_platform\system_bd.bmm. 
+11:00:38.355 INFO  - Synchronizing projects in the workspace with the hardware platform specification changes. 
+11:00:51.028 INFO  - Updating hardware inferred compiler options for hello_world. 
+11:00:51.818 INFO  - Updating hardware inferred compiler options for key_test. 
+11:00:52.606 INFO  - Updating hardware inferred compiler options for led_test. 
+11:00:53.397 INFO  - Updating hardware inferred compiler options for timer_intr_test. 
+11:00:53.415 INFO  - Clearing existing target manager status. 
+11:01:15.882 ERROR - Unexpected error while parsing XMD response ?: com.google.gson.JsonSyntaxException: com.google.gson.stream.MalformedJsonException: invalid number or unquoted string near  
+11:01:27.292 INFO  - Processing command line option -hwspec E:\Project\AX309\Microblaze\SDK\SDK_Export\hw\system.xml. 
+11:03:25.349 INFO  - FPGA configured successfully with bitstream "E:/Project/AX309/Microblaze/SDK/Microblaze_hw_platform/download.bit" 
+11:05:34.848 ERROR - Unable to disconnect from existing targets java.lang.NullPointerException
+	at com.xilinx.sdk.targetmanager.internal.json.XMDJSONProcess.issueCommand(Unknown Source)
+	at com.xilinx.sdk.targetmanager.internal.TM.disconnectTarget(Unknown Source)
+
+11:05:34.852 ERROR - Unexpected error while parsing XMD response ?: com.google.gson.JsonSyntaxException: com.google.gson.stream.MalformedJsonException: invalid number or unquoted string near  
+11:16:09.320 INFO  - Processing command line option -hwspec E:\Project\AX309\Microblaze\SDK\SDK_Export\hw\system.xml. 
+11:16:10.273 INFO  - The hardware specification for project 'Microblaze_hw_platform' is different from E:\Project\AX309\Microblaze\SDK\SDK_Export\hw\system.xml. 
+11:16:10.403 INFO  - Copied contents of E:\Project\AX309\Microblaze\SDK\SDK_Export\hw\system.xml into \Microblaze_hw_platform\system.xml. 
+11:16:10.405 INFO  - Copied contents of E:\Project\AX309\Microblaze\SDK\SDK_Export\hw\system.bit into \Microblaze_hw_platform\system.bit. 
+11:16:10.406 INFO  - Copied contents of E:\Project\AX309\Microblaze\SDK\SDK_Export\hw\system_bd.bmm into \Microblaze_hw_platform\system_bd.bmm. 
+11:16:10.540 INFO  - Synchronizing projects in the workspace with the hardware platform specification changes. 
+11:16:24.465 INFO  - Updating hardware inferred compiler options for hello_world. 
+11:16:25.255 INFO  - Updating hardware inferred compiler options for key_test. 
+11:16:26.043 INFO  - Updating hardware inferred compiler options for led_test. 
+11:16:26.831 INFO  - Updating hardware inferred compiler options for timer_intr_test. 
+11:16:27.618 INFO  - Updating hardware inferred compiler options for uart_test. 
+11:16:27.634 INFO  - Clearing existing target manager status. 
+11:16:56.365 ERROR - Unexpected error while parsing XMD response ?: com.google.gson.JsonSyntaxException: com.google.gson.stream.MalformedJsonException: invalid number or unquoted string near  
+11:19:47.043 INFO  - Processing command line option -hwspec E:\Project\AX309\Microblaze\SDK\SDK_Export\hw\system.xml. 
+11:20:48.749 INFO  - FPGA configured successfully with bitstream "E:/Project/AX309/Microblaze/SDK/Microblaze_hw_platform/download.bit" 
+11:21:37.182 INFO  - System reset is completed. 
+11:23:23.732 ERROR - Unable to disconnect from existing targets java.lang.NullPointerException
+	at com.xilinx.sdk.targetmanager.internal.json.XMDJSONProcess.issueCommand(Unknown Source)
+	at com.xilinx.sdk.targetmanager.internal.TM.disconnectTarget(Unknown Source)
+
+11:23:25.960 ERROR - Unexpected error while fetching XMD's response:  java.net.SocketException: Connection reset
+	at java.net.SocketInputStream.read(Unknown Source)
+	at sun.nio.cs.StreamDecoder.readBytes(Unknown Source)
+
+11:23:25.963 ERROR - Zero sized response read from XMD. This indicates a communication error or a programming error. 
+11:35:33.943 INFO  - Processing command line option -hwspec E:\Project\AX309\Microblaze\SDK\SDK_Export\hw\system.xml. 
+11:35:34.728 INFO  - The hardware specification for project 'Microblaze_hw_platform' is different from E:\Project\AX309\Microblaze\SDK\SDK_Export\hw\system.xml. 
+11:35:35.055 INFO  - Copied contents of E:\Project\AX309\Microblaze\SDK\SDK_Export\hw\system.xml into \Microblaze_hw_platform\system.xml. 
+11:35:35.057 INFO  - Copied contents of E:\Project\AX309\Microblaze\SDK\SDK_Export\hw\system.bit into \Microblaze_hw_platform\system.bit. 
+11:35:35.058 INFO  - Copied contents of E:\Project\AX309\Microblaze\SDK\SDK_Export\hw\system_bd.bmm into \Microblaze_hw_platform\system_bd.bmm. 
+11:35:35.180 INFO  - Synchronizing projects in the workspace with the hardware platform specification changes. 
+11:35:52.665 INFO  - Updating hardware inferred compiler options for eeprom_test. 
+11:35:53.454 INFO  - Updating hardware inferred compiler options for hello_world. 
+11:35:54.242 INFO  - Updating hardware inferred compiler options for key_test. 
+11:35:55.031 INFO  - Updating hardware inferred compiler options for led_test. 
+11:35:55.819 INFO  - Updating hardware inferred compiler options for timer_intr_test. 
+11:35:56.606 INFO  - Updating hardware inferred compiler options for uart_test. 
+11:35:56.624 INFO  - Clearing existing target manager status. 
+11:36:49.092 ERROR - Unexpected error while parsing XMD response ?: com.google.gson.JsonSyntaxException: com.google.gson.stream.MalformedJsonException: invalid number or unquoted string near  
+11:37:23.716 INFO  - Processing command line option -hwspec E:\Project\AX309\Microblaze\SDK\SDK_Export\hw\system.xml. 
+11:45:35.133 INFO  - Processing command line option -hwspec E:\Project\AX309\Microblaze\SDK\SDK_Export\hw\system.xml. 
+12:06:25.204 INFO  - FPGA configured successfully with bitstream "E:/Project/AX309/Microblaze/SDK/Microblaze_hw_platform/download.bit" 
+12:56:58.170 WARN  - Terminating existing sessions on processor microblaze_0 
+12:56:59.340 INFO  - FPGA configured successfully with bitstream "E:/Project/AX309/Microblaze/SDK/Microblaze_hw_platform/download.bit" 
+12:59:59.456 INFO  - microblaze_0 Processor is in use. Please stop existing Run or Debug sessions before launching. 
+13:02:13.713 INFO  - microblaze_0 Processor is in use. Please stop existing Run or Debug sessions before launching. 
+13:07:07.004 INFO  - FPGA Cable Disconnected. All active launches will be terminated. 
+13:07:07.004 WARN  - Terminating existing sessions on processor microblaze_0 
+13:12:17.896 ERROR - Unexpected error while parsing XMD response ?: com.google.gson.JsonSyntaxException: com.google.gson.stream.MalformedJsonException: invalid number or unquoted string near  
+13:35:38.966 INFO  - Processing command line option -hwspec E:\Project\AX309\Microblaze\SDK\SDK_Export\hw\system.xml. 
+13:35:40.140 INFO  - The hardware specification for project 'Microblaze_hw_platform' is different from E:\Project\AX309\Microblaze\SDK\SDK_Export\hw\system.xml. 
+13:35:40.270 INFO  - Copied contents of E:\Project\AX309\Microblaze\SDK\SDK_Export\hw\system.xml into \Microblaze_hw_platform\system.xml. 
+13:35:40.272 INFO  - Copied contents of E:\Project\AX309\Microblaze\SDK\SDK_Export\hw\system.bit into \Microblaze_hw_platform\system.bit. 
+13:35:40.273 INFO  - Copied contents of E:\Project\AX309\Microblaze\SDK\SDK_Export\hw\system_bd.bmm into \Microblaze_hw_platform\system_bd.bmm. 
+13:35:40.413 INFO  - Synchronizing projects in the workspace with the hardware platform specification changes. 
+13:35:55.344 INFO  - Updating hardware inferred compiler options for eeprom_test. 
+13:35:56.136 INFO  - Updating hardware inferred compiler options for hello_world. 
+13:35:56.926 INFO  - Updating hardware inferred compiler options for key_test. 
+13:35:57.712 INFO  - Updating hardware inferred compiler options for led_test. 
+13:35:58.499 INFO  - Updating hardware inferred compiler options for rtc_test. 
+13:35:59.291 INFO  - Updating hardware inferred compiler options for timer_intr_test. 
+13:36:00.079 INFO  - Updating hardware inferred compiler options for uart_test. 
+13:36:00.093 INFO  - Clearing existing target manager status. 
+13:36:08.879 ERROR - Unexpected error while parsing XMD response ?: com.google.gson.JsonSyntaxException: com.google.gson.stream.MalformedJsonException: invalid number or unquoted string near  
+13:37:25.745 INFO  - Processing command line option -hwspec E:\Project\AX309\Microblaze\SDK\SDK_Export\hw\system.xml. 
+13:47:37.503 INFO  - FPGA configured successfully with bitstream "E:/Project/AX309/Microblaze/SDK/Microblaze_hw_platform/download.bit" 
+13:47:58.724 INFO  - System reset is completed. 
+13:51:12.420 INFO  - FPGA Cable Disconnected. All active launches will be terminated. 
+13:51:12.420 WARN  - Terminating existing sessions on processor microblaze_0 
+13:51:29.842 ERROR - Unexpected error while parsing XMD response ?: com.google.gson.JsonSyntaxException: com.google.gson.stream.MalformedJsonException: invalid number or unquoted string near  
+09:36:03.334 INFO  - Processing command line option -hwspec E:\Project\AX309\Microblaze\SDK\SDK_Export\hw\system.xml. 
+09:36:04.446 INFO  - The hardware specification for project 'Microblaze_hw_platform' is different from E:\Project\AX309\Microblaze\SDK\SDK_Export\hw\system.xml. 
+09:36:04.577 INFO  - Copied contents of E:\Project\AX309\Microblaze\SDK\SDK_Export\hw\system.xml into \Microblaze_hw_platform\system.xml. 
+09:36:04.579 INFO  - Copied contents of E:\Project\AX309\Microblaze\SDK\SDK_Export\hw\system.bit into \Microblaze_hw_platform\system.bit. 
+09:36:04.580 INFO  - Copied contents of E:\Project\AX309\Microblaze\SDK\SDK_Export\hw\system_bd.bmm into \Microblaze_hw_platform\system_bd.bmm. 
+09:36:04.717 INFO  - Synchronizing projects in the workspace with the hardware platform specification changes. 
+09:36:19.617 INFO  - Updating hardware inferred compiler options for eeprom_test. 
+09:36:20.384 INFO  - Updating hardware inferred compiler options for flash_test. 
+09:36:21.151 INFO  - Updating hardware inferred compiler options for hello_world. 
+09:36:21.918 INFO  - Updating hardware inferred compiler options for key_test. 
+09:36:22.684 INFO  - Updating hardware inferred compiler options for led_test. 
+09:36:23.469 INFO  - Updating hardware inferred compiler options for rtc_test. 
+09:36:24.236 INFO  - Updating hardware inferred compiler options for timer_intr_test. 
+09:36:25.002 INFO  - Updating hardware inferred compiler options for uart_test. 
+09:36:25.016 INFO  - Clearing existing target manager status. 
+09:37:12.849 ERROR - Unexpected error while parsing XMD response ?: com.google.gson.JsonSyntaxException: com.google.gson.stream.MalformedJsonException: invalid number or unquoted string near  
+09:37:51.464 INFO  - Processing command line option -hwspec E:\Project\AX309\Microblaze\SDK\SDK_Export\hw\system.xml. 
+09:51:41.928 INFO  - FPGA configured successfully with bitstream "E:/Project/AX309/Microblaze/SDK/Microblaze_hw_platform/download.bit" 
+09:52:10.010 INFO  - System reset is completed. 
+09:57:18.797 INFO  - microblaze_0 Processor is in use. Please stop existing Run or Debug sessions before launching. 
+09:57:56.850 WARN  - Terminating existing sessions on processor microblaze_0 
+09:57:58.193 INFO  - FPGA configured successfully with bitstream "E:/Project/AX309/Microblaze/SDK/Microblaze_hw_platform/download.bit" 
+09:59:04.291 INFO  - System reset is completed. 
+10:03:44.741 INFO  - FPGA Cable Disconnected. All active launches will be terminated. 
+10:03:44.741 WARN  - Terminating existing sessions on processor microblaze_0 
+10:03:50.056 ERROR - Unexpected error while parsing XMD response ?: com.google.gson.JsonSyntaxException: com.google.gson.stream.MalformedJsonException: invalid number or unquoted string near  
+10:45:25.460 INFO  - Processing command line option -hwspec E:\Project\AX309\Microblaze\SDK\SDK_Export\hw\system.xml. 
+10:50:44.203 INFO  - FPGA configured successfully with bitstream "E:/Project/AX309/Microblaze/SDK/Microblaze_hw_platform/download.bit" 
+11:16:51.085 ERROR - Unable to disconnect from existing targets java.lang.NullPointerException
+	at com.xilinx.sdk.targetmanager.internal.json.XMDJSONProcess.issueCommand(Unknown Source)
+	at com.xilinx.sdk.targetmanager.internal.TM.disconnectTarget(Unknown Source)
+
+11:16:51.085 ERROR - Unexpected error while parsing XMD response ?: com.google.gson.JsonSyntaxException: com.google.gson.stream.MalformedJsonException: invalid number or unquoted string near  
+11:29:31.520 INFO  - Processing command line option -hwspec E:\Project\AX309\Microblaze\SDK\SDK_Export\hw\system.xml. 
+11:29:32.465 INFO  - The hardware specification for project 'Microblaze_hw_platform' is different from E:\Project\AX309\Microblaze\SDK\SDK_Export\hw\system.xml. 
+11:29:32.598 INFO  - Copied contents of E:\Project\AX309\Microblaze\SDK\SDK_Export\hw\system.xml into \Microblaze_hw_platform\system.xml. 
+11:29:32.600 INFO  - Copied contents of E:\Project\AX309\Microblaze\SDK\SDK_Export\hw\system.bit into \Microblaze_hw_platform\system.bit. 
+11:29:32.601 INFO  - Copied contents of E:\Project\AX309\Microblaze\SDK\SDK_Export\hw\system_bd.bmm into \Microblaze_hw_platform\system_bd.bmm. 
+11:29:32.879 INFO  - Synchronizing projects in the workspace with the hardware platform specification changes. 
+11:29:47.721 INFO  - Updating hardware inferred compiler options for eeprom_test. 
+11:29:48.489 INFO  - Updating hardware inferred compiler options for flash_test. 
+11:29:49.254 INFO  - Updating hardware inferred compiler options for hello_world. 
+11:29:50.018 INFO  - Updating hardware inferred compiler options for key_test. 
+11:29:50.784 INFO  - Updating hardware inferred compiler options for led_test. 
+11:29:51.549 INFO  - Updating hardware inferred compiler options for rtc_test. 
+11:29:52.315 INFO  - Updating hardware inferred compiler options for smg_test. 
+11:29:53.080 INFO  - Updating hardware inferred compiler options for timer_intr_test. 
+11:29:53.846 INFO  - Updating hardware inferred compiler options for uart_test. 
+11:29:53.861 INFO  - Clearing existing target manager status. 
+11:32:08.396 ERROR - Unexpected error while parsing XMD response ?: com.google.gson.JsonSyntaxException: com.google.gson.stream.MalformedJsonException: invalid number or unquoted string near  
+11:32:22.725 INFO  - Processing command line option -hwspec E:\Project\AX309\Microblaze\SDK\SDK_Export\hw\system.xml. 
+11:44:14.163 INFO  - FPGA configured successfully with bitstream "E:/Project/AX309/Microblaze/SDK/Microblaze_hw_platform/download.bit" 
+11:44:49.692 WARN  - Terminating existing sessions on processor microblaze_0 
+11:44:50.893 INFO  - FPGA configured successfully with bitstream "E:/Project/AX309/Microblaze/SDK/Microblaze_hw_platform/download.bit" 
+11:46:59.325 INFO  - FPGA Cable Disconnected. All active launches will be terminated. 
+11:46:59.326 WARN  - Terminating existing sessions on processor microblaze_0 
+14:03:22.351 ERROR - Unexpected error while parsing XMD response ?: com.google.gson.JsonSyntaxException: com.google.gson.stream.MalformedJsonException: invalid number or unquoted string near  
+18:36:41.398 INFO  - Processing command line option -hwspec E:\Project\AX309\Microblaze\SDK\SDK_Export\hw\system.xml. 
+18:36:42.215 INFO  - The hardware specification for project 'Microblaze_hw_platform' is different from E:\Project\AX309\Microblaze\SDK\SDK_Export\hw\system.xml. 
+18:36:42.365 INFO  - Copied contents of E:\Project\AX309\Microblaze\SDK\SDK_Export\hw\system.xml into \Microblaze_hw_platform\system.xml. 
+18:36:42.367 INFO  - Copied contents of E:\Project\AX309\Microblaze\SDK\SDK_Export\hw\system.bit into \Microblaze_hw_platform\system.bit. 
+18:36:42.368 INFO  - Copied contents of E:\Project\AX309\Microblaze\SDK\SDK_Export\hw\system_bd.bmm into \Microblaze_hw_platform\system_bd.bmm. 
+18:36:42.614 INFO  - Synchronizing projects in the workspace with the hardware platform specification changes. 
+18:37:04.513 INFO  - Updating hardware inferred compiler options for buzzer_test. 
+18:37:05.301 INFO  - Updating hardware inferred compiler options for eeprom_test. 
+18:37:06.090 INFO  - Updating hardware inferred compiler options for flash_test. 
+18:37:06.878 INFO  - Updating hardware inferred compiler options for hello_world. 
+18:37:07.665 INFO  - Updating hardware inferred compiler options for key_test. 
+18:37:08.453 INFO  - Updating hardware inferred compiler options for led_test. 
+18:37:09.240 INFO  - Updating hardware inferred compiler options for rtc_test. 
+18:37:10.028 INFO  - Updating hardware inferred compiler options for smg_test. 
+18:37:10.815 INFO  - Updating hardware inferred compiler options for timer_intr_test. 
+18:37:11.603 INFO  - Updating hardware inferred compiler options for uart_test. 
+18:37:11.613 INFO  - Clearing existing target manager status. 
+18:38:43.501 ERROR - Unexpected error while parsing XMD response ?: com.google.gson.JsonSyntaxException: com.google.gson.stream.MalformedJsonException: invalid number or unquoted string near  
+18:39:03.024 INFO  - Processing command line option -hwspec E:\Project\AX309\Microblaze\SDK\SDK_Export\hw\system.xml. 
+18:53:10.474 INFO  - FPGA configured successfully with bitstream "E:/Project/AX309/Microblaze/SDK/Microblaze_hw_platform/download.bit" 
+18:53:46.703 INFO  - System reset is completed. 
+18:54:21.747 INFO  - microblaze_0 Processor is in use. Please stop existing Run or Debug sessions before launching. 
+20:29:40.787 ERROR - Unable to disconnect from existing targets java.lang.NullPointerException
+	at com.xilinx.sdk.targetmanager.internal.json.XMDJSONProcess.issueCommand(Unknown Source)
+	at com.xilinx.sdk.targetmanager.internal.TM.disconnectTarget(Unknown Source)
+
+20:29:40.792 ERROR - Unexpected error while parsing XMD response ?: com.google.gson.JsonSyntaxException: com.google.gson.stream.MalformedJsonException: invalid number or unquoted string near  
+20:43:41.701 INFO  - Processing command line option -hwspec E:\Project\AX309\Microblaze\SDK\SDK_Export\hw\system.xml. 
+20:43:42.624 INFO  - The hardware specification for project 'Microblaze_hw_platform' is different from E:\Project\AX309\Microblaze\SDK\SDK_Export\hw\system.xml. 
+20:43:42.952 INFO  - Copied contents of E:\Project\AX309\Microblaze\SDK\SDK_Export\hw\system.xml into \Microblaze_hw_platform\system.xml. 
+20:43:42.954 INFO  - Copied contents of E:\Project\AX309\Microblaze\SDK\SDK_Export\hw\system.bit into \Microblaze_hw_platform\system.bit. 
+20:43:42.956 INFO  - Copied contents of E:\Project\AX309\Microblaze\SDK\SDK_Export\hw\system_bd.bmm into \Microblaze_hw_platform\system_bd.bmm. 
+20:43:43.088 INFO  - Synchronizing projects in the workspace with the hardware platform specification changes. 
+20:44:05.380 INFO  - Updating hardware inferred compiler options for buzzer_test. 
+20:44:06.168 INFO  - Updating hardware inferred compiler options for eeprom_test. 
+20:44:06.957 INFO  - Updating hardware inferred compiler options for flash_test. 
+20:44:07.750 INFO  - Updating hardware inferred compiler options for hello_world. 
+20:44:08.539 INFO  - Updating hardware inferred compiler options for key_test. 
+20:44:09.325 INFO  - Updating hardware inferred compiler options for led_test. 
+20:44:10.116 INFO  - Updating hardware inferred compiler options for rtc_test. 
+20:44:10.898 INFO  - Updating hardware inferred compiler options for smg_test. 
+20:44:11.685 INFO  - Updating hardware inferred compiler options for timer_intr_test. 
+20:44:12.473 INFO  - Updating hardware inferred compiler options for uart_test. 
+20:44:13.260 INFO  - Updating hardware inferred compiler options for vga_test. 
+20:44:13.277 INFO  - Clearing existing target manager status. 
+20:46:59.280 ERROR - Unexpected error while parsing XMD response ?: com.google.gson.JsonSyntaxException: com.google.gson.stream.MalformedJsonException: invalid number or unquoted string near  
+20:47:10.880 INFO  - Processing command line option -hwspec E:\Project\AX309\Microblaze\SDK\SDK_Export\hw\system.xml. 
+21:04:21.052 INFO  - Processing command line option -hwspec E:\Project\AX309\Microblaze\SDK\SDK_Export\hw\system.xml. 
+21:04:22.130 INFO  - The hardware specification for project 'Microblaze_hw_platform' is different from E:\Project\AX309\Microblaze\SDK\SDK_Export\hw\system.xml. 
+21:04:22.457 INFO  - Copied contents of E:\Project\AX309\Microblaze\SDK\SDK_Export\hw\system.xml into \Microblaze_hw_platform\system.xml. 
+21:04:22.461 INFO  - Copied contents of E:\Project\AX309\Microblaze\SDK\SDK_Export\hw\system.bit into \Microblaze_hw_platform\system.bit. 
+21:04:22.463 INFO  - Copied contents of E:\Project\AX309\Microblaze\SDK\SDK_Export\hw\system_bd.bmm into \Microblaze_hw_platform\system_bd.bmm. 
+21:04:22.595 INFO  - Synchronizing projects in the workspace with the hardware platform specification changes. 
+21:04:46.049 INFO  - Updating hardware inferred compiler options for buzzer_test. 
+21:04:46.837 INFO  - Updating hardware inferred compiler options for eeprom_test. 
+21:04:47.623 INFO  - Updating hardware inferred compiler options for flash_test. 
+21:04:48.414 INFO  - Updating hardware inferred compiler options for hello_world. 
+21:04:49.201 INFO  - Updating hardware inferred compiler options for key_test. 
+21:04:49.990 INFO  - Updating hardware inferred compiler options for led_test. 
+21:04:50.778 INFO  - Updating hardware inferred compiler options for rtc_test. 
+21:04:51.566 INFO  - Updating hardware inferred compiler options for sd_test. 
+21:04:52.355 INFO  - Updating hardware inferred compiler options for smg_test. 
+21:04:53.143 INFO  - Updating hardware inferred compiler options for timer_intr_test. 
+21:04:53.932 INFO  - Updating hardware inferred compiler options for uart_test. 
+21:04:54.719 INFO  - Updating hardware inferred compiler options for vga_test. 
+21:04:54.735 INFO  - Clearing existing target manager status. 
+21:18:59.210 ERROR - Unexpected error while parsing XMD response ?: com.google.gson.JsonSyntaxException: com.google.gson.stream.MalformedJsonException: invalid number or unquoted string near  
+21:19:50.648 INFO  - Processing command line option -hwspec E:\Project\AX309\Microblaze\SDK\SDK_Export\hw\system.xml. 
+21:21:16.513 INFO  - FPGA configured successfully with bitstream "E:/Project/AX309/Microblaze/SDK/Microblaze_hw_platform/download.bit" 
+21:22:04.765 INFO  - FPGA configured successfully with bitstream "E:/Project/AX309/Microblaze/SDK/Microblaze_hw_platform/download.bit" 
+21:22:20.227 INFO  - System reset is completed. 
+21:23:14.178 INFO  - microblaze_0 Processor is in use. Please stop existing Run or Debug sessions before launching. 
+21:23:15.376 INFO  - System reset is completed. 
+21:25:00.285 INFO  - FPGA Cable Disconnected. All active launches will be terminated. 
+21:25:00.285 WARN  - Terminating existing sessions on processor microblaze_0 
+21:25:05.896 INFO  - FPGA configured successfully with bitstream "E:/Project/AX309/Microblaze/SDK/Microblaze_hw_platform/download.bit" 
+21:25:40.334 INFO  - System reset is completed. 
+21:27:09.071 INFO  - Settings changed on project sd_test_bsp. Triggering a rebuild... 
+21:27:09.391 INFO  - Refreshed build settings on project sd_test 
+21:27:33.531 INFO  - microblaze_0 Processor is in use. Please stop existing Run or Debug sessions before launching. 
+21:27:34.872 INFO  - System reset is completed. 
+21:30:02.599 INFO  - microblaze_0 Processor is in use. Please stop existing Run or Debug sessions before launching. 
+21:30:04.005 INFO  - System reset is completed. 
+21:31:14.023 INFO  - FPGA Cable Disconnected. All active launches will be terminated. 
+21:31:14.024 WARN  - Terminating existing sessions on processor microblaze_0 
+21:33:18.143 INFO  - FPGA configured successfully with bitstream "E:/Project/AX309/Microblaze/SDK/Microblaze_hw_platform/download.bit" 
+21:33:32.025 INFO  - System reset is completed. 
+21:39:38.081 INFO  - Settings changed on project sd_test_bsp. Triggering a rebuild... 
+21:39:38.393 INFO  - Refreshed build settings on project sd_test 
+21:40:02.576 INFO  - microblaze_0 Processor is in use. Please stop existing Run or Debug sessions before launching. 
+21:40:03.889 INFO  - System reset is completed. 
+21:43:27.112 INFO  - FPGA Cable Disconnected. All active launches will be terminated. 
+21:43:27.112 WARN  - Terminating existing sessions on processor microblaze_0 
+21:43:47.333 INFO  - FPGA configured successfully with bitstream "E:/Project/AX309/Microblaze/SDK/Microblaze_hw_platform/download.bit" 
+21:43:57.836 INFO  - System reset is completed. 
+21:43:59.515 ERROR - Port COM3 is already in use. 
+21:46:49.779 INFO  - FPGA Cable Disconnected. All active launches will be terminated. 
+21:46:49.780 WARN  - Terminating existing sessions on processor microblaze_0 
+21:47:52.933 ERROR - Unexpected error while parsing XMD response ?: com.google.gson.JsonSyntaxException: com.google.gson.stream.MalformedJsonException: invalid number or unquoted string near  
+21:51:40.906 INFO  - Processing command line option -hwspec E:\Project\AX309\Microblaze\SDK\SDK_Export\hw\system.xml. 
+21:51:46.142 WARN  - Unable to obtain port 2350 for use by XMD, java.net.BindException: Address already in use: JVM_Bind 
+21:51:51.508 INFO  - FPGA configured successfully with bitstream "E:/Project/AX309/Microblaze/SDK/Microblaze_hw_platform/download.bit" 
+21:53:02.221 INFO  - System reset is completed. 
+21:53:50.503 INFO  - microblaze_0 Processor is in use. Please stop existing Run or Debug sessions before launching. 
+21:53:51.702 INFO  - System reset is completed. 
+22:01:03.570 ERROR - Unable to disconnect from existing targets java.lang.NullPointerException
+	at com.xilinx.sdk.targetmanager.internal.json.XMDJSONProcess.issueCommand(Unknown Source)
+	at com.xilinx.sdk.targetmanager.internal.TM.disconnectTarget(Unknown Source)
+
+22:01:03.575 ERROR - Unexpected error while parsing XMD response ?: com.google.gson.JsonSyntaxException: com.google.gson.stream.MalformedJsonException: invalid number or unquoted string near  
+22:01:26.804 INFO  - Processing command line option -hwspec E:\Project\AX309\Microblaze\SDK\SDK_Export\hw\system.xml. 
+22:01:27.509 INFO  - The hardware specification for project 'Microblaze_hw_platform' is different from E:\Project\AX309\Microblaze\SDK\SDK_Export\hw\system.xml. 
+22:01:27.819 INFO  - Copied contents of E:\Project\AX309\Microblaze\SDK\SDK_Export\hw\system.xml into \Microblaze_hw_platform\system.xml. 
+22:01:27.835 INFO  - Copied contents of E:\Project\AX309\Microblaze\SDK\SDK_Export\hw\system.bit into \Microblaze_hw_platform\system.bit. 
+22:01:27.836 INFO  - Copied contents of E:\Project\AX309\Microblaze\SDK\SDK_Export\hw\system_bd.bmm into \Microblaze_hw_platform\system_bd.bmm. 
+22:01:27.967 INFO  - Synchronizing projects in the workspace with the hardware platform specification changes. 
+22:01:50.799 INFO  - Updating hardware inferred compiler options for buzzer_test. 
+22:01:51.588 INFO  - Updating hardware inferred compiler options for eeprom_test. 
+22:01:52.382 INFO  - Updating hardware inferred compiler options for flash_test. 
+22:01:53.170 INFO  - Updating hardware inferred compiler options for hello_world. 
+22:01:53.957 INFO  - Updating hardware inferred compiler options for key_test. 
+22:01:54.744 INFO  - Updating hardware inferred compiler options for led_test. 
+22:01:55.533 INFO  - Updating hardware inferred compiler options for rtc_test. 
+22:01:56.320 INFO  - Updating hardware inferred compiler options for sd_test. 
+22:01:57.108 INFO  - Updating hardware inferred compiler options for smg_test. 
+22:01:57.898 INFO  - Updating hardware inferred compiler options for timer_intr_test. 
+22:01:58.685 INFO  - Updating hardware inferred compiler options for uart_test. 
+22:01:59.474 INFO  - Updating hardware inferred compiler options for vga_test. 
+22:01:59.492 INFO  - Clearing existing target manager status. 
+22:05:07.153 INFO  - FPGA configured successfully with bitstream "E:/Project/AX309/Microblaze/SDK/Microblaze_hw_platform/download.bit" 
+22:05:31.689 INFO  - System reset is completed. 
+22:05:33.490 ERROR - Port COM3 is already in use. 
+22:06:59.258 ERROR - Unable to disconnect from existing targets java.lang.NullPointerException
+	at com.xilinx.sdk.targetmanager.internal.json.XMDJSONProcess.issueCommand(Unknown Source)
+	at com.xilinx.sdk.targetmanager.internal.TM.disconnectTarget(Unknown Source)
+
+22:06:59.258 ERROR - Unexpected error while parsing XMD response ?: com.google.gson.JsonSyntaxException: com.google.gson.stream.MalformedJsonException: invalid number or unquoted string near  
+22:09:46.588 INFO  - Processing command line option -hwspec E:\Project\AX309\Microblaze\SDK\SDK_Export\hw\system.xml. 
+22:10:00.219 INFO  - FPGA configured successfully with bitstream "E:/Project/AX309/Microblaze/SDK/Microblaze_hw_platform/download.bit" 
+22:10:14.489 INFO  - System reset is completed. 
+22:10:16.354 ERROR - Port COM3 is already in use. 
+22:11:07.215 WARN  - Terminating existing sessions on processor microblaze_0 
+22:11:18.418 INFO  - FPGA configured successfully with bitstream "E:/Project/AX309/Microblaze/SDK/Microblaze_hw_platform/download.bit" 
+22:11:35.730 INFO  - Settings changed on project sd_test_bsp. Triggering a rebuild... 
+22:11:36.040 INFO  - Refreshed build settings on project sd_test 
+22:11:56.230 INFO  - System reset is completed. 
+22:11:57.910 ERROR - Port COM3 is already in use. 
+22:13:19.222 INFO  - microblaze_0 Processor is in use. Please stop existing Run or Debug sessions before launching. 
+22:13:20.522 INFO  - System reset is completed. 
+22:14:20.226 INFO  - microblaze_0 Processor is in use. Please stop existing Run or Debug sessions before launching. 
+22:14:38.446 INFO  - System reset is completed. 
+22:20:13.174 ERROR - Unable to disconnect from existing targets java.lang.NullPointerException
+	at com.xilinx.sdk.targetmanager.internal.json.XMDJSONProcess.issueCommand(Unknown Source)
+	at com.xilinx.sdk.targetmanager.internal.TM.disconnectTarget(Unknown Source)
+
+22:20:13.176 ERROR - Unexpected error while parsing XMD response ?: com.google.gson.JsonSyntaxException: com.google.gson.stream.MalformedJsonException: invalid number or unquoted string near  
+09:08:25.751 INFO  - Processing command line option -hwspec E:\Project\AX309\Microblaze\SDK\SDK_Export\hw\system.xml. 
+09:08:26.866 INFO  - The hardware specification for project 'Microblaze_hw_platform' is different from E:\Project\AX309\Microblaze\SDK\SDK_Export\hw\system.xml. 
+09:08:27.171 INFO  - Copied contents of E:\Project\AX309\Microblaze\SDK\SDK_Export\hw\system.xml into \Microblaze_hw_platform\system.xml. 
+09:08:27.173 INFO  - Copied contents of E:\Project\AX309\Microblaze\SDK\SDK_Export\hw\system.bit into \Microblaze_hw_platform\system.bit. 
+09:08:27.174 INFO  - Copied contents of E:\Project\AX309\Microblaze\SDK\SDK_Export\hw\system_bd.bmm into \Microblaze_hw_platform\system_bd.bmm. 
+09:08:27.341 INFO  - Synchronizing projects in the workspace with the hardware platform specification changes. 
+09:08:51.739 INFO  - Updating hardware inferred compiler options for buzzer_test. 
+09:08:52.526 INFO  - Updating hardware inferred compiler options for eeprom_test. 
+09:08:53.314 INFO  - Updating hardware inferred compiler options for flash_test. 
+09:08:54.103 INFO  - Updating hardware inferred compiler options for hello_world. 
+09:08:54.890 INFO  - Updating hardware inferred compiler options for key_test. 
+09:08:55.683 INFO  - Updating hardware inferred compiler options for led_test. 
+09:08:56.480 INFO  - Updating hardware inferred compiler options for rtc_test. 
+09:08:57.267 INFO  - Updating hardware inferred compiler options for sd_test. 
+09:08:58.057 INFO  - Updating hardware inferred compiler options for smg_test. 
+09:08:58.845 INFO  - Updating hardware inferred compiler options for timer_intr_test. 
+09:08:59.634 INFO  - Updating hardware inferred compiler options for uart_test. 
+09:09:00.422 INFO  - Updating hardware inferred compiler options for vga_test. 
+09:09:00.427 INFO  - Clearing existing target manager status. 
+09:18:11.962 INFO  - FPGA configured successfully with bitstream "E:/Project/AX309/Microblaze/SDK/Microblaze_hw_platform/download.bit" 
+09:18:26.309 INFO  - System reset is completed. 
+09:20:13.006 INFO  - microblaze_0 Processor is in use. Please stop existing Run or Debug sessions before launching. 
+09:20:14.297 INFO  - System reset is completed. 
+09:21:15.096 WARN  - Terminating existing sessions on processor microblaze_0 
+09:21:28.573 INFO  - FPGA Cable Disconnected. All active launches will be terminated. 
+09:21:28.573 WARN  - Terminating existing sessions on processor microblaze_0 
+09:22:24.464 INFO  - Processing command line option -hwspec E:\Project\AX309\Microblaze\SDK\SDK_Export\hw\system.xml. 
+09:23:16.481 ERROR - FPGA Configuration failed.Connection to Board Failed
+
+
+    Failed to Open JTAG Cable
+    Cable target is not connected to the host
+ 
+09:25:39.628 ERROR - FPGA Configuration failed.Connection to Board Failed
+
+
+    Failed to Open JTAG Cable
+    Cable target is not connected to the host
+ 
+09:25:57.930 ERROR - FPGA Configuration failed.Connection to Board Failed
+
+
+    Failed to connect to Xilinx hw_server. Check if the
+    hw_server is running and correct TCP port is used.
+ 
+09:26:06.815 INFO  - FPGA configured successfully with bitstream "E:/Project/AX309/Microblaze/SDK/Microblaze_hw_platform/download.bit" 
+09:26:17.670 INFO  - System reset is completed. 
+09:27:27.252 ERROR - Unable to disconnect from existing targets java.lang.NullPointerException
+	at com.xilinx.sdk.targetmanager.internal.json.XMDJSONProcess.issueCommand(Unknown Source)
+	at com.xilinx.sdk.targetmanager.internal.TM.disconnectTarget(Unknown Source)
+
+09:27:30.431 ERROR - Unexpected error while fetching XMD's response:  java.net.SocketException: Connection reset
+	at java.net.SocketInputStream.read(Unknown Source)
+	at sun.nio.cs.StreamDecoder.readBytes(Unknown Source)
+
+09:27:30.432 ERROR - Zero sized response read from XMD. This indicates a communication error or a programming error. 
+09:31:55.845 INFO  - Processing command line option -hwspec E:\Project\AX309\Microblaze\SDK\SDK_Export\hw\system.xml. 
+09:31:56.500 INFO  - The hardware specification for project 'Microblaze_hw_platform' is different from E:\Project\AX309\Microblaze\SDK\SDK_Export\hw\system.xml. 
+09:31:56.816 INFO  - Copied contents of E:\Project\AX309\Microblaze\SDK\SDK_Export\hw\system.xml into \Microblaze_hw_platform\system.xml. 
+09:31:56.818 INFO  - Copied contents of E:\Project\AX309\Microblaze\SDK\SDK_Export\hw\system.bit into \Microblaze_hw_platform\system.bit. 
+09:31:56.819 INFO  - Copied contents of E:\Project\AX309\Microblaze\SDK\SDK_Export\hw\system_bd.bmm into \Microblaze_hw_platform\system_bd.bmm. 
+09:31:56.938 INFO  - Synchronizing projects in the workspace with the hardware platform specification changes. 
+09:32:19.574 INFO  - Updating hardware inferred compiler options for buzzer_test. 
+09:32:20.360 INFO  - Updating hardware inferred compiler options for eeprom_test. 
+09:32:21.145 INFO  - Updating hardware inferred compiler options for flash_test. 
+09:32:21.958 INFO  - Updating hardware inferred compiler options for hello_world. 
+09:32:22.744 INFO  - Updating hardware inferred compiler options for key_test. 
+09:32:23.530 INFO  - Updating hardware inferred compiler options for led_test. 
+09:32:24.318 INFO  - Updating hardware inferred compiler options for rtc_test. 
+09:32:25.104 INFO  - Updating hardware inferred compiler options for sd_test. 
+09:32:25.891 INFO  - Updating hardware inferred compiler options for smg_test. 
+09:32:26.676 INFO  - Updating hardware inferred compiler options for timer_intr_test. 
+09:32:27.462 INFO  - Updating hardware inferred compiler options for uart_test. 
+09:32:28.249 INFO  - Updating hardware inferred compiler options for vga_test. 
+09:32:28.266 INFO  - Clearing existing target manager status. 
+09:34:43.113 INFO  - FPGA configured successfully with bitstream "E:/Project/AX309/Microblaze/SDK/Microblaze_hw_platform/download.bit" 
+09:34:58.247 INFO  - System reset is completed. 
+09:38:59.170 INFO  - microblaze_0 Processor is in use. Please stop existing Run or Debug sessions before launching. 
+09:39:00.762 INFO  - System reset is completed. 
+09:40:48.021 INFO  - microblaze_0 Processor is in use. Please stop existing Run or Debug sessions before launching. 
+09:40:49.323 INFO  - System reset is completed. 
+09:41:35.662 ERROR - Unable to disconnect from existing targets java.lang.NullPointerException
+	at com.xilinx.sdk.targetmanager.internal.json.XMDJSONProcess.issueCommand(Unknown Source)
+	at com.xilinx.sdk.targetmanager.internal.TM.disconnectTarget(Unknown Source)
+
+09:41:38.439 ERROR - Unexpected error while fetching XMD's response:  java.net.SocketException: Connection reset
+	at java.net.SocketInputStream.read(Unknown Source)
+	at sun.nio.cs.StreamDecoder.readBytes(Unknown Source)
+
+09:41:38.440 ERROR - Zero sized response read from XMD. This indicates a communication error or a programming error. 
+09:41:52.243 INFO  - Processing command line option -hwspec E:\Project\AX309\Microblaze\SDK\SDK_Export\hw\system.xml. 
+09:42:53.818 ERROR - Unexpected error while fetching XMD's response:  java.net.SocketException: Connection reset
+	at java.net.SocketInputStream.read(Unknown Source)
+	at sun.nio.cs.StreamDecoder.readBytes(Unknown Source)
+
+09:42:53.818 ERROR - Zero sized response read from XMD. This indicates a communication error or a programming error. 
+09:43:05.613 INFO  - Processing command line option -hwspec E:\Project\AX309\Microblaze\SDK\SDK_Export\hw\system.xml. 
+09:43:48.016 ERROR - FPGA Configuration failed.Connection to Board Failed
+
+
+    Failed to Open JTAG Cable
+    Cable target is not connected to the host
+ 
+09:44:32.318 ERROR - FPGA Configuration failed.Connection to Board Failed
+
+
+    Failed to Open JTAG Cable
+    Cable target is not connected to the host
+ 
+09:44:46.814 ERROR - FPGA Configuration failed.Connection to Board Failed
+
+
+    Failed to connect to Xilinx hw_server. Check if the
+    hw_server is running and correct TCP port is used.
+ 
+09:44:54.361 INFO  - FPGA configured successfully with bitstream "E:/Project/AX309/Microblaze/SDK/Microblaze_hw_platform/download.bit" 
+09:45:08.425 INFO  - System reset is completed. 
+09:47:18.659 INFO  - microblaze_0 Processor is in use. Please stop existing Run or Debug sessions before launching. 
+09:47:19.736 INFO  - System reset is completed. 
+09:47:57.870 INFO  - microblaze_0 Processor is in use. Please stop existing Run or Debug sessions before launching. 
+09:48:00.073 INFO  - System reset is completed. 
+09:52:04.497 INFO  - microblaze_0 Processor is in use. Please stop existing Run or Debug sessions before launching. 
+09:52:05.881 INFO  - System reset is completed. 
+09:53:08.340 INFO  - microblaze_0 Processor is in use. Please stop existing Run or Debug sessions before launching. 
+09:53:10.183 INFO  - System reset is completed. 
+09:55:36.929 INFO  - FPGA Cable Disconnected. All active launches will be terminated. 
+09:55:36.929 WARN  - Terminating existing sessions on processor microblaze_0 
+10:05:00.414 ERROR - Unexpected error while fetching XMD's response:  java.net.SocketException: Connection reset
+	at java.net.SocketInputStream.read(Unknown Source)
+	at sun.nio.cs.StreamDecoder.readBytes(Unknown Source)
+
+10:05:00.415 ERROR - Zero sized response read from XMD. This indicates a communication error or a programming error. 
+10:05:22.070 INFO  - Processing command line option -hwspec E:\Project\AX309\Microblaze\SDK\SDK_Export\hw\system.xml. 
+10:05:22.833 INFO  - The hardware specification for project 'Microblaze_hw_platform' is different from E:\Project\AX309\Microblaze\SDK\SDK_Export\hw\system.xml. 
+10:05:23.170 INFO  - Copied contents of E:\Project\AX309\Microblaze\SDK\SDK_Export\hw\system.xml into \Microblaze_hw_platform\system.xml. 
+10:05:23.172 INFO  - Copied contents of E:\Project\AX309\Microblaze\SDK\SDK_Export\hw\system.bit into \Microblaze_hw_platform\system.bit. 
+10:05:23.173 INFO  - Copied contents of E:\Project\AX309\Microblaze\SDK\SDK_Export\hw\system_bd.bmm into \Microblaze_hw_platform\system_bd.bmm. 
+10:05:23.302 INFO  - Synchronizing projects in the workspace with the hardware platform specification changes. 
+10:05:45.988 INFO  - Updating hardware inferred compiler options for buzzer_test. 
+10:05:46.776 INFO  - Updating hardware inferred compiler options for eeprom_test. 
+10:05:47.563 INFO  - Updating hardware inferred compiler options for flash_test. 
+10:05:48.349 INFO  - Updating hardware inferred compiler options for hello_world. 
+10:05:49.135 INFO  - Updating hardware inferred compiler options for key_test. 
+10:05:49.923 INFO  - Updating hardware inferred compiler options for led_test. 
+10:05:50.710 INFO  - Updating hardware inferred compiler options for rtc_test. 
+10:05:51.496 INFO  - Updating hardware inferred compiler options for sd_test. 
+10:05:52.284 INFO  - Updating hardware inferred compiler options for smg_test. 
+10:05:53.069 INFO  - Updating hardware inferred compiler options for timer_intr_test. 
+10:05:53.856 INFO  - Updating hardware inferred compiler options for uart_test. 
+10:05:54.642 INFO  - Updating hardware inferred compiler options for vga_test. 
+10:05:54.657 INFO  - Clearing existing target manager status. 
+10:09:24.859 ERROR - FPGA Configuration failed.Connection to Board Failed
+
+
+    Failed to Open JTAG Cable
+    Cable target is not connected to the host
+ 
+10:18:44.293 ERROR - FPGA Configuration failed.Connection to Board Failed
+
+
+    Failed to Open JTAG Cable
+    Cable target is not connected to the host
+ 
+10:19:49.752 ERROR - FPGA Configuration failed.Connection to Board Failed
+
+
+    Failed to Open JTAG Cable
+    Cable target is not connected to the host
+ 
+10:20:03.858 ERROR - FPGA Configuration failed.Connection to Board Failed
+
+
+    Failed to connect to Xilinx hw_server. Check if the
+    hw_server is running and correct TCP port is used.
+ 
+10:20:10.702 INFO  - FPGA configured successfully with bitstream "E:/Project/AX309/Microblaze/SDK/Microblaze_hw_platform/download.bit" 
+10:20:25.126 INFO  - System reset is completed. 
+10:34:27.948 INFO  - microblaze_0 Processor is in use. Please stop existing Run or Debug sessions before launching. 
+10:34:29.374 INFO  - System reset is completed. 
+10:34:49.351 INFO  - microblaze_0 Processor is in use. Please stop existing Run or Debug sessions before launching. 
+10:36:33.293 INFO  - FPGA Cable Disconnected. All active launches will be terminated. 
+10:36:33.294 WARN  - Terminating existing sessions on processor microblaze_0 
+10:36:35.565 ERROR - Unexpected error while launching program. java.lang.RuntimeException: Error in Resetting Target
+MicroBlaze is not being clocked. Check if the Clock input to MicroBlaze and its Bus Interfaces are connected properly
+    
+
+	at com.xilinx.sdk.targetmanager.internal.TM.doSystemReset(Unknown Source)
+	at com.xilinx.sdk.debug.core.XilinxAppLaunchConfigurationDelegate.debugApplication(Unknown Source)
+
+10:37:26.417 INFO  - FPGA configured successfully with bitstream "E:/Project/AX309/Microblaze/SDK/Microblaze_hw_platform/download.bit" 
+10:37:37.240 INFO  - System reset is completed. 
+10:40:49.765 INFO  - microblaze_0 Processor is in use. Please stop existing Run or Debug sessions before launching. 
+10:40:51.065 INFO  - System reset is completed. 
+10:52:50.123 INFO  - microblaze_0 Processor is in use. Please stop existing Run or Debug sessions before launching. 
+10:52:51.324 INFO  - System reset is completed. 
+10:55:54.233 INFO  - microblaze_0 Processor is in use. Please stop existing Run or Debug sessions before launching. 
+10:55:55.340 INFO  - System reset is completed. 
+10:57:04.712 ERROR - Unable to disconnect from existing targets java.lang.NullPointerException
+	at com.xilinx.sdk.targetmanager.internal.json.XMDJSONProcess.issueCommand(Unknown Source)
+	at com.xilinx.sdk.targetmanager.internal.TM.disconnectTarget(Unknown Source)
+
+10:57:07.279 ERROR - Unexpected error while fetching XMD's response:  java.net.SocketException: Connection reset
+	at java.net.SocketInputStream.read(Unknown Source)
+	at sun.nio.cs.StreamDecoder.readBytes(Unknown Source)
+
+10:57:07.279 ERROR - Zero sized response read from XMD. This indicates a communication error or a programming error. 
+10:57:30.983 INFO  - Processing command line option -hwspec E:\Project\AX309\Microblaze\SDK\SDK_Export\hw\system.xml. 
+10:57:31.753 INFO  - The hardware specification for project 'Microblaze_hw_platform' is different from E:\Project\AX309\Microblaze\SDK\SDK_Export\hw\system.xml. 
+10:57:32.104 INFO  - Copied contents of E:\Project\AX309\Microblaze\SDK\SDK_Export\hw\system.xml into \Microblaze_hw_platform\system.xml. 
+10:57:32.106 INFO  - Copied contents of E:\Project\AX309\Microblaze\SDK\SDK_Export\hw\system.bit into \Microblaze_hw_platform\system.bit. 
+10:57:32.107 INFO  - Copied contents of E:\Project\AX309\Microblaze\SDK\SDK_Export\hw\system_bd.bmm into \Microblaze_hw_platform\system_bd.bmm. 
+10:57:32.237 INFO  - Synchronizing projects in the workspace with the hardware platform specification changes. 
+10:57:54.414 INFO  - Updating hardware inferred compiler options for buzzer_test. 
+10:57:55.201 INFO  - Updating hardware inferred compiler options for eeprom_test. 
+10:57:55.987 INFO  - Updating hardware inferred compiler options for flash_test. 
+10:57:56.776 INFO  - Updating hardware inferred compiler options for hello_world. 
+10:57:57.563 INFO  - Updating hardware inferred compiler options for key_test. 
+10:57:58.350 INFO  - Updating hardware inferred compiler options for led_test. 
+10:57:59.137 INFO  - Updating hardware inferred compiler options for rtc_test. 
+10:57:59.927 INFO  - Updating hardware inferred compiler options for sd_test. 
+10:58:00.715 INFO  - Updating hardware inferred compiler options for smg_test. 
+10:58:01.501 INFO  - Updating hardware inferred compiler options for timer_intr_test. 
+10:58:02.289 INFO  - Updating hardware inferred compiler options for uart_test. 
+10:58:03.077 INFO  - Updating hardware inferred compiler options for vga_test. 
+10:58:03.091 INFO  - Clearing existing target manager status. 
+11:00:58.651 INFO  - FPGA configured successfully with bitstream "E:/Project/AX309/Microblaze/SDK/Microblaze_hw_platform/download.bit" 
+11:01:26.570 INFO  - System reset is completed. 
+11:03:50.186 INFO  - microblaze_0 Processor is in use. Please stop existing Run or Debug sessions before launching. 
+11:03:51.821 INFO  - System reset is completed. 
+11:05:25.428 INFO  - microblaze_0 Processor is in use. Please stop existing Run or Debug sessions before launching. 
+11:06:11.246 INFO  - FPGA Cable Disconnected. All active launches will be terminated. 
+11:06:11.248 WARN  - Terminating existing sessions on processor microblaze_0 
+11:06:13.461 ERROR - Unexpected error while launching program. java.lang.RuntimeException: Error in Resetting Target
+MicroBlaze is not being clocked. Check if the Clock input to MicroBlaze and its Bus Interfaces are connected properly
+    
+
+	at com.xilinx.sdk.targetmanager.internal.TM.doSystemReset(Unknown Source)
+	at com.xilinx.sdk.debug.core.XilinxAppLaunchConfigurationDelegate.debugApplication(Unknown Source)
+
+11:06:21.383 ERROR - FPGA Configuration failed.Connection to Board Failed
+
+
+    Failed to connect to Xilinx hw_server. Check if the
+    hw_server is running and correct TCP port is used.
+ 
+11:06:26.888 INFO  - FPGA configured successfully with bitstream "E:/Project/AX309/Microblaze/SDK/Microblaze_hw_platform/download.bit" 
+11:06:36.799 INFO  - System reset is completed. 
+11:08:00.185 INFO  - microblaze_0 Processor is in use. Please stop existing Run or Debug sessions before launching. 
+11:08:01.686 INFO  - System reset is completed. 
+11:25:07.910 INFO  - Project Microblaze_hw_platform's source hardware specification located at E:\Project\AX309\Microblaze\SDK\SDK_Export\hw\system.xml is now different from the local copy.
+		 The local copy will be replaced with the source specification and your workspace will be updated. 
+11:25:23.245 INFO  - Project Microblaze_hw_platform's source hardware specification location will not be monitored anymore. 
+11:25:27.060 ERROR - Unable to disconnect from existing targets java.lang.NullPointerException
+	at com.xilinx.sdk.targetmanager.internal.json.XMDJSONProcess.issueCommand(Unknown Source)
+	at com.xilinx.sdk.targetmanager.internal.TM.disconnectTarget(Unknown Source)
+
+11:25:27.062 ERROR - Unexpected error while parsing XMD response ?: com.google.gson.JsonSyntaxException: com.google.gson.stream.MalformedJsonException: invalid number or unquoted string near  
+11:25:31.319 INFO  - Processing command line option -hwspec E:\Project\AX309\Microblaze\SDK\SDK_Export\hw\system.xml. 
+11:25:32.165 INFO  - The hardware specification for project 'Microblaze_hw_platform' is different from E:\Project\AX309\Microblaze\SDK\SDK_Export\hw\system.xml. 
+11:25:32.499 INFO  - Copied contents of E:\Project\AX309\Microblaze\SDK\SDK_Export\hw\system.xml into \Microblaze_hw_platform\system.xml. 
+11:25:32.499 INFO  - Copied contents of E:\Project\AX309\Microblaze\SDK\SDK_Export\hw\system.bit into \Microblaze_hw_platform\system.bit. 
+11:25:32.499 INFO  - Copied contents of E:\Project\AX309\Microblaze\SDK\SDK_Export\hw\system_bd.bmm into \Microblaze_hw_platform\system_bd.bmm. 
+11:25:32.632 INFO  - Synchronizing projects in the workspace with the hardware platform specification changes. 
+11:25:55.395 INFO  - Updating hardware inferred compiler options for buzzer_test. 
+11:25:56.181 INFO  - Updating hardware inferred compiler options for eeprom_test. 
+11:25:56.967 INFO  - Updating hardware inferred compiler options for flash_test. 
+11:25:57.752 INFO  - Updating hardware inferred compiler options for hello_world. 
+11:25:58.536 INFO  - Updating hardware inferred compiler options for key_test. 
+11:25:59.321 INFO  - Updating hardware inferred compiler options for led_test. 
+11:26:00.106 INFO  - Updating hardware inferred compiler options for rtc_test. 
+11:26:00.891 INFO  - Updating hardware inferred compiler options for sd_test. 
+11:26:01.677 INFO  - Updating hardware inferred compiler options for smg_test. 
+11:26:02.463 INFO  - Updating hardware inferred compiler options for timer_intr_test. 
+11:26:03.251 INFO  - Updating hardware inferred compiler options for uart_test. 
+11:26:04.036 INFO  - Updating hardware inferred compiler options for vga_test. 
+11:26:04.051 INFO  - Clearing existing target manager status. 
+11:28:09.991 INFO  - FPGA configured successfully with bitstream "E:/Project/AX309/Microblaze/SDK/Microblaze_hw_platform/download.bit" 
+11:28:23.650 INFO  - System reset is completed. 
+11:29:08.098 INFO  - FPGA configured successfully with bitstream "E:/Project/AX309/Microblaze/SDK/Microblaze_hw_platform/download.bit" 
+11:29:21.147 INFO  - System reset is completed. 
+11:31:37.211 ERROR - Unexpected error while fetching XMD's response:  java.net.SocketException: Connection reset
+	at java.net.SocketInputStream.read(Unknown Source)
+	at sun.nio.cs.StreamDecoder.readBytes(Unknown Source)
+
+11:31:37.213 ERROR - Zero sized response read from XMD. This indicates a communication error or a programming error. 
+11:48:33.837 INFO  - Project Microblaze_hw_platform's source hardware specification located at E:\Project\AX309\Microblaze\SDK\SDK_Export\hw\system.xml is now different from the local copy.
+		 The local copy will be replaced with the source specification and your workspace will be updated. 
+11:48:35.037 INFO  - Project Microblaze_hw_platform's source hardware specification location will not be monitored anymore. 
+14:24:47.971 INFO  - Processing command line option -hwspec E:\Project\AX309\Microblaze\SDK\SDK_Export\hw\system.xml. 
+14:24:48.882 INFO  - The hardware specification for project 'Microblaze_hw_platform' is different from E:\Project\AX309\Microblaze\SDK\SDK_Export\hw\system.xml. 
+14:24:49.030 INFO  - Copied contents of E:\Project\AX309\Microblaze\SDK\SDK_Export\hw\system.xml into \Microblaze_hw_platform\system.xml. 
+14:24:49.032 INFO  - Copied contents of E:\Project\AX309\Microblaze\SDK\SDK_Export\hw\system.bit into \Microblaze_hw_platform\system.bit. 
+14:24:49.033 INFO  - Copied contents of E:\Project\AX309\Microblaze\SDK\SDK_Export\hw\system_bd.bmm into \Microblaze_hw_platform\system_bd.bmm. 
+14:24:49.182 INFO  - Synchronizing projects in the workspace with the hardware platform specification changes. 
+14:25:13.288 INFO  - Updating hardware inferred compiler options for buzzer_test. 
+14:25:14.074 INFO  - Updating hardware inferred compiler options for eeprom_test. 
+14:25:14.860 INFO  - Updating hardware inferred compiler options for flash_test. 
+14:25:15.647 INFO  - Updating hardware inferred compiler options for hello_world. 
+14:25:16.434 INFO  - Updating hardware inferred compiler options for key_test. 
+14:25:17.220 INFO  - Updating hardware inferred compiler options for led_test. 
+14:25:18.006 INFO  - Updating hardware inferred compiler options for rtc_test. 
+14:25:18.792 INFO  - Updating hardware inferred compiler options for sd_test. 
+14:25:19.578 INFO  - Updating hardware inferred compiler options for smg_test. 
+14:25:20.364 INFO  - Updating hardware inferred compiler options for timer_intr_test. 
+14:25:21.149 INFO  - Updating hardware inferred compiler options for uart_test. 
+14:25:21.936 INFO  - Updating hardware inferred compiler options for vga_test. 
+14:25:21.948 INFO  - Clearing existing target manager status. 
+14:27:36.946 INFO  - Project sd_test_bsp was a BSP project. Please update references. 
+14:27:36.947 ERROR - SDK has detected that project sd_test_bsp has been deleted (or renamed).
+If this project was a BSP referenced by other C/C++ applications, then those applications will fail to build now. Please right click on those applications and click 'Change Referenced BSP' to update those projects' BSP references. 
+14:28:01.713 ERROR - Unexpected error while parsing XMD response ?: com.google.gson.JsonSyntaxException: com.google.gson.stream.MalformedJsonException: invalid number or unquoted string near  

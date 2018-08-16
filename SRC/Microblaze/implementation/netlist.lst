@@ -1,0 +1,25 @@
+E:\Project\AX309\Microblaze\implementation\system.ngc 1437977766
+E:/Project/AX309/Microblaze/implementation/system_proc_sys_reset_0_wrapper.ngc 1437977571
+E:/Project/AX309/Microblaze/implementation/system_clock_generator_0_wrapper.ngc 1437977743
+E:/Project/AX309/Microblaze/implementation/system_chipscope_ila_0_wrapper.ngc 1437977752
+E:/Project/AX309/Microblaze/implementation/system_axi_uartlite_0_wrapper.ngc 1437977677
+E:/Project/AX309/Microblaze/implementation/system_microblaze_0_ilmb_wrapper.ngc 1437977734
+E:/Project/AX309/Microblaze/implementation/system_microblaze_0_dlmb_wrapper.ngc 1437977737
+E:/Project/AX309/Microblaze/implementation/system_axi4lite_0_wrapper.ngc 1437977746
+E:/Project/AX309/Microblaze/implementation/system_microblaze_0_wrapper.ngc 1437977740
+E:/Project/AX309/Microblaze/implementation/system_microblaze_0_i_bram_ctrl_wrapper.ngc 1437977580
+E:/Project/AX309/Microblaze/implementation/system_microblaze_0_d_bram_ctrl_wrapper.ngc 1437977589
+E:/Project/AX309/Microblaze/implementation/system_axi_intc_0_wrapper.ngc 1437977671
+E:/Project/AX309/Microblaze/implementation/system_debug_module_wrapper.ngc 1437977627
+E:/Project/AX309/Microblaze/implementation/system_led_4b_wrapper.ngc 1437977651
+E:/Project/AX309/Microblaze/implementation/system_key_4b_wrapper.ngc 1437977658
+E:/Project/AX309/Microblaze/implementation/system_axi_timer_0_wrapper.ngc 1437977665
+E:/Project/AX309/Microblaze/implementation/system_axi_iic_0_wrapper.ngc 1437977688
+E:/Project/AX309/Microblaze/implementation/system_axi_rtc_wrapper.ngc 1437977694
+E:/Project/AX309/Microblaze/implementation/system_spi_flash_wrapper.ngc 1437977702
+E:/Project/AX309/Microblaze/implementation/system_smg_ip_0_wrapper.ngc 1437977708
+E:/Project/AX309/Microblaze/implementation/system_buzzer_1b_wrapper.ngc 1437977715
+E:/Project/AX309/Microblaze/implementation/system_vga_ip_0_wrapper.ngc 1437977722
+E:/Project/AX309/Microblaze/implementation/system_microblaze_0_bram_block_wrapper.ngc 1437977594
+E:/Project/AX309/Microblaze/implementation/system_chipscope_icon_0_wrapper.ngc 1437977749
+OK

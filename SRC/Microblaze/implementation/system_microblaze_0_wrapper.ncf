@@ -1,0 +1,4 @@
+INST "microblaze_0/MicroBlaze_Core_I/Reset_DFF.reset_temp" TNM = "microblaze_0_Reset_dst"; 
+TIMESPEC "TS_TIG_microblaze_0_Reset" = FROM FFS TO "microblaze_0_Reset_dst" TIG; 
+INST "microblaze_0/MicroBlaze_Core_I/external_interrupt" TNM = "microblaze_0_Interrupt_dst"; 
+TIMESPEC "TS_TIG_microblaze_0_Interrupt" = FROM FFS TO "microblaze_0_Interrupt_dst" TIG; 

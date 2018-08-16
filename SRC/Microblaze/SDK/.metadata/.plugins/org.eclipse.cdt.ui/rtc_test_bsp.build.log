@@ -1,0 +1,42 @@
+14:26:09 **** Auto Build of project rtc_test_bsp ****
+make -k all 
+libgen -hw ../Microblaze_hw_platform/system.xml\
+	       \
+	       -pe microblaze_0 \
+	       -log libgen.log \
+	       system.mss
+libgen
+Xilinx EDK 14.7 Build EDK_P.20131013
+Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
+
+Command Line: libgen -hw ../Microblaze_hw_platform/system.xml -pe microblaze_0
+-log libgen.log system.mss 
+
+
+Staging source files.
+Running DRCs.
+Running generate.
+Running post_generate.
+Running include - 'make -s include "COMPILER=mb-gcc" "ARCHIVER=mb-ar"
+"COMPILER_FLAGS=-mlittle-endian -mno-xl-soft-mul -mxl-barrel-shift
+-mxl-pattern-compare -mcpu=v8.50.c  -O2 -c" "EXTRA_COMPILER_FLAGS=-g
+-ffunction-sections -fdata-sections"'.
+
+Running libs - 'make -s libs "COMPILER=mb-gcc" "ARCHIVER=mb-ar"
+"COMPILER_FLAGS=-mlittle-endian -mno-xl-soft-mul -mxl-barrel-shift
+-mxl-pattern-compare -mcpu=v8.50.c  -O2 -c" "EXTRA_COMPILER_FLAGS=-g
+-ffunction-sections -fdata-sections"'.
+"Compiling common"
+"Compiling standalone";
+"Compiling iic"
+"Compiling intc"
+"Compiling gpio"
+"Compiling tmrctr"
+"Compiling uartlite"
+"Compiling bram"
+"Compiling cpu"
+Running execs_generate.
+'Finished building libraries'
+
+14:26:20 Build Finished (took 11s.238ms)
+

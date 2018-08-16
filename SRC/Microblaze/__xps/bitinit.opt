@@ -1,0 +1,1 @@
+ -p xc6slx9ftg256-2 -pe microblaze_0 SDK/smg_test/Debug/smg_test.elf

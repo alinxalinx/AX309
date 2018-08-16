@@ -1,0 +1,353 @@
+
+#include <stdio.h>
+#include <unistd.h>
+#include "xparameters.h"
+#include "xgpio.h"
+#include "platform.h"
+#include "xuartlite_l.h"
+#include "xuartlite.h"
+
+/*-----------------------------------------------------------------------------
+ * Variable
+ *-----------------------------------------------------------------------------*/
+unsigned char time[7] = {0x00,0x19,0x14,0x17,0x03,0x07,0x10}; //format: second/minute/hour/date/month/year
+XGpio Gpio_rtc;
+
+/* ===  FUNCTION  ======================================================================
+ *  Name:  delay
+ *  Description:
+ * ====================================================================*/
+
+void delay(unsigned int dly)
+{
+	for(;dly>0;dly--);
+}
+
+/* ===  FUNCTION  ======================================================================
+ * Name:  RTC_DATA_DIR_OUT
+ * Description: set rtc data direction is output
+ * ======================================================================*/
+
+void RTC_DATA_DIR_OUT(void)
+{
+
+	 XGpio_SetDataDirection(&Gpio_rtc, 1, 0x0);    //set DS1302_SIO is output
+
+}
+
+/* ===  FUNCTION  ======================================================================
+ *  Name:  RTC_DATA_DIR_IN
+ *  Description: set rtc data direction is input
+ * =======================================================================*/
+
+void RTC_DATA_DIR_IN(void)
+{
+
+	 XGpio_SetDataDirection(&Gpio_rtc, 1, 0x4);    //set DS1302_SIO is input
+
+}
+
+/* ===  FUNCTION  ======================================================================
+ *  Name:  RTC_DATA_HIGH
+ *  Description: set rtc data high
+ * ===================================================================*/
+
+void RTC_DATA_HIGH(void)
+{
+
+	u32 DataRead;
+
+	DataRead = XGpio_DiscreteRead(&Gpio_rtc, 1);  //read data
+    XGpio_DiscreteWrite(&Gpio_rtc, 1, (DataRead | 0x4));
+
+}
+
+/* ===  FUNCTION  ======================================================================
+ *  Name:  RTC_DATA_LOW
+ *  Description: set rtc data low
+ * ===================================================================*/
+
+void RTC_DATA_LOW(void)
+{
+
+	u32 DataRead;
+
+	DataRead = XGpio_DiscreteRead(&Gpio_rtc, 1);  //read data
+    XGpio_DiscreteWrite(&Gpio_rtc, 1, (DataRead & 0x3));
+
+}
+
+/* ===  FUNCTION  ======================================================================
+ *  Name:  RTC_CLK_HIGH
+ *  Description: set rtc clk high
+ * ====================================================================*/
+
+void RTC_CLK_HIGH(void)
+{
+
+	u32 DataRead;
+
+	DataRead = XGpio_DiscreteRead(&Gpio_rtc, 1);  //read data
+    XGpio_DiscreteWrite(&Gpio_rtc, 1, (DataRead | 0x2));
+
+}
+
+/* ===  FUNCTION  ======================================================================
+ *         Name:  RTC_CLK_LOW
+ *  Description: set rtc clk low
+ * ===================================================================*/
+
+void RTC_CLK_LOW(void)
+{
+
+	u32 DataRead;
+
+	DataRead = XGpio_DiscreteRead(&Gpio_rtc, 1);  //read data
+    XGpio_DiscreteWrite(&Gpio_rtc, 1, (DataRead & 0x5));
+
+}
+
+
+/* ===  FUNCTION  ======================================================================
+ *  Name:  RTC_RST_HIGH
+ *  Description: set rtc RST high
+ * ===================================================================*/
+
+void RTC_RST_HIGH(void)
+{
+
+	u32 DataRead;
+
+	DataRead = XGpio_DiscreteRead(&Gpio_rtc, 1);  //read data
+    XGpio_DiscreteWrite(&Gpio_rtc, 1, (DataRead | 0x1));
+
+}
+
+/* ===  FUNCTION  ======================================================================
+ *  Name:  RTC_RST_LOW
+ *  Description: set rtc RST low
+ * ====================================================================*/
+
+void RTC_RST_LOW(void)
+{
+
+	u32 DataRead;
+
+	DataRead = XGpio_DiscreteRead(&Gpio_rtc, 1);  //read data
+    XGpio_DiscreteWrite(&Gpio_rtc, 1, (DataRead & 0x6));
+
+}
+
+/* ===  FUNCTION  ======================================================================
+ *  Name:  RTC_DATA_IN
+ *  Description: read RTC DATA
+ * ====================================================================*/
+
+unsigned char  RTC_DATA_IN(void)
+{
+
+	u32 DataRead;
+
+	DataRead = XGpio_DiscreteRead(&Gpio_rtc, 1);  //read data
+	return(DataRead & 0x4);
+
+}
+
+/* ===  FUNCTION  ======================================================================
+ * Name:  write_1byte_to_ds1302
+ * ====================================================================*/
+void write_1byte_to_ds1302(unsigned char da)
+{
+	unsigned int i;
+
+	RTC_DATA_DIR_OUT();                  //set RTC data direction is output
+
+	for(i=8; i>0; i--){
+		if((da&0x01)!= 0)
+			RTC_DATA_HIGH();            //set RTC data out is high
+		else
+			RTC_DATA_LOW();             //set RTC data out is low
+
+		delay(10);
+		RTC_CLK_HIGH();                //set RTC CLK is high
+		delay(20);
+		RTC_CLK_LOW();                 //set RTC CLK is low
+		delay(10);
+
+		da >>= 1;                       //shift one bit to left
+	}
+}
+
+/* ===  FUNCTION  ======================================================================
+ *         Name:  read_1byte_from_ds1302
+ * ====================================================================*/
+unsigned char read_1byte_from_ds1302(void)
+{
+	unsigned char i;
+	unsigned char da = 0;
+
+	RTC_DATA_DIR_IN();                  //set RTC data direction is input
+
+	for(i=8; i>0; i--){
+		delay(10);
+		da >>= 1;                      //shift one bit to left
+		if(RTC_DATA_IN() !=0 )
+			da += 0x80;
+
+		RTC_CLK_HIGH();
+		delay(20);
+		RTC_CLK_LOW();
+		delay(10);
+	}
+
+	RTC_DATA_DIR_OUT();                  //set RTC data direction is output
+
+	return(da);
+}
+
+/* ===  FUNCTION  ======================================================================
+ *         Name:  write_data_to_ds1302
+ * ====================================================================*/
+void write_data_to_ds1302(unsigned char addr, unsigned char da)
+{
+	RTC_DATA_DIR_OUT();                  //set RTC data direction is output
+	RTC_RST_LOW();                       //set RTC RST is low
+	RTC_CLK_LOW();                       //set RTC CLK out is low
+
+	delay(40);
+
+	RTC_RST_HIGH();                       //set RTC RST is HIGH
+
+	write_1byte_to_ds1302(addr); // write command
+	write_1byte_to_ds1302(da);   // write one byte
+
+	RTC_CLK_HIGH();                      //set RTC clk is HIGH
+	RTC_RST_LOW();                        //set RTC RST is low
+
+	delay(40);
+}
+
+/*
+ * ===  FUNCTION  ======================================================================
+ *         Name:  read_data_from_ds1302
+ * ====================================================================
+ */
+unsigned char read_data_from_ds1302(unsigned char addr)
+{
+	unsigned char da;
+
+	RTC_RST_LOW();                       //set RTC RST is low
+	RTC_CLK_LOW();
+
+	delay(40);
+
+	RTC_RST_HIGH();                       //set RTC RST is HIGH
+
+	write_1byte_to_ds1302(addr);
+	da = read_1byte_from_ds1302();
+
+	RTC_CLK_HIGH();
+
+	RTC_RST_LOW();                       //set RTC RST is low
+
+	delay(40);
+
+	return(da);
+}
+
+/*
+ * ===  FUNCTION  ======================================================================
+ *         Name:  set_time
+ * ====================================================================
+ */
+void set_time(unsigned char *ti)
+{
+	unsigned char i;
+	unsigned char addr = 0x80;
+
+	write_data_to_ds1302(0x8e,0x00);     // control command,WP=0,write operation
+
+	for(i =7;i>0;i--){
+		write_data_to_ds1302(addr,*ti); // set second, minute, hour, date,month,year
+
+		ti++;
+		addr +=2;
+	}
+
+	write_data_to_ds1302(0x8e,0x80); // control command ,WP=1,write prevent
+}
+/*
+ * ===  FUNCTION  ======================================================================
+ *         Name:  get_time
+ *  Description:  read time/date, read time is 获取时间 ,读取的时间为BCD码，需要转换成十进制
+ * ===================================================================
+ */
+void get_time(unsigned char *ti)
+{
+	unsigned char i;
+	unsigned char addr = 0x81;
+	char time;
+
+	for (i=0;i<7;i++){
+		time=read_data_from_ds1302(addr);//读取的时间为BCD码
+		ti[i] = time/16*10+time%16;//格式为: 秒 分 时 日 月 星期 年
+		addr += 2;
+	}
+}
+
+int main()
+{
+
+	 int Status;
+     u32 j,n;
+     char buffer[100] = "Hello FPGA!\n";
+	 init_platform();
+
+	 Status = XGpio_Initialize(&Gpio_rtc, XPAR_AXI_RTC_DEVICE_ID);
+	 if (Status != XST_SUCCESS) {
+		  return XST_FAILURE;
+	 }
+
+	 XGpio_SetDataDirection(&Gpio_rtc, 1, 0x4);    //set DS1302_SIO is input
+
+    set_time(time); //set RTC time
+
+
+    while(1){
+        get_time(time);          //read RTC time
+
+        buffer[0]='2';
+        buffer[1]='0';
+        buffer[2]=time[6]/10 + '0';
+        buffer[3]=time[6]%10 + '0';
+        buffer[4]='-';
+        buffer[5]=time[4]/10 + '0';
+        buffer[6]=time[4]%10 + '0';
+        buffer[7]='-';
+        buffer[8]=time[3]/10 + '0';
+        buffer[9]=time[3]%10 + '0';
+        buffer[0]='-';
+        buffer[10]=time[2]/10 + '0';
+        buffer[11]=time[2]%10 + '0';
+        buffer[12]='-';
+        buffer[13]=time[1]/10 + '0';
+        buffer[14]=time[1]%10 + '0';
+        buffer[15]='-';
+        buffer[16]=time[0]/10 + '0';
+        buffer[17]=time[0]%10 + '0';
+
+      //  sprintf(buffer,"20%d-%d-%d %d:%d:%d\n",time[6],time[4],time[3],time[2],time[1],time[0]);  //convert string
+
+        for(n=0;n<20;n++)
+        {
+        	XUartLite_SendByte(XPAR_UARTLITE_0_BASEADDR,buffer[n]);            //send one byte
+        }
+
+        j=3000000;
+        for(;j>0;j--);
+
+    }
+
+    return 0;
+}
+

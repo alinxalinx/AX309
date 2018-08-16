@@ -1,0 +1,12 @@
+run
+-opt_level 2
+-opt_mode speed
+-ifmt mixed
+-ifn "E:\Project\AX309\Microblaze\Microblaze\pcores\vga_ip_v1_00_a\devl\synthesis\vga_ip_xst.prj"
+-top vga_ip
+-p virtex6
+-ofn "E:\Project\AX309\Microblaze\Microblaze\pcores\vga_ip_v1_00_a\devl\synthesis\vga_ip_xst.ngc"
+-iobuf NO
+-rtlview YES
+-hierarchy_separator /
+-work_lib vga_ip_v1_00_a

@@ -1,0 +1,604 @@
+/**************************************************************************
+* Filename:     hello_sd.c
+*
+* Description:
+* Application that tests the sd read and write.
+*
+* MODIFICATION HISTORY:
+*
+* Ver   Who  Date     Changes
+* ----- ---- -------- -------------------------------------------------------
+* 1.00  Luo  12-02-11  Initial Release
+*
+******************************************************************************/
+
+/***************************** Include Files **********************************/
+#include <stdio.h>
+#include "xparameters.h"
+#include "xenv_standalone.h"
+#include "xbasic_types.h"
+#include "xspi.h"
+#include "sd_header.h"
+
+/************************** Constant Definitions ******************************/
+#define BlockAdress 2
+
+/************************** Function Prototypes *******************************/
+int Do_SD_Initialize(sd_context_t *sdc);
+int SD_Read_Block(sd_context_t *sdc, u32 blockaddr, unsigned char *data);
+int SD_Write_Block(sd_context_t *sdc, u32 blockaddr, unsigned char *data);
+int Spi_Initial(u16 DeviceId);
+void SD_Delay(char number);
+int SPI_Send_Byte(XSpi *InstancePtr, unsigned char input);
+unsigned char SPI_Rcv_Byte(XSpi *InstancePtr);
+void SPI_CS_Assert(XSpi *InstancePtr);
+void SPI_CS_Disassert(XSpi *InstancePtr);
+void SD_Wait_Notbusy(sd_context_t *sdc);
+int SD_Send_Command(sd_context_t *sdc, unsigned char cmd, unsigned char response_type,
+                  unsigned char *response, unsigned char *argument, unsigned char CRC);
+
+/************************** Variable Definitions ******************************/
+XSpi Spi;                         /* The instance of the SPI device */
+static sd_context_t sd_card;
+static unsigned char response[5];
+static unsigned char argument[4];
+static unsigned char SD_rd_data[512];
+static unsigned char SD_wr_data[512];
+
+int main()
+{
+    int j,ok;
+
+    ok=0;
+    for (j =0; j < SD_INIT_TRY && ok != 1; j++)
+    {
+    	ok = Do_SD_Initialize (&sd_card);
+  	  if (ok == 1)
+  		   print("---SD card initial sucessed---\n\r");
+
+    }
+
+	for (j=0; j<512; j++)
+	{
+		SD_wr_data[j] = j;
+		SD_rd_data[j] = 0;
+	}
+
+	ok = SD_Write_Block (&sd_card, BlockAdress, SD_wr_data);
+	ok = SD_Read_Block (&sd_card, BlockAdress, SD_rd_data);
+
+	for (j=0; j<512; j++)
+	{
+		if (SD_rd_data[j] != SD_wr_data[j])
+			return XST_FAILURE;
+	}
+	print("---SD card read/write sucessed---\n\r");
+
+	return XST_SUCCESS;
+
+}
+
+/*****************************************************************************/
+/**
+* This function does a initial for SD card through the SPI interface
+
+* @param	sdc is the point of instruct sd_context_t
+*
+* @return	XST_SUCCESS if successful, XST_FAILURE if unsuccessful
+*
+* @note		None
+*
+****************************************************************************/
+int Do_SD_Initialize(sd_context_t *sdc)
+{
+	unsigned char i,j;
+	int SD_type;
+    int Status;
+
+	/*初始化SPI接口*/
+    Status = Spi_Initial(XPAR_SD_SPI_DEVICE_ID);
+	if (Status != XST_SUCCESS) {
+		return 0;
+	}
+
+	sdc->busyflag =0;
+	for (i=0;i<4;i++)
+	  argument[i] = 0;
+
+	/* SPI的片选信号为低,等待200个时钟周期,*/
+    SPI_CS_Assert(&Spi);
+	SD_Delay(200);
+	/* SPI的片选信号为高,等待16个时钟周期,*/
+    SPI_CS_Disassert(&Spi);
+	SD_Delay(16);
+
+	/* 发送CMD0给SD卡,使其进入IDLE状态*/
+	j = 0;
+	do
+	{
+		j++;
+		if (SD_Send_Command(sdc, CMD0, CMD0_R, response, argument, 0x95) == 0)
+			return 0;
+
+	}while ((response[0] & MSK_IDLE) != MSK_IDLE && j < SD_IDLE_WAIT_MAX);
+
+	/* 发送CMD8给SD卡,CMD8是SD2.0才有的命令 */
+	  argument[3] = 0;
+	  argument[2] = 0;
+	  argument[1] = 0x01;
+	  argument[0] = 0xAA;
+	do
+	{
+		j++;
+		if (SD_Send_Command(sdc, CMD8, CMD8_R, response, argument, 0x87) == 0)
+			return 0;
+
+	}while ((response[4] & MSK_IDLE) != MSK_IDLE && j < SD_IDLE_WAIT_MAX);
+
+	/* 判断SD卡的类型是否支持V2.0的标准 */
+	if (response[4]  == 0x01)
+	{
+	   print("---SD card is V2.0 standard---\n\r");
+	   SD_type = 1;
+	}
+	else
+	{
+		print("---SD card does not support V2.0 standard---\n\r");
+		SD_type = 0;
+	}
+
+	/* 循环发送CMD55和CMD41给SD卡直到初始化成功 */
+	argument[3] = 0;
+	argument[2] = 0;
+	argument[1] = 0;
+	argument[0] = 0;
+	j = 0;
+	do
+	{
+		j++;
+		/* Flag the next command as an application-specific command */
+		argument[3] = 0;
+		if (SD_Send_Command(sdc, CMD55, CMD55_R, response, argument, 0xff) == 1)
+		{
+			/* Tell the card to send its OCR */
+			if (SD_type == 1) {
+			  argument[3] = 0x40;
+			}
+			SD_Send_Command(sdc, ACMD41, ACMD41_R, response, argument, 0xff);
+		}
+		else
+		{
+			/* No response, bail early */
+			j = SD_IDLE_WAIT_MAX;
+		}
+	}while ((response[0] & MSK_IDLE) == MSK_IDLE );
+
+	argument[3] = 0;
+	argument[2] = 0;
+	argument[1] = 0;
+	argument[0] = 0;
+	/* 如果等待溢出,则初始化失败 */
+	if (j >= SD_IDLE_WAIT_MAX)
+		return 0;
+	/* 发送CMD58给SD卡,查询SD卡是否支持3.3V */
+	if (SD_Send_Command(sdc, CMD58, CMD58_R, response, argument, 0xff) == 0)
+		return 0;
+	if ((response[2] & MSK_OCR_33) != MSK_OCR_33)
+		return 0;
+	/* 设置Block的长度  */
+	argument[3] = (unsigned char)(SD_BLOCKSIZE >> 24);
+	argument[2] = (unsigned char)(SD_BLOCKSIZE >> 16);
+	argument[1] = (unsigned char)(SD_BLOCKSIZE >> 8);
+	argument[0] = (unsigned char)(SD_BLOCKSIZE);
+	if (SD_Send_Command(sdc, CMD16, CMD16_R, response, argument,0xff) == 0)
+		return 0;
+
+	/* 返回初始化成功*/
+	return 1;
+
+}
+
+/*****************************************************************************/
+/*
+* SD card Block read: read a block data from SD
+* @param	*sdc is the point of SD device
+*		     blockaddr is block address will be read
+*		     *data is point read data
+*
+******************************************************************************/
+
+int SD_Read_Block(sd_context_t *sdc, u32 blockaddr, unsigned char *data)
+{
+	unsigned long int i = 0;
+	unsigned char tmp;
+
+	/* 调整Block 地址为字节地址: 1 Block = 512bytes */
+	blockaddr <<= SD_BLOCKSIZE_NBITS;
+
+	/* 等待 SD卡为空闲 */
+	SD_Wait_Notbusy (sdc);
+
+	/* 发送单块读命令CMD17*/
+	argument[3] = (unsigned char)(blockaddr >> 24);
+	argument[2] = (unsigned char)(blockaddr >> 16);
+	argument[1] = (unsigned char)(blockaddr >> 8);
+	argument[0] = (unsigned char)(blockaddr);
+	if (SD_Send_Command(sdc, CMD17, CMD17_R, response, argument, 0xff) == 0)
+		return 0;
+
+	/* 如果读响应的第一个byte不为0,返回错误 */
+	if (response[0] != 0)
+		return 0;
+
+	/* 重新设置片选信号继续读的操作 */
+	SPI_CS_Assert(&Spi);
+
+	/* 等待接收数据开始令牌0xfe */
+	i=0;
+	do
+	{
+		tmp = SPI_Rcv_Byte(&Spi);
+		i++;
+	}while ((tmp != 0xFE) && i < 100 );
+
+	/* 连续接收512个数据 */
+	for (i=0;i<512;i++)
+	    data[i] = SPI_Rcv_Byte(&Spi);
+
+	/*接收2个字节CRC*/
+	SPI_Send_Byte(&Spi, 0xFF);
+	SPI_Send_Byte(&Spi, 0xff);
+
+	return 1;
+}
+
+/*****************************************************************************/
+/*
+* SD card Block write: write a block data to SD
+* @param	*sdc is the point of SD device
+*		     blockaddr is block address will be written
+*		     *data is point write data
+* return
+******************************************************************************/
+int SD_Write_Block(sd_context_t *sdc, u32 blockaddr, unsigned char *data)
+{
+	unsigned long int i = 0;
+	unsigned char tmp;
+
+	/* 调整Block 地址为字节地址: 1 Block = 512bytes */
+	blockaddr <<= SD_BLOCKSIZE_NBITS;
+
+	/* 等待 SD卡为空闲 */
+	SD_Wait_Notbusy (sdc);
+
+	/* 发送单个块写的命令CMD24*/
+	argument[3] = (unsigned char)(blockaddr >> 24);
+	argument[2] = (unsigned char)(blockaddr >> 16);
+	argument[1] = (unsigned char)(blockaddr >> 8);
+	argument[0] = (unsigned char)(blockaddr);
+	if (SD_Send_Command(sdc, CMD24, CMD24_R, response, argument, 0xff) == 0)
+		return 0;
+
+	/* 如果读响应的第一个byte不为0,返回错误 */
+	if (response[0] != 0)
+		return 0;
+
+	/* 重新设置片选信号继续写的操作 */
+	SPI_CS_Assert(&Spi);
+
+	/* 在块数据写之前需要等待 8个时钟周期*/
+	SPI_Rcv_Byte(&Spi);
+	/* Clear any pending flags */
+	sdc->busyflag = 1;
+
+	/* 发送数据开始令牌0xfe*/
+	SPI_Send_Byte(&Spi, 0xfe);
+
+	/*发送 512个数据 */
+	for (i=0; i<512; i++)
+	{
+		SPI_Send_Byte(&Spi, data[i]);
+	}
+
+	/*发送2个字节CRC*/
+	SPI_Send_Byte(&Spi, 0xff);
+	SPI_Send_Byte(&Spi, 0xff);
+
+	/*等待发送完成*/
+	i=0;
+	do
+	{
+		tmp = SPI_Rcv_Byte(&Spi);
+		i++;
+	}while (tmp != 0xff);
+
+	return 1;
+}
+
+/*****************************************************************************/
+/*
+* Write command to SD
+* @param	*sdc is the point of SD device
+*		     cmd is command byte send to SD
+*		     response_type is the command response type
+*		     *response is the point of response from SD
+*		     *argument is 4byte argument follow the cmd
+*		     CRC is CRC value of SD cmd
+*
+******************************************************************************/
+int SD_Send_Command(sd_context_t *sdc, unsigned char cmd, unsigned char response_type,
+                   unsigned char *response, unsigned char *argument,unsigned char CRC)
+{
+	int i;
+	char response_length;
+	unsigned char tmp;
+
+	/* 设置SPI的片选信号为低,*/
+	SPI_CS_Assert(&Spi);
+
+	/* 发送SD命令cmd[7:6]为 01,cmd[5:0]为命令*/
+	SPI_Send_Byte(&Spi, (cmd & 0x3F) | 0x40);
+
+	/* 发送4bytes的参数*/
+	for (i=3; i>=0; i--)
+	{
+		SPI_Send_Byte(&Spi, argument[i]);
+	}
+	/* 发送CRC字节*/
+	SPI_Send_Byte(&Spi,CRC);
+
+	/* 根据发送命令的响应类型决定响应字节数*/
+	response_length = 0;
+	switch (response_type)
+	{
+		case R1:
+		case R1B:
+			response_length = 1;
+			break;
+		case R2:
+			response_length = 2;
+			break;
+		case R3:
+			response_length = 5;
+			break;
+		default:
+			break;
+	}
+	/* 等待一个响应 A response can be recognized by the start bit (a zero) */
+	i=0;
+	do
+	{
+		tmp = SPI_Rcv_Byte(&Spi);
+		i++;
+	}while (((tmp & 0x80) != 0) && i < SD_CMD_TIMEOUT);
+
+	/* 无响应返回错误 */
+	if (i >= SD_CMD_TIMEOUT)
+	{
+		SPI_CS_Assert(&Spi);
+		return 0;
+	}
+
+	/* 接收其它响应字节 */
+	for (i=response_length-1; i>=0; i--)
+	{
+		response[i] = tmp;
+		tmp = SPI_Rcv_Byte(&Spi);
+	}
+	/* 如果SD响应为"busy" 状态(R1B), 这时候SD一直输出为低,需要等待到直到不忙(接收字节为0xff)*/
+	i=0;
+	if (response_type == R1B)
+	{
+		do
+		{
+			i++;
+			tmp = SPI_Rcv_Byte(&Spi);
+		}while (tmp != 0xFF);
+		SPI_Send_Byte(&Spi, 0xFF);
+	}
+
+	/* 设置SPI的片选信号为高*/
+	SPI_CS_Disassert(&Spi);
+	return 1;
+}
+
+/*****************************************************************************/
+/**
+*
+* This function does a initial of the SPI device
+*
+* @param	DeviceId is the XPAR_<SPI_instance>_DEVICE_ID value from
+*		xparameters.h
+*
+* @return	XST_SUCCESS if successful, XST_FAILURE if unsuccessful
+*
+* @note		None
+*
+****************************************************************************/
+int Spi_Initial(u16 DeviceId)
+{
+	int Status;
+	u32 ControlReg;
+	XSpi_Config *ConfigPtr;	     /* Pointer to Configuration data */
+
+	/** Initialize the SPI driver so that it is  ready to use.*/
+	ConfigPtr = XSpi_LookupConfig(DeviceId);
+	if (ConfigPtr == NULL) {
+		return XST_DEVICE_NOT_FOUND;
+	}
+
+	Status = XSpi_CfgInitialize(&Spi, ConfigPtr,
+				  ConfigPtr->BaseAddress);
+	if (Status != XST_SUCCESS) {
+		return XST_FAILURE;
+	}
+
+	XSpi_Reset(&Spi);
+
+	/*设置SPI的控制寄存器使SPI为SPI的主模式,并reset发送FIFO和接收FIFO*/
+	ControlReg = XSpi_GetControlReg(&Spi);
+	XSpi_SetControlReg(&Spi, ControlReg |XSP_CR_MASTER_MODE_MASK
+				|XSP_CR_TXFIFO_RESET_MASK |XSP_CR_RXFIFO_RESET_MASK);
+
+	/*关闭SPI中断*/
+	XSpi_IntrGlobalDisable(&Spi);
+
+	return XST_SUCCESS;
+}
+
+/*****************************************************************************/
+/*
+* 等待函数
+*
+******************************************************************************/
+void SD_Delay(char number)
+{
+	char i;
+	for (i=0; i<number; i++)
+	{
+		/* Clock out an idle byte (0xFF) */
+		SPI_Send_Byte(&Spi,0xFF);
+	}
+}
+
+
+/*****************************************************************************/
+/*
+* Set the CS to Low
+*
+******************************************************************************/
+void SPI_CS_Assert(XSpi *InstancePtr)
+{
+
+	XSpi_SetSlaveSelectReg(InstancePtr, 0);
+}
+
+/*****************************************************************************/
+/*
+*
+* set the CS to high
+*
+******************************************************************************/
+void SPI_CS_Disassert(XSpi *InstancePtr)
+{
+
+	XSpi_SetSlaveSelectReg(InstancePtr, 1);
+
+}
+
+/*****************************************************************************/
+/**
+*
+* This function sends one byte to SD card through SPI
+*
+* @param	InstancePtr is the point of XSPI device
+*		    input is the byte will send
+*
+* @return	XST_SUCCESS if successful, XST_FAILURE if unsuccessful
+*
+* @note		None
+*
+****************************************************************************/
+int SPI_Send_Byte(XSpi *InstancePtr, unsigned char input)
+{
+	u32 StatusReg;
+	u32 ControlReg;
+
+	/*如果SPI的 发送FIFO不满,把数据写入发送寄存器*/
+	StatusReg = XSpi_GetStatusReg(InstancePtr);
+	if((StatusReg & XSP_SR_TX_FULL_MASK) == 0) {
+
+		XSpi_WriteReg(InstancePtr->BaseAddr, XSP_DTR_OFFSET,input);
+		StatusReg = XSpi_GetStatusReg(InstancePtr);
+	}
+
+	/*开始发送数据通过写发送使能和SPI使能*/
+	ControlReg = XSpi_GetControlReg(InstancePtr) & (~XSP_CR_TRANS_INHIBIT_MASK);
+	XSpi_SetControlReg(InstancePtr, ControlReg | XSP_CR_ENABLE_MASK);
+
+	/*等待发送完成*/
+	do {
+		StatusReg = XSpi_GetStatusReg(InstancePtr);
+	} while ((StatusReg & XSP_SR_TX_EMPTY_MASK) == 0);
+
+	ControlReg |= XSP_CR_TRANS_INHIBIT_MASK;
+	XSpi_SetControlReg(InstancePtr ,ControlReg & ~ XSP_CR_ENABLE_MASK);
+
+	return XST_SUCCESS;
+}
+
+
+/*****************************************************************************/
+/*
+* Receive a byte. Output an 0xFF (the bus idles high) to receive the byte
+*
+******************************************************************************/
+
+unsigned char SPI_Rcv_Byte(XSpi *InstancePtr)
+{
+	u32 StatusReg;
+	u32 ControlReg;
+	u32 RxData;
+
+	/*如果SPI的 发送FIFO不满,发送0xFF*/
+	StatusReg = XSpi_GetStatusReg(InstancePtr);
+	if((StatusReg & XSP_SR_TX_FULL_MASK) == 0) {
+
+		XSpi_WriteReg(InstancePtr->BaseAddr, XSP_DTR_OFFSET,
+				0xff);
+		StatusReg = XSpi_GetStatusReg(InstancePtr);
+	}
+
+	/*开始发送数据通过写发送使能和SPI使能*/
+	ControlReg = XSpi_GetControlReg(InstancePtr) &
+					 (~XSP_CR_TRANS_INHIBIT_MASK);
+	XSpi_SetControlReg(InstancePtr, ControlReg |
+				    XSP_CR_ENABLE_MASK);
+
+	/*等待发送完成*/
+	do {
+		StatusReg = XSpi_GetStatusReg(InstancePtr);
+	} while ((StatusReg & XSP_SR_TX_EMPTY_MASK) == 0);
+
+	/*如果SPI的 接收FIFO不空,读取接收数据*/
+	RxData = 0xff;
+
+    	StatusReg = XSpi_GetStatusReg(InstancePtr);
+		if ((StatusReg & XSP_SR_RX_EMPTY_MASK) == 0) {
+
+			RxData = XSpi_ReadReg(InstancePtr->BaseAddr,
+						XSP_DRR_OFFSET);
+		}
+
+	/*发送使能和SPI使能关闭*/
+	ControlReg |= XSP_CR_TRANS_INHIBIT_MASK;
+	XSpi_SetControlReg(InstancePtr ,  ControlReg & ~ XSP_CR_ENABLE_MASK);
+
+	return RxData;
+}
+
+
+/*****************************************************************************/
+/*
+* waitting until sd not busy
+*
+******************************************************************************/
+void SD_Wait_Notbusy(sd_context_t *sdc)
+{
+
+	SD_Delay(4);
+	/* 检查忙的标志位 */
+	if (sdc->busyflag == 1)
+	{
+		while (SPI_Rcv_Byte(&Spi) != 0xFF);
+		sdc->busyflag = 0;
+	}
+
+	SD_Delay(2);
+
+	/* 释放CS片选 */
+	SPI_CS_Disassert(&Spi);
+
+}
+
+

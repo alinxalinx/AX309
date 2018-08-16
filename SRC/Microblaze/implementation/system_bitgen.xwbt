@@ -1,0 +1,7 @@
+INFILE=E:\Project\AX309\Microblaze\implementation\system.ncd
+OUTFILE=E:\Project\AX309\Microblaze\implementation\system.bit
+FAMILY=Spartan6
+PART=xc6slx9-2ftg256
+WORKINGDIR=E:\Project\AX309\Microblaze\implementation
+LICENSE=WebPack
+USER_INFO=__0_0_0

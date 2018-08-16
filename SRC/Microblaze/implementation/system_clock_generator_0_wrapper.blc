@@ -1,0 +1,29 @@
+Release 14.7 ngcbuild P.20131013 (nt64)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+
+Command Line: C:\Xilinx\14.7\ISE_DS\ISE\bin\nt64\unwrapped\ngcbuild.exe -p
+xc6slx9ftg256-2 -intstyle silent -i -sd .. system_clock_generator_0_wrapper.ngc
+../system_clock_generator_0_wrapper
+
+Reading NGO file
+"E:/Project/AX309/Microblaze/implementation/clock_generator_0_wrapper/system_clo
+ck_generator_0_wrapper.ngc" ...
+
+Partition Implementation Status
+-------------------------------
+
+  No Partitions were found in this design.
+
+-------------------------------
+
+NGCBUILD Design Results Summary:
+  Number of errors:     0
+  Number of warnings:   0
+
+Total memory usage is 161032 kilobytes
+
+Writing NGC file "../system_clock_generator_0_wrapper.ngc" ...
+Total REAL time to NGCBUILD completion:  2 sec
+Total CPU time to NGCBUILD completion:   2 sec
+
+Writing NGCBUILD log file "../system_clock_generator_0_wrapper.blc"...

@@ -1,0 +1,22 @@
+14:26:20 **** Auto Build of project sd_test_bsp ****
+make -k all 
+libgen -hw ../Microblaze_hw_platform/system.xml\
+	       \
+	       -pe microblaze_0 \
+	       -log libgen.log \
+	       system.mss
+libgen
+Xilinx EDK 14.7 Build EDK_P.20131013
+Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
+
+Command Line: libgen -hw ../Microblaze_hw_platform/system.xml -pe microblaze_0
+-log libgen.log system.mss 
+
+ERROR:EDK:410 - spi - E:\Project\AX309\Microblaze\SDK\sd_test_bsp\system.mss
+   line 99 - No IP instance named spi_sd is present in the hardware!
+ERROR:EDK:1206 - Errors occured while parsing MSS file.
+make: *** [microblaze_0/lib/libxil.a] 错误 2
+make: 由于错误目标“all”并未重新创建。
+
+14:26:21 Build Finished (took 935ms)
+

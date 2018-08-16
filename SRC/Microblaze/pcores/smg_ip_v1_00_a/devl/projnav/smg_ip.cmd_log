@@ -1,0 +1,6 @@
+xst -intstyle ise -ifn "E:/Project/AX309/Microblaze/pcores/smg_ip_v1_00_a/devl/projnav/smg_ip.xst" -ofn "E:/Project/AX309/Microblaze/pcores/smg_ip_v1_00_a/devl/projnav/smg_ip.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -i -p xc6slx9-ftg256-2 smg_ip.ngc smg_ip.ngd  
+map -intstyle ise -p xc6slx9-ftg256-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o smg_ip_map.ncd smg_ip.ngd smg_ip.pcf 
+par -w -intstyle ise -ol high -mt off smg_ip_map.ncd smg_ip.ncd smg_ip.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml smg_ip.twx smg_ip.ncd -o smg_ip.twr smg_ip.pcf 
+bitgen -intstyle ise -f smg_ip.ut smg_ip.ncd 

@@ -1,0 +1,252 @@
+Release 14.7 Map P.20131013 (nt64)
+Xilinx Map Application Log File for Design 'system'
+
+Design Information
+------------------
+Command Line   : map -o system_map.ncd -w -pr b -ol high -timing -detail
+system.ngd system.pcf 
+Target Device  : xc6slx9
+Target Package : ftg256
+Target Speed   : -2
+Mapper Version : spartan6 -- $Revision: 1.55 $
+Mapped Date    : Mon Jul 27 14:16:49 2015
+
+Mapping design into LUTs...
+Writing file system_map.ngm...
+Running directed packing...
+Running delay-based LUT packing...
+Updating timing models...
+INFO:Map:215 - The Interim Design Summary has been generated in the MAP Report
+   (.mrp).
+Running timing-driven placement...
+Total REAL time at the beginning of Placer: 10 secs 
+Total CPU  time at the beginning of Placer: 10 secs 
+
+Phase 1.1  Initial Placement Analysis
+Phase 1.1  Initial Placement Analysis (Checksum:a5a95b28) REAL time: 11 secs 
+
+Phase 2.7  Design Feasibility Check
+Phase 2.7  Design Feasibility Check (Checksum:a5a95b28) REAL time: 11 secs 
+
+Phase 3.31  Local Placement Optimization
+Phase 3.31  Local Placement Optimization (Checksum:198a4e51) REAL time: 11 secs 
+
+Phase 4.2  Initial Placement for Architecture Specific Features
+
+Phase 4.2  Initial Placement for Architecture Specific Features
+(Checksum:298601ae) REAL time: 15 secs 
+
+Phase 5.36  Local Placement Optimization
+Phase 5.36  Local Placement Optimization (Checksum:298601ae) REAL time: 15 secs 
+
+Phase 6.30  Global Clock Region Assignment
+Phase 6.30  Global Clock Region Assignment (Checksum:298601ae) REAL time: 15 secs 
+
+Phase 7.3  Local Placement Optimization
+Phase 7.3  Local Placement Optimization (Checksum:298601ae) REAL time: 15 secs 
+
+Phase 8.5  Local Placement Optimization
+Phase 8.5  Local Placement Optimization (Checksum:298601ae) REAL time: 15 secs 
+
+Phase 9.8  Global Placement
+...........................
+......................................................................................................
+................................................................................................................................................................................
+........................................................................................................................................................................................
+.........................................................................................
+Phase 9.8  Global Placement (Checksum:2ef9ea9) REAL time: 50 secs 
+
+Phase 10.5  Local Placement Optimization
+Phase 10.5  Local Placement Optimization (Checksum:2ef9ea9) REAL time: 50 secs 
+
+Phase 11.18  Placement Optimization
+Phase 11.18  Placement Optimization (Checksum:df35fde4) REAL time: 56 secs 
+
+Phase 12.5  Local Placement Optimization
+Phase 12.5  Local Placement Optimization (Checksum:df35fde4) REAL time: 56 secs 
+
+Phase 13.34  Placement Validation
+Phase 13.34  Placement Validation (Checksum:65289e44) REAL time: 57 secs 
+
+Total REAL time to Placer completion: 57 secs 
+Total CPU  time to Placer completion: 57 secs 
+Running post-placement packing...
+Writing output files...
+WARNING:PhysDesignRules:372 - Gated clock. Clock net
+   chipscope_icon_0_control0<13> is sourced by a combinatorial pin. This is not
+   good design practice. Use the CE pin to control the loading of data into the
+   flip-flop.
+WARNING:PhysDesignRules:367 - The signal
+   <microblaze_0_d_bram_ctrl_2_microblaze_0_bram_block_BRAM_Addr<30>> is
+   incomplete. The signal does not drive any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal
+   <microblaze_0/microblaze_0/MicroBlaze_Core_I/Performance.Data_Flow_I/Register
+   _File_I/Using_LUT6.All_RAM32M[13].ram32m_i_RAMD_D1_O> is incomplete. The
+   signal does not drive any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal
+   <microblaze_0/microblaze_0/MicroBlaze_Core_I/Performance.Data_Flow_I/Register
+   _File_I/Using_LUT6.All_RAM32M[3].ram32m_i_RAMD_D1_O> is incomplete. The
+   signal does not drive any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal
+   <microblaze_0/microblaze_0/MicroBlaze_Core_I/Performance.Data_Flow_I/Register
+   _File_I/Using_LUT6.All_RAM32M[11].ram32m_i_RAMD_D1_O> is incomplete. The
+   signal does not drive any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal
+   <microblaze_0/microblaze_0/MicroBlaze_Core_I/Performance.Data_Flow_I/Register
+   _File_I/Using_LUT6.All_RAM32M[14].ram32m_i_RAMD_D1_O> is incomplete. The
+   signal does not drive any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal
+   <microblaze_0/microblaze_0/MicroBlaze_Core_I/Performance.Data_Flow_I/Register
+   _File_I/Using_LUT6.All_RAM32M[12].ram32m_i_RAMD_D1_O> is incomplete. The
+   signal does not drive any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal
+   <microblaze_0_d_bram_ctrl_2_microblaze_0_bram_block_BRAM_Addr<31>> is
+   incomplete. The signal does not drive any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal
+   <microblaze_0/microblaze_0/MicroBlaze_Core_I/Performance.Data_Flow_I/Register
+   _File_I/Using_LUT6.All_RAM32M[10].ram32m_i_RAMD_D1_O> is incomplete. The
+   signal does not drive any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal
+   <microblaze_0/microblaze_0/MicroBlaze_Core_I/Performance.Data_Flow_I/Register
+   _File_I/Using_LUT6.All_RAM32M[9].ram32m_i_RAMD_D1_O> is incomplete. The
+   signal does not drive any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal
+   <microblaze_0/microblaze_0/MicroBlaze_Core_I/Performance.Data_Flow_I/Register
+   _File_I/Using_LUT6.All_RAM32M[15].ram32m_i_RAMD_D1_O> is incomplete. The
+   signal does not drive any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal
+   <microblaze_0/microblaze_0/MicroBlaze_Core_I/Performance.Data_Flow_I/Register
+   _File_I/Using_LUT6.All_RAM32M[5].ram32m_i_RAMD_D1_O> is incomplete. The
+   signal does not drive any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal
+   <microblaze_0/microblaze_0/MicroBlaze_Core_I/Performance.Data_Flow_I/Register
+   _File_I/Using_LUT6.All_RAM32M[2].ram32m_i_RAMD_D1_O> is incomplete. The
+   signal does not drive any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal
+   <microblaze_0/microblaze_0/MicroBlaze_Core_I/Performance.Data_Flow_I/Register
+   _File_I/Using_LUT6.All_RAM32M[1].ram32m_i_RAMD_D1_O> is incomplete. The
+   signal does not drive any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal
+   <microblaze_0/microblaze_0/MicroBlaze_Core_I/Performance.Data_Flow_I/Register
+   _File_I/Using_LUT6.All_RAM32M[0].ram32m_i_RAMD_D1_O> is incomplete. The
+   signal does not drive any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal
+   <microblaze_0/microblaze_0/MicroBlaze_Core_I/Performance.Data_Flow_I/Register
+   _File_I/Using_LUT6.All_RAM32M[4].ram32m_i_RAMD_D1_O> is incomplete. The
+   signal does not drive any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal
+   <proc_sys_reset_0/proc_sys_reset_0/Mshreg_Core_Reset_Req_0_d2> is incomplete.
+   The signal does not drive any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal
+   <proc_sys_reset_0/proc_sys_reset_0/Mshreg_Core_Reset_Req_1_d2> is incomplete.
+   The signal does not drive any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal
+   <microblaze_0/microblaze_0/MicroBlaze_Core_I/Performance.Data_Flow_I/Register
+   _File_I/Using_LUT6.All_RAM32M[8].ram32m_i_RAMD_D1_O> is incomplete. The
+   signal does not drive any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal
+   <microblaze_0/microblaze_0/MicroBlaze_Core_I/Performance.Data_Flow_I/Register
+   _File_I/Using_LUT6.All_RAM32M[7].ram32m_i_RAMD_D1_O> is incomplete. The
+   signal does not drive any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal
+   <microblaze_0/microblaze_0/MicroBlaze_Core_I/Performance.Data_Flow_I/Register
+   _File_I/Using_LUT6.All_RAM32M[6].ram32m_i_RAMD_D1_O> is incomplete. The
+   signal does not drive any load pins in the design.
+WARNING:PhysDesignRules:2410 - This design is using one or more 9K Block RAMs
+   (RAMB8BWER).  9K Block RAM initialization data, both user defined and
+   default, may be incorrect and should not be used.  For more information,
+   please reference Xilinx Answer Record 39999.
+
+Design Summary
+--------------
+
+Design Summary:
+Number of errors:      0
+Number of warnings:   22
+Slice Logic Utilization:
+  Number of Slice Registers:                 2,819 out of  11,440   24%
+    Number used as Flip Flops:               2,811
+    Number used as Latches:                      1
+    Number used as Latch-thrus:                  0
+    Number used as AND/OR logics:                7
+  Number of Slice LUTs:                      3,762 out of   5,720   65%
+    Number used as logic:                    3,440 out of   5,720   60%
+      Number using O6 output only:           2,616
+      Number using O5 output only:             110
+      Number using O5 and O6:                  714
+      Number used as ROM:                        0
+    Number used as Memory:                     223 out of   1,440   15%
+      Number used as Dual Port RAM:             64
+        Number using O6 output only:             0
+        Number using O5 output only:             0
+        Number using O5 and O6:                 64
+      Number used as Single Port RAM:            0
+      Number used as Shift Register:           159
+        Number using O6 output only:            82
+        Number using O5 output only:             1
+        Number using O5 and O6:                 76
+    Number used exclusively as route-thrus:     99
+      Number with same-slice register load:     59
+      Number with same-slice carry load:        16
+      Number with other load:                   24
+
+Slice Logic Distribution:
+  Number of occupied Slices:                 1,379 out of   1,430   96%
+  Number of MUXCYs used:                       632 out of   2,860   22%
+  Number of LUT Flip Flop pairs used:        4,135
+    Number with an unused Flip Flop:         1,608 out of   4,135   38%
+    Number with an unused LUT:                 373 out of   4,135    9%
+    Number of fully used LUT-FF pairs:       2,154 out of   4,135   52%
+    Number of unique control sets:             276
+    Number of slice register sites lost
+      to control set restrictions:           1,201 out of  11,440   10%
+
+  A LUT Flip Flop pair for this architecture represents one LUT paired with
+  one Flip Flop within a slice.  A control set is a unique combination of
+  clock, reset, set, and enable signals for a registered element.
+  The Slice Logic Distribution report is not meaningful if the design is
+  over-mapped for a non-slice resource or if Placement fails.
+
+IO Utilization:
+  Number of bonded IOBs:                        54 out of     186   29%
+    Number of LOCed IOBs:                       54 out of      54  100%
+    IOB Flip Flops:                             32
+
+Specific Feature Utilization:
+  Number of RAMB16BWERs:                         9 out of      32   28%
+  Number of RAMB8BWERs:                          1 out of      64    1%
+  Number of BUFIO2/BUFIO2_2CLKs:                 0 out of      32    0%
+  Number of BUFIO2FB/BUFIO2FB_2CLKs:             0 out of      32    0%
+  Number of BUFG/BUFGMUXs:                       5 out of      16   31%
+    Number used as BUFGs:                        5
+    Number used as BUFGMUX:                      0
+  Number of DCM/DCM_CLKGENs:                     0 out of       4    0%
+  Number of ILOGIC2/ISERDES2s:                   3 out of     200    1%
+    Number used as ILOGIC2s:                     3
+    Number used as ISERDES2s:                    0
+  Number of IODELAY2/IODRP2/IODRP2_MCBs:         0 out of     200    0%
+  Number of OLOGIC2/OSERDES2s:                  27 out of     200   13%
+    Number used as OLOGIC2s:                    27
+    Number used as OSERDES2s:                    0
+  Number of BSCANs:                              2 out of       4   50%
+  Number of BUFHs:                               0 out of     128    0%
+  Number of BUFPLLs:                             0 out of       8    0%
+  Number of BUFPLL_MCBs:                         0 out of       4    0%
+  Number of DSP48A1s:                            3 out of      16   18%
+  Number of ICAPs:                               0 out of       1    0%
+  Number of MCBs:                                0 out of       2    0%
+  Number of PCILOGICSEs:                         0 out of       2    0%
+  Number of PLL_ADVs:                            1 out of       2   50%
+  Number of PMVs:                                0 out of       1    0%
+  Number of STARTUPs:                            0 out of       1    0%
+  Number of SUSPEND_SYNCs:                       0 out of       1    0%
+
+  Number of RPM macros:           12
+Average Fanout of Non-Clock Nets:                4.08
+
+Peak Memory Usage:  497 MB
+Total REAL time to MAP completion:  1 mins 
+Total CPU time to MAP completion:   59 secs 
+
+Mapping completed.
+See MAP report file "system_map.mrp" for details.

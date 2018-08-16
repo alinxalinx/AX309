@@ -1,0 +1,4 @@
+-g TdoPin:PULLNONE
+-g StartUpClk:JTAGCLK
+-g ConfigRate:16
+#add other options here.

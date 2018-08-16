@@ -1,0 +1,11 @@
+##############################################################################
+## Filename:          E:\Project\AX309\Microblaze\Microblaze\pcores/vga_ip_v1_00_a/data/vga_ip_v2_1_0.pao
+## Description:       Peripheral Analysis Order
+## Date:              Sun Jul 26 18:12:16 2015 (by Create and Import Peripheral Wizard)
+##############################################################################
+
+lib proc_common_v3_00_a all vhdl
+lib axi_lite_ipif_v1_01_a all vhdl
+lib vga_ip_v1_00_a user_logic verilog
+lib vga_ip_v1_00_a vga_ip vhdl
+lib vga_ip_v1_00_a vga_driver verilog

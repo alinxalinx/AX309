@@ -1,0 +1,28 @@
+
+
+#include <stdio.h>
+#include "platform.h"
+#include "xparameters.h"
+#include "xgpio.h"
+
+/************************** Variable Defintions ******************************/
+XGpio Gpio_buzzer;
+XGpio Gpio_keys;
+
+int main()
+{
+	int Status;
+    init_platform();
+
+	 Status = XGpio_Initialize(&Gpio_buzzer, XPAR_BUZZER_1B_DEVICE_ID);
+	 if (Status != XST_SUCCESS) {
+		  return XST_FAILURE;
+	 }
+
+	 Status = XGpio_Initialize(&Gpio_keys, XPAR_KEY_4B_DEVICE_ID);
+	 if (Status != XST_SUCCESS) {
+		  return XST_FAILURE;
+	 }
+
+    return 0;
+}

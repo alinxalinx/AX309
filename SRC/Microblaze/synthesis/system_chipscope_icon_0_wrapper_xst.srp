@@ -1,0 +1,267 @@
+Release 14.7 - xst P.20131013 (nt64)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+--> Parameter TMPDIR set to E:\Project\AX309\Microblaze\synthesis\xst_temp_dir\
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.07 secs
+ 
+--> 
+TABLE OF CONTENTS
+  1) Synthesis Options Summary
+  2) HDL Parsing
+  3) HDL Elaboration
+  4) HDL Synthesis
+       4.1) HDL Synthesis Report
+  5) Advanced HDL Synthesis
+       5.1) Advanced HDL Synthesis Report
+  6) Low Level Synthesis
+  7) Partition Report
+  8) Design Summary
+       8.1) Primitive and Black Box Usage
+       8.2) Device utilization summary
+       8.3) Partition Resource Summary
+       8.4) Timing Report
+            8.4.1) Clock Information
+            8.4.2) Asynchronous Control Signals Information
+            8.4.3) Timing Summary
+            8.4.4) Timing Details
+            8.4.5) Cross Clock Domains Report
+
+
+=========================================================================
+*                      Synthesis Options Summary                        *
+=========================================================================
+---- Source Parameters
+Input Format                       : MIXED
+Input File Name                    : "system_chipscope_icon_0_wrapper_xst.prj"
+Verilog Include Directory          : {"E:\Project\AX309\Microblaze\pcores\" "C:\Xilinx\14.7\ISE_DS\EDK\hw\XilinxBFMinterface\pcores\" "C:\Xilinx\14.7\ISE_DS\EDK\hw\XilinxProcessorIPLib\pcores\" }
+
+---- Target Parameters
+Target Device                      : xc6slx9ftg256-2
+Output File Name                   : "../implementation/system_chipscope_icon_0_wrapper.ngc"
+
+---- Source Options
+Top Module Name                    : system_chipscope_icon_0_wrapper
+
+---- Target Options
+Add IO Buffers                     : NO
+
+---- General Options
+Optimization Goal                  : speed
+Netlist Hierarchy                  : as_optimized
+Optimization Effort                : 1
+Hierarchy Separator                : /
+
+---- Other Options
+Cores Search Directories           : {../implementation}
+
+=========================================================================
+
+
+=========================================================================
+*                          HDL Parsing                                  *
+=========================================================================
+Parsing VHDL file "E:/Project/AX309/Microblaze/hdl/elaborate/chipscope_icon_0_v1_06_a/synhdl/vhdl/chipscope_icon_0.vhd" into library chipscope_icon_0_v1_06_a
+Parsing entity <chipscope_icon>.
+Parsing architecture <STRUCTURE> of entity <chipscope_icon>.
+Parsing VHDL file "E:\Project\AX309\Microblaze\hdl\system_chipscope_icon_0_wrapper.vhd" into library work
+Parsing entity <system_chipscope_icon_0_wrapper>.
+Parsing architecture <STRUCTURE> of entity <system_chipscope_icon_0_wrapper>.
+
+=========================================================================
+*                            HDL Elaboration                            *
+=========================================================================
+
+Elaborating entity <system_chipscope_icon_0_wrapper> (architecture <STRUCTURE>) from library <work>.
+WARNING:HDLCompiler:244 - "E:\Project\AX309\Microblaze\hdl\system_chipscope_icon_0_wrapper.vhd" Line 51: Binding entity chipscope_icon does not have generic c_device
+INFO:HDLCompiler:1408 - "E:/Project/AX309/Microblaze/hdl/elaborate/chipscope_icon_0_v1_06_a/synhdl/vhdl/chipscope_icon_0.vhd" Line 8. chipscope_icon is declared here
+WARNING:HDLCompiler:244 - "E:\Project\AX309\Microblaze\hdl\system_chipscope_icon_0_wrapper.vhd" Line 52: Binding entity chipscope_icon does not have generic c_package
+INFO:HDLCompiler:1408 - "E:/Project/AX309/Microblaze/hdl/elaborate/chipscope_icon_0_v1_06_a/synhdl/vhdl/chipscope_icon_0.vhd" Line 8. chipscope_icon is declared here
+WARNING:HDLCompiler:244 - "E:\Project\AX309\Microblaze\hdl\system_chipscope_icon_0_wrapper.vhd" Line 53: Binding entity chipscope_icon does not have generic c_speedgrade
+INFO:HDLCompiler:1408 - "E:/Project/AX309/Microblaze/hdl/elaborate/chipscope_icon_0_v1_06_a/synhdl/vhdl/chipscope_icon_0.vhd" Line 8. chipscope_icon is declared here
+
+Elaborating entity <chipscope_icon> (architecture <STRUCTURE>) with generics from library <chipscope_icon_0_v1_06_a>.
+INFO:HDLCompiler:1408 - "E:/Project/AX309/Microblaze/hdl/elaborate/chipscope_icon_0_v1_06_a/synhdl/vhdl/chipscope_icon_0.vhd" Line 8. chipscope_icon is declared here
+INFO:HDLCompiler:1408 - "E:/Project/AX309/Microblaze/hdl/elaborate/chipscope_icon_0_v1_06_a/synhdl/vhdl/chipscope_icon_0.vhd" Line 8. chipscope_icon is declared here
+INFO:HDLCompiler:1408 - "E:/Project/AX309/Microblaze/hdl/elaborate/chipscope_icon_0_v1_06_a/synhdl/vhdl/chipscope_icon_0.vhd" Line 8. chipscope_icon is declared here
+
+=========================================================================
+*                           HDL Synthesis                               *
+=========================================================================
+
+Synthesizing Unit <system_chipscope_icon_0_wrapper>.
+    Related source file is "E:\Project\AX309\Microblaze\hdl\system_chipscope_icon_0_wrapper.vhd".
+    Summary:
+	no macro.
+Unit <system_chipscope_icon_0_wrapper> synthesized.
+
+Synthesizing Unit <chipscope_icon>.
+    Related source file is "E:/Project/AX309/Microblaze/hdl/elaborate/chipscope_icon_0_v1_06_a/synhdl/vhdl/chipscope_icon_0.vhd".
+        C_FAMILY = "spartan6"
+        C_NUM_CONTROL_PORTS = 1
+        C_SYSTEM_CONTAINS_MDM = 1
+        C_FORCE_BSCAN_USER_PORT = 1
+WARNING:Xst:647 - Input <tdi_in> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <reset_in> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <shift_in> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <update_in> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <sel_in> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <drck_in> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <capture_in> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+    Summary:
+	no macro.
+Unit <chipscope_icon> synthesized.
+
+=========================================================================
+HDL Synthesis Report
+
+Found no macro
+=========================================================================
+
+=========================================================================
+*                       Advanced HDL Synthesis                          *
+=========================================================================
+
+
+=========================================================================
+Advanced HDL Synthesis Report
+
+Found no macro
+=========================================================================
+
+=========================================================================
+*                         Low Level Synthesis                           *
+=========================================================================
+
+Optimizing unit <system_chipscope_icon_0_wrapper> ...
+
+Mapping all equations...
+Building and optimizing final netlist ...
+Found area constraint ratio of 100 (+ 0) on block system_chipscope_icon_0_wrapper, actual ratio is 0.
+
+Final Macro Processing ...
+
+=========================================================================
+Final Register Report
+
+Found no macro
+=========================================================================
+
+=========================================================================
+*                           Partition Report                            *
+=========================================================================
+
+Partition Implementation Status
+-------------------------------
+
+  No Partitions were found in this design.
+
+-------------------------------
+
+=========================================================================
+*                            Design Summary                             *
+=========================================================================
+
+Top Level Output File Name         : system_chipscope_icon_0_wrapper.ngc
+
+Primitive and Black Box Usage:
+------------------------------
+# BELS                             : 1
+#      GND                         : 1
+# Others                           : 1
+#      chipscope_icon_0            : 1
+
+Device utilization summary:
+---------------------------
+
+Selected Device : 6slx9ftg256-2 
+
+
+Slice Logic Utilization: 
+
+Slice Logic Distribution: 
+ Number of LUT Flip Flop pairs used:      0
+   Number with an unused Flip Flop:       0  out of      0         
+   Number with an unused LUT:             0  out of      0         
+   Number of fully used LUT-FF pairs:     0  out of      0         
+   Number of unique control sets:         0
+
+IO Utilization: 
+ Number of IOs:                         584
+ Number of bonded IOBs:                   0  out of    186     0%  
+
+Specific Feature Utilization:
+
+---------------------------
+Partition Resource Summary:
+---------------------------
+
+  No Partitions were found in this design.
+
+---------------------------
+
+
+=========================================================================
+Timing Report
+
+NOTE: THESE TIMING NUMBERS ARE ONLY A SYNTHESIS ESTIMATE.
+      FOR ACCURATE TIMING INFORMATION PLEASE REFER TO THE TRACE REPORT
+      GENERATED AFTER PLACE-and-ROUTE.
+
+Clock Information:
+------------------
+No clock signals found in this design
+
+Asynchronous Control Signals Information:
+----------------------------------------
+No asynchronous control signals found in this design
+
+Timing Summary:
+---------------
+Speed Grade: -2
+
+   Minimum period: No path found
+   Minimum input arrival time before clock: No path found
+   Maximum output required time after clock: No path found
+   Maximum combinational path delay: 0.000ns
+
+Timing Details:
+---------------
+All values displayed in nanoseconds (ns)
+
+=========================================================================
+Timing constraint: Default path analysis
+  Total number of paths / destination ports: 36 / 36
+-------------------------------------------------------------------------
+Delay:               0.000ns (Levels of Logic = 0)
+  Source:            chipscope_icon_0/i_chipscope_icon_0:control0<35> (PAD)
+  Destination:       control0<35> (PAD)
+
+  Data Path: chipscope_icon_0/i_chipscope_icon_0:control0<35> to control0<35>
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+    chipscope_icon_0:control0<35>    0   0.000   0.000  chipscope_icon_0/i_chipscope_icon_0 (control0<35>)
+    ----------------------------------------
+    Total                      0.000ns (0.000ns logic, 0.000ns route)
+
+=========================================================================
+
+Cross Clock Domains Report:
+--------------------------
+
+=========================================================================
+
+
+Total REAL time to Xst completion: 4.00 secs
+Total CPU time to Xst completion: 3.66 secs
+ 
+--> 
+
+Total memory usage is 269984 kilobytes
+
+Number of errors   :    0 (   0 filtered)
+Number of warnings :   10 (   0 filtered)
+Number of infos    :    0 (   0 filtered)
+
