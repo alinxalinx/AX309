@@ -1,0 +1,8 @@
+INTSTYLE=ise
+INFILE=E:\BaiduYunDownload\AX309.161219\AX309\09_VERILOG\28_dds_wave\dds_wave.ncd
+OUTFILE=E:\BaiduYunDownload\AX309.161219\AX309\09_VERILOG\28_dds_wave\dds_wave.bit
+FAMILY=Spartan6
+PART=xc6slx9-3ftg256
+WORKINGDIR=E:\BaiduYunDownload\AX309.161219\AX309\09_VERILOG\28_dds_wave
+LICENSE=WebPack
+USER_INFO=__0_0_0

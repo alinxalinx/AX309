@@ -1,0 +1,2 @@
+verilog work "ipcore_dir/sin_cos.v"
+verilog work "dds_wave.v"

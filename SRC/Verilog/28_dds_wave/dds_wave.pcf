@@ -1,0 +1,71 @@
+//! **************************************************************************
+// Written by: Map P.20131013 on Thu Jan 12 12:34:06 2017
+//! **************************************************************************
+
+SCHEMATIC START;
+COMP "clk" LOCATE = SITE "T8" LEVEL 1;
+COMP "key1" LOCATE = SITE "C3" LEVEL 1;
+COMP "dadata<0>" LOCATE = SITE "A10" LEVEL 1;
+COMP "dadata<1>" LOCATE = SITE "A9" LEVEL 1;
+COMP "dadata<2>" LOCATE = SITE "C8" LEVEL 1;
+COMP "dadata<3>" LOCATE = SITE "A8" LEVEL 1;
+COMP "dadata<4>" LOCATE = SITE "B8" LEVEL 1;
+COMP "dadata<5>" LOCATE = SITE "A7" LEVEL 1;
+COMP "dadata<6>" LOCATE = SITE "A6" LEVEL 1;
+COMP "dadata<7>" LOCATE = SITE "B6" LEVEL 1;
+COMP "da_clk" LOCATE = SITE "A5" LEVEL 1;
+PIN sin_cos_inst/blk000000d1_pins<20> = BEL "sin_cos_inst/blk000000d1" PINNAME
+        CLKAWRCLK;
+PIN sin_cos_inst/blk000000d1_pins<21> = BEL "sin_cos_inst/blk000000d1" PINNAME
+        CLKBRDCLK;
+TIMEGRP sys_clk_pin = BEL "dds_we_req" BEL "dds_we" BEL "dds_data_0" BEL
+        "dds_data_1" BEL "dds_data_2" BEL "dds_data_3" BEL "dds_data_4" BEL
+        "dds_data_5" BEL "dds_data_6" BEL "dds_data_7" BEL "dds_data_8" BEL
+        "dds_data_9" BEL "dds_data_10" BEL "dds_data_11" BEL "dds_data_12" BEL
+        "dds_data_13" BEL "dds_data_14" BEL "dds_data_15" BEL "dds_data_16"
+        BEL "dds_data_17" BEL "dds_data_18" BEL "dds_data_19" BEL
+        "dds_data_20" BEL "dds_data_21" BEL "dds_data_22" BEL "dds_data_23"
+        BEL "dds_data_24" BEL "dds_data_25" BEL "dds_data_26" BEL "dadata_o_0"
+        BEL "dadata_o_1" BEL "dadata_o_2" BEL "dadata_o_3" BEL "dadata_o_4"
+        BEL "dadata_o_5" BEL "dadata_o_6" BEL "dadata_o_7" BEL "dds_freq_0"
+        BEL "dds_freq_1" BEL "dds_freq_2" BEL "dds_freq_3" BEL
+        "key1_counter_0" BEL "key1_counter_1" BEL "key1_counter_2" BEL
+        "key1_counter_3" BEL "key1_counter_4" BEL "key1_counter_5" BEL
+        "key1_counter_6" BEL "key1_counter_7" BEL "key1_counter_8" BEL
+        "key1_counter_9" BEL "key1_counter_10" BEL "key1_counter_11" BEL
+        "key1_counter_12" BEL "key1_counter_13" BEL "key1_counter_14" BEL
+        "key1_counter_15" BEL "dds_freq_0_1" BEL "dds_freq_1_1" BEL
+        "dds_freq_2_1" BEL "dds_freq_0_2" BEL "dds_freq_3_1" BEL
+        "da_clk_OBUF_BUFG" BEL "sin_cos_inst/blk00000005" BEL
+        "sin_cos_inst/blk00000006" BEL "sin_cos_inst/blk00000007" BEL
+        "sin_cos_inst/blk00000008" BEL "sin_cos_inst/blk00000009" BEL
+        "sin_cos_inst/blk0000000a" BEL "sin_cos_inst/blk0000000b" BEL
+        "sin_cos_inst/blk0000000c" BEL "sin_cos_inst/blk0000000d" BEL
+        "sin_cos_inst/blk0000000e" BEL "sin_cos_inst/blk0000000f" BEL
+        "sin_cos_inst/blk00000010" BEL "sin_cos_inst/blk00000011" BEL
+        "sin_cos_inst/blk00000012" BEL "sin_cos_inst/blk00000013" BEL
+        "sin_cos_inst/blk00000014" BEL "sin_cos_inst/blk00000015" BEL
+        "sin_cos_inst/blk00000016" BEL "sin_cos_inst/blk00000017" BEL
+        "sin_cos_inst/blk00000018" BEL "sin_cos_inst/blk00000019" BEL
+        "sin_cos_inst/blk0000001a" BEL "sin_cos_inst/blk0000001b" BEL
+        "sin_cos_inst/blk0000001c" BEL "sin_cos_inst/blk0000001d" BEL
+        "sin_cos_inst/blk0000001e" BEL "sin_cos_inst/blk0000001f" BEL
+        "sin_cos_inst/blk00000021" BEL "sin_cos_inst/blk00000022" BEL
+        "sin_cos_inst/blk00000023" BEL "sin_cos_inst/blk00000024" BEL
+        "sin_cos_inst/blk00000025" BEL "sin_cos_inst/blk00000026" BEL
+        "sin_cos_inst/blk00000027" BEL "sin_cos_inst/blk00000028" BEL
+        "sin_cos_inst/blk00000029" BEL "sin_cos_inst/blk0000002a" BEL
+        "sin_cos_inst/blk0000002b" BEL "sin_cos_inst/blk0000002c" BEL
+        "sin_cos_inst/blk0000002d" BEL "sin_cos_inst/blk0000002e" BEL
+        "sin_cos_inst/blk0000002f" BEL "sin_cos_inst/blk00000030" BEL
+        "sin_cos_inst/blk00000031" BEL "sin_cos_inst/blk00000032" BEL
+        "sin_cos_inst/blk00000033" BEL "sin_cos_inst/blk00000034" BEL
+        "sin_cos_inst/blk00000035" BEL "sin_cos_inst/blk00000036" BEL
+        "sin_cos_inst/blk00000037" BEL "sin_cos_inst/blk00000038" BEL
+        "sin_cos_inst/blk00000039" BEL "sin_cos_inst/blk0000003a" BEL
+        "sin_cos_inst/blk0000003b" BEL "sin_cos_inst/blk0000003c" BEL
+        "sin_cos_inst/blk0000003d" PIN "sin_cos_inst/blk000000d1_pins<20>" PIN
+        "sin_cos_inst/blk000000d1_pins<21>" BEL "da_clk";
+TS_sys_clk_pin = PERIOD TIMEGRP "sys_clk_pin" 50 MHz HIGH 50%;
+SCHEMATIC END;
+

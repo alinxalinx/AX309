@@ -1,0 +1,155 @@
+
+****** PlanAhead v14.7 (64-bit)
+  **** Build 321239 by xbuild on Fri Sep 27 19:29:51 MDT 2013
+    ** Copyright 1986-1999, 2001-2013 Xilinx, Inc. All Rights Reserved.
+
+INFO: [Common 17-78] Attempting to get a license: PlanAhead
+INFO: [Common 17-290] Got license for PlanAhead
+INFO: [Device 21-36] Loading parts and site information from C:/Xilinx/14.7/ISE_DS/PlanAhead/data/parts/arch.xml
+Parsing RTL primitives file [C:/Xilinx/14.7/ISE_DS/PlanAhead/data/parts/xilinx/rtl/prims/rtl_prims.xml]
+Finished parsing RTL primitives file [C:/Xilinx/14.7/ISE_DS/PlanAhead/data/parts/xilinx/rtl/prims/rtl_prims.xml]
+start_gui
+source E:/Project/AX545/verilog/ad9226_test/pa.fromNetlist.tcl
+# create_project -name ad9226_test -dir "E:/Project/AX545/verilog/ad9226_test/planAhead_run_2" -part xc6slx45csg324-2
+# set_property design_mode GateLvl [get_property srcset [current_run -impl]]
+# set_property edif_top_file "E:/Project/AX545/verilog/ad9226_test/ad9226_test.ngc" [ get_property srcset [ current_run ] ]
+# add_files -norecurse { {E:/Project/AX545/verilog/ad9226_test} }
+# set_property target_constrs_file "ad9226_test.ucf" [current_fileset -constrset]
+Adding file 'E:/Project/AX545/verilog/ad9226_test/ad9226_test.ucf' to fileset 'constrs_1'
+# add_files [list {ad9226_test.ucf}] -fileset [get_property constrset [current_run]]
+# link_design
+Design is defaulting to srcset: sources_1
+Design is defaulting to constrset: constrs_1
+Design is defaulting to project part: xc6slx45csg324-2
+Release 14.7 - ngc2edif P.20131013 (nt64)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+Reading design ad9226_test.ngc ...
+WARNING:NetListWriters:298 - No output is written to ad9226_test.xncf, ignored.
+Processing design ...
+   Preping design's networks ...
+   Preping design's macros ...
+  finished :Prep
+Writing EDIF netlist file ad9226_test.edif ...
+ngc2edif: Total memory usage is 82156 kilobytes
+
+Parsing EDIF File [./planAhead_run_2/ad9226_test.data/cache/ad9226_test_ngc_zx.edif]
+Finished Parsing EDIF File [./planAhead_run_2/ad9226_test.data/cache/ad9226_test_ngc_zx.edif]
+Release 14.7 - ngc2edif P.20131013 (nt64)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+Reading design chipscope_ila.ngc ...
+WARNING:NetListWriters:298 - No output is written to chipscope_ila.xncf,
+   ignored.
+Processing design ...
+   Preping design's networks ...
+   Preping design's macros ...
+WARNING:NetListWriters:306 - Signal bus
+   U0/I_NO_D.U_ILA/U_RST/U_HALT_XFER/iDOUT_dly<2 : 0> on block chipscope_ila is
+   not reconstructed, because there are some missing bus signals.
+WARNING:NetListWriters:306 - Signal bus
+   U0/I_NO_D.U_ILA/U_RST/U_ARM_XFER/iDOUT_dly<4 : 0> on block chipscope_ila is
+   not reconstructed, because there are some missing bus signals.
+  finished :Prep
+Writing EDIF netlist file chipscope_ila.edif ...
+ngc2edif: Total memory usage is 86572 kilobytes
+
+Reading core file 'E:/Project/AX545/verilog/ad9226_test/chipscope_ila.ngc' for (cell view 'chipscope_ila', library 'ad9226_test_lib', file 'ad9226_test.ngc')
+Parsing EDIF File [./planAhead_run_2/ad9226_test.data/cache/chipscope_ila_ngc_zx.edif]
+Finished Parsing EDIF File [./planAhead_run_2/ad9226_test.data/cache/chipscope_ila_ngc_zx.edif]
+Release 14.7 - ngc2edif P.20131013 (nt64)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+Reading design chipscope_icon.ngc ...
+WARNING:NetListWriters:298 - No output is written to chipscope_icon.xncf,
+   ignored.
+Processing design ...
+   Preping design's networks ...
+   Preping design's macros ...
+WARNING:NetListWriters:306 - Signal bus U0/U_ICON/iCORE_ID_SEL<15 : 0> on block
+   chipscope_icon is not reconstructed, because there are some missing bus
+   signals.
+  finished :Prep
+Writing EDIF netlist file chipscope_icon.edif ...
+ngc2edif: Total memory usage is 81644 kilobytes
+
+Reading core file 'E:/Project/AX545/verilog/ad9226_test/chipscope_icon.ngc' for (cell view 'chipscope_icon', library 'ad9226_test_lib', file 'ad9226_test.ngc')
+Parsing EDIF File [./planAhead_run_2/ad9226_test.data/cache/chipscope_icon_ngc_zx.edif]
+Finished Parsing EDIF File [./planAhead_run_2/ad9226_test.data/cache/chipscope_icon_ngc_zx.edif]
+INFO: [Netlist 29-17] Analyzing 1 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+WARNING: [Netlist 29-43] Netlist 'ad9226_test' is not ideal for floorplanning, since the cellview 'chipscope_ila' defined in file 'chipscope_ila.ngc' contains large number of primitives.  Please consider enabling hierarchy in synthesis if you want to do floorplanning.
+Loading clock regions from C:/Xilinx/14.7/ISE_DS/PlanAhead/data\parts/xilinx/spartan6/spartan6lx/xc6slx45/ClockRegion.xml
+Loading clock buffers from C:/Xilinx/14.7/ISE_DS/PlanAhead/data\parts/xilinx/spartan6/spartan6lx/xc6slx45/ClockBuffers.xml
+Loading package pin functions from C:/Xilinx/14.7/ISE_DS/PlanAhead/data\parts/xilinx/spartan6/PinFunctions.xml...
+Loading package from C:/Xilinx/14.7/ISE_DS/PlanAhead/data\parts/xilinx/spartan6/spartan6lx/xc6slx45/csg324/Package.xml
+Loading io standards from C:/Xilinx/14.7/ISE_DS/PlanAhead/data\./parts/xilinx/spartan6/IOStandards.xml
+Loading device configuration modes from C:/Xilinx/14.7/ISE_DS/PlanAhead/data\parts/xilinx/spartan6/ConfigModes.xml
+Loading list of drcs for the architecture : C:/Xilinx/14.7/ISE_DS/PlanAhead/data\./parts/xilinx/spartan6/drc.xml
+WARNING: [Timing 38-83] Timing library cell SRLC32E does not define port A[4] which is referred to in the netlist. The library cell will be ignored and the cell will be treated as a black box for timing purposes.
+WARNING: [Timing 38-83] Timing library cell SRLC32E does not define port A[3] which is referred to in the netlist. The library cell will be ignored and the cell will be treated as a black box for timing purposes.
+WARNING: [Timing 38-83] Timing library cell SRLC32E does not define port A[2] which is referred to in the netlist. The library cell will be ignored and the cell will be treated as a black box for timing purposes.
+WARNING: [Timing 38-83] Timing library cell SRLC32E does not define port A[1] which is referred to in the netlist. The library cell will be ignored and the cell will be treated as a black box for timing purposes.
+WARNING: [Timing 38-83] Timing library cell SRLC32E does not define port A[0] which is referred to in the netlist. The library cell will be ignored and the cell will be treated as a black box for timing purposes.
+Parsing UCF File [E:/Project/AX545/verilog/ad9226_test/ad9226_test.ucf]
+CRITICAL WARNING: [Constraints 18-11] Could not find net or pin 'clk' [E:/Project/AX545/verilog/ad9226_test/ad9226_test.ucf:1]
+CRITICAL WARNING: [Constraints 18-11] Could not find net or pin 'clk' [E:/Project/AX545/verilog/ad9226_test/ad9226_test.ucf:1]
+CRITICAL WARNING: [Constraints 18-11] Could not find net 'clk' [E:/Project/AX545/verilog/ad9226_test/ad9226_test.ucf:2]
+CRITICAL WARNING: [Constraints 18-11] Could not find net or pin 'rst_n' [E:/Project/AX545/verilog/ad9226_test/ad9226_test.ucf:5]
+CRITICAL WARNING: [Constraints 18-11] Could not find net or pin 'rst_n' [E:/Project/AX545/verilog/ad9226_test/ad9226_test.ucf:5]
+CRITICAL WARNING: [Constraints 18-11] Could not find net or pin 'ad_data<0>' [E:/Project/AX545/verilog/ad9226_test/ad9226_test.ucf:9]
+CRITICAL WARNING: [Constraints 18-11] Could not find net or pin 'ad_data<0>' [E:/Project/AX545/verilog/ad9226_test/ad9226_test.ucf:9]
+CRITICAL WARNING: [Constraints 18-11] Could not find net or pin 'ad_data<1>' [E:/Project/AX545/verilog/ad9226_test/ad9226_test.ucf:10]
+CRITICAL WARNING: [Constraints 18-11] Could not find net or pin 'ad_data<1>' [E:/Project/AX545/verilog/ad9226_test/ad9226_test.ucf:10]
+CRITICAL WARNING: [Constraints 18-11] Could not find net or pin 'ad_data<2>' [E:/Project/AX545/verilog/ad9226_test/ad9226_test.ucf:11]
+CRITICAL WARNING: [Constraints 18-11] Could not find net or pin 'ad_data<2>' [E:/Project/AX545/verilog/ad9226_test/ad9226_test.ucf:11]
+CRITICAL WARNING: [Constraints 18-11] Could not find net or pin 'ad_data<3>' [E:/Project/AX545/verilog/ad9226_test/ad9226_test.ucf:12]
+CRITICAL WARNING: [Constraints 18-11] Could not find net or pin 'ad_data<3>' [E:/Project/AX545/verilog/ad9226_test/ad9226_test.ucf:12]
+CRITICAL WARNING: [Constraints 18-11] Could not find net or pin 'ad_data<4>' [E:/Project/AX545/verilog/ad9226_test/ad9226_test.ucf:13]
+CRITICAL WARNING: [Constraints 18-11] Could not find net or pin 'ad_data<4>' [E:/Project/AX545/verilog/ad9226_test/ad9226_test.ucf:13]
+CRITICAL WARNING: [Constraints 18-11] Could not find net or pin 'ad_data<5>' [E:/Project/AX545/verilog/ad9226_test/ad9226_test.ucf:14]
+CRITICAL WARNING: [Constraints 18-11] Could not find net or pin 'ad_data<5>' [E:/Project/AX545/verilog/ad9226_test/ad9226_test.ucf:14]
+CRITICAL WARNING: [Constraints 18-11] Could not find net or pin 'ad_data<6>' [E:/Project/AX545/verilog/ad9226_test/ad9226_test.ucf:15]
+CRITICAL WARNING: [Constraints 18-11] Could not find net or pin 'ad_data<6>' [E:/Project/AX545/verilog/ad9226_test/ad9226_test.ucf:15]
+CRITICAL WARNING: [Constraints 18-11] Could not find net or pin 'ad_data<7>' [E:/Project/AX545/verilog/ad9226_test/ad9226_test.ucf:16]
+CRITICAL WARNING: [Constraints 18-11] Could not find net or pin 'ad_data<7>' [E:/Project/AX545/verilog/ad9226_test/ad9226_test.ucf:16]
+CRITICAL WARNING: [Constraints 18-11] Could not find net or pin 'ad_data<8>' [E:/Project/AX545/verilog/ad9226_test/ad9226_test.ucf:17]
+CRITICAL WARNING: [Constraints 18-11] Could not find net or pin 'ad_data<8>' [E:/Project/AX545/verilog/ad9226_test/ad9226_test.ucf:17]
+CRITICAL WARNING: [Constraints 18-11] Could not find net or pin 'ad_data<9>' [E:/Project/AX545/verilog/ad9226_test/ad9226_test.ucf:18]
+CRITICAL WARNING: [Constraints 18-11] Could not find net or pin 'ad_data<9>' [E:/Project/AX545/verilog/ad9226_test/ad9226_test.ucf:18]
+CRITICAL WARNING: [Constraints 18-11] Could not find net or pin 'ad_data<10>' [E:/Project/AX545/verilog/ad9226_test/ad9226_test.ucf:19]
+CRITICAL WARNING: [Constraints 18-11] Could not find net or pin 'ad_data<10>' [E:/Project/AX545/verilog/ad9226_test/ad9226_test.ucf:19]
+CRITICAL WARNING: [Constraints 18-11] Could not find net or pin 'ad_data<11>' [E:/Project/AX545/verilog/ad9226_test/ad9226_test.ucf:20]
+CRITICAL WARNING: [Constraints 18-11] Could not find net or pin 'ad_data<11>' [E:/Project/AX545/verilog/ad9226_test/ad9226_test.ucf:20]
+CRITICAL WARNING: [Constraints 18-11] Could not find net or pin 'ad_data<12>' [E:/Project/AX545/verilog/ad9226_test/ad9226_test.ucf:21]
+CRITICAL WARNING: [Constraints 18-11] Could not find net or pin 'ad_data<12>' [E:/Project/AX545/verilog/ad9226_test/ad9226_test.ucf:21]
+CRITICAL WARNING: [Constraints 18-11] Could not find net or pin 'ad_data<13>' [E:/Project/AX545/verilog/ad9226_test/ad9226_test.ucf:22]
+CRITICAL WARNING: [Constraints 18-11] Could not find net or pin 'ad_data<13>' [E:/Project/AX545/verilog/ad9226_test/ad9226_test.ucf:22]
+CRITICAL WARNING: [Constraints 18-11] Could not find net or pin 'ad_data<14>' [E:/Project/AX545/verilog/ad9226_test/ad9226_test.ucf:23]
+CRITICAL WARNING: [Constraints 18-11] Could not find net or pin 'ad_data<14>' [E:/Project/AX545/verilog/ad9226_test/ad9226_test.ucf:23]
+CRITICAL WARNING: [Constraints 18-11] Could not find net or pin 'ad_data<15>' [E:/Project/AX545/verilog/ad9226_test/ad9226_test.ucf:24]
+CRITICAL WARNING: [Constraints 18-11] Could not find net or pin 'ad_data<15>' [E:/Project/AX545/verilog/ad9226_test/ad9226_test.ucf:24]
+CRITICAL WARNING: [Constraints 18-11] Could not find net or pin 'ad_busy' [E:/Project/AX545/verilog/ad9226_test/ad9226_test.ucf:27]
+CRITICAL WARNING: [Constraints 18-11] Could not find net or pin 'ad_busy' [E:/Project/AX545/verilog/ad9226_test/ad9226_test.ucf:27]
+CRITICAL WARNING: [Constraints 18-11] Could not find net or pin 'first_data' [E:/Project/AX545/verilog/ad9226_test/ad9226_test.ucf:28]
+CRITICAL WARNING: [Constraints 18-11] Could not find net or pin 'first_data' [E:/Project/AX545/verilog/ad9226_test/ad9226_test.ucf:28]
+CRITICAL WARNING: [Constraints 18-11] Could not find net or pin 'ad_os<0>' [E:/Project/AX545/verilog/ad9226_test/ad9226_test.ucf:30]
+CRITICAL WARNING: [Constraints 18-11] Could not find net or pin 'ad_os<0>' [E:/Project/AX545/verilog/ad9226_test/ad9226_test.ucf:30]
+CRITICAL WARNING: [Constraints 18-11] Could not find net or pin 'ad_os<1>' [E:/Project/AX545/verilog/ad9226_test/ad9226_test.ucf:31]
+CRITICAL WARNING: [Constraints 18-11] Could not find net or pin 'ad_os<1>' [E:/Project/AX545/verilog/ad9226_test/ad9226_test.ucf:31]
+CRITICAL WARNING: [Constraints 18-11] Could not find net or pin 'ad_os<2>' [E:/Project/AX545/verilog/ad9226_test/ad9226_test.ucf:32]
+CRITICAL WARNING: [Constraints 18-11] Could not find net or pin 'ad_os<2>' [E:/Project/AX545/verilog/ad9226_test/ad9226_test.ucf:32]
+CRITICAL WARNING: [Constraints 18-11] Could not find net or pin 'ad_cs' [E:/Project/AX545/verilog/ad9226_test/ad9226_test.ucf:34]
+CRITICAL WARNING: [Constraints 18-11] Could not find net or pin 'ad_cs' [E:/Project/AX545/verilog/ad9226_test/ad9226_test.ucf:34]
+CRITICAL WARNING: [Constraints 18-11] Could not find net or pin 'ad_rd' [E:/Project/AX545/verilog/ad9226_test/ad9226_test.ucf:36]
+INFO: [Common 17-14] Message 'Constraints 18-11' appears 50 times and further instances of the messages will be disabled. Use the Tcl command set_msg_limit to change the current settings.
+Finished Parsing UCF File [E:/Project/AX545/verilog/ad9226_test/ad9226_test.ucf]
+CRITICAL WARNING: [Constraints 18-329] No definition for group 'sys_clk', timing constraint is ignored [E:/Project/AX545/verilog/ad9226_test/ad9226_test.ucf:3]
+INFO: [Designutils 20-20] Invalid constraints found, use command 'write_ucf -constraints invalid <file>' to save all the invalid constraints to a file
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 1 instances were transformed.
+  BUFGP => BUFGP (IBUF, BUFG): 1 instances
+
+Phase 0 | Netlist Checksum: edad64e3
+link_design: Time (s): elapsed = 00:00:14 . Memory (MB): peak = 646.379 ; gain = 189.629
+exit
+ERROR: [Common 17-39] 'stop_gui' failed due to earlier errors.
+INFO: [Common 17-206] Exiting PlanAhead at Thu May 07 17:17:56 2015...
+INFO: [Common 17-83] Releasing license: PlanAhead

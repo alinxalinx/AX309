@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- IMPORTANT: This is an internal file that has been generated   -->
+<!--     by the Xilinx ISE software.  Any direct editing or        -->
+<!--     changes made to this file may result in unpredictable     -->
+<!--     behavior or data corruption.  It is strongly advised that -->
+<!--     users do not edit the contents of this file.              -->
+<!--                                                               -->
+<!-- Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.    -->
+
+<messages>
+<msg type="info" file="ProjectMgmt" num="1845" ><arg fmt="%s" index="1">Analyzing Verilog file &quot;E:/BaiduYunDownload/AX309.170411/AX309.161219/AX309/09_VERILOG/29_ad9226_test/chipscope_icon.v&quot; into library work</arg>
+</msg>
+
+<msg type="info" file="ProjectMgmt" num="1845" ><arg fmt="%s" index="1">Analyzing Verilog file &quot;E:/BaiduYunDownload/AX309.170411/AX309.161219/AX309/09_VERILOG/29_ad9226_test/chipscope_ila.v&quot; into library work</arg>
+</msg>
+
+<msg type="info" file="ProjectMgmt" num="1845" ><arg fmt="%s" index="1">Analyzing Verilog file &quot;E:/BaiduYunDownload/AX309.170411/AX309.161219/AX309/09_VERILOG/29_ad9226_test/rtl/ad.v&quot; into library work</arg>
+</msg>
+
+<msg type="info" file="ProjectMgmt" num="1845" ><arg fmt="%s" index="1">Analyzing Verilog file &quot;E:/BaiduYunDownload/AX309.170411/AX309.161219/AX309/09_VERILOG/29_ad9226_test/rtl/ad9226_test.v&quot; into library work</arg>
+</msg>
+
+<msg type="info" file="ProjectMgmt" num="1845" ><arg fmt="%s" index="1">Analyzing Verilog file &quot;E:/BaiduYunDownload/AX309.170411/AX309.161219/AX309/09_VERILOG/29_ad9226_test/rtl/bcd.v&quot; into library work</arg>
+</msg>
+
+<msg type="info" file="ProjectMgmt" num="1845" ><arg fmt="%s" index="1">Analyzing Verilog file &quot;E:/BaiduYunDownload/AX309.170411/AX309.161219/AX309/09_VERILOG/29_ad9226_test/rtl/clkdiv.v&quot; into library work</arg>
+</msg>
+
+<msg type="info" file="ProjectMgmt" num="1845" ><arg fmt="%s" index="1">Analyzing Verilog file &quot;E:/BaiduYunDownload/AX309.170411/AX309.161219/AX309/09_VERILOG/29_ad9226_test/rtl/uart.v&quot; into library work</arg>
+</msg>
+
+<msg type="info" file="ProjectMgmt" num="1845" ><arg fmt="%s" index="1">Analyzing Verilog file &quot;E:/BaiduYunDownload/AX309.170411/AX309.161219/AX309/09_VERILOG/29_ad9226_test/rtl/uarttx.v&quot; into library work</arg>
+</msg>
+
+<msg type="info" file="ProjectMgmt" num="1845" ><arg fmt="%s" index="1">Analyzing Verilog file &quot;E:/BaiduYunDownload/AX309.170411/AX309.161219/AX309/09_VERILOG/29_ad9226_test/rtl/volt_cal.v&quot; into library work</arg>
+</msg>
+
+</messages>
+

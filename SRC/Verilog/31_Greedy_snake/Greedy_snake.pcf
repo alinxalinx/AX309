@@ -1,0 +1,325 @@
+//! **************************************************************************
+// Written by: Map P.20131013 on Tue Dec 22 18:43:04 2015
+//! **************************************************************************
+
+SCHEMATIC START;
+COMP "Up" LOCATE = SITE "E4" LEVEL 1;
+COMP "Clk" LOCATE = SITE "T8" LEVEL 1;
+COMP "Left" LOCATE = SITE "C3" LEVEL 1;
+COMP "Down" LOCATE = SITE "E3" LEVEL 1;
+COMP "VGA_green_o<0>" LOCATE = SITE "M9" LEVEL 1;
+COMP "VGA_green_o<1>" LOCATE = SITE "N9" LEVEL 1;
+COMP "VGA_green_o<2>" LOCATE = SITE "P9" LEVEL 1;
+COMP "VGA_green_o<3>" LOCATE = SITE "L10" LEVEL 1;
+COMP "VGA_green_o<4>" LOCATE = SITE "M10" LEVEL 1;
+COMP "VGA_green_o<5>" LOCATE = SITE "P11" LEVEL 1;
+COMP "Right" LOCATE = SITE "D3" LEVEL 1;
+COMP "Rst_n" LOCATE = SITE "L3" LEVEL 1;
+COMP "VGA_red_o<0>" LOCATE = SITE "M11" LEVEL 1;
+COMP "VGA_red_o<1>" LOCATE = SITE "M12" LEVEL 1;
+COMP "VGA_red_o<2>" LOCATE = SITE "L12" LEVEL 1;
+COMP "VGA_red_o<3>" LOCATE = SITE "N14" LEVEL 1;
+COMP "VGA_red_o<4>" LOCATE = SITE "M13" LEVEL 1;
+COMP "VSYNC_Sig_out" LOCATE = SITE "L13" LEVEL 1;
+COMP "VGA_blue_o<0>" LOCATE = SITE "P7" LEVEL 1;
+COMP "VGA_blue_o<1>" LOCATE = SITE "M7" LEVEL 1;
+COMP "VGA_blue_o<2>" LOCATE = SITE "P8" LEVEL 1;
+COMP "VGA_blue_o<3>" LOCATE = SITE "N8" LEVEL 1;
+COMP "VGA_blue_o<4>" LOCATE = SITE "L7" LEVEL 1;
+COMP "HSYNC_Sig_out" LOCATE = SITE "M14" LEVEL 1;
+PIN U1/clkout2_buf_pin<1> = BEL "U1/clkout2_buf" PINNAME O;
+PIN "U1/clkout2_buf_pin<1>" CLOCK_DEDICATED_ROUTE = FALSE;
+PIN
+        U8/start_top/U4/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/s6_init.ram/SP.WIDE_PRIM18.ram_pins<28>
+        = BEL
+        "U8/start_top/U4/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/s6_init.ram/SP.WIDE_PRIM18.ram"
+        PINNAME CLKA;
+PIN
+        U8/start_top/U4/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/s6_init.ram/SP.WIDE_PRIM18.ram_pins<29>
+        = BEL
+        "U8/start_top/U4/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/s6_init.ram/SP.WIDE_PRIM18.ram"
+        PINNAME CLKB;
+PIN
+        U8/start_top/U4/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[1].ram.r/s6_init.ram/SP.WIDE_PRIM18.ram_pins<28>
+        = BEL
+        "U8/start_top/U4/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[1].ram.r/s6_init.ram/SP.WIDE_PRIM18.ram"
+        PINNAME CLKA;
+PIN
+        U8/start_top/U4/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[1].ram.r/s6_init.ram/SP.WIDE_PRIM18.ram_pins<29>
+        = BEL
+        "U8/start_top/U4/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[1].ram.r/s6_init.ram/SP.WIDE_PRIM18.ram"
+        PINNAME CLKB;
+PIN
+        U8/start_top/U4/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[2].ram.r/s6_init.ram/SP.WIDE_PRIM18.ram_pins<28>
+        = BEL
+        "U8/start_top/U4/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[2].ram.r/s6_init.ram/SP.WIDE_PRIM18.ram"
+        PINNAME CLKA;
+PIN
+        U8/start_top/U4/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[2].ram.r/s6_init.ram/SP.WIDE_PRIM18.ram_pins<29>
+        = BEL
+        "U8/start_top/U4/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[2].ram.r/s6_init.ram/SP.WIDE_PRIM18.ram"
+        PINNAME CLKB;
+PIN
+        U8/start_top/U4/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[3].ram.r/s6_init.ram/SP.WIDE_PRIM18.ram_pins<28>
+        = BEL
+        "U8/start_top/U4/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[3].ram.r/s6_init.ram/SP.WIDE_PRIM18.ram"
+        PINNAME CLKA;
+PIN
+        U8/start_top/U4/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[3].ram.r/s6_init.ram/SP.WIDE_PRIM18.ram_pins<29>
+        = BEL
+        "U8/start_top/U4/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[3].ram.r/s6_init.ram/SP.WIDE_PRIM18.ram"
+        PINNAME CLKB;
+PIN
+        U8/end_top/U4/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/s6_init.ram/SP.WIDE_PRIM18.ram_pins<28>
+        = BEL
+        "U8/end_top/U4/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/s6_init.ram/SP.WIDE_PRIM18.ram"
+        PINNAME CLKA;
+PIN
+        U8/end_top/U4/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/s6_init.ram/SP.WIDE_PRIM18.ram_pins<29>
+        = BEL
+        "U8/end_top/U4/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/s6_init.ram/SP.WIDE_PRIM18.ram"
+        PINNAME CLKB;
+PIN
+        U8/end_top/U4/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[1].ram.r/s6_init.ram/SP.WIDE_PRIM18.ram_pins<28>
+        = BEL
+        "U8/end_top/U4/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[1].ram.r/s6_init.ram/SP.WIDE_PRIM18.ram"
+        PINNAME CLKA;
+PIN
+        U8/end_top/U4/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[1].ram.r/s6_init.ram/SP.WIDE_PRIM18.ram_pins<29>
+        = BEL
+        "U8/end_top/U4/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[1].ram.r/s6_init.ram/SP.WIDE_PRIM18.ram"
+        PINNAME CLKB;
+PIN
+        U8/end_top/U4/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[2].ram.r/s6_init.ram/SP.WIDE_PRIM18.ram_pins<28>
+        = BEL
+        "U8/end_top/U4/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[2].ram.r/s6_init.ram/SP.WIDE_PRIM18.ram"
+        PINNAME CLKA;
+PIN
+        U8/end_top/U4/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[2].ram.r/s6_init.ram/SP.WIDE_PRIM18.ram_pins<29>
+        = BEL
+        "U8/end_top/U4/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[2].ram.r/s6_init.ram/SP.WIDE_PRIM18.ram"
+        PINNAME CLKB;
+PIN
+        U8/end_top/U4/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[3].ram.r/s6_init.ram/SP.WIDE_PRIM18.ram_pins<28>
+        = BEL
+        "U8/end_top/U4/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[3].ram.r/s6_init.ram/SP.WIDE_PRIM18.ram"
+        PINNAME CLKA;
+PIN
+        U8/end_top/U4/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[3].ram.r/s6_init.ram/SP.WIDE_PRIM18.ram_pins<29>
+        = BEL
+        "U8/end_top/U4/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[3].ram.r/s6_init.ram/SP.WIDE_PRIM18.ram"
+        PINNAME CLKB;
+TIMEGRP U1_clkdv = BEL "U8/start_top/U2/rColumn_add_8" BEL
+        "U8/start_top/U2/rColumn_add_7" BEL "U8/start_top/U2/rColumn_add_6"
+        BEL "U8/start_top/U2/rColumn_add_5" BEL
+        "U8/start_top/U2/rColumn_add_4" BEL "U8/start_top/U2/rColumn_add_3"
+        BEL "U8/start_top/U2/rColumn_add_2" BEL
+        "U8/start_top/U2/rColumn_add_1" BEL "U8/start_top/U2/rColumn_add_0"
+        BEL "U8/start_top/U2/rRow_add_8" BEL "U8/start_top/U2/rRow_add_7" BEL
+        "U8/start_top/U2/rRow_add_6" BEL "U8/start_top/U2/rRow_add_5" BEL
+        "U8/start_top/U2/rRow_add_4" BEL "U8/start_top/U2/rRow_add_3" BEL
+        "U8/start_top/U2/rRow_add_2" BEL "U8/start_top/U2/rRow_add_1" BEL
+        "U8/start_top/U2/rRow_add_0" BEL "U8/start_top/U2/rHsync_sig" BEL
+        "U8/start_top/U2/rVsync_sig" BEL "U8/start_top/U2/rReady_sig" BEL
+        "U8/start_top/U2/Count_vsync_0" BEL "U8/start_top/U2/Count_vsync_1"
+        BEL "U8/start_top/U2/Count_vsync_2" BEL
+        "U8/start_top/U2/Count_vsync_3" BEL "U8/start_top/U2/Count_vsync_4"
+        BEL "U8/start_top/U2/Count_vsync_5" BEL
+        "U8/start_top/U2/Count_vsync_6" BEL "U8/start_top/U2/Count_vsync_7"
+        BEL "U8/start_top/U2/Count_vsync_8" BEL
+        "U8/start_top/U2/Count_vsync_9" BEL "U8/start_top/U2/Count_vsync_10"
+        BEL "U8/start_top/U2/Count_hsync_0" BEL
+        "U8/start_top/U2/Count_hsync_1" BEL "U8/start_top/U2/Count_hsync_2"
+        BEL "U8/start_top/U2/Count_hsync_3" BEL
+        "U8/start_top/U2/Count_hsync_4" BEL "U8/start_top/U2/Count_hsync_5"
+        BEL "U8/start_top/U2/Count_hsync_6" BEL
+        "U8/start_top/U2/Count_hsync_7" BEL "U8/start_top/U2/Count_hsync_8"
+        BEL "U8/start_top/U2/Count_hsync_9" BEL "U1/clkout2_buf" BEL
+        "U5/Pixel_y_9" BEL "U5/Pixel_y_8" BEL "U5/Pixel_y_7" BEL
+        "U5/Pixel_y_6" BEL "U5/Pixel_y_5" BEL "U5/Pixel_y_4" BEL
+        "U5/Pixel_y_3" BEL "U5/Pixel_y_2" BEL "U5/Pixel_y_1" BEL
+        "U5/Pixel_y_0" BEL "U5/Pixel_x_9" BEL "U5/Pixel_x_8" BEL
+        "U5/Pixel_x_7" BEL "U5/Pixel_x_6" BEL "U5/Pixel_x_5" BEL
+        "U5/Pixel_x_4" BEL "U5/Pixel_x_3" BEL "U5/Pixel_x_2" BEL
+        "U5/Pixel_x_1" BEL "U5/Pixel_x_0" BEL "U5/Column_count_9" BEL
+        "U5/Column_count_8" BEL "U5/Column_count_7" BEL "U5/Column_count_6"
+        BEL "U5/Column_count_5" BEL "U5/Column_count_4" BEL
+        "U5/Column_count_3" BEL "U5/Column_count_2" BEL "U5/Column_count_1"
+        BEL "U5/Column_count_0" BEL "U5/Row_count_9" BEL "U5/Row_count_8" BEL
+        "U5/Row_count_7" BEL "U5/Row_count_6" BEL "U5/Row_count_5" BEL
+        "U5/Row_count_4" BEL "U5/Row_count_3" BEL "U5/Row_count_2" BEL
+        "U5/Row_count_1" BEL "U5/Row_count_0" BEL "U5/Vga_rgb_2" BEL
+        "U5/Vga_rgb_1" BEL "U5/Vga_rgb_0" BEL "U5/Hsync_sig" BEL
+        "U5/Vsync_sig" BEL "U8/start_top/U3/m_7" BEL "U8/start_top/U3/m_6" BEL
+        "U8/start_top/U3/m_5" BEL "U8/start_top/U3/m_4" BEL
+        "U8/start_top/U3/m_3" BEL "U8/start_top/U3/m_2" BEL
+        "U8/start_top/U3/m_1" BEL "U8/start_top/U3/m_0" BEL
+        "U8/start_top/U3/n_7" BEL "U8/start_top/U3/n_6" BEL
+        "U8/start_top/U3/n_5" BEL "U8/start_top/U3/n_4" BEL
+        "U8/start_top/U3/n_3" BEL "U8/start_top/U3/n_2" BEL
+        "U8/start_top/U3/n_1" BEL "U8/start_top/U3/n_0" PIN
+        "U8/start_top/U4/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/s6_init.ram/SP.WIDE_PRIM18.ram_pins<28>"
+        PIN
+        "U8/start_top/U4/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/s6_init.ram/SP.WIDE_PRIM18.ram_pins<29>"
+        PIN
+        "U8/start_top/U4/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[1].ram.r/s6_init.ram/SP.WIDE_PRIM18.ram_pins<28>"
+        PIN
+        "U8/start_top/U4/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[1].ram.r/s6_init.ram/SP.WIDE_PRIM18.ram_pins<29>"
+        PIN
+        "U8/start_top/U4/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[2].ram.r/s6_init.ram/SP.WIDE_PRIM18.ram_pins<28>"
+        PIN
+        "U8/start_top/U4/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[2].ram.r/s6_init.ram/SP.WIDE_PRIM18.ram_pins<29>"
+        PIN
+        "U8/start_top/U4/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[3].ram.r/s6_init.ram/SP.WIDE_PRIM18.ram_pins<28>"
+        PIN
+        "U8/start_top/U4/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[3].ram.r/s6_init.ram/SP.WIDE_PRIM18.ram_pins<29>"
+        PIN
+        "U8/end_top/U4/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/s6_init.ram/SP.WIDE_PRIM18.ram_pins<28>"
+        PIN
+        "U8/end_top/U4/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/s6_init.ram/SP.WIDE_PRIM18.ram_pins<29>"
+        PIN
+        "U8/end_top/U4/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[1].ram.r/s6_init.ram/SP.WIDE_PRIM18.ram_pins<28>"
+        PIN
+        "U8/end_top/U4/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[1].ram.r/s6_init.ram/SP.WIDE_PRIM18.ram_pins<29>"
+        PIN
+        "U8/end_top/U4/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[2].ram.r/s6_init.ram/SP.WIDE_PRIM18.ram_pins<28>"
+        PIN
+        "U8/end_top/U4/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[2].ram.r/s6_init.ram/SP.WIDE_PRIM18.ram_pins<29>"
+        PIN
+        "U8/end_top/U4/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[3].ram.r/s6_init.ram/SP.WIDE_PRIM18.ram_pins<28>"
+        PIN
+        "U8/end_top/U4/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[3].ram.r/s6_init.ram/SP.WIDE_PRIM18.ram_pins<29>"
+        BEL "vga_clk";
+PIN SP6_INS_BUFIO2FB_DCM_ML_BUFIO2FB_1_pins<1> = BEL
+        "SP6_INS_BUFIO2FB_DCM_ML_BUFIO2FB_1" PINNAME O;
+PIN U1/dcm_sp_inst_pins<2> = BEL "U1/dcm_sp_inst" PINNAME CLKFB;
+TIMEGRP U1_clk0 = BEL "U2/Game_status_FSM_FFd2" BEL "U2/Game_status_FSM_FFd1"
+        BEL "U3/Random_num_10" BEL "U3/Random_num_9" BEL "U3/Random_num_8" BEL
+        "U3/Random_num_7" BEL "U3/Random_num_6" BEL "U3/Random_num_5" BEL
+        "U3/Random_num_4" BEL "U3/Random_num_3" BEL "U3/Random_num_2" BEL
+        "U3/Random_num_1" BEL "U3/Random_num_0" BEL "U3/Count1_17" BEL
+        "U3/Count1_16" BEL "U3/Count1_15" BEL "U3/Count1_14" BEL
+        "U3/Count1_13" BEL "U3/Count1_12" BEL "U3/Count1_11" BEL
+        "U3/Count1_10" BEL "U3/Count1_9" BEL "U3/Count1_8" BEL "U3/Count1_7"
+        BEL "U3/Count1_6" BEL "U3/Count1_5" BEL "U3/Count1_4" BEL
+        "U3/Count1_3" BEL "U3/Count1_2" BEL "U3/Count1_1" BEL "U3/Count1_0"
+        BEL "U3/Apple_x_5" BEL "U3/Apple_x_4" BEL "U3/Apple_x_3" BEL
+        "U3/Apple_x_2" BEL "U3/Apple_x_1" BEL "U3/Apple_x_0" BEL
+        "U3/Apple_y_4" BEL "U3/Apple_y_3" BEL "U3/Apple_y_2" BEL
+        "U3/Apple_y_1" BEL "U3/Apple_y_0" BEL "U3/Body_add_sig" BEL
+        "U4/Body_num_6" BEL "U4/Body_num_5" BEL "U4/Body_num_4" BEL
+        "U4/Body_num_3" BEL "U4/Body_num_2" BEL "U4/Body_num_1" BEL
+        "U4/Count_23" BEL "U4/Count_22" BEL "U4/Count_21" BEL "U4/Count_20"
+        BEL "U4/Count_19" BEL "U4/Count_18" BEL "U4/Count_17" BEL
+        "U4/Count_16" BEL "U4/Count_15" BEL "U4/Count_14" BEL "U4/Count_13"
+        BEL "U4/Count_12" BEL "U4/Count_11" BEL "U4/Count_10" BEL "U4/Count_9"
+        BEL "U4/Count_8" BEL "U4/Count_7" BEL "U4/Count_6" BEL "U4/Count_5"
+        BEL "U4/Count_4" BEL "U4/Count_3" BEL "U4/Count_2" BEL "U4/Count_1"
+        BEL "U4/Count_0" BEL "U4/Body_num_0" BEL "U4/Direct_r_FSM_FFd1" BEL
+        "U4/Direct_r_FSM_FFd2" BEL "U4/Hit_wall_sig" BEL "U4/Body_x_0_95" BEL
+        "U4/Body_x_0_94" BEL "U4/Body_x_0_93" BEL "U4/Body_x_0_92" BEL
+        "U4/Body_x_0_91" BEL "U4/Body_x_0_90" BEL "U4/Body_x_0_89" BEL
+        "U4/Body_x_0_88" BEL "U4/Body_x_0_87" BEL "U4/Body_x_0_86" BEL
+        "U4/Body_x_0_85" BEL "U4/Body_x_0_84" BEL "U4/Body_x_0_83" BEL
+        "U4/Body_x_0_82" BEL "U4/Body_x_0_81" BEL "U4/Body_x_0_80" BEL
+        "U4/Body_x_0_79" BEL "U4/Body_x_0_78" BEL "U4/Body_x_0_77" BEL
+        "U4/Body_x_0_76" BEL "U4/Body_x_0_75" BEL "U4/Body_x_0_74" BEL
+        "U4/Body_x_0_73" BEL "U4/Body_x_0_72" BEL "U4/Body_x_0_71" BEL
+        "U4/Body_x_0_70" BEL "U4/Body_x_0_69" BEL "U4/Body_x_0_68" BEL
+        "U4/Body_x_0_67" BEL "U4/Body_x_0_66" BEL "U4/Body_x_0_65" BEL
+        "U4/Body_x_0_64" BEL "U4/Body_x_0_63" BEL "U4/Body_x_0_62" BEL
+        "U4/Body_x_0_61" BEL "U4/Body_x_0_60" BEL "U4/Body_x_0_59" BEL
+        "U4/Body_x_0_58" BEL "U4/Body_x_0_57" BEL "U4/Body_x_0_56" BEL
+        "U4/Body_x_0_55" BEL "U4/Body_x_0_54" BEL "U4/Body_x_0_53" BEL
+        "U4/Body_x_0_52" BEL "U4/Body_x_0_51" BEL "U4/Body_x_0_50" BEL
+        "U4/Body_x_0_49" BEL "U4/Body_x_0_48" BEL "U4/Body_x_0_47" BEL
+        "U4/Body_x_0_46" BEL "U4/Body_x_0_45" BEL "U4/Body_x_0_44" BEL
+        "U4/Body_x_0_43" BEL "U4/Body_x_0_42" BEL "U4/Body_x_0_41" BEL
+        "U4/Body_x_0_40" BEL "U4/Body_x_0_39" BEL "U4/Body_x_0_38" BEL
+        "U4/Body_x_0_37" BEL "U4/Body_x_0_36" BEL "U4/Body_x_0_35" BEL
+        "U4/Body_x_0_34" BEL "U4/Body_x_0_33" BEL "U4/Body_x_0_32" BEL
+        "U4/Body_x_0_31" BEL "U4/Body_x_0_30" BEL "U4/Body_x_0_29" BEL
+        "U4/Body_x_0_28" BEL "U4/Body_x_0_27" BEL "U4/Body_x_0_26" BEL
+        "U4/Body_x_0_25" BEL "U4/Body_x_0_24" BEL "U4/Body_x_0_23" BEL
+        "U4/Body_x_0_22" BEL "U4/Body_x_0_21" BEL "U4/Body_x_0_20" BEL
+        "U4/Body_x_0_19" BEL "U4/Body_x_0_18" BEL "U4/Body_x_0_17" BEL
+        "U4/Body_x_0_16" BEL "U4/Body_x_0_15" BEL "U4/Body_x_0_14" BEL
+        "U4/Body_x_0_13" BEL "U4/Body_x_0_12" BEL "U4/Body_x_0_11" BEL
+        "U4/Body_x_0_10" BEL "U4/Body_x_0_9" BEL "U4/Body_x_0_8" BEL
+        "U4/Body_x_0_7" BEL "U4/Body_x_0_6" BEL "U4/Body_x_0_5" BEL
+        "U4/Body_x_0_4" BEL "U4/Body_x_0_3" BEL "U4/Body_x_0_2" BEL
+        "U4/Body_x_0_1" BEL "U4/Body_x_0_0" BEL "U4/Body_y_0_94" BEL
+        "U4/Body_y_0_93" BEL "U4/Body_y_0_92" BEL "U4/Body_y_0_91" BEL
+        "U4/Body_y_0_90" BEL "U4/Body_y_0_88" BEL "U4/Body_y_0_87" BEL
+        "U4/Body_y_0_86" BEL "U4/Body_y_0_85" BEL "U4/Body_y_0_84" BEL
+        "U4/Body_y_0_82" BEL "U4/Body_y_0_81" BEL "U4/Body_y_0_80" BEL
+        "U4/Body_y_0_79" BEL "U4/Body_y_0_78" BEL "U4/Body_y_0_76" BEL
+        "U4/Body_y_0_75" BEL "U4/Body_y_0_74" BEL "U4/Body_y_0_73" BEL
+        "U4/Body_y_0_72" BEL "U4/Body_y_0_70" BEL "U4/Body_y_0_69" BEL
+        "U4/Body_y_0_68" BEL "U4/Body_y_0_67" BEL "U4/Body_y_0_66" BEL
+        "U4/Body_y_0_64" BEL "U4/Body_y_0_63" BEL "U4/Body_y_0_62" BEL
+        "U4/Body_y_0_61" BEL "U4/Body_y_0_60" BEL "U4/Body_y_0_58" BEL
+        "U4/Body_y_0_57" BEL "U4/Body_y_0_56" BEL "U4/Body_y_0_55" BEL
+        "U4/Body_y_0_54" BEL "U4/Body_y_0_52" BEL "U4/Body_y_0_51" BEL
+        "U4/Body_y_0_50" BEL "U4/Body_y_0_49" BEL "U4/Body_y_0_48" BEL
+        "U4/Body_y_0_46" BEL "U4/Body_y_0_45" BEL "U4/Body_y_0_44" BEL
+        "U4/Body_y_0_43" BEL "U4/Body_y_0_42" BEL "U4/Body_y_0_40" BEL
+        "U4/Body_y_0_39" BEL "U4/Body_y_0_38" BEL "U4/Body_y_0_37" BEL
+        "U4/Body_y_0_36" BEL "U4/Body_y_0_34" BEL "U4/Body_y_0_33" BEL
+        "U4/Body_y_0_32" BEL "U4/Body_y_0_31" BEL "U4/Body_y_0_30" BEL
+        "U4/Body_y_0_28" BEL "U4/Body_y_0_27" BEL "U4/Body_y_0_26" BEL
+        "U4/Body_y_0_25" BEL "U4/Body_y_0_24" BEL "U4/Body_y_0_22" BEL
+        "U4/Body_y_0_21" BEL "U4/Body_y_0_20" BEL "U4/Body_y_0_19" BEL
+        "U4/Body_y_0_18" BEL "U4/Body_y_0_16" BEL "U4/Body_y_0_15" BEL
+        "U4/Body_y_0_14" BEL "U4/Body_y_0_13" BEL "U4/Body_y_0_12" BEL
+        "U4/Body_y_0_10" BEL "U4/Body_y_0_9" BEL "U4/Body_y_0_8" BEL
+        "U4/Body_y_0_7" BEL "U4/Body_y_0_6" BEL "U4/Body_y_0_4" BEL
+        "U4/Body_y_0_3" BEL "U4/Body_y_0_2" BEL "U4/Body_y_0_1" BEL
+        "U4/Body_y_0_0" BEL "U4/Eaten_sig" BEL "U4/Snake_light_sig_3" BEL
+        "U4/Snake_light_sig_4" BEL "U4/Snake_light_sig_6" BEL
+        "U4/Snake_light_sig_7" BEL "U4/Snake_light_sig_5" BEL
+        "U4/Snake_light_sig_8" BEL "U4/Snake_light_sig_9" BEL
+        "U4/Snake_light_sig_11" BEL "U4/Snake_light_sig_12" BEL
+        "U4/Snake_light_sig_10" BEL "U4/Snake_light_sig_13" BEL
+        "U4/Snake_light_sig_14" BEL "U4/Snake_light_sig_15" BEL
+        "U4/Direct_down" BEL "U6/Count1_15" BEL "U6/Count1_14" BEL
+        "U6/Count1_13" BEL "U6/Count1_12" BEL "U6/Count1_11" BEL
+        "U6/Count1_10" BEL "U6/Count1_9" BEL "U6/Count1_8" BEL "U6/Count1_7"
+        BEL "U6/Count1_6" BEL "U6/Count1_5" BEL "U6/Count1_4" BEL
+        "U6/Count1_3" BEL "U6/Count1_2" BEL "U6/Count1_1" BEL "U6/Count1_0"
+        BEL "U6/Key_down2" BEL "U6/Key_up2" BEL "U6/Key_right2" BEL
+        "U6/Key_left2" BEL "U6/Key_down" BEL "U6/Key_right" BEL "U6/Key_left"
+        BEL "U6/Key_up" BEL "U7/Smg_duan_7" BEL "U7/Smg_duan_6" BEL
+        "U7/Smg_duan_5" BEL "U7/Smg_duan_4" BEL "U7/Smg_duan_3" BEL
+        "U7/Smg_duan_2" BEL "U7/Smg_duan_1" BEL "U7/Smg_duan_0" BEL
+        "U7/Points_15" BEL "U7/Points_14" BEL "U7/Points_13" BEL
+        "U7/Points_12" BEL "U7/Points_11" BEL "U7/Points_10" BEL "U7/Points_9"
+        BEL "U7/Points_8" BEL "U7/Points_7" BEL "U7/Points_6" BEL
+        "U7/Points_5" BEL "U7/Points_4" BEL "U7/Points_3" BEL "U7/Points_2"
+        BEL "U7/Points_1" BEL "U7/Points_0" BEL "U7/Count1_31" BEL
+        "U7/Count1_30" BEL "U7/Count1_29" BEL "U7/Count1_28" BEL
+        "U7/Count1_27" BEL "U7/Count1_26" BEL "U7/Count1_25" BEL
+        "U7/Count1_24" BEL "U7/Count1_23" BEL "U7/Count1_22" BEL
+        "U7/Count1_21" BEL "U7/Count1_20" BEL "U7/Count1_19" BEL
+        "U7/Count1_18" BEL "U7/Count1_17" BEL "U7/Count1_16" BEL
+        "U7/Count1_15" BEL "U7/Count1_14" BEL "U7/Count1_13" BEL
+        "U7/Count1_12" BEL "U7/Count1_11" BEL "U7/Count1_10" BEL "U7/Count1_9"
+        BEL "U7/Count1_8" BEL "U7/Count1_7" BEL "U7/Count1_6" BEL
+        "U7/Count1_5" BEL "U7/Count1_4" BEL "U7/Count1_3" BEL "U7/Count1_2"
+        BEL "U7/Count1_1" BEL "U7/Count1_0" BEL "U7/Smg_we_3" BEL
+        "U7/Smg_we_2" BEL "U7/Smg_we_1" BEL "U7/Smg_we_0" BEL "U7/Eaten_sig"
+        BEL "U4/Direct_up" BEL "U4/Direct_left" BEL "U4/Direct_right" BEL
+        "U4/Hit_body_sig" BEL "U4/Body_y_0_2_1" BEL "U4/Body_y_0_2_2" BEL
+        "U4/Body_y_0_0_1" BEL "U4/Body_y_0_0_2" BEL "U4/Body_x_0_2_1" BEL
+        "U1/clkout1_buf" PIN "SP6_INS_BUFIO2FB_DCM_ML_BUFIO2FB_1_pins<1>" PIN
+        "U1/dcm_sp_inst_pins<2>";
+PIN SP6_BUFIO_INSERT_ML_BUFIO2_0_pins<0> = BEL "SP6_BUFIO_INSERT_ML_BUFIO2_0"
+        PINNAME DIVCLK;
+PIN U1/dcm_sp_inst_pins<3> = BEL "U1/dcm_sp_inst" PINNAME CLKIN;
+TIMEGRP sys_clk_pin = PIN "SP6_BUFIO_INSERT_ML_BUFIO2_0_pins<0>" PIN
+        "U1/dcm_sp_inst_pins<3>";
+TS_sys_clk_pin = PERIOD TIMEGRP "sys_clk_pin" 50 MHz HIGH 50%;
+TS_U1_clk0 = PERIOD TIMEGRP "U1_clk0" TS_sys_clk_pin HIGH 50%;
+TS_U1_clkdv = PERIOD TIMEGRP "U1_clkdv" TS_sys_clk_pin / 2 HIGH 50%;
+SCHEMATIC END;
+

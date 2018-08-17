@@ -1,0 +1,200 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no" ?>
+<generated_project xmlns="http://www.xilinx.com/XMLSchema" xmlns:xil_pn="http://www.xilinx.com/XMLSchema">
+
+  <!--                                                          -->
+
+  <!--             For tool use only. Do not edit.              -->
+
+  <!--                                                          -->
+
+  <!-- ProjectNavigator created generated project file.         -->
+
+  <!-- For use in tracking generated file and other information -->
+
+  <!-- allowing preservation of process status.                 -->
+
+  <!--                                                          -->
+
+  <!-- Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved. -->
+
+  <version xmlns="http://www.xilinx.com/XMLSchema">11.1</version>
+
+  <sourceproject xmlns="http://www.xilinx.com/XMLSchema" xil_pn:fileType="FILE_XISE" xil_pn:name="Greedy_snake.xise"/>
+
+  <files xmlns="http://www.xilinx.com/XMLSchema">
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_NGDBUILD_LOG" xil_pn:name="Greedy_snake.bld"/>
+    <file xil_pn:fileType="FILE_CMD_LOG" xil_pn:name="Greedy_snake.cmd_log"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_LSO" xil_pn:name="Greedy_snake.lso"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_NCD" xil_pn:name="Greedy_snake.ncd" xil_pn:subbranch="Par"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_NGC" xil_pn:name="Greedy_snake.ngc"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_NGD" xil_pn:name="Greedy_snake.ngd"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_NGR" xil_pn:name="Greedy_snake.ngr"/>
+    <file xil_pn:fileType="FILE_PAD_MISC" xil_pn:name="Greedy_snake.pad"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_PAR_REPORT" xil_pn:name="Greedy_snake.par" xil_pn:subbranch="Par"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_PCF" xil_pn:name="Greedy_snake.pcf" xil_pn:subbranch="Map"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="Greedy_snake.prj"/>
+    <file xil_pn:fileType="FILE_TRCE_MISC" xil_pn:name="Greedy_snake.ptwx"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST_STX" xil_pn:name="Greedy_snake.stx"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST_REPORT" xil_pn:name="Greedy_snake.syr"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_TIMING_TXT_REPORT" xil_pn:name="Greedy_snake.twr" xil_pn:subbranch="Par"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_TIMING_XML_REPORT" xil_pn:name="Greedy_snake.twx" xil_pn:subbranch="Par"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_UNROUTES" xil_pn:name="Greedy_snake.unroutes" xil_pn:subbranch="Par"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_BITGEN_REPORT" xil_pn:name="Greedy_snake.ut" xil_pn:subbranch="FPGAConfiguration"/>
+    <file xil_pn:fileType="FILE_XPI" xil_pn:name="Greedy_snake.xpi"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST" xil_pn:name="Greedy_snake.xst"/>
+    <file xil_pn:fileType="FILE_HTML" xil_pn:name="Greedy_snake_envsettings.html"/>
+    <file xil_pn:fileType="FILE_NCD" xil_pn:name="Greedy_snake_guide.ncd" xil_pn:origination="imported"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_MAP_REPORT" xil_pn:name="Greedy_snake_map.map" xil_pn:subbranch="Map"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_MAP_REPORT" xil_pn:name="Greedy_snake_map.mrp" xil_pn:subbranch="Map"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_NCD" xil_pn:name="Greedy_snake_map.ncd" xil_pn:subbranch="Map"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_NGM" xil_pn:name="Greedy_snake_map.ngm" xil_pn:subbranch="Map"/>
+    <file xil_pn:fileType="FILE_XRPT" xil_pn:name="Greedy_snake_map.xrpt"/>
+    <file xil_pn:fileType="FILE_XRPT" xil_pn:name="Greedy_snake_ngdbuild.xrpt"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_PAD_EXCEL_REPORT" xil_pn:name="Greedy_snake_pad.csv" xil_pn:subbranch="Par"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_PAD_TXT_REPORT" xil_pn:name="Greedy_snake_pad.txt" xil_pn:subbranch="Par"/>
+    <file xil_pn:fileType="FILE_XRPT" xil_pn:name="Greedy_snake_par.xrpt"/>
+    <file xil_pn:fileType="FILE_HTML" xil_pn:name="Greedy_snake_summary.html"/>
+    <file xil_pn:fileType="FILE_FITTER_REPORT" xil_pn:name="Greedy_snake_summary.xml"/>
+    <file xil_pn:fileType="FILE_WEBTALK" xil_pn:name="Greedy_snake_usage.xml"/>
+    <file xil_pn:fileType="FILE_XRPT" xil_pn:name="Greedy_snake_xst.xrpt"/>
+    <file xil_pn:fileType="FILE_DIRECTORY" xil_pn:name="_ngo"/>
+    <file xil_pn:fileType="FILE_XMSGS" xil_pn:name="_xmsgs/bitgen.xmsgs"/>
+    <file xil_pn:fileType="FILE_XMSGS" xil_pn:name="_xmsgs/map.xmsgs"/>
+    <file xil_pn:fileType="FILE_XMSGS" xil_pn:name="_xmsgs/ngdbuild.xmsgs"/>
+    <file xil_pn:fileType="FILE_XMSGS" xil_pn:name="_xmsgs/par.xmsgs"/>
+    <file xil_pn:fileType="FILE_XMSGS" xil_pn:name="_xmsgs/trce.xmsgs"/>
+    <file xil_pn:fileType="FILE_XMSGS" xil_pn:name="_xmsgs/xst.xmsgs"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_BITGEN_REPORT" xil_pn:name="greedy_snake.bgn" xil_pn:subbranch="FPGAConfiguration"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_BIT" xil_pn:name="greedy_snake.bit" xil_pn:subbranch="FPGAConfiguration"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_BITGEN_DRC" xil_pn:name="greedy_snake.drc" xil_pn:subbranch="FPGAConfiguration"/>
+    <file xil_pn:fileType="FILE_LOG" xil_pn:name="ipcore_dir/coregen.log"/>
+    <file xil_pn:fileType="FILE_HTML" xil_pn:name="usage_statistics_webtalk.html"/>
+    <file xil_pn:fileType="FILE_LOG" xil_pn:name="webtalk.log"/>
+    <file xil_pn:fileType="FILE_FITTER_REPORT" xil_pn:name="webtalk_pn.xml"/>
+    <file xil_pn:fileType="FILE_DIRECTORY" xil_pn:name="xlnx_auto_0_xdb"/>
+    <file xil_pn:fileType="FILE_DIRECTORY" xil_pn:name="xst"/>
+  </files>
+
+  <transforms xmlns="http://www.xilinx.com/XMLSchema">
+    <transform xil_pn:end_ts="1450772838" xil_pn:name="TRAN_copyInitialToXSTAbstractSynthesis" xil_pn:start_ts="1450772838">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+    </transform>
+    <transform xil_pn:end_ts="1450772838" xil_pn:name="TRAN_schematicsToHdl" xil_pn:prop_ck="-2667939638271580058" xil_pn:start_ts="1450772838">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+    </transform>
+    <transform xil_pn:end_ts="1450778383" xil_pn:in_ck="3137356788006518164" xil_pn:name="TRAN_regenerateCores" xil_pn:prop_ck="5707259178287930190" xil_pn:start_ts="1450778383">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+      <outfile xil_pn:name="ipcore_dir/Snake_pll.v"/>
+      <outfile xil_pn:name="ipcore_dir/ex5_over_rom.ngc"/>
+      <outfile xil_pn:name="ipcore_dir/ex5_over_rom.v"/>
+      <outfile xil_pn:name="ipcore_dir/ex5_start_rom.ngc"/>
+      <outfile xil_pn:name="ipcore_dir/ex5_start_rom.v"/>
+    </transform>
+    <transform xil_pn:end_ts="1450772838" xil_pn:name="TRAN_SubProjectAbstractToPreProxy" xil_pn:start_ts="1450772838">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+    </transform>
+    <transform xil_pn:end_ts="1450772838" xil_pn:name="TRAN_xawsTohdl" xil_pn:prop_ck="7779242983883373416" xil_pn:start_ts="1450772838">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+    </transform>
+    <transform xil_pn:end_ts="1450778383" xil_pn:in_ck="-4990898532964840255" xil_pn:name="TRAN_SubProjectPreToStructuralProxy" xil_pn:prop_ck="250970745411629038" xil_pn:start_ts="1450778383">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+    </transform>
+    <transform xil_pn:end_ts="1450778383" xil_pn:name="TRAN_platgen" xil_pn:prop_ck="-236402370238540776" xil_pn:start_ts="1450778383">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+    </transform>
+    <transform xil_pn:end_ts="1450780966" xil_pn:in_ck="-172353830525038945" xil_pn:name="TRANEXT_xstsynthesize_spartan6" xil_pn:prop_ck="7213993084689347229" xil_pn:start_ts="1450780902">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="WarningsGenerated"/>
+      <status xil_pn:value="ReadyToRun"/>
+      <status xil_pn:value="OutOfDateForOutputs"/>
+      <status xil_pn:value="OutputChanged"/>
+      <outfile xil_pn:name="Greedy_snake.lso"/>
+      <outfile xil_pn:name="Greedy_snake.ngc"/>
+      <outfile xil_pn:name="Greedy_snake.ngr"/>
+      <outfile xil_pn:name="Greedy_snake.prj"/>
+      <outfile xil_pn:name="Greedy_snake.stx"/>
+      <outfile xil_pn:name="Greedy_snake.syr"/>
+      <outfile xil_pn:name="Greedy_snake.xst"/>
+      <outfile xil_pn:name="Greedy_snake_xst.xrpt"/>
+      <outfile xil_pn:name="_xmsgs/xst.xmsgs"/>
+      <outfile xil_pn:name="webtalk_pn.xml"/>
+      <outfile xil_pn:name="xst"/>
+    </transform>
+    <transform xil_pn:end_ts="1450778931" xil_pn:in_ck="7229975458633231473" xil_pn:name="TRAN_compileBCD2" xil_pn:prop_ck="9104400885101113363" xil_pn:start_ts="1450778931">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+    </transform>
+    <transform xil_pn:end_ts="1450780971" xil_pn:in_ck="3601500303312625028" xil_pn:name="TRANEXT_ngdbuild_FPGA" xil_pn:prop_ck="-2991208612289948241" xil_pn:start_ts="1450780966">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+      <outfile xil_pn:name="Greedy_snake.bld"/>
+      <outfile xil_pn:name="Greedy_snake.ngd"/>
+      <outfile xil_pn:name="Greedy_snake_ngdbuild.xrpt"/>
+      <outfile xil_pn:name="_ngo"/>
+      <outfile xil_pn:name="_xmsgs/ngdbuild.xmsgs"/>
+    </transform>
+    <transform xil_pn:end_ts="1450780986" xil_pn:in_ck="-5682449938192068747" xil_pn:name="TRANEXT_map_spartan6" xil_pn:prop_ck="111412226054857016" xil_pn:start_ts="1450780971">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="WarningsGenerated"/>
+      <status xil_pn:value="ReadyToRun"/>
+      <outfile xil_pn:name="Greedy_snake.pcf"/>
+      <outfile xil_pn:name="Greedy_snake_map.map"/>
+      <outfile xil_pn:name="Greedy_snake_map.mrp"/>
+      <outfile xil_pn:name="Greedy_snake_map.ncd"/>
+      <outfile xil_pn:name="Greedy_snake_map.ngm"/>
+      <outfile xil_pn:name="Greedy_snake_map.xrpt"/>
+      <outfile xil_pn:name="Greedy_snake_summary.xml"/>
+      <outfile xil_pn:name="Greedy_snake_usage.xml"/>
+      <outfile xil_pn:name="_xmsgs/map.xmsgs"/>
+    </transform>
+    <transform xil_pn:end_ts="1450781002" xil_pn:in_ck="-3304572647267796210" xil_pn:name="TRANEXT_par_spartan6" xil_pn:prop_ck="93661965788626211" xil_pn:start_ts="1450780986">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+      <outfile xil_pn:name="Greedy_snake.ncd"/>
+      <outfile xil_pn:name="Greedy_snake.pad"/>
+      <outfile xil_pn:name="Greedy_snake.par"/>
+      <outfile xil_pn:name="Greedy_snake.ptwx"/>
+      <outfile xil_pn:name="Greedy_snake.unroutes"/>
+      <outfile xil_pn:name="Greedy_snake.xpi"/>
+      <outfile xil_pn:name="Greedy_snake_pad.csv"/>
+      <outfile xil_pn:name="Greedy_snake_pad.txt"/>
+      <outfile xil_pn:name="Greedy_snake_par.xrpt"/>
+      <outfile xil_pn:name="_xmsgs/par.xmsgs"/>
+    </transform>
+    <transform xil_pn:end_ts="1450781021" xil_pn:in_ck="-5778594606056218476" xil_pn:name="TRANEXT_bitFile_spartan6" xil_pn:prop_ck="5341574683187206424" xil_pn:start_ts="1450781002">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+      <outfile xil_pn:name="Greedy_snake.ut"/>
+      <outfile xil_pn:name="_xmsgs/bitgen.xmsgs"/>
+      <outfile xil_pn:name="greedy_snake.bgn"/>
+      <outfile xil_pn:name="greedy_snake.bit"/>
+      <outfile xil_pn:name="greedy_snake.drc"/>
+      <outfile xil_pn:name="usage_statistics_webtalk.html"/>
+      <outfile xil_pn:name="webtalk.log"/>
+      <outfile xil_pn:name="webtalk_pn.xml"/>
+    </transform>
+    <transform xil_pn:end_ts="1450778685" xil_pn:in_ck="3368816989352782462" xil_pn:name="TRAN_configureTargetDevice" xil_pn:prop_ck="8482462020707587906" xil_pn:start_ts="1450778681">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+      <status xil_pn:value="OutOfDateForInputs"/>
+      <status xil_pn:value="InputAdded"/>
+      <status xil_pn:value="InputChanged"/>
+      <status xil_pn:value="InputRemoved"/>
+    </transform>
+    <transform xil_pn:end_ts="1450781002" xil_pn:in_ck="1198900639791744753" xil_pn:name="TRAN_postRouteTrce" xil_pn:prop_ck="445577401284416184" xil_pn:start_ts="1450780997">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+      <outfile xil_pn:name="Greedy_snake.twr"/>
+      <outfile xil_pn:name="Greedy_snake.twx"/>
+      <outfile xil_pn:name="_xmsgs/trce.xmsgs"/>
+    </transform>
+  </transforms>
+
+</generated_project>

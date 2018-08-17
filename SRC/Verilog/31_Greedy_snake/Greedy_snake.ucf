@@ -1,0 +1,33 @@
+NET Clk LOC = T8 | TNM_NET = sys_clk_pin;
+TIMESPEC TS_sys_clk_pin = PERIOD sys_clk_pin 50000 kHz;
+
+NET Rst_n                LOC = L3 | IOSTANDARD = "LVCMOS15"; ## SW2 pushbutton
+
+#######VGA 565 Pin define#####################
+NET VGA_red_o<0>                LOC = M11 | IOSTANDARD = "LVCMOS33";        ## VGA R0
+NET VGA_red_o<1>                LOC = M12 | IOSTANDARD = "LVCMOS33";        ## VGA R1
+NET VGA_red_o<2>                LOC = L12 | IOSTANDARD = "LVCMOS33";        ## VGA R2
+NET VGA_red_o<3>                LOC = N14 | IOSTANDARD = "LVCMOS33";        ## VGA R3
+NET VGA_red_o<4>                LOC = M13 | IOSTANDARD = "LVCMOS33";        ## VGA R4
+NET VGA_green_o<0>              LOC = M9 | IOSTANDARD = "LVCMOS33";         ## VGA G0
+NET VGA_green_o<1>              LOC = N9 | IOSTANDARD = "LVCMOS33";         ## VGA G1
+NET VGA_green_o<2>              LOC = P9 | IOSTANDARD = "LVCMOS33";         ## VGA G2
+NET VGA_green_o<3>              LOC = L10 | IOSTANDARD = "LVCMOS33";        ## VGA G3
+NET VGA_green_o<4>              LOC = M10 | IOSTANDARD = "LVCMOS33";        ## VGA G4
+NET VGA_green_o<5>              LOC = P11 | IOSTANDARD = "LVCMOS33";        ## VGA G4
+NET VGA_blue_o<0>               LOC = P7 | IOSTANDARD = "LVCMOS33";         ## VGA B0
+NET VGA_blue_o<1>               LOC = M7 | IOSTANDARD = "LVCMOS33";         ## VGA B1
+NET VGA_blue_o<2>               LOC = P8 | IOSTANDARD = "LVCMOS33";         ## VGA B2
+NET VGA_blue_o<3>               LOC = N8 | IOSTANDARD = "LVCMOS33";         ## VGA B3
+NET VGA_blue_o<4>               LOC = L7 | IOSTANDARD = "LVCMOS33";         ## VGA B4
+
+NET VSYNC_Sig_out                 LOC = L13 | IOSTANDARD = "LVCMOS33";        ## VGA VS
+NET HSYNC_Sig_out                 LOC = M14 | IOSTANDARD = "LVCMOS33";        ## VGA HS   
+
+########KEY Pin define#####################
+NET Left                        		     LOC = C3 | IOSTANDARD = "LVCMOS33";       ## KEY1
+NET Right                      	        LOC = D3 | IOSTANDARD = "LVCMOS33";       ## KEY2
+NET Up                                   LOC = E4 | IOSTANDARD = "LVCMOS33";       ## KEY3
+NET Down                                 LOC = E3 | IOSTANDARD = "LVCMOS33";       ## KEY4
+
+PIN "U1/clkout2_buf.O" CLOCK_DEDICATED_ROUTE = FALSE;

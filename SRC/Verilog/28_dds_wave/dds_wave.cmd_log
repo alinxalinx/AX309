@@ -1,0 +1,19 @@
+xst -intstyle ise -ifn "E:/Project/AX516/CD/09_VERILOG/27_dds_wave/dds_wave.xst" -ofn "E:/Project/AX516/CD/09_VERILOG/27_dds_wave/dds_wave.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc dds_wave.ucf -p xc6slx16-csg324-3 dds_wave.ngc dds_wave.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o dds_wave_map.ncd dds_wave.ngd dds_wave.pcf 
+par -w -intstyle ise -ol high -mt off dds_wave_map.ncd dds_wave.ncd dds_wave.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml dds_wave.twx dds_wave.ncd -o dds_wave.twr dds_wave.pcf -ucf dds_wave.ucf 
+bitgen -intstyle ise -f dds_wave.ut dds_wave.ncd 
+xst -intstyle ise -ifn "E:/Project/AX309/CD/09_VERILOG/27_dds_wave/dds_wave.xst" -ofn "E:/Project/AX309/CD/09_VERILOG/27_dds_wave/dds_wave.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc dds_wave.ucf -p xc6slx9-ftg256-3 dds_wave.ngc dds_wave.ngd  
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc dds_wave.ucf -p xc6slx9-ftg256-3 dds_wave.ngc dds_wave.ngd  
+map -intstyle ise -p xc6slx9-ftg256-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o dds_wave_map.ncd dds_wave.ngd dds_wave.pcf 
+par -w -intstyle ise -ol high -mt off dds_wave_map.ncd dds_wave.ncd dds_wave.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml dds_wave.twx dds_wave.ncd -o dds_wave.twr dds_wave.pcf -ucf dds_wave.ucf 
+bitgen -intstyle ise -f dds_wave.ut dds_wave.ncd 
+xst -intstyle ise -ifn "E:/BaiduYunDownload/AX309.161219/AX309/09_VERILOG/28_dds_wave/dds_wave.xst" -ofn "E:/BaiduYunDownload/AX309.161219/AX309/09_VERILOG/28_dds_wave/dds_wave.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc dds_wave.ucf -p xc6slx9-ftg256-3 dds_wave.ngc dds_wave.ngd  
+map -intstyle ise -p xc6slx9-ftg256-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o dds_wave_map.ncd dds_wave.ngd dds_wave.pcf 
+par -w -intstyle ise -ol high -mt off dds_wave_map.ncd dds_wave.ncd dds_wave.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml dds_wave.twx dds_wave.ncd -o dds_wave.twr dds_wave.pcf -ucf dds_wave.ucf 
+bitgen -intstyle ise -f dds_wave.ut dds_wave.ncd 

@@ -1,0 +1,7 @@
+verilog work "rtl/uarttx.v"
+verilog work "rtl/clkdiv.v"
+verilog work "rtl/bcd.v"
+verilog work "rtl/volt_cal.v"
+verilog work "rtl/uart.v"
+verilog work "rtl/ad7606.v"
+verilog work "rtl/ad706_test.v"

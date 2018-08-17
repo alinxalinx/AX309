@@ -1,0 +1,4 @@
+verilog work "chipscope_ila.v"
+verilog work "chipscope_icon.v"
+verilog work "ad7606.v"
+verilog work "ad706_test.v"

@@ -1,0 +1,73 @@
+xst -intstyle ise -ifn "E:/Project/AX545/verilog/adda_test/adda_test.xst" -ofn "E:/Project/AX545/verilog/adda_test/adda_test.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc adda_test.ucf -p xc6slx45-csg324-2 adda_test.ngc adda_test.ngd  
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc adda_test.ucf -p xc6slx45-csg324-2 adda_test.ngc adda_test.ngd  
+map -intstyle ise -p xc6slx45-csg324-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o adda_test_map.ncd adda_test.ngd adda_test.pcf 
+par -w -intstyle ise -ol high -mt off adda_test_map.ncd adda_test.ncd adda_test.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml adda_test.twx adda_test.ncd -o adda_test.twr adda_test.pcf -ucf adda_test.ucf 
+bitgen -intstyle ise -f adda_test.ut adda_test.ncd 
+xst -intstyle ise -ifn "E:/Project/AX545/verilog/adda_test/adda_test.xst" -ofn "E:/Project/AX545/verilog/adda_test/adda_test.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc adda_test.ucf -p xc6slx45-csg324-2 adda_test.ngc adda_test.ngd  
+map -intstyle ise -p xc6slx45-csg324-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o adda_test_map.ncd adda_test.ngd adda_test.pcf 
+par -w -intstyle ise -ol high -mt off adda_test_map.ncd adda_test.ncd adda_test.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml adda_test.twx adda_test.ncd -o adda_test.twr adda_test.pcf -ucf adda_test.ucf 
+bitgen -intstyle ise -f adda_test.ut adda_test.ncd 
+xst -intstyle ise -ifn "E:/Project/AX545/verilog/adda_test/adda_test.xst" -ofn "E:/Project/AX545/verilog/adda_test/adda_test.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc adda_test.ucf -p xc6slx45-csg324-2 adda_test.ngc adda_test.ngd  
+map -intstyle ise -p xc6slx45-csg324-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o adda_test_map.ncd adda_test.ngd adda_test.pcf 
+par -w -intstyle ise -ol high -mt off adda_test_map.ncd adda_test.ncd adda_test.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml adda_test.twx adda_test.ncd -o adda_test.twr adda_test.pcf -ucf adda_test.ucf 
+bitgen -intstyle ise -f adda_test.ut adda_test.ncd 
+xst -intstyle ise -ifn "E:/Project/AX545/verilog/adda_test/adda_test.xst" -ofn "E:/Project/AX545/verilog/adda_test/adda_test.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc adda_test.ucf -p xc6slx45-csg324-2 adda_test.ngc adda_test.ngd  
+map -intstyle ise -p xc6slx45-csg324-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o adda_test_map.ncd adda_test.ngd adda_test.pcf 
+par -w -intstyle ise -ol high -mt off adda_test_map.ncd adda_test.ncd adda_test.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml adda_test.twx adda_test.ncd -o adda_test.twr adda_test.pcf -ucf adda_test.ucf 
+bitgen -intstyle ise -f adda_test.ut adda_test.ncd 
+xst -intstyle ise -ifn "E:/Project/AX545/verilog/adda_test/adda_test.xst" -ofn "E:/Project/AX545/verilog/adda_test/adda_test.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc adda_test.ucf -p xc6slx45-csg324-2 adda_test.ngc adda_test.ngd  
+map -intstyle ise -p xc6slx45-csg324-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o adda_test_map.ncd adda_test.ngd adda_test.pcf 
+par -w -intstyle ise -ol high -mt off adda_test_map.ncd adda_test.ncd adda_test.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml adda_test.twx adda_test.ncd -o adda_test.twr adda_test.pcf -ucf adda_test.ucf 
+bitgen -intstyle ise -f adda_test.ut adda_test.ncd 
+xst -intstyle ise -ifn "E:/Project/AX545/verilog/adda_test/adda_test.xst" -ofn "E:/Project/AX545/verilog/adda_test/adda_test.syr" 
+xst -intstyle ise -ifn "E:/Project/AX545/verilog/adda_test/adda_test.xst" -ofn "E:/Project/AX545/verilog/adda_test/adda_test.syr" 
+xst -intstyle ise -ifn "E:/Project/AX545/verilog/adda_test/adda_test.xst" -ofn "E:/Project/AX545/verilog/adda_test/adda_test.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc adda_test.ucf -p xc6slx45-csg324-2 adda_test.ngc adda_test.ngd  
+map -intstyle ise -p xc6slx45-csg324-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o adda_test_map.ncd adda_test.ngd adda_test.pcf 
+par -w -intstyle ise -ol high -mt off adda_test_map.ncd adda_test.ncd adda_test.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml adda_test.twx adda_test.ncd -o adda_test.twr adda_test.pcf -ucf adda_test.ucf 
+bitgen -intstyle ise -f adda_test.ut adda_test.ncd 
+xst -intstyle ise -ifn "E:/Project/AX545/verilog/adda_test/adda_test.xst" -ofn "E:/Project/AX545/verilog/adda_test/adda_test.syr" 
+xst -intstyle ise -ifn "E:/Project/AX545/verilog/adda_test/adda_test.xst" -ofn "E:/Project/AX545/verilog/adda_test/adda_test.syr" 
+xst -intstyle ise -ifn "E:/Project/AX545/verilog/adda_test/adda_test.xst" -ofn "E:/Project/AX545/verilog/adda_test/adda_test.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc adda_test.ucf -p xc6slx45-csg324-2 adda_test.ngc adda_test.ngd  
+map -intstyle ise -p xc6slx45-csg324-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o adda_test_map.ncd adda_test.ngd adda_test.pcf 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc adda_test.ucf -p xc6slx45-csg324-2 adda_test.ngc adda_test.ngd  
+map -intstyle ise -p xc6slx45-csg324-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o adda_test_map.ncd adda_test.ngd adda_test.pcf 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc adda_test.ucf -p xc6slx45-csg324-2 adda_test.ngc adda_test.ngd  
+map -intstyle ise -p xc6slx45-csg324-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o adda_test_map.ncd adda_test.ngd adda_test.pcf 
+par -w -intstyle ise -ol high -mt off adda_test_map.ncd adda_test.ncd adda_test.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml adda_test.twx adda_test.ncd -o adda_test.twr adda_test.pcf -ucf adda_test.ucf 
+bitgen -intstyle ise -f adda_test.ut adda_test.ncd 
+xst -intstyle ise -ifn "E:/Project/AX545/verilog/adda_test/adda_test.xst" -ofn "E:/Project/AX545/verilog/adda_test/adda_test.syr" 
+xst -intstyle ise -ifn "E:/Project/AX545/verilog/adda_test/adda_test.xst" -ofn "E:/Project/AX545/verilog/adda_test/adda_test.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc adda_test.ucf -p xc6slx45-csg324-2 adda_test.ngc adda_test.ngd  
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc adda_test.ucf -p xc6slx45-csg324-2 adda_test.ngc adda_test.ngd  
+map -intstyle ise -p xc6slx45-csg324-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o adda_test_map.ncd adda_test.ngd adda_test.pcf 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc adda_test.ucf -p xc6slx45-csg324-2 adda_test.ngc adda_test.ngd  
+map -intstyle ise -p xc6slx45-csg324-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o adda_test_map.ncd adda_test.ngd adda_test.pcf 
+par -w -intstyle ise -ol high -mt off adda_test_map.ncd adda_test.ncd adda_test.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml adda_test.twx adda_test.ncd -o adda_test.twr adda_test.pcf -ucf adda_test.ucf 
+bitgen -intstyle ise -f adda_test.ut adda_test.ncd 
+xst -intstyle ise -ifn "E:/Project/AX309/Verilog/23_adda_test/adda_test.xst" -ofn "E:/Project/AX309/Verilog/23_adda_test/adda_test.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc adda_test.ucf -p xc6slx9-ftg256-2 adda_test.ngc adda_test.ngd  
+map -intstyle ise -p xc6slx9-ftg256-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o adda_test_map.ncd adda_test.ngd adda_test.pcf 
+par -w -intstyle ise -ol high -mt off adda_test_map.ncd adda_test.ncd adda_test.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml adda_test.twx adda_test.ncd -o adda_test.twr adda_test.pcf -ucf adda_test.ucf 
+bitgen -intstyle ise -f adda_test.ut adda_test.ncd 
+xst -intstyle ise -ifn "E:/Project/AX309/Verilog/23_adda_test/adda_test.xst" -ofn "E:/Project/AX309/Verilog/23_adda_test/adda_test.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc adda_test.ucf -p xc6slx9-ftg256-2 adda_test.ngc adda_test.ngd  
+map -intstyle ise -p xc6slx9-ftg256-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o adda_test_map.ncd adda_test.ngd adda_test.pcf 
+par -w -intstyle ise -ol high -mt off adda_test_map.ncd adda_test.ncd adda_test.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml adda_test.twx adda_test.ncd -o adda_test.twr adda_test.pcf -ucf adda_test.ucf 
+bitgen -intstyle ise -f adda_test.ut adda_test.ncd 

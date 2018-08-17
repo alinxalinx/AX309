@@ -1,0 +1,1670 @@
+Release 14.7 - xst P.20131013 (nt64)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+--> Parameter TMPDIR set to xst/projnav.tmp
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.08 secs
+ 
+--> Parameter xsthdpdir set to xst
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.08 secs
+ 
+--> Reading design: ad706_test.prj
+
+TABLE OF CONTENTS
+  1) Synthesis Options Summary
+  2) HDL Parsing
+  3) HDL Elaboration
+  4) HDL Synthesis
+       4.1) HDL Synthesis Report
+  5) Advanced HDL Synthesis
+       5.1) Advanced HDL Synthesis Report
+  6) Low Level Synthesis
+  7) Partition Report
+  8) Design Summary
+       8.1) Primitive and Black Box Usage
+       8.2) Device utilization summary
+       8.3) Partition Resource Summary
+       8.4) Timing Report
+            8.4.1) Clock Information
+            8.4.2) Asynchronous Control Signals Information
+            8.4.3) Timing Summary
+            8.4.4) Timing Details
+            8.4.5) Cross Clock Domains Report
+
+
+=========================================================================
+*                      Synthesis Options Summary                        *
+=========================================================================
+---- Source Parameters
+Input File Name                    : "ad706_test.prj"
+Ignore Synthesis Constraint File   : NO
+
+---- Target Parameters
+Output File Name                   : "ad706_test"
+Output Format                      : NGC
+Target Device                      : xc6slx9-2-ftg256
+
+---- Source Options
+Top Module Name                    : ad706_test
+Automatic FSM Extraction           : YES
+FSM Encoding Algorithm             : Auto
+Safe Implementation                : No
+FSM Style                          : LUT
+RAM Extraction                     : Yes
+RAM Style                          : Auto
+ROM Extraction                     : Yes
+Shift Register Extraction          : YES
+ROM Style                          : Auto
+Resource Sharing                   : YES
+Asynchronous To Synchronous        : NO
+Shift Register Minimum Size        : 2
+Use DSP Block                      : Auto
+Automatic Register Balancing       : No
+
+---- Target Options
+LUT Combining                      : Auto
+Reduce Control Sets                : Auto
+Add IO Buffers                     : YES
+Global Maximum Fanout              : 100000
+Add Generic Clock Buffer(BUFG)     : 16
+Register Duplication               : YES
+Optimize Instantiated Primitives   : NO
+Use Clock Enable                   : Auto
+Use Synchronous Set                : Auto
+Use Synchronous Reset              : Auto
+Pack IO Registers into IOBs        : Auto
+Equivalent register Removal        : YES
+
+---- General Options
+Optimization Goal                  : Speed
+Optimization Effort                : 1
+Power Reduction                    : NO
+Keep Hierarchy                     : No
+Netlist Hierarchy                  : As_Optimized
+RTL Output                         : Yes
+Global Optimization                : AllClockNets
+Read Cores                         : YES
+Write Timing Constraints           : NO
+Cross Clock Analysis               : NO
+Hierarchy Separator                : /
+Bus Delimiter                      : <>
+Case Specifier                     : Maintain
+Slice Utilization Ratio            : 100
+BRAM Utilization Ratio             : 100
+DSP48 Utilization Ratio            : 100
+Auto BRAM Packing                  : NO
+Slice Utilization Ratio Delta      : 5
+
+=========================================================================
+
+
+=========================================================================
+*                          HDL Parsing                                  *
+=========================================================================
+Analyzing Verilog file "E:\BaiduYunDownload\AX309.160229\AX309\09_VERILOG\30_ad706_test\rtl\uarttx.v" into library work
+Parsing module <uarttx>.
+Analyzing Verilog file "E:\BaiduYunDownload\AX309.160229\AX309\09_VERILOG\30_ad706_test\rtl\clkdiv.v" into library work
+Parsing module <clkdiv>.
+Analyzing Verilog file "E:\BaiduYunDownload\AX309.160229\AX309\09_VERILOG\30_ad706_test\rtl\bcd.v" into library work
+Parsing module <bcd>.
+Analyzing Verilog file "E:\BaiduYunDownload\AX309.160229\AX309\09_VERILOG\30_ad706_test\rtl\volt_cal.v" into library work
+Parsing module <volt_cal>.
+Analyzing Verilog file "E:\BaiduYunDownload\AX309.160229\AX309\09_VERILOG\30_ad706_test\rtl\uart.v" into library work
+Parsing module <uart>.
+Analyzing Verilog file "E:\BaiduYunDownload\AX309.160229\AX309\09_VERILOG\30_ad706_test\rtl\ad7606.v" into library work
+Parsing module <ad7606>.
+Analyzing Verilog file "E:\BaiduYunDownload\AX309.160229\AX309\09_VERILOG\30_ad706_test\rtl\ad706_test.v" into library work
+Parsing module <ad706_test>.
+
+=========================================================================
+*                            HDL Elaboration                            *
+=========================================================================
+
+Elaborating module <ad706_test>.
+
+Elaborating module <ad7606>.
+WARNING:HDLCompiler:413 - "E:\BaiduYunDownload\AX309.160229\AX309\09_VERILOG\30_ad706_test\rtl\ad7606.v" Line 57: Result of 17-bit expression is truncated to fit in 16-bit target.
+
+Elaborating module <volt_cal>.
+
+Elaborating module <bcd>.
+
+Elaborating module <uart>.
+WARNING:HDLCompiler:91 - "E:\BaiduYunDownload\AX309.160229\AX309\09_VERILOG\30_ad706_test\rtl\uart.v" Line 38: Signal <uart_stat> missing in the sensitivity list is added for synthesis purposes. HDL and post-synthesis simulations may differ as a result.
+WARNING:HDLCompiler:91 - "E:\BaiduYunDownload\AX309.160229\AX309\09_VERILOG\30_ad706_test\rtl\uart.v" Line 43: Signal <ch1_sig> missing in the sensitivity list is added for synthesis purposes. HDL and post-synthesis simulations may differ as a result.
+WARNING:HDLCompiler:91 - "E:\BaiduYunDownload\AX309.160229\AX309\09_VERILOG\30_ad706_test\rtl\uart.v" Line 44: Signal <ch1_dec> missing in the sensitivity list is added for synthesis purposes. HDL and post-synthesis simulations may differ as a result.
+WARNING:HDLCompiler:91 - "E:\BaiduYunDownload\AX309.160229\AX309\09_VERILOG\30_ad706_test\rtl\uart.v" Line 46: Signal <ch1_dec> missing in the sensitivity list is added for synthesis purposes. HDL and post-synthesis simulations may differ as a result.
+WARNING:HDLCompiler:91 - "E:\BaiduYunDownload\AX309.160229\AX309\09_VERILOG\30_ad706_test\rtl\uart.v" Line 47: Signal <ch1_dec> missing in the sensitivity list is added for synthesis purposes. HDL and post-synthesis simulations may differ as a result.
+WARNING:HDLCompiler:91 - "E:\BaiduYunDownload\AX309.160229\AX309\09_VERILOG\30_ad706_test\rtl\uart.v" Line 48: Signal <ch1_dec> missing in the sensitivity list is added for synthesis purposes. HDL and post-synthesis simulations may differ as a result.
+WARNING:HDLCompiler:91 - "E:\BaiduYunDownload\AX309.160229\AX309\09_VERILOG\30_ad706_test\rtl\uart.v" Line 49: Signal <ch1_dec> missing in the sensitivity list is added for synthesis purposes. HDL and post-synthesis simulations may differ as a result.
+WARNING:HDLCompiler:91 - "E:\BaiduYunDownload\AX309.160229\AX309\09_VERILOG\30_ad706_test\rtl\uart.v" Line 58: Signal <ch2_sig> missing in the sensitivity list is added for synthesis purposes. HDL and post-synthesis simulations may differ as a result.
+WARNING:HDLCompiler:91 - "E:\BaiduYunDownload\AX309.160229\AX309\09_VERILOG\30_ad706_test\rtl\uart.v" Line 59: Signal <ch2_dec> missing in the sensitivity list is added for synthesis purposes. HDL and post-synthesis simulations may differ as a result.
+WARNING:HDLCompiler:91 - "E:\BaiduYunDownload\AX309.160229\AX309\09_VERILOG\30_ad706_test\rtl\uart.v" Line 61: Signal <ch2_dec> missing in the sensitivity list is added for synthesis purposes. HDL and post-synthesis simulations may differ as a result.
+WARNING:HDLCompiler:91 - "E:\BaiduYunDownload\AX309.160229\AX309\09_VERILOG\30_ad706_test\rtl\uart.v" Line 62: Signal <ch2_dec> missing in the sensitivity list is added for synthesis purposes. HDL and post-synthesis simulations may differ as a result.
+WARNING:HDLCompiler:91 - "E:\BaiduYunDownload\AX309.160229\AX309\09_VERILOG\30_ad706_test\rtl\uart.v" Line 63: Signal <ch2_dec> missing in the sensitivity list is added for synthesis purposes. HDL and post-synthesis simulations may differ as a result.
+WARNING:HDLCompiler:91 - "E:\BaiduYunDownload\AX309.160229\AX309\09_VERILOG\30_ad706_test\rtl\uart.v" Line 64: Signal <ch2_dec> missing in the sensitivity list is added for synthesis purposes. HDL and post-synthesis simulations may differ as a result.
+WARNING:HDLCompiler:91 - "E:\BaiduYunDownload\AX309.160229\AX309\09_VERILOG\30_ad706_test\rtl\uart.v" Line 73: Signal <ch3_sig> missing in the sensitivity list is added for synthesis purposes. HDL and post-synthesis simulations may differ as a result.
+WARNING:HDLCompiler:91 - "E:\BaiduYunDownload\AX309.160229\AX309\09_VERILOG\30_ad706_test\rtl\uart.v" Line 74: Signal <ch3_dec> missing in the sensitivity list is added for synthesis purposes. HDL and post-synthesis simulations may differ as a result.
+WARNING:HDLCompiler:91 - "E:\BaiduYunDownload\AX309.160229\AX309\09_VERILOG\30_ad706_test\rtl\uart.v" Line 76: Signal <ch3_dec> missing in the sensitivity list is added for synthesis purposes. HDL and post-synthesis simulations may differ as a result.
+WARNING:HDLCompiler:91 - "E:\BaiduYunDownload\AX309.160229\AX309\09_VERILOG\30_ad706_test\rtl\uart.v" Line 77: Signal <ch3_dec> missing in the sensitivity list is added for synthesis purposes. HDL and post-synthesis simulations may differ as a result.
+WARNING:HDLCompiler:91 - "E:\BaiduYunDownload\AX309.160229\AX309\09_VERILOG\30_ad706_test\rtl\uart.v" Line 78: Signal <ch3_dec> missing in the sensitivity list is added for synthesis purposes. HDL and post-synthesis simulations may differ as a result.
+WARNING:HDLCompiler:91 - "E:\BaiduYunDownload\AX309.160229\AX309\09_VERILOG\30_ad706_test\rtl\uart.v" Line 79: Signal <ch3_dec> missing in the sensitivity list is added for synthesis purposes. HDL and post-synthesis simulations may differ as a result.
+WARNING:HDLCompiler:91 - "E:\BaiduYunDownload\AX309.160229\AX309\09_VERILOG\30_ad706_test\rtl\uart.v" Line 88: Signal <ch4_sig> missing in the sensitivity list is added for synthesis purposes. HDL and post-synthesis simulations may differ as a result.
+WARNING:HDLCompiler:91 - "E:\BaiduYunDownload\AX309.160229\AX309\09_VERILOG\30_ad706_test\rtl\uart.v" Line 89: Signal <ch4_dec> missing in the sensitivity list is added for synthesis purposes. HDL and post-synthesis simulations may differ as a result.
+WARNING:HDLCompiler:91 - "E:\BaiduYunDownload\AX309.160229\AX309\09_VERILOG\30_ad706_test\rtl\uart.v" Line 91: Signal <ch4_dec> missing in the sensitivity list is added for synthesis purposes. HDL and post-synthesis simulations may differ as a result.
+WARNING:HDLCompiler:91 - "E:\BaiduYunDownload\AX309.160229\AX309\09_VERILOG\30_ad706_test\rtl\uart.v" Line 92: Signal <ch4_dec> missing in the sensitivity list is added for synthesis purposes. HDL and post-synthesis simulations may differ as a result.
+WARNING:HDLCompiler:91 - "E:\BaiduYunDownload\AX309.160229\AX309\09_VERILOG\30_ad706_test\rtl\uart.v" Line 93: Signal <ch4_dec> missing in the sensitivity list is added for synthesis purposes. HDL and post-synthesis simulations may differ as a result.
+WARNING:HDLCompiler:91 - "E:\BaiduYunDownload\AX309.160229\AX309\09_VERILOG\30_ad706_test\rtl\uart.v" Line 94: Signal <ch4_dec> missing in the sensitivity list is added for synthesis purposes. HDL and post-synthesis simulations may differ as a result.
+WARNING:HDLCompiler:91 - "E:\BaiduYunDownload\AX309.160229\AX309\09_VERILOG\30_ad706_test\rtl\uart.v" Line 103: Signal <ch5_sig> missing in the sensitivity list is added for synthesis purposes. HDL and post-synthesis simulations may differ as a result.
+WARNING:HDLCompiler:91 - "E:\BaiduYunDownload\AX309.160229\AX309\09_VERILOG\30_ad706_test\rtl\uart.v" Line 104: Signal <ch5_dec> missing in the sensitivity list is added for synthesis purposes. HDL and post-synthesis simulations may differ as a result.
+WARNING:HDLCompiler:91 - "E:\BaiduYunDownload\AX309.160229\AX309\09_VERILOG\30_ad706_test\rtl\uart.v" Line 106: Signal <ch5_dec> missing in the sensitivity list is added for synthesis purposes. HDL and post-synthesis simulations may differ as a result.
+WARNING:HDLCompiler:91 - "E:\BaiduYunDownload\AX309.160229\AX309\09_VERILOG\30_ad706_test\rtl\uart.v" Line 107: Signal <ch5_dec> missing in the sensitivity list is added for synthesis purposes. HDL and post-synthesis simulations may differ as a result.
+WARNING:HDLCompiler:91 - "E:\BaiduYunDownload\AX309.160229\AX309\09_VERILOG\30_ad706_test\rtl\uart.v" Line 108: Signal <ch5_dec> missing in the sensitivity list is added for synthesis purposes. HDL and post-synthesis simulations may differ as a result.
+WARNING:HDLCompiler:91 - "E:\BaiduYunDownload\AX309.160229\AX309\09_VERILOG\30_ad706_test\rtl\uart.v" Line 109: Signal <ch5_dec> missing in the sensitivity list is added for synthesis purposes. HDL and post-synthesis simulations may differ as a result.
+WARNING:HDLCompiler:91 - "E:\BaiduYunDownload\AX309.160229\AX309\09_VERILOG\30_ad706_test\rtl\uart.v" Line 118: Signal <ch6_sig> missing in the sensitivity list is added for synthesis purposes. HDL and post-synthesis simulations may differ as a result.
+WARNING:HDLCompiler:91 - "E:\BaiduYunDownload\AX309.160229\AX309\09_VERILOG\30_ad706_test\rtl\uart.v" Line 119: Signal <ch6_dec> missing in the sensitivity list is added for synthesis purposes. HDL and post-synthesis simulations may differ as a result.
+WARNING:HDLCompiler:91 - "E:\BaiduYunDownload\AX309.160229\AX309\09_VERILOG\30_ad706_test\rtl\uart.v" Line 121: Signal <ch6_dec> missing in the sensitivity list is added for synthesis purposes. HDL and post-synthesis simulations may differ as a result.
+WARNING:HDLCompiler:91 - "E:\BaiduYunDownload\AX309.160229\AX309\09_VERILOG\30_ad706_test\rtl\uart.v" Line 122: Signal <ch6_dec> missing in the sensitivity list is added for synthesis purposes. HDL and post-synthesis simulations may differ as a result.
+WARNING:HDLCompiler:91 - "E:\BaiduYunDownload\AX309.160229\AX309\09_VERILOG\30_ad706_test\rtl\uart.v" Line 123: Signal <ch6_dec> missing in the sensitivity list is added for synthesis purposes. HDL and post-synthesis simulations may differ as a result.
+WARNING:HDLCompiler:91 - "E:\BaiduYunDownload\AX309.160229\AX309\09_VERILOG\30_ad706_test\rtl\uart.v" Line 124: Signal <ch6_dec> missing in the sensitivity list is added for synthesis purposes. HDL and post-synthesis simulations may differ as a result.
+WARNING:HDLCompiler:91 - "E:\BaiduYunDownload\AX309.160229\AX309\09_VERILOG\30_ad706_test\rtl\uart.v" Line 133: Signal <ch7_sig> missing in the sensitivity list is added for synthesis purposes. HDL and post-synthesis simulations may differ as a result.
+WARNING:HDLCompiler:91 - "E:\BaiduYunDownload\AX309.160229\AX309\09_VERILOG\30_ad706_test\rtl\uart.v" Line 134: Signal <ch7_dec> missing in the sensitivity list is added for synthesis purposes. HDL and post-synthesis simulations may differ as a result.
+WARNING:HDLCompiler:91 - "E:\BaiduYunDownload\AX309.160229\AX309\09_VERILOG\30_ad706_test\rtl\uart.v" Line 136: Signal <ch7_dec> missing in the sensitivity list is added for synthesis purposes. HDL and post-synthesis simulations may differ as a result.
+WARNING:HDLCompiler:91 - "E:\BaiduYunDownload\AX309.160229\AX309\09_VERILOG\30_ad706_test\rtl\uart.v" Line 137: Signal <ch7_dec> missing in the sensitivity list is added for synthesis purposes. HDL and post-synthesis simulations may differ as a result.
+WARNING:HDLCompiler:91 - "E:\BaiduYunDownload\AX309.160229\AX309\09_VERILOG\30_ad706_test\rtl\uart.v" Line 138: Signal <ch7_dec> missing in the sensitivity list is added for synthesis purposes. HDL and post-synthesis simulations may differ as a result.
+WARNING:HDLCompiler:91 - "E:\BaiduYunDownload\AX309.160229\AX309\09_VERILOG\30_ad706_test\rtl\uart.v" Line 139: Signal <ch7_dec> missing in the sensitivity list is added for synthesis purposes. HDL and post-synthesis simulations may differ as a result.
+WARNING:HDLCompiler:91 - "E:\BaiduYunDownload\AX309.160229\AX309\09_VERILOG\30_ad706_test\rtl\uart.v" Line 148: Signal <ch8_sig> missing in the sensitivity list is added for synthesis purposes. HDL and post-synthesis simulations may differ as a result.
+WARNING:HDLCompiler:91 - "E:\BaiduYunDownload\AX309.160229\AX309\09_VERILOG\30_ad706_test\rtl\uart.v" Line 149: Signal <ch8_dec> missing in the sensitivity list is added for synthesis purposes. HDL and post-synthesis simulations may differ as a result.
+WARNING:HDLCompiler:91 - "E:\BaiduYunDownload\AX309.160229\AX309\09_VERILOG\30_ad706_test\rtl\uart.v" Line 151: Signal <ch8_dec> missing in the sensitivity list is added for synthesis purposes. HDL and post-synthesis simulations may differ as a result.
+WARNING:HDLCompiler:91 - "E:\BaiduYunDownload\AX309.160229\AX309\09_VERILOG\30_ad706_test\rtl\uart.v" Line 152: Signal <ch8_dec> missing in the sensitivity list is added for synthesis purposes. HDL and post-synthesis simulations may differ as a result.
+WARNING:HDLCompiler:91 - "E:\BaiduYunDownload\AX309.160229\AX309\09_VERILOG\30_ad706_test\rtl\uart.v" Line 153: Signal <ch8_dec> missing in the sensitivity list is added for synthesis purposes. HDL and post-synthesis simulations may differ as a result.
+WARNING:HDLCompiler:91 - "E:\BaiduYunDownload\AX309.160229\AX309\09_VERILOG\30_ad706_test\rtl\uart.v" Line 154: Signal <ch8_dec> missing in the sensitivity list is added for synthesis purposes. HDL and post-synthesis simulations may differ as a result.
+
+Elaborating module <clkdiv>.
+
+Elaborating module <uarttx>.
+WARNING:HDLCompiler:1127 - "E:\BaiduYunDownload\AX309.160229\AX309\09_VERILOG\30_ad706_test\rtl\uart.v" Line 250: Assignment to idle ignored, since the identifier is never used
+
+=========================================================================
+*                           HDL Synthesis                               *
+=========================================================================
+
+Synthesizing Unit <ad706_test>.
+    Related source file is "E:\BaiduYunDownload\AX309.160229\AX309\09_VERILOG\30_ad706_test\rtl\ad706_test.v".
+WARNING:Xst:647 - Input <rx> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+    Summary:
+	no macro.
+Unit <ad706_test> synthesized.
+
+Synthesizing Unit <ad7606>.
+    Related source file is "E:\BaiduYunDownload\AX309.160229\AX309\09_VERILOG\30_ad706_test\rtl\ad7606.v".
+        IDLE = 4'b0000
+        AD_CONV = 4'b0001
+        Wait_1 = 4'b0010
+        Wait_busy = 4'b0011
+        READ_CH1 = 4'b0100
+        READ_CH2 = 4'b0101
+        READ_CH3 = 4'b0110
+        READ_CH4 = 4'b0111
+        READ_CH5 = 4'b1000
+        READ_CH6 = 4'b1001
+        READ_CH7 = 4'b1010
+        READ_CH8 = 4'b1011
+        READ_DONE = 4'b1100
+WARNING:Xst:647 - Input <rst_n> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <first_data> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+    Found 1-bit register for signal <ad_reset>.
+    Found 4-bit register for signal <state>.
+    Found 16-bit register for signal <ad_ch1>.
+    Found 16-bit register for signal <ad_ch2>.
+    Found 16-bit register for signal <ad_ch3>.
+    Found 16-bit register for signal <ad_ch4>.
+    Found 16-bit register for signal <ad_ch5>.
+    Found 16-bit register for signal <ad_ch6>.
+    Found 16-bit register for signal <ad_ch7>.
+    Found 16-bit register for signal <ad_ch8>.
+    Found 1-bit register for signal <ad_cs>.
+    Found 1-bit register for signal <ad_rd>.
+    Found 1-bit register for signal <ad_convstab>.
+    Found 6-bit register for signal <i>.
+    Found 16-bit register for signal <cnt>.
+    Found finite state machine <FSM_0> for signal <state>.
+    -----------------------------------------------------------------------
+    | States             | 13                                             |
+    | Transitions        | 25                                             |
+    | Inputs             | 5                                              |
+    | Outputs            | 5                                              |
+    | Clock              | clk (rising_edge)                              |
+    | Reset              | ad_reset (positive)                            |
+    | Reset type         | synchronous                                    |
+    | Reset State        | 0000                                           |
+    | Encoding           | auto                                           |
+    | Implementation     | LUT                                            |
+    -----------------------------------------------------------------------
+    Found 16-bit adder for signal <cnt[15]_GND_2_o_add_3_OUT> created at line 57.
+    Found 6-bit adder for signal <i[5]_GND_2_o_add_59_OUT> created at line 213.
+    Found 16-bit comparator greater for signal <cnt[15]_PWR_2_o_LessThan_3_o> created at line 56
+    Summary:
+	inferred   2 Adder/Subtractor(s).
+	inferred 154 D-type flip-flop(s).
+	inferred   1 Comparator(s).
+	inferred  13 Multiplexer(s).
+	inferred   1 Finite State Machine(s).
+Unit <ad7606> synthesized.
+
+Synthesizing Unit <volt_cal>.
+    Related source file is "E:\BaiduYunDownload\AX309.160229\AX309\09_VERILOG\30_ad706_test\rtl\volt_cal.v".
+    Found 16-bit register for signal <ch2_reg>.
+    Found 16-bit register for signal <ch3_reg>.
+    Found 16-bit register for signal <ch4_reg>.
+    Found 16-bit register for signal <ch5_reg>.
+    Found 16-bit register for signal <ch6_reg>.
+    Found 16-bit register for signal <ch7_reg>.
+    Found 16-bit register for signal <ch8_reg>.
+    Found 8-bit register for signal <ch1_sig>.
+    Found 8-bit register for signal <ch2_sig>.
+    Found 8-bit register for signal <ch3_sig>.
+    Found 8-bit register for signal <ch4_sig>.
+    Found 8-bit register for signal <ch5_sig>.
+    Found 8-bit register for signal <ch6_sig>.
+    Found 8-bit register for signal <ch7_sig>.
+    Found 8-bit register for signal <ch8_sig>.
+    Found 17-bit register for signal <ch1_data_reg<31:15>>.
+    Found 17-bit register for signal <ch2_data_reg<31:15>>.
+    Found 17-bit register for signal <ch3_data_reg<31:15>>.
+    Found 17-bit register for signal <ch4_data_reg<31:15>>.
+    Found 17-bit register for signal <ch5_data_reg<31:15>>.
+    Found 17-bit register for signal <ch6_data_reg<31:15>>.
+    Found 17-bit register for signal <ch7_data_reg<31:15>>.
+    Found 17-bit register for signal <ch8_data_reg<31:15>>.
+    Found 16-bit register for signal <ch1_vol<15:0>>.
+    Found 16-bit register for signal <ch2_vol<15:0>>.
+    Found 16-bit register for signal <ch3_vol<15:0>>.
+    Found 16-bit register for signal <ch4_vol<15:0>>.
+    Found 16-bit register for signal <ch5_vol<15:0>>.
+    Found 16-bit register for signal <ch6_vol<15:0>>.
+    Found 16-bit register for signal <ch7_vol<15:0>>.
+    Found 16-bit register for signal <ch8_vol<15:0>>.
+    Found 16-bit register for signal <ch1_reg>.
+    Found 16-bit subtractor for signal <PWR_3_o_GND_3_o_add_4_OUT> created at line 85.
+    Found 16-bit subtractor for signal <PWR_3_o_GND_3_o_add_9_OUT> created at line 95.
+    Found 16-bit subtractor for signal <PWR_3_o_GND_3_o_add_14_OUT> created at line 105.
+    Found 16-bit subtractor for signal <PWR_3_o_GND_3_o_add_19_OUT> created at line 115.
+    Found 16-bit subtractor for signal <PWR_3_o_GND_3_o_add_24_OUT> created at line 125.
+    Found 16-bit subtractor for signal <PWR_3_o_GND_3_o_add_29_OUT> created at line 135.
+    Found 16-bit subtractor for signal <PWR_3_o_GND_3_o_add_34_OUT> created at line 145.
+    Found 16-bit subtractor for signal <PWR_3_o_GND_3_o_add_39_OUT> created at line 155.
+    Found 16x16-bit multiplier for signal <ch1_reg[15]_PWR_3_o_MuLt_76_OUT> created at line 189.
+    Found 16x16-bit multiplier for signal <ch2_reg[15]_PWR_3_o_MuLt_77_OUT> created at line 190.
+    Found 16x16-bit multiplier for signal <ch3_reg[15]_PWR_3_o_MuLt_78_OUT> created at line 191.
+    Found 16x16-bit multiplier for signal <ch4_reg[15]_PWR_3_o_MuLt_79_OUT> created at line 192.
+    Found 16x16-bit multiplier for signal <ch5_reg[15]_PWR_3_o_MuLt_80_OUT> created at line 193.
+    Found 16x16-bit multiplier for signal <ch6_reg[15]_PWR_3_o_MuLt_81_OUT> created at line 194.
+    Found 16x16-bit multiplier for signal <ch7_reg[15]_PWR_3_o_MuLt_82_OUT> created at line 195.
+    Found 16x16-bit multiplier for signal <ch8_reg[15]_PWR_3_o_MuLt_83_OUT> created at line 196.
+    Summary:
+	inferred   8 Multiplier(s).
+	inferred   8 Adder/Subtractor(s).
+	inferred 456 D-type flip-flop(s).
+	inferred   8 Multiplexer(s).
+Unit <volt_cal> synthesized.
+
+Synthesizing Unit <bcd>.
+    Related source file is "E:\BaiduYunDownload\AX309.160229\AX309\09_VERILOG\30_ad706_test\rtl\bcd.v".
+    Found 19-bit register for signal <rhexd>.
+    Found 14-bit register for signal <rhexc>.
+    Found 10-bit register for signal <rhexb>.
+    Found 4-bit register for signal <rhexa>.
+    Found 4-bit register for signal <resa<3:0>>.
+    Found 4-bit register for signal <resb<3:0>>.
+    Found 4-bit register for signal <resc<3:0>>.
+    Found 4-bit register for signal <resd<3:0>>.
+    Found 4-bit register for signal <rese>.
+    Found 16-bit register for signal <n0066>.
+    Found 5-bit adder for signal <n0150[4:0]> created at line 117.
+    Found 6-bit adder for signal <BUS_0056_GND_5_o_add_20_OUT> created at line 119.
+    Found 6-bit adder for signal <BUS_0056_GND_5_o_add_22_OUT> created at line 121.
+    Found 6-bit adder for signal <BUS_0056_GND_5_o_add_24_OUT> created at line 123.
+    Found 5-bit adder for signal <n0165[4:0]> created at line 117.
+    Found 6-bit adder for signal <BUS_0116_GND_5_o_add_32_OUT> created at line 119.
+    Found 6-bit adder for signal <BUS_0116_GND_5_o_add_34_OUT> created at line 121.
+    Found 6-bit adder for signal <BUS_0116_GND_5_o_add_36_OUT> created at line 123.
+    Found 3-bit adder for signal <n0180[2:0]> created at line 117.
+    Found 5-bit adder for signal <n0183[4:0]> created at line 117.
+    Found 6-bit adder for signal <n0187> created at line 117.
+    Found 6-bit adder for signal <BUS_0177_GND_5_o_add_44_OUT> created at line 119.
+    Found 6-bit adder for signal <BUS_0177_GND_5_o_add_46_OUT> created at line 121.
+    Found 6-bit adder for signal <BUS_0177_GND_5_o_add_48_OUT> created at line 123.
+    Found 3-bit adder for signal <n0195[2:0]> created at line 117.
+    Found 5-bit adder for signal <n0136> created at line 117.
+    Found 6-bit adder for signal <n0145> created at line 119.
+    Found 6-bit adder for signal <n0144> created at line 121.
+    Found 6-bit adder for signal <n0143> created at line 123.
+    Found 4-bit adder for signal <n0147> created at line 111.
+    Found 6-bit adder for signal <_n0209> created at line 117.
+    Found 6-bit adder for signal <n0157> created at line 117.
+    Found 6-bit adder for signal <_n0211> created at line 117.
+    Found 6-bit adder for signal <n0172> created at line 117.
+    Found 16x19-bit Read Only RAM for signal <rhex[3][3]_PWR_5_o_wide_mux_5_OUT>
+    Found 16x14-bit Read Only RAM for signal <rhex[2][3]_PWR_5_o_wide_mux_8_OUT>
+    Found 16x10-bit Read Only RAM for signal <rhex[1][3]_PWR_5_o_wide_mux_11_OUT>
+    Found 6-bit comparator greater for signal <GND_5_o_BUS_0056_LessThan_20_o> created at line 118
+    Found 6-bit comparator greater for signal <GND_5_o_BUS_0056_LessThan_22_o> created at line 120
+    Found 6-bit comparator greater for signal <GND_5_o_BUS_0056_LessThan_24_o> created at line 122
+    Found 6-bit comparator greater for signal <GND_5_o_BUS_0116_LessThan_32_o> created at line 118
+    Found 6-bit comparator greater for signal <GND_5_o_BUS_0116_LessThan_34_o> created at line 120
+    Found 6-bit comparator greater for signal <GND_5_o_BUS_0116_LessThan_36_o> created at line 122
+    Found 6-bit comparator greater for signal <GND_5_o_BUS_0177_LessThan_44_o> created at line 118
+    Found 6-bit comparator greater for signal <GND_5_o_BUS_0177_LessThan_46_o> created at line 120
+    Found 6-bit comparator greater for signal <GND_5_o_BUS_0177_LessThan_48_o> created at line 122
+    Found 5-bit comparator greater for signal <PWR_5_o_BUS_0236_LessThan_55_o> created at line 118
+    Found 5-bit comparator greater for signal <PWR_5_o_BUS_0236_LessThan_57_o> created at line 120
+    Found 5-bit comparator greater for signal <GND_5_o_BUS_0236_LessThan_59_o> created at line 122
+    Summary:
+	inferred   3 RAM(s).
+	inferred  22 Adder/Subtractor(s).
+	inferred  83 D-type flip-flop(s).
+	inferred  12 Comparator(s).
+	inferred  12 Multiplexer(s).
+Unit <bcd> synthesized.
+
+Synthesizing Unit <uart>.
+    Related source file is "E:\BaiduYunDownload\AX309.160229\AX309\09_VERILOG\30_ad706_test\rtl\uart.v".
+INFO:Xst:3210 - "E:\BaiduYunDownload\AX309.160229\AX309\09_VERILOG\30_ad706_test\rtl\uart.v" line 246: Output port <idle> of the instance <u1> is unconnected or connected to loadless signal.
+    Found 16-bit register for signal <uart_cnt>.
+    Found 3-bit register for signal <uart_stat>.
+    Found 9-bit register for signal <k>.
+    Found 16-bit register for signal <Time_wait>.
+    Found 8-bit register for signal <txdata>.
+    Found 1-bit register for signal <wrsig>.
+    Found finite state machine <FSM_1> for signal <uart_stat>.
+    -----------------------------------------------------------------------
+    | States             | 3                                              |
+    | Transitions        | 7                                              |
+    | Inputs             | 4                                              |
+    | Outputs            | 2                                              |
+    | Clock              | clk (rising_edge)                              |
+    | Reset              | reset_n_INV_20_o (positive)                    |
+    | Reset type         | synchronous                                    |
+    | Reset State        | 000                                            |
+    | Encoding           | auto                                           |
+    | Implementation     | LUT                                            |
+    -----------------------------------------------------------------------
+    Found 7-bit adder for signal <n1251> created at line 44.
+    Found 7-bit adder for signal <n1253> created at line 46.
+    Found 7-bit adder for signal <n1255> created at line 47.
+    Found 7-bit adder for signal <n1257> created at line 48.
+    Found 7-bit adder for signal <n1259> created at line 49.
+    Found 7-bit adder for signal <n1261> created at line 59.
+    Found 7-bit adder for signal <n1263> created at line 61.
+    Found 7-bit adder for signal <n1265> created at line 62.
+    Found 7-bit adder for signal <n1267> created at line 63.
+    Found 7-bit adder for signal <n1269> created at line 64.
+    Found 7-bit adder for signal <n1271> created at line 74.
+    Found 7-bit adder for signal <n1273> created at line 76.
+    Found 7-bit adder for signal <n1275> created at line 77.
+    Found 7-bit adder for signal <n1277> created at line 78.
+    Found 7-bit adder for signal <n1279> created at line 79.
+    Found 7-bit adder for signal <n1281> created at line 89.
+    Found 7-bit adder for signal <n1283> created at line 91.
+    Found 7-bit adder for signal <n1285> created at line 92.
+    Found 7-bit adder for signal <n1287> created at line 93.
+    Found 7-bit adder for signal <n1289> created at line 94.
+    Found 7-bit adder for signal <n1291> created at line 104.
+    Found 7-bit adder for signal <n1293> created at line 106.
+    Found 7-bit adder for signal <n1295> created at line 107.
+    Found 7-bit adder for signal <n1297> created at line 108.
+    Found 7-bit adder for signal <n1299> created at line 109.
+    Found 7-bit adder for signal <n1301> created at line 119.
+    Found 7-bit adder for signal <n1303> created at line 121.
+    Found 7-bit adder for signal <n1305> created at line 122.
+    Found 7-bit adder for signal <n1307> created at line 123.
+    Found 7-bit adder for signal <n1309> created at line 124.
+    Found 7-bit adder for signal <n1311> created at line 134.
+    Found 7-bit adder for signal <n1313> created at line 136.
+    Found 7-bit adder for signal <n1315> created at line 137.
+    Found 7-bit adder for signal <n1317> created at line 138.
+    Found 7-bit adder for signal <n1319> created at line 139.
+    Found 7-bit adder for signal <n1321> created at line 149.
+    Found 7-bit adder for signal <n1323> created at line 151.
+    Found 7-bit adder for signal <n1325> created at line 152.
+    Found 7-bit adder for signal <n1327> created at line 153.
+    Found 7-bit adder for signal <n1329> created at line 154.
+    Found 16-bit adder for signal <Time_wait[15]_GND_6_o_add_44_OUT> created at line 193.
+    Found 9-bit adder for signal <k[8]_GND_6_o_add_63_OUT> created at line 223.
+    Found 16-bit adder for signal <uart_cnt[15]_GND_6_o_add_64_OUT> created at line 226.
+WARNING:Xst:737 - Found 1-bit latch for signal <uart_ad<108><6>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <uart_ad<108><5>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <uart_ad<108><4>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <uart_ad<108><3>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <uart_ad<108><2>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <uart_ad<108><1>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <uart_ad<108><0>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <uart_ad<107><7>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <uart_ad<107><6>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <uart_ad<107><5>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <uart_ad<107><4>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <uart_ad<107><3>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <uart_ad<107><2>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <uart_ad<107><1>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <uart_ad<107><0>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <uart_ad<106><6>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <uart_ad<106><5>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <uart_ad<106><4>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <uart_ad<106><3>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <uart_ad<106><2>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <uart_ad<106><1>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <uart_ad<106><0>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <uart_ad<105><6>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <uart_ad<105><5>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <uart_ad<105><4>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <uart_ad<105><3>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <uart_ad<105><2>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <uart_ad<105><1>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <uart_ad<105><0>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <uart_ad<104><5>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <uart_ad<103><6>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <uart_ad<103><5>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <uart_ad<103><4>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <uart_ad<103><3>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <uart_ad<103><2>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <uart_ad<103><1>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <uart_ad<103><0>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <uart_ad<102><7>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <uart_ad<102><6>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <uart_ad<102><5>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <uart_ad<102><4>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <uart_ad<102><3>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <uart_ad<102><2>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <uart_ad<102><1>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <uart_ad<102><0>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <uart_ad<94><6>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <uart_ad<94><5>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <uart_ad<94><4>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <uart_ad<94><3>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <uart_ad<94><2>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <uart_ad<94><1>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <uart_ad<94><0>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <uart_ad<93><6>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <uart_ad<93><5>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <uart_ad<93><4>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <uart_ad<93><3>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <uart_ad<93><2>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <uart_ad<93><1>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <uart_ad<93><0>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <uart_ad<92><6>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <uart_ad<92><5>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <uart_ad<92><4>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <uart_ad<92><3>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <uart_ad<92><2>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <uart_ad<92><1>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <uart_ad<92><0>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <uart_ad<91><6>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <uart_ad<91><5>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <uart_ad<91><4>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <uart_ad<91><3>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <uart_ad<91><2>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <uart_ad<91><1>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <uart_ad<91><0>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <uart_ad<89><6>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <uart_ad<89><5>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <uart_ad<89><4>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <uart_ad<89><3>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <uart_ad<89><2>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <uart_ad<89><1>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <uart_ad<89><0>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <uart_ad<88><7>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <uart_ad<88><6>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <uart_ad<88><5>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <uart_ad<88><4>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <uart_ad<88><3>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <uart_ad<88><2>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <uart_ad<88><1>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <uart_ad<88><0>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <uart_ad<80><6>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <uart_ad<80><5>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <uart_ad<80><4>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <uart_ad<80><3>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <uart_ad<80><2>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <uart_ad<80><1>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <uart_ad<80><0>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <uart_ad<79><6>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <uart_ad<79><5>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <uart_ad<79><4>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <uart_ad<79><3>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <uart_ad<79><2>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <uart_ad<79><1>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <uart_ad<79><0>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <uart_ad<78><6>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <uart_ad<78><5>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <uart_ad<78><4>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <uart_ad<78><3>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <uart_ad<78><2>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <uart_ad<78><1>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <uart_ad<78><0>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <uart_ad<77><6>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <uart_ad<77><5>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <uart_ad<77><4>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <uart_ad<77><3>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <uart_ad<77><2>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <uart_ad<77><1>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <uart_ad<77><0>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <uart_ad<75><6>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <uart_ad<75><5>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <uart_ad<75><4>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <uart_ad<75><3>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <uart_ad<75><2>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <uart_ad<75><1>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <uart_ad<75><0>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <uart_ad<74><7>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <uart_ad<74><6>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <uart_ad<74><5>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <uart_ad<74><4>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <uart_ad<74><3>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <uart_ad<74><2>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <uart_ad<74><1>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <uart_ad<74><0>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <uart_ad<66><6>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <uart_ad<66><5>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <uart_ad<66><4>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <uart_ad<66><3>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <uart_ad<66><2>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <uart_ad<66><1>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <uart_ad<66><0>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <uart_ad<65><6>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <uart_ad<65><5>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <uart_ad<65><4>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <uart_ad<65><3>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <uart_ad<65><2>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <uart_ad<65><1>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <uart_ad<65><0>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <uart_ad<64><6>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <uart_ad<64><5>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <uart_ad<64><4>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <uart_ad<64><3>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <uart_ad<64><2>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <uart_ad<64><1>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <uart_ad<64><0>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <uart_ad<63><6>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <uart_ad<63><5>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <uart_ad<63><4>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <uart_ad<63><3>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <uart_ad<63><2>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <uart_ad<63><1>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <uart_ad<63><0>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <uart_ad<61><6>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <uart_ad<61><5>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <uart_ad<61><4>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <uart_ad<61><3>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <uart_ad<61><2>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <uart_ad<61><1>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <uart_ad<61><0>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <uart_ad<60><7>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <uart_ad<60><6>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <uart_ad<60><5>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <uart_ad<60><4>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <uart_ad<60><3>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <uart_ad<60><2>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <uart_ad<60><1>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <uart_ad<60><0>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <uart_ad<52><6>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <uart_ad<52><5>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <uart_ad<52><4>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <uart_ad<52><3>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <uart_ad<52><2>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <uart_ad<52><1>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <uart_ad<52><0>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <uart_ad<51><6>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <uart_ad<51><5>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <uart_ad<51><4>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <uart_ad<51><3>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <uart_ad<51><2>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <uart_ad<51><1>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <uart_ad<51><0>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <uart_ad<50><6>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <uart_ad<50><5>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <uart_ad<50><4>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <uart_ad<50><3>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <uart_ad<50><2>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <uart_ad<50><1>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <uart_ad<50><0>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <uart_ad<49><6>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <uart_ad<49><5>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <uart_ad<49><4>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <uart_ad<49><3>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <uart_ad<49><2>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <uart_ad<49><1>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <uart_ad<49><0>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <uart_ad<47><6>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <uart_ad<47><5>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <uart_ad<47><4>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <uart_ad<47><3>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <uart_ad<47><2>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <uart_ad<47><1>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <uart_ad<47><0>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <uart_ad<46><7>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <uart_ad<46><6>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <uart_ad<46><5>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <uart_ad<46><4>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <uart_ad<46><3>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <uart_ad<46><2>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <uart_ad<46><1>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <uart_ad<46><0>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <uart_ad<38><6>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <uart_ad<38><5>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <uart_ad<38><4>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <uart_ad<38><3>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <uart_ad<38><2>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <uart_ad<38><1>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <uart_ad<38><0>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <uart_ad<37><6>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <uart_ad<37><5>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <uart_ad<37><4>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <uart_ad<37><3>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <uart_ad<37><2>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <uart_ad<37><1>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <uart_ad<37><0>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <uart_ad<36><6>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <uart_ad<36><5>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <uart_ad<36><4>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <uart_ad<36><3>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <uart_ad<36><2>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <uart_ad<36><1>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <uart_ad<36><0>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <uart_ad<35><6>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <uart_ad<35><5>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <uart_ad<35><4>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <uart_ad<35><3>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <uart_ad<35><2>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <uart_ad<35><1>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <uart_ad<35><0>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <uart_ad<33><6>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <uart_ad<33><5>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <uart_ad<33><4>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <uart_ad<33><3>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <uart_ad<33><2>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <uart_ad<33><1>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <uart_ad<33><0>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <uart_ad<32><7>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <uart_ad<32><6>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <uart_ad<32><5>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <uart_ad<32><4>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <uart_ad<32><3>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <uart_ad<32><2>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <uart_ad<32><1>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <uart_ad<32><0>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <uart_ad<24><6>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <uart_ad<24><5>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <uart_ad<24><4>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <uart_ad<24><3>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <uart_ad<24><2>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <uart_ad<24><1>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <uart_ad<24><0>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <uart_ad<23><6>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <uart_ad<23><5>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <uart_ad<23><4>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <uart_ad<23><3>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <uart_ad<23><2>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <uart_ad<23><1>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <uart_ad<23><0>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <uart_ad<22><6>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <uart_ad<22><5>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <uart_ad<22><4>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <uart_ad<22><3>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <uart_ad<22><2>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <uart_ad<22><1>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <uart_ad<22><0>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <uart_ad<21><6>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <uart_ad<21><5>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <uart_ad<21><4>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <uart_ad<21><3>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <uart_ad<21><2>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <uart_ad<21><1>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <uart_ad<21><0>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <uart_ad<19><6>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <uart_ad<19><5>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <uart_ad<19><4>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <uart_ad<19><3>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <uart_ad<19><2>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <uart_ad<19><1>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <uart_ad<19><0>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <uart_ad<18><7>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <uart_ad<18><6>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <uart_ad<18><5>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <uart_ad<18><4>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <uart_ad<18><3>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <uart_ad<18><2>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <uart_ad<18><1>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <uart_ad<18><0>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <uart_ad<10><6>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <uart_ad<10><5>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <uart_ad<10><4>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <uart_ad<10><3>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <uart_ad<10><2>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <uart_ad<10><1>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <uart_ad<10><0>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <uart_ad<9><6>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <uart_ad<9><5>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <uart_ad<9><4>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <uart_ad<9><3>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <uart_ad<9><2>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <uart_ad<9><1>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <uart_ad<9><0>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <uart_ad<8><6>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <uart_ad<8><5>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <uart_ad<8><4>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <uart_ad<8><3>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <uart_ad<8><2>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <uart_ad<8><1>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <uart_ad<8><0>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <uart_ad<7><6>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <uart_ad<7><5>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <uart_ad<7><4>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <uart_ad<7><3>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <uart_ad<7><2>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <uart_ad<7><1>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <uart_ad<7><0>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <uart_ad<5><6>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <uart_ad<5><5>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <uart_ad<5><4>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <uart_ad<5><3>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <uart_ad<5><2>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <uart_ad<5><1>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <uart_ad<5><0>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <uart_ad<4><7>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <uart_ad<4><6>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <uart_ad<4><5>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <uart_ad<4><4>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <uart_ad<4><3>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <uart_ad<4><2>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <uart_ad<4><1>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <uart_ad<4><0>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+    Summary:
+	inferred  43 Adder/Subtractor(s).
+	inferred  50 D-type flip-flop(s).
+	inferred 346 Latch(s).
+	inferred   4 Multiplexer(s).
+	inferred   1 Finite State Machine(s).
+Unit <uart> synthesized.
+
+Synthesizing Unit <clkdiv>.
+    Related source file is "E:\BaiduYunDownload\AX309.160229\AX309\09_VERILOG\30_ad706_test\rtl\clkdiv.v".
+    Found 16-bit register for signal <cnt>.
+    Found 1-bit register for signal <clkout>.
+    Found 16-bit adder for signal <cnt[15]_GND_919_o_add_4_OUT> created at line 25.
+    Summary:
+	inferred   1 Adder/Subtractor(s).
+	inferred  17 D-type flip-flop(s).
+Unit <clkdiv> synthesized.
+
+Synthesizing Unit <uarttx>.
+    Related source file is "E:\BaiduYunDownload\AX309.160229\AX309\09_VERILOG\30_ad706_test\rtl\uarttx.v".
+        paritymode = 1'b0
+    Found 1-bit register for signal <wrsigrise>.
+    Found 1-bit register for signal <send>.
+    Found 1-bit register for signal <tx>.
+    Found 1-bit register for signal <idle>.
+    Found 8-bit register for signal <cnt>.
+    Found 1-bit register for signal <presult>.
+    Found 1-bit register for signal <wrsigbuf>.
+    Found 8-bit adder for signal <cnt[7]_GND_920_o_add_5_OUT> created at line 44.
+    Summary:
+	inferred   1 Adder/Subtractor(s).
+	inferred  14 D-type flip-flop(s).
+Unit <uarttx> synthesized.
+
+=========================================================================
+HDL Synthesis Report
+
+Macro Statistics
+# RAMs                                                 : 24
+ 16x10-bit single-port Read Only RAM                   : 8
+ 16x14-bit single-port Read Only RAM                   : 8
+ 16x19-bit single-port Read Only RAM                   : 8
+# Multipliers                                          : 8
+ 16x16-bit multiplier                                  : 8
+# Adders/Subtractors                                   : 231
+ 16-bit adder                                          : 4
+ 16-bit subtractor                                     : 8
+ 3-bit adder                                           : 16
+ 4-bit adder                                           : 8
+ 5-bit adder                                           : 32
+ 6-bit adder                                           : 121
+ 7-bit adder                                           : 40
+ 8-bit adder                                           : 1
+ 9-bit adder                                           : 1
+# Registers                                            : 108
+ 1-bit register                                        : 12
+ 10-bit register                                       : 8
+ 14-bit register                                       : 8
+ 16-bit register                                       : 36
+ 17-bit register                                       : 8
+ 19-bit register                                       : 8
+ 20-bit register                                       : 8
+ 4-bit register                                        : 8
+ 6-bit register                                        : 1
+ 8-bit register                                        : 10
+ 9-bit register                                        : 1
+# Latches                                              : 346
+ 1-bit latch                                           : 346
+# Comparators                                          : 97
+ 16-bit comparator greater                             : 1
+ 5-bit comparator greater                              : 24
+ 6-bit comparator greater                              : 72
+# Multiplexers                                         : 121
+ 1-bit 2-to-1 multiplexer                              : 4
+ 16-bit 2-to-1 multiplexer                             : 10
+ 6-bit 2-to-1 multiplexer                              : 105
+ 8-bit 2-to-1 multiplexer                              : 1
+ 9-bit 2-to-1 multiplexer                              : 1
+# FSMs                                                 : 2
+# Xors                                                 : 7
+ 1-bit xor2                                            : 7
+
+=========================================================================
+INFO:Xst:1767 - HDL ADVISOR - Resource sharing has identified that some arithmetic operations in this design can share the same physical resources for reduced device utilization. For improved clock frequency you may try to disable resource sharing.
+
+=========================================================================
+*                       Advanced HDL Synthesis                          *
+=========================================================================
+
+INFO:Xst:2261 - The FF/Latch <ch2_sig_0> in Unit <u2> is equivalent to the following 23 FFs/Latches, which will be removed : <ch2_sig_3> <ch2_sig_5> <ch1_sig_0> <ch1_sig_3> <ch1_sig_5> <ch3_sig_0> <ch3_sig_3> <ch3_sig_5> <ch4_sig_0> <ch4_sig_3> <ch4_sig_5> <ch5_sig_0> <ch5_sig_3> <ch5_sig_5> <ch6_sig_0> <ch6_sig_3> <ch6_sig_5> <ch7_sig_0> <ch7_sig_3> <ch7_sig_5> <ch8_sig_0> <ch8_sig_3> <ch8_sig_5> 
+INFO:Xst:2261 - The FF/Latch <ch2_sig_4> in Unit <u2> is equivalent to the following 23 FFs/Latches, which will be removed : <ch2_sig_6> <ch2_sig_7> <ch1_sig_4> <ch1_sig_6> <ch1_sig_7> <ch3_sig_4> <ch3_sig_6> <ch3_sig_7> <ch4_sig_4> <ch4_sig_6> <ch4_sig_7> <ch5_sig_4> <ch5_sig_6> <ch5_sig_7> <ch6_sig_4> <ch6_sig_6> <ch6_sig_7> <ch7_sig_4> <ch7_sig_6> <ch7_sig_7> <ch8_sig_4> <ch8_sig_6> <ch8_sig_7> 
+WARNING:Xst:1710 - FF/Latch <uart_ad<46>_0> (without init value) has a constant value of 1 in block <u3>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <uart_ad<60>_4> (without init value) has a constant value of 0 in block <u3>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <uart_ad<60>_6> (without init value) has a constant value of 0 in block <u3>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <uart_ad<60>_5> (without init value) has a constant value of 1 in block <u3>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <uart_ad<60>_3> (without init value) has a constant value of 1 in block <u3>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <uart_ad<74>_6> (without init value) has a constant value of 0 in block <u3>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <uart_ad<60>_0> (without init value) has a constant value of 1 in block <u3>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <uart_ad<74>_7> (without init value) has a constant value of 0 in block <u3>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <uart_ad<74>_3> (without init value) has a constant value of 1 in block <u3>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <uart_ad<74>_5> (without init value) has a constant value of 1 in block <u3>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <uart_ad<74>_4> (without init value) has a constant value of 0 in block <u3>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <uart_ad<74>_0> (without init value) has a constant value of 1 in block <u3>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <uart_ad<88>_7> (without init value) has a constant value of 0 in block <u3>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <uart_ad<88>_6> (without init value) has a constant value of 0 in block <u3>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <uart_ad<88>_5> (without init value) has a constant value of 1 in block <u3>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <uart_ad<88>_4> (without init value) has a constant value of 0 in block <u3>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <uart_ad<88>_3> (without init value) has a constant value of 1 in block <u3>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <uart_ad<102>_6> (without init value) has a constant value of 0 in block <u3>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <uart_ad<88>_0> (without init value) has a constant value of 1 in block <u3>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <uart_ad<102>_7> (without init value) has a constant value of 0 in block <u3>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <uart_ad<102>_3> (without init value) has a constant value of 1 in block <u3>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <uart_ad<102>_5> (without init value) has a constant value of 1 in block <u3>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <uart_ad<102>_4> (without init value) has a constant value of 0 in block <u3>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <uart_ad<102>_0> (without init value) has a constant value of 1 in block <u3>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <uart_ad<107>_7> (without init value) has a constant value of 0 in block <u3>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <uart_ad<104>_5> (without init value) has a constant value of 1 in block <u3>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <ch2_sig_0> (without init value) has a constant value of 1 in block <u2>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <ch2_sig_4> (without init value) has a constant value of 0 in block <u2>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <uart_ad<4>_7> (without init value) has a constant value of 0 in block <u3>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <uart_ad<4>_6> (without init value) has a constant value of 0 in block <u3>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <uart_ad<4>_3> (without init value) has a constant value of 1 in block <u3>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <uart_ad<4>_5> (without init value) has a constant value of 1 in block <u3>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <uart_ad<4>_4> (without init value) has a constant value of 0 in block <u3>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <uart_ad<4>_0> (without init value) has a constant value of 1 in block <u3>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <uart_ad<18>_5> (without init value) has a constant value of 1 in block <u3>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <uart_ad<18>_7> (without init value) has a constant value of 0 in block <u3>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <uart_ad<18>_6> (without init value) has a constant value of 0 in block <u3>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <uart_ad<18>_4> (without init value) has a constant value of 0 in block <u3>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <uart_ad<18>_3> (without init value) has a constant value of 1 in block <u3>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <uart_ad<32>_7> (without init value) has a constant value of 0 in block <u3>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <uart_ad<18>_0> (without init value) has a constant value of 1 in block <u3>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <uart_ad<32>_4> (without init value) has a constant value of 0 in block <u3>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <uart_ad<32>_6> (without init value) has a constant value of 0 in block <u3>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <uart_ad<32>_5> (without init value) has a constant value of 1 in block <u3>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <uart_ad<32>_3> (without init value) has a constant value of 1 in block <u3>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <uart_ad<32>_0> (without init value) has a constant value of 1 in block <u3>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <uart_ad<46>_7> (without init value) has a constant value of 0 in block <u3>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <uart_ad<46>_6> (without init value) has a constant value of 0 in block <u3>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <uart_ad<46>_5> (without init value) has a constant value of 1 in block <u3>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <uart_ad<46>_4> (without init value) has a constant value of 0 in block <u3>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <uart_ad<46>_3> (without init value) has a constant value of 1 in block <u3>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <uart_ad<60>_7> (without init value) has a constant value of 0 in block <u3>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:2677 - Node <ch1_data_reg_31> of sequential type is unconnected in block <u2>.
+WARNING:Xst:2677 - Node <ch2_data_reg_31> of sequential type is unconnected in block <u2>.
+WARNING:Xst:2677 - Node <ch5_data_reg_31> of sequential type is unconnected in block <u2>.
+WARNING:Xst:2677 - Node <ch3_data_reg_31> of sequential type is unconnected in block <u2>.
+WARNING:Xst:2677 - Node <ch4_data_reg_31> of sequential type is unconnected in block <u2>.
+WARNING:Xst:2677 - Node <ch6_data_reg_31> of sequential type is unconnected in block <u2>.
+WARNING:Xst:2677 - Node <ch7_data_reg_31> of sequential type is unconnected in block <u2>.
+WARNING:Xst:2677 - Node <ch8_data_reg_31> of sequential type is unconnected in block <u2>.
+WARNING:Xst:2404 -  FFs/Latches <ch1_sig<7:6>> (without init value) have a constant value of 0 in block <volt_cal>.
+WARNING:Xst:2404 -  FFs/Latches <ch2_sig<7:6>> (without init value) have a constant value of 0 in block <volt_cal>.
+WARNING:Xst:2404 -  FFs/Latches <ch3_sig<7:6>> (without init value) have a constant value of 0 in block <volt_cal>.
+WARNING:Xst:2404 -  FFs/Latches <ch4_sig<7:6>> (without init value) have a constant value of 0 in block <volt_cal>.
+WARNING:Xst:2404 -  FFs/Latches <ch5_sig<7:6>> (without init value) have a constant value of 0 in block <volt_cal>.
+WARNING:Xst:2404 -  FFs/Latches <ch6_sig<7:6>> (without init value) have a constant value of 0 in block <volt_cal>.
+WARNING:Xst:2404 -  FFs/Latches <ch7_sig<7:6>> (without init value) have a constant value of 0 in block <volt_cal>.
+WARNING:Xst:2404 -  FFs/Latches <ch8_sig<7:6>> (without init value) have a constant value of 0 in block <volt_cal>.
+
+Synthesizing (advanced) Unit <ad7606>.
+The following registers are absorbed into counter <cnt>: 1 register on signal <cnt>.
+Unit <ad7606> synthesized (advanced).
+
+Synthesizing (advanced) Unit <bcd>.
+	The following adders/subtractors are grouped into adder tree <Madd_n01871> :
+ 	<Madd_n0180[2:0]> in block <bcd>, 	<Madd_n0183[4:0]> in block <bcd>, 	<Madd_n0187> in block <bcd>.
+	The following adders/subtractors are grouped into adder tree <Madd_n01721> :
+ 	<Madd_n0165[4:0]> in block <bcd>, 	<Madd__n0211> in block <bcd>.
+	The following adders/subtractors are grouped into adder tree <Madd_n01571> :
+ 	<Madd_n0150[4:0]> in block <bcd>, 	<Madd__n0209> in block <bcd>.
+INFO:Xst:3231 - The small RAM <Mram_rhex[3][3]_PWR_5_o_wide_mux_5_OUT> will be implemented on LUTs in order to maximize performance and save block RAM resources. If you want to force its implementation on block, use option/constraint ram_style.
+    -----------------------------------------------------------------------
+    | ram_type           | Distributed                         |          |
+    -----------------------------------------------------------------------
+    | Port A                                                              |
+    |     aspect ratio   | 16-word x 19-bit                    |          |
+    |     weA            | connected to signal <GND>           | high     |
+    |     addrA          | connected to signal <n0066<15:12>>  |          |
+    |     diA            | connected to signal <GND>           |          |
+    |     doA            | connected to internal node          |          |
+    -----------------------------------------------------------------------
+INFO:Xst:3231 - The small RAM <Mram_rhex[1][3]_PWR_5_o_wide_mux_11_OUT> will be implemented on LUTs in order to maximize performance and save block RAM resources. If you want to force its implementation on block, use option/constraint ram_style.
+    -----------------------------------------------------------------------
+    | ram_type           | Distributed                         |          |
+    -----------------------------------------------------------------------
+    | Port A                                                              |
+    |     aspect ratio   | 16-word x 10-bit                    |          |
+    |     weA            | connected to signal <GND>           | high     |
+    |     addrA          | connected to signal <n0066<7:4>>    |          |
+    |     diA            | connected to signal <GND>           |          |
+    |     doA            | connected to internal node          |          |
+    -----------------------------------------------------------------------
+INFO:Xst:3231 - The small RAM <Mram_rhex[2][3]_PWR_5_o_wide_mux_8_OUT> will be implemented on LUTs in order to maximize performance and save block RAM resources. If you want to force its implementation on block, use option/constraint ram_style.
+    -----------------------------------------------------------------------
+    | ram_type           | Distributed                         |          |
+    -----------------------------------------------------------------------
+    | Port A                                                              |
+    |     aspect ratio   | 16-word x 14-bit                    |          |
+    |     weA            | connected to signal <GND>           | high     |
+    |     addrA          | connected to signal <n0066<11:8>>   |          |
+    |     diA            | connected to signal <GND>           |          |
+    |     doA            | connected to internal node          |          |
+    -----------------------------------------------------------------------
+Unit <bcd> synthesized (advanced).
+
+Synthesizing (advanced) Unit <clkdiv>.
+The following registers are absorbed into counter <cnt>: 1 register on signal <cnt>.
+Unit <clkdiv> synthesized (advanced).
+
+Synthesizing (advanced) Unit <uart>.
+The following registers are absorbed into counter <k>: 1 register on signal <k>.
+The following registers are absorbed into counter <Time_wait>: 1 register on signal <Time_wait>.
+Unit <uart> synthesized (advanced).
+WARNING:Xst:2677 - Node <ch1_data_reg_31> of sequential type is unconnected in block <volt_cal>.
+WARNING:Xst:2677 - Node <ch2_data_reg_31> of sequential type is unconnected in block <volt_cal>.
+WARNING:Xst:2677 - Node <ch3_data_reg_31> of sequential type is unconnected in block <volt_cal>.
+WARNING:Xst:2677 - Node <ch4_data_reg_31> of sequential type is unconnected in block <volt_cal>.
+WARNING:Xst:2677 - Node <ch5_data_reg_31> of sequential type is unconnected in block <volt_cal>.
+WARNING:Xst:2677 - Node <ch6_data_reg_31> of sequential type is unconnected in block <volt_cal>.
+WARNING:Xst:2677 - Node <ch7_data_reg_31> of sequential type is unconnected in block <volt_cal>.
+WARNING:Xst:2677 - Node <ch8_data_reg_31> of sequential type is unconnected in block <volt_cal>.
+
+=========================================================================
+Advanced HDL Synthesis Report
+
+Macro Statistics
+# RAMs                                                 : 24
+ 16x10-bit single-port distributed Read Only RAM       : 8
+ 16x14-bit single-port distributed Read Only RAM       : 8
+ 16x19-bit single-port distributed Read Only RAM       : 8
+# Multipliers                                          : 8
+ 16x16-bit multiplier                                  : 8
+# Adders/Subtractors                                   : 155
+ 16-bit adder                                          : 1
+ 16-bit subtractor                                     : 8
+ 3-bit adder                                           : 8
+ 4-bit adder                                           : 8
+ 5-bit adder                                           : 8
+ 6-bit adder                                           : 81
+ 7-bit adder                                           : 40
+ 8-bit adder                                           : 1
+# Adder Trees                                          : 24
+ 6-bit / 4-inputs adder tree                           : 24
+# Counters                                             : 4
+ 16-bit up counter                                     : 3
+ 9-bit up counter                                      : 1
+# Registers                                            : 1274
+ Flip-Flops                                            : 1274
+# Comparators                                          : 97
+ 16-bit comparator greater                             : 1
+ 5-bit comparator greater                              : 24
+ 6-bit comparator greater                              : 72
+# Multiplexers                                         : 120
+ 1-bit 2-to-1 multiplexer                              : 4
+ 16-bit 2-to-1 multiplexer                             : 10
+ 6-bit 2-to-1 multiplexer                              : 105
+ 8-bit 2-to-1 multiplexer                              : 1
+# FSMs                                                 : 2
+# Xors                                                 : 7
+ 1-bit xor2                                            : 7
+
+=========================================================================
+
+=========================================================================
+*                         Low Level Synthesis                           *
+=========================================================================
+WARNING:Xst:1710 - FF/Latch <ch8_sig_5> (without init value) has a constant value of 1 in block <volt_cal>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <ch8_sig_4> (without init value) has a constant value of 0 in block <volt_cal>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <ch8_sig_3> (without init value) has a constant value of 1 in block <volt_cal>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <ch8_sig_0> (without init value) has a constant value of 1 in block <volt_cal>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <ch7_sig_5> (without init value) has a constant value of 1 in block <volt_cal>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <ch7_sig_4> (without init value) has a constant value of 0 in block <volt_cal>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <ch7_sig_3> (without init value) has a constant value of 1 in block <volt_cal>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <ch7_sig_0> (without init value) has a constant value of 1 in block <volt_cal>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <ch6_sig_5> (without init value) has a constant value of 1 in block <volt_cal>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <ch6_sig_4> (without init value) has a constant value of 0 in block <volt_cal>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <ch6_sig_3> (without init value) has a constant value of 1 in block <volt_cal>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <ch6_sig_0> (without init value) has a constant value of 1 in block <volt_cal>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <ch5_sig_5> (without init value) has a constant value of 1 in block <volt_cal>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <ch5_sig_4> (without init value) has a constant value of 0 in block <volt_cal>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <ch5_sig_3> (without init value) has a constant value of 1 in block <volt_cal>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <ch5_sig_0> (without init value) has a constant value of 1 in block <volt_cal>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <ch4_sig_5> (without init value) has a constant value of 1 in block <volt_cal>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <ch4_sig_4> (without init value) has a constant value of 0 in block <volt_cal>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <ch4_sig_3> (without init value) has a constant value of 1 in block <volt_cal>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <ch4_sig_0> (without init value) has a constant value of 1 in block <volt_cal>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <ch3_sig_5> (without init value) has a constant value of 1 in block <volt_cal>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <ch3_sig_4> (without init value) has a constant value of 0 in block <volt_cal>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <ch3_sig_3> (without init value) has a constant value of 1 in block <volt_cal>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <ch3_sig_0> (without init value) has a constant value of 1 in block <volt_cal>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <ch2_sig_5> (without init value) has a constant value of 1 in block <volt_cal>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <ch2_sig_4> (without init value) has a constant value of 0 in block <volt_cal>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <ch2_sig_3> (without init value) has a constant value of 1 in block <volt_cal>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <ch2_sig_0> (without init value) has a constant value of 1 in block <volt_cal>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <ch1_sig_5> (without init value) has a constant value of 1 in block <volt_cal>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <ch1_sig_4> (without init value) has a constant value of 0 in block <volt_cal>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <ch1_sig_3> (without init value) has a constant value of 1 in block <volt_cal>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <ch1_sig_0> (without init value) has a constant value of 1 in block <volt_cal>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <uart_ad<107>_7> (without init value) has a constant value of 0 in block <uart>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <uart_ad<104>_5> (without init value) has a constant value of 1 in block <uart>. This FF/Latch will be trimmed during the optimization process.
+Analyzing FSM <MFsm> for best encoding.
+Optimizing FSM <u1/FSM_0> on signal <state[1:4]> with user encoding.
+-------------------
+ State | Encoding
+-------------------
+ 0000  | 0000
+ 0001  | 0001
+ 0010  | 0010
+ 0011  | 0011
+ 0100  | 0100
+ 0101  | 0101
+ 0110  | 0110
+ 0111  | 0111
+ 1000  | 1000
+ 1001  | 1001
+ 1010  | 1010
+ 1011  | 1011
+ 1100  | 1100
+-------------------
+Analyzing FSM <MFsm> for best encoding.
+Optimizing FSM <u3/FSM_1> on signal <uart_stat[1:2]> with gray encoding.
+-------------------
+ State | Encoding
+-------------------
+ 000   | 00
+ 001   | 01
+ 010   | 11
+-------------------
+WARNING:Xst:1710 - FF/Latch <rhexd_0> (without init value) has a constant value of 0 in block <bcd>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <rhexc_0> (without init value) has a constant value of 0 in block <bcd>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <rhexb_0> (without init value) has a constant value of 0 in block <bcd>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <uart_ad<33>_4> (without init value) has a constant value of 1 in block <uart>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <uart_ad<33>_6> (without init value) has a constant value of 0 in block <uart>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <uart_ad<33>_5> (without init value) has a constant value of 1 in block <uart>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <uart_ad<35>_5> (without init value) has a constant value of 1 in block <uart>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <uart_ad<35>_6> (without init value) has a constant value of 0 in block <uart>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <uart_ad<35>_4> (without init value) has a constant value of 1 in block <uart>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <uart_ad<36>_4> (without init value) has a constant value of 1 in block <uart>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <uart_ad<36>_5> (without init value) has a constant value of 1 in block <uart>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <uart_ad<36>_6> (without init value) has a constant value of 0 in block <uart>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <uart_ad<37>_4> (without init value) has a constant value of 1 in block <uart>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <uart_ad<37>_5> (without init value) has a constant value of 1 in block <uart>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <uart_ad<37>_6> (without init value) has a constant value of 0 in block <uart>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <uart_ad<38>_4> (without init value) has a constant value of 1 in block <uart>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <uart_ad<38>_6> (without init value) has a constant value of 0 in block <uart>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <uart_ad<38>_5> (without init value) has a constant value of 1 in block <uart>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <uart_ad<47>_5> (without init value) has a constant value of 1 in block <uart>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <uart_ad<47>_6> (without init value) has a constant value of 0 in block <uart>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <uart_ad<47>_4> (without init value) has a constant value of 1 in block <uart>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <uart_ad<49>_4> (without init value) has a constant value of 1 in block <uart>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <uart_ad<49>_5> (without init value) has a constant value of 1 in block <uart>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <uart_ad<49>_6> (without init value) has a constant value of 0 in block <uart>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <uart_ad<50>_4> (without init value) has a constant value of 1 in block <uart>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <uart_ad<50>_5> (without init value) has a constant value of 1 in block <uart>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <uart_ad<50>_6> (without init value) has a constant value of 0 in block <uart>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <uart_ad<51>_4> (without init value) has a constant value of 1 in block <uart>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <uart_ad<51>_6> (without init value) has a constant value of 0 in block <uart>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <uart_ad<51>_5> (without init value) has a constant value of 1 in block <uart>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <uart_ad<52>_5> (without init value) has a constant value of 1 in block <uart>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <uart_ad<52>_6> (without init value) has a constant value of 0 in block <uart>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <uart_ad<52>_4> (without init value) has a constant value of 1 in block <uart>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <uart_ad<5>_5> (without init value) has a constant value of 1 in block <uart>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <uart_ad<5>_6> (without init value) has a constant value of 0 in block <uart>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <uart_ad<5>_4> (without init value) has a constant value of 1 in block <uart>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <uart_ad<7>_4> (without init value) has a constant value of 1 in block <uart>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <uart_ad<7>_5> (without init value) has a constant value of 1 in block <uart>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <uart_ad<7>_6> (without init value) has a constant value of 0 in block <uart>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <uart_ad<8>_4> (without init value) has a constant value of 1 in block <uart>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <uart_ad<8>_6> (without init value) has a constant value of 0 in block <uart>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <uart_ad<8>_5> (without init value) has a constant value of 1 in block <uart>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <uart_ad<9>_5> (without init value) has a constant value of 1 in block <uart>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <uart_ad<9>_6> (without init value) has a constant value of 0 in block <uart>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <uart_ad<9>_4> (without init value) has a constant value of 1 in block <uart>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <uart_ad<10>_4> (without init value) has a constant value of 1 in block <uart>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <uart_ad<10>_5> (without init value) has a constant value of 1 in block <uart>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <uart_ad<10>_6> (without init value) has a constant value of 0 in block <uart>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <uart_ad<19>_4> (without init value) has a constant value of 1 in block <uart>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <uart_ad<19>_5> (without init value) has a constant value of 1 in block <uart>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <uart_ad<19>_6> (without init value) has a constant value of 0 in block <uart>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <uart_ad<21>_4> (without init value) has a constant value of 1 in block <uart>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <uart_ad<21>_6> (without init value) has a constant value of 0 in block <uart>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <uart_ad<21>_5> (without init value) has a constant value of 1 in block <uart>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <uart_ad<22>_5> (without init value) has a constant value of 1 in block <uart>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <uart_ad<22>_6> (without init value) has a constant value of 0 in block <uart>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <uart_ad<22>_4> (without init value) has a constant value of 1 in block <uart>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <uart_ad<23>_4> (without init value) has a constant value of 1 in block <uart>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <uart_ad<23>_5> (without init value) has a constant value of 1 in block <uart>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <uart_ad<23>_6> (without init value) has a constant value of 0 in block <uart>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <uart_ad<24>_4> (without init value) has a constant value of 1 in block <uart>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <uart_ad<24>_5> (without init value) has a constant value of 1 in block <uart>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <uart_ad<24>_6> (without init value) has a constant value of 0 in block <uart>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <uart_ad<89>_4> (without init value) has a constant value of 1 in block <uart>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <uart_ad<89>_6> (without init value) has a constant value of 0 in block <uart>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <uart_ad<89>_5> (without init value) has a constant value of 1 in block <uart>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <uart_ad<91>_5> (without init value) has a constant value of 1 in block <uart>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <uart_ad<91>_6> (without init value) has a constant value of 0 in block <uart>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <uart_ad<91>_4> (without init value) has a constant value of 1 in block <uart>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <uart_ad<92>_4> (without init value) has a constant value of 1 in block <uart>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <uart_ad<92>_5> (without init value) has a constant value of 1 in block <uart>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <uart_ad<92>_6> (without init value) has a constant value of 0 in block <uart>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <uart_ad<93>_4> (without init value) has a constant value of 1 in block <uart>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <uart_ad<93>_6> (without init value) has a constant value of 0 in block <uart>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <uart_ad<93>_5> (without init value) has a constant value of 1 in block <uart>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <uart_ad<94>_4> (without init value) has a constant value of 1 in block <uart>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <uart_ad<94>_6> (without init value) has a constant value of 0 in block <uart>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <uart_ad<94>_5> (without init value) has a constant value of 1 in block <uart>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <uart_ad<103>_5> (without init value) has a constant value of 1 in block <uart>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <uart_ad<103>_6> (without init value) has a constant value of 0 in block <uart>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <uart_ad<103>_4> (without init value) has a constant value of 1 in block <uart>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <uart_ad<105>_4> (without init value) has a constant value of 1 in block <uart>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <uart_ad<105>_6> (without init value) has a constant value of 0 in block <uart>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <uart_ad<105>_5> (without init value) has a constant value of 1 in block <uart>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <uart_ad<106>_4> (without init value) has a constant value of 1 in block <uart>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <uart_ad<106>_5> (without init value) has a constant value of 1 in block <uart>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <uart_ad<106>_6> (without init value) has a constant value of 0 in block <uart>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <uart_ad<107>_5> (without init value) has a constant value of 1 in block <uart>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <uart_ad<107>_6> (without init value) has a constant value of 0 in block <uart>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <uart_ad<107>_4> (without init value) has a constant value of 1 in block <uart>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <uart_ad<108>_4> (without init value) has a constant value of 1 in block <uart>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <uart_ad<108>_6> (without init value) has a constant value of 0 in block <uart>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <uart_ad<108>_5> (without init value) has a constant value of 1 in block <uart>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <uart_ad<61>_5> (without init value) has a constant value of 1 in block <uart>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <uart_ad<61>_6> (without init value) has a constant value of 0 in block <uart>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <uart_ad<61>_4> (without init value) has a constant value of 1 in block <uart>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <uart_ad<63>_4> (without init value) has a constant value of 1 in block <uart>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <uart_ad<63>_5> (without init value) has a constant value of 1 in block <uart>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <uart_ad<63>_6> (without init value) has a constant value of 0 in block <uart>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <uart_ad<64>_4> (without init value) has a constant value of 1 in block <uart>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <uart_ad<64>_6> (without init value) has a constant value of 0 in block <uart>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <uart_ad<64>_5> (without init value) has a constant value of 1 in block <uart>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <uart_ad<65>_4> (without init value) has a constant value of 1 in block <uart>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <uart_ad<65>_5> (without init value) has a constant value of 1 in block <uart>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <uart_ad<65>_6> (without init value) has a constant value of 0 in block <uart>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <uart_ad<66>_5> (without init value) has a constant value of 1 in block <uart>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <uart_ad<66>_6> (without init value) has a constant value of 0 in block <uart>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <uart_ad<66>_4> (without init value) has a constant value of 1 in block <uart>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <uart_ad<75>_4> (without init value) has a constant value of 1 in block <uart>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <uart_ad<75>_5> (without init value) has a constant value of 1 in block <uart>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <uart_ad<75>_6> (without init value) has a constant value of 0 in block <uart>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <uart_ad<77>_4> (without init value) has a constant value of 1 in block <uart>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <uart_ad<77>_6> (without init value) has a constant value of 0 in block <uart>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <uart_ad<77>_5> (without init value) has a constant value of 1 in block <uart>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <uart_ad<78>_4> (without init value) has a constant value of 1 in block <uart>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <uart_ad<78>_6> (without init value) has a constant value of 0 in block <uart>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <uart_ad<78>_5> (without init value) has a constant value of 1 in block <uart>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <uart_ad<79>_5> (without init value) has a constant value of 1 in block <uart>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <uart_ad<79>_6> (without init value) has a constant value of 0 in block <uart>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <uart_ad<79>_4> (without init value) has a constant value of 1 in block <uart>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <uart_ad<80>_4> (without init value) has a constant value of 1 in block <uart>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <uart_ad<80>_5> (without init value) has a constant value of 1 in block <uart>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <uart_ad<80>_6> (without init value) has a constant value of 0 in block <uart>. This FF/Latch will be trimmed during the optimization process.
+INFO:Xst:2261 - The FF/Latch <rhexd_1> in Unit <bcd> is equivalent to the following FF/Latch, which will be removed : <rhexd_4> 
+INFO:Xst:2261 - The FF/Latch <rhexd_13> in Unit <bcd> is equivalent to the following FF/Latch, which will be removed : <rhexd_16> 
+INFO:Xst:2261 - The FF/Latch <rhexd_2> in Unit <bcd> is equivalent to the following FF/Latch, which will be removed : <rhexd_14> 
+INFO:Xst:2261 - The FF/Latch <rhexb_1> in Unit <bcd> is equivalent to the following FF/Latch, which will be removed : <rhexb_4> 
+INFO:Xst:2261 - The FF/Latch <rhexc_1> in Unit <bcd> is equivalent to the following FF/Latch, which will be removed : <rhexc_4> 
+
+Optimizing unit <ad706_test> ...
+
+Optimizing unit <ad7606> ...
+
+Optimizing unit <volt_cal> ...
+
+Optimizing unit <bcd> ...
+
+Optimizing unit <uart> ...
+
+Optimizing unit <uarttx> ...
+WARNING:Xst:1710 - FF/Latch <u3/uart_ad<60>_7> (without init value) has a constant value of 0 in block <ad706_test>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <u3/uart_ad<46>_3> (without init value) has a constant value of 1 in block <ad706_test>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <u3/uart_ad<46>_4> (without init value) has a constant value of 0 in block <ad706_test>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <u3/uart_ad<46>_5> (without init value) has a constant value of 1 in block <ad706_test>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <u3/uart_ad<46>_6> (without init value) has a constant value of 0 in block <ad706_test>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <u3/uart_ad<46>_7> (without init value) has a constant value of 0 in block <ad706_test>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <u3/uart_ad<32>_0> (without init value) has a constant value of 1 in block <ad706_test>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <u3/uart_ad<32>_3> (without init value) has a constant value of 1 in block <ad706_test>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <u3/uart_ad<32>_5> (without init value) has a constant value of 1 in block <ad706_test>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <u3/uart_ad<32>_6> (without init value) has a constant value of 0 in block <ad706_test>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <u3/uart_ad<32>_4> (without init value) has a constant value of 0 in block <ad706_test>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <u3/uart_ad<18>_0> (without init value) has a constant value of 1 in block <ad706_test>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <u3/uart_ad<32>_7> (without init value) has a constant value of 0 in block <ad706_test>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <u3/uart_ad<18>_3> (without init value) has a constant value of 1 in block <ad706_test>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <u3/uart_ad<18>_4> (without init value) has a constant value of 0 in block <ad706_test>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <u3/uart_ad<18>_6> (without init value) has a constant value of 0 in block <ad706_test>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <u3/uart_ad<18>_7> (without init value) has a constant value of 0 in block <ad706_test>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <u3/uart_ad<18>_5> (without init value) has a constant value of 1 in block <ad706_test>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <u3/uart_ad<4>_0> (without init value) has a constant value of 1 in block <ad706_test>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <u3/uart_ad<4>_4> (without init value) has a constant value of 0 in block <ad706_test>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <u3/uart_ad<4>_5> (without init value) has a constant value of 1 in block <ad706_test>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <u3/uart_ad<4>_3> (without init value) has a constant value of 1 in block <ad706_test>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <u3/uart_ad<4>_6> (without init value) has a constant value of 0 in block <ad706_test>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <u3/uart_ad<4>_7> (without init value) has a constant value of 0 in block <ad706_test>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <u3/txdata_7> (without init value) has a constant value of 0 in block <ad706_test>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <u3/uart_ad<102>_0> (without init value) has a constant value of 1 in block <ad706_test>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <u3/uart_ad<102>_4> (without init value) has a constant value of 0 in block <ad706_test>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <u3/uart_ad<102>_5> (without init value) has a constant value of 1 in block <ad706_test>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <u3/uart_ad<102>_3> (without init value) has a constant value of 1 in block <ad706_test>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <u3/uart_ad<102>_7> (without init value) has a constant value of 0 in block <ad706_test>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <u3/uart_ad<88>_0> (without init value) has a constant value of 1 in block <ad706_test>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <u3/uart_ad<102>_6> (without init value) has a constant value of 0 in block <ad706_test>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <u3/uart_ad<88>_3> (without init value) has a constant value of 1 in block <ad706_test>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <u3/uart_ad<88>_4> (without init value) has a constant value of 0 in block <ad706_test>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <u3/uart_ad<88>_5> (without init value) has a constant value of 1 in block <ad706_test>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <u3/uart_ad<88>_6> (without init value) has a constant value of 0 in block <ad706_test>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <u3/uart_ad<88>_7> (without init value) has a constant value of 0 in block <ad706_test>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <u3/uart_ad<74>_0> (without init value) has a constant value of 1 in block <ad706_test>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <u3/uart_ad<74>_4> (without init value) has a constant value of 0 in block <ad706_test>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <u3/uart_ad<74>_5> (without init value) has a constant value of 1 in block <ad706_test>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <u3/uart_ad<74>_3> (without init value) has a constant value of 1 in block <ad706_test>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <u3/uart_ad<74>_7> (without init value) has a constant value of 0 in block <ad706_test>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <u3/uart_ad<60>_0> (without init value) has a constant value of 1 in block <ad706_test>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <u3/uart_ad<74>_6> (without init value) has a constant value of 0 in block <ad706_test>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <u3/uart_ad<60>_3> (without init value) has a constant value of 1 in block <ad706_test>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <u3/uart_ad<60>_5> (without init value) has a constant value of 1 in block <ad706_test>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <u3/uart_ad<60>_6> (without init value) has a constant value of 0 in block <ad706_test>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <u3/uart_ad<60>_4> (without init value) has a constant value of 0 in block <ad706_test>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <u3/uart_ad<46>_0> (without init value) has a constant value of 1 in block <ad706_test>. This FF/Latch will be trimmed during the optimization process.
+
+Mapping all equations...
+Building and optimizing final netlist ...
+Found area constraint ratio of 100 (+ 5) on block ad706_test, actual ratio is 40.
+FlipFlop u2/bcd1_ist/rhexb_1 has been replicated 1 time(s)
+FlipFlop u2/bcd2_ist/rhexb_1 has been replicated 1 time(s)
+FlipFlop u2/bcd3_ist/rhexb_1 has been replicated 1 time(s)
+FlipFlop u2/bcd4_ist/rhexb_1 has been replicated 1 time(s)
+FlipFlop u2/bcd5_ist/rhexb_1 has been replicated 2 time(s)
+FlipFlop u2/bcd6_ist/rhexb_1 has been replicated 1 time(s)
+FlipFlop u2/bcd7_ist/rhexb_1 has been replicated 1 time(s)
+FlipFlop u2/bcd8_ist/rhexb_1 has been replicated 1 time(s)
+
+Final Macro Processing ...
+
+Processing Unit <ad706_test> :
+	Found 3-bit shift register for signal <u2/bcd8_ist/resa<3:0>_0>.
+	Found 2-bit shift register for signal <u2/bcd8_ist/rhexa_3>.
+	Found 2-bit shift register for signal <u2/bcd8_ist/rhexa_2>.
+	Found 2-bit shift register for signal <u2/bcd8_ist/rhexa_1>.
+	Found 3-bit shift register for signal <u2/bcd7_ist/resa<3:0>_0>.
+	Found 2-bit shift register for signal <u2/bcd7_ist/rhexa_3>.
+	Found 2-bit shift register for signal <u2/bcd7_ist/rhexa_2>.
+	Found 2-bit shift register for signal <u2/bcd7_ist/rhexa_1>.
+	Found 3-bit shift register for signal <u2/bcd6_ist/resa<3:0>_0>.
+	Found 2-bit shift register for signal <u2/bcd6_ist/rhexa_3>.
+	Found 2-bit shift register for signal <u2/bcd6_ist/rhexa_2>.
+	Found 2-bit shift register for signal <u2/bcd6_ist/rhexa_1>.
+	Found 3-bit shift register for signal <u2/bcd5_ist/resa<3:0>_0>.
+	Found 2-bit shift register for signal <u2/bcd5_ist/rhexa_3>.
+	Found 2-bit shift register for signal <u2/bcd5_ist/rhexa_2>.
+	Found 2-bit shift register for signal <u2/bcd5_ist/rhexa_1>.
+	Found 3-bit shift register for signal <u2/bcd4_ist/resa<3:0>_0>.
+	Found 2-bit shift register for signal <u2/bcd4_ist/rhexa_3>.
+	Found 2-bit shift register for signal <u2/bcd4_ist/rhexa_2>.
+	Found 2-bit shift register for signal <u2/bcd4_ist/rhexa_1>.
+	Found 3-bit shift register for signal <u2/bcd3_ist/resa<3:0>_0>.
+	Found 2-bit shift register for signal <u2/bcd3_ist/rhexa_3>.
+	Found 2-bit shift register for signal <u2/bcd3_ist/rhexa_2>.
+	Found 2-bit shift register for signal <u2/bcd3_ist/rhexa_1>.
+	Found 3-bit shift register for signal <u2/bcd2_ist/resa<3:0>_0>.
+	Found 2-bit shift register for signal <u2/bcd2_ist/rhexa_3>.
+	Found 2-bit shift register for signal <u2/bcd2_ist/rhexa_2>.
+	Found 2-bit shift register for signal <u2/bcd2_ist/rhexa_1>.
+	Found 3-bit shift register for signal <u2/bcd1_ist/resa<3:0>_0>.
+	Found 2-bit shift register for signal <u2/bcd1_ist/rhexa_3>.
+	Found 2-bit shift register for signal <u2/bcd1_ist/rhexa_2>.
+	Found 2-bit shift register for signal <u2/bcd1_ist/rhexa_1>.
+Unit <ad706_test> processed.
+
+=========================================================================
+Final Register Report
+
+Macro Statistics
+# Registers                                            : 793
+ Flip-Flops                                            : 793
+# Shift Registers                                      : 32
+ 2-bit shift register                                  : 24
+ 3-bit shift register                                  : 8
+
+=========================================================================
+
+=========================================================================
+*                           Partition Report                            *
+=========================================================================
+
+Partition Implementation Status
+-------------------------------
+
+  No Partitions were found in this design.
+
+-------------------------------
+
+=========================================================================
+*                            Design Summary                             *
+=========================================================================
+
+Top Level Output File Name         : ad706_test.ngc
+
+Primitive and Black Box Usage:
+------------------------------
+# BELS                             : 2648
+#      GND                         : 1
+#      INV                         : 145
+#      LUT1                        : 62
+#      LUT2                        : 97
+#      LUT3                        : 382
+#      LUT4                        : 370
+#      LUT5                        : 332
+#      LUT6                        : 782
+#      MUXCY                       : 241
+#      MUXF7                       : 34
+#      VCC                         : 1
+#      XORCY                       : 201
+# FlipFlops/Latches                : 1001
+#      FD                          : 543
+#      FDE                         : 71
+#      FDR                         : 32
+#      FDRE                        : 175
+#      FDS                         : 4
+#      LD                          : 176
+# Shift Registers                  : 32
+#      SRLC16E                     : 32
+# Clock Buffers                    : 3
+#      BUFG                        : 2
+#      BUFGP                       : 1
+# IO Buffers                       : 26
+#      IBUF                        : 18
+#      OBUF                        : 8
+# DSPs                             : 8
+#      DSP48A1                     : 8
+
+Device utilization summary:
+---------------------------
+
+Selected Device : 6slx9ftg256-2 
+
+
+Slice Logic Utilization: 
+ Number of Slice Registers:            1001  out of  11440     8%  
+ Number of Slice LUTs:                 2202  out of   5720    38%  
+    Number used as Logic:              2170  out of   5720    37%  
+    Number used as Memory:               32  out of   1440     2%  
+       Number used as SRL:               32
+
+Slice Logic Distribution: 
+ Number of LUT Flip Flop pairs used:   2558
+   Number with an unused Flip Flop:    1557  out of   2558    60%  
+   Number with an unused LUT:           356  out of   2558    13%  
+   Number of fully used LUT-FF pairs:   645  out of   2558    25%  
+   Number of unique control sets:        23
+
+IO Utilization: 
+ Number of IOs:                          29
+ Number of bonded IOBs:                  27  out of    186    14%  
+
+Specific Feature Utilization:
+ Number of BUFG/BUFGCTRLs:                3  out of     16    18%  
+ Number of DSP48A1s:                      8  out of     16    50%  
+
+---------------------------
+Partition Resource Summary:
+---------------------------
+
+  No Partitions were found in this design.
+
+---------------------------
+
+
+=========================================================================
+Timing Report
+
+NOTE: THESE TIMING NUMBERS ARE ONLY A SYNTHESIS ESTIMATE.
+      FOR ACCURATE TIMING INFORMATION PLEASE REFER TO THE TRACE REPORT
+      GENERATED AFTER PLACE-and-ROUTE.
+
+Clock Information:
+------------------
+-----------------------------------+------------------------+-------+
+Clock Signal                       | Clock buffer(FF name)  | Load  |
+-----------------------------------+------------------------+-------+
+clk                                | BUFGP                  | 800   |
+u3/u0/clkout                       | BUFG                   | 65    |
+u3/uart_stat_FSM_FFd2              | BUFG                   | 176   |
+-----------------------------------+------------------------+-------+
+
+Asynchronous Control Signals Information:
+----------------------------------------
+No asynchronous control signals found in this design
+
+Timing Summary:
+---------------
+Speed Grade: -2
+
+   Minimum period: 17.215ns (Maximum Frequency: 58.089MHz)
+   Minimum input arrival time before clock: 4.317ns
+   Maximum output required time after clock: 5.817ns
+   Maximum combinational path delay: No path found
+
+Timing Details:
+---------------
+All values displayed in nanoseconds (ns)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'clk'
+  Clock period: 17.215ns (frequency: 58.089MHz)
+  Total number of paths / destination ports: 114111021 / 1140
+-------------------------------------------------------------------------
+Delay:               17.215ns (Levels of Logic = 13)
+  Source:            u2/bcd5_ist/rhexd_2 (FF)
+  Destination:       u2/bcd5_ist/rese_3 (FF)
+  Source Clock:      clk rising
+  Destination Clock: clk rising
+
+  Data Path: u2/bcd5_ist/rhexd_2 to u2/bcd5_ist/rese_3
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FD:C->Q              13   0.525   1.326  u2/bcd5_ist/rhexd_2 (u2/bcd5_ist/rhexd_2)
+     LUT6:I3->O            2   0.235   1.002  u2/bcd5_ist/ADDERTREE_INTERNAL_Madd221 (u2/bcd5_ist/ADDERTREE_INTERNAL_Madd22)
+     LUT6:I2->O            4   0.254   0.804  u2/bcd5_ist/ADDERTREE_INTERNAL_Madd2_cy<0>41 (u2/bcd5_ist/ADDERTREE_INTERNAL_Madd2_cy<0>3)
+     LUT6:I5->O            5   0.254   1.069  u2/bcd5_ist/ADDERTREE_INTERNAL_Madd2_xor<0>52 (u2/bcd5_ist/ADDERTREE_INTERNAL_Madd_42)
+     LUT6:I3->O           13   0.235   1.206  u2/bcd5_ist/ADDERTREE_INTERNAL_Madd3_lut<1>1 (u2/bcd5_ist/ADDERTREE_INTERNAL_Madd3_lut<1>)
+     LUT6:I4->O            2   0.250   1.181  u2/bcd5_ist/ADDERTREE_INTERNAL_Madd5_lut<0>31_SW0 (N278)
+     LUT6:I0->O           13   0.254   1.098  u2/bcd5_ist/ADDERTREE_INTERNAL_Madd5_cy<0>41 (u2/bcd5_ist/ADDERTREE_INTERNAL_Madd5_cy<0>3)
+     LUT5:I4->O            6   0.254   0.876  u2/bcd5_ist/ADDERTREE_INTERNAL_Madd5_cy<0>51 (u2/bcd5_ist/ADDERTREE_INTERNAL_Madd5_cy<0>4)
+     LUT6:I5->O            8   0.254   1.052  u2/bcd5_ist/Mmux_BUS_0116_BUS_0116_mux_39_OUT541 (u2/bcd5_ist/Mmux_BUS_0116_BUS_0116_mux_39_OUT54)
+     LUT6:I4->O            3   0.250   1.042  u2/bcd5_ist/ADDERTREE_INTERNAL_Madd811 (u2/bcd5_ist/ADDERTREE_INTERNAL_Madd81)
+     LUT6:I2->O           10   0.254   1.008  u2/bcd5_ist/ADDERTREE_INTERNAL_Madd8_cy<0>41 (u2/bcd5_ist/ADDERTREE_INTERNAL_Madd8_cy<0>3)
+     LUT4:I3->O            1   0.254   0.790  u2/bcd5_ist/Madd_n01361_SW0 (N549)
+     LUT5:I3->O            7   0.250   0.910  u2/bcd5_ist/Madd_n01361 (u2/bcd5_ist/Madd_n0136)
+     LUT6:I5->O            1   0.254   0.000  u2/bcd5_ist/Mmux_GND_5_o_BUS_0237_mux_62_OUT_rs_lut<1>1 (u2/bcd5_ist/Mmux_GND_5_o_BUS_0237_mux_62_OUT_rs_lut<1>)
+     FD:D                      0.074          u2/bcd5_ist/resd<3:0>_1
+    ----------------------------------------
+    Total                     17.215ns (3.851ns logic, 13.364ns route)
+                                       (22.4% logic, 77.6% route)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'u3/u0/clkout'
+  Clock period: 9.799ns (frequency: 102.056MHz)
+  Total number of paths / destination ports: 4584 / 139
+-------------------------------------------------------------------------
+Delay:               9.799ns (Levels of Logic = 7)
+  Source:            u3/k_1 (FF)
+  Destination:       u3/txdata_1 (FF)
+  Source Clock:      u3/u0/clkout rising
+  Destination Clock: u3/u0/clkout rising
+
+  Data Path: u3/k_1 to u3/txdata_1
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDRE:C->Q            56   0.525   1.976  u3/k_1 (u3/k_1)
+     LUT3:I1->O           11   0.250   1.039  u3/k[6]_X_5_o_wide_mux_60_OUT<2>1111 (u3/k[6]_X_5_o_wide_mux_60_OUT<2>111)
+     LUT5:I4->O            2   0.254   0.726  u3/_n1552<6>1 (u3/_n1552)
+     LUT6:I5->O            1   0.254   0.682  u3/Mmux__n1358212_SW0 (N154)
+     LUT6:I5->O            3   0.254   1.221  u3/Mmux__n1358212 (u3/Mmux__n1358212)
+     LUT6:I0->O            1   0.254   0.910  u3/Mmux__n135824 (u3/Mmux__n135823)
+     LUT6:I3->O            1   0.235   0.910  u3/Mmux__n1358211 (u3/Mmux__n1358210)
+     LUT6:I3->O            1   0.235   0.000  u3/Mmux__n1358223 (u3/_n1358<1>)
+     FDE:D                     0.074          u3/txdata_1
+    ----------------------------------------
+    Total                      9.799ns (2.335ns logic, 7.464ns route)
+                                       (23.8% logic, 76.2% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'clk'
+  Total number of paths / destination ports: 137 / 137
+-------------------------------------------------------------------------
+Offset:              3.772ns (Levels of Logic = 2)
+  Source:            ad_busy (PAD)
+  Destination:       u1/i_5 (FF)
+  Destination Clock: clk rising
+
+  Data Path: ad_busy to u1/i_5
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O             4   1.328   1.032  ad_busy_IBUF (ad_busy_IBUF)
+     LUT5:I2->O            6   0.235   0.875  u1/_n0245_inv1 (u1/_n0245_inv)
+     FDRE:CE                   0.302          u1/i_0
+    ----------------------------------------
+    Total                      3.772ns (1.865ns logic, 1.907ns route)
+                                       (49.4% logic, 50.6% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'u3/u0/clkout'
+  Total number of paths / destination ports: 67 / 67
+-------------------------------------------------------------------------
+Offset:              4.317ns (Levels of Logic = 2)
+  Source:            rst_n (PAD)
+  Destination:       u3/k_8 (FF)
+  Destination Clock: u3/u0/clkout rising
+
+  Data Path: rst_n to u3/k_8
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O             5   1.328   0.840  rst_n_IBUF (rst_n_IBUF)
+     INV:I->O             27   0.255   1.435  u3/reset_n_inv1_INV_0 (u3/reset_n_inv)
+     FDRE:R                    0.459          u3/uart_cnt_0
+    ----------------------------------------
+    Total                      4.317ns (2.042ns logic, 2.275ns route)
+                                       (47.3% logic, 52.7% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'clk'
+  Total number of paths / destination ports: 4 / 4
+-------------------------------------------------------------------------
+Offset:              5.817ns (Levels of Logic = 1)
+  Source:            u1/ad_reset (FF)
+  Destination:       ad_reset (PAD)
+  Source Clock:      clk rising
+
+  Data Path: u1/ad_reset to ad_reset
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FD:C->Q             167   0.525   2.380  u1/ad_reset (u1/ad_reset)
+     OBUF:I->O                 2.912          ad_reset_OBUF (ad_reset)
+    ----------------------------------------
+    Total                      5.817ns (3.437ns logic, 2.380ns route)
+                                       (59.1% logic, 40.9% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'u3/u0/clkout'
+  Total number of paths / destination ports: 1 / 1
+-------------------------------------------------------------------------
+Offset:              4.162ns (Levels of Logic = 1)
+  Source:            u3/u1/tx (FF)
+  Destination:       tx (PAD)
+  Source Clock:      u3/u0/clkout rising
+
+  Data Path: u3/u1/tx to tx
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDS:C->Q              2   0.525   0.725  u3/u1/tx (u3/u1/tx)
+     OBUF:I->O                 2.912          tx_OBUF (tx)
+    ----------------------------------------
+    Total                      4.162ns (3.437ns logic, 0.725ns route)
+                                       (82.6% logic, 17.4% route)
+
+=========================================================================
+
+Cross Clock Domains Report:
+--------------------------
+
+Clock to Setup on destination clock clk
+---------------+---------+---------+---------+---------+
+               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------+---------+---------+---------+---------+
+clk            |   17.215|         |         |         |
+---------------+---------+---------+---------+---------+
+
+Clock to Setup on destination clock u3/u0/clkout
+---------------------+---------+---------+---------+---------+
+                     | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock         |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------------+---------+---------+---------+---------+
+u3/u0/clkout         |    9.799|         |         |         |
+u3/uart_stat_FSM_FFd2|    5.467|         |         |         |
+---------------------+---------+---------+---------+---------+
+
+Clock to Setup on destination clock u3/uart_stat_FSM_FFd2
+---------------+---------+---------+---------+---------+
+               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------+---------+---------+---------+---------+
+clk            |    1.242|         |         |         |
+---------------+---------+---------+---------+---------+
+
+=========================================================================
+
+
+Total REAL time to Xst completion: 20.00 secs
+Total CPU time to Xst completion: 19.73 secs
+ 
+--> 
+
+Total memory usage is 273824 kilobytes
+
+Number of errors   :    0 (   0 filtered)
+Number of warnings :  682 (   0 filtered)
+Number of infos    :   12 (   0 filtered)
+

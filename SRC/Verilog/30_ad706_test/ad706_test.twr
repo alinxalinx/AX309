@@ -1,0 +1,786 @@
+--------------------------------------------------------------------------------
+Release 14.7 Trace  (nt64)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+
+C:\Xilinx\14.7\ISE_DS\ISE\bin\nt64\unwrapped\trce.exe -intstyle ise -v 3 -s 2
+-n 3 -fastpaths -xml ad706_test.twx ad706_test.ncd -o ad706_test.twr
+ad706_test.pcf -ucf ad706_test.ucf
+
+Design file:              ad706_test.ncd
+Physical constraint file: ad706_test.pcf
+Device,package,speed:     xc6slx9,ftg256,C,-2 (PRODUCTION 1.23 2013-10-13)
+Report level:             verbose report
+
+Environment Variable      Effect 
+--------------------      ------ 
+NONE                      No environment variables were set
+--------------------------------------------------------------------------------
+
+INFO:Timing:3412 - To improve timing, see the Timing Closure User Guide (UG612).
+INFO:Timing:2752 - To get complete path coverage, use the unconstrained paths 
+   option. All paths that are not constrained will be reported in the 
+   unconstrained paths section(s) of the report.
+INFO:Timing:3339 - The clock-to-out numbers in this timing report are based on 
+   a 50 Ohm transmission line loading model.  For the details of this model, 
+   and for more information on accounting for different loading conditions, 
+   please see the device datasheet.
+
+================================================================================
+Timing constraint: TS_sys_clk = PERIOD TIMEGRP "sys_clk" 50 MHz HIGH 50%;
+For more information, see Period Analysis in the Timing Closure User Guide (UG612).
+
+ 114110989 paths analyzed, 2692 endpoints analyzed, 0 failing endpoints
+ 0 timing errors detected. (0 setup errors, 0 hold errors, 0 component switching limit errors)
+ Minimum period is  16.294ns.
+--------------------------------------------------------------------------------
+
+Paths for end point u2/bcd7_ist/rese_2 (SLICE_X21Y34.C2), 520851 paths
+--------------------------------------------------------------------------------
+Slack (setup path):     3.706ns (requirement - (data path - clock path skew + uncertainty))
+  Source:               u2/bcd7_ist/rhexd_2 (FF)
+  Destination:          u2/bcd7_ist/rese_2 (FF)
+  Requirement:          20.000ns
+  Data Path Delay:      16.254ns (Levels of Logic = 12)
+  Clock Path Skew:      -0.005ns (0.194 - 0.199)
+  Source Clock:         clk_BUFGP rising at 0.000ns
+  Destination Clock:    clk_BUFGP rising at 20.000ns
+  Clock Uncertainty:    0.035ns
+
+  Clock Uncertainty:          0.035ns  ((TSJ^2 + TIJ^2)^1/2 + DJ) / 2 + PE
+    Total System Jitter (TSJ):  0.070ns
+    Total Input Jitter (TIJ):   0.000ns
+    Discrete Jitter (DJ):       0.000ns
+    Phase Error (PE):           0.000ns
+
+  Maximum Data Path at Slow Process Corner: u2/bcd7_ist/rhexd_2 to u2/bcd7_ist/rese_2
+    Location             Delay type         Delay(ns)  Physical Resource
+                                                       Logical Resource(s)
+    -------------------------------------------------  -------------------
+    SLICE_X20Y37.CMUX    Tshcko                0.576   u2/bcd7_ist/rhexd<17>
+                                                       u2/bcd7_ist/rhexd_2
+    SLICE_X16Y49.D3      net (fanout=13)       1.875   u2/bcd7_ist/rhexd<2>
+    SLICE_X16Y49.D       Tilo                  0.254   u2/bcd7_ist/rhexa<1>
+                                                       u2/bcd7_ist/ADDERTREE_INTERNAL_Madd221
+    SLICE_X16Y48.C3      net (fanout=2)        0.570   u2/bcd7_ist/ADDERTREE_INTERNAL_Madd22
+    SLICE_X16Y48.C       Tilo                  0.255   u2/bcd7_ist/ADDERTREE_INTERNAL_Madd_42
+                                                       u2/bcd7_ist/ADDERTREE_INTERNAL_Madd2_cy<0>41
+    SLICE_X17Y47.C1      net (fanout=4)        0.727   u2/bcd7_ist/ADDERTREE_INTERNAL_Madd2_cy<0>3
+    SLICE_X17Y47.C       Tilo                  0.259   u2/bcd7_ist/ADDERTREE_INTERNAL_Madd3_lut<1>
+                                                       u2/bcd7_ist/ADDERTREE_INTERNAL_Madd2_cy<0>51
+    SLICE_X17Y47.B4      net (fanout=6)        0.384   u2/bcd7_ist/ADDERTREE_INTERNAL_Madd2_cy<0>4
+    SLICE_X17Y47.B       Tilo                  0.259   u2/bcd7_ist/ADDERTREE_INTERNAL_Madd3_lut<1>
+                                                       u2/bcd7_ist/Mmux_BUS_0056_BUS_0056_mux_27_OUT541
+    SLICE_X21Y44.C5      net (fanout=15)       1.178   u2/bcd7_ist/Mmux_BUS_0056_BUS_0056_mux_27_OUT54
+    SLICE_X21Y44.C       Tilo                  0.259   u2/bcd7_ist/ADDERTREE_INTERNAL_Madd_25
+                                                       u2/bcd7_ist/ADDERTREE_INTERNAL_Madd5_xor<0>311
+    SLICE_X21Y44.D2      net (fanout=6)        0.944   u2/bcd7_ist/ADDERTREE_INTERNAL_Madd5_xor<0>31
+    SLICE_X21Y44.D       Tilo                  0.259   u2/bcd7_ist/ADDERTREE_INTERNAL_Madd_25
+                                                       u2/bcd7_ist/ADDERTREE_INTERNAL_Madd5_xor<0>3
+    SLICE_X18Y43.B3      net (fanout=9)        1.267   u2/bcd7_ist/ADDERTREE_INTERNAL_Madd_25
+    SLICE_X18Y43.B       Tilo                  0.235   N767
+                                                       u2/bcd7_ist/Mmux_BUS_0116_BUS_0116_mux_39_OUT4111
+    SLICE_X20Y43.D4      net (fanout=6)        0.751   u2/bcd7_ist/Mmux_BUS_0116_BUS_0116_mux_39_OUT21
+    SLICE_X20Y43.CMUX    Topdc                 0.456   N40
+                                                       u2/bcd7_ist/ADDERTREE_INTERNAL_Madd6_lut<0>_SW9_F
+                                                       u2/bcd7_ist/ADDERTREE_INTERNAL_Madd6_lut<0>_SW9
+    SLICE_X16Y39.A5      net (fanout=1)        1.067   N772
+    SLICE_X16Y39.A       Tilo                  0.254   u3/uart_ad<93>_3
+                                                       u2/bcd7_ist/ADDERTREE_INTERNAL_Madd8_lut<0>21
+    SLICE_X17Y36.D5      net (fanout=6)        0.792   u2/bcd7_ist/ADDERTREE_INTERNAL_Madd8_lut<0>2
+    SLICE_X17Y36.D       Tilo                  0.259   u2/bcd7_ist/resc<3:0>_3
+                                                       u2/bcd7_ist/ADDERTREE_INTERNAL_Madd8_xor<0>31
+    SLICE_X21Y36.C2      net (fanout=5)        1.202   u2/bcd7_ist/ADDERTREE_INTERNAL_Madd_28
+    SLICE_X21Y36.C       Tilo                  0.259   u2/bcd7_ist/resd<3:0>_3
+                                                       u2/bcd7_ist/Mmux_BUS_0177_BUS_0177_mux_51_OUT61
+    SLICE_X21Y34.C2      net (fanout=7)        1.540   u2/bcd7_ist/BUS_0177_BUS_0177_mux_51_OUT<5>
+    SLICE_X21Y34.CLK     Tas                   0.373   u2/bcd7_ist/rese_3
+                                                       u2/bcd7_ist/Madd_n0147_xor<2>11
+                                                       u2/bcd7_ist/rese_2
+    -------------------------------------------------  ---------------------------
+    Total                                     16.254ns (3.957ns logic, 12.297ns route)
+                                                       (24.3% logic, 75.7% route)
+
+--------------------------------------------------------------------------------
+Slack (setup path):     3.749ns (requirement - (data path - clock path skew + uncertainty))
+  Source:               u2/bcd7_ist/rhexd_2 (FF)
+  Destination:          u2/bcd7_ist/rese_2 (FF)
+  Requirement:          20.000ns
+  Data Path Delay:      16.211ns (Levels of Logic = 12)
+  Clock Path Skew:      -0.005ns (0.194 - 0.199)
+  Source Clock:         clk_BUFGP rising at 0.000ns
+  Destination Clock:    clk_BUFGP rising at 20.000ns
+  Clock Uncertainty:    0.035ns
+
+  Clock Uncertainty:          0.035ns  ((TSJ^2 + TIJ^2)^1/2 + DJ) / 2 + PE
+    Total System Jitter (TSJ):  0.070ns
+    Total Input Jitter (TIJ):   0.000ns
+    Discrete Jitter (DJ):       0.000ns
+    Phase Error (PE):           0.000ns
+
+  Maximum Data Path at Slow Process Corner: u2/bcd7_ist/rhexd_2 to u2/bcd7_ist/rese_2
+    Location             Delay type         Delay(ns)  Physical Resource
+                                                       Logical Resource(s)
+    -------------------------------------------------  -------------------
+    SLICE_X20Y37.CMUX    Tshcko                0.576   u2/bcd7_ist/rhexd<17>
+                                                       u2/bcd7_ist/rhexd_2
+    SLICE_X16Y49.D3      net (fanout=13)       1.875   u2/bcd7_ist/rhexd<2>
+    SLICE_X16Y49.D       Tilo                  0.254   u2/bcd7_ist/rhexa<1>
+                                                       u2/bcd7_ist/ADDERTREE_INTERNAL_Madd221
+    SLICE_X16Y48.C3      net (fanout=2)        0.570   u2/bcd7_ist/ADDERTREE_INTERNAL_Madd22
+    SLICE_X16Y48.C       Tilo                  0.255   u2/bcd7_ist/ADDERTREE_INTERNAL_Madd_42
+                                                       u2/bcd7_ist/ADDERTREE_INTERNAL_Madd2_cy<0>41
+    SLICE_X18Y46.A3      net (fanout=4)        0.790   u2/bcd7_ist/ADDERTREE_INTERNAL_Madd2_cy<0>3
+    SLICE_X18Y46.A       Tilo                  0.235   u2/bcd7_ist/resa<3:0>_3
+                                                       u2/bcd7_ist/Mmux_BUS_0056_BUS_0056_mux_27_OUT4111
+    SLICE_X20Y46.B6      net (fanout=14)       0.609   u2/bcd7_ist/Mmux_BUS_0056_BUS_0056_mux_27_OUT21
+    SLICE_X20Y46.B       Tilo                  0.254   u2/bcd7_ist/ADDERTREE_INTERNAL_Madd2_lut<0>1
+                                                       u2/bcd7_ist/ADDERTREE_INTERNAL_Madd3_lut<0>_SW1
+    SLICE_X21Y44.C1      net (fanout=3)        0.876   N1110
+    SLICE_X21Y44.C       Tilo                  0.259   u2/bcd7_ist/ADDERTREE_INTERNAL_Madd_25
+                                                       u2/bcd7_ist/ADDERTREE_INTERNAL_Madd5_xor<0>311
+    SLICE_X21Y44.D2      net (fanout=6)        0.944   u2/bcd7_ist/ADDERTREE_INTERNAL_Madd5_xor<0>31
+    SLICE_X21Y44.D       Tilo                  0.259   u2/bcd7_ist/ADDERTREE_INTERNAL_Madd_25
+                                                       u2/bcd7_ist/ADDERTREE_INTERNAL_Madd5_xor<0>3
+    SLICE_X18Y43.B3      net (fanout=9)        1.267   u2/bcd7_ist/ADDERTREE_INTERNAL_Madd_25
+    SLICE_X18Y43.B       Tilo                  0.235   N767
+                                                       u2/bcd7_ist/Mmux_BUS_0116_BUS_0116_mux_39_OUT4111
+    SLICE_X20Y43.D4      net (fanout=6)        0.751   u2/bcd7_ist/Mmux_BUS_0116_BUS_0116_mux_39_OUT21
+    SLICE_X20Y43.CMUX    Topdc                 0.456   N40
+                                                       u2/bcd7_ist/ADDERTREE_INTERNAL_Madd6_lut<0>_SW9_F
+                                                       u2/bcd7_ist/ADDERTREE_INTERNAL_Madd6_lut<0>_SW9
+    SLICE_X16Y39.A5      net (fanout=1)        1.067   N772
+    SLICE_X16Y39.A       Tilo                  0.254   u3/uart_ad<93>_3
+                                                       u2/bcd7_ist/ADDERTREE_INTERNAL_Madd8_lut<0>21
+    SLICE_X17Y36.D5      net (fanout=6)        0.792   u2/bcd7_ist/ADDERTREE_INTERNAL_Madd8_lut<0>2
+    SLICE_X17Y36.D       Tilo                  0.259   u2/bcd7_ist/resc<3:0>_3
+                                                       u2/bcd7_ist/ADDERTREE_INTERNAL_Madd8_xor<0>31
+    SLICE_X21Y36.C2      net (fanout=5)        1.202   u2/bcd7_ist/ADDERTREE_INTERNAL_Madd_28
+    SLICE_X21Y36.C       Tilo                  0.259   u2/bcd7_ist/resd<3:0>_3
+                                                       u2/bcd7_ist/Mmux_BUS_0177_BUS_0177_mux_51_OUT61
+    SLICE_X21Y34.C2      net (fanout=7)        1.540   u2/bcd7_ist/BUS_0177_BUS_0177_mux_51_OUT<5>
+    SLICE_X21Y34.CLK     Tas                   0.373   u2/bcd7_ist/rese_3
+                                                       u2/bcd7_ist/Madd_n0147_xor<2>11
+                                                       u2/bcd7_ist/rese_2
+    -------------------------------------------------  ---------------------------
+    Total                                     16.211ns (3.928ns logic, 12.283ns route)
+                                                       (24.2% logic, 75.8% route)
+
+--------------------------------------------------------------------------------
+Slack (setup path):     3.790ns (requirement - (data path - clock path skew + uncertainty))
+  Source:               u2/bcd7_ist/rhexd_2 (FF)
+  Destination:          u2/bcd7_ist/rese_2 (FF)
+  Requirement:          20.000ns
+  Data Path Delay:      16.170ns (Levels of Logic = 11)
+  Clock Path Skew:      -0.005ns (0.194 - 0.199)
+  Source Clock:         clk_BUFGP rising at 0.000ns
+  Destination Clock:    clk_BUFGP rising at 20.000ns
+  Clock Uncertainty:    0.035ns
+
+  Clock Uncertainty:          0.035ns  ((TSJ^2 + TIJ^2)^1/2 + DJ) / 2 + PE
+    Total System Jitter (TSJ):  0.070ns
+    Total Input Jitter (TIJ):   0.000ns
+    Discrete Jitter (DJ):       0.000ns
+    Phase Error (PE):           0.000ns
+
+  Maximum Data Path at Slow Process Corner: u2/bcd7_ist/rhexd_2 to u2/bcd7_ist/rese_2
+    Location             Delay type         Delay(ns)  Physical Resource
+                                                       Logical Resource(s)
+    -------------------------------------------------  -------------------
+    SLICE_X20Y37.CMUX    Tshcko                0.576   u2/bcd7_ist/rhexd<17>
+                                                       u2/bcd7_ist/rhexd_2
+    SLICE_X17Y46.B1      net (fanout=13)       1.621   u2/bcd7_ist/rhexd<2>
+    SLICE_X17Y46.B       Tilo                  0.259   u2/bcd7_ist/ADDERTREE_INTERNAL_Madd1_lut<1>
+                                                       u2/bcd7_ist/ADDERTREE_INTERNAL_Madd1_xor<2>11
+    SLICE_X16Y46.D2      net (fanout=2)        1.202   u2/bcd7_ist/ADDERTREE_INTERNAL_Madd_21
+    SLICE_X16Y46.D       Tilo                  0.254   u1/ad_ch6<15>
+                                                       u2/bcd7_ist/ADDERTREE_INTERNAL_Madd2_xor<0>4
+    SLICE_X20Y46.B2      net (fanout=17)       1.211   u2/bcd7_ist/ADDERTREE_INTERNAL_Madd_32
+    SLICE_X20Y46.B       Tilo                  0.254   u2/bcd7_ist/ADDERTREE_INTERNAL_Madd2_lut<0>1
+                                                       u2/bcd7_ist/ADDERTREE_INTERNAL_Madd3_lut<0>_SW1
+    SLICE_X21Y44.C1      net (fanout=3)        0.876   N1110
+    SLICE_X21Y44.C       Tilo                  0.259   u2/bcd7_ist/ADDERTREE_INTERNAL_Madd_25
+                                                       u2/bcd7_ist/ADDERTREE_INTERNAL_Madd5_xor<0>311
+    SLICE_X21Y44.D2      net (fanout=6)        0.944   u2/bcd7_ist/ADDERTREE_INTERNAL_Madd5_xor<0>31
+    SLICE_X21Y44.D       Tilo                  0.259   u2/bcd7_ist/ADDERTREE_INTERNAL_Madd_25
+                                                       u2/bcd7_ist/ADDERTREE_INTERNAL_Madd5_xor<0>3
+    SLICE_X18Y43.B3      net (fanout=9)        1.267   u2/bcd7_ist/ADDERTREE_INTERNAL_Madd_25
+    SLICE_X18Y43.B       Tilo                  0.235   N767
+                                                       u2/bcd7_ist/Mmux_BUS_0116_BUS_0116_mux_39_OUT4111
+    SLICE_X20Y43.D4      net (fanout=6)        0.751   u2/bcd7_ist/Mmux_BUS_0116_BUS_0116_mux_39_OUT21
+    SLICE_X20Y43.CMUX    Topdc                 0.456   N40
+                                                       u2/bcd7_ist/ADDERTREE_INTERNAL_Madd6_lut<0>_SW9_F
+                                                       u2/bcd7_ist/ADDERTREE_INTERNAL_Madd6_lut<0>_SW9
+    SLICE_X16Y39.A5      net (fanout=1)        1.067   N772
+    SLICE_X16Y39.A       Tilo                  0.254   u3/uart_ad<93>_3
+                                                       u2/bcd7_ist/ADDERTREE_INTERNAL_Madd8_lut<0>21
+    SLICE_X17Y36.D5      net (fanout=6)        0.792   u2/bcd7_ist/ADDERTREE_INTERNAL_Madd8_lut<0>2
+    SLICE_X17Y36.D       Tilo                  0.259   u2/bcd7_ist/resc<3:0>_3
+                                                       u2/bcd7_ist/ADDERTREE_INTERNAL_Madd8_xor<0>31
+    SLICE_X21Y36.C2      net (fanout=5)        1.202   u2/bcd7_ist/ADDERTREE_INTERNAL_Madd_28
+    SLICE_X21Y36.C       Tilo                  0.259   u2/bcd7_ist/resd<3:0>_3
+                                                       u2/bcd7_ist/Mmux_BUS_0177_BUS_0177_mux_51_OUT61
+    SLICE_X21Y34.C2      net (fanout=7)        1.540   u2/bcd7_ist/BUS_0177_BUS_0177_mux_51_OUT<5>
+    SLICE_X21Y34.CLK     Tas                   0.373   u2/bcd7_ist/rese_3
+                                                       u2/bcd7_ist/Madd_n0147_xor<2>11
+                                                       u2/bcd7_ist/rese_2
+    -------------------------------------------------  ---------------------------
+    Total                                     16.170ns (3.697ns logic, 12.473ns route)
+                                                       (22.9% logic, 77.1% route)
+
+--------------------------------------------------------------------------------
+
+Paths for end point u2/bcd7_ist/rese_1 (SLICE_X21Y34.B2), 922606 paths
+--------------------------------------------------------------------------------
+Slack (setup path):     3.757ns (requirement - (data path - clock path skew + uncertainty))
+  Source:               u2/bcd7_ist/rhexd_2 (FF)
+  Destination:          u2/bcd7_ist/rese_1 (FF)
+  Requirement:          20.000ns
+  Data Path Delay:      16.203ns (Levels of Logic = 13)
+  Clock Path Skew:      -0.005ns (0.194 - 0.199)
+  Source Clock:         clk_BUFGP rising at 0.000ns
+  Destination Clock:    clk_BUFGP rising at 20.000ns
+  Clock Uncertainty:    0.035ns
+
+  Clock Uncertainty:          0.035ns  ((TSJ^2 + TIJ^2)^1/2 + DJ) / 2 + PE
+    Total System Jitter (TSJ):  0.070ns
+    Total Input Jitter (TIJ):   0.000ns
+    Discrete Jitter (DJ):       0.000ns
+    Phase Error (PE):           0.000ns
+
+  Maximum Data Path at Slow Process Corner: u2/bcd7_ist/rhexd_2 to u2/bcd7_ist/rese_1
+    Location             Delay type         Delay(ns)  Physical Resource
+                                                       Logical Resource(s)
+    -------------------------------------------------  -------------------
+    SLICE_X20Y37.CMUX    Tshcko                0.576   u2/bcd7_ist/rhexd<17>
+                                                       u2/bcd7_ist/rhexd_2
+    SLICE_X16Y49.D3      net (fanout=13)       1.875   u2/bcd7_ist/rhexd<2>
+    SLICE_X16Y49.D       Tilo                  0.254   u2/bcd7_ist/rhexa<1>
+                                                       u2/bcd7_ist/ADDERTREE_INTERNAL_Madd221
+    SLICE_X16Y48.C3      net (fanout=2)        0.570   u2/bcd7_ist/ADDERTREE_INTERNAL_Madd22
+    SLICE_X16Y48.C       Tilo                  0.255   u2/bcd7_ist/ADDERTREE_INTERNAL_Madd_42
+                                                       u2/bcd7_ist/ADDERTREE_INTERNAL_Madd2_cy<0>41
+    SLICE_X17Y47.C1      net (fanout=4)        0.727   u2/bcd7_ist/ADDERTREE_INTERNAL_Madd2_cy<0>3
+    SLICE_X17Y47.C       Tilo                  0.259   u2/bcd7_ist/ADDERTREE_INTERNAL_Madd3_lut<1>
+                                                       u2/bcd7_ist/ADDERTREE_INTERNAL_Madd2_cy<0>51
+    SLICE_X17Y47.B4      net (fanout=6)        0.384   u2/bcd7_ist/ADDERTREE_INTERNAL_Madd2_cy<0>4
+    SLICE_X17Y47.B       Tilo                  0.259   u2/bcd7_ist/ADDERTREE_INTERNAL_Madd3_lut<1>
+                                                       u2/bcd7_ist/Mmux_BUS_0056_BUS_0056_mux_27_OUT541
+    SLICE_X21Y44.C5      net (fanout=15)       1.178   u2/bcd7_ist/Mmux_BUS_0056_BUS_0056_mux_27_OUT54
+    SLICE_X21Y44.C       Tilo                  0.259   u2/bcd7_ist/ADDERTREE_INTERNAL_Madd_25
+                                                       u2/bcd7_ist/ADDERTREE_INTERNAL_Madd5_xor<0>311
+    SLICE_X21Y44.D2      net (fanout=6)        0.944   u2/bcd7_ist/ADDERTREE_INTERNAL_Madd5_xor<0>31
+    SLICE_X21Y44.D       Tilo                  0.259   u2/bcd7_ist/ADDERTREE_INTERNAL_Madd_25
+                                                       u2/bcd7_ist/ADDERTREE_INTERNAL_Madd5_xor<0>3
+    SLICE_X18Y43.B3      net (fanout=9)        1.267   u2/bcd7_ist/ADDERTREE_INTERNAL_Madd_25
+    SLICE_X18Y43.B       Tilo                  0.235   N767
+                                                       u2/bcd7_ist/Mmux_BUS_0116_BUS_0116_mux_39_OUT4111
+    SLICE_X20Y43.D4      net (fanout=6)        0.751   u2/bcd7_ist/Mmux_BUS_0116_BUS_0116_mux_39_OUT21
+    SLICE_X20Y43.CMUX    Topdc                 0.456   N40
+                                                       u2/bcd7_ist/ADDERTREE_INTERNAL_Madd6_lut<0>_SW9_F
+                                                       u2/bcd7_ist/ADDERTREE_INTERNAL_Madd6_lut<0>_SW9
+    SLICE_X16Y39.A5      net (fanout=1)        1.067   N772
+    SLICE_X16Y39.A       Tilo                  0.254   u3/uart_ad<93>_3
+                                                       u2/bcd7_ist/ADDERTREE_INTERNAL_Madd8_lut<0>21
+    SLICE_X19Y36.B4      net (fanout=6)        0.960   u2/bcd7_ist/ADDERTREE_INTERNAL_Madd8_lut<0>2
+    SLICE_X19Y36.B       Tilo                  0.259   N544
+                                                       u2/bcd7_ist/ADDERTREE_INTERNAL_Madd8_cy<0>41
+    SLICE_X19Y36.D2      net (fanout=10)       0.567   u2/bcd7_ist/ADDERTREE_INTERNAL_Madd8_cy<0>3
+    SLICE_X19Y36.D       Tilo                  0.259   N544
+                                                       u2/bcd7_ist/Madd_n01361_SW1
+    SLICE_X18Y36.C2      net (fanout=1)        0.496   N544
+    SLICE_X18Y36.C       Tilo                  0.235   u2/bcd7_ist/resd<3:0>_1
+                                                       u2/bcd7_ist/Madd_n01361
+    SLICE_X21Y34.B2      net (fanout=7)        1.225   u2/bcd7_ist/Madd_n0136
+    SLICE_X21Y34.CLK     Tas                   0.373   u2/bcd7_ist/rese_3
+                                                       u2/bcd7_ist/Madd_n0147_xor<1>11
+                                                       u2/bcd7_ist/rese_1
+    -------------------------------------------------  ---------------------------
+    Total                                     16.203ns (4.192ns logic, 12.011ns route)
+                                                       (25.9% logic, 74.1% route)
+
+--------------------------------------------------------------------------------
+Slack (setup path):     3.800ns (requirement - (data path - clock path skew + uncertainty))
+  Source:               u2/bcd7_ist/rhexd_2 (FF)
+  Destination:          u2/bcd7_ist/rese_1 (FF)
+  Requirement:          20.000ns
+  Data Path Delay:      16.160ns (Levels of Logic = 13)
+  Clock Path Skew:      -0.005ns (0.194 - 0.199)
+  Source Clock:         clk_BUFGP rising at 0.000ns
+  Destination Clock:    clk_BUFGP rising at 20.000ns
+  Clock Uncertainty:    0.035ns
+
+  Clock Uncertainty:          0.035ns  ((TSJ^2 + TIJ^2)^1/2 + DJ) / 2 + PE
+    Total System Jitter (TSJ):  0.070ns
+    Total Input Jitter (TIJ):   0.000ns
+    Discrete Jitter (DJ):       0.000ns
+    Phase Error (PE):           0.000ns
+
+  Maximum Data Path at Slow Process Corner: u2/bcd7_ist/rhexd_2 to u2/bcd7_ist/rese_1
+    Location             Delay type         Delay(ns)  Physical Resource
+                                                       Logical Resource(s)
+    -------------------------------------------------  -------------------
+    SLICE_X20Y37.CMUX    Tshcko                0.576   u2/bcd7_ist/rhexd<17>
+                                                       u2/bcd7_ist/rhexd_2
+    SLICE_X16Y49.D3      net (fanout=13)       1.875   u2/bcd7_ist/rhexd<2>
+    SLICE_X16Y49.D       Tilo                  0.254   u2/bcd7_ist/rhexa<1>
+                                                       u2/bcd7_ist/ADDERTREE_INTERNAL_Madd221
+    SLICE_X16Y48.C3      net (fanout=2)        0.570   u2/bcd7_ist/ADDERTREE_INTERNAL_Madd22
+    SLICE_X16Y48.C       Tilo                  0.255   u2/bcd7_ist/ADDERTREE_INTERNAL_Madd_42
+                                                       u2/bcd7_ist/ADDERTREE_INTERNAL_Madd2_cy<0>41
+    SLICE_X18Y46.A3      net (fanout=4)        0.790   u2/bcd7_ist/ADDERTREE_INTERNAL_Madd2_cy<0>3
+    SLICE_X18Y46.A       Tilo                  0.235   u2/bcd7_ist/resa<3:0>_3
+                                                       u2/bcd7_ist/Mmux_BUS_0056_BUS_0056_mux_27_OUT4111
+    SLICE_X20Y46.B6      net (fanout=14)       0.609   u2/bcd7_ist/Mmux_BUS_0056_BUS_0056_mux_27_OUT21
+    SLICE_X20Y46.B       Tilo                  0.254   u2/bcd7_ist/ADDERTREE_INTERNAL_Madd2_lut<0>1
+                                                       u2/bcd7_ist/ADDERTREE_INTERNAL_Madd3_lut<0>_SW1
+    SLICE_X21Y44.C1      net (fanout=3)        0.876   N1110
+    SLICE_X21Y44.C       Tilo                  0.259   u2/bcd7_ist/ADDERTREE_INTERNAL_Madd_25
+                                                       u2/bcd7_ist/ADDERTREE_INTERNAL_Madd5_xor<0>311
+    SLICE_X21Y44.D2      net (fanout=6)        0.944   u2/bcd7_ist/ADDERTREE_INTERNAL_Madd5_xor<0>31
+    SLICE_X21Y44.D       Tilo                  0.259   u2/bcd7_ist/ADDERTREE_INTERNAL_Madd_25
+                                                       u2/bcd7_ist/ADDERTREE_INTERNAL_Madd5_xor<0>3
+    SLICE_X18Y43.B3      net (fanout=9)        1.267   u2/bcd7_ist/ADDERTREE_INTERNAL_Madd_25
+    SLICE_X18Y43.B       Tilo                  0.235   N767
+                                                       u2/bcd7_ist/Mmux_BUS_0116_BUS_0116_mux_39_OUT4111
+    SLICE_X20Y43.D4      net (fanout=6)        0.751   u2/bcd7_ist/Mmux_BUS_0116_BUS_0116_mux_39_OUT21
+    SLICE_X20Y43.CMUX    Topdc                 0.456   N40
+                                                       u2/bcd7_ist/ADDERTREE_INTERNAL_Madd6_lut<0>_SW9_F
+                                                       u2/bcd7_ist/ADDERTREE_INTERNAL_Madd6_lut<0>_SW9
+    SLICE_X16Y39.A5      net (fanout=1)        1.067   N772
+    SLICE_X16Y39.A       Tilo                  0.254   u3/uart_ad<93>_3
+                                                       u2/bcd7_ist/ADDERTREE_INTERNAL_Madd8_lut<0>21
+    SLICE_X19Y36.B4      net (fanout=6)        0.960   u2/bcd7_ist/ADDERTREE_INTERNAL_Madd8_lut<0>2
+    SLICE_X19Y36.B       Tilo                  0.259   N544
+                                                       u2/bcd7_ist/ADDERTREE_INTERNAL_Madd8_cy<0>41
+    SLICE_X19Y36.D2      net (fanout=10)       0.567   u2/bcd7_ist/ADDERTREE_INTERNAL_Madd8_cy<0>3
+    SLICE_X19Y36.D       Tilo                  0.259   N544
+                                                       u2/bcd7_ist/Madd_n01361_SW1
+    SLICE_X18Y36.C2      net (fanout=1)        0.496   N544
+    SLICE_X18Y36.C       Tilo                  0.235   u2/bcd7_ist/resd<3:0>_1
+                                                       u2/bcd7_ist/Madd_n01361
+    SLICE_X21Y34.B2      net (fanout=7)        1.225   u2/bcd7_ist/Madd_n0136
+    SLICE_X21Y34.CLK     Tas                   0.373   u2/bcd7_ist/rese_3
+                                                       u2/bcd7_ist/Madd_n0147_xor<1>11
+                                                       u2/bcd7_ist/rese_1
+    -------------------------------------------------  ---------------------------
+    Total                                     16.160ns (4.163ns logic, 11.997ns route)
+                                                       (25.8% logic, 74.2% route)
+
+--------------------------------------------------------------------------------
+Slack (setup path):     3.841ns (requirement - (data path - clock path skew + uncertainty))
+  Source:               u2/bcd7_ist/rhexd_2 (FF)
+  Destination:          u2/bcd7_ist/rese_1 (FF)
+  Requirement:          20.000ns
+  Data Path Delay:      16.119ns (Levels of Logic = 12)
+  Clock Path Skew:      -0.005ns (0.194 - 0.199)
+  Source Clock:         clk_BUFGP rising at 0.000ns
+  Destination Clock:    clk_BUFGP rising at 20.000ns
+  Clock Uncertainty:    0.035ns
+
+  Clock Uncertainty:          0.035ns  ((TSJ^2 + TIJ^2)^1/2 + DJ) / 2 + PE
+    Total System Jitter (TSJ):  0.070ns
+    Total Input Jitter (TIJ):   0.000ns
+    Discrete Jitter (DJ):       0.000ns
+    Phase Error (PE):           0.000ns
+
+  Maximum Data Path at Slow Process Corner: u2/bcd7_ist/rhexd_2 to u2/bcd7_ist/rese_1
+    Location             Delay type         Delay(ns)  Physical Resource
+                                                       Logical Resource(s)
+    -------------------------------------------------  -------------------
+    SLICE_X20Y37.CMUX    Tshcko                0.576   u2/bcd7_ist/rhexd<17>
+                                                       u2/bcd7_ist/rhexd_2
+    SLICE_X17Y46.B1      net (fanout=13)       1.621   u2/bcd7_ist/rhexd<2>
+    SLICE_X17Y46.B       Tilo                  0.259   u2/bcd7_ist/ADDERTREE_INTERNAL_Madd1_lut<1>
+                                                       u2/bcd7_ist/ADDERTREE_INTERNAL_Madd1_xor<2>11
+    SLICE_X16Y46.D2      net (fanout=2)        1.202   u2/bcd7_ist/ADDERTREE_INTERNAL_Madd_21
+    SLICE_X16Y46.D       Tilo                  0.254   u1/ad_ch6<15>
+                                                       u2/bcd7_ist/ADDERTREE_INTERNAL_Madd2_xor<0>4
+    SLICE_X20Y46.B2      net (fanout=17)       1.211   u2/bcd7_ist/ADDERTREE_INTERNAL_Madd_32
+    SLICE_X20Y46.B       Tilo                  0.254   u2/bcd7_ist/ADDERTREE_INTERNAL_Madd2_lut<0>1
+                                                       u2/bcd7_ist/ADDERTREE_INTERNAL_Madd3_lut<0>_SW1
+    SLICE_X21Y44.C1      net (fanout=3)        0.876   N1110
+    SLICE_X21Y44.C       Tilo                  0.259   u2/bcd7_ist/ADDERTREE_INTERNAL_Madd_25
+                                                       u2/bcd7_ist/ADDERTREE_INTERNAL_Madd5_xor<0>311
+    SLICE_X21Y44.D2      net (fanout=6)        0.944   u2/bcd7_ist/ADDERTREE_INTERNAL_Madd5_xor<0>31
+    SLICE_X21Y44.D       Tilo                  0.259   u2/bcd7_ist/ADDERTREE_INTERNAL_Madd_25
+                                                       u2/bcd7_ist/ADDERTREE_INTERNAL_Madd5_xor<0>3
+    SLICE_X18Y43.B3      net (fanout=9)        1.267   u2/bcd7_ist/ADDERTREE_INTERNAL_Madd_25
+    SLICE_X18Y43.B       Tilo                  0.235   N767
+                                                       u2/bcd7_ist/Mmux_BUS_0116_BUS_0116_mux_39_OUT4111
+    SLICE_X20Y43.D4      net (fanout=6)        0.751   u2/bcd7_ist/Mmux_BUS_0116_BUS_0116_mux_39_OUT21
+    SLICE_X20Y43.CMUX    Topdc                 0.456   N40
+                                                       u2/bcd7_ist/ADDERTREE_INTERNAL_Madd6_lut<0>_SW9_F
+                                                       u2/bcd7_ist/ADDERTREE_INTERNAL_Madd6_lut<0>_SW9
+    SLICE_X16Y39.A5      net (fanout=1)        1.067   N772
+    SLICE_X16Y39.A       Tilo                  0.254   u3/uart_ad<93>_3
+                                                       u2/bcd7_ist/ADDERTREE_INTERNAL_Madd8_lut<0>21
+    SLICE_X19Y36.B4      net (fanout=6)        0.960   u2/bcd7_ist/ADDERTREE_INTERNAL_Madd8_lut<0>2
+    SLICE_X19Y36.B       Tilo                  0.259   N544
+                                                       u2/bcd7_ist/ADDERTREE_INTERNAL_Madd8_cy<0>41
+    SLICE_X19Y36.D2      net (fanout=10)       0.567   u2/bcd7_ist/ADDERTREE_INTERNAL_Madd8_cy<0>3
+    SLICE_X19Y36.D       Tilo                  0.259   N544
+                                                       u2/bcd7_ist/Madd_n01361_SW1
+    SLICE_X18Y36.C2      net (fanout=1)        0.496   N544
+    SLICE_X18Y36.C       Tilo                  0.235   u2/bcd7_ist/resd<3:0>_1
+                                                       u2/bcd7_ist/Madd_n01361
+    SLICE_X21Y34.B2      net (fanout=7)        1.225   u2/bcd7_ist/Madd_n0136
+    SLICE_X21Y34.CLK     Tas                   0.373   u2/bcd7_ist/rese_3
+                                                       u2/bcd7_ist/Madd_n0147_xor<1>11
+                                                       u2/bcd7_ist/rese_1
+    -------------------------------------------------  ---------------------------
+    Total                                     16.119ns (3.932ns logic, 12.187ns route)
+                                                       (24.4% logic, 75.6% route)
+
+--------------------------------------------------------------------------------
+
+Paths for end point u2/bcd7_ist/rese_0 (SLICE_X21Y34.A2), 520851 paths
+--------------------------------------------------------------------------------
+Slack (setup path):     3.899ns (requirement - (data path - clock path skew + uncertainty))
+  Source:               u2/bcd7_ist/rhexd_2 (FF)
+  Destination:          u2/bcd7_ist/rese_0 (FF)
+  Requirement:          20.000ns
+  Data Path Delay:      16.061ns (Levels of Logic = 12)
+  Clock Path Skew:      -0.005ns (0.194 - 0.199)
+  Source Clock:         clk_BUFGP rising at 0.000ns
+  Destination Clock:    clk_BUFGP rising at 20.000ns
+  Clock Uncertainty:    0.035ns
+
+  Clock Uncertainty:          0.035ns  ((TSJ^2 + TIJ^2)^1/2 + DJ) / 2 + PE
+    Total System Jitter (TSJ):  0.070ns
+    Total Input Jitter (TIJ):   0.000ns
+    Discrete Jitter (DJ):       0.000ns
+    Phase Error (PE):           0.000ns
+
+  Maximum Data Path at Slow Process Corner: u2/bcd7_ist/rhexd_2 to u2/bcd7_ist/rese_0
+    Location             Delay type         Delay(ns)  Physical Resource
+                                                       Logical Resource(s)
+    -------------------------------------------------  -------------------
+    SLICE_X20Y37.CMUX    Tshcko                0.576   u2/bcd7_ist/rhexd<17>
+                                                       u2/bcd7_ist/rhexd_2
+    SLICE_X16Y49.D3      net (fanout=13)       1.875   u2/bcd7_ist/rhexd<2>
+    SLICE_X16Y49.D       Tilo                  0.254   u2/bcd7_ist/rhexa<1>
+                                                       u2/bcd7_ist/ADDERTREE_INTERNAL_Madd221
+    SLICE_X16Y48.C3      net (fanout=2)        0.570   u2/bcd7_ist/ADDERTREE_INTERNAL_Madd22
+    SLICE_X16Y48.C       Tilo                  0.255   u2/bcd7_ist/ADDERTREE_INTERNAL_Madd_42
+                                                       u2/bcd7_ist/ADDERTREE_INTERNAL_Madd2_cy<0>41
+    SLICE_X17Y47.C1      net (fanout=4)        0.727   u2/bcd7_ist/ADDERTREE_INTERNAL_Madd2_cy<0>3
+    SLICE_X17Y47.C       Tilo                  0.259   u2/bcd7_ist/ADDERTREE_INTERNAL_Madd3_lut<1>
+                                                       u2/bcd7_ist/ADDERTREE_INTERNAL_Madd2_cy<0>51
+    SLICE_X17Y47.B4      net (fanout=6)        0.384   u2/bcd7_ist/ADDERTREE_INTERNAL_Madd2_cy<0>4
+    SLICE_X17Y47.B       Tilo                  0.259   u2/bcd7_ist/ADDERTREE_INTERNAL_Madd3_lut<1>
+                                                       u2/bcd7_ist/Mmux_BUS_0056_BUS_0056_mux_27_OUT541
+    SLICE_X21Y44.C5      net (fanout=15)       1.178   u2/bcd7_ist/Mmux_BUS_0056_BUS_0056_mux_27_OUT54
+    SLICE_X21Y44.C       Tilo                  0.259   u2/bcd7_ist/ADDERTREE_INTERNAL_Madd_25
+                                                       u2/bcd7_ist/ADDERTREE_INTERNAL_Madd5_xor<0>311
+    SLICE_X21Y44.D2      net (fanout=6)        0.944   u2/bcd7_ist/ADDERTREE_INTERNAL_Madd5_xor<0>31
+    SLICE_X21Y44.D       Tilo                  0.259   u2/bcd7_ist/ADDERTREE_INTERNAL_Madd_25
+                                                       u2/bcd7_ist/ADDERTREE_INTERNAL_Madd5_xor<0>3
+    SLICE_X18Y43.B3      net (fanout=9)        1.267   u2/bcd7_ist/ADDERTREE_INTERNAL_Madd_25
+    SLICE_X18Y43.B       Tilo                  0.235   N767
+                                                       u2/bcd7_ist/Mmux_BUS_0116_BUS_0116_mux_39_OUT4111
+    SLICE_X20Y43.D4      net (fanout=6)        0.751   u2/bcd7_ist/Mmux_BUS_0116_BUS_0116_mux_39_OUT21
+    SLICE_X20Y43.CMUX    Topdc                 0.456   N40
+                                                       u2/bcd7_ist/ADDERTREE_INTERNAL_Madd6_lut<0>_SW9_F
+                                                       u2/bcd7_ist/ADDERTREE_INTERNAL_Madd6_lut<0>_SW9
+    SLICE_X16Y39.A5      net (fanout=1)        1.067   N772
+    SLICE_X16Y39.A       Tilo                  0.254   u3/uart_ad<93>_3
+                                                       u2/bcd7_ist/ADDERTREE_INTERNAL_Madd8_lut<0>21
+    SLICE_X17Y36.D5      net (fanout=6)        0.792   u2/bcd7_ist/ADDERTREE_INTERNAL_Madd8_lut<0>2
+    SLICE_X17Y36.D       Tilo                  0.259   u2/bcd7_ist/resc<3:0>_3
+                                                       u2/bcd7_ist/ADDERTREE_INTERNAL_Madd8_xor<0>31
+    SLICE_X21Y36.C2      net (fanout=5)        1.202   u2/bcd7_ist/ADDERTREE_INTERNAL_Madd_28
+    SLICE_X21Y36.C       Tilo                  0.259   u2/bcd7_ist/resd<3:0>_3
+                                                       u2/bcd7_ist/Mmux_BUS_0177_BUS_0177_mux_51_OUT61
+    SLICE_X21Y34.A2      net (fanout=7)        1.347   u2/bcd7_ist/BUS_0177_BUS_0177_mux_51_OUT<5>
+    SLICE_X21Y34.CLK     Tas                   0.373   u2/bcd7_ist/rese_3
+                                                       u2/bcd7_ist/Madd_n0147_lut<0>1
+                                                       u2/bcd7_ist/rese_0
+    -------------------------------------------------  ---------------------------
+    Total                                     16.061ns (3.957ns logic, 12.104ns route)
+                                                       (24.6% logic, 75.4% route)
+
+--------------------------------------------------------------------------------
+Slack (setup path):     3.942ns (requirement - (data path - clock path skew + uncertainty))
+  Source:               u2/bcd7_ist/rhexd_2 (FF)
+  Destination:          u2/bcd7_ist/rese_0 (FF)
+  Requirement:          20.000ns
+  Data Path Delay:      16.018ns (Levels of Logic = 12)
+  Clock Path Skew:      -0.005ns (0.194 - 0.199)
+  Source Clock:         clk_BUFGP rising at 0.000ns
+  Destination Clock:    clk_BUFGP rising at 20.000ns
+  Clock Uncertainty:    0.035ns
+
+  Clock Uncertainty:          0.035ns  ((TSJ^2 + TIJ^2)^1/2 + DJ) / 2 + PE
+    Total System Jitter (TSJ):  0.070ns
+    Total Input Jitter (TIJ):   0.000ns
+    Discrete Jitter (DJ):       0.000ns
+    Phase Error (PE):           0.000ns
+
+  Maximum Data Path at Slow Process Corner: u2/bcd7_ist/rhexd_2 to u2/bcd7_ist/rese_0
+    Location             Delay type         Delay(ns)  Physical Resource
+                                                       Logical Resource(s)
+    -------------------------------------------------  -------------------
+    SLICE_X20Y37.CMUX    Tshcko                0.576   u2/bcd7_ist/rhexd<17>
+                                                       u2/bcd7_ist/rhexd_2
+    SLICE_X16Y49.D3      net (fanout=13)       1.875   u2/bcd7_ist/rhexd<2>
+    SLICE_X16Y49.D       Tilo                  0.254   u2/bcd7_ist/rhexa<1>
+                                                       u2/bcd7_ist/ADDERTREE_INTERNAL_Madd221
+    SLICE_X16Y48.C3      net (fanout=2)        0.570   u2/bcd7_ist/ADDERTREE_INTERNAL_Madd22
+    SLICE_X16Y48.C       Tilo                  0.255   u2/bcd7_ist/ADDERTREE_INTERNAL_Madd_42
+                                                       u2/bcd7_ist/ADDERTREE_INTERNAL_Madd2_cy<0>41
+    SLICE_X18Y46.A3      net (fanout=4)        0.790   u2/bcd7_ist/ADDERTREE_INTERNAL_Madd2_cy<0>3
+    SLICE_X18Y46.A       Tilo                  0.235   u2/bcd7_ist/resa<3:0>_3
+                                                       u2/bcd7_ist/Mmux_BUS_0056_BUS_0056_mux_27_OUT4111
+    SLICE_X20Y46.B6      net (fanout=14)       0.609   u2/bcd7_ist/Mmux_BUS_0056_BUS_0056_mux_27_OUT21
+    SLICE_X20Y46.B       Tilo                  0.254   u2/bcd7_ist/ADDERTREE_INTERNAL_Madd2_lut<0>1
+                                                       u2/bcd7_ist/ADDERTREE_INTERNAL_Madd3_lut<0>_SW1
+    SLICE_X21Y44.C1      net (fanout=3)        0.876   N1110
+    SLICE_X21Y44.C       Tilo                  0.259   u2/bcd7_ist/ADDERTREE_INTERNAL_Madd_25
+                                                       u2/bcd7_ist/ADDERTREE_INTERNAL_Madd5_xor<0>311
+    SLICE_X21Y44.D2      net (fanout=6)        0.944   u2/bcd7_ist/ADDERTREE_INTERNAL_Madd5_xor<0>31
+    SLICE_X21Y44.D       Tilo                  0.259   u2/bcd7_ist/ADDERTREE_INTERNAL_Madd_25
+                                                       u2/bcd7_ist/ADDERTREE_INTERNAL_Madd5_xor<0>3
+    SLICE_X18Y43.B3      net (fanout=9)        1.267   u2/bcd7_ist/ADDERTREE_INTERNAL_Madd_25
+    SLICE_X18Y43.B       Tilo                  0.235   N767
+                                                       u2/bcd7_ist/Mmux_BUS_0116_BUS_0116_mux_39_OUT4111
+    SLICE_X20Y43.D4      net (fanout=6)        0.751   u2/bcd7_ist/Mmux_BUS_0116_BUS_0116_mux_39_OUT21
+    SLICE_X20Y43.CMUX    Topdc                 0.456   N40
+                                                       u2/bcd7_ist/ADDERTREE_INTERNAL_Madd6_lut<0>_SW9_F
+                                                       u2/bcd7_ist/ADDERTREE_INTERNAL_Madd6_lut<0>_SW9
+    SLICE_X16Y39.A5      net (fanout=1)        1.067   N772
+    SLICE_X16Y39.A       Tilo                  0.254   u3/uart_ad<93>_3
+                                                       u2/bcd7_ist/ADDERTREE_INTERNAL_Madd8_lut<0>21
+    SLICE_X17Y36.D5      net (fanout=6)        0.792   u2/bcd7_ist/ADDERTREE_INTERNAL_Madd8_lut<0>2
+    SLICE_X17Y36.D       Tilo                  0.259   u2/bcd7_ist/resc<3:0>_3
+                                                       u2/bcd7_ist/ADDERTREE_INTERNAL_Madd8_xor<0>31
+    SLICE_X21Y36.C2      net (fanout=5)        1.202   u2/bcd7_ist/ADDERTREE_INTERNAL_Madd_28
+    SLICE_X21Y36.C       Tilo                  0.259   u2/bcd7_ist/resd<3:0>_3
+                                                       u2/bcd7_ist/Mmux_BUS_0177_BUS_0177_mux_51_OUT61
+    SLICE_X21Y34.A2      net (fanout=7)        1.347   u2/bcd7_ist/BUS_0177_BUS_0177_mux_51_OUT<5>
+    SLICE_X21Y34.CLK     Tas                   0.373   u2/bcd7_ist/rese_3
+                                                       u2/bcd7_ist/Madd_n0147_lut<0>1
+                                                       u2/bcd7_ist/rese_0
+    -------------------------------------------------  ---------------------------
+    Total                                     16.018ns (3.928ns logic, 12.090ns route)
+                                                       (24.5% logic, 75.5% route)
+
+--------------------------------------------------------------------------------
+Slack (setup path):     3.983ns (requirement - (data path - clock path skew + uncertainty))
+  Source:               u2/bcd7_ist/rhexd_2 (FF)
+  Destination:          u2/bcd7_ist/rese_0 (FF)
+  Requirement:          20.000ns
+  Data Path Delay:      15.977ns (Levels of Logic = 11)
+  Clock Path Skew:      -0.005ns (0.194 - 0.199)
+  Source Clock:         clk_BUFGP rising at 0.000ns
+  Destination Clock:    clk_BUFGP rising at 20.000ns
+  Clock Uncertainty:    0.035ns
+
+  Clock Uncertainty:          0.035ns  ((TSJ^2 + TIJ^2)^1/2 + DJ) / 2 + PE
+    Total System Jitter (TSJ):  0.070ns
+    Total Input Jitter (TIJ):   0.000ns
+    Discrete Jitter (DJ):       0.000ns
+    Phase Error (PE):           0.000ns
+
+  Maximum Data Path at Slow Process Corner: u2/bcd7_ist/rhexd_2 to u2/bcd7_ist/rese_0
+    Location             Delay type         Delay(ns)  Physical Resource
+                                                       Logical Resource(s)
+    -------------------------------------------------  -------------------
+    SLICE_X20Y37.CMUX    Tshcko                0.576   u2/bcd7_ist/rhexd<17>
+                                                       u2/bcd7_ist/rhexd_2
+    SLICE_X17Y46.B1      net (fanout=13)       1.621   u2/bcd7_ist/rhexd<2>
+    SLICE_X17Y46.B       Tilo                  0.259   u2/bcd7_ist/ADDERTREE_INTERNAL_Madd1_lut<1>
+                                                       u2/bcd7_ist/ADDERTREE_INTERNAL_Madd1_xor<2>11
+    SLICE_X16Y46.D2      net (fanout=2)        1.202   u2/bcd7_ist/ADDERTREE_INTERNAL_Madd_21
+    SLICE_X16Y46.D       Tilo                  0.254   u1/ad_ch6<15>
+                                                       u2/bcd7_ist/ADDERTREE_INTERNAL_Madd2_xor<0>4
+    SLICE_X20Y46.B2      net (fanout=17)       1.211   u2/bcd7_ist/ADDERTREE_INTERNAL_Madd_32
+    SLICE_X20Y46.B       Tilo                  0.254   u2/bcd7_ist/ADDERTREE_INTERNAL_Madd2_lut<0>1
+                                                       u2/bcd7_ist/ADDERTREE_INTERNAL_Madd3_lut<0>_SW1
+    SLICE_X21Y44.C1      net (fanout=3)        0.876   N1110
+    SLICE_X21Y44.C       Tilo                  0.259   u2/bcd7_ist/ADDERTREE_INTERNAL_Madd_25
+                                                       u2/bcd7_ist/ADDERTREE_INTERNAL_Madd5_xor<0>311
+    SLICE_X21Y44.D2      net (fanout=6)        0.944   u2/bcd7_ist/ADDERTREE_INTERNAL_Madd5_xor<0>31
+    SLICE_X21Y44.D       Tilo                  0.259   u2/bcd7_ist/ADDERTREE_INTERNAL_Madd_25
+                                                       u2/bcd7_ist/ADDERTREE_INTERNAL_Madd5_xor<0>3
+    SLICE_X18Y43.B3      net (fanout=9)        1.267   u2/bcd7_ist/ADDERTREE_INTERNAL_Madd_25
+    SLICE_X18Y43.B       Tilo                  0.235   N767
+                                                       u2/bcd7_ist/Mmux_BUS_0116_BUS_0116_mux_39_OUT4111
+    SLICE_X20Y43.D4      net (fanout=6)        0.751   u2/bcd7_ist/Mmux_BUS_0116_BUS_0116_mux_39_OUT21
+    SLICE_X20Y43.CMUX    Topdc                 0.456   N40
+                                                       u2/bcd7_ist/ADDERTREE_INTERNAL_Madd6_lut<0>_SW9_F
+                                                       u2/bcd7_ist/ADDERTREE_INTERNAL_Madd6_lut<0>_SW9
+    SLICE_X16Y39.A5      net (fanout=1)        1.067   N772
+    SLICE_X16Y39.A       Tilo                  0.254   u3/uart_ad<93>_3
+                                                       u2/bcd7_ist/ADDERTREE_INTERNAL_Madd8_lut<0>21
+    SLICE_X17Y36.D5      net (fanout=6)        0.792   u2/bcd7_ist/ADDERTREE_INTERNAL_Madd8_lut<0>2
+    SLICE_X17Y36.D       Tilo                  0.259   u2/bcd7_ist/resc<3:0>_3
+                                                       u2/bcd7_ist/ADDERTREE_INTERNAL_Madd8_xor<0>31
+    SLICE_X21Y36.C2      net (fanout=5)        1.202   u2/bcd7_ist/ADDERTREE_INTERNAL_Madd_28
+    SLICE_X21Y36.C       Tilo                  0.259   u2/bcd7_ist/resd<3:0>_3
+                                                       u2/bcd7_ist/Mmux_BUS_0177_BUS_0177_mux_51_OUT61
+    SLICE_X21Y34.A2      net (fanout=7)        1.347   u2/bcd7_ist/BUS_0177_BUS_0177_mux_51_OUT<5>
+    SLICE_X21Y34.CLK     Tas                   0.373   u2/bcd7_ist/rese_3
+                                                       u2/bcd7_ist/Madd_n0147_lut<0>1
+                                                       u2/bcd7_ist/rese_0
+    -------------------------------------------------  ---------------------------
+    Total                                     15.977ns (3.697ns logic, 12.280ns route)
+                                                       (23.1% logic, 76.9% route)
+
+--------------------------------------------------------------------------------
+
+Hold Paths: TS_sys_clk = PERIOD TIMEGRP "sys_clk" 50 MHz HIGH 50%;
+--------------------------------------------------------------------------------
+
+Paths for end point u2/bcd1_ist/rhexc_7 (SLICE_X6Y56.A5), 1 path
+--------------------------------------------------------------------------------
+Slack (hold path):      0.394ns (requirement - (clock path skew + uncertainty - data path))
+  Source:               u2/bcd1_ist/rhex_0_9 (FF)
+  Destination:          u2/bcd1_ist/rhexc_7 (FF)
+  Requirement:          0.000ns
+  Data Path Delay:      0.396ns (Levels of Logic = 1)
+  Clock Path Skew:      0.002ns (0.031 - 0.029)
+  Source Clock:         clk_BUFGP rising at 20.000ns
+  Destination Clock:    clk_BUFGP rising at 20.000ns
+  Clock Uncertainty:    0.000ns
+
+  Minimum Data Path at Fast Process Corner: u2/bcd1_ist/rhex_0_9 to u2/bcd1_ist/rhexc_7
+    Location             Delay type         Delay(ns)  Physical Resource
+                                                       Logical Resource(s)
+    -------------------------------------------------  -------------------
+    SLICE_X7Y56.BQ       Tcko                  0.198   u2/bcd1_ist/rhex_0<11>
+                                                       u2/bcd1_ist/rhex_0_9
+    SLICE_X6Y56.A5       net (fanout=5)        0.077   u2/bcd1_ist/rhex_0<9>
+    SLICE_X6Y56.CLK      Tah         (-Th)    -0.121   u2/bcd1_ist/rhexc<9>
+                                                       u2/bcd1_ist/Mram_rhex[2][3]_PWR_5_o_wide_mux_8_OUT71
+                                                       u2/bcd1_ist/rhexc_7
+    -------------------------------------------------  ---------------------------
+    Total                                      0.396ns (0.319ns logic, 0.077ns route)
+                                                       (80.6% logic, 19.4% route)
+
+--------------------------------------------------------------------------------
+
+Paths for end point u1/ad_rd (SLICE_X10Y57.D6), 1 path
+--------------------------------------------------------------------------------
+Slack (hold path):      0.417ns (requirement - (clock path skew + uncertainty - data path))
+  Source:               u1/ad_rd (FF)
+  Destination:          u1/ad_rd (FF)
+  Requirement:          0.000ns
+  Data Path Delay:      0.417ns (Levels of Logic = 1)
+  Clock Path Skew:      0.000ns
+  Source Clock:         clk_BUFGP rising at 20.000ns
+  Destination Clock:    clk_BUFGP rising at 20.000ns
+  Clock Uncertainty:    0.000ns
+
+  Minimum Data Path at Fast Process Corner: u1/ad_rd to u1/ad_rd
+    Location             Delay type         Delay(ns)  Physical Resource
+                                                       Logical Resource(s)
+    -------------------------------------------------  -------------------
+    SLICE_X10Y57.DQ      Tcko                  0.200   u1/ad_rd
+                                                       u1/ad_rd
+    SLICE_X10Y57.D6      net (fanout=2)        0.027   u1/ad_rd
+    SLICE_X10Y57.CLK     Tah         (-Th)    -0.190   u1/ad_rd
+                                                       u1/ad_rd_rstpot
+                                                       u1/ad_rd
+    -------------------------------------------------  ---------------------------
+    Total                                      0.417ns (0.390ns logic, 0.027ns route)
+                                                       (93.5% logic, 6.5% route)
+
+--------------------------------------------------------------------------------
+
+Paths for end point u3/u0/clkout (SLICE_X17Y23.A6), 1 path
+--------------------------------------------------------------------------------
+Slack (hold path):      0.438ns (requirement - (clock path skew + uncertainty - data path))
+  Source:               u3/u0/clkout (FF)
+  Destination:          u3/u0/clkout (FF)
+  Requirement:          0.000ns
+  Data Path Delay:      0.438ns (Levels of Logic = 1)
+  Clock Path Skew:      0.000ns
+  Source Clock:         clk_BUFGP rising at 20.000ns
+  Destination Clock:    clk_BUFGP rising at 20.000ns
+  Clock Uncertainty:    0.000ns
+
+  Minimum Data Path at Fast Process Corner: u3/u0/clkout to u3/u0/clkout
+    Location             Delay type         Delay(ns)  Physical Resource
+                                                       Logical Resource(s)
+    -------------------------------------------------  -------------------
+    SLICE_X17Y23.AQ      Tcko                  0.198   u3/u0/clkout
+                                                       u3/u0/clkout
+    SLICE_X17Y23.A6      net (fanout=2)        0.025   u3/u0/clkout
+    SLICE_X17Y23.CLK     Tah         (-Th)    -0.215   u3/u0/clkout
+                                                       u3/u0/clkout_glue_set
+                                                       u3/u0/clkout
+    -------------------------------------------------  ---------------------------
+    Total                                      0.438ns (0.413ns logic, 0.025ns route)
+                                                       (94.3% logic, 5.7% route)
+
+--------------------------------------------------------------------------------
+
+Component Switching Limit Checks: TS_sys_clk = PERIOD TIMEGRP "sys_clk" 50 MHz HIGH 50%;
+--------------------------------------------------------------------------------
+Slack: 16.458ns (period - min period limit)
+  Period: 20.000ns
+  Min period limit: 3.542ns (282.326MHz) (Tdspper_BREG_MREG)
+  Physical resource: u2/Mmult_ch2_reg[15]_PWR_3_o_MuLt_77_OUT/CLK
+  Logical resource: u2/Mmult_ch2_reg[15]_PWR_3_o_MuLt_77_OUT/CLK
+  Location pin: DSP48_X0Y15.CLK
+  Clock network: clk_BUFGP
+--------------------------------------------------------------------------------
+Slack: 16.458ns (period - min period limit)
+  Period: 20.000ns
+  Min period limit: 3.542ns (282.326MHz) (Tdspper_BREG_MREG)
+  Physical resource: u2/Mmult_ch6_reg[15]_PWR_3_o_MuLt_81_OUT/CLK
+  Logical resource: u2/Mmult_ch6_reg[15]_PWR_3_o_MuLt_81_OUT/CLK
+  Location pin: DSP48_X0Y10.CLK
+  Clock network: clk_BUFGP
+--------------------------------------------------------------------------------
+Slack: 16.458ns (period - min period limit)
+  Period: 20.000ns
+  Min period limit: 3.542ns (282.326MHz) (Tdspper_BREG_MREG)
+  Physical resource: u2/Mmult_ch1_reg[15]_PWR_3_o_MuLt_76_OUT/CLK
+  Logical resource: u2/Mmult_ch1_reg[15]_PWR_3_o_MuLt_76_OUT/CLK
+  Location pin: DSP48_X0Y14.CLK
+  Clock network: clk_BUFGP
+--------------------------------------------------------------------------------
+
+
+All constraints were met.
+
+
+Data Sheet report:
+-----------------
+All values displayed in nanoseconds (ns)
+
+Clock to Setup on destination clock clk
+---------------+---------+---------+---------+---------+
+               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------+---------+---------+---------+---------+
+clk            |   16.294|         |         |         |
+---------------+---------+---------+---------+---------+
+
+
+Timing summary:
+---------------
+
+Timing errors: 0  Score: 0  (Setup/Max: 0, Hold: 0)
+
+Constraints cover 114110989 paths, 0 nets, and 7826 connections
+
+Design statistics:
+   Minimum period:  16.294ns{1}   (Maximum frequency:  61.372MHz)
+
+
+------------------------------------Footnotes-----------------------------------
+1)  The minimum period statistic assumes all single cycle delays.
+
+Analysis completed Thu May 05 14:31:28 2016 
+--------------------------------------------------------------------------------
+
+Trace Settings:
+-------------------------
+Trace Settings 
+
+Peak Memory Usage: 244 MB
+
+
+

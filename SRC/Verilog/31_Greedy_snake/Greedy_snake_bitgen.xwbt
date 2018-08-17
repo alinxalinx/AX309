@@ -1,0 +1,8 @@
+INTSTYLE=ise
+INFILE=E:\Project\AX309\CD\09_VERILOG\31_Greedy_snake\Greedy_snake.ncd
+OUTFILE=E:\Project\AX309\CD\09_VERILOG\31_Greedy_snake\Greedy_snake.bit
+FAMILY=Spartan6
+PART=xc6slx9-2ftg256
+WORKINGDIR=E:\Project\AX309\CD\09_VERILOG\31_Greedy_snake
+LICENSE=WebPack
+USER_INFO=__0_0_0

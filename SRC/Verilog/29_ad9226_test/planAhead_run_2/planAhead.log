@@ -1,0 +1,26 @@
+#-----------------------------------------------------------
+# PlanAhead v14.7 (64-bit)
+# Build 321239 by xbuild on Fri Sep 27 19:29:51 MDT 2013
+# Start of session at: Thu May 07 17:17:28 2015
+# Process ID: 6416
+# Log file: E:/Project/AX545/verilog/ad9226_test/planAhead_run_2/planAhead.log
+# Journal file: E:/Project/AX545/verilog/ad9226_test/planAhead_run_2/planAhead.jou
+#-----------------------------------------------------------
+INFO: [Common 17-78] Attempting to get a license: PlanAhead
+INFO: [Common 17-290] Got license for PlanAhead
+INFO: [Device 21-36] Loading parts and site information from C:/Xilinx/14.7/ISE_DS/PlanAhead/data/parts/arch.xml
+Parsing RTL primitives file [C:/Xilinx/14.7/ISE_DS/PlanAhead/data/parts/xilinx/rtl/prims/rtl_prims.xml]
+Finished parsing RTL primitives file [C:/Xilinx/14.7/ISE_DS/PlanAhead/data/parts/xilinx/rtl/prims/rtl_prims.xml]
+start_gui
+source E:/Project/AX545/verilog/ad9226_test/pa.fromNetlist.tcl
+# create_project -name ad9226_test -dir "E:/Project/AX545/verilog/ad9226_test/planAhead_run_2" -part xc6slx45csg324-2
+ERROR: [Common 17-53] User Exception: Project already exists on disk, please use '-force' option to overwrite: 
+     E:/Project/AX545/verilog/ad9226_test/planAhead_run_2/ad9226_test.ppr
+     E:/Project/AX545/verilog/ad9226_test/planAhead_run_2/ad9226_test.data
+
+    while executing
+"create_project -name ad9226_test -dir "E:/Project/AX545/verilog/ad9226_test/planAhead_run_2" -part xc6slx45csg324-2"
+    (file "E:/Project/AX545/verilog/ad9226_test/pa.fromNetlist.tcl" line 4)
+exit
+INFO: [Common 17-206] Exiting PlanAhead at Thu May 07 17:17:59 2015...
+INFO: [Common 17-83] Releasing license: PlanAhead

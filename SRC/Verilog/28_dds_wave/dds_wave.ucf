@@ -1,0 +1,21 @@
+
+##
+NET clk LOC = T8 | TNM_NET = sys_clk_pin | IOSTANDARD = "LVCMOS33";
+TIMESPEC TS_sys_clk_pin = PERIOD sys_clk_pin 50000 kHz;
+##
+
+
+########Switch Pin define#####################
+NET "key1"                     LOC = C3 | IOSTANDARD = "LVCMOS33";        ## KEY1
+
+#DAÏà¹ØÒý½Å(J3)
+NET da_clk                      LOC = A5 | IOSTANDARD = "LVCMOS33";        ## 5 
+
+NET dadata<0>                  LOC = A10 | IOSTANDARD = "LVCMOS33";       ## 13 
+NET dadata<1>                  LOC = A9 | IOSTANDARD = "LVCMOS33";       ## 12
+NET dadata<2>                  LOC = C8 | IOSTANDARD = "LVCMOS33";       ## 11
+NET dadata<3>                  LOC = A8 | IOSTANDARD = "LVCMOS33";       ## 10
+NET dadata<4>                  LOC = B8 | IOSTANDARD = "LVCMOS33";       ## 9
+NET dadata<5>                  LOC = A7 | IOSTANDARD = "LVCMOS33";       ## 8
+NET dadata<6>                  LOC = A6 | IOSTANDARD = "LVCMOS33";       ## 7
+NET dadata<7>                  LOC = B6 | IOSTANDARD = "LVCMOS33";       ## 6 

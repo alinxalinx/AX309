@@ -1,0 +1,5 @@
+verilog work "ipcore_dir/PLL.v"
+verilog work "ipcore_dir/ROM.v"
+verilog work "chipscope_ila.v"
+verilog work "chipscope_icon.v"
+verilog work "adda_test.v"

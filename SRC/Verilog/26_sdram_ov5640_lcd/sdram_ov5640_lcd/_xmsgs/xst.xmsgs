@@ -1,0 +1,501 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- IMPORTANT: This is an internal file that has been generated
+     by the Xilinx ISE software.  Any direct editing or
+     changes made to this file may result in unpredictable
+     behavior or data corruption.  It is strongly advised that
+     users do not edit the contents of this file. -->
+<messages>
+<msg type="warning" file="HDLCompiler" num="1142" delta="old" >"E:\BaiduYunDownload\AX309.161028\AX309\09_VERILOG\26_sdram_ov5640_lcd\sdram_ov5640_lcd\rtl\sdram_vga_ip\sdram_ip\sdram_wr_data.v" Line 1: Compiler directive <arg fmt="%s" index="1">`timescale</arg> is not allowed here
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="1142" delta="old" >"E:\BaiduYunDownload\AX309.161028\AX309\09_VERILOG\26_sdram_ov5640_lcd\sdram_ov5640_lcd\rtl\sdram_vga_ip\sdram_ip\sdram_ctrl.v" Line 1: Compiler directive <arg fmt="%s" index="1">`timescale</arg> is not allowed here
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="1142" delta="old" >"E:\BaiduYunDownload\AX309.161028\AX309\09_VERILOG\26_sdram_ov5640_lcd\sdram_ov5640_lcd\rtl\sdram_vga_ip\sdram_ip\sdram_cmd.v" Line 1: Compiler directive <arg fmt="%s" index="1">`timescale</arg> is not allowed here
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="751" delta="old" >"E:\BaiduYunDownload\AX309.161028\AX309\09_VERILOG\26_sdram_ov5640_lcd\sdram_ov5640_lcd\rtl\sdram_vga_ip\sdram_ip\sdram_2fifo_top.v" Line 68: Redeclaration of ansi port <arg fmt="%s" index="1">sdram_wr_req</arg> is not allowed
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="751" delta="old" >"E:\BaiduYunDownload\AX309.161028\AX309\09_VERILOG\26_sdram_ov5640_lcd\sdram_ov5640_lcd\rtl\sdram_vga_ip\sdram_ip\sdram_2fifo_top.v" Line 70: Redeclaration of ansi port <arg fmt="%s" index="1">sdram_rd_req</arg> is not allowed
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="1127" delta="old" >"E:\BaiduYunDownload\AX309.161028\AX309\09_VERILOG\26_sdram_ov5640_lcd\sdram_ov5640_lcd\ipcore_dir\sdram_pll.v" Line 131: Assignment to <arg fmt="%s" index="1">clkout4_unused</arg> ignored, since the identifier is never used
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="1127" delta="old" >"E:\BaiduYunDownload\AX309.161028\AX309\09_VERILOG\26_sdram_ov5640_lcd\sdram_ov5640_lcd\ipcore_dir\sdram_pll.v" Line 132: Assignment to <arg fmt="%s" index="1">clkout5_unused</arg> ignored, since the identifier is never used
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="413" delta="old" >"E:\BaiduYunDownload\AX309.161028\AX309\09_VERILOG\26_sdram_ov5640_lcd\sdram_ov5640_lcd\rtl\cmos_i2c_ov5640\i2c_com.v" Line 30: Result of <arg fmt="%d" index="1">32</arg>-bit expression is truncated to fit in <arg fmt="%d" index="2">1</arg>-bit target.
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="413" delta="old" >"E:\BaiduYunDownload\AX309.161028\AX309\09_VERILOG\26_sdram_ov5640_lcd\sdram_ov5640_lcd\rtl\cmos_i2c_ov5640\i2c_com.v" Line 31: Result of <arg fmt="%d" index="1">32</arg>-bit expression is truncated to fit in <arg fmt="%d" index="2">1</arg>-bit target.
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="413" delta="old" >"E:\BaiduYunDownload\AX309.161028\AX309\09_VERILOG\26_sdram_ov5640_lcd\sdram_ov5640_lcd\rtl\cmos_i2c_ov5640\i2c_com.v" Line 43: Result of <arg fmt="%d" index="1">7</arg>-bit expression is truncated to fit in <arg fmt="%d" index="2">6</arg>-bit target.
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="1127" delta="old" >"E:\BaiduYunDownload\AX309.161028\AX309\09_VERILOG\26_sdram_ov5640_lcd\sdram_ov5640_lcd\rtl\cmos_i2c_ov5640\reg_config.v" Line 30: Assignment to <arg fmt="%s" index="1">ack</arg> ignored, since the identifier is never used
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="1499" delta="old" >"E:\BaiduYunDownload\AX309.161028\AX309\09_VERILOG\26_sdram_ov5640_lcd\sdram_ov5640_lcd\ipcore_dir\wrfifo.v" Line 39: Empty module &lt;<arg fmt="%s" index="1">wrfifo</arg>&gt; remains a black box.
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="1499" delta="old" >"E:\BaiduYunDownload\AX309.161028\AX309\09_VERILOG\26_sdram_ov5640_lcd\sdram_ov5640_lcd\ipcore_dir\rdfifo.v" Line 39: Empty module &lt;<arg fmt="%s" index="1">rdfifo</arg>&gt; remains a black box.
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="1127" delta="old" >"E:\BaiduYunDownload\AX309.161028\AX309\09_VERILOG\26_sdram_ov5640_lcd\sdram_ov5640_lcd\rtl\sdram_vga_ip\sdram_vga_top.v" Line 73: Assignment to <arg fmt="%s" index="1">sdram_wr_req</arg> ignored, since the identifier is never used
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="1127" delta="old" >"E:\BaiduYunDownload\AX309.161028\AX309\09_VERILOG\26_sdram_ov5640_lcd\sdram_ov5640_lcd\rtl\sdram_vga_ip\sdram_vga_top.v" Line 74: Assignment to <arg fmt="%s" index="1">sdram_rd_req</arg> ignored, since the identifier is never used
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="1127" delta="old" >"E:\BaiduYunDownload\AX309.161028\AX309\09_VERILOG\26_sdram_ov5640_lcd\sdram_ov5640_lcd\rtl\sdram_vga_ip\sdram_vga_top.v" Line 135: Assignment to <arg fmt="%s" index="1">state_write</arg> ignored, since the identifier is never used
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="1127" delta="old" >"E:\BaiduYunDownload\AX309.161028\AX309\09_VERILOG\26_sdram_ov5640_lcd\sdram_ov5640_lcd\rtl\sdram_vga_ip\sdram_vga_top.v" Line 176: Assignment to <arg fmt="%s" index="1">lcd_xpos</arg> ignored, since the identifier is never used
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="1127" delta="old" >"E:\BaiduYunDownload\AX309.161028\AX309\09_VERILOG\26_sdram_ov5640_lcd\sdram_ov5640_lcd\rtl\sdram_vga_ip\sdram_vga_top.v" Line 177: Assignment to <arg fmt="%s" index="1">lcd_ypos</arg> ignored, since the identifier is never used
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="189" delta="old" >"E:\BaiduYunDownload\AX309.161028\AX309\09_VERILOG\26_sdram_ov5640_lcd\sdram_ov5640_lcd\rtl\sdram_ov5640_lcd.v" Line 161: Size mismatch in connection of port &lt;<arg fmt="%s" index="3">sdram_addr</arg>&gt;. Formal port size is <arg fmt="%d" index="2">12</arg>-bit while actual signal size is <arg fmt="%d" index="1">13</arg>-bit.
+</msg>
+
+<msg type="info" file="Xst" num="3210" delta="old" >&quot;<arg fmt="%s" index="1">E:\BaiduYunDownload\AX309.161028\AX309\09_VERILOG\26_sdram_ov5640_lcd\sdram_ov5640_lcd\rtl\sdram_ov5640_lcd.v</arg>&quot; line <arg fmt="%s" index="2">99</arg>: Output port &lt;<arg fmt="%s" index="3">reg_index</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">reg_config_inst</arg>&gt; is unconnected or connected to loadless signal.
+</msg>
+
+<msg type="info" file="Xst" num="3210" delta="old" >&quot;<arg fmt="%s" index="1">E:\BaiduYunDownload\AX309.161028\AX309\09_VERILOG\26_sdram_ov5640_lcd\sdram_ov5640_lcd\rtl\sdram_ov5640_lcd.v</arg>&quot; line <arg fmt="%s" index="2">99</arg>: Output port &lt;<arg fmt="%s" index="3">strobe_flash</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">reg_config_inst</arg>&gt; is unconnected or connected to loadless signal.
+</msg>
+
+<msg type="info" file="Xst" num="3210" delta="old" >&quot;<arg fmt="%s" index="1">E:\BaiduYunDownload\AX309.161028\AX309\09_VERILOG\26_sdram_ov5640_lcd\sdram_ov5640_lcd\rtl\sdram_ov5640_lcd.v</arg>&quot; line <arg fmt="%s" index="2">99</arg>: Output port &lt;<arg fmt="%s" index="3">clock_20k</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">reg_config_inst</arg>&gt; is unconnected or connected to loadless signal.
+</msg>
+
+<msg type="info" file="Xst" num="3210" delta="old" >&quot;<arg fmt="%s" index="1">E:\BaiduYunDownload\AX309.161028\AX309\09_VERILOG\26_sdram_ov5640_lcd\sdram_ov5640_lcd\rtl\sdram_ov5640_lcd.v</arg>&quot; line <arg fmt="%s" index="2">117</arg>: Output port &lt;<arg fmt="%s" index="3">CMOS_FPS_DATA</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">u_CMOS_Capture</arg>&gt; is unconnected or connected to loadless signal.
+</msg>
+
+<msg type="info" file="Xst" num="3210" delta="old" >&quot;<arg fmt="%s" index="1">E:\BaiduYunDownload\AX309.161028\AX309\09_VERILOG\26_sdram_ov5640_lcd\sdram_ov5640_lcd\rtl\sdram_ov5640_lcd.v</arg>&quot; line <arg fmt="%s" index="2">143</arg>: Output port &lt;<arg fmt="%s" index="3">lcd_sync</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">u_sdram_vga_top</arg>&gt; is unconnected or connected to loadless signal.
+</msg>
+
+<msg type="info" file="Xst" num="3210" delta="old" >&quot;<arg fmt="%s" index="1">E:\BaiduYunDownload\AX309.161028\AX309\09_VERILOG\26_sdram_ov5640_lcd\sdram_ov5640_lcd\rtl\system_ctrl.v</arg>&quot; line <arg fmt="%s" index="2">45</arg>: Output port &lt;<arg fmt="%s" index="3">LOCKED</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">u_sdram_pll</arg>&gt; is unconnected or connected to loadless signal.
+</msg>
+
+<msg type="info" file="Xst" num="3210" delta="old" >&quot;<arg fmt="%s" index="1">E:\BaiduYunDownload\AX309.161028\AX309\09_VERILOG\26_sdram_ov5640_lcd\sdram_ov5640_lcd\rtl\cmos_i2c_ov5640\reg_config.v</arg>&quot; line <arg fmt="%s" index="2">28</arg>: Output port &lt;<arg fmt="%s" index="3">ack</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">u1</arg>&gt; is unconnected or connected to loadless signal.
+</msg>
+
+<msg type="info" file="Xst" num="3210" delta="old" >&quot;<arg fmt="%s" index="1">E:\BaiduYunDownload\AX309.161028\AX309\09_VERILOG\26_sdram_ov5640_lcd\sdram_ov5640_lcd\rtl\sdram_vga_ip\sdram_vga_top.v</arg>&quot; line <arg fmt="%s" index="2">64</arg>: Output port &lt;<arg fmt="%s" index="3">sdram_wr_req</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">u_sdram_2fifo_top</arg>&gt; is unconnected or connected to loadless signal.
+</msg>
+
+<msg type="info" file="Xst" num="3210" delta="old" >&quot;<arg fmt="%s" index="1">E:\BaiduYunDownload\AX309.161028\AX309\09_VERILOG\26_sdram_ov5640_lcd\sdram_ov5640_lcd\rtl\sdram_vga_ip\sdram_vga_top.v</arg>&quot; line <arg fmt="%s" index="2">64</arg>: Output port &lt;<arg fmt="%s" index="3">sdram_rd_req</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">u_sdram_2fifo_top</arg>&gt; is unconnected or connected to loadless signal.
+</msg>
+
+<msg type="info" file="Xst" num="3210" delta="old" >&quot;<arg fmt="%s" index="1">E:\BaiduYunDownload\AX309.161028\AX309\09_VERILOG\26_sdram_ov5640_lcd\sdram_ov5640_lcd\rtl\sdram_vga_ip\sdram_vga_top.v</arg>&quot; line <arg fmt="%s" index="2">130</arg>: Output port &lt;<arg fmt="%s" index="3">state_write</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">u_sdbank_switch</arg>&gt; is unconnected or connected to loadless signal.
+</msg>
+
+<msg type="info" file="Xst" num="3210" delta="old" >&quot;<arg fmt="%s" index="1">E:\BaiduYunDownload\AX309.161028\AX309\09_VERILOG\26_sdram_ov5640_lcd\sdram_ov5640_lcd\rtl\sdram_vga_ip\sdram_vga_top.v</arg>&quot; line <arg fmt="%s" index="2">157</arg>: Output port &lt;<arg fmt="%s" index="3">lcd_xpos</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">u_lcd_top</arg>&gt; is unconnected or connected to loadless signal.
+</msg>
+
+<msg type="info" file="Xst" num="3210" delta="old" >&quot;<arg fmt="%s" index="1">E:\BaiduYunDownload\AX309.161028\AX309\09_VERILOG\26_sdram_ov5640_lcd\sdram_ov5640_lcd\rtl\sdram_vga_ip\sdram_vga_top.v</arg>&quot; line <arg fmt="%s" index="2">157</arg>: Output port &lt;<arg fmt="%s" index="3">lcd_ypos</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">u_lcd_top</arg>&gt; is unconnected or connected to loadless signal.
+</msg>
+
+<msg type="info" file="Xst" num="3210" delta="old" >&quot;<arg fmt="%s" index="1">E:\BaiduYunDownload\AX309.161028\AX309\09_VERILOG\26_sdram_ov5640_lcd\sdram_ov5640_lcd\rtl\sdram_vga_ip\sdram_vga_top.v</arg>&quot; line <arg fmt="%s" index="2">157</arg>: Output port &lt;<arg fmt="%s" index="3">lcd_en</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">u_lcd_top</arg>&gt; is unconnected or connected to loadless signal.
+</msg>
+
+<msg type="info" file="Xst" num="1799" delta="old" >State <arg fmt="%s" index="1">0110</arg> is never reached in FSM &lt;<arg fmt="%s" index="2">work_state_r</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="647" delta="old" >Input &lt;<arg fmt="%s" index="1">cnt_clk</arg>&gt; is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+</msg>
+
+<msg type="info" file="Xst" num="3210" delta="old" >&quot;<arg fmt="%s" index="1">E:\BaiduYunDownload\AX309.161028\AX309\09_VERILOG\26_sdram_ov5640_lcd\sdram_ov5640_lcd\rtl\sdram_vga_ip\sdram_ip\dcfifo_ctrl.v</arg>&quot; line <arg fmt="%s" index="2">235</arg>: Output port &lt;<arg fmt="%s" index="3">wr_data_count</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">u_wrfifo</arg>&gt; is unconnected or connected to loadless signal.
+</msg>
+
+<msg type="info" file="Xst" num="3210" delta="old" >&quot;<arg fmt="%s" index="1">E:\BaiduYunDownload\AX309.161028\AX309\09_VERILOG\26_sdram_ov5640_lcd\sdram_ov5640_lcd\rtl\sdram_vga_ip\sdram_ip\dcfifo_ctrl.v</arg>&quot; line <arg fmt="%s" index="2">235</arg>: Output port &lt;<arg fmt="%s" index="3">full</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">u_wrfifo</arg>&gt; is unconnected or connected to loadless signal.
+</msg>
+
+<msg type="info" file="Xst" num="3210" delta="old" >&quot;<arg fmt="%s" index="1">E:\BaiduYunDownload\AX309.161028\AX309\09_VERILOG\26_sdram_ov5640_lcd\sdram_ov5640_lcd\rtl\sdram_vga_ip\sdram_ip\dcfifo_ctrl.v</arg>&quot; line <arg fmt="%s" index="2">235</arg>: Output port &lt;<arg fmt="%s" index="3">empty</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">u_wrfifo</arg>&gt; is unconnected or connected to loadless signal.
+</msg>
+
+<msg type="info" file="Xst" num="3210" delta="old" >&quot;<arg fmt="%s" index="1">E:\BaiduYunDownload\AX309.161028\AX309\09_VERILOG\26_sdram_ov5640_lcd\sdram_ov5640_lcd\rtl\sdram_vga_ip\sdram_ip\dcfifo_ctrl.v</arg>&quot; line <arg fmt="%s" index="2">256</arg>: Output port &lt;<arg fmt="%s" index="3">rd_data_count</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">u_rdfifo</arg>&gt; is unconnected or connected to loadless signal.
+</msg>
+
+<msg type="info" file="Xst" num="3210" delta="old" >&quot;<arg fmt="%s" index="1">E:\BaiduYunDownload\AX309.161028\AX309\09_VERILOG\26_sdram_ov5640_lcd\sdram_ov5640_lcd\rtl\sdram_vga_ip\sdram_ip\dcfifo_ctrl.v</arg>&quot; line <arg fmt="%s" index="2">256</arg>: Output port &lt;<arg fmt="%s" index="3">full</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">u_rdfifo</arg>&gt; is unconnected or connected to loadless signal.
+</msg>
+
+<msg type="info" file="Xst" num="3210" delta="old" >&quot;<arg fmt="%s" index="1">E:\BaiduYunDownload\AX309.161028\AX309\09_VERILOG\26_sdram_ov5640_lcd\sdram_ov5640_lcd\rtl\sdram_vga_ip\sdram_ip\dcfifo_ctrl.v</arg>&quot; line <arg fmt="%s" index="2">256</arg>: Output port &lt;<arg fmt="%s" index="3">empty</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">u_rdfifo</arg>&gt; is unconnected or connected to loadless signal.
+</msg>
+
+<msg type="info" file="Xst" num="3218" delta="old" >HDL ADVISOR - The RAM &lt;<arg fmt="%s" index="1">Mram__n0911</arg>&gt; will be implemented on LUTs either because you have described an asynchronous read or because of currently unsupported block RAM features. If you have described an asynchronous read, making it synchronous would allow you to take advantage of available block RAM resources, for optimized device usage and improved timings. Please refer to your documentation for coding guidelines.
+</msg>
+
+<msg type="warning" file="Xst" num="1710" delta="old" >FF/Latch &lt;<arg fmt="%s" index="1">CMOS_FPS_DATA_7</arg>&gt; (without init value) has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">CMOS_Capture</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1710" delta="old" >FF/Latch &lt;<arg fmt="%s" index="1">sdram_wraddr_0</arg>&gt; (without init value) has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">dcfifo_ctrl</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1895" delta="old" >Due to other FF/Latch trimming, FF/Latch &lt;<arg fmt="%s" index="1">sdram_wraddr_1</arg>&gt; (without init value) has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">dcfifo_ctrl</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1895" delta="old" >Due to other FF/Latch trimming, FF/Latch &lt;<arg fmt="%s" index="1">sdram_wraddr_2</arg>&gt; (without init value) has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">dcfifo_ctrl</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1895" delta="old" >Due to other FF/Latch trimming, FF/Latch &lt;<arg fmt="%s" index="1">sdram_wraddr_3</arg>&gt; (without init value) has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">dcfifo_ctrl</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1895" delta="old" >Due to other FF/Latch trimming, FF/Latch &lt;<arg fmt="%s" index="1">sdram_wraddr_4</arg>&gt; (without init value) has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">dcfifo_ctrl</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1895" delta="old" >Due to other FF/Latch trimming, FF/Latch &lt;<arg fmt="%s" index="1">sdram_wraddr_5</arg>&gt; (without init value) has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">dcfifo_ctrl</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1895" delta="old" >Due to other FF/Latch trimming, FF/Latch &lt;<arg fmt="%s" index="1">sdram_wraddr_6</arg>&gt; (without init value) has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">dcfifo_ctrl</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1895" delta="old" >Due to other FF/Latch trimming, FF/Latch &lt;<arg fmt="%s" index="1">sdram_wraddr_7</arg>&gt; (without init value) has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">dcfifo_ctrl</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1895" delta="old" >Due to other FF/Latch trimming, FF/Latch &lt;<arg fmt="%s" index="1">sdram_rdaddr_0</arg>&gt; (without init value) has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">dcfifo_ctrl</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1895" delta="old" >Due to other FF/Latch trimming, FF/Latch &lt;<arg fmt="%s" index="1">sdram_rdaddr_1</arg>&gt; (without init value) has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">dcfifo_ctrl</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1895" delta="old" >Due to other FF/Latch trimming, FF/Latch &lt;<arg fmt="%s" index="1">sdram_rdaddr_2</arg>&gt; (without init value) has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">dcfifo_ctrl</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1895" delta="old" >Due to other FF/Latch trimming, FF/Latch &lt;<arg fmt="%s" index="1">sdram_rdaddr_3</arg>&gt; (without init value) has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">dcfifo_ctrl</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1895" delta="old" >Due to other FF/Latch trimming, FF/Latch &lt;<arg fmt="%s" index="1">sdram_rdaddr_4</arg>&gt; (without init value) has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">dcfifo_ctrl</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1895" delta="old" >Due to other FF/Latch trimming, FF/Latch &lt;<arg fmt="%s" index="1">sdram_rdaddr_5</arg>&gt; (without init value) has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">dcfifo_ctrl</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1895" delta="old" >Due to other FF/Latch trimming, FF/Latch &lt;<arg fmt="%s" index="1">sdram_rdaddr_6</arg>&gt; (without init value) has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">dcfifo_ctrl</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1895" delta="old" >Due to other FF/Latch trimming, FF/Latch &lt;<arg fmt="%s" index="1">sdram_rdaddr_7</arg>&gt; (without init value) has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">dcfifo_ctrl</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1710" delta="old" >FF/Latch &lt;<arg fmt="%s" index="1">i2c_data_14</arg>&gt; (without init value) has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">reg_config</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1710" delta="old" >FF/Latch &lt;<arg fmt="%s" index="1">i2c_data_23</arg>&gt; (without init value) has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">reg_config</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1710" delta="old" >FF/Latch &lt;<arg fmt="%s" index="1">i2c_data_24</arg>&gt; (without init value) has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">reg_config</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1710" delta="old" >FF/Latch &lt;<arg fmt="%s" index="1">i2c_data_25</arg>&gt; (without init value) has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">reg_config</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1710" delta="old" >FF/Latch &lt;<arg fmt="%s" index="1">i2c_data_26</arg>&gt; (without init value) has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">reg_config</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1710" delta="old" >FF/Latch &lt;<arg fmt="%s" index="1">i2c_data_27</arg>&gt; (without init value) has a constant value of <arg fmt="%d" index="2">1</arg> in block &lt;<arg fmt="%s" index="3">reg_config</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1710" delta="old" >FF/Latch &lt;<arg fmt="%s" index="1">i2c_data_28</arg>&gt; (without init value) has a constant value of <arg fmt="%d" index="2">1</arg> in block &lt;<arg fmt="%s" index="3">reg_config</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1710" delta="old" >FF/Latch &lt;<arg fmt="%s" index="1">i2c_data_29</arg>&gt; (without init value) has a constant value of <arg fmt="%d" index="2">1</arg> in block &lt;<arg fmt="%s" index="3">reg_config</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1710" delta="old" >FF/Latch &lt;<arg fmt="%s" index="1">i2c_data_30</arg>&gt; (without init value) has a constant value of <arg fmt="%d" index="2">1</arg> in block &lt;<arg fmt="%s" index="3">reg_config</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1710" delta="old" >FF/Latch &lt;<arg fmt="%s" index="1">i2c_data_31</arg>&gt; (without init value) has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">reg_config</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="info" file="Xst" num="1901" delta="old" >Instance <arg fmt="%s" index="1">u_system_ctrl/u_sdram_pll/pll_base_inst</arg> in unit <arg fmt="%s" index="2">u_system_ctrl/u_sdram_pll/pll_base_inst</arg> of type <arg fmt="%s" index="3">PLL_BASE</arg> has been replaced by <arg fmt="%s" index="4">PLL_ADV</arg>
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">reg_config_inst/strobe_flash</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">sdram_ov5640_lcd</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">reg_config_inst/u1/ack1</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">sdram_ov5640_lcd</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">reg_config_inst/u1/ack3</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">sdram_ov5640_lcd</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">reg_config_inst/u1/ack2</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">sdram_ov5640_lcd</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">u_CMOS_Capture/CMOS_FPS_DATA_6</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">sdram_ov5640_lcd</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">u_CMOS_Capture/CMOS_FPS_DATA_5</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">sdram_ov5640_lcd</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">u_CMOS_Capture/CMOS_FPS_DATA_4</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">sdram_ov5640_lcd</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">u_CMOS_Capture/CMOS_FPS_DATA_3</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">sdram_ov5640_lcd</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">u_CMOS_Capture/CMOS_FPS_DATA_2</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">sdram_ov5640_lcd</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">u_CMOS_Capture/CMOS_FPS_DATA_1</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">sdram_ov5640_lcd</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">u_CMOS_Capture/CMOS_FPS_DATA_0</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">sdram_ov5640_lcd</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">u_CMOS_Capture/fps_data_7</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">sdram_ov5640_lcd</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">u_CMOS_Capture/fps_data_6</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">sdram_ov5640_lcd</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">u_CMOS_Capture/fps_data_5</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">sdram_ov5640_lcd</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">u_CMOS_Capture/fps_data_4</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">sdram_ov5640_lcd</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">u_CMOS_Capture/fps_data_3</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">sdram_ov5640_lcd</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">u_CMOS_Capture/fps_data_2</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">sdram_ov5640_lcd</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">u_CMOS_Capture/fps_data_1</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">sdram_ov5640_lcd</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">u_CMOS_Capture/fps_data_0</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">sdram_ov5640_lcd</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">u_CMOS_Capture/delay_cnt_25</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">sdram_ov5640_lcd</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">u_CMOS_Capture/delay_cnt_24</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">sdram_ov5640_lcd</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">u_CMOS_Capture/delay_cnt_23</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">sdram_ov5640_lcd</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">u_CMOS_Capture/delay_cnt_22</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">sdram_ov5640_lcd</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">u_CMOS_Capture/delay_cnt_21</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">sdram_ov5640_lcd</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">u_CMOS_Capture/delay_cnt_20</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">sdram_ov5640_lcd</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">u_CMOS_Capture/delay_cnt_19</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">sdram_ov5640_lcd</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">u_CMOS_Capture/delay_cnt_18</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">sdram_ov5640_lcd</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">u_CMOS_Capture/delay_cnt_17</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">sdram_ov5640_lcd</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">u_CMOS_Capture/delay_cnt_16</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">sdram_ov5640_lcd</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">u_CMOS_Capture/delay_cnt_15</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">sdram_ov5640_lcd</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">u_CMOS_Capture/delay_cnt_14</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">sdram_ov5640_lcd</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">u_CMOS_Capture/delay_cnt_13</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">sdram_ov5640_lcd</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">u_CMOS_Capture/delay_cnt_12</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">sdram_ov5640_lcd</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">u_CMOS_Capture/delay_cnt_11</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">sdram_ov5640_lcd</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">u_CMOS_Capture/delay_cnt_10</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">sdram_ov5640_lcd</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">u_CMOS_Capture/delay_cnt_9</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">sdram_ov5640_lcd</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">u_CMOS_Capture/delay_cnt_8</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">sdram_ov5640_lcd</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">u_CMOS_Capture/delay_cnt_7</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">sdram_ov5640_lcd</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">u_CMOS_Capture/delay_cnt_6</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">sdram_ov5640_lcd</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">u_CMOS_Capture/delay_cnt_5</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">sdram_ov5640_lcd</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">u_CMOS_Capture/delay_cnt_4</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">sdram_ov5640_lcd</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">u_CMOS_Capture/delay_cnt_3</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">sdram_ov5640_lcd</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">u_CMOS_Capture/delay_cnt_2</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">sdram_ov5640_lcd</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">u_CMOS_Capture/delay_cnt_1</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">sdram_ov5640_lcd</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">u_CMOS_Capture/delay_cnt_0</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">sdram_ov5640_lcd</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">u_CMOS_Capture/fps_state</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">sdram_ov5640_lcd</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="1710" delta="old" >FF/Latch &lt;<arg fmt="%s" index="1">reg_config_inst/clock_20k_cnt_11</arg>&gt; (without init value) has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">sdram_ov5640_lcd</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1710" delta="old" >FF/Latch &lt;<arg fmt="%s" index="1">reg_config_inst/clock_20k_cnt_12</arg>&gt; (without init value) has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">sdram_ov5640_lcd</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1710" delta="old" >FF/Latch &lt;<arg fmt="%s" index="1">reg_config_inst/clock_20k_cnt_13</arg>&gt; (without init value) has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">sdram_ov5640_lcd</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1710" delta="old" >FF/Latch &lt;<arg fmt="%s" index="1">reg_config_inst/clock_20k_cnt_14</arg>&gt; (without init value) has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">sdram_ov5640_lcd</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1710" delta="old" >FF/Latch &lt;<arg fmt="%s" index="1">reg_config_inst/clock_20k_cnt_15</arg>&gt; (without init value) has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">sdram_ov5640_lcd</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1710" delta="old" >FF/Latch &lt;<arg fmt="%s" index="1">reg_config_inst/on_counter_8</arg>&gt; (without init value) has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">sdram_ov5640_lcd</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1710" delta="old" >FF/Latch &lt;<arg fmt="%s" index="1">reg_config_inst/on_counter_9</arg>&gt; (without init value) has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">sdram_ov5640_lcd</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1710" delta="old" >FF/Latch &lt;<arg fmt="%s" index="1">reg_config_inst/on_counter_10</arg>&gt; (without init value) has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">sdram_ov5640_lcd</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1710" delta="old" >FF/Latch &lt;<arg fmt="%s" index="1">reg_config_inst/on_counter_11</arg>&gt; (without init value) has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">sdram_ov5640_lcd</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1710" delta="old" >FF/Latch &lt;<arg fmt="%s" index="1">reg_config_inst/on_counter_12</arg>&gt; (without init value) has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">sdram_ov5640_lcd</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1710" delta="old" >FF/Latch &lt;<arg fmt="%s" index="1">reg_config_inst/on_counter_13</arg>&gt; (without init value) has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">sdram_ov5640_lcd</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1710" delta="old" >FF/Latch &lt;<arg fmt="%s" index="1">reg_config_inst/on_counter_14</arg>&gt; (without init value) has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">sdram_ov5640_lcd</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1710" delta="old" >FF/Latch &lt;<arg fmt="%s" index="1">reg_config_inst/on_counter_15</arg>&gt; (without init value) has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">sdram_ov5640_lcd</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1710" delta="old" >FF/Latch &lt;<arg fmt="%s" index="1">reg_config_inst/off_counter_8</arg>&gt; (without init value) has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">sdram_ov5640_lcd</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1710" delta="old" >FF/Latch &lt;<arg fmt="%s" index="1">reg_config_inst/off_counter_9</arg>&gt; (without init value) has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">sdram_ov5640_lcd</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1710" delta="old" >FF/Latch &lt;<arg fmt="%s" index="1">reg_config_inst/off_counter_10</arg>&gt; (without init value) has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">sdram_ov5640_lcd</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1710" delta="old" >FF/Latch &lt;<arg fmt="%s" index="1">reg_config_inst/off_counter_11</arg>&gt; (without init value) has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">sdram_ov5640_lcd</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1710" delta="old" >FF/Latch &lt;<arg fmt="%s" index="1">reg_config_inst/off_counter_12</arg>&gt; (without init value) has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">sdram_ov5640_lcd</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1710" delta="old" >FF/Latch &lt;<arg fmt="%s" index="1">reg_config_inst/off_counter_13</arg>&gt; (without init value) has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">sdram_ov5640_lcd</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1710" delta="old" >FF/Latch &lt;<arg fmt="%s" index="1">reg_config_inst/off_counter_14</arg>&gt; (without init value) has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">sdram_ov5640_lcd</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1710" delta="old" >FF/Latch &lt;<arg fmt="%s" index="1">reg_config_inst/off_counter_15</arg>&gt; (without init value) has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">sdram_ov5640_lcd</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="info" file="Xst" num="2260" delta="old" >The FF/Latch &lt;<arg fmt="%s" index="1">U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/gras.rsts/ram_empty_i</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">u_sdram_vga_top/u_sdram_2fifo_top/u_dcfifo_ctrl/u_wrfifo</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">FF/Latch</arg> : <arg fmt="%s" index="4">&lt;U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/gras.rsts/ram_empty_fb_i&gt; </arg>
+</msg>
+
+<msg type="info" file="Xst" num="2260" delta="old" >The FF/Latch &lt;<arg fmt="%s" index="1">U0/xst_fifo_generator/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.wr_rst_reg_1</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">u_sdram_vga_top/u_sdram_2fifo_top/u_dcfifo_ctrl/u_wrfifo</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">FF/Latch</arg> : <arg fmt="%s" index="4">&lt;U0/xst_fifo_generator/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.wr_rst_reg_0&gt; </arg>
+</msg>
+
+<msg type="info" file="Xst" num="2260" delta="old" >The FF/Latch &lt;<arg fmt="%s" index="1">U0/xst_fifo_generator/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.rd_rst_reg_2</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">u_sdram_vga_top/u_sdram_2fifo_top/u_dcfifo_ctrl/u_wrfifo</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">2 FFs/Latches</arg> : <arg fmt="%s" index="4">&lt;U0/xst_fifo_generator/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.rd_rst_reg_1&gt; &lt;U0/xst_fifo_generator/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.rd_rst_reg_0&gt; </arg>
+</msg>
+
+<msg type="info" file="Xst" num="2260" delta="old" >The FF/Latch &lt;<arg fmt="%s" index="1">U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/gwas.wsts/ram_full_i</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">u_sdram_vga_top/u_sdram_2fifo_top/u_dcfifo_ctrl/u_wrfifo</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">FF/Latch</arg> : <arg fmt="%s" index="4">&lt;U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/gwas.wsts/ram_full_fb_i&gt; </arg>
+</msg>
+
+<msg type="info" file="Xst" num="2260" delta="old" >The FF/Latch &lt;<arg fmt="%s" index="1">U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/rpntr/gc0.count_d1_1</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">u_sdram_vga_top/u_sdram_2fifo_top/u_dcfifo_ctrl/u_rdfifo</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">FF/Latch</arg> : <arg fmt="%s" index="4">&lt;U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/rpntr/gc0.count_d1_1_1&gt; </arg>
+</msg>
+
+<msg type="info" file="Xst" num="2260" delta="old" >The FF/Latch &lt;<arg fmt="%s" index="1">U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/rpntr/gc0.count_d1_2</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">u_sdram_vga_top/u_sdram_2fifo_top/u_dcfifo_ctrl/u_rdfifo</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">FF/Latch</arg> : <arg fmt="%s" index="4">&lt;U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/rpntr/gc0.count_d1_2_1&gt; </arg>
+</msg>
+
+<msg type="info" file="Xst" num="2260" delta="old" >The FF/Latch &lt;<arg fmt="%s" index="1">U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/gras.rsts/ram_empty_i</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">u_sdram_vga_top/u_sdram_2fifo_top/u_dcfifo_ctrl/u_rdfifo</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">FF/Latch</arg> : <arg fmt="%s" index="4">&lt;U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/gras.rsts/ram_empty_fb_i&gt; </arg>
+</msg>
+
+<msg type="info" file="Xst" num="2260" delta="old" >The FF/Latch &lt;<arg fmt="%s" index="1">U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/gwas.wsts/ram_full_i</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">u_sdram_vga_top/u_sdram_2fifo_top/u_dcfifo_ctrl/u_rdfifo</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">FF/Latch</arg> : <arg fmt="%s" index="4">&lt;U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/gwas.wsts/ram_full_fb_i&gt; </arg>
+</msg>
+
+<msg type="info" file="Xst" num="2260" delta="old" >The FF/Latch &lt;<arg fmt="%s" index="1">U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/rpntr/gc0.count_d1_0</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">u_sdram_vga_top/u_sdram_2fifo_top/u_dcfifo_ctrl/u_rdfifo</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">FF/Latch</arg> : <arg fmt="%s" index="4">&lt;U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/rpntr/gc0.count_d1_0_1&gt; </arg>
+</msg>
+
+<msg type="info" file="Xst" num="2260" delta="old" >The FF/Latch &lt;<arg fmt="%s" index="1">U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/rpntr/gc0.count_d1_3</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">u_sdram_vga_top/u_sdram_2fifo_top/u_dcfifo_ctrl/u_rdfifo</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">FF/Latch</arg> : <arg fmt="%s" index="4">&lt;U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/rpntr/gc0.count_d1_3_1&gt; </arg>
+</msg>
+
+<msg type="info" file="Xst" num="2260" delta="old" >The FF/Latch &lt;<arg fmt="%s" index="1">U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/rpntr/gc0.count_d1_4</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">u_sdram_vga_top/u_sdram_2fifo_top/u_dcfifo_ctrl/u_rdfifo</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">FF/Latch</arg> : <arg fmt="%s" index="4">&lt;U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/rpntr/gc0.count_d1_4_1&gt; </arg>
+</msg>
+
+<msg type="info" file="Xst" num="2260" delta="old" >The FF/Latch &lt;<arg fmt="%s" index="1">U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/rpntr/gc0.count_d1_5</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">u_sdram_vga_top/u_sdram_2fifo_top/u_dcfifo_ctrl/u_rdfifo</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">FF/Latch</arg> : <arg fmt="%s" index="4">&lt;U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/rpntr/gc0.count_d1_5_1&gt; </arg>
+</msg>
+
+<msg type="info" file="Xst" num="2260" delta="old" >The FF/Latch &lt;<arg fmt="%s" index="1">U0/xst_fifo_generator/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.wr_rst_reg_1</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">u_sdram_vga_top/u_sdram_2fifo_top/u_dcfifo_ctrl/u_rdfifo</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">FF/Latch</arg> : <arg fmt="%s" index="4">&lt;U0/xst_fifo_generator/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.wr_rst_reg_0&gt; </arg>
+</msg>
+
+<msg type="info" file="Xst" num="2260" delta="old" >The FF/Latch &lt;<arg fmt="%s" index="1">U0/xst_fifo_generator/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.rd_rst_reg_2</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">u_sdram_vga_top/u_sdram_2fifo_top/u_dcfifo_ctrl/u_rdfifo</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">2 FFs/Latches</arg> : <arg fmt="%s" index="4">&lt;U0/xst_fifo_generator/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.rd_rst_reg_1&gt; &lt;U0/xst_fifo_generator/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.rd_rst_reg_0&gt; </arg>
+</msg>
+
+<msg type="info" file="Xst" num="2260" delta="old" >The FF/Latch &lt;<arg fmt="%s" index="1">U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/gras.rsts/ram_empty_i</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">u_sdram_vga_top/u_sdram_2fifo_top/u_dcfifo_ctrl/u_wrfifo</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">FF/Latch</arg> : <arg fmt="%s" index="4">&lt;U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/gras.rsts/ram_empty_fb_i&gt; </arg>
+</msg>
+
+<msg type="info" file="Xst" num="2260" delta="old" >The FF/Latch &lt;<arg fmt="%s" index="1">U0/xst_fifo_generator/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.wr_rst_reg_1</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">u_sdram_vga_top/u_sdram_2fifo_top/u_dcfifo_ctrl/u_wrfifo</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">FF/Latch</arg> : <arg fmt="%s" index="4">&lt;U0/xst_fifo_generator/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.wr_rst_reg_0&gt; </arg>
+</msg>
+
+<msg type="info" file="Xst" num="2260" delta="old" >The FF/Latch &lt;<arg fmt="%s" index="1">U0/xst_fifo_generator/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.rd_rst_reg_2</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">u_sdram_vga_top/u_sdram_2fifo_top/u_dcfifo_ctrl/u_wrfifo</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">2 FFs/Latches</arg> : <arg fmt="%s" index="4">&lt;U0/xst_fifo_generator/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.rd_rst_reg_1&gt; &lt;U0/xst_fifo_generator/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.rd_rst_reg_0&gt; </arg>
+</msg>
+
+<msg type="info" file="Xst" num="2260" delta="old" >The FF/Latch &lt;<arg fmt="%s" index="1">U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/gwas.wsts/ram_full_i</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">u_sdram_vga_top/u_sdram_2fifo_top/u_dcfifo_ctrl/u_wrfifo</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">FF/Latch</arg> : <arg fmt="%s" index="4">&lt;U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/gwas.wsts/ram_full_fb_i&gt; </arg>
+</msg>
+
+<msg type="info" file="Xst" num="2260" delta="old" >The FF/Latch &lt;<arg fmt="%s" index="1">U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/rpntr/gc0.count_d1_1</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">u_sdram_vga_top/u_sdram_2fifo_top/u_dcfifo_ctrl/u_rdfifo</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">FF/Latch</arg> : <arg fmt="%s" index="4">&lt;U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/rpntr/gc0.count_d1_1_1&gt; </arg>
+</msg>
+
+<msg type="info" file="Xst" num="2260" delta="old" >The FF/Latch &lt;<arg fmt="%s" index="1">U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/rpntr/gc0.count_d1_2</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">u_sdram_vga_top/u_sdram_2fifo_top/u_dcfifo_ctrl/u_rdfifo</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">FF/Latch</arg> : <arg fmt="%s" index="4">&lt;U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/rpntr/gc0.count_d1_2_1&gt; </arg>
+</msg>
+
+<msg type="info" file="Xst" num="2260" delta="old" >The FF/Latch &lt;<arg fmt="%s" index="1">U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/gras.rsts/ram_empty_i</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">u_sdram_vga_top/u_sdram_2fifo_top/u_dcfifo_ctrl/u_rdfifo</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">FF/Latch</arg> : <arg fmt="%s" index="4">&lt;U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/gras.rsts/ram_empty_fb_i&gt; </arg>
+</msg>
+
+<msg type="info" file="Xst" num="2260" delta="old" >The FF/Latch &lt;<arg fmt="%s" index="1">U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/gwas.wsts/ram_full_i</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">u_sdram_vga_top/u_sdram_2fifo_top/u_dcfifo_ctrl/u_rdfifo</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">FF/Latch</arg> : <arg fmt="%s" index="4">&lt;U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/gwas.wsts/ram_full_fb_i&gt; </arg>
+</msg>
+
+<msg type="info" file="Xst" num="2260" delta="old" >The FF/Latch &lt;<arg fmt="%s" index="1">U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/rpntr/gc0.count_d1_0</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">u_sdram_vga_top/u_sdram_2fifo_top/u_dcfifo_ctrl/u_rdfifo</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">FF/Latch</arg> : <arg fmt="%s" index="4">&lt;U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/rpntr/gc0.count_d1_0_1&gt; </arg>
+</msg>
+
+<msg type="info" file="Xst" num="2260" delta="old" >The FF/Latch &lt;<arg fmt="%s" index="1">U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/rpntr/gc0.count_d1_3</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">u_sdram_vga_top/u_sdram_2fifo_top/u_dcfifo_ctrl/u_rdfifo</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">FF/Latch</arg> : <arg fmt="%s" index="4">&lt;U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/rpntr/gc0.count_d1_3_1&gt; </arg>
+</msg>
+
+<msg type="info" file="Xst" num="2260" delta="old" >The FF/Latch &lt;<arg fmt="%s" index="1">U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/rpntr/gc0.count_d1_4</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">u_sdram_vga_top/u_sdram_2fifo_top/u_dcfifo_ctrl/u_rdfifo</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">FF/Latch</arg> : <arg fmt="%s" index="4">&lt;U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/rpntr/gc0.count_d1_4_1&gt; </arg>
+</msg>
+
+<msg type="info" file="Xst" num="2260" delta="old" >The FF/Latch &lt;<arg fmt="%s" index="1">U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/rpntr/gc0.count_d1_5</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">u_sdram_vga_top/u_sdram_2fifo_top/u_dcfifo_ctrl/u_rdfifo</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">FF/Latch</arg> : <arg fmt="%s" index="4">&lt;U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/rpntr/gc0.count_d1_5_1&gt; </arg>
+</msg>
+
+<msg type="info" file="Xst" num="2260" delta="old" >The FF/Latch &lt;<arg fmt="%s" index="1">U0/xst_fifo_generator/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.wr_rst_reg_1</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">u_sdram_vga_top/u_sdram_2fifo_top/u_dcfifo_ctrl/u_rdfifo</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">FF/Latch</arg> : <arg fmt="%s" index="4">&lt;U0/xst_fifo_generator/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.wr_rst_reg_0&gt; </arg>
+</msg>
+
+<msg type="info" file="Xst" num="2260" delta="old" >The FF/Latch &lt;<arg fmt="%s" index="1">U0/xst_fifo_generator/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.rd_rst_reg_2</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">u_sdram_vga_top/u_sdram_2fifo_top/u_dcfifo_ctrl/u_rdfifo</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">2 FFs/Latches</arg> : <arg fmt="%s" index="4">&lt;U0/xst_fifo_generator/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.rd_rst_reg_1&gt; &lt;U0/xst_fifo_generator/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.rd_rst_reg_0&gt; </arg>
+</msg>
+
+</messages>
+

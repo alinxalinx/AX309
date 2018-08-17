@@ -1,0 +1,42 @@
+NET clk						  	LOC =T8 | IOSTANDARD = "LVCMOS33";       ## system CLK 
+Net clk TNM_NET = sys_clk;
+TIMESPEC TS_sys_clk = PERIOD sys_clk 50 MHz;
+
+NET rst_n                  LOC = L3 | IOSTANDARD = "LVCMOS15"; ## 1
+
+
+#ad7606Ïà¹ØÒý½Å(J3)
+NET ad_data<0>                  LOC = A11 | IOSTANDARD = "LVCMOS33";       ## 15 
+NET ad_data<1>                  LOC = A12 | IOSTANDARD = "LVCMOS33";       ## 16 
+NET ad_data<2>                  LOC = B12 | IOSTANDARD = "LVCMOS33";        ## 17 
+NET ad_data<3>                  LOC = A13 | IOSTANDARD = "LVCMOS33";       ## 18 
+NET ad_data<4>                  LOC = A14 | IOSTANDARD = "LVCMOS33";       ## 19 
+NET ad_data<5>                  LOC = B14 | IOSTANDARD = "LVCMOS33";       ## 20 
+NET ad_data<6>                  LOC = B15 | IOSTANDARD = "LVCMOS33";       ## 21 
+NET ad_data<7>                  LOC = B16 | IOSTANDARD = "LVCMOS33";       ## 22 
+NET ad_data<8>                  LOC = C15 | IOSTANDARD = "LVCMOS33";       ## 23 
+NET ad_data<9>                  LOC = C16 | IOSTANDARD = "LVCMOS33";       ## 24 
+NET ad_data<10>                 LOC = D16 | IOSTANDARD = "LVCMOS33";       ## 25 
+NET ad_data<11>                 LOC = E15 | IOSTANDARD = "LVCMOS33";       ## 26 
+NET ad_data<12>                 LOC = C9 | IOSTANDARD = "LVCMOS33";       ## 27 
+NET ad_data<13>                 LOC = E11 | IOSTANDARD = "LVCMOS33";       ## 28 
+NET ad_data<14>                 LOC = C10 | IOSTANDARD = "LVCMOS33";       ## 29 
+NET ad_data<15>                 LOC = D11 | IOSTANDARD = "LVCMOS33";       ## 30 
+
+
+NET ad_busy                      LOC = B8 | IOSTANDARD = "LVCMOS33";         ## 9 
+NET first_data                   LOC = A9 | IOSTANDARD = "LVCMOS33";         ## 12 
+
+NET ad_os<0>                     LOC = B5 | IOSTANDARD = "LVCMOS33";        ## 4 
+NET ad_os<1>                     LOC = A4 | IOSTANDARD = "LVCMOS33";        ## 3 
+NET ad_os<2>                     LOC = B6 | IOSTANDARD = "LVCMOS33";        ## 6 
+
+NET ad_cs                        LOC = A8 | IOSTANDARD = "LVCMOS33";        ## 10 
+
+NET ad_rd                        LOC = A6 | IOSTANDARD = "LVCMOS33";        ## 7 
+NET ad_reset                     LOC = A7 | IOSTANDARD = "LVCMOS33";        ## 8 
+NET ad_convstab                  LOC = A5 | IOSTANDARD = "LVCMOS33";        ## 5 
+
+########USB Uart SerialPin define#####################
+NET rx                         	 		  LOC = C11 | IOSTANDARD = "LVCMOS33";		  ## Uart RXD:U4_TXD
+NET tx                          	  	     LOC = D12 | IOSTANDARD = "LVCMOS33"; 		  ## Uart TXD:U4_RXD

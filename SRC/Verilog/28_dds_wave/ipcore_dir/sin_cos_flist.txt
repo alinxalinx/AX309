@@ -1,0 +1,14 @@
+# Output products list for <sin_cos>
+sin_cos.asy
+sin_cos.gise
+sin_cos.ngc
+sin_cos.sym
+sin_cos.v
+sin_cos.veo
+sin_cos.xco
+sin_cos.xise
+sin_cos\doc\dds_compiler_v4_0_vinfo.html
+sin_cos\doc\dds_ds558.pdf
+sin_cos_flist.txt
+sin_cos_readme.txt
+sin_cos_xmdf.tcl

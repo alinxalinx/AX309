@@ -1,0 +1,64 @@
+xst -intstyle ise -ifn "E:/Project/AX545/verilog/Greedy_snake/Greedy_snake.xst" -ofn "E:/Project/AX545/verilog/Greedy_snake/Greedy_snake.syr" 
+xst -intstyle ise -ifn "E:/Project/AX545/verilog/Greedy_snake/Greedy_snake.xst" -ofn "E:/Project/AX545/verilog/Greedy_snake/Greedy_snake.syr" 
+xst -intstyle ise -ifn "E:/Project/AX545/verilog/Greedy_snake/Greedy_snake.xst" -ofn "E:/Project/AX545/verilog/Greedy_snake/Greedy_snake.syr" 
+xst -intstyle ise -ifn "E:/Project/AX545/verilog/Greedy_snake/Greedy_snake.xst" -ofn "E:/Project/AX545/verilog/Greedy_snake/Greedy_snake.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -i -p xc6slx45-csg324-2 Greedy_snake.ngc Greedy_snake.ngd  
+xst -intstyle ise -ifn "E:/Project/AX545/verilog/Greedy_snake/Greedy_snake.xst" -ofn "E:/Project/AX545/verilog/Greedy_snake/Greedy_snake.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -i -p xc6slx45-csg324-2 Greedy_snake.ngc Greedy_snake.ngd  
+xst -intstyle ise -ifn "E:/Project/AX545/verilog/Greedy_snake/Greedy_snake.xst" -ofn "E:/Project/AX545/verilog/Greedy_snake/Greedy_snake.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -i -p xc6slx45-csg324-2 Greedy_snake.ngc Greedy_snake.ngd  
+map -intstyle ise -p xc6slx45-csg324-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o Greedy_snake_map.ncd Greedy_snake.ngd Greedy_snake.pcf 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc Greedy_snake.ucf -p xc6slx45-csg324-2 Greedy_snake.ngc Greedy_snake.ngd  
+map -intstyle ise -p xc6slx45-csg324-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o Greedy_snake_map.ncd Greedy_snake.ngd Greedy_snake.pcf 
+par -w -intstyle ise -ol high -mt off Greedy_snake_map.ncd Greedy_snake.ncd Greedy_snake.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml Greedy_snake.twx Greedy_snake.ncd -o Greedy_snake.twr Greedy_snake.pcf -ucf Greedy_snake.ucf 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc Greedy_snake.ucf -p xc6slx45-csg324-2 Greedy_snake.ngc Greedy_snake.ngd  
+map -intstyle ise -p xc6slx45-csg324-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o Greedy_snake_map.ncd Greedy_snake.ngd Greedy_snake.pcf 
+par -w -intstyle ise -ol high -mt off Greedy_snake_map.ncd Greedy_snake.ncd Greedy_snake.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml Greedy_snake.twx Greedy_snake.ncd -o Greedy_snake.twr Greedy_snake.pcf -ucf Greedy_snake.ucf 
+bitgen -intstyle ise -f Greedy_snake.ut Greedy_snake.ncd 
+xst -intstyle ise -ifn "E:/Project/AX545/verilog/Greedy_snake/Greedy_snake.xst" -ofn "E:/Project/AX545/verilog/Greedy_snake/Greedy_snake.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc Greedy_snake.ucf -p xc6slx45-csg324-2 Greedy_snake.ngc Greedy_snake.ngd  
+map -intstyle ise -p xc6slx45-csg324-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o Greedy_snake_map.ncd Greedy_snake.ngd Greedy_snake.pcf 
+par -w -intstyle ise -ol high -mt off Greedy_snake_map.ncd Greedy_snake.ncd Greedy_snake.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml Greedy_snake.twx Greedy_snake.ncd -o Greedy_snake.twr Greedy_snake.pcf -ucf Greedy_snake.ucf 
+bitgen -intstyle ise -f Greedy_snake.ut Greedy_snake.ncd 
+xst -intstyle ise -ifn "E:/Project/AX545/verilog/Greedy_snake/Greedy_snake.xst" -ofn "E:/Project/AX545/verilog/Greedy_snake/Greedy_snake.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc Greedy_snake.ucf -p xc6slx45-csg324-2 Greedy_snake.ngc Greedy_snake.ngd  
+map -intstyle ise -p xc6slx45-csg324-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o Greedy_snake_map.ncd Greedy_snake.ngd Greedy_snake.pcf 
+par -w -intstyle ise -ol high -mt off Greedy_snake_map.ncd Greedy_snake.ncd Greedy_snake.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml Greedy_snake.twx Greedy_snake.ncd -o Greedy_snake.twr Greedy_snake.pcf -ucf Greedy_snake.ucf 
+bitgen -intstyle ise -f Greedy_snake.ut Greedy_snake.ncd 
+xst -intstyle ise -ifn "E:/Project/AX516/CD/09_VERILOG/31_Greedy_snake/Greedy_snake.xst" -ofn "E:/Project/AX516/CD/09_VERILOG/31_Greedy_snake/Greedy_snake.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc Greedy_snake.ucf -p xc6slx16-csg324-2 Greedy_snake.ngc Greedy_snake.ngd  
+map -intstyle ise -p xc6slx16-csg324-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o Greedy_snake_map.ncd Greedy_snake.ngd Greedy_snake.pcf 
+par -w -intstyle ise -ol high -mt off Greedy_snake_map.ncd Greedy_snake.ncd Greedy_snake.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml Greedy_snake.twx Greedy_snake.ncd -o Greedy_snake.twr Greedy_snake.pcf -ucf Greedy_snake.ucf 
+bitgen -intstyle ise -f Greedy_snake.ut Greedy_snake.ncd 
+xst -intstyle ise -ifn "E:/Project/AX309/CD/09_VERILOG/31_Greedy_snake/Greedy_snake.xst" -ofn "E:/Project/AX309/CD/09_VERILOG/31_Greedy_snake/Greedy_snake.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc Greedy_snake.ucf -p xc6slx9-ftg256-2 Greedy_snake.ngc Greedy_snake.ngd  
+map -intstyle ise -p xc6slx9-ftg256-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o Greedy_snake_map.ncd Greedy_snake.ngd Greedy_snake.pcf 
+par -w -intstyle ise -ol high -mt off Greedy_snake_map.ncd Greedy_snake.ncd Greedy_snake.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml Greedy_snake.twx Greedy_snake.ncd -o Greedy_snake.twr Greedy_snake.pcf -ucf Greedy_snake.ucf 
+bitgen -intstyle ise -f Greedy_snake.ut Greedy_snake.ncd 
+xst -intstyle ise -ifn "E:/Project/AX309/CD/09_VERILOG/31_Greedy_snake/Greedy_snake.xst" -ofn "E:/Project/AX309/CD/09_VERILOG/31_Greedy_snake/Greedy_snake.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc Greedy_snake.ucf -p xc6slx9-ftg256-2 Greedy_snake.ngc Greedy_snake.ngd  
+map -intstyle ise -p xc6slx9-ftg256-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o Greedy_snake_map.ncd Greedy_snake.ngd Greedy_snake.pcf 
+par -w -intstyle ise -ol high -mt off Greedy_snake_map.ncd Greedy_snake.ncd Greedy_snake.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml Greedy_snake.twx Greedy_snake.ncd -o Greedy_snake.twr Greedy_snake.pcf -ucf Greedy_snake.ucf 
+bitgen -intstyle ise -f Greedy_snake.ut Greedy_snake.ncd 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc Greedy_snake.ucf -p xc6slx9-ftg256-2 Greedy_snake.ngc Greedy_snake.ngd  
+map -intstyle ise -p xc6slx9-ftg256-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o Greedy_snake_map.ncd Greedy_snake.ngd Greedy_snake.pcf 
+par -w -intstyle ise -ol high -mt off Greedy_snake_map.ncd Greedy_snake.ncd Greedy_snake.pcf 
+bitgen -intstyle ise -f Greedy_snake.ut Greedy_snake.ncd 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc Greedy_snake.ucf -p xc6slx9-ftg256-2 Greedy_snake.ngc Greedy_snake.ngd  
+map -intstyle ise -p xc6slx9-ftg256-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o Greedy_snake_map.ncd Greedy_snake.ngd Greedy_snake.pcf 
+par -w -intstyle ise -ol high -mt off Greedy_snake_map.ncd Greedy_snake.ncd Greedy_snake.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml Greedy_snake.twx Greedy_snake.ncd -o Greedy_snake.twr Greedy_snake.pcf -ucf Greedy_snake.ucf 
+bitgen -intstyle ise -f Greedy_snake.ut Greedy_snake.ncd 
+xst -intstyle ise -ifn "E:/Project/AX309/CD/09_VERILOG/31_Greedy_snake/Greedy_snake.xst" -ofn "E:/Project/AX309/CD/09_VERILOG/31_Greedy_snake/Greedy_snake.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc Greedy_snake.ucf -p xc6slx9-ftg256-2 Greedy_snake.ngc Greedy_snake.ngd  
+map -intstyle ise -p xc6slx9-ftg256-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o Greedy_snake_map.ncd Greedy_snake.ngd Greedy_snake.pcf 
+par -w -intstyle ise -ol high -mt off Greedy_snake_map.ncd Greedy_snake.ncd Greedy_snake.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml Greedy_snake.twx Greedy_snake.ncd -o Greedy_snake.twr Greedy_snake.pcf -ucf Greedy_snake.ucf 
+bitgen -intstyle ise -f Greedy_snake.ut Greedy_snake.ncd 

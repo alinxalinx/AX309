@@ -1,0 +1,1411 @@
+Release 14.7 - xst P.20131013 (nt64)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+--> Parameter TMPDIR set to xst/projnav.tmp
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.09 secs
+ 
+--> Parameter xsthdpdir set to xst
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.09 secs
+ 
+--> Reading design: ad9226_test.prj
+
+TABLE OF CONTENTS
+  1) Synthesis Options Summary
+  2) HDL Parsing
+  3) HDL Elaboration
+  4) HDL Synthesis
+       4.1) HDL Synthesis Report
+  5) Advanced HDL Synthesis
+       5.1) Advanced HDL Synthesis Report
+  6) Low Level Synthesis
+  7) Partition Report
+  8) Design Summary
+       8.1) Primitive and Black Box Usage
+       8.2) Device utilization summary
+       8.3) Partition Resource Summary
+       8.4) Timing Report
+            8.4.1) Clock Information
+            8.4.2) Asynchronous Control Signals Information
+            8.4.3) Timing Summary
+            8.4.4) Timing Details
+            8.4.5) Cross Clock Domains Report
+
+
+=========================================================================
+*                      Synthesis Options Summary                        *
+=========================================================================
+---- Source Parameters
+Input File Name                    : "ad9226_test.prj"
+Ignore Synthesis Constraint File   : NO
+
+---- Target Parameters
+Output File Name                   : "ad9226_test"
+Output Format                      : NGC
+Target Device                      : xc6slx9-2-ftg256
+
+---- Source Options
+Top Module Name                    : ad9226_test
+Automatic FSM Extraction           : YES
+FSM Encoding Algorithm             : Auto
+Safe Implementation                : No
+FSM Style                          : LUT
+RAM Extraction                     : Yes
+RAM Style                          : Auto
+ROM Extraction                     : Yes
+Shift Register Extraction          : YES
+ROM Style                          : Auto
+Resource Sharing                   : YES
+Asynchronous To Synchronous        : NO
+Shift Register Minimum Size        : 2
+Use DSP Block                      : Auto
+Automatic Register Balancing       : No
+
+---- Target Options
+LUT Combining                      : Auto
+Reduce Control Sets                : Auto
+Add IO Buffers                     : YES
+Global Maximum Fanout              : 100000
+Add Generic Clock Buffer(BUFG)     : 16
+Register Duplication               : YES
+Optimize Instantiated Primitives   : NO
+Use Clock Enable                   : Auto
+Use Synchronous Set                : Auto
+Use Synchronous Reset              : Auto
+Pack IO Registers into IOBs        : Auto
+Equivalent register Removal        : YES
+
+---- General Options
+Optimization Goal                  : Speed
+Optimization Effort                : 1
+Power Reduction                    : NO
+Keep Hierarchy                     : No
+Netlist Hierarchy                  : As_Optimized
+RTL Output                         : Yes
+Global Optimization                : AllClockNets
+Read Cores                         : YES
+Write Timing Constraints           : NO
+Cross Clock Analysis               : NO
+Hierarchy Separator                : /
+Bus Delimiter                      : <>
+Case Specifier                     : Maintain
+Slice Utilization Ratio            : 100
+BRAM Utilization Ratio             : 100
+DSP48 Utilization Ratio            : 100
+Auto BRAM Packing                  : NO
+Slice Utilization Ratio Delta      : 5
+
+=========================================================================
+
+
+=========================================================================
+*                          HDL Parsing                                  *
+=========================================================================
+Analyzing Verilog file "E:\BaiduYunDownload\AX309.160229\AX309\09_VERILOG\29_ad9226_test\rtl\uarttx.v" into library work
+Parsing module <uarttx>.
+Analyzing Verilog file "E:\BaiduYunDownload\AX309.160229\AX309\09_VERILOG\29_ad9226_test\rtl\clkdiv.v" into library work
+Parsing module <clkdiv>.
+Analyzing Verilog file "E:\BaiduYunDownload\AX309.160229\AX309\09_VERILOG\29_ad9226_test\rtl\bcd.v" into library work
+Parsing module <bcd>.
+Analyzing Verilog file "E:\BaiduYunDownload\AX309.160229\AX309\09_VERILOG\29_ad9226_test\rtl\volt_cal.v" into library work
+Parsing module <volt_cal>.
+Analyzing Verilog file "E:\BaiduYunDownload\AX309.160229\AX309\09_VERILOG\29_ad9226_test\rtl\uart.v" into library work
+Parsing module <uart>.
+Analyzing Verilog file "E:\BaiduYunDownload\AX309.160229\AX309\09_VERILOG\29_ad9226_test\rtl\ad.v" into library work
+Parsing module <ad>.
+Analyzing Verilog file "E:\BaiduYunDownload\AX309.160229\AX309\09_VERILOG\29_ad9226_test\chipscope_ila.v" into library work
+Parsing module <chipscope_ila>.
+Analyzing Verilog file "E:\BaiduYunDownload\AX309.160229\AX309\09_VERILOG\29_ad9226_test\chipscope_icon.v" into library work
+Parsing module <chipscope_icon>.
+Analyzing Verilog file "E:\BaiduYunDownload\AX309.160229\AX309\09_VERILOG\29_ad9226_test\rtl\ad9226_test.v" into library work
+Parsing module <ad9226_test>.
+
+=========================================================================
+*                            HDL Elaboration                            *
+=========================================================================
+
+Elaborating module <ad9226_test>.
+
+Elaborating module <ad>.
+
+Elaborating module <volt_cal>.
+
+Elaborating module <bcd>.
+
+Elaborating module <uart>.
+WARNING:HDLCompiler:91 - "E:\BaiduYunDownload\AX309.160229\AX309\09_VERILOG\29_ad9226_test\rtl\uart.v" Line 24: Signal <uart_stat> missing in the sensitivity list is added for synthesis purposes. HDL and post-synthesis simulations may differ as a result.
+WARNING:HDLCompiler:91 - "E:\BaiduYunDownload\AX309.160229\AX309\09_VERILOG\29_ad9226_test\rtl\uart.v" Line 29: Signal <ch1_sig> missing in the sensitivity list is added for synthesis purposes. HDL and post-synthesis simulations may differ as a result.
+WARNING:HDLCompiler:91 - "E:\BaiduYunDownload\AX309.160229\AX309\09_VERILOG\29_ad9226_test\rtl\uart.v" Line 30: Signal <ch1_dec> missing in the sensitivity list is added for synthesis purposes. HDL and post-synthesis simulations may differ as a result.
+WARNING:HDLCompiler:91 - "E:\BaiduYunDownload\AX309.160229\AX309\09_VERILOG\29_ad9226_test\rtl\uart.v" Line 32: Signal <ch1_dec> missing in the sensitivity list is added for synthesis purposes. HDL and post-synthesis simulations may differ as a result.
+WARNING:HDLCompiler:91 - "E:\BaiduYunDownload\AX309.160229\AX309\09_VERILOG\29_ad9226_test\rtl\uart.v" Line 33: Signal <ch1_dec> missing in the sensitivity list is added for synthesis purposes. HDL and post-synthesis simulations may differ as a result.
+WARNING:HDLCompiler:91 - "E:\BaiduYunDownload\AX309.160229\AX309\09_VERILOG\29_ad9226_test\rtl\uart.v" Line 34: Signal <ch1_dec> missing in the sensitivity list is added for synthesis purposes. HDL and post-synthesis simulations may differ as a result.
+WARNING:HDLCompiler:91 - "E:\BaiduYunDownload\AX309.160229\AX309\09_VERILOG\29_ad9226_test\rtl\uart.v" Line 42: Signal <ch2_sig> missing in the sensitivity list is added for synthesis purposes. HDL and post-synthesis simulations may differ as a result.
+WARNING:HDLCompiler:91 - "E:\BaiduYunDownload\AX309.160229\AX309\09_VERILOG\29_ad9226_test\rtl\uart.v" Line 43: Signal <ch2_dec> missing in the sensitivity list is added for synthesis purposes. HDL and post-synthesis simulations may differ as a result.
+WARNING:HDLCompiler:91 - "E:\BaiduYunDownload\AX309.160229\AX309\09_VERILOG\29_ad9226_test\rtl\uart.v" Line 45: Signal <ch2_dec> missing in the sensitivity list is added for synthesis purposes. HDL and post-synthesis simulations may differ as a result.
+WARNING:HDLCompiler:91 - "E:\BaiduYunDownload\AX309.160229\AX309\09_VERILOG\29_ad9226_test\rtl\uart.v" Line 46: Signal <ch2_dec> missing in the sensitivity list is added for synthesis purposes. HDL and post-synthesis simulations may differ as a result.
+WARNING:HDLCompiler:91 - "E:\BaiduYunDownload\AX309.160229\AX309\09_VERILOG\29_ad9226_test\rtl\uart.v" Line 47: Signal <ch2_dec> missing in the sensitivity list is added for synthesis purposes. HDL and post-synthesis simulations may differ as a result.
+
+Elaborating module <clkdiv>.
+
+Elaborating module <uarttx>.
+WARNING:HDLCompiler:1127 - "E:\BaiduYunDownload\AX309.160229\AX309\09_VERILOG\29_ad9226_test\rtl\uart.v" Line 140: Assignment to idle ignored, since the identifier is never used
+
+Elaborating module <chipscope_icon>.
+
+Elaborating module <chipscope_ila>.
+WARNING:HDLCompiler:634 - "E:\BaiduYunDownload\AX309.160229\AX309\09_VERILOG\29_ad9226_test\rtl\ad9226_test.v" Line 88: Net <TRIG0[255]> does not have a driver.
+
+=========================================================================
+*                           HDL Synthesis                               *
+=========================================================================
+
+Synthesizing Unit <ad9226_test>.
+    Related source file is "E:\BaiduYunDownload\AX309.160229\AX309\09_VERILOG\29_ad9226_test\rtl\ad9226_test.v".
+        SCOPE_DIV = 50
+WARNING:Xst:647 - Input <rx> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:653 - Signal <TRIG0<255:88>> is used but never assigned. This sourceless signal will be automatically connected to value GND.
+    Found 1-bit register for signal <scope_clk>.
+    Found 32-bit register for signal <scope_counter>.
+    Found 32-bit adder for signal <scope_counter[31]_GND_1_o_add_2_OUT> created at line 83.
+    Summary:
+	inferred   1 Adder/Subtractor(s).
+	inferred  33 D-type flip-flop(s).
+Unit <ad9226_test> synthesized.
+
+Synthesizing Unit <ad>.
+    Related source file is "E:\BaiduYunDownload\AX309.160229\AX309\09_VERILOG\29_ad9226_test\rtl\ad.v".
+    Found 12-bit register for signal <ad_ch2>.
+    Found 12-bit register for signal <ad_ch1>.
+    Summary:
+	inferred  24 D-type flip-flop(s).
+Unit <ad> synthesized.
+
+Synthesizing Unit <volt_cal>.
+    Related source file is "E:\BaiduYunDownload\AX309.160229\AX309\09_VERILOG\29_ad9226_test\rtl\volt_cal.v".
+    Found 8-bit register for signal <ch1_sig>.
+    Found 13-bit register for signal <ch2_reg>.
+    Found 8-bit register for signal <ch2_sig>.
+    Found 13-bit register for signal <ch1_reg>.
+    Found 15-bit register for signal <ch1_data_reg<26:11>[25:11]>.
+    Found 15-bit register for signal <ch2_data_reg<26:11>[25:11]>.
+    Found 15-bit register for signal <ch1_vol<15:0>>.
+    Found 15-bit register for signal <ch2_vol<15:0>>.
+    Found 13-bit subtractor for signal <GND_3_o_GND_3_o_add_3_OUT> created at line 34.
+    Found 13-bit subtractor for signal <GND_3_o_GND_3_o_add_8_OUT> created at line 43.
+    Found 13x13-bit multiplier for signal <n0040> created at line 58.
+    Found 13x13-bit multiplier for signal <n0041> created at line 59.
+    WARNING:Xst:2404 -  FFs/Latches <ch1_data_reg<20:15>> (without init value) have a constant value of 0 in block <volt_cal>.
+    WARNING:Xst:2404 -  FFs/Latches <ch2_data_reg<20:15>> (without init value) have a constant value of 0 in block <volt_cal>.
+    WARNING:Xst:2404 -  FFs/Latches <ch1_vol<15:0><26:26>> (without init value) have a constant value of 0 in block <volt_cal>.
+    WARNING:Xst:2404 -  FFs/Latches <ch2_vol<15:0><26:26>> (without init value) have a constant value of 0 in block <volt_cal>.
+    Summary:
+	inferred   2 Multiplier(s).
+	inferred   2 Adder/Subtractor(s).
+	inferred 102 D-type flip-flop(s).
+	inferred   2 Multiplexer(s).
+Unit <volt_cal> synthesized.
+
+Synthesizing Unit <bcd>.
+    Related source file is "E:\BaiduYunDownload\AX309.160229\AX309\09_VERILOG\29_ad9226_test\rtl\bcd.v".
+    Found 18-bit register for signal <rhexd>.
+    Found 14-bit register for signal <rhexc>.
+    Found 10-bit register for signal <rhexb>.
+    Found 4-bit register for signal <rhexa>.
+    Found 4-bit register for signal <resa<3:0>>.
+    Found 4-bit register for signal <resb<3:0>>.
+    Found 4-bit register for signal <resc<3:0>>.
+    Found 4-bit register for signal <resd<3:0>>.
+    Found 16-bit register for signal <n0076>.
+    Found 3-bit register for signal <rese>.
+    Found 5-bit adder for signal <n0160[4:0]> created at line 109.
+    Found 6-bit adder for signal <BUS_0056_GND_5_o_add_29_OUT> created at line 111.
+    Found 6-bit adder for signal <BUS_0056_GND_5_o_add_31_OUT> created at line 113.
+    Found 6-bit adder for signal <BUS_0056_GND_5_o_add_33_OUT> created at line 115.
+    Found 5-bit adder for signal <n0175[4:0]> created at line 109.
+    Found 6-bit adder for signal <BUS_0116_GND_5_o_add_41_OUT> created at line 111.
+    Found 6-bit adder for signal <BUS_0116_GND_5_o_add_43_OUT> created at line 113.
+    Found 6-bit adder for signal <BUS_0116_GND_5_o_add_45_OUT> created at line 115.
+    Found 3-bit adder for signal <n0190[2:0]> created at line 109.
+    Found 5-bit adder for signal <n0193[4:0]> created at line 109.
+    Found 6-bit adder for signal <n0197> created at line 109.
+    Found 6-bit adder for signal <BUS_0177_GND_5_o_add_53_OUT> created at line 111.
+    Found 6-bit adder for signal <BUS_0177_GND_5_o_add_55_OUT> created at line 113.
+    Found 6-bit adder for signal <BUS_0177_GND_5_o_add_57_OUT> created at line 115.
+    Found 3-bit adder for signal <n0205[2:0]> created at line 109.
+    Found 5-bit adder for signal <n0147> created at line 109.
+    Found 6-bit adder for signal <n0156> created at line 111.
+    Found 6-bit adder for signal <n0155> created at line 113.
+    Found 6-bit adder for signal <n0154> created at line 115.
+    Found 3-bit adder for signal <n0217[2:0]> created at line 103.
+    Found 6-bit adder for signal <_n0303> created at line 109.
+    Found 6-bit adder for signal <n0167> created at line 109.
+    Found 6-bit adder for signal <_n0305> created at line 109.
+    Found 6-bit adder for signal <n0182> created at line 109.
+    Found 16x14-bit Read Only RAM for signal <rhex[2][3]_PWR_5_o_wide_mux_17_OUT>
+    Found 16x10-bit Read Only RAM for signal <rhex[1][3]_PWR_5_o_wide_mux_20_OUT>
+    Found 8x18-bit Read Only RAM for signal <_n0301>
+    Found 6-bit comparator greater for signal <GND_5_o_BUS_0056_LessThan_29_o> created at line 110
+    Found 6-bit comparator greater for signal <GND_5_o_BUS_0056_LessThan_31_o> created at line 112
+    Found 6-bit comparator greater for signal <GND_5_o_BUS_0056_LessThan_33_o> created at line 114
+    Found 6-bit comparator greater for signal <GND_5_o_BUS_0116_LessThan_41_o> created at line 110
+    Found 6-bit comparator greater for signal <GND_5_o_BUS_0116_LessThan_43_o> created at line 112
+    Found 6-bit comparator greater for signal <GND_5_o_BUS_0116_LessThan_45_o> created at line 114
+    Found 6-bit comparator greater for signal <GND_5_o_BUS_0177_LessThan_53_o> created at line 110
+    Found 6-bit comparator greater for signal <GND_5_o_BUS_0177_LessThan_55_o> created at line 112
+    Found 6-bit comparator greater for signal <GND_5_o_BUS_0177_LessThan_57_o> created at line 114
+    Found 5-bit comparator greater for signal <PWR_5_o_BUS_0236_LessThan_64_o> created at line 110
+    Found 5-bit comparator greater for signal <PWR_5_o_BUS_0236_LessThan_66_o> created at line 112
+    Found 5-bit comparator greater for signal <GND_5_o_BUS_0236_LessThan_68_o> created at line 114
+    WARNING:Xst:2404 -  FFs/Latches <rese<3:3>> (without init value) have a constant value of 0 in block <bcd>.
+    Summary:
+	inferred   3 RAM(s).
+	inferred  22 Adder/Subtractor(s).
+	inferred  81 D-type flip-flop(s).
+	inferred  12 Comparator(s).
+	inferred  12 Multiplexer(s).
+Unit <bcd> synthesized.
+
+Synthesizing Unit <uart>.
+    Related source file is "E:\BaiduYunDownload\AX309.160229\AX309\09_VERILOG\29_ad9226_test\rtl\uart.v".
+WARNING:Xst:647 - Input <ch1_dec<19:16>> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <ch2_dec<19:16>> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+INFO:Xst:3210 - "E:\BaiduYunDownload\AX309.160229\AX309\09_VERILOG\29_ad9226_test\rtl\uart.v" line 136: Output port <idle> of the instance <u1> is unconnected or connected to loadless signal.
+    Found 16-bit register for signal <uart_cnt>.
+    Found 3-bit register for signal <uart_stat>.
+    Found 9-bit register for signal <k>.
+    Found 16-bit register for signal <Time_wait>.
+    Found 8-bit register for signal <txdata>.
+    Found 1-bit register for signal <wrsig>.
+    Found finite state machine <FSM_0> for signal <uart_stat>.
+    -----------------------------------------------------------------------
+    | States             | 3                                              |
+    | Transitions        | 7                                              |
+    | Inputs             | 4                                              |
+    | Outputs            | 2                                              |
+    | Clock              | clk (rising_edge)                              |
+    | Reset              | reset_n_INV_18_o (positive)                    |
+    | Reset type         | synchronous                                    |
+    | Reset State        | 000                                            |
+    | Encoding           | auto                                           |
+    | Implementation     | LUT                                            |
+    -----------------------------------------------------------------------
+    Found 7-bit adder for signal <n0351> created at line 30.
+    Found 7-bit adder for signal <n0353> created at line 32.
+    Found 7-bit adder for signal <n0355> created at line 33.
+    Found 7-bit adder for signal <n0357> created at line 34.
+    Found 7-bit adder for signal <n0359> created at line 43.
+    Found 7-bit adder for signal <n0361> created at line 45.
+    Found 7-bit adder for signal <n0363> created at line 46.
+    Found 7-bit adder for signal <n0365> created at line 47.
+    Found 16-bit adder for signal <Time_wait[15]_GND_6_o_add_12_OUT> created at line 83.
+    Found 9-bit adder for signal <k[8]_GND_6_o_add_31_OUT> created at line 113.
+    Found 16-bit adder for signal <uart_cnt[15]_GND_6_o_add_32_OUT> created at line 116.
+    Found 8-bit 26-to-1 multiplexer for signal <k[4]_X_5_o_wide_mux_28_OUT> created at line 106.
+WARNING:Xst:737 - Found 1-bit latch for signal <uart_ad<22><6>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <uart_ad<22><5>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <uart_ad<22><4>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <uart_ad<22><3>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <uart_ad<22><2>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <uart_ad<22><1>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <uart_ad<22><0>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <uart_ad<21><7>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <uart_ad<21><6>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <uart_ad<21><5>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <uart_ad<21><4>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <uart_ad<21><3>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <uart_ad<21><2>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <uart_ad<21><1>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <uart_ad<21><0>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <uart_ad<20><6>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <uart_ad<20><5>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <uart_ad<20><4>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <uart_ad<20><3>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <uart_ad<20><2>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <uart_ad<20><1>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <uart_ad<20><0>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <uart_ad<19><5>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <uart_ad<18><6>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <uart_ad<18><5>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <uart_ad<18><4>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <uart_ad<18><3>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <uart_ad<18><2>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <uart_ad<18><1>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <uart_ad<18><0>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <uart_ad<17><7>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <uart_ad<17><6>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <uart_ad<17><5>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <uart_ad<17><4>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <uart_ad<17><3>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <uart_ad<17><2>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <uart_ad<17><1>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <uart_ad<17><0>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <uart_ad<9><6>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <uart_ad<9><5>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <uart_ad<9><4>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <uart_ad<9><3>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <uart_ad<9><2>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <uart_ad<9><1>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <uart_ad<9><0>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <uart_ad<8><6>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <uart_ad<8><5>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <uart_ad<8><4>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <uart_ad<8><3>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <uart_ad<8><2>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <uart_ad<8><1>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <uart_ad<8><0>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <uart_ad<7><6>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <uart_ad<7><5>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <uart_ad<7><4>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <uart_ad<7><3>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <uart_ad<7><2>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <uart_ad<7><1>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <uart_ad<7><0>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <uart_ad<5><6>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <uart_ad<5><5>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <uart_ad<5><4>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <uart_ad<5><3>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <uart_ad<5><2>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <uart_ad<5><1>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <uart_ad<5><0>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <uart_ad<4><7>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <uart_ad<4><6>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <uart_ad<4><5>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <uart_ad<4><4>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <uart_ad<4><3>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <uart_ad<4><2>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <uart_ad<4><1>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <uart_ad<4><0>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+    Summary:
+	inferred  11 Adder/Subtractor(s).
+	inferred  50 D-type flip-flop(s).
+	inferred  74 Latch(s).
+	inferred   5 Multiplexer(s).
+	inferred   1 Finite State Machine(s).
+Unit <uart> synthesized.
+
+Synthesizing Unit <clkdiv>.
+    Related source file is "E:\BaiduYunDownload\AX309.160229\AX309\09_VERILOG\29_ad9226_test\rtl\clkdiv.v".
+    Found 16-bit register for signal <cnt>.
+    Found 1-bit register for signal <clkout>.
+    Found 16-bit adder for signal <cnt[15]_GND_215_o_add_4_OUT> created at line 25.
+    Summary:
+	inferred   1 Adder/Subtractor(s).
+	inferred  17 D-type flip-flop(s).
+Unit <clkdiv> synthesized.
+
+Synthesizing Unit <uarttx>.
+    Related source file is "E:\BaiduYunDownload\AX309.160229\AX309\09_VERILOG\29_ad9226_test\rtl\uarttx.v".
+        paritymode = 1'b0
+    Found 1-bit register for signal <wrsigrise>.
+    Found 1-bit register for signal <send>.
+    Found 1-bit register for signal <tx>.
+    Found 1-bit register for signal <idle>.
+    Found 8-bit register for signal <cnt>.
+    Found 1-bit register for signal <presult>.
+    Found 1-bit register for signal <wrsigbuf>.
+    Found 8-bit adder for signal <cnt[7]_GND_216_o_add_5_OUT> created at line 44.
+    Summary:
+	inferred   1 Adder/Subtractor(s).
+	inferred  14 D-type flip-flop(s).
+Unit <uarttx> synthesized.
+
+=========================================================================
+HDL Synthesis Report
+
+Macro Statistics
+# RAMs                                                 : 6
+ 16x10-bit single-port Read Only RAM                   : 2
+ 16x14-bit single-port Read Only RAM                   : 2
+ 8x18-bit single-port Read Only RAM                    : 2
+# Multipliers                                          : 2
+ 13x13-bit multiplier                                  : 2
+# Adders/Subtractors                                   : 60
+ 13-bit subtractor                                     : 2
+ 16-bit adder                                          : 3
+ 3-bit adder                                           : 6
+ 32-bit adder                                          : 1
+ 5-bit adder                                           : 8
+ 6-bit adder                                           : 30
+ 7-bit adder                                           : 8
+ 8-bit adder                                           : 1
+ 9-bit adder                                           : 1
+# Registers                                            : 46
+ 1-bit register                                        : 9
+ 10-bit register                                       : 2
+ 12-bit register                                       : 2
+ 13-bit register                                       : 2
+ 14-bit register                                       : 2
+ 15-bit register                                       : 4
+ 16-bit register                                       : 5
+ 18-bit register                                       : 2
+ 3-bit register                                        : 2
+ 32-bit register                                       : 1
+ 4-bit register                                        : 10
+ 8-bit register                                        : 4
+ 9-bit register                                        : 1
+# Latches                                              : 74
+ 1-bit latch                                           : 74
+# Comparators                                          : 24
+ 5-bit comparator greater                              : 6
+ 6-bit comparator greater                              : 18
+# Multiplexers                                         : 31
+ 13-bit 2-to-1 multiplexer                             : 2
+ 16-bit 2-to-1 multiplexer                             : 2
+ 6-bit 2-to-1 multiplexer                              : 24
+ 8-bit 2-to-1 multiplexer                              : 1
+ 8-bit 26-to-1 multiplexer                             : 1
+ 9-bit 2-to-1 multiplexer                              : 1
+# FSMs                                                 : 1
+# Xors                                                 : 7
+ 1-bit xor2                                            : 7
+
+=========================================================================
+INFO:Xst:1767 - HDL ADVISOR - Resource sharing has identified that some arithmetic operations in this design can share the same physical resources for reduced device utilization. For improved clock frequency you may try to disable resource sharing.
+
+=========================================================================
+*                       Advanced HDL Synthesis                          *
+=========================================================================
+
+Reading core <chipscope_ila.ngc>.
+Reading core <chipscope_icon.ngc>.
+Loading core <chipscope_ila> for timing and area information for instance <ila_filter_debug>.
+Loading core <chipscope_icon> for timing and area information for instance <icon_debug>.
+INFO:Xst:2261 - The FF/Latch <ch1_sig_4> in Unit <u2> is equivalent to the following 2 FFs/Latches, which will be removed : <ch1_sig_6> <ch1_sig_7> 
+INFO:Xst:2261 - The FF/Latch <ch2_sig_0> in Unit <u2> is equivalent to the following 2 FFs/Latches, which will be removed : <ch2_sig_3> <ch2_sig_5> 
+INFO:Xst:2261 - The FF/Latch <ch1_sig_0> in Unit <u2> is equivalent to the following 2 FFs/Latches, which will be removed : <ch1_sig_3> <ch1_sig_5> 
+INFO:Xst:2261 - The FF/Latch <ch2_sig_4> in Unit <u2> is equivalent to the following 2 FFs/Latches, which will be removed : <ch2_sig_6> <ch2_sig_7> 
+WARNING:Xst:1710 - FF/Latch <uart_ad<19>_5> (without init value) has a constant value of 1 in block <u3>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <uart_ad<21>_7> (without init value) has a constant value of 0 in block <u3>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <uart_ad<17>_0> (without init value) has a constant value of 1 in block <u3>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <uart_ad<17>_4> (without init value) has a constant value of 0 in block <u3>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <uart_ad<17>_5> (without init value) has a constant value of 1 in block <u3>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <uart_ad<17>_3> (without init value) has a constant value of 1 in block <u3>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <uart_ad<17>_7> (without init value) has a constant value of 0 in block <u3>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <uart_ad<4>_0> (without init value) has a constant value of 1 in block <u3>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <uart_ad<17>_6> (without init value) has a constant value of 0 in block <u3>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <uart_ad<4>_3> (without init value) has a constant value of 1 in block <u3>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <uart_ad<4>_5> (without init value) has a constant value of 1 in block <u3>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <uart_ad<4>_6> (without init value) has a constant value of 0 in block <u3>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <uart_ad<4>_4> (without init value) has a constant value of 0 in block <u3>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <uart_ad<4>_7> (without init value) has a constant value of 0 in block <u3>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <ch2_sig_4> (without init value) has a constant value of 0 in block <u2>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <ch2_sig_0> (without init value) has a constant value of 1 in block <u2>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <ch1_sig_4> (without init value) has a constant value of 0 in block <u2>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <ch1_sig_0> (without init value) has a constant value of 1 in block <u2>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <rhex_0_15> (without init value) has a constant value of 0 in block <bcd2_ist>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <rhex_0_15> (without init value) has a constant value of 0 in block <bcd1_ist>. This FF/Latch will be trimmed during the optimization process.
+
+Synthesizing (advanced) Unit <ad9226_test>.
+The following registers are absorbed into counter <scope_counter>: 1 register on signal <scope_counter>.
+Unit <ad9226_test> synthesized (advanced).
+
+Synthesizing (advanced) Unit <bcd>.
+	The following adders/subtractors are grouped into adder tree <Madd_n01971> :
+ 	<Madd_n0190[2:0]> in block <bcd>, 	<Madd_n0193[4:0]> in block <bcd>, 	<Madd_n0197> in block <bcd>.
+	The following adders/subtractors are grouped into adder tree <Madd_n01821> :
+ 	<Madd_n0175[4:0]> in block <bcd>, 	<Madd__n0305> in block <bcd>.
+	The following adders/subtractors are grouped into adder tree <Madd_n01671> :
+ 	<Madd_n0160[4:0]> in block <bcd>, 	<Madd__n0303> in block <bcd>.
+INFO:Xst:3231 - The small RAM <Mram_rhex[2][3]_PWR_5_o_wide_mux_17_OUT> will be implemented on LUTs in order to maximize performance and save block RAM resources. If you want to force its implementation on block, use option/constraint ram_style.
+    -----------------------------------------------------------------------
+    | ram_type           | Distributed                         |          |
+    -----------------------------------------------------------------------
+    | Port A                                                              |
+    |     aspect ratio   | 16-word x 14-bit                    |          |
+    |     weA            | connected to signal <GND>           | high     |
+    |     addrA          | connected to signal <n0076<11:8>>   |          |
+    |     diA            | connected to signal <GND>           |          |
+    |     doA            | connected to internal node          |          |
+    -----------------------------------------------------------------------
+INFO:Xst:3231 - The small RAM <Mram__n0301> will be implemented on LUTs in order to maximize performance and save block RAM resources. If you want to force its implementation on block, use option/constraint ram_style.
+    -----------------------------------------------------------------------
+    | ram_type           | Distributed                         |          |
+    -----------------------------------------------------------------------
+    | Port A                                                              |
+    |     aspect ratio   | 8-word x 18-bit                     |          |
+    |     weA            | connected to signal <GND>           | high     |
+    |     addrA          | connected to signal <n0076<14:12>>  |          |
+    |     diA            | connected to signal <GND>           |          |
+    |     doA            | connected to internal node          |          |
+    -----------------------------------------------------------------------
+INFO:Xst:3231 - The small RAM <Mram_rhex[1][3]_PWR_5_o_wide_mux_20_OUT> will be implemented on LUTs in order to maximize performance and save block RAM resources. If you want to force its implementation on block, use option/constraint ram_style.
+    -----------------------------------------------------------------------
+    | ram_type           | Distributed                         |          |
+    -----------------------------------------------------------------------
+    | Port A                                                              |
+    |     aspect ratio   | 16-word x 10-bit                    |          |
+    |     weA            | connected to signal <GND>           | high     |
+    |     addrA          | connected to signal <n0076<7:4>>    |          |
+    |     diA            | connected to signal <GND>           |          |
+    |     doA            | connected to internal node          |          |
+    -----------------------------------------------------------------------
+Unit <bcd> synthesized (advanced).
+
+Synthesizing (advanced) Unit <clkdiv>.
+The following registers are absorbed into counter <cnt>: 1 register on signal <cnt>.
+Unit <clkdiv> synthesized (advanced).
+
+Synthesizing (advanced) Unit <uart>.
+The following registers are absorbed into counter <k>: 1 register on signal <k>.
+The following registers are absorbed into counter <Time_wait>: 1 register on signal <Time_wait>.
+Unit <uart> synthesized (advanced).
+
+=========================================================================
+Advanced HDL Synthesis Report
+
+Macro Statistics
+# RAMs                                                 : 6
+ 16x10-bit single-port distributed Read Only RAM       : 2
+ 16x14-bit single-port distributed Read Only RAM       : 2
+ 8x18-bit single-port distributed Read Only RAM        : 2
+# Multipliers                                          : 2
+ 13x13-bit multiplier                                  : 2
+# Adders/Subtractors                                   : 38
+ 13-bit subtractor                                     : 2
+ 16-bit adder                                          : 1
+ 3-bit adder                                           : 4
+ 5-bit adder                                           : 2
+ 6-bit adder                                           : 20
+ 7-bit adder                                           : 8
+ 8-bit adder                                           : 1
+# Adder Trees                                          : 6
+ 6-bit / 4-inputs adder tree                           : 6
+# Counters                                             : 4
+ 16-bit up counter                                     : 2
+ 32-bit up counter                                     : 1
+ 9-bit up counter                                      : 1
+# Registers                                            : 329
+ Flip-Flops                                            : 329
+# Comparators                                          : 24
+ 5-bit comparator greater                              : 6
+ 6-bit comparator greater                              : 18
+# Multiplexers                                         : 30
+ 13-bit 2-to-1 multiplexer                             : 2
+ 16-bit 2-to-1 multiplexer                             : 2
+ 6-bit 2-to-1 multiplexer                              : 24
+ 8-bit 2-to-1 multiplexer                              : 1
+ 8-bit 26-to-1 multiplexer                             : 1
+# FSMs                                                 : 1
+# Xors                                                 : 7
+ 1-bit xor2                                            : 7
+
+=========================================================================
+
+=========================================================================
+*                         Low Level Synthesis                           *
+=========================================================================
+WARNING:Xst:1710 - FF/Latch <ch1_sig_0> (without init value) has a constant value of 1 in block <volt_cal>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <ch1_sig_3> (without init value) has a constant value of 1 in block <volt_cal>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <ch1_sig_4> (without init value) has a constant value of 0 in block <volt_cal>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <ch1_sig_5> (without init value) has a constant value of 1 in block <volt_cal>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <ch1_sig_6> (without init value) has a constant value of 0 in block <volt_cal>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <ch1_sig_7> (without init value) has a constant value of 0 in block <volt_cal>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <ch2_sig_0> (without init value) has a constant value of 1 in block <volt_cal>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <ch2_sig_3> (without init value) has a constant value of 1 in block <volt_cal>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <ch2_sig_4> (without init value) has a constant value of 0 in block <volt_cal>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <ch2_sig_5> (without init value) has a constant value of 1 in block <volt_cal>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <ch2_sig_6> (without init value) has a constant value of 0 in block <volt_cal>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <ch2_sig_7> (without init value) has a constant value of 0 in block <volt_cal>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <uart_ad<21>_7> (without init value) has a constant value of 0 in block <uart>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <uart_ad<19>_5> (without init value) has a constant value of 1 in block <uart>. This FF/Latch will be trimmed during the optimization process.
+Analyzing FSM <MFsm> for best encoding.
+Optimizing FSM <u3/FSM_0> on signal <uart_stat[1:2]> with gray encoding.
+-------------------
+ State | Encoding
+-------------------
+ 000   | 00
+ 001   | 01
+ 010   | 11
+-------------------
+WARNING:Xst:1710 - FF/Latch <rhexc_0> (without init value) has a constant value of 0 in block <bcd>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <rhexb_0> (without init value) has a constant value of 0 in block <bcd>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <rhexd_0> (without init value) has a constant value of 0 in block <bcd>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <rhexd_11> (without init value) has a constant value of 0 in block <bcd>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <rhexd_12> (without init value) has a constant value of 0 in block <bcd>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <uart_ad<5>_4> (without init value) has a constant value of 1 in block <uart>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <uart_ad<5>_6> (without init value) has a constant value of 0 in block <uart>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <uart_ad<5>_5> (without init value) has a constant value of 1 in block <uart>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <uart_ad<7>_5> (without init value) has a constant value of 1 in block <uart>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <uart_ad<7>_6> (without init value) has a constant value of 0 in block <uart>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <uart_ad<7>_4> (without init value) has a constant value of 1 in block <uart>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <uart_ad<8>_4> (without init value) has a constant value of 1 in block <uart>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <uart_ad<8>_5> (without init value) has a constant value of 1 in block <uart>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <uart_ad<8>_6> (without init value) has a constant value of 0 in block <uart>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <uart_ad<9>_4> (without init value) has a constant value of 1 in block <uart>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <uart_ad<9>_6> (without init value) has a constant value of 0 in block <uart>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <uart_ad<9>_5> (without init value) has a constant value of 1 in block <uart>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <uart_ad<18>_5> (without init value) has a constant value of 1 in block <uart>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <uart_ad<18>_6> (without init value) has a constant value of 0 in block <uart>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <uart_ad<18>_4> (without init value) has a constant value of 1 in block <uart>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <uart_ad<20>_4> (without init value) has a constant value of 1 in block <uart>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <uart_ad<20>_6> (without init value) has a constant value of 0 in block <uart>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <uart_ad<20>_5> (without init value) has a constant value of 1 in block <uart>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <uart_ad<21>_5> (without init value) has a constant value of 1 in block <uart>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <uart_ad<21>_6> (without init value) has a constant value of 0 in block <uart>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <uart_ad<21>_4> (without init value) has a constant value of 1 in block <uart>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <uart_ad<22>_4> (without init value) has a constant value of 1 in block <uart>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <uart_ad<22>_6> (without init value) has a constant value of 0 in block <uart>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <uart_ad<22>_5> (without init value) has a constant value of 1 in block <uart>. This FF/Latch will be trimmed during the optimization process.
+INFO:Xst:2261 - The FF/Latch <rhexd_10> in Unit <bcd> is equivalent to the following FF/Latch, which will be removed : <rhexd_17> 
+INFO:Xst:2261 - The FF/Latch <rhexd_5> in Unit <bcd> is equivalent to the following FF/Latch, which will be removed : <rhexd_6> 
+INFO:Xst:2261 - The FF/Latch <rhexd_13> in Unit <bcd> is equivalent to the following FF/Latch, which will be removed : <rhexd_16> 
+INFO:Xst:2261 - The FF/Latch <rhexb_1> in Unit <bcd> is equivalent to the following FF/Latch, which will be removed : <rhexb_4> 
+INFO:Xst:2261 - The FF/Latch <rhexd_2> in Unit <bcd> is equivalent to the following FF/Latch, which will be removed : <rhexd_14> 
+INFO:Xst:2261 - The FF/Latch <rhexc_1> in Unit <bcd> is equivalent to the following FF/Latch, which will be removed : <rhexc_4> 
+INFO:Xst:2261 - The FF/Latch <rhexd_1> in Unit <bcd> is equivalent to the following FF/Latch, which will be removed : <rhexd_4> 
+
+Optimizing unit <ad> ...
+
+Optimizing unit <ad9226_test> ...
+
+Optimizing unit <volt_cal> ...
+
+Optimizing unit <bcd> ...
+
+Optimizing unit <uart> ...
+
+Optimizing unit <uarttx> ...
+WARNING:Xst:1710 - FF/Latch <u3/txdata_7> (without init value) has a constant value of 0 in block <ad9226_test>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <u3/uart_ad<17>_0> (without init value) has a constant value of 1 in block <ad9226_test>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <u3/uart_ad<17>_4> (without init value) has a constant value of 0 in block <ad9226_test>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <u3/uart_ad<17>_5> (without init value) has a constant value of 1 in block <ad9226_test>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <u3/uart_ad<17>_3> (without init value) has a constant value of 1 in block <ad9226_test>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <u3/uart_ad<17>_7> (without init value) has a constant value of 0 in block <ad9226_test>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <u3/uart_ad<4>_0> (without init value) has a constant value of 1 in block <ad9226_test>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <u3/uart_ad<17>_6> (without init value) has a constant value of 0 in block <ad9226_test>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <u3/uart_ad<4>_3> (without init value) has a constant value of 1 in block <ad9226_test>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <u3/uart_ad<4>_5> (without init value) has a constant value of 1 in block <ad9226_test>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <u3/uart_ad<4>_6> (without init value) has a constant value of 0 in block <ad9226_test>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <u3/uart_ad<4>_4> (without init value) has a constant value of 0 in block <ad9226_test>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <u3/uart_ad<4>_7> (without init value) has a constant value of 0 in block <ad9226_test>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <u2/bcd2_ist/rhex_0_15> (without init value) has a constant value of 0 in block <ad9226_test>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <u2/bcd1_ist/rhex_0_15> (without init value) has a constant value of 0 in block <ad9226_test>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <u3/uart_cnt_8> (without init value) has a constant value of 0 in block <ad9226_test>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <u3/uart_cnt_9> (without init value) has a constant value of 0 in block <ad9226_test>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <u3/uart_cnt_10> (without init value) has a constant value of 0 in block <ad9226_test>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <u3/uart_cnt_11> (without init value) has a constant value of 0 in block <ad9226_test>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <u3/uart_cnt_12> (without init value) has a constant value of 0 in block <ad9226_test>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <u3/uart_cnt_13> (without init value) has a constant value of 0 in block <ad9226_test>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <u3/uart_cnt_14> (without init value) has a constant value of 0 in block <ad9226_test>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <u3/uart_cnt_15> (without init value) has a constant value of 0 in block <ad9226_test>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <scope_counter_24> (without init value) has a constant value of 0 in block <ad9226_test>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <scope_counter_25> (without init value) has a constant value of 0 in block <ad9226_test>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <scope_counter_26> (without init value) has a constant value of 0 in block <ad9226_test>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <scope_counter_27> (without init value) has a constant value of 0 in block <ad9226_test>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <scope_counter_28> (without init value) has a constant value of 0 in block <ad9226_test>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <scope_counter_29> (without init value) has a constant value of 0 in block <ad9226_test>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <scope_counter_30> (without init value) has a constant value of 0 in block <ad9226_test>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <scope_counter_31> (without init value) has a constant value of 0 in block <ad9226_test>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <u2/bcd2_ist/rese_2> (without init value) has a constant value of 0 in block <ad9226_test>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <u2/bcd1_ist/rese_2> (without init value) has a constant value of 0 in block <ad9226_test>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <scope_counter_6> (without init value) has a constant value of 0 in block <ad9226_test>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <scope_counter_7> (without init value) has a constant value of 0 in block <ad9226_test>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <scope_counter_8> (without init value) has a constant value of 0 in block <ad9226_test>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <scope_counter_9> (without init value) has a constant value of 0 in block <ad9226_test>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <scope_counter_10> (without init value) has a constant value of 0 in block <ad9226_test>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <scope_counter_11> (without init value) has a constant value of 0 in block <ad9226_test>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <scope_counter_12> (without init value) has a constant value of 0 in block <ad9226_test>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <scope_counter_13> (without init value) has a constant value of 0 in block <ad9226_test>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <scope_counter_14> (without init value) has a constant value of 0 in block <ad9226_test>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <scope_counter_15> (without init value) has a constant value of 0 in block <ad9226_test>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <scope_counter_16> (without init value) has a constant value of 0 in block <ad9226_test>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <scope_counter_17> (without init value) has a constant value of 0 in block <ad9226_test>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <scope_counter_18> (without init value) has a constant value of 0 in block <ad9226_test>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <scope_counter_19> (without init value) has a constant value of 0 in block <ad9226_test>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <scope_counter_20> (without init value) has a constant value of 0 in block <ad9226_test>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <scope_counter_21> (without init value) has a constant value of 0 in block <ad9226_test>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <scope_counter_22> (without init value) has a constant value of 0 in block <ad9226_test>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <scope_counter_23> (without init value) has a constant value of 0 in block <ad9226_test>. This FF/Latch will be trimmed during the optimization process.
+INFO:Xst:2261 - The FF/Latch <scope_counter_0> in Unit <ad9226_test> is equivalent to the following FF/Latch, which will be removed : <u3/u0/cnt_0> 
+INFO:Xst:3203 - The FF/Latch <u2/ch1_sig_2> in Unit <ad9226_test> is the opposite to the following FF/Latch, which will be removed : <u2/ch1_sig_1> 
+INFO:Xst:3203 - The FF/Latch <u2/ch2_sig_2> in Unit <ad9226_test> is the opposite to the following FF/Latch, which will be removed : <u2/ch2_sig_1> 
+
+Mapping all equations...
+Building and optimizing final netlist ...
+Found area constraint ratio of 100 (+ 5) on block ad9226_test, actual ratio is 26.
+FlipFlop u2/bcd1_ist/rhexb_1 has been replicated 3 time(s)
+FlipFlop u2/bcd1_ist/rhexc_1 has been replicated 1 time(s)
+FlipFlop u2/bcd1_ist/rhexd_1 has been replicated 1 time(s)
+FlipFlop u2/bcd2_ist/rhexb_1 has been replicated 3 time(s)
+FlipFlop u2/bcd2_ist/rhexc_1 has been replicated 1 time(s)
+FlipFlop u2/bcd2_ist/rhexd_1 has been replicated 1 time(s)
+
+Final Macro Processing ...
+
+Processing Unit <ad9226_test> :
+	Found 3-bit shift register for signal <u2/bcd2_ist/resa_0>.
+	Found 2-bit shift register for signal <u2/bcd2_ist/rhexa_3>.
+	Found 2-bit shift register for signal <u2/bcd2_ist/rhexa_2>.
+	Found 2-bit shift register for signal <u2/bcd2_ist/rhexa_1>.
+	Found 3-bit shift register for signal <u2/bcd1_ist/resa_0>.
+	Found 2-bit shift register for signal <u2/bcd1_ist/rhexa_3>.
+	Found 2-bit shift register for signal <u2/bcd1_ist/rhexa_2>.
+	Found 2-bit shift register for signal <u2/bcd1_ist/rhexa_1>.
+Unit <ad9226_test> processed.
+
+=========================================================================
+Final Register Report
+
+Macro Statistics
+# Registers                                            : 232
+ Flip-Flops                                            : 232
+# Shift Registers                                      : 8
+ 2-bit shift register                                  : 6
+ 3-bit shift register                                  : 2
+
+=========================================================================
+
+=========================================================================
+*                           Partition Report                            *
+=========================================================================
+
+Partition Implementation Status
+-------------------------------
+
+  No Partitions were found in this design.
+
+-------------------------------
+
+=========================================================================
+*                            Design Summary                             *
+=========================================================================
+
+Top Level Output File Name         : ad9226_test.ngc
+
+Primitive and Black Box Usage:
+------------------------------
+# BELS                             : 1278
+#      GND                         : 3
+#      INV                         : 40
+#      LUT1                        : 98
+#      LUT2                        : 56
+#      LUT3                        : 109
+#      LUT4                        : 160
+#      LUT5                        : 60
+#      LUT6                        : 318
+#      MUXCY                       : 74
+#      MUXCY_L                     : 193
+#      MUXF5                       : 2
+#      MUXF6                       : 1
+#      MUXF7                       : 26
+#      MUXF8                       : 2
+#      VCC                         : 3
+#      XORCY                       : 133
+# FlipFlops/Latches                : 1499
+#      FD                          : 649
+#      FDC                         : 9
+#      FDCE                        : 16
+#      FDE                         : 47
+#      FDP                         : 514
+#      FDR                         : 103
+#      FDRE                        : 113
+#      FDS                         : 11
+#      LD                          : 36
+#      LDC                         : 1
+# RAMS                             : 15
+#      RAMB16BWER                  : 14
+#      RAMB8BWER                   : 1
+# Shift Registers                  : 426
+#      SRL16                       : 256
+#      SRL16E                      : 1
+#      SRLC16E                     : 47
+#      SRLC32E                     : 122
+# Clock Buffers                    : 5
+#      BUFG                        : 5
+# IO Buffers                       : 29
+#      IBUF                        : 26
+#      OBUF                        : 3
+# DSPs                             : 2
+#      DSP48A1                     : 2
+# Others                           : 1
+#      BSCAN_SPARTAN6              : 1
+
+Device utilization summary:
+---------------------------
+
+Selected Device : 6slx9ftg256-2 
+
+
+Slice Logic Utilization: 
+ Number of Slice Registers:            1499  out of  11440    13%  
+ Number of Slice LUTs:                 1267  out of   5720    22%  
+    Number used as Logic:               841  out of   5720    14%  
+    Number used as Memory:              426  out of   1440    29%  
+       Number used as SRL:              426
+
+Slice Logic Distribution: 
+ Number of LUT Flip Flop pairs used:   2236
+   Number with an unused Flip Flop:     737  out of   2236    32%  
+   Number with an unused LUT:           969  out of   2236    43%  
+   Number of fully used LUT-FF pairs:   530  out of   2236    23%  
+   Number of unique control sets:        63
+
+IO Utilization: 
+ Number of IOs:                          30
+ Number of bonded IOBs:                  29  out of    186    15%  
+
+Specific Feature Utilization:
+ Number of Block RAM/FIFO:               15  out of     32    46%  
+    Number using Block RAM only:         15
+ Number of BUFG/BUFGCTRLs:                5  out of     16    31%  
+ Number of DSP48A1s:                      2  out of     16    12%  
+
+---------------------------
+Partition Resource Summary:
+---------------------------
+
+  No Partitions were found in this design.
+
+---------------------------
+
+
+=========================================================================
+Timing Report
+
+NOTE: THESE TIMING NUMBERS ARE ONLY A SYNTHESIS ESTIMATE.
+      FOR ACCURATE TIMING INFORMATION PLEASE REFER TO THE TRACE REPORT
+      GENERATED AFTER PLACE-and-ROUTE.
+
+Clock Information:
+------------------
+----------------------------------------------------------------------------------+-------------------------------------------------------------+-------+
+Clock Signal                                                                      | Clock buffer(FF name)                                       | Load  |
+----------------------------------------------------------------------------------+-------------------------------------------------------------+-------+
+clk50m                                                                            | IBUF+BUFG                                                   | 193   |
+u3/u0/clkout                                                                      | BUFG                                                        | 57    |
+u3/uart_stat_FSM_FFd2                                                             | BUFG                                                        | 36    |
+icon_debug/U0/U_ICON/I_YES_BSCAN.U_BS/iDRCK_LOCAL                                 | BUFG                                                        | 267   |
+scope_clk                                                                         | BUFG                                                        | 1402  |
+icon_debug/CONTROL0<13>(icon_debug/U0/U_ICON/U_CTRL_OUT/F_NCP[0].F_CMD[9].U_LCE:O)| NONE(*)(ila_filter_debug/U0/I_NO_D.U_ILA/U_STAT/U_DIRTY_LDC)| 1     |
+icon_debug/U0/iUPDATE_OUT                                                         | NONE(icon_debug/U0/U_ICON/U_iDATA_CMD)                      | 1     |
+----------------------------------------------------------------------------------+-------------------------------------------------------------+-------+
+(*) This 1 clock signal(s) are generated by combinatorial logic,
+and XST is not able to identify which are the primary clock signals.
+Please use the CLOCK_SIGNAL constraint to specify the clock signal(s) generated by combinatorial logic.
+INFO:Xst:2169 - HDL ADVISOR - Some clock signals were not automatically buffered by XST with BUFG/BUFR resources. Please use the buffer_type constraint in order to insert these buffers to the clock signals to help prevent skew problems.
+
+Asynchronous Control Signals Information:
+----------------------------------------
+No asynchronous control signals found in this design
+
+Timing Summary:
+---------------
+Speed Grade: -2
+
+   Minimum period: 18.359ns (Maximum Frequency: 54.469MHz)
+   Minimum input arrival time before clock: 6.596ns
+   Maximum output required time after clock: 4.162ns
+   Maximum combinational path delay: 4.965ns
+
+Timing Details:
+---------------
+All values displayed in nanoseconds (ns)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'clk50m'
+  Clock period: 18.359ns (frequency: 54.469MHz)
+  Total number of paths / destination ports: 48080016 / 215
+-------------------------------------------------------------------------
+Delay:               18.359ns (Levels of Logic = 15)
+  Source:            u2/bcd2_ist/rhexc_1 (FF)
+  Destination:       u2/bcd2_ist/rese_1 (FF)
+  Source Clock:      clk50m rising
+  Destination Clock: clk50m rising
+
+  Data Path: u2/bcd2_ist/rhexc_1 to u2/bcd2_ist/rese_1
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FD:C->Q              19   0.525   1.369  u2/bcd2_ist/rhexc_1 (u2/bcd2_ist/rhexc_1)
+     LUT2:I0->O            2   0.250   0.834  u2/bcd2_ist/ADDERTREE_INTERNAL_Madd1_lut<1>1 (u2/bcd2_ist/ADDERTREE_INTERNAL_Madd1_lut<1>)
+     LUT6:I4->O           11   0.250   1.039  u2/bcd2_ist/ADDERTREE_INTERNAL_Madd2_lut<0>21 (u2/bcd2_ist/ADDERTREE_INTERNAL_Madd2_lut<0>2)
+     LUT6:I5->O            1   0.254   0.910  u2/bcd2_ist/ADDERTREE_INTERNAL_Madd3_lut<0>_SW1 (N301)
+     LUT6:I3->O           11   0.235   1.039  u2/bcd2_ist/ADDERTREE_INTERNAL_Madd3_lut<0> (u2/bcd2_ist/ADDERTREE_INTERNAL_Madd3_lut<0>)
+     LUT6:I5->O            5   0.254   1.296  u2/bcd2_ist/ADDERTREE_INTERNAL_Madd5_lut<0>31 (u2/bcd2_ist/ADDERTREE_INTERNAL_Madd5_lut<0>3)
+     LUT6:I0->O            1   0.254   0.000  u2/bcd2_ist/ADDERTREE_INTERNAL_Madd5_cy<0>4_G (N343)
+     MUXF7:I1->O           4   0.175   0.804  u2/bcd2_ist/ADDERTREE_INTERNAL_Madd5_cy<0>4 (u2/bcd2_ist/ADDERTREE_INTERNAL_Madd5_cy<0>3)
+     LUT6:I5->O            6   0.254   0.984  u2/bcd2_ist/ADDERTREE_INTERNAL_Madd6_lut<0>_SW0 (N15)
+     LUT6:I4->O            1   0.250   0.790  u2/bcd2_ist/ADDERTREE_INTERNAL_Madd6_lut<0>_SW8 (N249)
+     LUT6:I4->O           16   0.250   1.182  u2/bcd2_ist/ADDERTREE_INTERNAL_Madd8_lut<0>21 (u2/bcd2_ist/ADDERTREE_INTERNAL_Madd8_lut<0>2)
+     LUT6:I5->O            6   0.254   0.984  u2/bcd2_ist/ADDERTREE_INTERNAL_Madd8_xor<0>42 (u2/bcd2_ist/ADDERTREE_INTERNAL_Madd_38)
+     LUT6:I4->O            8   0.250   1.172  u2/bcd2_ist/Madd_n01471 (u2/bcd2_ist/Madd_n01471)
+     LUT5:I2->O            2   0.235   1.002  u2/bcd2_ist/Madd_n0147_xor<0>41 (u2/bcd2_ist/n0147<3>)
+     LUT6:I2->O            1   0.254   0.682  u2/bcd2_ist/Madd_n0217[2:0]_xor<1>11_SW0 (N253)
+     LUT6:I5->O            1   0.254   0.000  u2/bcd2_ist/Madd_n0217[2:0]_xor<1>11 (u2/bcd2_ist/n0217[2:0]<1>)
+     FD:D                      0.074          u2/bcd2_ist/rese_1
+    ----------------------------------------
+    Total                     18.359ns (4.272ns logic, 14.087ns route)
+                                       (23.3% logic, 76.7% route)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'u3/u0/clkout'
+  Clock period: 6.180ns (frequency: 161.812MHz)
+  Total number of paths / destination ports: 1548 / 123
+-------------------------------------------------------------------------
+Delay:               6.180ns (Levels of Logic = 3)
+  Source:            u3/Time_wait_11 (FF)
+  Destination:       u3/Time_wait_15 (FF)
+  Source Clock:      u3/u0/clkout rising
+  Destination Clock: u3/u0/clkout rising
+
+  Data Path: u3/Time_wait_11 to u3/Time_wait_15
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDRE:C->Q             2   0.525   1.181  u3/Time_wait_11 (u3/Time_wait_11)
+     LUT6:I0->O            1   0.254   1.137  u3/Time_wait[15]_PWR_6_o_equal_12_o<15>1 (u3/Time_wait[15]_PWR_6_o_equal_12_o<15>)
+     LUT6:I0->O            2   0.254   0.954  u3/Time_wait[15]_PWR_6_o_equal_12_o<15>3 (u3/Time_wait[15]_PWR_6_o_equal_12_o)
+     LUT3:I0->O           16   0.235   1.181  u3/_n03991 (u3/_n0399)
+     FDRE:R                    0.459          u3/Time_wait_0
+    ----------------------------------------
+    Total                      6.180ns (1.727ns logic, 4.453ns route)
+                                       (27.9% logic, 72.1% route)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'icon_debug/U0/U_ICON/I_YES_BSCAN.U_BS/iDRCK_LOCAL'
+  Clock period: 9.265ns (frequency: 107.933MHz)
+  Total number of paths / destination ports: 4244 / 556
+-------------------------------------------------------------------------
+Delay:               9.265ns (Levels of Logic = 8)
+  Source:            ila_filter_debug/U0/I_NO_D.U_ILA/U_CAPSTOR/I_CASE1.I_YES_TB.U_TRACE_BUFFER/U_RAM/I_S6.U_CS_BRAM_CASCADE_S6/I_DEPTH_LTEQ_16K.U_SBRAM_0/I_B18KGT0.G_RAMB18[9].u_ramb18/U_RAMB18 (RAM)
+  Destination:       icon_debug/U0/U_ICON/U_TDO_reg (FF)
+  Source Clock:      icon_debug/U0/U_ICON/I_YES_BSCAN.U_BS/iDRCK_LOCAL rising
+  Destination Clock: icon_debug/U0/U_ICON/I_YES_BSCAN.U_BS/iDRCK_LOCAL rising
+
+  Data Path: ila_filter_debug/U0/I_NO_D.U_ILA/U_CAPSTOR/I_CASE1.I_YES_TB.U_TRACE_BUFFER/U_RAM/I_S6.U_CS_BRAM_CASCADE_S6/I_DEPTH_LTEQ_16K.U_SBRAM_0/I_B18KGT0.G_RAMB18[9].u_ramb18/U_RAMB18 to icon_debug/U0/U_ICON/U_TDO_reg
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     RAMB16BWER:CLKA->DOA7    1   2.100   0.958  U0/I_NO_D.U_ILA/U_CAPSTOR/I_CASE1.I_YES_TB.U_TRACE_BUFFER/U_RAM/I_S6.U_CS_BRAM_CASCADE_S6/I_DEPTH_LTEQ_16K.U_SBRAM_0/I_B18KGT0.G_RAMB18[9].u_ramb18/U_RAMB18 (U0/I_NO_D.U_ILA/U_CAPSTOR/I_CASE1.I_YES_TB.U_TRACE_BUFFER/rd_data<169>)
+     LUT6:I2->O            1   0.254   0.958  U0/I_NO_D.U_ILA/U_CAPSTOR/I_CASE1.I_YES_TB.U_TRACE_BUFFER/U_RD_COL_MUX/I9.U_MUX512/Mmux_O_1914 (U0/I_NO_D.U_ILA/U_CAPSTOR/I_CASE1.I_YES_TB.U_TRACE_BUFFER/U_RD_COL_MUX/I9.U_MUX512/Mmux_O_1914)
+     LUT6:I2->O            1   0.254   0.958  U0/I_NO_D.U_ILA/U_CAPSTOR/I_CASE1.I_YES_TB.U_TRACE_BUFFER/U_RD_COL_MUX/I9.U_MUX512/Mmux_O_145 (U0/I_NO_D.U_ILA/U_CAPSTOR/I_CASE1.I_YES_TB.U_TRACE_BUFFER/U_RD_COL_MUX/I9.U_MUX512/Mmux_O_145)
+     LUT6:I2->O            1   0.254   0.958  U0/I_NO_D.U_ILA/U_CAPSTOR/I_CASE1.I_YES_TB.U_TRACE_BUFFER/U_RD_COL_MUX/I9.U_MUX512/Mmux_O_91 (U0/I_NO_D.U_ILA/U_CAPSTOR/I_CASE1.I_YES_TB.U_TRACE_BUFFER/U_RD_COL_MUX/I9.U_MUX512/Mmux_O_91)
+     LUT6:I2->O            1   0.254   0.000  U0/I_NO_D.U_ILA/U_CAPSTOR/I_CASE1.I_YES_TB.U_TRACE_BUFFER/U_RD_COL_MUX/I9.U_MUX512/Mmux_O_41 (U0/I_NO_D.U_ILA/U_CAPSTOR/I_CASE1.I_YES_TB.U_TRACE_BUFFER/U_RD_COL_MUX/I9.U_MUX512/Mmux_O_4)
+     MUXF7:I0->O           1   0.163   0.790  U0/I_NO_D.U_ILA/U_CAPSTOR/I_CASE1.I_YES_TB.U_TRACE_BUFFER/U_RD_COL_MUX/I9.U_MUX512/Mmux_O_2_f7 (U0/I_NO_D.U_ILA/iDATA_DOUT)
+     LUT3:I1->O            1   0.250   0.790  U0/I_NO_D.U_ILA/U_DOUT (CONTROL<3>)
+     end scope: 'ila_filter_debug:CONTROL<3>'
+     begin scope: 'icon_debug:CONTROL0<3>'
+     LUT6:I4->O            1   0.250   0.000  U0/U_ICON/U_TDO_MUX/U_CS_MUX/I4.U_MUX16/Mmux_O11 (U0/U_ICON/iTDO_next)
+     FDE:D                     0.074          U0/U_ICON/U_TDO_reg
+    ----------------------------------------
+    Total                      9.265ns (3.853ns logic, 5.412ns route)
+                                       (41.6% logic, 58.4% route)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'scope_clk'
+  Clock period: 5.619ns (frequency: 177.959MHz)
+  Total number of paths / destination ports: 2057 / 1709
+-------------------------------------------------------------------------
+Delay:               5.619ns (Levels of Logic = 127)
+  Source:            ila_filter_debug/U0/I_NO_D.U_ILA/U_TRIG/U_TM/G_NMU[0].U_M/U_MU/I_MUT_GANDX.U_match/I_CS_GANDX.U_CS_GANDX_SRL/I_S6.U_CS_GANDX_SRL_S6/G_GAND_DLY1[6].I_IN_RANGE.I_USE_INPUT_REG_NE0.U_GAND_DLY1 (FF)
+  Destination:       ila_filter_debug/U0/I_NO_D.U_ILA/U_TRIG/U_TM/G_NMU[0].U_M/U_MU/I_MUT_GANDX.U_match/I_CS_GANDX.U_CS_GANDX_SRL/I_S6.U_CS_GANDX_SRL_S6/U_CS_GAND_SRL_S6/I_USE_RPM_EQ0.U_GAND_SRL_SET/I_WHOLE_SLICE.G_SLICE_IDX[31].U_GAND_SRL_SLICE_NO_RPM/I_IS_TERMINATION_SLICE_NE0.I_USE_OUTPUT_REG_NE0.U_OREG (FF)
+  Source Clock:      scope_clk rising
+  Destination Clock: scope_clk rising
+
+  Data Path: ila_filter_debug/U0/I_NO_D.U_ILA/U_TRIG/U_TM/G_NMU[0].U_M/U_MU/I_MUT_GANDX.U_match/I_CS_GANDX.U_CS_GANDX_SRL/I_S6.U_CS_GANDX_SRL_S6/G_GAND_DLY1[6].I_IN_RANGE.I_USE_INPUT_REG_NE0.U_GAND_DLY1 to ila_filter_debug/U0/I_NO_D.U_ILA/U_TRIG/U_TM/G_NMU[0].U_M/U_MU/I_MUT_GANDX.U_match/I_CS_GANDX.U_CS_GANDX_SRL/I_S6.U_CS_GANDX_SRL_S6/U_CS_GAND_SRL_S6/I_USE_RPM_EQ0.U_GAND_SRL_SET/I_WHOLE_SLICE.G_SLICE_IDX[31].U_GAND_SRL_SLICE_NO_RPM/I_IS_TERMINATION_SLICE_NE0.I_USE_OUTPUT_REG_NE0.U_OREG
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDP:C->Q              2   0.525   0.725  U0/I_NO_D.U_ILA/U_TRIG/U_TM/G_NMU[0].U_M/U_MU/I_MUT_GANDX.U_match/I_CS_GANDX.U_CS_GANDX_SRL/I_S6.U_CS_GANDX_SRL_S6/G_GAND_DLY1[6].I_IN_RANGE.I_USE_INPUT_REG_NE0.U_GAND_DLY1 (U0/I_NO_D.U_ILA/U_TRIG/U_TM/G_NMU[0].U_M/U_MU/I_MUT_GANDX.U_match/I_CS_GANDX.U_CS_GANDX_SRL/I_S6.U_CS_GANDX_SRL_S6/gand_dly1<6>)
+     SRLC16E:A0->Q         1   0.254   0.681  U0/I_NO_D.U_ILA/U_TRIG/U_TM/G_NMU[0].U_M/U_MU/I_MUT_GANDX.U_match/I_CS_GANDX.U_CS_GANDX_SRL/I_S6.U_CS_GANDX_SRL_S6/U_CS_GAND_SRL_S6/I_USE_RPM_EQ0.U_GAND_SRL_SET/I_WHOLE_SLICE.G_SLICE_IDX[0].U_GAND_SRL_SLICE_NO_RPM/U_SRLD (U0/I_NO_D.U_ILA/U_TRIG/U_TM/G_NMU[0].U_M/U_MU/I_MUT_GANDX.U_match/I_CS_GANDX.U_CS_GANDX_SRL/I_S6.U_CS_GANDX_SRL_S6/U_CS_GAND_SRL_S6/I_USE_RPM_EQ0.U_GAND_SRL_SET/I_WHOLE_SLICE.G_SLICE_IDX[0].U_GAND_SRL_SLICE_NO_RPM/muxcy_sel<3>)
+     MUXCY_L:S->LO         1   0.215   0.000  U0/I_NO_D.U_ILA/U_TRIG/U_TM/G_NMU[0].U_M/U_MU/I_MUT_GANDX.U_match/I_CS_GANDX.U_CS_GANDX_SRL/I_S6.U_CS_GANDX_SRL_S6/U_CS_GAND_SRL_S6/I_USE_RPM_EQ0.U_GAND_SRL_SET/I_WHOLE_SLICE.G_SLICE_IDX[0].U_GAND_SRL_SLICE_NO_RPM/U_MUXD (U0/I_NO_D.U_ILA/U_TRIG/U_TM/G_NMU[0].U_M/U_MU/I_MUT_GANDX.U_match/I_CS_GANDX.U_CS_GANDX_SRL/I_S6.U_CS_GANDX_SRL_S6/U_CS_GAND_SRL_S6/I_USE_RPM_EQ0.U_GAND_SRL_SET/gand_carry<1>)
+     MUXCY_L:CI->LO        1   0.023   0.000  U0/I_NO_D.U_ILA/U_TRIG/U_TM/G_NMU[0].U_M/U_MU/I_MUT_GANDX.U_match/I_CS_GANDX.U_CS_GANDX_SRL/I_S6.U_CS_GANDX_SRL_S6/U_CS_GAND_SRL_S6/I_USE_RPM_EQ0.U_GAND_SRL_SET/I_WHOLE_SLICE.G_SLICE_IDX[1].U_GAND_SRL_SLICE_NO_RPM/U_MUXA (U0/I_NO_D.U_ILA/U_TRIG/U_TM/G_NMU[0].U_M/U_MU/I_MUT_GANDX.U_match/I_CS_GANDX.U_CS_GANDX_SRL/I_S6.U_CS_GANDX_SRL_S6/U_CS_GAND_SRL_S6/I_USE_RPM_EQ0.U_GAND_SRL_SET/I_WHOLE_SLICE.G_SLICE_IDX[1].U_GAND_SRL_SLICE_NO_RPM/muxcy_lo<0>)
+     MUXCY_L:CI->LO        1   0.023   0.000  U0/I_NO_D.U_ILA/U_TRIG/U_TM/G_NMU[0].U_M/U_MU/I_MUT_GANDX.U_match/I_CS_GANDX.U_CS_GANDX_SRL/I_S6.U_CS_GANDX_SRL_S6/U_CS_GAND_SRL_S6/I_USE_RPM_EQ0.U_GAND_SRL_SET/I_WHOLE_SLICE.G_SLICE_IDX[1].U_GAND_SRL_SLICE_NO_RPM/U_MUXB (U0/I_NO_D.U_ILA/U_TRIG/U_TM/G_NMU[0].U_M/U_MU/I_MUT_GANDX.U_match/I_CS_GANDX.U_CS_GANDX_SRL/I_S6.U_CS_GANDX_SRL_S6/U_CS_GAND_SRL_S6/I_USE_RPM_EQ0.U_GAND_SRL_SET/I_WHOLE_SLICE.G_SLICE_IDX[1].U_GAND_SRL_SLICE_NO_RPM/muxcy_lo<1>)
+     MUXCY_L:CI->LO        1   0.023   0.000  U0/I_NO_D.U_ILA/U_TRIG/U_TM/G_NMU[0].U_M/U_MU/I_MUT_GANDX.U_match/I_CS_GANDX.U_CS_GANDX_SRL/I_S6.U_CS_GANDX_SRL_S6/U_CS_GAND_SRL_S6/I_USE_RPM_EQ0.U_GAND_SRL_SET/I_WHOLE_SLICE.G_SLICE_IDX[1].U_GAND_SRL_SLICE_NO_RPM/U_MUXC (U0/I_NO_D.U_ILA/U_TRIG/U_TM/G_NMU[0].U_M/U_MU/I_MUT_GANDX.U_match/I_CS_GANDX.U_CS_GANDX_SRL/I_S6.U_CS_GANDX_SRL_S6/U_CS_GAND_SRL_S6/I_USE_RPM_EQ0.U_GAND_SRL_SET/I_WHOLE_SLICE.G_SLICE_IDX[1].U_GAND_SRL_SLICE_NO_RPM/muxcy_lo<2>)
+     MUXCY_L:CI->LO        1   0.023   0.000  U0/I_NO_D.U_ILA/U_TRIG/U_TM/G_NMU[0].U_M/U_MU/I_MUT_GANDX.U_match/I_CS_GANDX.U_CS_GANDX_SRL/I_S6.U_CS_GANDX_SRL_S6/U_CS_GAND_SRL_S6/I_USE_RPM_EQ0.U_GAND_SRL_SET/I_WHOLE_SLICE.G_SLICE_IDX[1].U_GAND_SRL_SLICE_NO_RPM/U_MUXD (U0/I_NO_D.U_ILA/U_TRIG/U_TM/G_NMU[0].U_M/U_MU/I_MUT_GANDX.U_match/I_CS_GANDX.U_CS_GANDX_SRL/I_S6.U_CS_GANDX_SRL_S6/U_CS_GAND_SRL_S6/I_USE_RPM_EQ0.U_GAND_SRL_SET/gand_carry<2>)
+     MUXCY_L:CI->LO        1   0.023   0.000  U0/I_NO_D.U_ILA/U_TRIG/U_TM/G_NMU[0].U_M/U_MU/I_MUT_GANDX.U_match/I_CS_GANDX.U_CS_GANDX_SRL/I_S6.U_CS_GANDX_SRL_S6/U_CS_GAND_SRL_S6/I_USE_RPM_EQ0.U_GAND_SRL_SET/I_WHOLE_SLICE.G_SLICE_IDX[2].U_GAND_SRL_SLICE_NO_RPM/U_MUXA (U0/I_NO_D.U_ILA/U_TRIG/U_TM/G_NMU[0].U_M/U_MU/I_MUT_GANDX.U_match/I_CS_GANDX.U_CS_GANDX_SRL/I_S6.U_CS_GANDX_SRL_S6/U_CS_GAND_SRL_S6/I_USE_RPM_EQ0.U_GAND_SRL_SET/I_WHOLE_SLICE.G_SLICE_IDX[2].U_GAND_SRL_SLICE_NO_RPM/muxcy_lo<0>)
+     MUXCY_L:CI->LO        1   0.023   0.000  U0/I_NO_D.U_ILA/U_TRIG/U_TM/G_NMU[0].U_M/U_MU/I_MUT_GANDX.U_match/I_CS_GANDX.U_CS_GANDX_SRL/I_S6.U_CS_GANDX_SRL_S6/U_CS_GAND_SRL_S6/I_USE_RPM_EQ0.U_GAND_SRL_SET/I_WHOLE_SLICE.G_SLICE_IDX[2].U_GAND_SRL_SLICE_NO_RPM/U_MUXB (U0/I_NO_D.U_ILA/U_TRIG/U_TM/G_NMU[0].U_M/U_MU/I_MUT_GANDX.U_match/I_CS_GANDX.U_CS_GANDX_SRL/I_S6.U_CS_GANDX_SRL_S6/U_CS_GAND_SRL_S6/I_USE_RPM_EQ0.U_GAND_SRL_SET/I_WHOLE_SLICE.G_SLICE_IDX[2].U_GAND_SRL_SLICE_NO_RPM/muxcy_lo<1>)
+     MUXCY_L:CI->LO        1   0.023   0.000  U0/I_NO_D.U_ILA/U_TRIG/U_TM/G_NMU[0].U_M/U_MU/I_MUT_GANDX.U_match/I_CS_GANDX.U_CS_GANDX_SRL/I_S6.U_CS_GANDX_SRL_S6/U_CS_GAND_SRL_S6/I_USE_RPM_EQ0.U_GAND_SRL_SET/I_WHOLE_SLICE.G_SLICE_IDX[2].U_GAND_SRL_SLICE_NO_RPM/U_MUXC (U0/I_NO_D.U_ILA/U_TRIG/U_TM/G_NMU[0].U_M/U_MU/I_MUT_GANDX.U_match/I_CS_GANDX.U_CS_GANDX_SRL/I_S6.U_CS_GANDX_SRL_S6/U_CS_GAND_SRL_S6/I_USE_RPM_EQ0.U_GAND_SRL_SET/I_WHOLE_SLICE.G_SLICE_IDX[2].U_GAND_SRL_SLICE_NO_RPM/muxcy_lo<2>)
+     MUXCY_L:CI->LO        1   0.023   0.000  U0/I_NO_D.U_ILA/U_TRIG/U_TM/G_NMU[0].U_M/U_MU/I_MUT_GANDX.U_match/I_CS_GANDX.U_CS_GANDX_SRL/I_S6.U_CS_GANDX_SRL_S6/U_CS_GAND_SRL_S6/I_USE_RPM_EQ0.U_GAND_SRL_SET/I_WHOLE_SLICE.G_SLICE_IDX[2].U_GAND_SRL_SLICE_NO_RPM/U_MUXD (U0/I_NO_D.U_ILA/U_TRIG/U_TM/G_NMU[0].U_M/U_MU/I_MUT_GANDX.U_match/I_CS_GANDX.U_CS_GANDX_SRL/I_S6.U_CS_GANDX_SRL_S6/U_CS_GAND_SRL_S6/I_USE_RPM_EQ0.U_GAND_SRL_SET/gand_carry<3>)
+     MUXCY_L:CI->LO        1   0.023   0.000  U0/I_NO_D.U_ILA/U_TRIG/U_TM/G_NMU[0].U_M/U_MU/I_MUT_GANDX.U_match/I_CS_GANDX.U_CS_GANDX_SRL/I_S6.U_CS_GANDX_SRL_S6/U_CS_GAND_SRL_S6/I_USE_RPM_EQ0.U_GAND_SRL_SET/I_WHOLE_SLICE.G_SLICE_IDX[3].U_GAND_SRL_SLICE_NO_RPM/U_MUXA (U0/I_NO_D.U_ILA/U_TRIG/U_TM/G_NMU[0].U_M/U_MU/I_MUT_GANDX.U_match/I_CS_GANDX.U_CS_GANDX_SRL/I_S6.U_CS_GANDX_SRL_S6/U_CS_GAND_SRL_S6/I_USE_RPM_EQ0.U_GAND_SRL_SET/I_WHOLE_SLICE.G_SLICE_IDX[3].U_GAND_SRL_SLICE_NO_RPM/muxcy_lo<0>)
+     MUXCY_L:CI->LO        1   0.023   0.000  U0/I_NO_D.U_ILA/U_TRIG/U_TM/G_NMU[0].U_M/U_MU/I_MUT_GANDX.U_match/I_CS_GANDX.U_CS_GANDX_SRL/I_S6.U_CS_GANDX_SRL_S6/U_CS_GAND_SRL_S6/I_USE_RPM_EQ0.U_GAND_SRL_SET/I_WHOLE_SLICE.G_SLICE_IDX[3].U_GAND_SRL_SLICE_NO_RPM/U_MUXB (U0/I_NO_D.U_ILA/U_TRIG/U_TM/G_NMU[0].U_M/U_MU/I_MUT_GANDX.U_match/I_CS_GANDX.U_CS_GANDX_SRL/I_S6.U_CS_GANDX_SRL_S6/U_CS_GAND_SRL_S6/I_USE_RPM_EQ0.U_GAND_SRL_SET/I_WHOLE_SLICE.G_SLICE_IDX[3].U_GAND_SRL_SLICE_NO_RPM/muxcy_lo<1>)
+     MUXCY_L:CI->LO        1   0.023   0.000  U0/I_NO_D.U_ILA/U_TRIG/U_TM/G_NMU[0].U_M/U_MU/I_MUT_GANDX.U_match/I_CS_GANDX.U_CS_GANDX_SRL/I_S6.U_CS_GANDX_SRL_S6/U_CS_GAND_SRL_S6/I_USE_RPM_EQ0.U_GAND_SRL_SET/I_WHOLE_SLICE.G_SLICE_IDX[3].U_GAND_SRL_SLICE_NO_RPM/U_MUXC (U0/I_NO_D.U_ILA/U_TRIG/U_TM/G_NMU[0].U_M/U_MU/I_MUT_GANDX.U_match/I_CS_GANDX.U_CS_GANDX_SRL/I_S6.U_CS_GANDX_SRL_S6/U_CS_GAND_SRL_S6/I_USE_RPM_EQ0.U_GAND_SRL_SET/I_WHOLE_SLICE.G_SLICE_IDX[3].U_GAND_SRL_SLICE_NO_RPM/muxcy_lo<2>)
+     MUXCY_L:CI->LO        1   0.023   0.000  U0/I_NO_D.U_ILA/U_TRIG/U_TM/G_NMU[0].U_M/U_MU/I_MUT_GANDX.U_match/I_CS_GANDX.U_CS_GANDX_SRL/I_S6.U_CS_GANDX_SRL_S6/U_CS_GAND_SRL_S6/I_USE_RPM_EQ0.U_GAND_SRL_SET/I_WHOLE_SLICE.G_SLICE_IDX[3].U_GAND_SRL_SLICE_NO_RPM/U_MUXD (U0/I_NO_D.U_ILA/U_TRIG/U_TM/G_NMU[0].U_M/U_MU/I_MUT_GANDX.U_match/I_CS_GANDX.U_CS_GANDX_SRL/I_S6.U_CS_GANDX_SRL_S6/U_CS_GAND_SRL_S6/I_USE_RPM_EQ0.U_GAND_SRL_SET/gand_carry<4>)
+     MUXCY_L:CI->LO        1   0.023   0.000  U0/I_NO_D.U_ILA/U_TRIG/U_TM/G_NMU[0].U_M/U_MU/I_MUT_GANDX.U_match/I_CS_GANDX.U_CS_GANDX_SRL/I_S6.U_CS_GANDX_SRL_S6/U_CS_GAND_SRL_S6/I_USE_RPM_EQ0.U_GAND_SRL_SET/I_WHOLE_SLICE.G_SLICE_IDX[4].U_GAND_SRL_SLICE_NO_RPM/U_MUXA (U0/I_NO_D.U_ILA/U_TRIG/U_TM/G_NMU[0].U_M/U_MU/I_MUT_GANDX.U_match/I_CS_GANDX.U_CS_GANDX_SRL/I_S6.U_CS_GANDX_SRL_S6/U_CS_GAND_SRL_S6/I_USE_RPM_EQ0.U_GAND_SRL_SET/I_WHOLE_SLICE.G_SLICE_IDX[4].U_GAND_SRL_SLICE_NO_RPM/muxcy_lo<0>)
+     MUXCY_L:CI->LO        1   0.023   0.000  U0/I_NO_D.U_ILA/U_TRIG/U_TM/G_NMU[0].U_M/U_MU/I_MUT_GANDX.U_match/I_CS_GANDX.U_CS_GANDX_SRL/I_S6.U_CS_GANDX_SRL_S6/U_CS_GAND_SRL_S6/I_USE_RPM_EQ0.U_GAND_SRL_SET/I_WHOLE_SLICE.G_SLICE_IDX[4].U_GAND_SRL_SLICE_NO_RPM/U_MUXB (U0/I_NO_D.U_ILA/U_TRIG/U_TM/G_NMU[0].U_M/U_MU/I_MUT_GANDX.U_match/I_CS_GANDX.U_CS_GANDX_SRL/I_S6.U_CS_GANDX_SRL_S6/U_CS_GAND_SRL_S6/I_USE_RPM_EQ0.U_GAND_SRL_SET/I_WHOLE_SLICE.G_SLICE_IDX[4].U_GAND_SRL_SLICE_NO_RPM/muxcy_lo<1>)
+     MUXCY_L:CI->LO        1   0.023   0.000  U0/I_NO_D.U_ILA/U_TRIG/U_TM/G_NMU[0].U_M/U_MU/I_MUT_GANDX.U_match/I_CS_GANDX.U_CS_GANDX_SRL/I_S6.U_CS_GANDX_SRL_S6/U_CS_GAND_SRL_S6/I_USE_RPM_EQ0.U_GAND_SRL_SET/I_WHOLE_SLICE.G_SLICE_IDX[4].U_GAND_SRL_SLICE_NO_RPM/U_MUXC (U0/I_NO_D.U_ILA/U_TRIG/U_TM/G_NMU[0].U_M/U_MU/I_MUT_GANDX.U_match/I_CS_GANDX.U_CS_GANDX_SRL/I_S6.U_CS_GANDX_SRL_S6/U_CS_GAND_SRL_S6/I_USE_RPM_EQ0.U_GAND_SRL_SET/I_WHOLE_SLICE.G_SLICE_IDX[4].U_GAND_SRL_SLICE_NO_RPM/muxcy_lo<2>)
+     MUXCY_L:CI->LO        1   0.023   0.000  U0/I_NO_D.U_ILA/U_TRIG/U_TM/G_NMU[0].U_M/U_MU/I_MUT_GANDX.U_match/I_CS_GANDX.U_CS_GANDX_SRL/I_S6.U_CS_GANDX_SRL_S6/U_CS_GAND_SRL_S6/I_USE_RPM_EQ0.U_GAND_SRL_SET/I_WHOLE_SLICE.G_SLICE_IDX[4].U_GAND_SRL_SLICE_NO_RPM/U_MUXD (U0/I_NO_D.U_ILA/U_TRIG/U_TM/G_NMU[0].U_M/U_MU/I_MUT_GANDX.U_match/I_CS_GANDX.U_CS_GANDX_SRL/I_S6.U_CS_GANDX_SRL_S6/U_CS_GAND_SRL_S6/I_USE_RPM_EQ0.U_GAND_SRL_SET/gand_carry<5>)
+     MUXCY_L:CI->LO        1   0.023   0.000  U0/I_NO_D.U_ILA/U_TRIG/U_TM/G_NMU[0].U_M/U_MU/I_MUT_GANDX.U_match/I_CS_GANDX.U_CS_GANDX_SRL/I_S6.U_CS_GANDX_SRL_S6/U_CS_GAND_SRL_S6/I_USE_RPM_EQ0.U_GAND_SRL_SET/I_WHOLE_SLICE.G_SLICE_IDX[5].U_GAND_SRL_SLICE_NO_RPM/U_MUXA (U0/I_NO_D.U_ILA/U_TRIG/U_TM/G_NMU[0].U_M/U_MU/I_MUT_GANDX.U_match/I_CS_GANDX.U_CS_GANDX_SRL/I_S6.U_CS_GANDX_SRL_S6/U_CS_GAND_SRL_S6/I_USE_RPM_EQ0.U_GAND_SRL_SET/I_WHOLE_SLICE.G_SLICE_IDX[5].U_GAND_SRL_SLICE_NO_RPM/muxcy_lo<0>)
+     MUXCY_L:CI->LO        1   0.023   0.000  U0/I_NO_D.U_ILA/U_TRIG/U_TM/G_NMU[0].U_M/U_MU/I_MUT_GANDX.U_match/I_CS_GANDX.U_CS_GANDX_SRL/I_S6.U_CS_GANDX_SRL_S6/U_CS_GAND_SRL_S6/I_USE_RPM_EQ0.U_GAND_SRL_SET/I_WHOLE_SLICE.G_SLICE_IDX[5].U_GAND_SRL_SLICE_NO_RPM/U_MUXB (U0/I_NO_D.U_ILA/U_TRIG/U_TM/G_NMU[0].U_M/U_MU/I_MUT_GANDX.U_match/I_CS_GANDX.U_CS_GANDX_SRL/I_S6.U_CS_GANDX_SRL_S6/U_CS_GAND_SRL_S6/I_USE_RPM_EQ0.U_GAND_SRL_SET/I_WHOLE_SLICE.G_SLICE_IDX[5].U_GAND_SRL_SLICE_NO_RPM/muxcy_lo<1>)
+     MUXCY_L:CI->LO        1   0.023   0.000  U0/I_NO_D.U_ILA/U_TRIG/U_TM/G_NMU[0].U_M/U_MU/I_MUT_GANDX.U_match/I_CS_GANDX.U_CS_GANDX_SRL/I_S6.U_CS_GANDX_SRL_S6/U_CS_GAND_SRL_S6/I_USE_RPM_EQ0.U_GAND_SRL_SET/I_WHOLE_SLICE.G_SLICE_IDX[5].U_GAND_SRL_SLICE_NO_RPM/U_MUXC (U0/I_NO_D.U_ILA/U_TRIG/U_TM/G_NMU[0].U_M/U_MU/I_MUT_GANDX.U_match/I_CS_GANDX.U_CS_GANDX_SRL/I_S6.U_CS_GANDX_SRL_S6/U_CS_GAND_SRL_S6/I_USE_RPM_EQ0.U_GAND_SRL_SET/I_WHOLE_SLICE.G_SLICE_IDX[5].U_GAND_SRL_SLICE_NO_RPM/muxcy_lo<2>)
+     MUXCY_L:CI->LO        1   0.023   0.000  U0/I_NO_D.U_ILA/U_TRIG/U_TM/G_NMU[0].U_M/U_MU/I_MUT_GANDX.U_match/I_CS_GANDX.U_CS_GANDX_SRL/I_S6.U_CS_GANDX_SRL_S6/U_CS_GAND_SRL_S6/I_USE_RPM_EQ0.U_GAND_SRL_SET/I_WHOLE_SLICE.G_SLICE_IDX[5].U_GAND_SRL_SLICE_NO_RPM/U_MUXD (U0/I_NO_D.U_ILA/U_TRIG/U_TM/G_NMU[0].U_M/U_MU/I_MUT_GANDX.U_match/I_CS_GANDX.U_CS_GANDX_SRL/I_S6.U_CS_GANDX_SRL_S6/U_CS_GAND_SRL_S6/I_USE_RPM_EQ0.U_GAND_SRL_SET/gand_carry<6>)
+     MUXCY_L:CI->LO        1   0.023   0.000  U0/I_NO_D.U_ILA/U_TRIG/U_TM/G_NMU[0].U_M/U_MU/I_MUT_GANDX.U_match/I_CS_GANDX.U_CS_GANDX_SRL/I_S6.U_CS_GANDX_SRL_S6/U_CS_GAND_SRL_S6/I_USE_RPM_EQ0.U_GAND_SRL_SET/I_WHOLE_SLICE.G_SLICE_IDX[6].U_GAND_SRL_SLICE_NO_RPM/U_MUXA (U0/I_NO_D.U_ILA/U_TRIG/U_TM/G_NMU[0].U_M/U_MU/I_MUT_GANDX.U_match/I_CS_GANDX.U_CS_GANDX_SRL/I_S6.U_CS_GANDX_SRL_S6/U_CS_GAND_SRL_S6/I_USE_RPM_EQ0.U_GAND_SRL_SET/I_WHOLE_SLICE.G_SLICE_IDX[6].U_GAND_SRL_SLICE_NO_RPM/muxcy_lo<0>)
+     MUXCY_L:CI->LO        1   0.023   0.000  U0/I_NO_D.U_ILA/U_TRIG/U_TM/G_NMU[0].U_M/U_MU/I_MUT_GANDX.U_match/I_CS_GANDX.U_CS_GANDX_SRL/I_S6.U_CS_GANDX_SRL_S6/U_CS_GAND_SRL_S6/I_USE_RPM_EQ0.U_GAND_SRL_SET/I_WHOLE_SLICE.G_SLICE_IDX[6].U_GAND_SRL_SLICE_NO_RPM/U_MUXB (U0/I_NO_D.U_ILA/U_TRIG/U_TM/G_NMU[0].U_M/U_MU/I_MUT_GANDX.U_match/I_CS_GANDX.U_CS_GANDX_SRL/I_S6.U_CS_GANDX_SRL_S6/U_CS_GAND_SRL_S6/I_USE_RPM_EQ0.U_GAND_SRL_SET/I_WHOLE_SLICE.G_SLICE_IDX[6].U_GAND_SRL_SLICE_NO_RPM/muxcy_lo<1>)
+     MUXCY_L:CI->LO        1   0.023   0.000  U0/I_NO_D.U_ILA/U_TRIG/U_TM/G_NMU[0].U_M/U_MU/I_MUT_GANDX.U_match/I_CS_GANDX.U_CS_GANDX_SRL/I_S6.U_CS_GANDX_SRL_S6/U_CS_GAND_SRL_S6/I_USE_RPM_EQ0.U_GAND_SRL_SET/I_WHOLE_SLICE.G_SLICE_IDX[6].U_GAND_SRL_SLICE_NO_RPM/U_MUXC (U0/I_NO_D.U_ILA/U_TRIG/U_TM/G_NMU[0].U_M/U_MU/I_MUT_GANDX.U_match/I_CS_GANDX.U_CS_GANDX_SRL/I_S6.U_CS_GANDX_SRL_S6/U_CS_GAND_SRL_S6/I_USE_RPM_EQ0.U_GAND_SRL_SET/I_WHOLE_SLICE.G_SLICE_IDX[6].U_GAND_SRL_SLICE_NO_RPM/muxcy_lo<2>)
+     MUXCY_L:CI->LO        1   0.023   0.000  U0/I_NO_D.U_ILA/U_TRIG/U_TM/G_NMU[0].U_M/U_MU/I_MUT_GANDX.U_match/I_CS_GANDX.U_CS_GANDX_SRL/I_S6.U_CS_GANDX_SRL_S6/U_CS_GAND_SRL_S6/I_USE_RPM_EQ0.U_GAND_SRL_SET/I_WHOLE_SLICE.G_SLICE_IDX[6].U_GAND_SRL_SLICE_NO_RPM/U_MUXD (U0/I_NO_D.U_ILA/U_TRIG/U_TM/G_NMU[0].U_M/U_MU/I_MUT_GANDX.U_match/I_CS_GANDX.U_CS_GANDX_SRL/I_S6.U_CS_GANDX_SRL_S6/U_CS_GAND_SRL_S6/I_USE_RPM_EQ0.U_GAND_SRL_SET/gand_carry<7>)
+     MUXCY_L:CI->LO        1   0.023   0.000  U0/I_NO_D.U_ILA/U_TRIG/U_TM/G_NMU[0].U_M/U_MU/I_MUT_GANDX.U_match/I_CS_GANDX.U_CS_GANDX_SRL/I_S6.U_CS_GANDX_SRL_S6/U_CS_GAND_SRL_S6/I_USE_RPM_EQ0.U_GAND_SRL_SET/I_WHOLE_SLICE.G_SLICE_IDX[7].U_GAND_SRL_SLICE_NO_RPM/U_MUXA (U0/I_NO_D.U_ILA/U_TRIG/U_TM/G_NMU[0].U_M/U_MU/I_MUT_GANDX.U_match/I_CS_GANDX.U_CS_GANDX_SRL/I_S6.U_CS_GANDX_SRL_S6/U_CS_GAND_SRL_S6/I_USE_RPM_EQ0.U_GAND_SRL_SET/I_WHOLE_SLICE.G_SLICE_IDX[7].U_GAND_SRL_SLICE_NO_RPM/muxcy_lo<0>)
+     MUXCY_L:CI->LO        1   0.023   0.000  U0/I_NO_D.U_ILA/U_TRIG/U_TM/G_NMU[0].U_M/U_MU/I_MUT_GANDX.U_match/I_CS_GANDX.U_CS_GANDX_SRL/I_S6.U_CS_GANDX_SRL_S6/U_CS_GAND_SRL_S6/I_USE_RPM_EQ0.U_GAND_SRL_SET/I_WHOLE_SLICE.G_SLICE_IDX[7].U_GAND_SRL_SLICE_NO_RPM/U_MUXB (U0/I_NO_D.U_ILA/U_TRIG/U_TM/G_NMU[0].U_M/U_MU/I_MUT_GANDX.U_match/I_CS_GANDX.U_CS_GANDX_SRL/I_S6.U_CS_GANDX_SRL_S6/U_CS_GAND_SRL_S6/I_USE_RPM_EQ0.U_GAND_SRL_SET/I_WHOLE_SLICE.G_SLICE_IDX[7].U_GAND_SRL_SLICE_NO_RPM/muxcy_lo<1>)
+     MUXCY_L:CI->LO        1   0.023   0.000  U0/I_NO_D.U_ILA/U_TRIG/U_TM/G_NMU[0].U_M/U_MU/I_MUT_GANDX.U_match/I_CS_GANDX.U_CS_GANDX_SRL/I_S6.U_CS_GANDX_SRL_S6/U_CS_GAND_SRL_S6/I_USE_RPM_EQ0.U_GAND_SRL_SET/I_WHOLE_SLICE.G_SLICE_IDX[7].U_GAND_SRL_SLICE_NO_RPM/U_MUXC (U0/I_NO_D.U_ILA/U_TRIG/U_TM/G_NMU[0].U_M/U_MU/I_MUT_GANDX.U_match/I_CS_GANDX.U_CS_GANDX_SRL/I_S6.U_CS_GANDX_SRL_S6/U_CS_GAND_SRL_S6/I_USE_RPM_EQ0.U_GAND_SRL_SET/I_WHOLE_SLICE.G_SLICE_IDX[7].U_GAND_SRL_SLICE_NO_RPM/muxcy_lo<2>)
+     MUXCY_L:CI->LO        1   0.023   0.000  U0/I_NO_D.U_ILA/U_TRIG/U_TM/G_NMU[0].U_M/U_MU/I_MUT_GANDX.U_match/I_CS_GANDX.U_CS_GANDX_SRL/I_S6.U_CS_GANDX_SRL_S6/U_CS_GAND_SRL_S6/I_USE_RPM_EQ0.U_GAND_SRL_SET/I_WHOLE_SLICE.G_SLICE_IDX[7].U_GAND_SRL_SLICE_NO_RPM/U_MUXD (U0/I_NO_D.U_ILA/U_TRIG/U_TM/G_NMU[0].U_M/U_MU/I_MUT_GANDX.U_match/I_CS_GANDX.U_CS_GANDX_SRL/I_S6.U_CS_GANDX_SRL_S6/U_CS_GAND_SRL_S6/I_USE_RPM_EQ0.U_GAND_SRL_SET/gand_carry<8>)
+     MUXCY_L:CI->LO        1   0.023   0.000  U0/I_NO_D.U_ILA/U_TRIG/U_TM/G_NMU[0].U_M/U_MU/I_MUT_GANDX.U_match/I_CS_GANDX.U_CS_GANDX_SRL/I_S6.U_CS_GANDX_SRL_S6/U_CS_GAND_SRL_S6/I_USE_RPM_EQ0.U_GAND_SRL_SET/I_WHOLE_SLICE.G_SLICE_IDX[8].U_GAND_SRL_SLICE_NO_RPM/U_MUXA (U0/I_NO_D.U_ILA/U_TRIG/U_TM/G_NMU[0].U_M/U_MU/I_MUT_GANDX.U_match/I_CS_GANDX.U_CS_GANDX_SRL/I_S6.U_CS_GANDX_SRL_S6/U_CS_GAND_SRL_S6/I_USE_RPM_EQ0.U_GAND_SRL_SET/I_WHOLE_SLICE.G_SLICE_IDX[8].U_GAND_SRL_SLICE_NO_RPM/muxcy_lo<0>)
+     MUXCY_L:CI->LO        1   0.023   0.000  U0/I_NO_D.U_ILA/U_TRIG/U_TM/G_NMU[0].U_M/U_MU/I_MUT_GANDX.U_match/I_CS_GANDX.U_CS_GANDX_SRL/I_S6.U_CS_GANDX_SRL_S6/U_CS_GAND_SRL_S6/I_USE_RPM_EQ0.U_GAND_SRL_SET/I_WHOLE_SLICE.G_SLICE_IDX[8].U_GAND_SRL_SLICE_NO_RPM/U_MUXB (U0/I_NO_D.U_ILA/U_TRIG/U_TM/G_NMU[0].U_M/U_MU/I_MUT_GANDX.U_match/I_CS_GANDX.U_CS_GANDX_SRL/I_S6.U_CS_GANDX_SRL_S6/U_CS_GAND_SRL_S6/I_USE_RPM_EQ0.U_GAND_SRL_SET/I_WHOLE_SLICE.G_SLICE_IDX[8].U_GAND_SRL_SLICE_NO_RPM/muxcy_lo<1>)
+     MUXCY_L:CI->LO        1   0.023   0.000  U0/I_NO_D.U_ILA/U_TRIG/U_TM/G_NMU[0].U_M/U_MU/I_MUT_GANDX.U_match/I_CS_GANDX.U_CS_GANDX_SRL/I_S6.U_CS_GANDX_SRL_S6/U_CS_GAND_SRL_S6/I_USE_RPM_EQ0.U_GAND_SRL_SET/I_WHOLE_SLICE.G_SLICE_IDX[8].U_GAND_SRL_SLICE_NO_RPM/U_MUXC (U0/I_NO_D.U_ILA/U_TRIG/U_TM/G_NMU[0].U_M/U_MU/I_MUT_GANDX.U_match/I_CS_GANDX.U_CS_GANDX_SRL/I_S6.U_CS_GANDX_SRL_S6/U_CS_GAND_SRL_S6/I_USE_RPM_EQ0.U_GAND_SRL_SET/I_WHOLE_SLICE.G_SLICE_IDX[8].U_GAND_SRL_SLICE_NO_RPM/muxcy_lo<2>)
+     MUXCY_L:CI->LO        1   0.023   0.000  U0/I_NO_D.U_ILA/U_TRIG/U_TM/G_NMU[0].U_M/U_MU/I_MUT_GANDX.U_match/I_CS_GANDX.U_CS_GANDX_SRL/I_S6.U_CS_GANDX_SRL_S6/U_CS_GAND_SRL_S6/I_USE_RPM_EQ0.U_GAND_SRL_SET/I_WHOLE_SLICE.G_SLICE_IDX[8].U_GAND_SRL_SLICE_NO_RPM/U_MUXD (U0/I_NO_D.U_ILA/U_TRIG/U_TM/G_NMU[0].U_M/U_MU/I_MUT_GANDX.U_match/I_CS_GANDX.U_CS_GANDX_SRL/I_S6.U_CS_GANDX_SRL_S6/U_CS_GAND_SRL_S6/I_USE_RPM_EQ0.U_GAND_SRL_SET/gand_carry<9>)
+     MUXCY_L:CI->LO        1   0.023   0.000  U0/I_NO_D.U_ILA/U_TRIG/U_TM/G_NMU[0].U_M/U_MU/I_MUT_GANDX.U_match/I_CS_GANDX.U_CS_GANDX_SRL/I_S6.U_CS_GANDX_SRL_S6/U_CS_GAND_SRL_S6/I_USE_RPM_EQ0.U_GAND_SRL_SET/I_WHOLE_SLICE.G_SLICE_IDX[9].U_GAND_SRL_SLICE_NO_RPM/U_MUXA (U0/I_NO_D.U_ILA/U_TRIG/U_TM/G_NMU[0].U_M/U_MU/I_MUT_GANDX.U_match/I_CS_GANDX.U_CS_GANDX_SRL/I_S6.U_CS_GANDX_SRL_S6/U_CS_GAND_SRL_S6/I_USE_RPM_EQ0.U_GAND_SRL_SET/I_WHOLE_SLICE.G_SLICE_IDX[9].U_GAND_SRL_SLICE_NO_RPM/muxcy_lo<0>)
+     MUXCY_L:CI->LO        1   0.023   0.000  U0/I_NO_D.U_ILA/U_TRIG/U_TM/G_NMU[0].U_M/U_MU/I_MUT_GANDX.U_match/I_CS_GANDX.U_CS_GANDX_SRL/I_S6.U_CS_GANDX_SRL_S6/U_CS_GAND_SRL_S6/I_USE_RPM_EQ0.U_GAND_SRL_SET/I_WHOLE_SLICE.G_SLICE_IDX[9].U_GAND_SRL_SLICE_NO_RPM/U_MUXB (U0/I_NO_D.U_ILA/U_TRIG/U_TM/G_NMU[0].U_M/U_MU/I_MUT_GANDX.U_match/I_CS_GANDX.U_CS_GANDX_SRL/I_S6.U_CS_GANDX_SRL_S6/U_CS_GAND_SRL_S6/I_USE_RPM_EQ0.U_GAND_SRL_SET/I_WHOLE_SLICE.G_SLICE_IDX[9].U_GAND_SRL_SLICE_NO_RPM/muxcy_lo<1>)
+     MUXCY_L:CI->LO        1   0.023   0.000  U0/I_NO_D.U_ILA/U_TRIG/U_TM/G_NMU[0].U_M/U_MU/I_MUT_GANDX.U_match/I_CS_GANDX.U_CS_GANDX_SRL/I_S6.U_CS_GANDX_SRL_S6/U_CS_GAND_SRL_S6/I_USE_RPM_EQ0.U_GAND_SRL_SET/I_WHOLE_SLICE.G_SLICE_IDX[9].U_GAND_SRL_SLICE_NO_RPM/U_MUXC (U0/I_NO_D.U_ILA/U_TRIG/U_TM/G_NMU[0].U_M/U_MU/I_MUT_GANDX.U_match/I_CS_GANDX.U_CS_GANDX_SRL/I_S6.U_CS_GANDX_SRL_S6/U_CS_GAND_SRL_S6/I_USE_RPM_EQ0.U_GAND_SRL_SET/I_WHOLE_SLICE.G_SLICE_IDX[9].U_GAND_SRL_SLICE_NO_RPM/muxcy_lo<2>)
+     MUXCY_L:CI->LO        1   0.023   0.000  U0/I_NO_D.U_ILA/U_TRIG/U_TM/G_NMU[0].U_M/U_MU/I_MUT_GANDX.U_match/I_CS_GANDX.U_CS_GANDX_SRL/I_S6.U_CS_GANDX_SRL_S6/U_CS_GAND_SRL_S6/I_USE_RPM_EQ0.U_GAND_SRL_SET/I_WHOLE_SLICE.G_SLICE_IDX[9].U_GAND_SRL_SLICE_NO_RPM/U_MUXD (U0/I_NO_D.U_ILA/U_TRIG/U_TM/G_NMU[0].U_M/U_MU/I_MUT_GANDX.U_match/I_CS_GANDX.U_CS_GANDX_SRL/I_S6.U_CS_GANDX_SRL_S6/U_CS_GAND_SRL_S6/I_USE_RPM_EQ0.U_GAND_SRL_SET/gand_carry<10>)
+     MUXCY_L:CI->LO        1   0.023   0.000  U0/I_NO_D.U_ILA/U_TRIG/U_TM/G_NMU[0].U_M/U_MU/I_MUT_GANDX.U_match/I_CS_GANDX.U_CS_GANDX_SRL/I_S6.U_CS_GANDX_SRL_S6/U_CS_GAND_SRL_S6/I_USE_RPM_EQ0.U_GAND_SRL_SET/I_WHOLE_SLICE.G_SLICE_IDX[10].U_GAND_SRL_SLICE_NO_RPM/U_MUXA (U0/I_NO_D.U_ILA/U_TRIG/U_TM/G_NMU[0].U_M/U_MU/I_MUT_GANDX.U_match/I_CS_GANDX.U_CS_GANDX_SRL/I_S6.U_CS_GANDX_SRL_S6/U_CS_GAND_SRL_S6/I_USE_RPM_EQ0.U_GAND_SRL_SET/I_WHOLE_SLICE.G_SLICE_IDX[10].U_GAND_SRL_SLICE_NO_RPM/muxcy_lo<0>)
+     MUXCY_L:CI->LO        1   0.023   0.000  U0/I_NO_D.U_ILA/U_TRIG/U_TM/G_NMU[0].U_M/U_MU/I_MUT_GANDX.U_match/I_CS_GANDX.U_CS_GANDX_SRL/I_S6.U_CS_GANDX_SRL_S6/U_CS_GAND_SRL_S6/I_USE_RPM_EQ0.U_GAND_SRL_SET/I_WHOLE_SLICE.G_SLICE_IDX[10].U_GAND_SRL_SLICE_NO_RPM/U_MUXB (U0/I_NO_D.U_ILA/U_TRIG/U_TM/G_NMU[0].U_M/U_MU/I_MUT_GANDX.U_match/I_CS_GANDX.U_CS_GANDX_SRL/I_S6.U_CS_GANDX_SRL_S6/U_CS_GAND_SRL_S6/I_USE_RPM_EQ0.U_GAND_SRL_SET/I_WHOLE_SLICE.G_SLICE_IDX[10].U_GAND_SRL_SLICE_NO_RPM/muxcy_lo<1>)
+     MUXCY_L:CI->LO        1   0.023   0.000  U0/I_NO_D.U_ILA/U_TRIG/U_TM/G_NMU[0].U_M/U_MU/I_MUT_GANDX.U_match/I_CS_GANDX.U_CS_GANDX_SRL/I_S6.U_CS_GANDX_SRL_S6/U_CS_GAND_SRL_S6/I_USE_RPM_EQ0.U_GAND_SRL_SET/I_WHOLE_SLICE.G_SLICE_IDX[10].U_GAND_SRL_SLICE_NO_RPM/U_MUXC (U0/I_NO_D.U_ILA/U_TRIG/U_TM/G_NMU[0].U_M/U_MU/I_MUT_GANDX.U_match/I_CS_GANDX.U_CS_GANDX_SRL/I_S6.U_CS_GANDX_SRL_S6/U_CS_GAND_SRL_S6/I_USE_RPM_EQ0.U_GAND_SRL_SET/I_WHOLE_SLICE.G_SLICE_IDX[10].U_GAND_SRL_SLICE_NO_RPM/muxcy_lo<2>)
+     MUXCY_L:CI->LO        1   0.023   0.000  U0/I_NO_D.U_ILA/U_TRIG/U_TM/G_NMU[0].U_M/U_MU/I_MUT_GANDX.U_match/I_CS_GANDX.U_CS_GANDX_SRL/I_S6.U_CS_GANDX_SRL_S6/U_CS_GAND_SRL_S6/I_USE_RPM_EQ0.U_GAND_SRL_SET/I_WHOLE_SLICE.G_SLICE_IDX[10].U_GAND_SRL_SLICE_NO_RPM/U_MUXD (U0/I_NO_D.U_ILA/U_TRIG/U_TM/G_NMU[0].U_M/U_MU/I_MUT_GANDX.U_match/I_CS_GANDX.U_CS_GANDX_SRL/I_S6.U_CS_GANDX_SRL_S6/U_CS_GAND_SRL_S6/I_USE_RPM_EQ0.U_GAND_SRL_SET/gand_carry<11>)
+     MUXCY_L:CI->LO        1   0.023   0.000  U0/I_NO_D.U_ILA/U_TRIG/U_TM/G_NMU[0].U_M/U_MU/I_MUT_GANDX.U_match/I_CS_GANDX.U_CS_GANDX_SRL/I_S6.U_CS_GANDX_SRL_S6/U_CS_GAND_SRL_S6/I_USE_RPM_EQ0.U_GAND_SRL_SET/I_WHOLE_SLICE.G_SLICE_IDX[11].U_GAND_SRL_SLICE_NO_RPM/U_MUXA (U0/I_NO_D.U_ILA/U_TRIG/U_TM/G_NMU[0].U_M/U_MU/I_MUT_GANDX.U_match/I_CS_GANDX.U_CS_GANDX_SRL/I_S6.U_CS_GANDX_SRL_S6/U_CS_GAND_SRL_S6/I_USE_RPM_EQ0.U_GAND_SRL_SET/I_WHOLE_SLICE.G_SLICE_IDX[11].U_GAND_SRL_SLICE_NO_RPM/muxcy_lo<0>)
+     MUXCY_L:CI->LO        1   0.023   0.000  U0/I_NO_D.U_ILA/U_TRIG/U_TM/G_NMU[0].U_M/U_MU/I_MUT_GANDX.U_match/I_CS_GANDX.U_CS_GANDX_SRL/I_S6.U_CS_GANDX_SRL_S6/U_CS_GAND_SRL_S6/I_USE_RPM_EQ0.U_GAND_SRL_SET/I_WHOLE_SLICE.G_SLICE_IDX[11].U_GAND_SRL_SLICE_NO_RPM/U_MUXB (U0/I_NO_D.U_ILA/U_TRIG/U_TM/G_NMU[0].U_M/U_MU/I_MUT_GANDX.U_match/I_CS_GANDX.U_CS_GANDX_SRL/I_S6.U_CS_GANDX_SRL_S6/U_CS_GAND_SRL_S6/I_USE_RPM_EQ0.U_GAND_SRL_SET/I_WHOLE_SLICE.G_SLICE_IDX[11].U_GAND_SRL_SLICE_NO_RPM/muxcy_lo<1>)
+     MUXCY_L:CI->LO        1   0.023   0.000  U0/I_NO_D.U_ILA/U_TRIG/U_TM/G_NMU[0].U_M/U_MU/I_MUT_GANDX.U_match/I_CS_GANDX.U_CS_GANDX_SRL/I_S6.U_CS_GANDX_SRL_S6/U_CS_GAND_SRL_S6/I_USE_RPM_EQ0.U_GAND_SRL_SET/I_WHOLE_SLICE.G_SLICE_IDX[11].U_GAND_SRL_SLICE_NO_RPM/U_MUXC (U0/I_NO_D.U_ILA/U_TRIG/U_TM/G_NMU[0].U_M/U_MU/I_MUT_GANDX.U_match/I_CS_GANDX.U_CS_GANDX_SRL/I_S6.U_CS_GANDX_SRL_S6/U_CS_GAND_SRL_S6/I_USE_RPM_EQ0.U_GAND_SRL_SET/I_WHOLE_SLICE.G_SLICE_IDX[11].U_GAND_SRL_SLICE_NO_RPM/muxcy_lo<2>)
+     MUXCY_L:CI->LO        1   0.023   0.000  U0/I_NO_D.U_ILA/U_TRIG/U_TM/G_NMU[0].U_M/U_MU/I_MUT_GANDX.U_match/I_CS_GANDX.U_CS_GANDX_SRL/I_S6.U_CS_GANDX_SRL_S6/U_CS_GAND_SRL_S6/I_USE_RPM_EQ0.U_GAND_SRL_SET/I_WHOLE_SLICE.G_SLICE_IDX[11].U_GAND_SRL_SLICE_NO_RPM/U_MUXD (U0/I_NO_D.U_ILA/U_TRIG/U_TM/G_NMU[0].U_M/U_MU/I_MUT_GANDX.U_match/I_CS_GANDX.U_CS_GANDX_SRL/I_S6.U_CS_GANDX_SRL_S6/U_CS_GAND_SRL_S6/I_USE_RPM_EQ0.U_GAND_SRL_SET/gand_carry<12>)
+     MUXCY_L:CI->LO        1   0.023   0.000  U0/I_NO_D.U_ILA/U_TRIG/U_TM/G_NMU[0].U_M/U_MU/I_MUT_GANDX.U_match/I_CS_GANDX.U_CS_GANDX_SRL/I_S6.U_CS_GANDX_SRL_S6/U_CS_GAND_SRL_S6/I_USE_RPM_EQ0.U_GAND_SRL_SET/I_WHOLE_SLICE.G_SLICE_IDX[12].U_GAND_SRL_SLICE_NO_RPM/U_MUXA (U0/I_NO_D.U_ILA/U_TRIG/U_TM/G_NMU[0].U_M/U_MU/I_MUT_GANDX.U_match/I_CS_GANDX.U_CS_GANDX_SRL/I_S6.U_CS_GANDX_SRL_S6/U_CS_GAND_SRL_S6/I_USE_RPM_EQ0.U_GAND_SRL_SET/I_WHOLE_SLICE.G_SLICE_IDX[12].U_GAND_SRL_SLICE_NO_RPM/muxcy_lo<0>)
+     MUXCY_L:CI->LO        1   0.023   0.000  U0/I_NO_D.U_ILA/U_TRIG/U_TM/G_NMU[0].U_M/U_MU/I_MUT_GANDX.U_match/I_CS_GANDX.U_CS_GANDX_SRL/I_S6.U_CS_GANDX_SRL_S6/U_CS_GAND_SRL_S6/I_USE_RPM_EQ0.U_GAND_SRL_SET/I_WHOLE_SLICE.G_SLICE_IDX[12].U_GAND_SRL_SLICE_NO_RPM/U_MUXB (U0/I_NO_D.U_ILA/U_TRIG/U_TM/G_NMU[0].U_M/U_MU/I_MUT_GANDX.U_match/I_CS_GANDX.U_CS_GANDX_SRL/I_S6.U_CS_GANDX_SRL_S6/U_CS_GAND_SRL_S6/I_USE_RPM_EQ0.U_GAND_SRL_SET/I_WHOLE_SLICE.G_SLICE_IDX[12].U_GAND_SRL_SLICE_NO_RPM/muxcy_lo<1>)
+     MUXCY_L:CI->LO        1   0.023   0.000  U0/I_NO_D.U_ILA/U_TRIG/U_TM/G_NMU[0].U_M/U_MU/I_MUT_GANDX.U_match/I_CS_GANDX.U_CS_GANDX_SRL/I_S6.U_CS_GANDX_SRL_S6/U_CS_GAND_SRL_S6/I_USE_RPM_EQ0.U_GAND_SRL_SET/I_WHOLE_SLICE.G_SLICE_IDX[12].U_GAND_SRL_SLICE_NO_RPM/U_MUXC (U0/I_NO_D.U_ILA/U_TRIG/U_TM/G_NMU[0].U_M/U_MU/I_MUT_GANDX.U_match/I_CS_GANDX.U_CS_GANDX_SRL/I_S6.U_CS_GANDX_SRL_S6/U_CS_GAND_SRL_S6/I_USE_RPM_EQ0.U_GAND_SRL_SET/I_WHOLE_SLICE.G_SLICE_IDX[12].U_GAND_SRL_SLICE_NO_RPM/muxcy_lo<2>)
+     MUXCY_L:CI->LO        1   0.023   0.000  U0/I_NO_D.U_ILA/U_TRIG/U_TM/G_NMU[0].U_M/U_MU/I_MUT_GANDX.U_match/I_CS_GANDX.U_CS_GANDX_SRL/I_S6.U_CS_GANDX_SRL_S6/U_CS_GAND_SRL_S6/I_USE_RPM_EQ0.U_GAND_SRL_SET/I_WHOLE_SLICE.G_SLICE_IDX[12].U_GAND_SRL_SLICE_NO_RPM/U_MUXD (U0/I_NO_D.U_ILA/U_TRIG/U_TM/G_NMU[0].U_M/U_MU/I_MUT_GANDX.U_match/I_CS_GANDX.U_CS_GANDX_SRL/I_S6.U_CS_GANDX_SRL_S6/U_CS_GAND_SRL_S6/I_USE_RPM_EQ0.U_GAND_SRL_SET/gand_carry<13>)
+     MUXCY_L:CI->LO        1   0.023   0.000  U0/I_NO_D.U_ILA/U_TRIG/U_TM/G_NMU[0].U_M/U_MU/I_MUT_GANDX.U_match/I_CS_GANDX.U_CS_GANDX_SRL/I_S6.U_CS_GANDX_SRL_S6/U_CS_GAND_SRL_S6/I_USE_RPM_EQ0.U_GAND_SRL_SET/I_WHOLE_SLICE.G_SLICE_IDX[13].U_GAND_SRL_SLICE_NO_RPM/U_MUXA (U0/I_NO_D.U_ILA/U_TRIG/U_TM/G_NMU[0].U_M/U_MU/I_MUT_GANDX.U_match/I_CS_GANDX.U_CS_GANDX_SRL/I_S6.U_CS_GANDX_SRL_S6/U_CS_GAND_SRL_S6/I_USE_RPM_EQ0.U_GAND_SRL_SET/I_WHOLE_SLICE.G_SLICE_IDX[13].U_GAND_SRL_SLICE_NO_RPM/muxcy_lo<0>)
+     MUXCY_L:CI->LO        1   0.023   0.000  U0/I_NO_D.U_ILA/U_TRIG/U_TM/G_NMU[0].U_M/U_MU/I_MUT_GANDX.U_match/I_CS_GANDX.U_CS_GANDX_SRL/I_S6.U_CS_GANDX_SRL_S6/U_CS_GAND_SRL_S6/I_USE_RPM_EQ0.U_GAND_SRL_SET/I_WHOLE_SLICE.G_SLICE_IDX[13].U_GAND_SRL_SLICE_NO_RPM/U_MUXB (U0/I_NO_D.U_ILA/U_TRIG/U_TM/G_NMU[0].U_M/U_MU/I_MUT_GANDX.U_match/I_CS_GANDX.U_CS_GANDX_SRL/I_S6.U_CS_GANDX_SRL_S6/U_CS_GAND_SRL_S6/I_USE_RPM_EQ0.U_GAND_SRL_SET/I_WHOLE_SLICE.G_SLICE_IDX[13].U_GAND_SRL_SLICE_NO_RPM/muxcy_lo<1>)
+     MUXCY_L:CI->LO        1   0.023   0.000  U0/I_NO_D.U_ILA/U_TRIG/U_TM/G_NMU[0].U_M/U_MU/I_MUT_GANDX.U_match/I_CS_GANDX.U_CS_GANDX_SRL/I_S6.U_CS_GANDX_SRL_S6/U_CS_GAND_SRL_S6/I_USE_RPM_EQ0.U_GAND_SRL_SET/I_WHOLE_SLICE.G_SLICE_IDX[13].U_GAND_SRL_SLICE_NO_RPM/U_MUXC (U0/I_NO_D.U_ILA/U_TRIG/U_TM/G_NMU[0].U_M/U_MU/I_MUT_GANDX.U_match/I_CS_GANDX.U_CS_GANDX_SRL/I_S6.U_CS_GANDX_SRL_S6/U_CS_GAND_SRL_S6/I_USE_RPM_EQ0.U_GAND_SRL_SET/I_WHOLE_SLICE.G_SLICE_IDX[13].U_GAND_SRL_SLICE_NO_RPM/muxcy_lo<2>)
+     MUXCY_L:CI->LO        1   0.023   0.000  U0/I_NO_D.U_ILA/U_TRIG/U_TM/G_NMU[0].U_M/U_MU/I_MUT_GANDX.U_match/I_CS_GANDX.U_CS_GANDX_SRL/I_S6.U_CS_GANDX_SRL_S6/U_CS_GAND_SRL_S6/I_USE_RPM_EQ0.U_GAND_SRL_SET/I_WHOLE_SLICE.G_SLICE_IDX[13].U_GAND_SRL_SLICE_NO_RPM/U_MUXD (U0/I_NO_D.U_ILA/U_TRIG/U_TM/G_NMU[0].U_M/U_MU/I_MUT_GANDX.U_match/I_CS_GANDX.U_CS_GANDX_SRL/I_S6.U_CS_GANDX_SRL_S6/U_CS_GAND_SRL_S6/I_USE_RPM_EQ0.U_GAND_SRL_SET/gand_carry<14>)
+     MUXCY_L:CI->LO        1   0.023   0.000  U0/I_NO_D.U_ILA/U_TRIG/U_TM/G_NMU[0].U_M/U_MU/I_MUT_GANDX.U_match/I_CS_GANDX.U_CS_GANDX_SRL/I_S6.U_CS_GANDX_SRL_S6/U_CS_GAND_SRL_S6/I_USE_RPM_EQ0.U_GAND_SRL_SET/I_WHOLE_SLICE.G_SLICE_IDX[14].U_GAND_SRL_SLICE_NO_RPM/U_MUXA (U0/I_NO_D.U_ILA/U_TRIG/U_TM/G_NMU[0].U_M/U_MU/I_MUT_GANDX.U_match/I_CS_GANDX.U_CS_GANDX_SRL/I_S6.U_CS_GANDX_SRL_S6/U_CS_GAND_SRL_S6/I_USE_RPM_EQ0.U_GAND_SRL_SET/I_WHOLE_SLICE.G_SLICE_IDX[14].U_GAND_SRL_SLICE_NO_RPM/muxcy_lo<0>)
+     MUXCY_L:CI->LO        1   0.023   0.000  U0/I_NO_D.U_ILA/U_TRIG/U_TM/G_NMU[0].U_M/U_MU/I_MUT_GANDX.U_match/I_CS_GANDX.U_CS_GANDX_SRL/I_S6.U_CS_GANDX_SRL_S6/U_CS_GAND_SRL_S6/I_USE_RPM_EQ0.U_GAND_SRL_SET/I_WHOLE_SLICE.G_SLICE_IDX[14].U_GAND_SRL_SLICE_NO_RPM/U_MUXB (U0/I_NO_D.U_ILA/U_TRIG/U_TM/G_NMU[0].U_M/U_MU/I_MUT_GANDX.U_match/I_CS_GANDX.U_CS_GANDX_SRL/I_S6.U_CS_GANDX_SRL_S6/U_CS_GAND_SRL_S6/I_USE_RPM_EQ0.U_GAND_SRL_SET/I_WHOLE_SLICE.G_SLICE_IDX[14].U_GAND_SRL_SLICE_NO_RPM/muxcy_lo<1>)
+     MUXCY_L:CI->LO        1   0.023   0.000  U0/I_NO_D.U_ILA/U_TRIG/U_TM/G_NMU[0].U_M/U_MU/I_MUT_GANDX.U_match/I_CS_GANDX.U_CS_GANDX_SRL/I_S6.U_CS_GANDX_SRL_S6/U_CS_GAND_SRL_S6/I_USE_RPM_EQ0.U_GAND_SRL_SET/I_WHOLE_SLICE.G_SLICE_IDX[14].U_GAND_SRL_SLICE_NO_RPM/U_MUXC (U0/I_NO_D.U_ILA/U_TRIG/U_TM/G_NMU[0].U_M/U_MU/I_MUT_GANDX.U_match/I_CS_GANDX.U_CS_GANDX_SRL/I_S6.U_CS_GANDX_SRL_S6/U_CS_GAND_SRL_S6/I_USE_RPM_EQ0.U_GAND_SRL_SET/I_WHOLE_SLICE.G_SLICE_IDX[14].U_GAND_SRL_SLICE_NO_RPM/muxcy_lo<2>)
+     MUXCY_L:CI->LO        1   0.023   0.000  U0/I_NO_D.U_ILA/U_TRIG/U_TM/G_NMU[0].U_M/U_MU/I_MUT_GANDX.U_match/I_CS_GANDX.U_CS_GANDX_SRL/I_S6.U_CS_GANDX_SRL_S6/U_CS_GAND_SRL_S6/I_USE_RPM_EQ0.U_GAND_SRL_SET/I_WHOLE_SLICE.G_SLICE_IDX[14].U_GAND_SRL_SLICE_NO_RPM/U_MUXD (U0/I_NO_D.U_ILA/U_TRIG/U_TM/G_NMU[0].U_M/U_MU/I_MUT_GANDX.U_match/I_CS_GANDX.U_CS_GANDX_SRL/I_S6.U_CS_GANDX_SRL_S6/U_CS_GAND_SRL_S6/I_USE_RPM_EQ0.U_GAND_SRL_SET/gand_carry<15>)
+     MUXCY_L:CI->LO        1   0.023   0.000  U0/I_NO_D.U_ILA/U_TRIG/U_TM/G_NMU[0].U_M/U_MU/I_MUT_GANDX.U_match/I_CS_GANDX.U_CS_GANDX_SRL/I_S6.U_CS_GANDX_SRL_S6/U_CS_GAND_SRL_S6/I_USE_RPM_EQ0.U_GAND_SRL_SET/I_WHOLE_SLICE.G_SLICE_IDX[15].U_GAND_SRL_SLICE_NO_RPM/U_MUXA (U0/I_NO_D.U_ILA/U_TRIG/U_TM/G_NMU[0].U_M/U_MU/I_MUT_GANDX.U_match/I_CS_GANDX.U_CS_GANDX_SRL/I_S6.U_CS_GANDX_SRL_S6/U_CS_GAND_SRL_S6/I_USE_RPM_EQ0.U_GAND_SRL_SET/I_WHOLE_SLICE.G_SLICE_IDX[15].U_GAND_SRL_SLICE_NO_RPM/muxcy_lo<0>)
+     MUXCY_L:CI->LO        1   0.023   0.000  U0/I_NO_D.U_ILA/U_TRIG/U_TM/G_NMU[0].U_M/U_MU/I_MUT_GANDX.U_match/I_CS_GANDX.U_CS_GANDX_SRL/I_S6.U_CS_GANDX_SRL_S6/U_CS_GAND_SRL_S6/I_USE_RPM_EQ0.U_GAND_SRL_SET/I_WHOLE_SLICE.G_SLICE_IDX[15].U_GAND_SRL_SLICE_NO_RPM/U_MUXB (U0/I_NO_D.U_ILA/U_TRIG/U_TM/G_NMU[0].U_M/U_MU/I_MUT_GANDX.U_match/I_CS_GANDX.U_CS_GANDX_SRL/I_S6.U_CS_GANDX_SRL_S6/U_CS_GAND_SRL_S6/I_USE_RPM_EQ0.U_GAND_SRL_SET/I_WHOLE_SLICE.G_SLICE_IDX[15].U_GAND_SRL_SLICE_NO_RPM/muxcy_lo<1>)
+     MUXCY_L:CI->LO        1   0.023   0.000  U0/I_NO_D.U_ILA/U_TRIG/U_TM/G_NMU[0].U_M/U_MU/I_MUT_GANDX.U_match/I_CS_GANDX.U_CS_GANDX_SRL/I_S6.U_CS_GANDX_SRL_S6/U_CS_GAND_SRL_S6/I_USE_RPM_EQ0.U_GAND_SRL_SET/I_WHOLE_SLICE.G_SLICE_IDX[15].U_GAND_SRL_SLICE_NO_RPM/U_MUXC (U0/I_NO_D.U_ILA/U_TRIG/U_TM/G_NMU[0].U_M/U_MU/I_MUT_GANDX.U_match/I_CS_GANDX.U_CS_GANDX_SRL/I_S6.U_CS_GANDX_SRL_S6/U_CS_GAND_SRL_S6/I_USE_RPM_EQ0.U_GAND_SRL_SET/I_WHOLE_SLICE.G_SLICE_IDX[15].U_GAND_SRL_SLICE_NO_RPM/muxcy_lo<2>)
+     MUXCY_L:CI->LO        1   0.023   0.000  U0/I_NO_D.U_ILA/U_TRIG/U_TM/G_NMU[0].U_M/U_MU/I_MUT_GANDX.U_match/I_CS_GANDX.U_CS_GANDX_SRL/I_S6.U_CS_GANDX_SRL_S6/U_CS_GAND_SRL_S6/I_USE_RPM_EQ0.U_GAND_SRL_SET/I_WHOLE_SLICE.G_SLICE_IDX[15].U_GAND_SRL_SLICE_NO_RPM/U_MUXD (U0/I_NO_D.U_ILA/U_TRIG/U_TM/G_NMU[0].U_M/U_MU/I_MUT_GANDX.U_match/I_CS_GANDX.U_CS_GANDX_SRL/I_S6.U_CS_GANDX_SRL_S6/U_CS_GAND_SRL_S6/I_USE_RPM_EQ0.U_GAND_SRL_SET/gand_carry<16>)
+     MUXCY_L:CI->LO        1   0.023   0.000  U0/I_NO_D.U_ILA/U_TRIG/U_TM/G_NMU[0].U_M/U_MU/I_MUT_GANDX.U_match/I_CS_GANDX.U_CS_GANDX_SRL/I_S6.U_CS_GANDX_SRL_S6/U_CS_GAND_SRL_S6/I_USE_RPM_EQ0.U_GAND_SRL_SET/I_WHOLE_SLICE.G_SLICE_IDX[16].U_GAND_SRL_SLICE_NO_RPM/U_MUXA (U0/I_NO_D.U_ILA/U_TRIG/U_TM/G_NMU[0].U_M/U_MU/I_MUT_GANDX.U_match/I_CS_GANDX.U_CS_GANDX_SRL/I_S6.U_CS_GANDX_SRL_S6/U_CS_GAND_SRL_S6/I_USE_RPM_EQ0.U_GAND_SRL_SET/I_WHOLE_SLICE.G_SLICE_IDX[16].U_GAND_SRL_SLICE_NO_RPM/muxcy_lo<0>)
+     MUXCY_L:CI->LO        1   0.023   0.000  U0/I_NO_D.U_ILA/U_TRIG/U_TM/G_NMU[0].U_M/U_MU/I_MUT_GANDX.U_match/I_CS_GANDX.U_CS_GANDX_SRL/I_S6.U_CS_GANDX_SRL_S6/U_CS_GAND_SRL_S6/I_USE_RPM_EQ0.U_GAND_SRL_SET/I_WHOLE_SLICE.G_SLICE_IDX[16].U_GAND_SRL_SLICE_NO_RPM/U_MUXB (U0/I_NO_D.U_ILA/U_TRIG/U_TM/G_NMU[0].U_M/U_MU/I_MUT_GANDX.U_match/I_CS_GANDX.U_CS_GANDX_SRL/I_S6.U_CS_GANDX_SRL_S6/U_CS_GAND_SRL_S6/I_USE_RPM_EQ0.U_GAND_SRL_SET/I_WHOLE_SLICE.G_SLICE_IDX[16].U_GAND_SRL_SLICE_NO_RPM/muxcy_lo<1>)
+     MUXCY_L:CI->LO        1   0.023   0.000  U0/I_NO_D.U_ILA/U_TRIG/U_TM/G_NMU[0].U_M/U_MU/I_MUT_GANDX.U_match/I_CS_GANDX.U_CS_GANDX_SRL/I_S6.U_CS_GANDX_SRL_S6/U_CS_GAND_SRL_S6/I_USE_RPM_EQ0.U_GAND_SRL_SET/I_WHOLE_SLICE.G_SLICE_IDX[16].U_GAND_SRL_SLICE_NO_RPM/U_MUXC (U0/I_NO_D.U_ILA/U_TRIG/U_TM/G_NMU[0].U_M/U_MU/I_MUT_GANDX.U_match/I_CS_GANDX.U_CS_GANDX_SRL/I_S6.U_CS_GANDX_SRL_S6/U_CS_GAND_SRL_S6/I_USE_RPM_EQ0.U_GAND_SRL_SET/I_WHOLE_SLICE.G_SLICE_IDX[16].U_GAND_SRL_SLICE_NO_RPM/muxcy_lo<2>)
+     MUXCY_L:CI->LO        1   0.023   0.000  U0/I_NO_D.U_ILA/U_TRIG/U_TM/G_NMU[0].U_M/U_MU/I_MUT_GANDX.U_match/I_CS_GANDX.U_CS_GANDX_SRL/I_S6.U_CS_GANDX_SRL_S6/U_CS_GAND_SRL_S6/I_USE_RPM_EQ0.U_GAND_SRL_SET/I_WHOLE_SLICE.G_SLICE_IDX[16].U_GAND_SRL_SLICE_NO_RPM/U_MUXD (U0/I_NO_D.U_ILA/U_TRIG/U_TM/G_NMU[0].U_M/U_MU/I_MUT_GANDX.U_match/I_CS_GANDX.U_CS_GANDX_SRL/I_S6.U_CS_GANDX_SRL_S6/U_CS_GAND_SRL_S6/I_USE_RPM_EQ0.U_GAND_SRL_SET/gand_carry<17>)
+     MUXCY_L:CI->LO        1   0.023   0.000  U0/I_NO_D.U_ILA/U_TRIG/U_TM/G_NMU[0].U_M/U_MU/I_MUT_GANDX.U_match/I_CS_GANDX.U_CS_GANDX_SRL/I_S6.U_CS_GANDX_SRL_S6/U_CS_GAND_SRL_S6/I_USE_RPM_EQ0.U_GAND_SRL_SET/I_WHOLE_SLICE.G_SLICE_IDX[17].U_GAND_SRL_SLICE_NO_RPM/U_MUXA (U0/I_NO_D.U_ILA/U_TRIG/U_TM/G_NMU[0].U_M/U_MU/I_MUT_GANDX.U_match/I_CS_GANDX.U_CS_GANDX_SRL/I_S6.U_CS_GANDX_SRL_S6/U_CS_GAND_SRL_S6/I_USE_RPM_EQ0.U_GAND_SRL_SET/I_WHOLE_SLICE.G_SLICE_IDX[17].U_GAND_SRL_SLICE_NO_RPM/muxcy_lo<0>)
+     MUXCY_L:CI->LO        1   0.023   0.000  U0/I_NO_D.U_ILA/U_TRIG/U_TM/G_NMU[0].U_M/U_MU/I_MUT_GANDX.U_match/I_CS_GANDX.U_CS_GANDX_SRL/I_S6.U_CS_GANDX_SRL_S6/U_CS_GAND_SRL_S6/I_USE_RPM_EQ0.U_GAND_SRL_SET/I_WHOLE_SLICE.G_SLICE_IDX[17].U_GAND_SRL_SLICE_NO_RPM/U_MUXB (U0/I_NO_D.U_ILA/U_TRIG/U_TM/G_NMU[0].U_M/U_MU/I_MUT_GANDX.U_match/I_CS_GANDX.U_CS_GANDX_SRL/I_S6.U_CS_GANDX_SRL_S6/U_CS_GAND_SRL_S6/I_USE_RPM_EQ0.U_GAND_SRL_SET/I_WHOLE_SLICE.G_SLICE_IDX[17].U_GAND_SRL_SLICE_NO_RPM/muxcy_lo<1>)
+     MUXCY_L:CI->LO        1   0.023   0.000  U0/I_NO_D.U_ILA/U_TRIG/U_TM/G_NMU[0].U_M/U_MU/I_MUT_GANDX.U_match/I_CS_GANDX.U_CS_GANDX_SRL/I_S6.U_CS_GANDX_SRL_S6/U_CS_GAND_SRL_S6/I_USE_RPM_EQ0.U_GAND_SRL_SET/I_WHOLE_SLICE.G_SLICE_IDX[17].U_GAND_SRL_SLICE_NO_RPM/U_MUXC (U0/I_NO_D.U_ILA/U_TRIG/U_TM/G_NMU[0].U_M/U_MU/I_MUT_GANDX.U_match/I_CS_GANDX.U_CS_GANDX_SRL/I_S6.U_CS_GANDX_SRL_S6/U_CS_GAND_SRL_S6/I_USE_RPM_EQ0.U_GAND_SRL_SET/I_WHOLE_SLICE.G_SLICE_IDX[17].U_GAND_SRL_SLICE_NO_RPM/muxcy_lo<2>)
+     MUXCY_L:CI->LO        1   0.023   0.000  U0/I_NO_D.U_ILA/U_TRIG/U_TM/G_NMU[0].U_M/U_MU/I_MUT_GANDX.U_match/I_CS_GANDX.U_CS_GANDX_SRL/I_S6.U_CS_GANDX_SRL_S6/U_CS_GAND_SRL_S6/I_USE_RPM_EQ0.U_GAND_SRL_SET/I_WHOLE_SLICE.G_SLICE_IDX[17].U_GAND_SRL_SLICE_NO_RPM/U_MUXD (U0/I_NO_D.U_ILA/U_TRIG/U_TM/G_NMU[0].U_M/U_MU/I_MUT_GANDX.U_match/I_CS_GANDX.U_CS_GANDX_SRL/I_S6.U_CS_GANDX_SRL_S6/U_CS_GAND_SRL_S6/I_USE_RPM_EQ0.U_GAND_SRL_SET/gand_carry<18>)
+     MUXCY_L:CI->LO        1   0.023   0.000  U0/I_NO_D.U_ILA/U_TRIG/U_TM/G_NMU[0].U_M/U_MU/I_MUT_GANDX.U_match/I_CS_GANDX.U_CS_GANDX_SRL/I_S6.U_CS_GANDX_SRL_S6/U_CS_GAND_SRL_S6/I_USE_RPM_EQ0.U_GAND_SRL_SET/I_WHOLE_SLICE.G_SLICE_IDX[18].U_GAND_SRL_SLICE_NO_RPM/U_MUXA (U0/I_NO_D.U_ILA/U_TRIG/U_TM/G_NMU[0].U_M/U_MU/I_MUT_GANDX.U_match/I_CS_GANDX.U_CS_GANDX_SRL/I_S6.U_CS_GANDX_SRL_S6/U_CS_GAND_SRL_S6/I_USE_RPM_EQ0.U_GAND_SRL_SET/I_WHOLE_SLICE.G_SLICE_IDX[18].U_GAND_SRL_SLICE_NO_RPM/muxcy_lo<0>)
+     MUXCY_L:CI->LO        1   0.023   0.000  U0/I_NO_D.U_ILA/U_TRIG/U_TM/G_NMU[0].U_M/U_MU/I_MUT_GANDX.U_match/I_CS_GANDX.U_CS_GANDX_SRL/I_S6.U_CS_GANDX_SRL_S6/U_CS_GAND_SRL_S6/I_USE_RPM_EQ0.U_GAND_SRL_SET/I_WHOLE_SLICE.G_SLICE_IDX[18].U_GAND_SRL_SLICE_NO_RPM/U_MUXB (U0/I_NO_D.U_ILA/U_TRIG/U_TM/G_NMU[0].U_M/U_MU/I_MUT_GANDX.U_match/I_CS_GANDX.U_CS_GANDX_SRL/I_S6.U_CS_GANDX_SRL_S6/U_CS_GAND_SRL_S6/I_USE_RPM_EQ0.U_GAND_SRL_SET/I_WHOLE_SLICE.G_SLICE_IDX[18].U_GAND_SRL_SLICE_NO_RPM/muxcy_lo<1>)
+     MUXCY_L:CI->LO        1   0.023   0.000  U0/I_NO_D.U_ILA/U_TRIG/U_TM/G_NMU[0].U_M/U_MU/I_MUT_GANDX.U_match/I_CS_GANDX.U_CS_GANDX_SRL/I_S6.U_CS_GANDX_SRL_S6/U_CS_GAND_SRL_S6/I_USE_RPM_EQ0.U_GAND_SRL_SET/I_WHOLE_SLICE.G_SLICE_IDX[18].U_GAND_SRL_SLICE_NO_RPM/U_MUXC (U0/I_NO_D.U_ILA/U_TRIG/U_TM/G_NMU[0].U_M/U_MU/I_MUT_GANDX.U_match/I_CS_GANDX.U_CS_GANDX_SRL/I_S6.U_CS_GANDX_SRL_S6/U_CS_GAND_SRL_S6/I_USE_RPM_EQ0.U_GAND_SRL_SET/I_WHOLE_SLICE.G_SLICE_IDX[18].U_GAND_SRL_SLICE_NO_RPM/muxcy_lo<2>)
+     MUXCY_L:CI->LO        1   0.023   0.000  U0/I_NO_D.U_ILA/U_TRIG/U_TM/G_NMU[0].U_M/U_MU/I_MUT_GANDX.U_match/I_CS_GANDX.U_CS_GANDX_SRL/I_S6.U_CS_GANDX_SRL_S6/U_CS_GAND_SRL_S6/I_USE_RPM_EQ0.U_GAND_SRL_SET/I_WHOLE_SLICE.G_SLICE_IDX[18].U_GAND_SRL_SLICE_NO_RPM/U_MUXD (U0/I_NO_D.U_ILA/U_TRIG/U_TM/G_NMU[0].U_M/U_MU/I_MUT_GANDX.U_match/I_CS_GANDX.U_CS_GANDX_SRL/I_S6.U_CS_GANDX_SRL_S6/U_CS_GAND_SRL_S6/I_USE_RPM_EQ0.U_GAND_SRL_SET/gand_carry<19>)
+     MUXCY_L:CI->LO        1   0.023   0.000  U0/I_NO_D.U_ILA/U_TRIG/U_TM/G_NMU[0].U_M/U_MU/I_MUT_GANDX.U_match/I_CS_GANDX.U_CS_GANDX_SRL/I_S6.U_CS_GANDX_SRL_S6/U_CS_GAND_SRL_S6/I_USE_RPM_EQ0.U_GAND_SRL_SET/I_WHOLE_SLICE.G_SLICE_IDX[19].U_GAND_SRL_SLICE_NO_RPM/U_MUXA (U0/I_NO_D.U_ILA/U_TRIG/U_TM/G_NMU[0].U_M/U_MU/I_MUT_GANDX.U_match/I_CS_GANDX.U_CS_GANDX_SRL/I_S6.U_CS_GANDX_SRL_S6/U_CS_GAND_SRL_S6/I_USE_RPM_EQ0.U_GAND_SRL_SET/I_WHOLE_SLICE.G_SLICE_IDX[19].U_GAND_SRL_SLICE_NO_RPM/muxcy_lo<0>)
+     MUXCY_L:CI->LO        1   0.023   0.000  U0/I_NO_D.U_ILA/U_TRIG/U_TM/G_NMU[0].U_M/U_MU/I_MUT_GANDX.U_match/I_CS_GANDX.U_CS_GANDX_SRL/I_S6.U_CS_GANDX_SRL_S6/U_CS_GAND_SRL_S6/I_USE_RPM_EQ0.U_GAND_SRL_SET/I_WHOLE_SLICE.G_SLICE_IDX[19].U_GAND_SRL_SLICE_NO_RPM/U_MUXB (U0/I_NO_D.U_ILA/U_TRIG/U_TM/G_NMU[0].U_M/U_MU/I_MUT_GANDX.U_match/I_CS_GANDX.U_CS_GANDX_SRL/I_S6.U_CS_GANDX_SRL_S6/U_CS_GAND_SRL_S6/I_USE_RPM_EQ0.U_GAND_SRL_SET/I_WHOLE_SLICE.G_SLICE_IDX[19].U_GAND_SRL_SLICE_NO_RPM/muxcy_lo<1>)
+     MUXCY_L:CI->LO        1   0.023   0.000  U0/I_NO_D.U_ILA/U_TRIG/U_TM/G_NMU[0].U_M/U_MU/I_MUT_GANDX.U_match/I_CS_GANDX.U_CS_GANDX_SRL/I_S6.U_CS_GANDX_SRL_S6/U_CS_GAND_SRL_S6/I_USE_RPM_EQ0.U_GAND_SRL_SET/I_WHOLE_SLICE.G_SLICE_IDX[19].U_GAND_SRL_SLICE_NO_RPM/U_MUXC (U0/I_NO_D.U_ILA/U_TRIG/U_TM/G_NMU[0].U_M/U_MU/I_MUT_GANDX.U_match/I_CS_GANDX.U_CS_GANDX_SRL/I_S6.U_CS_GANDX_SRL_S6/U_CS_GAND_SRL_S6/I_USE_RPM_EQ0.U_GAND_SRL_SET/I_WHOLE_SLICE.G_SLICE_IDX[19].U_GAND_SRL_SLICE_NO_RPM/muxcy_lo<2>)
+     MUXCY_L:CI->LO        1   0.023   0.000  U0/I_NO_D.U_ILA/U_TRIG/U_TM/G_NMU[0].U_M/U_MU/I_MUT_GANDX.U_match/I_CS_GANDX.U_CS_GANDX_SRL/I_S6.U_CS_GANDX_SRL_S6/U_CS_GAND_SRL_S6/I_USE_RPM_EQ0.U_GAND_SRL_SET/I_WHOLE_SLICE.G_SLICE_IDX[19].U_GAND_SRL_SLICE_NO_RPM/U_MUXD (U0/I_NO_D.U_ILA/U_TRIG/U_TM/G_NMU[0].U_M/U_MU/I_MUT_GANDX.U_match/I_CS_GANDX.U_CS_GANDX_SRL/I_S6.U_CS_GANDX_SRL_S6/U_CS_GAND_SRL_S6/I_USE_RPM_EQ0.U_GAND_SRL_SET/gand_carry<20>)
+     MUXCY_L:CI->LO        1   0.023   0.000  U0/I_NO_D.U_ILA/U_TRIG/U_TM/G_NMU[0].U_M/U_MU/I_MUT_GANDX.U_match/I_CS_GANDX.U_CS_GANDX_SRL/I_S6.U_CS_GANDX_SRL_S6/U_CS_GAND_SRL_S6/I_USE_RPM_EQ0.U_GAND_SRL_SET/I_WHOLE_SLICE.G_SLICE_IDX[20].U_GAND_SRL_SLICE_NO_RPM/U_MUXA (U0/I_NO_D.U_ILA/U_TRIG/U_TM/G_NMU[0].U_M/U_MU/I_MUT_GANDX.U_match/I_CS_GANDX.U_CS_GANDX_SRL/I_S6.U_CS_GANDX_SRL_S6/U_CS_GAND_SRL_S6/I_USE_RPM_EQ0.U_GAND_SRL_SET/I_WHOLE_SLICE.G_SLICE_IDX[20].U_GAND_SRL_SLICE_NO_RPM/muxcy_lo<0>)
+     MUXCY_L:CI->LO        1   0.023   0.000  U0/I_NO_D.U_ILA/U_TRIG/U_TM/G_NMU[0].U_M/U_MU/I_MUT_GANDX.U_match/I_CS_GANDX.U_CS_GANDX_SRL/I_S6.U_CS_GANDX_SRL_S6/U_CS_GAND_SRL_S6/I_USE_RPM_EQ0.U_GAND_SRL_SET/I_WHOLE_SLICE.G_SLICE_IDX[20].U_GAND_SRL_SLICE_NO_RPM/U_MUXB (U0/I_NO_D.U_ILA/U_TRIG/U_TM/G_NMU[0].U_M/U_MU/I_MUT_GANDX.U_match/I_CS_GANDX.U_CS_GANDX_SRL/I_S6.U_CS_GANDX_SRL_S6/U_CS_GAND_SRL_S6/I_USE_RPM_EQ0.U_GAND_SRL_SET/I_WHOLE_SLICE.G_SLICE_IDX[20].U_GAND_SRL_SLICE_NO_RPM/muxcy_lo<1>)
+     MUXCY_L:CI->LO        1   0.023   0.000  U0/I_NO_D.U_ILA/U_TRIG/U_TM/G_NMU[0].U_M/U_MU/I_MUT_GANDX.U_match/I_CS_GANDX.U_CS_GANDX_SRL/I_S6.U_CS_GANDX_SRL_S6/U_CS_GAND_SRL_S6/I_USE_RPM_EQ0.U_GAND_SRL_SET/I_WHOLE_SLICE.G_SLICE_IDX[20].U_GAND_SRL_SLICE_NO_RPM/U_MUXC (U0/I_NO_D.U_ILA/U_TRIG/U_TM/G_NMU[0].U_M/U_MU/I_MUT_GANDX.U_match/I_CS_GANDX.U_CS_GANDX_SRL/I_S6.U_CS_GANDX_SRL_S6/U_CS_GAND_SRL_S6/I_USE_RPM_EQ0.U_GAND_SRL_SET/I_WHOLE_SLICE.G_SLICE_IDX[20].U_GAND_SRL_SLICE_NO_RPM/muxcy_lo<2>)
+     MUXCY_L:CI->LO        1   0.023   0.000  U0/I_NO_D.U_ILA/U_TRIG/U_TM/G_NMU[0].U_M/U_MU/I_MUT_GANDX.U_match/I_CS_GANDX.U_CS_GANDX_SRL/I_S6.U_CS_GANDX_SRL_S6/U_CS_GAND_SRL_S6/I_USE_RPM_EQ0.U_GAND_SRL_SET/I_WHOLE_SLICE.G_SLICE_IDX[20].U_GAND_SRL_SLICE_NO_RPM/U_MUXD (U0/I_NO_D.U_ILA/U_TRIG/U_TM/G_NMU[0].U_M/U_MU/I_MUT_GANDX.U_match/I_CS_GANDX.U_CS_GANDX_SRL/I_S6.U_CS_GANDX_SRL_S6/U_CS_GAND_SRL_S6/I_USE_RPM_EQ0.U_GAND_SRL_SET/gand_carry<21>)
+     MUXCY_L:CI->LO        1   0.023   0.000  U0/I_NO_D.U_ILA/U_TRIG/U_TM/G_NMU[0].U_M/U_MU/I_MUT_GANDX.U_match/I_CS_GANDX.U_CS_GANDX_SRL/I_S6.U_CS_GANDX_SRL_S6/U_CS_GAND_SRL_S6/I_USE_RPM_EQ0.U_GAND_SRL_SET/I_WHOLE_SLICE.G_SLICE_IDX[21].U_GAND_SRL_SLICE_NO_RPM/U_MUXA (U0/I_NO_D.U_ILA/U_TRIG/U_TM/G_NMU[0].U_M/U_MU/I_MUT_GANDX.U_match/I_CS_GANDX.U_CS_GANDX_SRL/I_S6.U_CS_GANDX_SRL_S6/U_CS_GAND_SRL_S6/I_USE_RPM_EQ0.U_GAND_SRL_SET/I_WHOLE_SLICE.G_SLICE_IDX[21].U_GAND_SRL_SLICE_NO_RPM/muxcy_lo<0>)
+     MUXCY_L:CI->LO        1   0.023   0.000  U0/I_NO_D.U_ILA/U_TRIG/U_TM/G_NMU[0].U_M/U_MU/I_MUT_GANDX.U_match/I_CS_GANDX.U_CS_GANDX_SRL/I_S6.U_CS_GANDX_SRL_S6/U_CS_GAND_SRL_S6/I_USE_RPM_EQ0.U_GAND_SRL_SET/I_WHOLE_SLICE.G_SLICE_IDX[21].U_GAND_SRL_SLICE_NO_RPM/U_MUXB (U0/I_NO_D.U_ILA/U_TRIG/U_TM/G_NMU[0].U_M/U_MU/I_MUT_GANDX.U_match/I_CS_GANDX.U_CS_GANDX_SRL/I_S6.U_CS_GANDX_SRL_S6/U_CS_GAND_SRL_S6/I_USE_RPM_EQ0.U_GAND_SRL_SET/I_WHOLE_SLICE.G_SLICE_IDX[21].U_GAND_SRL_SLICE_NO_RPM/muxcy_lo<1>)
+     MUXCY_L:CI->LO        1   0.023   0.000  U0/I_NO_D.U_ILA/U_TRIG/U_TM/G_NMU[0].U_M/U_MU/I_MUT_GANDX.U_match/I_CS_GANDX.U_CS_GANDX_SRL/I_S6.U_CS_GANDX_SRL_S6/U_CS_GAND_SRL_S6/I_USE_RPM_EQ0.U_GAND_SRL_SET/I_WHOLE_SLICE.G_SLICE_IDX[21].U_GAND_SRL_SLICE_NO_RPM/U_MUXC (U0/I_NO_D.U_ILA/U_TRIG/U_TM/G_NMU[0].U_M/U_MU/I_MUT_GANDX.U_match/I_CS_GANDX.U_CS_GANDX_SRL/I_S6.U_CS_GANDX_SRL_S6/U_CS_GAND_SRL_S6/I_USE_RPM_EQ0.U_GAND_SRL_SET/I_WHOLE_SLICE.G_SLICE_IDX[21].U_GAND_SRL_SLICE_NO_RPM/muxcy_lo<2>)
+     MUXCY_L:CI->LO        1   0.023   0.000  U0/I_NO_D.U_ILA/U_TRIG/U_TM/G_NMU[0].U_M/U_MU/I_MUT_GANDX.U_match/I_CS_GANDX.U_CS_GANDX_SRL/I_S6.U_CS_GANDX_SRL_S6/U_CS_GAND_SRL_S6/I_USE_RPM_EQ0.U_GAND_SRL_SET/I_WHOLE_SLICE.G_SLICE_IDX[21].U_GAND_SRL_SLICE_NO_RPM/U_MUXD (U0/I_NO_D.U_ILA/U_TRIG/U_TM/G_NMU[0].U_M/U_MU/I_MUT_GANDX.U_match/I_CS_GANDX.U_CS_GANDX_SRL/I_S6.U_CS_GANDX_SRL_S6/U_CS_GAND_SRL_S6/I_USE_RPM_EQ0.U_GAND_SRL_SET/gand_carry<22>)
+     MUXCY_L:CI->LO        1   0.023   0.000  U0/I_NO_D.U_ILA/U_TRIG/U_TM/G_NMU[0].U_M/U_MU/I_MUT_GANDX.U_match/I_CS_GANDX.U_CS_GANDX_SRL/I_S6.U_CS_GANDX_SRL_S6/U_CS_GAND_SRL_S6/I_USE_RPM_EQ0.U_GAND_SRL_SET/I_WHOLE_SLICE.G_SLICE_IDX[22].U_GAND_SRL_SLICE_NO_RPM/U_MUXA (U0/I_NO_D.U_ILA/U_TRIG/U_TM/G_NMU[0].U_M/U_MU/I_MUT_GANDX.U_match/I_CS_GANDX.U_CS_GANDX_SRL/I_S6.U_CS_GANDX_SRL_S6/U_CS_GAND_SRL_S6/I_USE_RPM_EQ0.U_GAND_SRL_SET/I_WHOLE_SLICE.G_SLICE_IDX[22].U_GAND_SRL_SLICE_NO_RPM/muxcy_lo<0>)
+     MUXCY_L:CI->LO        1   0.023   0.000  U0/I_NO_D.U_ILA/U_TRIG/U_TM/G_NMU[0].U_M/U_MU/I_MUT_GANDX.U_match/I_CS_GANDX.U_CS_GANDX_SRL/I_S6.U_CS_GANDX_SRL_S6/U_CS_GAND_SRL_S6/I_USE_RPM_EQ0.U_GAND_SRL_SET/I_WHOLE_SLICE.G_SLICE_IDX[22].U_GAND_SRL_SLICE_NO_RPM/U_MUXB (U0/I_NO_D.U_ILA/U_TRIG/U_TM/G_NMU[0].U_M/U_MU/I_MUT_GANDX.U_match/I_CS_GANDX.U_CS_GANDX_SRL/I_S6.U_CS_GANDX_SRL_S6/U_CS_GAND_SRL_S6/I_USE_RPM_EQ0.U_GAND_SRL_SET/I_WHOLE_SLICE.G_SLICE_IDX[22].U_GAND_SRL_SLICE_NO_RPM/muxcy_lo<1>)
+     MUXCY_L:CI->LO        1   0.023   0.000  U0/I_NO_D.U_ILA/U_TRIG/U_TM/G_NMU[0].U_M/U_MU/I_MUT_GANDX.U_match/I_CS_GANDX.U_CS_GANDX_SRL/I_S6.U_CS_GANDX_SRL_S6/U_CS_GAND_SRL_S6/I_USE_RPM_EQ0.U_GAND_SRL_SET/I_WHOLE_SLICE.G_SLICE_IDX[22].U_GAND_SRL_SLICE_NO_RPM/U_MUXC (U0/I_NO_D.U_ILA/U_TRIG/U_TM/G_NMU[0].U_M/U_MU/I_MUT_GANDX.U_match/I_CS_GANDX.U_CS_GANDX_SRL/I_S6.U_CS_GANDX_SRL_S6/U_CS_GAND_SRL_S6/I_USE_RPM_EQ0.U_GAND_SRL_SET/I_WHOLE_SLICE.G_SLICE_IDX[22].U_GAND_SRL_SLICE_NO_RPM/muxcy_lo<2>)
+     MUXCY_L:CI->LO        1   0.023   0.000  U0/I_NO_D.U_ILA/U_TRIG/U_TM/G_NMU[0].U_M/U_MU/I_MUT_GANDX.U_match/I_CS_GANDX.U_CS_GANDX_SRL/I_S6.U_CS_GANDX_SRL_S6/U_CS_GAND_SRL_S6/I_USE_RPM_EQ0.U_GAND_SRL_SET/I_WHOLE_SLICE.G_SLICE_IDX[22].U_GAND_SRL_SLICE_NO_RPM/U_MUXD (U0/I_NO_D.U_ILA/U_TRIG/U_TM/G_NMU[0].U_M/U_MU/I_MUT_GANDX.U_match/I_CS_GANDX.U_CS_GANDX_SRL/I_S6.U_CS_GANDX_SRL_S6/U_CS_GAND_SRL_S6/I_USE_RPM_EQ0.U_GAND_SRL_SET/gand_carry<23>)
+     MUXCY_L:CI->LO        1   0.023   0.000  U0/I_NO_D.U_ILA/U_TRIG/U_TM/G_NMU[0].U_M/U_MU/I_MUT_GANDX.U_match/I_CS_GANDX.U_CS_GANDX_SRL/I_S6.U_CS_GANDX_SRL_S6/U_CS_GAND_SRL_S6/I_USE_RPM_EQ0.U_GAND_SRL_SET/I_WHOLE_SLICE.G_SLICE_IDX[23].U_GAND_SRL_SLICE_NO_RPM/U_MUXA (U0/I_NO_D.U_ILA/U_TRIG/U_TM/G_NMU[0].U_M/U_MU/I_MUT_GANDX.U_match/I_CS_GANDX.U_CS_GANDX_SRL/I_S6.U_CS_GANDX_SRL_S6/U_CS_GAND_SRL_S6/I_USE_RPM_EQ0.U_GAND_SRL_SET/I_WHOLE_SLICE.G_SLICE_IDX[23].U_GAND_SRL_SLICE_NO_RPM/muxcy_lo<0>)
+     MUXCY_L:CI->LO        1   0.023   0.000  U0/I_NO_D.U_ILA/U_TRIG/U_TM/G_NMU[0].U_M/U_MU/I_MUT_GANDX.U_match/I_CS_GANDX.U_CS_GANDX_SRL/I_S6.U_CS_GANDX_SRL_S6/U_CS_GAND_SRL_S6/I_USE_RPM_EQ0.U_GAND_SRL_SET/I_WHOLE_SLICE.G_SLICE_IDX[23].U_GAND_SRL_SLICE_NO_RPM/U_MUXB (U0/I_NO_D.U_ILA/U_TRIG/U_TM/G_NMU[0].U_M/U_MU/I_MUT_GANDX.U_match/I_CS_GANDX.U_CS_GANDX_SRL/I_S6.U_CS_GANDX_SRL_S6/U_CS_GAND_SRL_S6/I_USE_RPM_EQ0.U_GAND_SRL_SET/I_WHOLE_SLICE.G_SLICE_IDX[23].U_GAND_SRL_SLICE_NO_RPM/muxcy_lo<1>)
+     MUXCY_L:CI->LO        1   0.023   0.000  U0/I_NO_D.U_ILA/U_TRIG/U_TM/G_NMU[0].U_M/U_MU/I_MUT_GANDX.U_match/I_CS_GANDX.U_CS_GANDX_SRL/I_S6.U_CS_GANDX_SRL_S6/U_CS_GAND_SRL_S6/I_USE_RPM_EQ0.U_GAND_SRL_SET/I_WHOLE_SLICE.G_SLICE_IDX[23].U_GAND_SRL_SLICE_NO_RPM/U_MUXC (U0/I_NO_D.U_ILA/U_TRIG/U_TM/G_NMU[0].U_M/U_MU/I_MUT_GANDX.U_match/I_CS_GANDX.U_CS_GANDX_SRL/I_S6.U_CS_GANDX_SRL_S6/U_CS_GAND_SRL_S6/I_USE_RPM_EQ0.U_GAND_SRL_SET/I_WHOLE_SLICE.G_SLICE_IDX[23].U_GAND_SRL_SLICE_NO_RPM/muxcy_lo<2>)
+     MUXCY_L:CI->LO        1   0.023   0.000  U0/I_NO_D.U_ILA/U_TRIG/U_TM/G_NMU[0].U_M/U_MU/I_MUT_GANDX.U_match/I_CS_GANDX.U_CS_GANDX_SRL/I_S6.U_CS_GANDX_SRL_S6/U_CS_GAND_SRL_S6/I_USE_RPM_EQ0.U_GAND_SRL_SET/I_WHOLE_SLICE.G_SLICE_IDX[23].U_GAND_SRL_SLICE_NO_RPM/U_MUXD (U0/I_NO_D.U_ILA/U_TRIG/U_TM/G_NMU[0].U_M/U_MU/I_MUT_GANDX.U_match/I_CS_GANDX.U_CS_GANDX_SRL/I_S6.U_CS_GANDX_SRL_S6/U_CS_GAND_SRL_S6/I_USE_RPM_EQ0.U_GAND_SRL_SET/gand_carry<24>)
+     MUXCY_L:CI->LO        1   0.023   0.000  U0/I_NO_D.U_ILA/U_TRIG/U_TM/G_NMU[0].U_M/U_MU/I_MUT_GANDX.U_match/I_CS_GANDX.U_CS_GANDX_SRL/I_S6.U_CS_GANDX_SRL_S6/U_CS_GAND_SRL_S6/I_USE_RPM_EQ0.U_GAND_SRL_SET/I_WHOLE_SLICE.G_SLICE_IDX[24].U_GAND_SRL_SLICE_NO_RPM/U_MUXA (U0/I_NO_D.U_ILA/U_TRIG/U_TM/G_NMU[0].U_M/U_MU/I_MUT_GANDX.U_match/I_CS_GANDX.U_CS_GANDX_SRL/I_S6.U_CS_GANDX_SRL_S6/U_CS_GAND_SRL_S6/I_USE_RPM_EQ0.U_GAND_SRL_SET/I_WHOLE_SLICE.G_SLICE_IDX[24].U_GAND_SRL_SLICE_NO_RPM/muxcy_lo<0>)
+     MUXCY_L:CI->LO        1   0.023   0.000  U0/I_NO_D.U_ILA/U_TRIG/U_TM/G_NMU[0].U_M/U_MU/I_MUT_GANDX.U_match/I_CS_GANDX.U_CS_GANDX_SRL/I_S6.U_CS_GANDX_SRL_S6/U_CS_GAND_SRL_S6/I_USE_RPM_EQ0.U_GAND_SRL_SET/I_WHOLE_SLICE.G_SLICE_IDX[24].U_GAND_SRL_SLICE_NO_RPM/U_MUXB (U0/I_NO_D.U_ILA/U_TRIG/U_TM/G_NMU[0].U_M/U_MU/I_MUT_GANDX.U_match/I_CS_GANDX.U_CS_GANDX_SRL/I_S6.U_CS_GANDX_SRL_S6/U_CS_GAND_SRL_S6/I_USE_RPM_EQ0.U_GAND_SRL_SET/I_WHOLE_SLICE.G_SLICE_IDX[24].U_GAND_SRL_SLICE_NO_RPM/muxcy_lo<1>)
+     MUXCY_L:CI->LO        1   0.023   0.000  U0/I_NO_D.U_ILA/U_TRIG/U_TM/G_NMU[0].U_M/U_MU/I_MUT_GANDX.U_match/I_CS_GANDX.U_CS_GANDX_SRL/I_S6.U_CS_GANDX_SRL_S6/U_CS_GAND_SRL_S6/I_USE_RPM_EQ0.U_GAND_SRL_SET/I_WHOLE_SLICE.G_SLICE_IDX[24].U_GAND_SRL_SLICE_NO_RPM/U_MUXC (U0/I_NO_D.U_ILA/U_TRIG/U_TM/G_NMU[0].U_M/U_MU/I_MUT_GANDX.U_match/I_CS_GANDX.U_CS_GANDX_SRL/I_S6.U_CS_GANDX_SRL_S6/U_CS_GAND_SRL_S6/I_USE_RPM_EQ0.U_GAND_SRL_SET/I_WHOLE_SLICE.G_SLICE_IDX[24].U_GAND_SRL_SLICE_NO_RPM/muxcy_lo<2>)
+     MUXCY_L:CI->LO        1   0.023   0.000  U0/I_NO_D.U_ILA/U_TRIG/U_TM/G_NMU[0].U_M/U_MU/I_MUT_GANDX.U_match/I_CS_GANDX.U_CS_GANDX_SRL/I_S6.U_CS_GANDX_SRL_S6/U_CS_GAND_SRL_S6/I_USE_RPM_EQ0.U_GAND_SRL_SET/I_WHOLE_SLICE.G_SLICE_IDX[24].U_GAND_SRL_SLICE_NO_RPM/U_MUXD (U0/I_NO_D.U_ILA/U_TRIG/U_TM/G_NMU[0].U_M/U_MU/I_MUT_GANDX.U_match/I_CS_GANDX.U_CS_GANDX_SRL/I_S6.U_CS_GANDX_SRL_S6/U_CS_GAND_SRL_S6/I_USE_RPM_EQ0.U_GAND_SRL_SET/gand_carry<25>)
+     MUXCY_L:CI->LO        1   0.023   0.000  U0/I_NO_D.U_ILA/U_TRIG/U_TM/G_NMU[0].U_M/U_MU/I_MUT_GANDX.U_match/I_CS_GANDX.U_CS_GANDX_SRL/I_S6.U_CS_GANDX_SRL_S6/U_CS_GAND_SRL_S6/I_USE_RPM_EQ0.U_GAND_SRL_SET/I_WHOLE_SLICE.G_SLICE_IDX[25].U_GAND_SRL_SLICE_NO_RPM/U_MUXA (U0/I_NO_D.U_ILA/U_TRIG/U_TM/G_NMU[0].U_M/U_MU/I_MUT_GANDX.U_match/I_CS_GANDX.U_CS_GANDX_SRL/I_S6.U_CS_GANDX_SRL_S6/U_CS_GAND_SRL_S6/I_USE_RPM_EQ0.U_GAND_SRL_SET/I_WHOLE_SLICE.G_SLICE_IDX[25].U_GAND_SRL_SLICE_NO_RPM/muxcy_lo<0>)
+     MUXCY_L:CI->LO        1   0.023   0.000  U0/I_NO_D.U_ILA/U_TRIG/U_TM/G_NMU[0].U_M/U_MU/I_MUT_GANDX.U_match/I_CS_GANDX.U_CS_GANDX_SRL/I_S6.U_CS_GANDX_SRL_S6/U_CS_GAND_SRL_S6/I_USE_RPM_EQ0.U_GAND_SRL_SET/I_WHOLE_SLICE.G_SLICE_IDX[25].U_GAND_SRL_SLICE_NO_RPM/U_MUXB (U0/I_NO_D.U_ILA/U_TRIG/U_TM/G_NMU[0].U_M/U_MU/I_MUT_GANDX.U_match/I_CS_GANDX.U_CS_GANDX_SRL/I_S6.U_CS_GANDX_SRL_S6/U_CS_GAND_SRL_S6/I_USE_RPM_EQ0.U_GAND_SRL_SET/I_WHOLE_SLICE.G_SLICE_IDX[25].U_GAND_SRL_SLICE_NO_RPM/muxcy_lo<1>)
+     MUXCY_L:CI->LO        1   0.023   0.000  U0/I_NO_D.U_ILA/U_TRIG/U_TM/G_NMU[0].U_M/U_MU/I_MUT_GANDX.U_match/I_CS_GANDX.U_CS_GANDX_SRL/I_S6.U_CS_GANDX_SRL_S6/U_CS_GAND_SRL_S6/I_USE_RPM_EQ0.U_GAND_SRL_SET/I_WHOLE_SLICE.G_SLICE_IDX[25].U_GAND_SRL_SLICE_NO_RPM/U_MUXC (U0/I_NO_D.U_ILA/U_TRIG/U_TM/G_NMU[0].U_M/U_MU/I_MUT_GANDX.U_match/I_CS_GANDX.U_CS_GANDX_SRL/I_S6.U_CS_GANDX_SRL_S6/U_CS_GAND_SRL_S6/I_USE_RPM_EQ0.U_GAND_SRL_SET/I_WHOLE_SLICE.G_SLICE_IDX[25].U_GAND_SRL_SLICE_NO_RPM/muxcy_lo<2>)
+     MUXCY_L:CI->LO        1   0.023   0.000  U0/I_NO_D.U_ILA/U_TRIG/U_TM/G_NMU[0].U_M/U_MU/I_MUT_GANDX.U_match/I_CS_GANDX.U_CS_GANDX_SRL/I_S6.U_CS_GANDX_SRL_S6/U_CS_GAND_SRL_S6/I_USE_RPM_EQ0.U_GAND_SRL_SET/I_WHOLE_SLICE.G_SLICE_IDX[25].U_GAND_SRL_SLICE_NO_RPM/U_MUXD (U0/I_NO_D.U_ILA/U_TRIG/U_TM/G_NMU[0].U_M/U_MU/I_MUT_GANDX.U_match/I_CS_GANDX.U_CS_GANDX_SRL/I_S6.U_CS_GANDX_SRL_S6/U_CS_GAND_SRL_S6/I_USE_RPM_EQ0.U_GAND_SRL_SET/gand_carry<26>)
+     MUXCY_L:CI->LO        1   0.023   0.000  U0/I_NO_D.U_ILA/U_TRIG/U_TM/G_NMU[0].U_M/U_MU/I_MUT_GANDX.U_match/I_CS_GANDX.U_CS_GANDX_SRL/I_S6.U_CS_GANDX_SRL_S6/U_CS_GAND_SRL_S6/I_USE_RPM_EQ0.U_GAND_SRL_SET/I_WHOLE_SLICE.G_SLICE_IDX[26].U_GAND_SRL_SLICE_NO_RPM/U_MUXA (U0/I_NO_D.U_ILA/U_TRIG/U_TM/G_NMU[0].U_M/U_MU/I_MUT_GANDX.U_match/I_CS_GANDX.U_CS_GANDX_SRL/I_S6.U_CS_GANDX_SRL_S6/U_CS_GAND_SRL_S6/I_USE_RPM_EQ0.U_GAND_SRL_SET/I_WHOLE_SLICE.G_SLICE_IDX[26].U_GAND_SRL_SLICE_NO_RPM/muxcy_lo<0>)
+     MUXCY_L:CI->LO        1   0.023   0.000  U0/I_NO_D.U_ILA/U_TRIG/U_TM/G_NMU[0].U_M/U_MU/I_MUT_GANDX.U_match/I_CS_GANDX.U_CS_GANDX_SRL/I_S6.U_CS_GANDX_SRL_S6/U_CS_GAND_SRL_S6/I_USE_RPM_EQ0.U_GAND_SRL_SET/I_WHOLE_SLICE.G_SLICE_IDX[26].U_GAND_SRL_SLICE_NO_RPM/U_MUXB (U0/I_NO_D.U_ILA/U_TRIG/U_TM/G_NMU[0].U_M/U_MU/I_MUT_GANDX.U_match/I_CS_GANDX.U_CS_GANDX_SRL/I_S6.U_CS_GANDX_SRL_S6/U_CS_GAND_SRL_S6/I_USE_RPM_EQ0.U_GAND_SRL_SET/I_WHOLE_SLICE.G_SLICE_IDX[26].U_GAND_SRL_SLICE_NO_RPM/muxcy_lo<1>)
+     MUXCY_L:CI->LO        1   0.023   0.000  U0/I_NO_D.U_ILA/U_TRIG/U_TM/G_NMU[0].U_M/U_MU/I_MUT_GANDX.U_match/I_CS_GANDX.U_CS_GANDX_SRL/I_S6.U_CS_GANDX_SRL_S6/U_CS_GAND_SRL_S6/I_USE_RPM_EQ0.U_GAND_SRL_SET/I_WHOLE_SLICE.G_SLICE_IDX[26].U_GAND_SRL_SLICE_NO_RPM/U_MUXC (U0/I_NO_D.U_ILA/U_TRIG/U_TM/G_NMU[0].U_M/U_MU/I_MUT_GANDX.U_match/I_CS_GANDX.U_CS_GANDX_SRL/I_S6.U_CS_GANDX_SRL_S6/U_CS_GAND_SRL_S6/I_USE_RPM_EQ0.U_GAND_SRL_SET/I_WHOLE_SLICE.G_SLICE_IDX[26].U_GAND_SRL_SLICE_NO_RPM/muxcy_lo<2>)
+     MUXCY_L:CI->LO        1   0.023   0.000  U0/I_NO_D.U_ILA/U_TRIG/U_TM/G_NMU[0].U_M/U_MU/I_MUT_GANDX.U_match/I_CS_GANDX.U_CS_GANDX_SRL/I_S6.U_CS_GANDX_SRL_S6/U_CS_GAND_SRL_S6/I_USE_RPM_EQ0.U_GAND_SRL_SET/I_WHOLE_SLICE.G_SLICE_IDX[26].U_GAND_SRL_SLICE_NO_RPM/U_MUXD (U0/I_NO_D.U_ILA/U_TRIG/U_TM/G_NMU[0].U_M/U_MU/I_MUT_GANDX.U_match/I_CS_GANDX.U_CS_GANDX_SRL/I_S6.U_CS_GANDX_SRL_S6/U_CS_GAND_SRL_S6/I_USE_RPM_EQ0.U_GAND_SRL_SET/gand_carry<27>)
+     MUXCY_L:CI->LO        1   0.023   0.000  U0/I_NO_D.U_ILA/U_TRIG/U_TM/G_NMU[0].U_M/U_MU/I_MUT_GANDX.U_match/I_CS_GANDX.U_CS_GANDX_SRL/I_S6.U_CS_GANDX_SRL_S6/U_CS_GAND_SRL_S6/I_USE_RPM_EQ0.U_GAND_SRL_SET/I_WHOLE_SLICE.G_SLICE_IDX[27].U_GAND_SRL_SLICE_NO_RPM/U_MUXA (U0/I_NO_D.U_ILA/U_TRIG/U_TM/G_NMU[0].U_M/U_MU/I_MUT_GANDX.U_match/I_CS_GANDX.U_CS_GANDX_SRL/I_S6.U_CS_GANDX_SRL_S6/U_CS_GAND_SRL_S6/I_USE_RPM_EQ0.U_GAND_SRL_SET/I_WHOLE_SLICE.G_SLICE_IDX[27].U_GAND_SRL_SLICE_NO_RPM/muxcy_lo<0>)
+     MUXCY_L:CI->LO        1   0.023   0.000  U0/I_NO_D.U_ILA/U_TRIG/U_TM/G_NMU[0].U_M/U_MU/I_MUT_GANDX.U_match/I_CS_GANDX.U_CS_GANDX_SRL/I_S6.U_CS_GANDX_SRL_S6/U_CS_GAND_SRL_S6/I_USE_RPM_EQ0.U_GAND_SRL_SET/I_WHOLE_SLICE.G_SLICE_IDX[27].U_GAND_SRL_SLICE_NO_RPM/U_MUXB (U0/I_NO_D.U_ILA/U_TRIG/U_TM/G_NMU[0].U_M/U_MU/I_MUT_GANDX.U_match/I_CS_GANDX.U_CS_GANDX_SRL/I_S6.U_CS_GANDX_SRL_S6/U_CS_GAND_SRL_S6/I_USE_RPM_EQ0.U_GAND_SRL_SET/I_WHOLE_SLICE.G_SLICE_IDX[27].U_GAND_SRL_SLICE_NO_RPM/muxcy_lo<1>)
+     MUXCY_L:CI->LO        1   0.023   0.000  U0/I_NO_D.U_ILA/U_TRIG/U_TM/G_NMU[0].U_M/U_MU/I_MUT_GANDX.U_match/I_CS_GANDX.U_CS_GANDX_SRL/I_S6.U_CS_GANDX_SRL_S6/U_CS_GAND_SRL_S6/I_USE_RPM_EQ0.U_GAND_SRL_SET/I_WHOLE_SLICE.G_SLICE_IDX[27].U_GAND_SRL_SLICE_NO_RPM/U_MUXC (U0/I_NO_D.U_ILA/U_TRIG/U_TM/G_NMU[0].U_M/U_MU/I_MUT_GANDX.U_match/I_CS_GANDX.U_CS_GANDX_SRL/I_S6.U_CS_GANDX_SRL_S6/U_CS_GAND_SRL_S6/I_USE_RPM_EQ0.U_GAND_SRL_SET/I_WHOLE_SLICE.G_SLICE_IDX[27].U_GAND_SRL_SLICE_NO_RPM/muxcy_lo<2>)
+     MUXCY_L:CI->LO        1   0.023   0.000  U0/I_NO_D.U_ILA/U_TRIG/U_TM/G_NMU[0].U_M/U_MU/I_MUT_GANDX.U_match/I_CS_GANDX.U_CS_GANDX_SRL/I_S6.U_CS_GANDX_SRL_S6/U_CS_GAND_SRL_S6/I_USE_RPM_EQ0.U_GAND_SRL_SET/I_WHOLE_SLICE.G_SLICE_IDX[27].U_GAND_SRL_SLICE_NO_RPM/U_MUXD (U0/I_NO_D.U_ILA/U_TRIG/U_TM/G_NMU[0].U_M/U_MU/I_MUT_GANDX.U_match/I_CS_GANDX.U_CS_GANDX_SRL/I_S6.U_CS_GANDX_SRL_S6/U_CS_GAND_SRL_S6/I_USE_RPM_EQ0.U_GAND_SRL_SET/gand_carry<28>)
+     MUXCY_L:CI->LO        1   0.023   0.000  U0/I_NO_D.U_ILA/U_TRIG/U_TM/G_NMU[0].U_M/U_MU/I_MUT_GANDX.U_match/I_CS_GANDX.U_CS_GANDX_SRL/I_S6.U_CS_GANDX_SRL_S6/U_CS_GAND_SRL_S6/I_USE_RPM_EQ0.U_GAND_SRL_SET/I_WHOLE_SLICE.G_SLICE_IDX[28].U_GAND_SRL_SLICE_NO_RPM/U_MUXA (U0/I_NO_D.U_ILA/U_TRIG/U_TM/G_NMU[0].U_M/U_MU/I_MUT_GANDX.U_match/I_CS_GANDX.U_CS_GANDX_SRL/I_S6.U_CS_GANDX_SRL_S6/U_CS_GAND_SRL_S6/I_USE_RPM_EQ0.U_GAND_SRL_SET/I_WHOLE_SLICE.G_SLICE_IDX[28].U_GAND_SRL_SLICE_NO_RPM/muxcy_lo<0>)
+     MUXCY_L:CI->LO        1   0.023   0.000  U0/I_NO_D.U_ILA/U_TRIG/U_TM/G_NMU[0].U_M/U_MU/I_MUT_GANDX.U_match/I_CS_GANDX.U_CS_GANDX_SRL/I_S6.U_CS_GANDX_SRL_S6/U_CS_GAND_SRL_S6/I_USE_RPM_EQ0.U_GAND_SRL_SET/I_WHOLE_SLICE.G_SLICE_IDX[28].U_GAND_SRL_SLICE_NO_RPM/U_MUXB (U0/I_NO_D.U_ILA/U_TRIG/U_TM/G_NMU[0].U_M/U_MU/I_MUT_GANDX.U_match/I_CS_GANDX.U_CS_GANDX_SRL/I_S6.U_CS_GANDX_SRL_S6/U_CS_GAND_SRL_S6/I_USE_RPM_EQ0.U_GAND_SRL_SET/I_WHOLE_SLICE.G_SLICE_IDX[28].U_GAND_SRL_SLICE_NO_RPM/muxcy_lo<1>)
+     MUXCY_L:CI->LO        1   0.023   0.000  U0/I_NO_D.U_ILA/U_TRIG/U_TM/G_NMU[0].U_M/U_MU/I_MUT_GANDX.U_match/I_CS_GANDX.U_CS_GANDX_SRL/I_S6.U_CS_GANDX_SRL_S6/U_CS_GAND_SRL_S6/I_USE_RPM_EQ0.U_GAND_SRL_SET/I_WHOLE_SLICE.G_SLICE_IDX[28].U_GAND_SRL_SLICE_NO_RPM/U_MUXC (U0/I_NO_D.U_ILA/U_TRIG/U_TM/G_NMU[0].U_M/U_MU/I_MUT_GANDX.U_match/I_CS_GANDX.U_CS_GANDX_SRL/I_S6.U_CS_GANDX_SRL_S6/U_CS_GAND_SRL_S6/I_USE_RPM_EQ0.U_GAND_SRL_SET/I_WHOLE_SLICE.G_SLICE_IDX[28].U_GAND_SRL_SLICE_NO_RPM/muxcy_lo<2>)
+     MUXCY_L:CI->LO        1   0.023   0.000  U0/I_NO_D.U_ILA/U_TRIG/U_TM/G_NMU[0].U_M/U_MU/I_MUT_GANDX.U_match/I_CS_GANDX.U_CS_GANDX_SRL/I_S6.U_CS_GANDX_SRL_S6/U_CS_GAND_SRL_S6/I_USE_RPM_EQ0.U_GAND_SRL_SET/I_WHOLE_SLICE.G_SLICE_IDX[28].U_GAND_SRL_SLICE_NO_RPM/U_MUXD (U0/I_NO_D.U_ILA/U_TRIG/U_TM/G_NMU[0].U_M/U_MU/I_MUT_GANDX.U_match/I_CS_GANDX.U_CS_GANDX_SRL/I_S6.U_CS_GANDX_SRL_S6/U_CS_GAND_SRL_S6/I_USE_RPM_EQ0.U_GAND_SRL_SET/gand_carry<29>)
+     MUXCY_L:CI->LO        1   0.023   0.000  U0/I_NO_D.U_ILA/U_TRIG/U_TM/G_NMU[0].U_M/U_MU/I_MUT_GANDX.U_match/I_CS_GANDX.U_CS_GANDX_SRL/I_S6.U_CS_GANDX_SRL_S6/U_CS_GAND_SRL_S6/I_USE_RPM_EQ0.U_GAND_SRL_SET/I_WHOLE_SLICE.G_SLICE_IDX[29].U_GAND_SRL_SLICE_NO_RPM/U_MUXA (U0/I_NO_D.U_ILA/U_TRIG/U_TM/G_NMU[0].U_M/U_MU/I_MUT_GANDX.U_match/I_CS_GANDX.U_CS_GANDX_SRL/I_S6.U_CS_GANDX_SRL_S6/U_CS_GAND_SRL_S6/I_USE_RPM_EQ0.U_GAND_SRL_SET/I_WHOLE_SLICE.G_SLICE_IDX[29].U_GAND_SRL_SLICE_NO_RPM/muxcy_lo<0>)
+     MUXCY_L:CI->LO        1   0.023   0.000  U0/I_NO_D.U_ILA/U_TRIG/U_TM/G_NMU[0].U_M/U_MU/I_MUT_GANDX.U_match/I_CS_GANDX.U_CS_GANDX_SRL/I_S6.U_CS_GANDX_SRL_S6/U_CS_GAND_SRL_S6/I_USE_RPM_EQ0.U_GAND_SRL_SET/I_WHOLE_SLICE.G_SLICE_IDX[29].U_GAND_SRL_SLICE_NO_RPM/U_MUXB (U0/I_NO_D.U_ILA/U_TRIG/U_TM/G_NMU[0].U_M/U_MU/I_MUT_GANDX.U_match/I_CS_GANDX.U_CS_GANDX_SRL/I_S6.U_CS_GANDX_SRL_S6/U_CS_GAND_SRL_S6/I_USE_RPM_EQ0.U_GAND_SRL_SET/I_WHOLE_SLICE.G_SLICE_IDX[29].U_GAND_SRL_SLICE_NO_RPM/muxcy_lo<1>)
+     MUXCY_L:CI->LO        1   0.023   0.000  U0/I_NO_D.U_ILA/U_TRIG/U_TM/G_NMU[0].U_M/U_MU/I_MUT_GANDX.U_match/I_CS_GANDX.U_CS_GANDX_SRL/I_S6.U_CS_GANDX_SRL_S6/U_CS_GAND_SRL_S6/I_USE_RPM_EQ0.U_GAND_SRL_SET/I_WHOLE_SLICE.G_SLICE_IDX[29].U_GAND_SRL_SLICE_NO_RPM/U_MUXC (U0/I_NO_D.U_ILA/U_TRIG/U_TM/G_NMU[0].U_M/U_MU/I_MUT_GANDX.U_match/I_CS_GANDX.U_CS_GANDX_SRL/I_S6.U_CS_GANDX_SRL_S6/U_CS_GAND_SRL_S6/I_USE_RPM_EQ0.U_GAND_SRL_SET/I_WHOLE_SLICE.G_SLICE_IDX[29].U_GAND_SRL_SLICE_NO_RPM/muxcy_lo<2>)
+     MUXCY_L:CI->LO        1   0.023   0.000  U0/I_NO_D.U_ILA/U_TRIG/U_TM/G_NMU[0].U_M/U_MU/I_MUT_GANDX.U_match/I_CS_GANDX.U_CS_GANDX_SRL/I_S6.U_CS_GANDX_SRL_S6/U_CS_GAND_SRL_S6/I_USE_RPM_EQ0.U_GAND_SRL_SET/I_WHOLE_SLICE.G_SLICE_IDX[29].U_GAND_SRL_SLICE_NO_RPM/U_MUXD (U0/I_NO_D.U_ILA/U_TRIG/U_TM/G_NMU[0].U_M/U_MU/I_MUT_GANDX.U_match/I_CS_GANDX.U_CS_GANDX_SRL/I_S6.U_CS_GANDX_SRL_S6/U_CS_GAND_SRL_S6/I_USE_RPM_EQ0.U_GAND_SRL_SET/gand_carry<30>)
+     MUXCY_L:CI->LO        1   0.023   0.000  U0/I_NO_D.U_ILA/U_TRIG/U_TM/G_NMU[0].U_M/U_MU/I_MUT_GANDX.U_match/I_CS_GANDX.U_CS_GANDX_SRL/I_S6.U_CS_GANDX_SRL_S6/U_CS_GAND_SRL_S6/I_USE_RPM_EQ0.U_GAND_SRL_SET/I_WHOLE_SLICE.G_SLICE_IDX[30].U_GAND_SRL_SLICE_NO_RPM/U_MUXA (U0/I_NO_D.U_ILA/U_TRIG/U_TM/G_NMU[0].U_M/U_MU/I_MUT_GANDX.U_match/I_CS_GANDX.U_CS_GANDX_SRL/I_S6.U_CS_GANDX_SRL_S6/U_CS_GAND_SRL_S6/I_USE_RPM_EQ0.U_GAND_SRL_SET/I_WHOLE_SLICE.G_SLICE_IDX[30].U_GAND_SRL_SLICE_NO_RPM/muxcy_lo<0>)
+     MUXCY_L:CI->LO        1   0.023   0.000  U0/I_NO_D.U_ILA/U_TRIG/U_TM/G_NMU[0].U_M/U_MU/I_MUT_GANDX.U_match/I_CS_GANDX.U_CS_GANDX_SRL/I_S6.U_CS_GANDX_SRL_S6/U_CS_GAND_SRL_S6/I_USE_RPM_EQ0.U_GAND_SRL_SET/I_WHOLE_SLICE.G_SLICE_IDX[30].U_GAND_SRL_SLICE_NO_RPM/U_MUXB (U0/I_NO_D.U_ILA/U_TRIG/U_TM/G_NMU[0].U_M/U_MU/I_MUT_GANDX.U_match/I_CS_GANDX.U_CS_GANDX_SRL/I_S6.U_CS_GANDX_SRL_S6/U_CS_GAND_SRL_S6/I_USE_RPM_EQ0.U_GAND_SRL_SET/I_WHOLE_SLICE.G_SLICE_IDX[30].U_GAND_SRL_SLICE_NO_RPM/muxcy_lo<1>)
+     MUXCY_L:CI->LO        1   0.023   0.000  U0/I_NO_D.U_ILA/U_TRIG/U_TM/G_NMU[0].U_M/U_MU/I_MUT_GANDX.U_match/I_CS_GANDX.U_CS_GANDX_SRL/I_S6.U_CS_GANDX_SRL_S6/U_CS_GAND_SRL_S6/I_USE_RPM_EQ0.U_GAND_SRL_SET/I_WHOLE_SLICE.G_SLICE_IDX[30].U_GAND_SRL_SLICE_NO_RPM/U_MUXC (U0/I_NO_D.U_ILA/U_TRIG/U_TM/G_NMU[0].U_M/U_MU/I_MUT_GANDX.U_match/I_CS_GANDX.U_CS_GANDX_SRL/I_S6.U_CS_GANDX_SRL_S6/U_CS_GAND_SRL_S6/I_USE_RPM_EQ0.U_GAND_SRL_SET/I_WHOLE_SLICE.G_SLICE_IDX[30].U_GAND_SRL_SLICE_NO_RPM/muxcy_lo<2>)
+     MUXCY_L:CI->LO        1   0.023   0.000  U0/I_NO_D.U_ILA/U_TRIG/U_TM/G_NMU[0].U_M/U_MU/I_MUT_GANDX.U_match/I_CS_GANDX.U_CS_GANDX_SRL/I_S6.U_CS_GANDX_SRL_S6/U_CS_GAND_SRL_S6/I_USE_RPM_EQ0.U_GAND_SRL_SET/I_WHOLE_SLICE.G_SLICE_IDX[30].U_GAND_SRL_SLICE_NO_RPM/U_MUXD (U0/I_NO_D.U_ILA/U_TRIG/U_TM/G_NMU[0].U_M/U_MU/I_MUT_GANDX.U_match/I_CS_GANDX.U_CS_GANDX_SRL/I_S6.U_CS_GANDX_SRL_S6/U_CS_GAND_SRL_S6/I_USE_RPM_EQ0.U_GAND_SRL_SET/gand_carry<31>)
+     MUXCY_L:CI->LO        1   0.023   0.000  U0/I_NO_D.U_ILA/U_TRIG/U_TM/G_NMU[0].U_M/U_MU/I_MUT_GANDX.U_match/I_CS_GANDX.U_CS_GANDX_SRL/I_S6.U_CS_GANDX_SRL_S6/U_CS_GAND_SRL_S6/I_USE_RPM_EQ0.U_GAND_SRL_SET/I_WHOLE_SLICE.G_SLICE_IDX[31].U_GAND_SRL_SLICE_NO_RPM/U_MUXA (U0/I_NO_D.U_ILA/U_TRIG/U_TM/G_NMU[0].U_M/U_MU/I_MUT_GANDX.U_match/I_CS_GANDX.U_CS_GANDX_SRL/I_S6.U_CS_GANDX_SRL_S6/U_CS_GAND_SRL_S6/I_USE_RPM_EQ0.U_GAND_SRL_SET/I_WHOLE_SLICE.G_SLICE_IDX[31].U_GAND_SRL_SLICE_NO_RPM/muxcy_lo<0>)
+     MUXCY_L:CI->LO        1   0.023   0.000  U0/I_NO_D.U_ILA/U_TRIG/U_TM/G_NMU[0].U_M/U_MU/I_MUT_GANDX.U_match/I_CS_GANDX.U_CS_GANDX_SRL/I_S6.U_CS_GANDX_SRL_S6/U_CS_GAND_SRL_S6/I_USE_RPM_EQ0.U_GAND_SRL_SET/I_WHOLE_SLICE.G_SLICE_IDX[31].U_GAND_SRL_SLICE_NO_RPM/U_MUXB (U0/I_NO_D.U_ILA/U_TRIG/U_TM/G_NMU[0].U_M/U_MU/I_MUT_GANDX.U_match/I_CS_GANDX.U_CS_GANDX_SRL/I_S6.U_CS_GANDX_SRL_S6/U_CS_GAND_SRL_S6/I_USE_RPM_EQ0.U_GAND_SRL_SET/I_WHOLE_SLICE.G_SLICE_IDX[31].U_GAND_SRL_SLICE_NO_RPM/muxcy_lo<1>)
+     MUXCY_L:CI->LO        1   0.023   0.000  U0/I_NO_D.U_ILA/U_TRIG/U_TM/G_NMU[0].U_M/U_MU/I_MUT_GANDX.U_match/I_CS_GANDX.U_CS_GANDX_SRL/I_S6.U_CS_GANDX_SRL_S6/U_CS_GAND_SRL_S6/I_USE_RPM_EQ0.U_GAND_SRL_SET/I_WHOLE_SLICE.G_SLICE_IDX[31].U_GAND_SRL_SLICE_NO_RPM/U_MUXC (U0/I_NO_D.U_ILA/U_TRIG/U_TM/G_NMU[0].U_M/U_MU/I_MUT_GANDX.U_match/I_CS_GANDX.U_CS_GANDX_SRL/I_S6.U_CS_GANDX_SRL_S6/U_CS_GAND_SRL_S6/I_USE_RPM_EQ0.U_GAND_SRL_SET/I_WHOLE_SLICE.G_SLICE_IDX[31].U_GAND_SRL_SLICE_NO_RPM/muxcy_lo<2>)
+     MUXCY_L:CI->LO        1   0.023   0.000  U0/I_NO_D.U_ILA/U_TRIG/U_TM/G_NMU[0].U_M/U_MU/I_MUT_GANDX.U_match/I_CS_GANDX.U_CS_GANDX_SRL/I_S6.U_CS_GANDX_SRL_S6/U_CS_GAND_SRL_S6/I_USE_RPM_EQ0.U_GAND_SRL_SET/I_WHOLE_SLICE.G_SLICE_IDX[31].U_GAND_SRL_SLICE_NO_RPM/U_MUXD (U0/I_NO_D.U_ILA/U_TRIG/U_TM/G_NMU[0].U_M/U_MU/I_MUT_GANDX.U_match/I_CS_GANDX.U_CS_GANDX_SRL/I_S6.U_CS_GANDX_SRL_S6/U_CS_GAND_SRL_S6/I_USE_RPM_EQ0.U_GAND_SRL_SET/I_WHOLE_SLICE.G_SLICE_IDX[31].U_GAND_SRL_SLICE_NO_RPM/muxcy_lo<3>)
+     MUXCY_L:CI->LO        1   0.262   0.000  U0/I_NO_D.U_ILA/U_TRIG/U_TM/G_NMU[0].U_M/U_MU/I_MUT_GANDX.U_match/I_CS_GANDX.U_CS_GANDX_SRL/I_S6.U_CS_GANDX_SRL_S6/U_CS_GAND_SRL_S6/I_USE_RPM_EQ0.U_GAND_SRL_SET/I_WHOLE_SLICE.G_SLICE_IDX[31].U_GAND_SRL_SLICE_NO_RPM/I_IS_TERMINATION_SLICE_NE0.U_MUXF (U0/I_NO_D.U_ILA/U_TRIG/U_TM/G_NMU[0].U_M/U_MU/I_MUT_GANDX.U_match/I_CS_GANDX.U_CS_GANDX_SRL/I_S6.U_CS_GANDX_SRL_S6/U_CS_GAND_SRL_S6/I_USE_RPM_EQ0.U_GAND_SRL_SET/I_WHOLE_SLICE.G_SLICE_IDX[31].U_GAND_SRL_SLICE_NO_RPM/muxcy_lo<4>)
+     FDS:D                     0.074          U0/I_NO_D.U_ILA/U_TRIG/U_TM/G_NMU[0].U_M/U_MU/I_MUT_GANDX.U_match/I_CS_GANDX.U_CS_GANDX_SRL/I_S6.U_CS_GANDX_SRL_S6/U_CS_GAND_SRL_S6/I_USE_RPM_EQ0.U_GAND_SRL_SET/I_WHOLE_SLICE.G_SLICE_IDX[31].U_GAND_SRL_SLICE_NO_RPM/I_IS_TERMINATION_SLICE_NE0.I_USE_OUTPUT_REG_NE0.U_OREG
+    ----------------------------------------
+    Total                      5.619ns (4.213ns logic, 1.406ns route)
+                                       (75.0% logic, 25.0% route)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'icon_debug/U0/iUPDATE_OUT'
+  Clock period: 2.300ns (frequency: 434.783MHz)
+  Total number of paths / destination ports: 1 / 1
+-------------------------------------------------------------------------
+Delay:               2.300ns (Levels of Logic = 1)
+  Source:            icon_debug/U0/U_ICON/U_iDATA_CMD (FF)
+  Destination:       icon_debug/U0/U_ICON/U_iDATA_CMD (FF)
+  Source Clock:      icon_debug/U0/iUPDATE_OUT rising
+  Destination Clock: icon_debug/U0/iUPDATE_OUT rising
+
+  Data Path: icon_debug/U0/U_ICON/U_iDATA_CMD to icon_debug/U0/U_ICON/U_iDATA_CMD
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDC:C->Q              3   0.525   0.765  U0/U_ICON/U_iDATA_CMD (U0/U_ICON/iDATA_CMD)
+     INV:I->O              1   0.255   0.681  U0/U_ICON/U_iDATA_CMD_n (U0/U_ICON/iDATA_CMD_n)
+     FDC:D                     0.074          U0/U_ICON/U_iDATA_CMD
+    ----------------------------------------
+    Total                      2.300ns (0.854ns logic, 1.446ns route)
+                                       (37.1% logic, 62.9% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'clk50m'
+  Total number of paths / destination ports: 24 / 24
+-------------------------------------------------------------------------
+Offset:              2.083ns (Levels of Logic = 1)
+  Source:            ad1_in<0> (PAD)
+  Destination:       u1/ad_ch1_11 (FF)
+  Destination Clock: clk50m rising
+
+  Data Path: ad1_in<0> to u1/ad_ch1_11
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O             1   1.328   0.681  ad1_in_0_IBUF (ad1_in_0_IBUF)
+     FD:D                      0.074          u1/ad_ch1_11
+    ----------------------------------------
+    Total                      2.083ns (1.402ns logic, 0.681ns route)
+                                       (67.3% logic, 32.7% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'u3/u0/clkout'
+  Total number of paths / destination ports: 59 / 59
+-------------------------------------------------------------------------
+Offset:              4.167ns (Levels of Logic = 2)
+  Source:            reset_n (PAD)
+  Destination:       u3/Time_wait_15 (FF)
+  Destination Clock: u3/u0/clkout rising
+
+  Data Path: reset_n to u3/Time_wait_15
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O             5   1.328   0.949  reset_n_IBUF (reset_n_IBUF)
+     LUT3:I1->O           16   0.250   1.181  u3/_n03991 (u3/_n0399)
+     FDRE:R                    0.459          u3/Time_wait_0
+    ----------------------------------------
+    Total                      4.167ns (2.037ns logic, 2.130ns route)
+                                       (48.9% logic, 51.1% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'icon_debug/U0/U_ICON/I_YES_BSCAN.U_BS/iDRCK_LOCAL'
+  Total number of paths / destination ports: 302 / 291
+-------------------------------------------------------------------------
+Offset:              6.596ns (Levels of Logic = 5)
+  Source:            icon_debug/U0/U_ICON/I_YES_BSCAN.U_BS/I_S6.ISYN.I_USE_SOFTBSCAN_EQ0.U_BS:SHIFT (PAD)
+  Destination:       ila_filter_debug/U0/I_NO_D.U_ILA/U_STAT/U_STAT_CNT/G[0].U_FDRE (FF)
+  Destination Clock: icon_debug/U0/U_ICON/I_YES_BSCAN.U_BS/iDRCK_LOCAL rising
+
+  Data Path: icon_debug/U0/U_ICON/I_YES_BSCAN.U_BS/I_S6.ISYN.I_USE_SOFTBSCAN_EQ0.U_BS:SHIFT to ila_filter_debug/U0/I_NO_D.U_ILA/U_STAT/U_STAT_CNT/G[0].U_FDRE
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+    BSCAN_SPARTAN6:SHIFT    3   0.000   0.766  U0/U_ICON/I_YES_BSCAN.U_BS/I_S6.ISYN.I_USE_SOFTBSCAN_EQ0.U_BS (U0/iSHIFT_OUT)
+     LUT2:I1->O           32   0.254   1.796  U0/U_ICON/U_CTRL_OUT/U_DATA_VALID (U0/U_ICON/U_CTRL_OUT/iDATA_VALID)
+     LUT4:I0->O            3   0.254   0.874  U0/U_ICON/U_CTRL_OUT/F_NCP[0].F_CMD[0].U_LCE (CONTROL0<4>)
+     end scope: 'icon_debug:CONTROL0<4>'
+     begin scope: 'ila_filter_debug:CONTROL<4>'
+     LUT2:I0->O            1   0.250   0.681  U0/I_NO_D.U_ILA/U_STAT/U_STATCMD (U0/I_NO_D.U_ILA/U_STAT/iSTATCMD_CE)
+     INV:I->O             10   0.255   1.007  U0/I_NO_D.U_ILA/U_STAT/U_STATCMD_n (U0/I_NO_D.U_ILA/U_STAT/iSTATCMD_CE_n)
+     FDRE:R                    0.459          U0/I_NO_D.U_ILA/U_STAT/U_STAT_CNT/G[9].U_FDRE
+    ----------------------------------------
+    Total                      6.596ns (1.472ns logic, 5.124ns route)
+                                       (22.3% logic, 77.7% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'scope_clk'
+  Total number of paths / destination ports: 521 / 521
+-------------------------------------------------------------------------
+Offset:              6.024ns (Levels of Logic = 3)
+  Source:            icon_debug/U0/U_ICON/I_YES_BSCAN.U_BS/I_S6.ISYN.I_USE_SOFTBSCAN_EQ0.U_BS:SHIFT (PAD)
+  Destination:       ila_filter_debug/U0/I_NO_D.U_ILA/U_TRIG/U_TM/G_NMU[0].U_M/U_MU/I_MUT_GANDX.U_match/I_CS_GANDX.U_CS_GANDX_SRL/I_S6.U_CS_GANDX_SRL_S6/G_GAND_DLY2[0].I_IN_RANGE.U_GAND_DLY2 (FF)
+  Destination Clock: scope_clk rising
+
+  Data Path: icon_debug/U0/U_ICON/I_YES_BSCAN.U_BS/I_S6.ISYN.I_USE_SOFTBSCAN_EQ0.U_BS:SHIFT to ila_filter_debug/U0/I_NO_D.U_ILA/U_TRIG/U_TM/G_NMU[0].U_M/U_MU/I_MUT_GANDX.U_match/I_CS_GANDX.U_CS_GANDX_SRL/I_S6.U_CS_GANDX_SRL_S6/G_GAND_DLY2[0].I_IN_RANGE.U_GAND_DLY2
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+    BSCAN_SPARTAN6:SHIFT    3   0.000   0.766  U0/U_ICON/I_YES_BSCAN.U_BS/I_S6.ISYN.I_USE_SOFTBSCAN_EQ0.U_BS (U0/iSHIFT_OUT)
+     LUT2:I1->O           32   0.254   1.796  U0/U_ICON/U_CTRL_OUT/U_DATA_VALID (U0/U_ICON/U_CTRL_OUT/iDATA_VALID)
+     LUT4:I0->O          640   0.254   2.495  U0/U_ICON/U_CTRL_OUT/F_NCP[0].F_CMD[0].U_HCE (CONTROL0<20>)
+     end scope: 'icon_debug:CONTROL0<20>'
+     begin scope: 'ila_filter_debug:CONTROL<20>'
+     FDP:PRE                   0.459          U0/I_NO_D.U_ILA/U_TRIG/U_TM/G_NMU[0].U_M/U_MU/I_MUT_GANDX.U_match/I_CS_GANDX.U_CS_GANDX_SRL/I_S6.U_CS_GANDX_SRL_S6/G_GAND_DLY2[0].I_IN_RANGE.U_GAND_DLY2
+    ----------------------------------------
+    Total                      6.024ns (0.967ns logic, 5.057ns route)
+                                       (16.1% logic, 83.9% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'icon_debug/U0/iUPDATE_OUT'
+  Total number of paths / destination ports: 1 / 1
+-------------------------------------------------------------------------
+Offset:              2.120ns (Levels of Logic = 1)
+  Source:            icon_debug/U0/U_ICON/I_YES_BSCAN.U_BS/I_S6.ISYN.I_USE_SOFTBSCAN_EQ0.U_BS:SEL (PAD)
+  Destination:       icon_debug/U0/U_ICON/U_iDATA_CMD (FF)
+  Destination Clock: icon_debug/U0/iUPDATE_OUT rising
+
+  Data Path: icon_debug/U0/U_ICON/I_YES_BSCAN.U_BS/I_S6.ISYN.I_USE_SOFTBSCAN_EQ0.U_BS:SEL to icon_debug/U0/U_ICON/U_iDATA_CMD
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+    BSCAN_SPARTAN6:SEL     2   0.000   0.725  U0/U_ICON/I_YES_BSCAN.U_BS/I_S6.ISYN.I_USE_SOFTBSCAN_EQ0.U_BS (U0/U_ICON/iSEL)
+     INV:I->O              1   0.255   0.681  U0/U_ICON/U_iSEL_n (U0/U_ICON/iSEL_n)
+     FDC:CLR                   0.459          U0/U_ICON/U_iDATA_CMD
+    ----------------------------------------
+    Total                      2.120ns (0.714ns logic, 1.406ns route)
+                                       (33.7% logic, 66.3% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'u3/u0/clkout'
+  Total number of paths / destination ports: 1 / 1
+-------------------------------------------------------------------------
+Offset:              4.162ns (Levels of Logic = 1)
+  Source:            u3/u1/tx (FF)
+  Destination:       tx (PAD)
+  Source Clock:      u3/u0/clkout rising
+
+  Data Path: u3/u1/tx to tx
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDS:C->Q              2   0.525   0.725  u3/u1/tx (u3/u1/tx)
+     OBUF:I->O                 2.912          tx_OBUF (tx)
+    ----------------------------------------
+    Total                      4.162ns (3.437ns logic, 0.725ns route)
+                                       (82.6% logic, 17.4% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'icon_debug/U0/U_ICON/I_YES_BSCAN.U_BS/iDRCK_LOCAL'
+  Total number of paths / destination ports: 1 / 1
+-------------------------------------------------------------------------
+Offset:              0.525ns (Levels of Logic = 0)
+  Source:            icon_debug/U0/U_ICON/U_TDO_reg (FF)
+  Destination:       icon_debug/U0/U_ICON/I_YES_BSCAN.U_BS/I_S6.ISYN.I_USE_SOFTBSCAN_EQ0.U_BS:TDO (PAD)
+  Source Clock:      icon_debug/U0/U_ICON/I_YES_BSCAN.U_BS/iDRCK_LOCAL rising
+
+  Data Path: icon_debug/U0/U_ICON/U_TDO_reg to icon_debug/U0/U_ICON/I_YES_BSCAN.U_BS/I_S6.ISYN.I_USE_SOFTBSCAN_EQ0.U_BS:TDO
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDE:C->Q              0   0.525   0.000  U0/U_ICON/U_TDO_reg (U0/U_ICON/iTDO)
+    BSCAN_SPARTAN6:TDO         0.000          U0/U_ICON/I_YES_BSCAN.U_BS/I_S6.ISYN.I_USE_SOFTBSCAN_EQ0.U_BS
+    ----------------------------------------
+    Total                      0.525ns (0.525ns logic, 0.000ns route)
+                                       (100.0% logic, 0.0% route)
+
+=========================================================================
+Timing constraint: Default path analysis
+  Total number of paths / destination ports: 2 / 2
+-------------------------------------------------------------------------
+Delay:               4.965ns (Levels of Logic = 2)
+  Source:            clk50m (PAD)
+  Destination:       ad1_clk (PAD)
+
+  Data Path: clk50m to ad1_clk
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O             2   1.328   0.725  clk50m_IBUF (ad2_clk_OBUF)
+     OBUF:I->O                 2.912          ad1_clk_OBUF (ad1_clk)
+    ----------------------------------------
+    Total                      4.965ns (4.240ns logic, 0.725ns route)
+                                       (85.4% logic, 14.6% route)
+
+=========================================================================
+
+Cross Clock Domains Report:
+--------------------------
+
+Clock to Setup on destination clock clk50m
+---------------+---------+---------+---------+---------+
+               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------+---------+---------+---------+---------+
+clk50m         |   18.359|         |         |         |
+---------------+---------+---------+---------+---------+
+
+Clock to Setup on destination clock icon_debug/CONTROL0<13>
+---------------+---------+---------+---------+---------+
+               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------+---------+---------+---------+---------+
+scope_clk      |         |         |    2.244|         |
+---------------+---------+---------+---------+---------+
+
+Clock to Setup on destination clock icon_debug/U0/U_ICON/I_YES_BSCAN.U_BS/iDRCK_LOCAL
+-------------------------------------------------+---------+---------+---------+---------+
+                                                 | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock                                     |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+-------------------------------------------------+---------+---------+---------+---------+
+icon_debug/CONTROL0<13>                          |         |    4.308|         |         |
+icon_debug/U0/U_ICON/I_YES_BSCAN.U_BS/iDRCK_LOCAL|    9.265|         |         |         |
+icon_debug/U0/iUPDATE_OUT                        |    2.958|         |         |         |
+scope_clk                                        |    4.067|         |         |         |
+-------------------------------------------------+---------+---------+---------+---------+
+
+Clock to Setup on destination clock icon_debug/U0/iUPDATE_OUT
+-------------------------+---------+---------+---------+---------+
+                         | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock             |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+-------------------------+---------+---------+---------+---------+
+icon_debug/U0/iUPDATE_OUT|    2.300|         |         |         |
+-------------------------+---------+---------+---------+---------+
+
+Clock to Setup on destination clock scope_clk
+-------------------------------------------------+---------+---------+---------+---------+
+                                                 | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock                                     |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+-------------------------------------------------+---------+---------+---------+---------+
+clk50m                                           |    1.780|         |         |         |
+icon_debug/U0/U_ICON/I_YES_BSCAN.U_BS/iDRCK_LOCAL|    7.122|         |         |         |
+scope_clk                                        |    5.619|         |         |         |
+-------------------------------------------------+---------+---------+---------+---------+
+
+Clock to Setup on destination clock u3/u0/clkout
+---------------------+---------+---------+---------+---------+
+                     | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock         |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------------+---------+---------+---------+---------+
+u3/u0/clkout         |    6.180|         |         |         |
+u3/uart_stat_FSM_FFd2|    3.985|         |         |         |
+---------------------+---------+---------+---------+---------+
+
+Clock to Setup on destination clock u3/uart_stat_FSM_FFd2
+---------------+---------+---------+---------+---------+
+               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------+---------+---------+---------+---------+
+clk50m         |    2.222|         |         |         |
+---------------+---------+---------+---------+---------+
+
+=========================================================================
+
+
+Total REAL time to Xst completion: 13.00 secs
+Total CPU time to Xst completion: 13.63 secs
+ 
+--> 
+
+Total memory usage is 270240 kilobytes
+
+Number of errors   :    0 (   0 filtered)
+Number of warnings :  210 (   0 filtered)
+Number of infos    :   20 (   0 filtered)
+

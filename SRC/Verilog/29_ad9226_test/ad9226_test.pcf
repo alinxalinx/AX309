@@ -1,0 +1,125 @@
+//! **************************************************************************
+// Written by: Map P.20131013 on Thu Jul 14 11:18:21 2016
+//! **************************************************************************
+
+SCHEMATIC START;
+COMP "rx" LOCATE = SITE "C11" LEVEL 1;
+COMP "tx" LOCATE = SITE "D12" LEVEL 1;
+COMP "ad1_clk" LOCATE = SITE "B5" LEVEL 1;
+COMP "ad2_clk" LOCATE = SITE "A13" LEVEL 1;
+COMP "ad1_in<10>" LOCATE = SITE "B6" LEVEL 1;
+COMP "ad1_in<11>" LOCATE = SITE "A4" LEVEL 1;
+COMP "ad2_in<10>" LOCATE = SITE "B14" LEVEL 1;
+COMP "ad2_in<11>" LOCATE = SITE "B12" LEVEL 1;
+COMP "reset_n" LOCATE = SITE "L3" LEVEL 1;
+COMP "clk50m" LOCATE = SITE "T8" LEVEL 1;
+COMP "ad1_in<0>" LOCATE = SITE "A12" LEVEL 1;
+COMP "ad1_in<1>" LOCATE = SITE "A10" LEVEL 1;
+COMP "ad1_in<2>" LOCATE = SITE "B10" LEVEL 1;
+COMP "ad1_in<3>" LOCATE = SITE "C8" LEVEL 1;
+COMP "ad1_in<4>" LOCATE = SITE "A9" LEVEL 1;
+COMP "ad1_in<5>" LOCATE = SITE "B8" LEVEL 1;
+COMP "ad1_in<6>" LOCATE = SITE "A8" LEVEL 1;
+COMP "ad1_in<7>" LOCATE = SITE "A6" LEVEL 1;
+COMP "ad1_in<8>" LOCATE = SITE "A7" LEVEL 1;
+COMP "ad1_in<9>" LOCATE = SITE "A5" LEVEL 1;
+COMP "ad2_in<0>" LOCATE = SITE "D11" LEVEL 1;
+COMP "ad2_in<1>" LOCATE = SITE "C9" LEVEL 1;
+COMP "ad2_in<2>" LOCATE = SITE "E11" LEVEL 1;
+COMP "ad2_in<3>" LOCATE = SITE "D16" LEVEL 1;
+COMP "ad2_in<4>" LOCATE = SITE "E15" LEVEL 1;
+COMP "ad2_in<5>" LOCATE = SITE "C15" LEVEL 1;
+COMP "ad2_in<6>" LOCATE = SITE "C16" LEVEL 1;
+COMP "ad2_in<7>" LOCATE = SITE "B15" LEVEL 1;
+COMP "ad2_in<8>" LOCATE = SITE "B16" LEVEL 1;
+COMP "ad2_in<9>" LOCATE = SITE "A14" LEVEL 1;
+PIN u2/Mmult_n0040_pins<92> = BEL "u2/Mmult_n0040" PINNAME CLK;
+PIN u2/Mmult_n0041_pins<92> = BEL "u2/Mmult_n0041" PINNAME CLK;
+TIMEGRP sys_clk = BEL "scope_counter_0" BEL "scope_counter_1" BEL
+        "scope_counter_2" BEL "scope_counter_3" BEL "scope_counter_4" BEL
+        "scope_counter_5" BEL "u1/ad_ch1_11" BEL "u1/ad_ch1_10" BEL
+        "u1/ad_ch1_9" BEL "u1/ad_ch1_8" BEL "u1/ad_ch1_7" BEL "u1/ad_ch1_6"
+        BEL "u1/ad_ch1_5" BEL "u1/ad_ch1_4" BEL "u1/ad_ch1_3" BEL
+        "u1/ad_ch1_2" BEL "u1/ad_ch1_1" BEL "u1/ad_ch1_0" BEL "u1/ad_ch2_11"
+        BEL "u1/ad_ch2_10" BEL "u1/ad_ch2_9" BEL "u1/ad_ch2_8" BEL
+        "u1/ad_ch2_7" BEL "u1/ad_ch2_6" BEL "u1/ad_ch2_5" BEL "u1/ad_ch2_4"
+        BEL "u1/ad_ch2_3" BEL "u1/ad_ch2_2" BEL "u1/ad_ch2_1" BEL
+        "u1/ad_ch2_0" PIN "u2/Mmult_n0040_pins<92>" PIN
+        "u2/Mmult_n0041_pins<92>" BEL "u2/bcd2_ist/rese_1" BEL
+        "u2/bcd2_ist/rese_0" BEL "u2/bcd2_ist/resd_3" BEL "u2/bcd2_ist/resd_2"
+        BEL "u2/bcd2_ist/resd_1" BEL "u2/bcd2_ist/resd_0" BEL
+        "u2/bcd2_ist/resc_3" BEL "u2/bcd2_ist/resc_2" BEL "u2/bcd2_ist/resc_1"
+        BEL "u2/bcd2_ist/resc_0" BEL "u2/bcd2_ist/resb_3" BEL
+        "u2/bcd2_ist/resb_2" BEL "u2/bcd2_ist/resb_1" BEL "u2/bcd2_ist/resb_0"
+        BEL "u2/bcd2_ist/resa_3" BEL "u2/bcd2_ist/resa_2" BEL
+        "u2/bcd2_ist/resa_1" BEL "u2/bcd2_ist/rhexd_15" BEL
+        "u2/bcd2_ist/rhexd_13" BEL "u2/bcd2_ist/rhexd_10" BEL
+        "u2/bcd2_ist/rhexd_9" BEL "u2/bcd2_ist/rhexd_8" BEL
+        "u2/bcd2_ist/rhexd_7" BEL "u2/bcd2_ist/rhexd_5" BEL
+        "u2/bcd2_ist/rhexd_3" BEL "u2/bcd2_ist/rhexd_2" BEL
+        "u2/bcd2_ist/rhexd_1" BEL "u2/bcd2_ist/rhexb_9" BEL
+        "u2/bcd2_ist/rhexb_8" BEL "u2/bcd2_ist/rhexb_7" BEL
+        "u2/bcd2_ist/rhexb_6" BEL "u2/bcd2_ist/rhexb_5" BEL
+        "u2/bcd2_ist/rhexb_3" BEL "u2/bcd2_ist/rhexb_2" BEL
+        "u2/bcd2_ist/rhexb_1" BEL "u2/bcd2_ist/rhexc_13" BEL
+        "u2/bcd2_ist/rhexc_12" BEL "u2/bcd2_ist/rhexc_11" BEL
+        "u2/bcd2_ist/rhexc_10" BEL "u2/bcd2_ist/rhexc_9" BEL
+        "u2/bcd2_ist/rhexc_8" BEL "u2/bcd2_ist/rhexc_7" BEL
+        "u2/bcd2_ist/rhexc_6" BEL "u2/bcd2_ist/rhexc_5" BEL
+        "u2/bcd2_ist/rhexc_3" BEL "u2/bcd2_ist/rhexc_2" BEL
+        "u2/bcd2_ist/rhexc_1" BEL "u2/bcd2_ist/rhex_0_14" BEL
+        "u2/bcd2_ist/rhex_0_13" BEL "u2/bcd2_ist/rhex_0_12" BEL
+        "u2/bcd2_ist/rhex_0_11" BEL "u2/bcd2_ist/rhex_0_10" BEL
+        "u2/bcd2_ist/rhex_0_9" BEL "u2/bcd2_ist/rhex_0_8" BEL
+        "u2/bcd2_ist/rhex_0_7" BEL "u2/bcd2_ist/rhex_0_6" BEL
+        "u2/bcd2_ist/rhex_0_5" BEL "u2/bcd2_ist/rhex_0_4" BEL
+        "u2/bcd1_ist/rese_1" BEL "u2/bcd1_ist/rese_0" BEL "u2/bcd1_ist/resd_3"
+        BEL "u2/bcd1_ist/resd_2" BEL "u2/bcd1_ist/resd_1" BEL
+        "u2/bcd1_ist/resd_0" BEL "u2/bcd1_ist/resc_3" BEL "u2/bcd1_ist/resc_2"
+        BEL "u2/bcd1_ist/resc_1" BEL "u2/bcd1_ist/resc_0" BEL
+        "u2/bcd1_ist/resb_3" BEL "u2/bcd1_ist/resb_2" BEL "u2/bcd1_ist/resb_1"
+        BEL "u2/bcd1_ist/resb_0" BEL "u2/bcd1_ist/resa_3" BEL
+        "u2/bcd1_ist/resa_2" BEL "u2/bcd1_ist/resa_1" BEL
+        "u2/bcd1_ist/rhexd_15" BEL "u2/bcd1_ist/rhexd_13" BEL
+        "u2/bcd1_ist/rhexd_10" BEL "u2/bcd1_ist/rhexd_9" BEL
+        "u2/bcd1_ist/rhexd_8" BEL "u2/bcd1_ist/rhexd_7" BEL
+        "u2/bcd1_ist/rhexd_5" BEL "u2/bcd1_ist/rhexd_3" BEL
+        "u2/bcd1_ist/rhexd_2" BEL "u2/bcd1_ist/rhexd_1" BEL
+        "u2/bcd1_ist/rhexb_9" BEL "u2/bcd1_ist/rhexb_8" BEL
+        "u2/bcd1_ist/rhexb_7" BEL "u2/bcd1_ist/rhexb_6" BEL
+        "u2/bcd1_ist/rhexb_5" BEL "u2/bcd1_ist/rhexb_3" BEL
+        "u2/bcd1_ist/rhexb_2" BEL "u2/bcd1_ist/rhexb_1" BEL
+        "u2/bcd1_ist/rhexc_13" BEL "u2/bcd1_ist/rhexc_12" BEL
+        "u2/bcd1_ist/rhexc_11" BEL "u2/bcd1_ist/rhexc_10" BEL
+        "u2/bcd1_ist/rhexc_9" BEL "u2/bcd1_ist/rhexc_8" BEL
+        "u2/bcd1_ist/rhexc_7" BEL "u2/bcd1_ist/rhexc_6" BEL
+        "u2/bcd1_ist/rhexc_5" BEL "u2/bcd1_ist/rhexc_3" BEL
+        "u2/bcd1_ist/rhexc_2" BEL "u2/bcd1_ist/rhexc_1" BEL
+        "u2/bcd1_ist/rhex_0_14" BEL "u2/bcd1_ist/rhex_0_13" BEL
+        "u2/bcd1_ist/rhex_0_12" BEL "u2/bcd1_ist/rhex_0_11" BEL
+        "u2/bcd1_ist/rhex_0_10" BEL "u2/bcd1_ist/rhex_0_9" BEL
+        "u2/bcd1_ist/rhex_0_8" BEL "u2/bcd1_ist/rhex_0_7" BEL
+        "u2/bcd1_ist/rhex_0_6" BEL "u2/bcd1_ist/rhex_0_5" BEL
+        "u2/bcd1_ist/rhex_0_4" BEL "u3/u0/cnt_15" BEL "u3/u0/cnt_14" BEL
+        "u3/u0/cnt_13" BEL "u3/u0/cnt_12" BEL "u3/u0/cnt_11" BEL
+        "u3/u0/cnt_10" BEL "u3/u0/cnt_9" BEL "u3/u0/cnt_8" BEL "u3/u0/cnt_7"
+        BEL "u3/u0/cnt_6" BEL "u3/u0/cnt_5" BEL "u3/u0/cnt_4" BEL
+        "u3/u0/cnt_3" BEL "u3/u0/cnt_2" BEL "u3/u0/cnt_1" BEL "u3/u0/clkout"
+        BEL "scope_clk" BEL "u2/ch2_sig_2" BEL "u2/ch1_sig_2" BEL
+        "u2/bcd2_ist/rhexb_1_1" BEL "u2/bcd1_ist/rhexb_1_1" BEL
+        "u2/bcd2_ist/rhexc_1_1" BEL "u2/bcd2_ist/rhexd_1_1" BEL
+        "u2/bcd1_ist/rhexc_1_1" BEL "u2/bcd1_ist/rhexd_1_1" BEL
+        "u2/bcd1_ist/rhexb_1_2" BEL "u2/bcd1_ist/rhexb_1_3" BEL
+        "u2/bcd2_ist/rhexb_1_2" BEL "u2/bcd2_ist/rhexb_1_3" BEL
+        "ad2_clk_OBUF_BUFG" BEL "u2/bcd2_ist/Mshreg_resa_0" BEL
+        "u2/bcd2_ist/resa_0" BEL "u2/bcd2_ist/Mshreg_rhexa_3" BEL
+        "u2/bcd2_ist/rhexa_3" BEL "u2/bcd2_ist/Mshreg_rhexa_2" BEL
+        "u2/bcd2_ist/rhexa_2" BEL "u2/bcd2_ist/Mshreg_rhexa_1" BEL
+        "u2/bcd2_ist/rhexa_1" BEL "u2/bcd1_ist/Mshreg_resa_0" BEL
+        "u2/bcd1_ist/resa_0" BEL "u2/bcd1_ist/Mshreg_rhexa_3" BEL
+        "u2/bcd1_ist/rhexa_3" BEL "u2/bcd1_ist/Mshreg_rhexa_2" BEL
+        "u2/bcd1_ist/rhexa_2" BEL "u2/bcd1_ist/Mshreg_rhexa_1" BEL
+        "u2/bcd1_ist/rhexa_1" BEL "ad1_clk" BEL "ad2_clk";
+TS_sys_clk = PERIOD TIMEGRP "sys_clk" 50 MHz HIGH 50%;
+SCHEMATIC END;
+

@@ -1,0 +1,8 @@
+Release 14.7 Drc P.20131013 (nt64)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+
+Thu May 05 14:31:32 2016
+
+drc -z ad706_test.ncd ad706_test.pcf
+
+DRC detected 0 errors and 0 warnings.

@@ -1,0 +1,8 @@
+Release 14.7 Drc P.20131013 (nt64)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+
+Tue Dec 22 18:43:25 2015
+
+drc -z Greedy_snake.ncd Greedy_snake.pcf
+
+DRC detected 0 errors and 0 warnings.

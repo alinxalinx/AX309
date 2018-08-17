@@ -1,0 +1,248 @@
+xst -intstyle ise -ifn "E:/Project/AX545/verilog/ad9226_test/ad9226_test.xst" -ofn "E:/Project/AX545/verilog/ad9226_test/ad9226_test.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -i -p xc6slx45-csg324-2 ad9226_test.ngc ad9226_test.ngd  
+map -intstyle ise -p xc6slx45-csg324-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o ad9226_test_map.ncd ad9226_test.ngd ad9226_test.pcf 
+par -w -intstyle ise -ol high -mt off ad9226_test_map.ncd ad9226_test.ncd ad9226_test.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml ad9226_test.twx ad9226_test.ncd -o ad9226_test.twr ad9226_test.pcf 
+bitgen -intstyle ise -f ad9226_test.ut ad9226_test.ncd 
+xst -intstyle ise -ifn "E:/Project/AX545/verilog/ad9226_test/ad9226_test.xst" -ofn "E:/Project/AX545/verilog/ad9226_test/ad9226_test.syr" 
+xst -intstyle ise -ifn "E:/Project/AX545/verilog/ad9226_test/ad9226_test.xst" -ofn "E:/Project/AX545/verilog/ad9226_test/ad9226_test.syr" 
+xst -intstyle ise -ifn "E:/Project/AX545/verilog/ad9226_test/ad9226_test.xst" -ofn "E:/Project/AX545/verilog/ad9226_test/ad9226_test.syr" 
+xst -intstyle ise -ifn "E:/Project/AX545/verilog/ad9226_test/ad9226_test.xst" -ofn "E:/Project/AX545/verilog/ad9226_test/ad9226_test.syr" 
+xst -intstyle ise -ifn "E:/Project/AX545/verilog/ad9226_test/ad9226_test.xst" -ofn "E:/Project/AX545/verilog/ad9226_test/ad9226_test.syr" 
+xst -intstyle ise -ifn "E:/Project/AX545/verilog/ad9226_test/ad9226_test.xst" -ofn "E:/Project/AX545/verilog/ad9226_test/ad9226_test.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -i -p xc6slx45-csg324-2 ad9226_test.ngc ad9226_test.ngd  
+map -intstyle ise -p xc6slx45-csg324-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o ad9226_test_map.ncd ad9226_test.ngd ad9226_test.pcf 
+par -w -intstyle ise -ol high -mt off ad9226_test_map.ncd ad9226_test.ncd ad9226_test.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml ad9226_test.twx ad9226_test.ncd -o ad9226_test.twr ad9226_test.pcf 
+bitgen -intstyle ise -f ad9226_test.ut ad9226_test.ncd 
+xst -intstyle ise -ifn "E:/Project/AX545/verilog/ad9226_test/ad9226_test.xst" -ofn "E:/Project/AX545/verilog/ad9226_test/ad9226_test.syr" 
+xst -intstyle ise -ifn "E:/Project/AX545/verilog/ad9226_test/ad9226_test.xst" -ofn "E:/Project/AX545/verilog/ad9226_test/ad9226_test.syr" 
+xst -intstyle ise -ifn "E:/Project/AX545/verilog/ad9226_test/ad9226_test.xst" -ofn "E:/Project/AX545/verilog/ad9226_test/ad9226_test.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc ad9226_test.ucf -p xc6slx45-csg324-2 ad9226_test.ngc ad9226_test.ngd  
+map -intstyle ise -p xc6slx45-csg324-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o ad9226_test_map.ncd ad9226_test.ngd ad9226_test.pcf 
+par -w -intstyle ise -ol high -mt off ad9226_test_map.ncd ad9226_test.ncd ad9226_test.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml ad9226_test.twx ad9226_test.ncd -o ad9226_test.twr ad9226_test.pcf -ucf ad9226_test.ucf 
+bitgen -intstyle ise -f ad9226_test.ut ad9226_test.ncd 
+xst -intstyle ise -ifn "E:/Project/AX545/verilog/ad9226_test/ad9226_test.xst" -ofn "E:/Project/AX545/verilog/ad9226_test/ad9226_test.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc ad9226_test.ucf -p xc6slx45-csg324-2 ad9226_test.ngc ad9226_test.ngd  
+map -intstyle ise -p xc6slx45-csg324-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o ad9226_test_map.ncd ad9226_test.ngd ad9226_test.pcf 
+par -w -intstyle ise -ol high -mt off ad9226_test_map.ncd ad9226_test.ncd ad9226_test.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml ad9226_test.twx ad9226_test.ncd -o ad9226_test.twr ad9226_test.pcf -ucf ad9226_test.ucf 
+bitgen -intstyle ise -f ad9226_test.ut ad9226_test.ncd 
+xst -intstyle ise -ifn "E:/Project/AX545/verilog/ad9226_test/ad9226_test.xst" -ofn "E:/Project/AX545/verilog/ad9226_test/ad9226_test.syr" 
+xst -intstyle ise -ifn "E:/Project/AX545/verilog/ad9226_test/ad9226_test.xst" -ofn "E:/Project/AX545/verilog/ad9226_test/ad9226_test.syr" 
+xst -intstyle ise -ifn "E:/Project/AX545/verilog/ad9226_test/ad9226_test.xst" -ofn "E:/Project/AX545/verilog/ad9226_test/ad9226_test.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc ad9226_test.ucf -p xc6slx45-csg324-2 ad9226_test.ngc ad9226_test.ngd  
+map -intstyle ise -p xc6slx45-csg324-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o ad9226_test_map.ncd ad9226_test.ngd ad9226_test.pcf 
+par -w -intstyle ise -ol high -mt off ad9226_test_map.ncd ad9226_test.ncd ad9226_test.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml ad9226_test.twx ad9226_test.ncd -o ad9226_test.twr ad9226_test.pcf -ucf ad9226_test.ucf 
+bitgen -intstyle ise -f ad9226_test.ut ad9226_test.ncd 
+xst -intstyle ise -ifn "E:/Project/AX545/verilog/ad9226_test/ad9226_test.xst" -ofn "E:/Project/AX545/verilog/ad9226_test/ad9226_test.syr" 
+xst -intstyle ise -ifn "E:/Project/AX545/verilog/ad9226_test/ad9226_test.xst" -ofn "E:/Project/AX545/verilog/ad9226_test/ad9226_test.syr" 
+xst -intstyle ise -ifn "E:/Project/AX545/verilog/ad9226_test/ad9226_test.xst" -ofn "E:/Project/AX545/verilog/ad9226_test/ad9226_test.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc ad9226_test.ucf -p xc6slx45-csg324-2 ad9226_test.ngc ad9226_test.ngd  
+xst -intstyle ise -ifn "E:/Project/AX545/verilog/ad9226_test/ad9226_test.xst" -ofn "E:/Project/AX545/verilog/ad9226_test/ad9226_test.syr" 
+xst -intstyle ise -ifn "E:/Project/AX545/verilog/ad9226_test/ad9226_test.xst" -ofn "E:/Project/AX545/verilog/ad9226_test/ad9226_test.syr" 
+xst -intstyle ise -ifn "E:/Project/AX545/verilog/ad9226_test/ad9226_test.xst" -ofn "E:/Project/AX545/verilog/ad9226_test/ad9226_test.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc ad9226_test.ucf -p xc6slx45-csg324-2 ad9226_test.ngc ad9226_test.ngd  
+map -intstyle ise -p xc6slx45-csg324-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o ad9226_test_map.ncd ad9226_test.ngd ad9226_test.pcf 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc ad9226_test.ucf -p xc6slx45-csg324-2 ad9226_test.ngc ad9226_test.ngd  
+map -intstyle ise -p xc6slx45-csg324-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o ad9226_test_map.ncd ad9226_test.ngd ad9226_test.pcf 
+par -w -intstyle ise -ol high -mt off ad9226_test_map.ncd ad9226_test.ncd ad9226_test.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml ad9226_test.twx ad9226_test.ncd -o ad9226_test.twr ad9226_test.pcf -ucf ad9226_test.ucf 
+bitgen -intstyle ise -f ad9226_test.ut ad9226_test.ncd 
+xst -intstyle ise -ifn "E:/Project/AX545/verilog/ad9226_test/ad9226_test.xst" -ofn "E:/Project/AX545/verilog/ad9226_test/ad9226_test.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc ad9226_test.ucf -p xc6slx45-csg324-2 ad9226_test.ngc ad9226_test.ngd  
+map -intstyle ise -p xc6slx45-csg324-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o ad9226_test_map.ncd ad9226_test.ngd ad9226_test.pcf 
+par -w -intstyle ise -ol high -mt off ad9226_test_map.ncd ad9226_test.ncd ad9226_test.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml ad9226_test.twx ad9226_test.ncd -o ad9226_test.twr ad9226_test.pcf -ucf ad9226_test.ucf 
+bitgen -intstyle ise -f ad9226_test.ut ad9226_test.ncd 
+xst -intstyle ise -ifn "E:/Project/AX545/verilog/ad9226_test/ad9226_test.xst" -ofn "E:/Project/AX545/verilog/ad9226_test/ad9226_test.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc ad9226_test.ucf -p xc6slx45-csg324-2 ad9226_test.ngc ad9226_test.ngd  
+map -intstyle ise -p xc6slx45-csg324-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o ad9226_test_map.ncd ad9226_test.ngd ad9226_test.pcf 
+par -w -intstyle ise -ol high -mt off ad9226_test_map.ncd ad9226_test.ncd ad9226_test.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml ad9226_test.twx ad9226_test.ncd -o ad9226_test.twr ad9226_test.pcf -ucf ad9226_test.ucf 
+bitgen -intstyle ise -f ad9226_test.ut ad9226_test.ncd 
+xst -intstyle ise -ifn "E:/Project/AX545/verilog/ad9226_test/ad9226_test.xst" -ofn "E:/Project/AX545/verilog/ad9226_test/ad9226_test.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc ad9226_test.ucf -p xc6slx45-csg324-2 ad9226_test.ngc ad9226_test.ngd  
+map -intstyle ise -p xc6slx45-csg324-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o ad9226_test_map.ncd ad9226_test.ngd ad9226_test.pcf 
+par -w -intstyle ise -ol high -mt off ad9226_test_map.ncd ad9226_test.ncd ad9226_test.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml ad9226_test.twx ad9226_test.ncd -o ad9226_test.twr ad9226_test.pcf -ucf ad9226_test.ucf 
+bitgen -intstyle ise -f ad9226_test.ut ad9226_test.ncd 
+xst -intstyle ise -ifn "E:/Project/AX545/verilog/ad9226_test/ad9226_test.xst" -ofn "E:/Project/AX545/verilog/ad9226_test/ad9226_test.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc ad9226_test.ucf -p xc6slx45-csg324-2 ad9226_test.ngc ad9226_test.ngd  
+map -intstyle ise -p xc6slx45-csg324-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o ad9226_test_map.ncd ad9226_test.ngd ad9226_test.pcf 
+par -w -intstyle ise -ol high -mt off ad9226_test_map.ncd ad9226_test.ncd ad9226_test.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml ad9226_test.twx ad9226_test.ncd -o ad9226_test.twr ad9226_test.pcf -ucf ad9226_test.ucf 
+bitgen -intstyle ise -f ad9226_test.ut ad9226_test.ncd 
+xst -intstyle ise -ifn "E:/Project/AX545/verilog/ad9226_test/ad9226_test.xst" -ofn "E:/Project/AX545/verilog/ad9226_test/ad9226_test.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc ad9226_test.ucf -p xc6slx45-csg324-2 ad9226_test.ngc ad9226_test.ngd  
+map -intstyle ise -p xc6slx45-csg324-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o ad9226_test_map.ncd ad9226_test.ngd ad9226_test.pcf 
+par -w -intstyle ise -ol high -mt off ad9226_test_map.ncd ad9226_test.ncd ad9226_test.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml ad9226_test.twx ad9226_test.ncd -o ad9226_test.twr ad9226_test.pcf -ucf ad9226_test.ucf 
+bitgen -intstyle ise -f ad9226_test.ut ad9226_test.ncd 
+xst -intstyle ise -ifn "E:/Project/AX545/verilog/ad9226_test/ad9226_test.xst" -ofn "E:/Project/AX545/verilog/ad9226_test/ad9226_test.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc ad9226_test.ucf -p xc6slx45-csg324-2 ad9226_test.ngc ad9226_test.ngd  
+map -intstyle ise -p xc6slx45-csg324-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o ad9226_test_map.ncd ad9226_test.ngd ad9226_test.pcf 
+par -w -intstyle ise -ol high -mt off ad9226_test_map.ncd ad9226_test.ncd ad9226_test.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml ad9226_test.twx ad9226_test.ncd -o ad9226_test.twr ad9226_test.pcf -ucf ad9226_test.ucf 
+bitgen -intstyle ise -f ad9226_test.ut ad9226_test.ncd 
+xst -intstyle ise -ifn "E:/Project/AX545/verilog/ad9226_test/ad9226_test.xst" -ofn "E:/Project/AX545/verilog/ad9226_test/ad9226_test.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc ad9226_test.ucf -p xc6slx45-csg324-2 ad9226_test.ngc ad9226_test.ngd  
+map -intstyle ise -p xc6slx45-csg324-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o ad9226_test_map.ncd ad9226_test.ngd ad9226_test.pcf 
+par -w -intstyle ise -ol high -mt off ad9226_test_map.ncd ad9226_test.ncd ad9226_test.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml ad9226_test.twx ad9226_test.ncd -o ad9226_test.twr ad9226_test.pcf -ucf ad9226_test.ucf 
+bitgen -intstyle ise -f ad9226_test.ut ad9226_test.ncd 
+xst -intstyle ise -ifn "E:/Project/AX545/verilog/ad9226_test/ad9226_test.xst" -ofn "E:/Project/AX545/verilog/ad9226_test/ad9226_test.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc ad9226_test.ucf -p xc6slx45-csg324-2 ad9226_test.ngc ad9226_test.ngd  
+map -intstyle ise -p xc6slx45-csg324-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o ad9226_test_map.ncd ad9226_test.ngd ad9226_test.pcf 
+par -w -intstyle ise -ol high -mt off ad9226_test_map.ncd ad9226_test.ncd ad9226_test.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml ad9226_test.twx ad9226_test.ncd -o ad9226_test.twr ad9226_test.pcf -ucf ad9226_test.ucf 
+bitgen -intstyle ise -f ad9226_test.ut ad9226_test.ncd 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc ad9226_test.ucf -p xc6slx45-csg324-2 ad9226_test.ngc ad9226_test.ngd  
+xst -intstyle ise -ifn "E:/Project/AX545/verilog/ad9226_test/ad9226_test.xst" -ofn "E:/Project/AX545/verilog/ad9226_test/ad9226_test.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc ad9226_test.ucf -p xc6slx45-csg324-2 ad9226_test.ngc ad9226_test.ngd  
+map -intstyle ise -p xc6slx45-csg324-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o ad9226_test_map.ncd ad9226_test.ngd ad9226_test.pcf 
+par -w -intstyle ise -ol high -mt off ad9226_test_map.ncd ad9226_test.ncd ad9226_test.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml ad9226_test.twx ad9226_test.ncd -o ad9226_test.twr ad9226_test.pcf -ucf ad9226_test.ucf 
+bitgen -intstyle ise -f ad9226_test.ut ad9226_test.ncd 
+xst -intstyle ise -ifn "E:/Project/AX545/verilog/ad9226_test/ad9226_test.xst" -ofn "E:/Project/AX545/verilog/ad9226_test/ad9226_test.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc ad9226_test.ucf -p xc6slx45-csg324-2 ad9226_test.ngc ad9226_test.ngd  
+map -intstyle ise -p xc6slx45-csg324-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o ad9226_test_map.ncd ad9226_test.ngd ad9226_test.pcf 
+par -w -intstyle ise -ol high -mt off ad9226_test_map.ncd ad9226_test.ncd ad9226_test.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml ad9226_test.twx ad9226_test.ncd -o ad9226_test.twr ad9226_test.pcf -ucf ad9226_test.ucf 
+bitgen -intstyle ise -f ad9226_test.ut ad9226_test.ncd 
+xst -intstyle ise -ifn "E:/Project/AX545/verilog/ad9226_test/ad9226_test.xst" -ofn "E:/Project/AX545/verilog/ad9226_test/ad9226_test.syr" 
+xst -intstyle ise -ifn "E:/Project/AX545/verilog/ad9226_test/ad9226_test.xst" -ofn "E:/Project/AX545/verilog/ad9226_test/ad9226_test.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc ad9226_test.ucf -p xc6slx45-csg324-2 ad9226_test.ngc ad9226_test.ngd  
+map -intstyle ise -p xc6slx45-csg324-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o ad9226_test_map.ncd ad9226_test.ngd ad9226_test.pcf 
+par -w -intstyle ise -ol high -mt off ad9226_test_map.ncd ad9226_test.ncd ad9226_test.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml ad9226_test.twx ad9226_test.ncd -o ad9226_test.twr ad9226_test.pcf -ucf ad9226_test.ucf 
+bitgen -intstyle ise -f ad9226_test.ut ad9226_test.ncd 
+xst -intstyle ise -ifn "E:/Project/AX545/verilog/ad9226_test/ad9226_test.xst" -ofn "E:/Project/AX545/verilog/ad9226_test/ad9226_test.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc ad9226_test.ucf -p xc6slx45-csg324-2 ad9226_test.ngc ad9226_test.ngd  
+map -intstyle ise -p xc6slx45-csg324-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o ad9226_test_map.ncd ad9226_test.ngd ad9226_test.pcf 
+par -w -intstyle ise -ol high -mt off ad9226_test_map.ncd ad9226_test.ncd ad9226_test.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml ad9226_test.twx ad9226_test.ncd -o ad9226_test.twr ad9226_test.pcf -ucf ad9226_test.ucf 
+bitgen -intstyle ise -f ad9226_test.ut ad9226_test.ncd 
+xst -intstyle ise -ifn "E:/Project/AX545/verilog/ad9226_test/ad9226_test.xst" -ofn "E:/Project/AX545/verilog/ad9226_test/ad9226_test.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc ad9226_test.ucf -p xc6slx45-csg324-2 ad9226_test.ngc ad9226_test.ngd  
+map -intstyle ise -p xc6slx45-csg324-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o ad9226_test_map.ncd ad9226_test.ngd ad9226_test.pcf 
+par -w -intstyle ise -ol high -mt off ad9226_test_map.ncd ad9226_test.ncd ad9226_test.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml ad9226_test.twx ad9226_test.ncd -o ad9226_test.twr ad9226_test.pcf -ucf ad9226_test.ucf 
+bitgen -intstyle ise -f ad9226_test.ut ad9226_test.ncd 
+xst -intstyle ise -ifn "E:/Project/AX545/verilog/ad9226_test/ad9226_test.xst" -ofn "E:/Project/AX545/verilog/ad9226_test/ad9226_test.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc ad9226_test.ucf -p xc6slx45-csg324-2 ad9226_test.ngc ad9226_test.ngd  
+map -intstyle ise -p xc6slx45-csg324-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o ad9226_test_map.ncd ad9226_test.ngd ad9226_test.pcf 
+par -w -intstyle ise -ol high -mt off ad9226_test_map.ncd ad9226_test.ncd ad9226_test.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml ad9226_test.twx ad9226_test.ncd -o ad9226_test.twr ad9226_test.pcf -ucf ad9226_test.ucf 
+bitgen -intstyle ise -f ad9226_test.ut ad9226_test.ncd 
+xst -intstyle ise -ifn "E:/Project/AX545/verilog/ad9226_test/ad9226_test.xst" -ofn "E:/Project/AX545/verilog/ad9226_test/ad9226_test.syr" 
+xst -intstyle ise -ifn "E:/Project/AX545/verilog/ad9226_test/ad9226_test.xst" -ofn "E:/Project/AX545/verilog/ad9226_test/ad9226_test.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc ad9226_test.ucf -p xc6slx45-csg324-2 ad9226_test.ngc ad9226_test.ngd  
+map -intstyle ise -p xc6slx45-csg324-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o ad9226_test_map.ncd ad9226_test.ngd ad9226_test.pcf 
+par -w -intstyle ise -ol high -mt off ad9226_test_map.ncd ad9226_test.ncd ad9226_test.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml ad9226_test.twx ad9226_test.ncd -o ad9226_test.twr ad9226_test.pcf -ucf ad9226_test.ucf 
+bitgen -intstyle ise -f ad9226_test.ut ad9226_test.ncd 
+xst -intstyle ise -ifn "E:/Project/AX545/verilog/ad9226_test/ad9226_test.xst" -ofn "E:/Project/AX545/verilog/ad9226_test/ad9226_test.syr" 
+xst -intstyle ise -ifn "E:/Project/AX545/verilog/ad9226_test/ad9226_test.xst" -ofn "E:/Project/AX545/verilog/ad9226_test/ad9226_test.syr" 
+xst -intstyle ise -ifn "E:/Project/AX545/verilog/ad9226_test/ad9226_test.xst" -ofn "E:/Project/AX545/verilog/ad9226_test/ad9226_test.syr" 
+xst -intstyle ise -ifn "E:/Project/AX545/verilog/ad9226_test/ad9226_test.xst" -ofn "E:/Project/AX545/verilog/ad9226_test/ad9226_test.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc ad9226_test.ucf -p xc6slx45-csg324-2 ad9226_test.ngc ad9226_test.ngd  
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc ad9226_test.ucf -p xc6slx45-csg324-2 ad9226_test.ngc ad9226_test.ngd  
+map -intstyle ise -p xc6slx45-csg324-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o ad9226_test_map.ncd ad9226_test.ngd ad9226_test.pcf 
+par -w -intstyle ise -ol high -mt off ad9226_test_map.ncd ad9226_test.ncd ad9226_test.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml ad9226_test.twx ad9226_test.ncd -o ad9226_test.twr ad9226_test.pcf -ucf ad9226_test.ucf 
+bitgen -intstyle ise -f ad9226_test.ut ad9226_test.ncd 
+xst -intstyle ise -ifn "E:/Project/AX545/verilog/ad9226_test/ad9226_test.xst" -ofn "E:/Project/AX545/verilog/ad9226_test/ad9226_test.syr" 
+xst -intstyle ise -ifn "E:/Project/AX545/verilog/ad9226_test/ad9226_test.xst" -ofn "E:/Project/AX545/verilog/ad9226_test/ad9226_test.syr" 
+xst -intstyle ise -ifn "E:/Project/AX545/verilog/ad9226_test/ad9226_test.xst" -ofn "E:/Project/AX545/verilog/ad9226_test/ad9226_test.syr" 
+xst -intstyle ise -ifn "E:/Project/AX545/verilog/ad9226_test/ad9226_test.xst" -ofn "E:/Project/AX545/verilog/ad9226_test/ad9226_test.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc ad9226_test.ucf -p xc6slx45-csg324-2 ad9226_test.ngc ad9226_test.ngd  
+map -intstyle ise -p xc6slx45-csg324-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o ad9226_test_map.ncd ad9226_test.ngd ad9226_test.pcf 
+par -w -intstyle ise -ol high -mt off ad9226_test_map.ncd ad9226_test.ncd ad9226_test.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml ad9226_test.twx ad9226_test.ncd -o ad9226_test.twr ad9226_test.pcf -ucf ad9226_test.ucf 
+bitgen -intstyle ise -f ad9226_test.ut ad9226_test.ncd 
+xst -intstyle ise -ifn "E:/Project/AX545/verilog/ad9226_test/ad9226_test.xst" -ofn "E:/Project/AX545/verilog/ad9226_test/ad9226_test.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc ad9226_test.ucf -p xc6slx45-csg324-2 ad9226_test.ngc ad9226_test.ngd  
+map -intstyle ise -p xc6slx45-csg324-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o ad9226_test_map.ncd ad9226_test.ngd ad9226_test.pcf 
+par -w -intstyle ise -ol high -mt off ad9226_test_map.ncd ad9226_test.ncd ad9226_test.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml ad9226_test.twx ad9226_test.ncd -o ad9226_test.twr ad9226_test.pcf -ucf ad9226_test.ucf 
+bitgen -intstyle ise -f ad9226_test.ut ad9226_test.ncd 
+xst -intstyle ise -ifn "E:/Project/AX545/verilog/ad9226_test/ad9226_test.xst" -ofn "E:/Project/AX545/verilog/ad9226_test/ad9226_test.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc ad9226_test.ucf -p xc6slx45-csg324-2 ad9226_test.ngc ad9226_test.ngd  
+map -intstyle ise -p xc6slx45-csg324-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o ad9226_test_map.ncd ad9226_test.ngd ad9226_test.pcf 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc ad9226_test.ucf -p xc6slx45-csg324-2 ad9226_test.ngc ad9226_test.ngd  
+map -intstyle ise -p xc6slx45-csg324-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o ad9226_test_map.ncd ad9226_test.ngd ad9226_test.pcf 
+par -w -intstyle ise -ol high -mt off ad9226_test_map.ncd ad9226_test.ncd ad9226_test.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml ad9226_test.twx ad9226_test.ncd -o ad9226_test.twr ad9226_test.pcf -ucf ad9226_test.ucf 
+bitgen -intstyle ise -f ad9226_test.ut ad9226_test.ncd 
+xst -intstyle ise -ifn "E:/Project/AX545/verilog/ad9226_test/ad9226_test.xst" -ofn "E:/Project/AX545/verilog/ad9226_test/ad9226_test.syr" 
+xst -intstyle ise -ifn "E:/Project/AX545/verilog/ad9226_test/ad9226_test.xst" -ofn "E:/Project/AX545/verilog/ad9226_test/ad9226_test.syr" 
+xst -intstyle ise -ifn "E:/Project/AX545/verilog/ad9226_test/ad9226_test.xst" -ofn "E:/Project/AX545/verilog/ad9226_test/ad9226_test.syr" 
+xst -intstyle ise -ifn "E:/Project/AX545/verilog/ad9226_test/ad9226_test.xst" -ofn "E:/Project/AX545/verilog/ad9226_test/ad9226_test.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc ad9226_test.ucf -p xc6slx45-csg324-2 ad9226_test.ngc ad9226_test.ngd  
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc ad9226_test.ucf -p xc6slx45-csg324-2 ad9226_test.ngc ad9226_test.ngd  
+map -intstyle ise -p xc6slx45-csg324-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o ad9226_test_map.ncd ad9226_test.ngd ad9226_test.pcf 
+par -w -intstyle ise -ol high -mt off ad9226_test_map.ncd ad9226_test.ncd ad9226_test.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml ad9226_test.twx ad9226_test.ncd -o ad9226_test.twr ad9226_test.pcf -ucf ad9226_test.ucf 
+bitgen -intstyle ise -f ad9226_test.ut ad9226_test.ncd 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc ad9226_test.ucf -p xc6slx45-csg324-2 ad9226_test.ngc ad9226_test.ngd  
+map -intstyle ise -p xc6slx45-csg324-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o ad9226_test_map.ncd ad9226_test.ngd ad9226_test.pcf 
+par -w -intstyle ise -ol high -mt off ad9226_test_map.ncd ad9226_test.ncd ad9226_test.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml ad9226_test.twx ad9226_test.ncd -o ad9226_test.twr ad9226_test.pcf -ucf ad9226_test.ucf 
+bitgen -intstyle ise -f ad9226_test.ut ad9226_test.ncd 
+xst -intstyle ise -ifn "E:/Project/AX545/verilog/ad9226_test/ad9226_test.xst" -ofn "E:/Project/AX545/verilog/ad9226_test/ad9226_test.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc ad9226_test.ucf -p xc6slx45-csg324-2 ad9226_test.ngc ad9226_test.ngd  
+map -intstyle ise -p xc6slx45-csg324-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o ad9226_test_map.ncd ad9226_test.ngd ad9226_test.pcf 
+par -w -intstyle ise -ol high -mt off ad9226_test_map.ncd ad9226_test.ncd ad9226_test.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml ad9226_test.twx ad9226_test.ncd -o ad9226_test.twr ad9226_test.pcf -ucf ad9226_test.ucf 
+bitgen -intstyle ise -f ad9226_test.ut ad9226_test.ncd 
+xst -intstyle ise -ifn "E:/Project/AX545/verilog/ad9226_test/ad9226_test.xst" -ofn "E:/Project/AX545/verilog/ad9226_test/ad9226_test.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc ad9226_test.ucf -p xc6slx45-csg324-2 ad9226_test.ngc ad9226_test.ngd  
+map -intstyle ise -p xc6slx45-csg324-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o ad9226_test_map.ncd ad9226_test.ngd ad9226_test.pcf 
+par -w -intstyle ise -ol high -mt off ad9226_test_map.ncd ad9226_test.ncd ad9226_test.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml ad9226_test.twx ad9226_test.ncd -o ad9226_test.twr ad9226_test.pcf -ucf ad9226_test.ucf 
+bitgen -intstyle ise -f ad9226_test.ut ad9226_test.ncd 
+xst -intstyle ise -ifn "E:/Project/AX545/verilog/ad9226_test/ad9226_test.xst" -ofn "E:/Project/AX545/verilog/ad9226_test/ad9226_test.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc ad9226_test.ucf -p xc6slx45-csg324-2 ad9226_test.ngc ad9226_test.ngd  
+map -intstyle ise -p xc6slx45-csg324-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o ad9226_test_map.ncd ad9226_test.ngd ad9226_test.pcf 
+par -w -intstyle ise -ol high -mt off ad9226_test_map.ncd ad9226_test.ncd ad9226_test.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml ad9226_test.twx ad9226_test.ncd -o ad9226_test.twr ad9226_test.pcf -ucf ad9226_test.ucf 
+bitgen -intstyle ise -f ad9226_test.ut ad9226_test.ncd 
+xst -intstyle ise -ifn "E:/Project/AX545/verilog/ad9226_test/ad9226_test.xst" -ofn "E:/Project/AX545/verilog/ad9226_test/ad9226_test.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc ad9226_test.ucf -p xc6slx45-csg324-2 ad9226_test.ngc ad9226_test.ngd  
+map -intstyle ise -p xc6slx45-csg324-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o ad9226_test_map.ncd ad9226_test.ngd ad9226_test.pcf 
+par -w -intstyle ise -ol high -mt off ad9226_test_map.ncd ad9226_test.ncd ad9226_test.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml ad9226_test.twx ad9226_test.ncd -o ad9226_test.twr ad9226_test.pcf -ucf ad9226_test.ucf 
+bitgen -intstyle ise -f ad9226_test.ut ad9226_test.ncd 
+xst -intstyle ise -ifn "E:/Project/AX309/Verilog/24_ad9226_test/ad9226_test.xst" -ofn "E:/Project/AX309/Verilog/24_ad9226_test/ad9226_test.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc ad9226_test.ucf -p xc6slx9-ftg256-2 ad9226_test.ngc ad9226_test.ngd  
+map -intstyle ise -p xc6slx9-ftg256-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o ad9226_test_map.ncd ad9226_test.ngd ad9226_test.pcf 
+par -w -intstyle ise -ol high -mt off ad9226_test_map.ncd ad9226_test.ncd ad9226_test.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml ad9226_test.twx ad9226_test.ncd -o ad9226_test.twr ad9226_test.pcf -ucf ad9226_test.ucf 
+bitgen -intstyle ise -f ad9226_test.ut ad9226_test.ncd 
+xst -intstyle ise -ifn "E:/Project/AX309/Verilog/24_ad9226_test/ad9226_test.xst" -ofn "E:/Project/AX309/Verilog/24_ad9226_test/ad9226_test.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc ad9226_test.ucf -p xc6slx9-ftg256-2 ad9226_test.ngc ad9226_test.ngd  
+map -intstyle ise -p xc6slx9-ftg256-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o ad9226_test_map.ncd ad9226_test.ngd ad9226_test.pcf 
+par -w -intstyle ise -ol high -mt off ad9226_test_map.ncd ad9226_test.ncd ad9226_test.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml ad9226_test.twx ad9226_test.ncd -o ad9226_test.twr ad9226_test.pcf -ucf ad9226_test.ucf 
+bitgen -intstyle ise -f ad9226_test.ut ad9226_test.ncd 
+xst -intstyle ise -ifn "E:/BaiduYunDownload/AX309.160229/AX309/09_VERILOG/29_ad9226_test/ad9226_test.xst" -ofn "E:/BaiduYunDownload/AX309.160229/AX309/09_VERILOG/29_ad9226_test/ad9226_test.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc ad9226_test.ucf -p xc6slx9-ftg256-2 ad9226_test.ngc ad9226_test.ngd  
+map -intstyle ise -p xc6slx9-ftg256-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o ad9226_test_map.ncd ad9226_test.ngd ad9226_test.pcf 
+par -w -intstyle ise -ol high -mt off ad9226_test_map.ncd ad9226_test.ncd ad9226_test.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml ad9226_test.twx ad9226_test.ncd -o ad9226_test.twr ad9226_test.pcf -ucf ad9226_test.ucf 
+bitgen -intstyle ise -f ad9226_test.ut ad9226_test.ncd 
+xst -intstyle ise -ifn "E:/BaiduYunDownload/AX309.160229/AX309/09_VERILOG/29_ad9226_test/ad9226_test.xst" -ofn "E:/BaiduYunDownload/AX309.160229/AX309/09_VERILOG/29_ad9226_test/ad9226_test.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc ad9226_test.ucf -p xc6slx9-ftg256-2 ad9226_test.ngc ad9226_test.ngd  
+map -intstyle ise -p xc6slx9-ftg256-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o ad9226_test_map.ncd ad9226_test.ngd ad9226_test.pcf 
+par -w -intstyle ise -ol high -mt off ad9226_test_map.ncd ad9226_test.ncd ad9226_test.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml ad9226_test.twx ad9226_test.ncd -o ad9226_test.twr ad9226_test.pcf -ucf ad9226_test.ucf 
+bitgen -intstyle ise -f ad9226_test.ut ad9226_test.ncd 
+xst -intstyle ise -ifn "E:/BaiduYunDownload/AX309.160229/AX309/09_VERILOG/29_ad9226_test/ad9226_test.xst" -ofn "E:/BaiduYunDownload/AX309.160229/AX309/09_VERILOG/29_ad9226_test/ad9226_test.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc ad9226_test.ucf -p xc6slx9-ftg256-2 ad9226_test.ngc ad9226_test.ngd  
+map -intstyle ise -p xc6slx9-ftg256-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o ad9226_test_map.ncd ad9226_test.ngd ad9226_test.pcf 
+par -w -intstyle ise -ol high -mt off ad9226_test_map.ncd ad9226_test.ncd ad9226_test.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml ad9226_test.twx ad9226_test.ncd -o ad9226_test.twr ad9226_test.pcf -ucf ad9226_test.ucf 
+bitgen -intstyle ise -f ad9226_test.ut ad9226_test.ncd 
